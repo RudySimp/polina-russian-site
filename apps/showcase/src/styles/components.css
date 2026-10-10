@@ -612,6 +612,10 @@ tr:last-child td {
 .practice-guide .button {
   margin: var(--space-4) 0;
 }
+.practice-guide > a {
+  display: flex;
+  width: fit-content;
+}
 .answer-feedback {
   max-width: 900px;
 }
