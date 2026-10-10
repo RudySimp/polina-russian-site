@@ -8,3 +8,13 @@ test-results/
 playwright-report/
 *.tsbuildinfo
 *.log
+.tools/
+dist/
+out/
+.cache/
+artifacts/
+*.dump
+*.sql.gz
+*.pem
+*.key
+private-materials/
