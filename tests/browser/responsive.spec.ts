@@ -36,7 +36,7 @@ test("Контент, ширины экрана, короткое окно и у
   const context = await chromium.launchPersistentContext(
     mkdtempSync(resolve(".cache/zoom-")),
     {
-      channel: process.env.CI ? undefined : "chrome",
+      channel: process.env.CI ? "chromium" : "chrome",
       headless: true,
       viewport: { width: 1280, height: 800 },
     },
