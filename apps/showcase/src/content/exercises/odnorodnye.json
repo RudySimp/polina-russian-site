@@ -1,0 +1,634 @@
+[
+  {
+    "id": "ege-odnorodnye-001",
+    "slug": "ege-odnorodnye-001",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 1",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Мы взяли карту и компас.",
+      "День был холодным но ясным.",
+      "На столе лежали книги карты фотографии.",
+      "Учитель вошёл и ученики встали.",
+      "К вечеру ветер стих и волны успокоились."
+    ],
+    "answers": ["24"],
+    "optionExplanations": [
+      "1) Запятых: 0. Однородные дополнения соединены одиночным «и»: запятой нет.",
+      "2) Запятых: 1. Противительный «но» между однородными признаками: холодным, но ясным.",
+      "3) Запятых: 2. Три однородных подлежащих без союзов: книги, карты, фотографии. Нужны две запятые.",
+      "4) Запятых: 1. Две основы «учитель вошёл» и «ученики встали», общего члена нет: нужна запятая перед «и».",
+      "5) Запятых: 0. Общее обстоятельство «к вечеру» относится к обеим частям сложносочинённого предложения: запятая перед «и» не нужна."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 2, 4. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-002",
+    "slug": "ege-odnorodnye-002",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 2",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Участники готовили не только доклады но и презентации.",
+      "Мастер собрал детали и проверил механизм.",
+      "То дождь то снег стучал в окно.",
+      "Мы искали и мост и переправу и удобный спуск.",
+      "Можно взять чай или кофе."
+    ],
+    "answers": ["13"],
+    "optionExplanations": [
+      "1) Запятых: 1. Двойной союз: запятая перед второй частью «но и».",
+      "2) Запятых: 0. Одна основа с однородными сказуемыми и одиночным союзом.",
+      "3) Запятых: 1. Повторяющееся «то… то» соединяет однородные подлежащие: то дождь, то снег.",
+      "4) Запятых: 2. Три дополнения с повторяющимся «и»: и мост, и переправу, и удобный спуск. Две запятые.",
+      "5) Запятых: 0. Одиночный союз «или» между двумя дополнениями: запятой нет."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 3. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-003",
+    "slug": "ege-odnorodnye-003",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 3",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Мы читали как рассказы так и стихотворения.",
+      "На карте отмечены города и сёла реки и озёра.",
+      "Ни свет ни заря мы вышли из дома.",
+      "Море шумело солнце садилось и чайки кричали.",
+      "Солнце скрылось за лесом и долина погрузилась в тень."
+    ],
+    "answers": ["125"],
+    "optionExplanations": [
+      "1) Запятых: 1. Двойной союз «как… так и»: запятая перед «так и».",
+      "2) Запятых: 1. Однородные члены объединены в пары: города и сёла, реки и озёра. Между парами одна запятая.",
+      "3) Запятых: 0. Устойчивое сочетание «ни свет ни заря» не разделяется запятой.",
+      "4) Запятых: 2. Три основы. Между первой и второй бессоюзная граница, между второй и третьей — сочинительная; общего члена нет.",
+      "5) Запятых: 1. Две основы с одиночным «и», общего второстепенного члена нет: одна запятая."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 2, 5. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-004",
+    "slug": "ege-odnorodnye-004",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 4",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Он записал адрес открыл карту и нашёл улицу.",
+      "К вечеру ветер стих и волны успокоились.",
+      "Тропа была узкой а берег крутым.",
+      "Мы искали и мост и переправу и удобный спуск.",
+      "Можно взять чай или кофе."
+    ],
+    "answers": ["13"],
+    "optionExplanations": [
+      "1) Запятых: 1. Три однородных сказуемых: записал, открыл и нашёл. Одна бессоюзная граница.",
+      "2) Запятых: 0. Общее обстоятельство «к вечеру» относится к обеим частям сложносочинённого предложения: запятая перед «и» не нужна.",
+      "3) Запятых: 1. Две основы соединены союзом «а»: тропа была узкой, а берег крутым.",
+      "4) Запятых: 2. Три дополнения с повторяющимся «и»: и мост, и переправу, и удобный спуск. Две запятые.",
+      "5) Запятых: 0. Одиночный союз «или» между двумя дополнениями: запятой нет."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 3. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-005",
+    "slug": "ege-odnorodnye-005",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 5",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "И ветер и дождь мешали прогулке.",
+      "На столе лежали книги карты фотографии.",
+      "Мастер собрал детали и проверил механизм.",
+      "Он выбрал либо чай либо кофе.",
+      "Он принёс и бумагу и краски и кисти."
+    ],
+    "answers": ["14"],
+    "optionExplanations": [
+      "1) Запятых: 1. Повторяющееся «и… и» соединяет два однородных подлежащих: и ветер, и дождь.",
+      "2) Запятых: 2. Три однородных подлежащих без союзов: книги, карты, фотографии. Нужны две запятые.",
+      "3) Запятых: 0. Одна основа с однородными сказуемыми и одиночным союзом.",
+      "4) Запятых: 1. Повторяющийся «либо… либо»: либо чай, либо кофе.",
+      "5) Запятых: 2. Три однородных дополнения с повторяющимся «и»: две запятые."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 4. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-006",
+    "slug": "ege-odnorodnye-006",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 6",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Мы взяли карту и компас.",
+      "Участники готовили не только доклады но и презентации.",
+      "То дождь то снег стучал в окно.",
+      "Ни свет ни заря мы вышли из дома.",
+      "Море шумело солнце садилось и чайки кричали."
+    ],
+    "answers": ["23"],
+    "optionExplanations": [
+      "1) Запятых: 0. Однородные дополнения соединены одиночным «и»: запятой нет.",
+      "2) Запятых: 1. Двойной союз: запятая перед второй частью «но и».",
+      "3) Запятых: 1. Повторяющееся «то… то» соединяет однородные подлежащие: то дождь, то снег.",
+      "4) Запятых: 0. Устойчивое сочетание «ни свет ни заря» не разделяется запятой.",
+      "5) Запятых: 2. Три основы. Между первой и второй бессоюзная граница, между второй и третьей — сочинительная; общего члена нет."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 2, 3. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-007",
+    "slug": "ege-odnorodnye-007",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 7",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "Учитель вошёл и ученики встали.",
+      "На карте отмечены города и сёла реки и озёра.",
+      "Мы искали и мост и переправу и удобный спуск.",
+      "Можно взять чай или кофе.",
+      "Он не ответил ни словом ни жестом."
+    ],
+    "answers": ["125"],
+    "optionExplanations": [
+      "1) Запятых: 1. Две основы «учитель вошёл» и «ученики встали», общего члена нет: нужна запятая перед «и».",
+      "2) Запятых: 1. Однородные члены объединены в пары: города и сёла, реки и озёра. Между парами одна запятая.",
+      "3) Запятых: 2. Три дополнения с повторяющимся «и»: и мост, и переправу, и удобный спуск. Две запятые.",
+      "4) Запятых: 0. Одиночный союз «или» между двумя дополнениями: запятой нет.",
+      "5) Запятых: 1. Два дополнения с повторяющимся «ни… ни»: ни словом, ни жестом."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 2, 5. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  },
+  {
+    "id": "ege-odnorodnye-008",
+    "slug": "ege-odnorodnye-008",
+    "revision": 1,
+    "title": "Связи и запятые · подборка 8",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "digits",
+    "level": "advanced",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "options": [
+      "В корзине лежали яблоки груши и сливы.",
+      "К вечеру ветер стих и волны успокоились.",
+      "Она улыбнулась закрыла книгу и встала.",
+      "Мы шли медленно но уверенно.",
+      "Ребята обсуждали книги и фильмы."
+    ],
+    "answers": ["134"],
+    "optionExplanations": [
+      "1) Запятых: 1. Бессоюзная граница: яблоки, груши и сливы. Перед последним одиночным «и» запятой нет.",
+      "2) Запятых: 0. Общее обстоятельство «к вечеру» относится к обеим частям сложносочинённого предложения: запятая перед «и» не нужна.",
+      "3) Запятых: 1. Однородные сказуемые: улыбнулась, закрыла и встала. Одна запятая.",
+      "4) Запятых: 1. Однородные обстоятельства с противительным «но»: медленно, но уверенно.",
+      "5) Запятых: 0. Одиночное «и» между дополнениями: запятой нет."
+    ],
+    "explanation": "Ровно одна запятая нужна в позициях 1, 3, 4. Другие предложения требуют ноль или две запятые; причины приведены для каждой позиции.",
+    "steps": [
+      "Найдите основы.",
+      "Определите границы однородных рядов или частей.",
+      "Проверьте союзы, устойчивые сочетания и общий член.",
+      "Посчитайте все запятые в каждом предложении."
+    ],
+    "hint": "Повторяющиеся союзы относятся к одному ряду. У общего второстепенного члена проверьте связь с обеими частями.",
+    "instruction": "Запишите номера без разделителей. Порядок не важен; цифры не повторяются.",
+    "formatLabel": "ЕГЭ · одна запятая",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma"
+  }
+]

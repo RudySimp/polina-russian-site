@@ -1,0 +1,702 @@
+[
+  {
+    "id": "ege-ne-prilagatelnye-001",
+    "slug": "ege-ne-prilagatelnye-001",
+    "revision": 1,
+    "title": "Качество при союзе но",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "basic",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Мы выбрали (не)большой, но уютный дом.",
+    "answers": ["1"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Верно: Утверждается качество: небольшой = маленький. «Но» сопоставляет размер и уют, не отрицает размер.",
+      "Раздельное написание не передаёт заданное утверждение. Утверждается качество: небольшой = маленький. «Но» сопоставляет размер и уют, не отрицает размер."
+    ],
+    "explanation": "Утверждается качество: небольшой = маленький. «Но» сопоставляет размер и уют, не отрицает размер.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-002",
+    "slug": "ege-ne-prilagatelnye-002",
+    "revision": 1,
+    "title": "Противопоставление признаков",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "basic",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Дом был (не)большой, а маленький.",
+    "answers": ["2"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Этот выбор не учитывает отрицание. Признак большого размера отрицается и заменяется маленьким. Прямое противопоставление требует раздельного написания.",
+      "Верно: Признак большого размера отрицается и заменяется маленьким. Прямое противопоставление требует раздельного написания."
+    ],
+    "explanation": "Признак большого размера отрицается и заменяется маленьким. Прямое противопоставление требует раздельного написания.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-003",
+    "slug": "ege-ne-prilagatelnye-003",
+    "revision": 1,
+    "title": "Усиленное отрицание",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "basic",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Это был отнюдь (не)лёгкий путь.",
+    "answers": ["2"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Этот выбор не учитывает отрицание. Сочетание «отнюдь не» усиливает отрицание лёгкости. Подбор синонима «трудный» его не отменяет.",
+      "Верно: Сочетание «отнюдь не» усиливает отрицание лёгкости. Подбор синонима «трудный» его не отменяет."
+    ],
+    "explanation": "Сочетание «отнюдь не» усиливает отрицание лёгкости. Подбор синонима «трудный» его не отменяет.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-004",
+    "slug": "ege-ne-prilagatelnye-004",
+    "revision": 1,
+    "title": "Слово без НЕ",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "basic",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "В комнату вошёл (не)ряшливый посетитель.",
+    "answers": ["1"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Верно: Прилагательное «неряшливый» без НЕ не употребляется. Нормативно слитное написание.",
+      "Раздельное написание не передаёт заданное утверждение. Прилагательное «неряшливый» без НЕ не употребляется. Нормативно слитное написание."
+    ],
+    "explanation": "Прилагательное «неряшливый» без НЕ не употребляется. Нормативно слитное написание.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-005",
+    "slug": "ege-ne-prilagatelnye-005",
+    "revision": 1,
+    "title": "Отрицательное наречие",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "basic",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Доклад оказался ничуть (не)интересным.",
+    "answers": ["2"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Этот выбор не учитывает отрицание. Отрицательное наречие «ничуть» усиливает отрицание интересности: ничуть не интересным.",
+      "Верно: Отрицательное наречие «ничуть» усиливает отрицание интересности: ничуть не интересным."
+    ],
+    "explanation": "Отрицательное наречие «ничуть» усиливает отрицание интересности: ничуть не интересным.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-006",
+    "slug": "ege-ne-prilagatelnye-006",
+    "revision": 1,
+    "title": "Степень качества",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "advanced",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Забор был совершенно (не)высоким, то есть очень низким.",
+    "answers": ["1"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Верно: Контекст «то есть очень низким» явно утверждает признак небольшой высоты. «Совершенно» здесь обозначает степень качества.",
+      "Раздельное написание не передаёт заданное утверждение. Контекст «то есть очень низким» явно утверждает признак небольшой высоты. «Совершенно» здесь обозначает степень качества."
+    ],
+    "explanation": "Контекст «то есть очень низким» явно утверждает признак небольшой высоты. «Совершенно» здесь обозначает степень качества.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-007",
+    "slug": "ege-ne-prilagatelnye-007",
+    "revision": 1,
+    "title": "Сравнительная степень",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "advanced",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Этот рассказ (не)лучше прежнего.",
+    "answers": ["2"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Этот выбор не учитывает отрицание. В данном контексте отрицается большая степень качества: не лучше. Возможное иное написание других сравнительных форм не переносится автоматически.",
+      "Верно: В данном контексте отрицается большая степень качества: не лучше. Возможное иное написание других сравнительных форм не переносится автоматически."
+    ],
+    "explanation": "В данном контексте отрицается большая степень качества: не лучше. Возможное иное написание других сравнительных форм не переносится автоматически.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-008",
+    "slug": "ege-ne-prilagatelnye-008",
+    "revision": 1,
+    "title": "Самостоятельный признак",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "advanced",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Мы купили (не)сладкий сок, то есть сок без сахара.",
+    "answers": ["1"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Верно: Утверждается самостоятельный признак: несладкий. Формулировка «все названия вкуса с НЕ всегда раздельно» неверна.",
+      "Раздельное написание не передаёт заданное утверждение. Утверждается самостоятельный признак: несладкий. Формулировка «все названия вкуса с НЕ всегда раздельно» неверна."
+    ],
+    "explanation": "Утверждается самостоятельный признак: несладкий. Формулировка «все названия вкуса с НЕ всегда раздельно» неверна.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-009",
+    "slug": "ege-ne-prilagatelnye-009",
+    "revision": 1,
+    "title": "Противопоставление материала",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "advanced",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Стол был (не)деревянным, а металлическим.",
+    "answers": ["2"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Этот выбор не учитывает отрицание. Отрицается материал и противопоставляется другой: не деревянным, а металлическим.",
+      "Верно: Отрицается материал и противопоставляется другой: не деревянным, а металлическим."
+    ],
+    "explanation": "Отрицается материал и противопоставляется другой: не деревянным, а металлическим.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  },
+  {
+    "id": "ege-ne-prilagatelnye-010",
+    "slug": "ege-ne-prilagatelnye-010",
+    "revision": 1,
+    "title": "Союз а без противопоставления",
+    "topicId": "ne-prilagatelnye",
+    "topicSlug": "ne-prilagatelnye",
+    "topicTitle": "НЕ с прилагательными",
+    "exam": "EGE",
+    "responseKind": "digits_sequence",
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "input": "single",
+    "level": "advanced",
+    "format": "learning",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "prompt": "Определите написание НЕ с прилагательным в данном контексте.",
+    "text": "Мы подошли к (не)высокому, а потому удобному столу.",
+    "answers": ["1"],
+    "options": ["Слитно", "Раздельно"],
+    "optionExplanations": [
+      "Верно: «А потому» выражает следствие из небольшой высоты, а не противопоставляет высокий и низкий. Здесь невысокому пишется слитно.",
+      "Раздельное написание не передаёт заданное утверждение. «А потому» выражает следствие из небольшой высоты, а не противопоставляет высокий и низкий. Здесь невысокому пишется слитно."
+    ],
+    "explanation": "«А потому» выражает следствие из небольшой высоты, а не противопоставляет высокий и низкий. Здесь невысокому пишется слитно.",
+    "steps": [
+      "Определите часть речи и смысл.",
+      "Проверьте отрицание и противопоставление.",
+      "Объясните написание в этом контексте."
+    ],
+    "hint": "Проверьте не только синоним, но и отрицательные слова и смысл союза.",
+    "instruction": "Выберите один вариант. Это учебный интерактив, а не полное экзаменационное задание.",
+    "formatLabel": "ЕГЭ · учебная практика НЕ",
+    "skillId": "EGE:orthography.ne-adjective",
+    "misconceptionId": "synonym-overrides-negation"
+  }
+]

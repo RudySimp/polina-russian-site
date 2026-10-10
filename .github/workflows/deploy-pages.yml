@@ -28,10 +28,14 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
       - uses: actions/upload-artifact@v4
-        if: failure()
+        if: always()
         with:
           name: browser-test-report
-          path: playwright-report/
+          path: |
+            playwright-report/
+            artifacts/preview-*.png
+            artifacts/zoom-*.png
+          retention-days: 10
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v4

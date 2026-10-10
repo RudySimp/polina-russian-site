@@ -1,0 +1,463 @@
+[
+  {
+    "id": "ege-punctuation-1",
+    "slug": "ege-punctuation-1",
+    "exam": "EGE",
+    "title": "Одна запятая — точное решение",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma",
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": [
+      "На полке стояли книги журналы и альбомы.",
+      "Мы открыли окно и впустили свежий воздух.",
+      "И ветер и дождь мешали прогулке.",
+      "В саду росли яблони груши сливы и вишни.",
+      "Дети читали и обсуждали рассказ."
+    ],
+    "answers": ["13"],
+    "explanation": "Одна запятая нужна в предложениях 1 и 3. В первом она разделяет «книги, журналы»; в третьем — однородные подлежащие с повторяющимся союзом «и… и». Одиночный союз «и» между однородными членами не требует запятой.",
+    "steps": [
+      "Найдите грамматическую основу в каждом предложении.",
+      "Выделите слова, которые отвечают на один вопрос и выполняют одну функцию.",
+      "Посчитайте запятые: без союза — запятая; одиночное «и» — без запятой; повторяющееся «и… и» — с запятой.",
+      "Выберите только предложения с одной запятой."
+    ],
+    "optionExplanations": [
+      "На полке стояли книги, журналы и альбомы. Одна запятая.",
+      "Однородные сказуемые «открыли и впустили». Запятых нет.",
+      "И ветер, и дождь мешали прогулке. Одна запятая.",
+      "В саду росли яблони, груши, сливы и вишни. Две запятые.",
+      "Однородные сказуемые с одиночным «и». Запятых нет."
+    ],
+    "formatLabel": "ЕГЭ · пунктуационный анализ",
+    "hint": "Наличие союза «и» ещё ничего не решает. Проверьте, одиночный он или повторяющийся.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  },
+  {
+    "id": "ege-punctuation-2",
+    "slug": "ege-punctuation-2",
+    "exam": "EGE",
+    "title": "Закрепляем правило",
+    "topicId": "odnorodnye",
+    "topicSlug": "odnorodnye",
+    "topicTitle": "Однородные члены",
+    "skillId": "EGE:punctuation.homogeneous",
+    "misconceptionId": "single-conjunction-comma",
+    "prompt": "Расставьте знаки препинания. Укажите номера предложений, в которых нужно поставить ОДНУ запятую.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": [
+      "Мы купили хлеб молоко и сыр.",
+      "Листья кружились и падали на землю.",
+      "И утром и вечером мы гуляли в парке.",
+      "На столе лежали ручки карандаши линейки и тетради.",
+      "Он слушал и записывал объяснение."
+    ],
+    "answers": ["13"],
+    "explanation": "Ответ 13. В первом предложении: «хлеб, молоко и сыр» — одна запятая. В третьем: «И утром, и вечером» — повторяющийся союз, одна запятая. В четвёртом две запятые, в остальных нет.",
+    "steps": [
+      "Найдите однородные члены.",
+      "Определите способ связи.",
+      "Сосчитайте запятые в каждом предложении."
+    ],
+    "optionExplanations": [
+      "Хлеб, молоко и сыр — одна запятая.",
+      "Кружились и падали — запятых нет.",
+      "И утром, и вечером — одна запятая.",
+      "Ручки, карандаши, линейки и тетради — две запятые.",
+      "Слушал и записывал — запятых нет."
+    ],
+    "formatLabel": "ЕГЭ · пунктуационный анализ",
+    "hint": "Начните с ряда однородных членов, затем посчитайте запятые.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  },
+  {
+    "id": "ege-stress-1",
+    "slug": "ege-stress-1",
+    "exam": "EGE",
+    "title": "Слышать ударение",
+    "topicId": "udarenie",
+    "topicSlug": "udarenie",
+    "topicTitle": "Ударение",
+    "skillId": "EGE:orthoepy.stress",
+    "misconceptionId": "stress-by-analogy",
+    "prompt": "Укажите варианты ответов, в которых верно выделена буква, обозначающая ударный гласный звук.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": ["звонИт", "тОрты", "красивЕе", "катАлог", "баловАть"],
+    "answers": ["125"],
+    "explanation": "Верные варианты: звонИт, тОрты, баловАть. В остальных словах нормативное ударение: красИвее, каталОг.",
+    "steps": [
+      "Прочитайте каждое слово.",
+      "Вспомните норму для конкретной формы слова.",
+      "Не переносите ударение по внешней аналогии.",
+      "Выпишите номера только верно выделенных форм."
+    ],
+    "optionExplanations": [
+      "звонИт — верно.",
+      "тОрты — верно.",
+      "Нужно красИвее.",
+      "Нужно каталОг.",
+      "баловАть — верно."
+    ],
+    "formatLabel": "ЕГЭ · орфоэпические нормы",
+    "hint": "Сравните «красИвый — красИвее». Ударение в этой паре сохраняется.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  },
+  {
+    "id": "ege-stress-2",
+    "slug": "ege-stress-2",
+    "exam": "EGE",
+    "title": "Новая попытка: ударение",
+    "topicId": "udarenie",
+    "topicSlug": "udarenie",
+    "topicTitle": "Ударение",
+    "skillId": "EGE:orthoepy.stress",
+    "misconceptionId": "stress-by-analogy",
+    "prompt": "Укажите варианты ответов, в которых верно выделена буква, обозначающая ударный гласный звук.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": ["красИвее", "звонИшь", "катАлог", "тОртами", "бАловать"],
+    "answers": ["124"],
+    "explanation": "Ответ 124: красИвее, звонИшь, тОртами. Правильные формы в других вариантах: каталОг, баловАть.",
+    "steps": [
+      "Проверьте каждую форму отдельно.",
+      "Сопоставьте с нормативным ударением.",
+      "Выберите верные номера."
+    ],
+    "optionExplanations": [
+      "красИвее — верно.",
+      "звонИшь — верно.",
+      "Нужно каталОг.",
+      "тОртами — верно.",
+      "Нужно баловАть."
+    ],
+    "formatLabel": "ЕГЭ · орфоэпические нормы",
+    "hint": "В формах «тОрты — тОртами» ударение остаётся на первом слоге.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/ege/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  },
+  {
+    "id": "oge-syntax-1",
+    "slug": "oge-syntax-1",
+    "exam": "OGE",
+    "title": "Найти грамматическую основу",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "object-as-subject",
+    "prompt": "Прочитайте текст. Укажите варианты ответов, в которых верно определена грамматическая основа в одном из предложений или в одной из частей сложного предложения.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": [
+      "птицы запели (предложение 1)",
+      "солнце поднялось (предложение 2)",
+      "лучи осветили (предложение 3)",
+      "мы слушали тишину (предложение 4)",
+      "день начинался (предложение 5)"
+    ],
+    "answers": ["1235"],
+    "explanation": "Верны 1, 2, 3 и 5. В четвёртом предложении основа — «мы слушали». Слово «тишину» — дополнение: слушали что? Оно не входит в грамматическую основу.",
+    "steps": [
+      "Задайте вопрос к действующему лицу или предмету.",
+      "Найдите сказуемое — что говорится о подлежащем?",
+      "Отделите зависимые слова от главных членов.",
+      "Проверьте каждый предложенный вариант."
+    ],
+    "optionExplanations": [
+      "«Птицы запели» — подлежащее и сказуемое.",
+      "«Солнце поднялось» — полная основа.",
+      "«Лучи осветили» — полная основа; «поляну» — дополнение.",
+      "«Тишину» не включаем в основу: это дополнение.",
+      "«День начинался» — подлежащее и сказуемое."
+    ],
+    "formatLabel": "ОГЭ · синтаксический анализ",
+    "hint": "Грамматическая основа состоит из главных членов. Вопрос «что?» сам по себе не делает слово подлежащим.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "text": "(1) Птицы запели на рассвете. (2) Солнце поднялось над лесом. (3) Его лучи осветили поляну. (4) Мы слушали тишину. (5) Новый день начинался.",
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  },
+  {
+    "id": "oge-syntax-2",
+    "slug": "oge-syntax-2",
+    "exam": "OGE",
+    "title": "Отделить главные члены",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "object-as-subject",
+    "prompt": "Прочитайте текст. Укажите варианты ответов, в которых верно определена грамматическая основа в одном из предложений или в одной из частей сложного предложения.",
+    "instruction": "Запишите номера без пробелов и разделителей. Порядок цифр не важен.",
+    "options": [
+      "ветер стих (предложение 1)",
+      "облака закрыли небо (предложение 2)",
+      "капли падали (предложение 3)",
+      "дождь закончился (предложение 4)",
+      "мы открыли (предложение 5)"
+    ],
+    "answers": ["1345"],
+    "explanation": "Ответ 1345. Во втором предложении основа — «облака закрыли», а «небо» — дополнение (закрыли что?). В остальных вариантах правильно указаны подлежащее и сказуемое.",
+    "steps": [
+      "Найдите подлежащее.",
+      "Найдите сказуемое.",
+      "Уберите дополнения и обстоятельства из основы."
+    ],
+    "optionExplanations": [
+      "«Ветер стих» — верно.",
+      "«Небо» — дополнение; основа «облака закрыли».",
+      "«Капли падали» — верно.",
+      "«Дождь закончился» — верно.",
+      "«Мы открыли» — верно."
+    ],
+    "formatLabel": "ОГЭ · синтаксический анализ",
+    "hint": "Сначала установите, кто выполняет действие, затем исключите объект действия.",
+    "revision": 1,
+    "maxScore": 1,
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Оригинальные демонстрационные упражнения проекта",
+      "sourceUrl": "",
+      "author": "Демонстрационная редакция проекта; не авторство Полины",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные условия и объяснения для проекта.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2026,
+      "editorialStatus": "needs_review"
+    },
+    "responseKind": "digits_sequence",
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "text": "(1) Ветер стих к вечеру. (2) Облака закрыли небо. (3) Капли падали на листья. (4) Дождь закончился. (5) Мы открыли окно.",
+    "input": "digits",
+    "level": "standard",
+    "format": "exam-model",
+    "examModel": {
+      "year": 2026,
+      "status": "approved",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальное учебное упражнение проекта.",
+      "reviewNote": "Ответ и объяснение проверены при подготовке демонстрационной редакции. Утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo"
+  }
+]
