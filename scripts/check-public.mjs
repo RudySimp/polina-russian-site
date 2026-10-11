@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
 import { chromium } from "@playwright/test";
+import { createHash } from "node:crypto";
 const base =
   process.env.PUBLIC_URL || "https://rudysimp.github.io/polina-russian-site/";
 const routes = JSON.parse(
@@ -9,6 +10,9 @@ const routes = JSON.parse(
 const assets = readdirSync("apps/showcase/dist/assets")
   .map((file) => `assets/${file}`)
   .concat(["favicon.svg", "routes.json"]);
+assets.push(
+  ...readdirSync("apps/showcase/dist/audio").map((file) => `audio/${file}`),
+);
 const localHtml = readFileSync("apps/showcase/dist/index.html", "utf8");
 // Проверяем именно текущий билд, включая имена файлов с хешами.
 await Promise.all(
@@ -23,6 +27,21 @@ await Promise.all(
         localHtml,
         `${path}: опубликована другая сборка`,
       );
+    else if (path.startsWith("audio/")) {
+      const bytes = Buffer.from(await response.arrayBuffer());
+      assert.equal(
+        bytes.toString("ascii", 0, 4),
+        "RIFF",
+        `${path}: не аудиозапись WAV`,
+      );
+      const digest = (value) =>
+        createHash("sha256").update(value).digest("hex");
+      assert.equal(
+        digest(bytes),
+        digest(readFileSync(`apps/showcase/dist/${path}`)),
+        `${path}: другая версия аудио`,
+      );
+    } else await response.body?.cancel();
   }),
 );
 const browser = await chromium.launch({
@@ -72,6 +91,7 @@ writeFileSync(
       routes: routes.length,
       assets: assets.length,
       currentBuildMatches: true,
+      verifiedAudioFiles: 5,
       status: "passed",
     },
     null,

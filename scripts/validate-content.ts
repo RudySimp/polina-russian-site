@@ -1,7 +1,7 @@
 import { lessons } from "../apps/showcase/src/content/library";
 import { pathToFileURL } from "node:url";
 import { z } from "zod";
-import { gradeAnswer, policySchema } from "../src/lib/grading";
+import { policySchema } from "../src/lib/grading";
 import {
   exercises,
   topics,
@@ -11,6 +11,32 @@ import {
   type Lesson,
 } from "../apps/showcase/src/content/registry";
 import { routes } from "../apps/showcase/src/routes";
+import { existsSync, readFileSync } from "node:fs";
+import materialData from "../apps/showcase/src/oge/materials.json" with { type: "json" };
+import activityData from "../apps/showcase/src/oge/activities.json" with { type: "json" };
+import {
+  specification,
+  taskLines,
+  testLines,
+  lineFor,
+} from "../apps/showcase/src/oge/specification";
+import {
+  gradeExercise,
+  validateVariant,
+} from "../apps/showcase/src/oge/engine";
+import type {
+  AudioMaterial,
+  SourceText,
+  WritingAssignment,
+  ExamVariant,
+  InteractiveActivity,
+} from "../apps/showcase/src/oge/model";
+const materials = materialData as {
+  texts: SourceText[];
+  audio: AudioMaterial[];
+  writing: WritingAssignment[];
+  variants: ExamVariant[];
+};
 
 const text = z.string().trim().min(1);
 const numbers = z.array(z.number().int().positive()).min(1);
@@ -115,7 +141,12 @@ export function validateContent(
         `${topic.id}: нужен один непустой урок`,
       );
       ensure(
-        bank.filter((exercise) => exercise.topicId === topic.id).length >= 10,
+        ["izlozhenie", "sochinenie"].includes(topic.id)
+          ? materials.writing.filter(
+              (w) => w.line === (topic.id === "izlozhenie" ? 1 : 13),
+            ).length >= 5
+          : bank.filter((exercise) => exercise.topicId === topic.id).length >=
+              10,
         `${topic.id}: менее 10 заданий`,
       );
     }
@@ -236,7 +267,7 @@ export function validateContent(
     ensure(
       exercise.answers.length &&
         exercise.answers.every(
-          (answer) => gradeAnswer(answer, exercise).status === "correct",
+          (answer) => gradeExercise(answer, exercise).status === "correct",
         ),
       `${exercise.id}: ключ не проходит политику`,
     );
@@ -276,11 +307,136 @@ export function validateContent(
     if (exercise.taskLine)
       ensure(
         exercise.exam === "OGE" &&
-          [2, 3, 5, 8, 9].includes(exercise.taskLine) &&
+          testLines.some((line) => line.number === exercise.taskLine) &&
           exercise.examModel.status === "project" &&
           exercise.examModel.year === 2027,
         `${exercise.id}: неподтверждённая экзаменационная линия`,
       );
+    if (exercise.taskLine) {
+      const line = lineFor(exercise.taskLine)!;
+      ensure(
+        line.response === exercise.responseKind &&
+          line.input === exercise.input &&
+          line.orderMatters === exercise.policy.orderMatters,
+        `${exercise.id}: формат линии`,
+      );
+      ensure(
+        exercise.reviewStages?.some((s) => s.stage === "answer-checked") &&
+          exercise.reviewStages?.some((s) => s.stage === "explanation-checked"),
+        `${exercise.id}: этапы предметной проверки`,
+      );
+    }
+    if (exercise.sourceTextId)
+      ensure(
+        materials.texts.some((t) => t.id === exercise.sourceTextId),
+        `${exercise.id}: нет общего текста`,
+      );
+  }
+  unique(
+    materials.texts.map((t) => t.id),
+    "Исходные тексты",
+  );
+  unique(
+    materials.audio.map((a) => a.id),
+    "Аудио",
+  );
+  unique(
+    materials.writing.map((w) => w.id),
+    "Письменные работы",
+  );
+  unique(
+    materials.variants.map((v) => v.id),
+    "Варианты",
+  );
+  for (const line of testLines)
+    ensure(
+      bank.filter((e) => e.exam === "OGE" && e.taskLine === line.number)
+        .length >= 20,
+      `Линия ${line.number}: менее 20 проверенных заданий`,
+    );
+  ensure(
+    taskLines.length === 13 && specification.durationMinutes === 235,
+    "Экзаменационная модель",
+  );
+  for (const sourceText of materials.texts)
+    ensure(
+      sourceText.paragraphs.length &&
+        sourceText.paragraphs.every((p) => p.trim()) &&
+        sourceText.rightsBasis,
+      `${sourceText.id}: текст или права`,
+    );
+  for (const audio of materials.audio) {
+    ensure(
+      materials.texts.some((t) => t.id === audio.textId),
+      `${audio.id}: текст аудио`,
+    );
+    const path = `apps/showcase/public${audio.path}`;
+    ensure(existsSync(path), `${audio.id}: аудиофайл отсутствует`);
+    const bytes = readFileSync(path);
+    ensure(
+      bytes.toString("ascii", 0, 4) === "RIFF" &&
+        bytes.toString("ascii", 8, 12) === "WAVE" &&
+        bytes.length > 1000000,
+      `${audio.id}: некорректная запись`,
+    );
+    ensure(
+      audio.durationSeconds >= 180 &&
+        audio.durationSeconds <= 240 &&
+        audio.kind === "original-synthesized" &&
+        audio.attribution,
+      `${audio.id}: параметры озвучки`,
+    );
+  }
+  for (const writing of materials.writing)
+    ensure(
+      materials.texts.some((t) => t.id === writing.sourceTextId) &&
+        writing.prompts.length === (writing.line === 13 ? 3 : 1) &&
+        writing.checklist.length >= 3 &&
+        writing.analysis,
+      `${writing.id}: неполная письменная работа`,
+    );
+  ensure(
+    materials.variants.length >= 5,
+    "Недостаточно фиксированных полных вариантов",
+  );
+  for (const variant of materials.variants)
+    validateVariant(variant, { ...materials, exercises: bank });
+  const activities = activityData as InteractiveActivity[];
+  unique(
+    activities.map((a) => a.id),
+    "Тренажёры",
+  );
+  ensure(activities.length >= 5, "Недостаточно разных механик");
+  for (const activity of activities) {
+    ensure(
+      activity.situations.length >= 5 &&
+        topics.some((t) => t.id === activity.topicId),
+      `${activity.id}: ситуации или теория`,
+    );
+    unique(
+      activity.situations.map((s) => s.id),
+      `${activity.id}: ситуации`,
+    );
+    for (const situation of activity.situations) {
+      ensure(
+        situation.instruction &&
+          situation.text &&
+          situation.explanation &&
+          situation.details.length &&
+          situation.fields.some((f) => f.expected.length),
+        `${situation.id}: неполная ситуация`,
+      );
+      unique(
+        situation.fields.map((f) => f.id),
+        `${situation.id}: поля`,
+      );
+      for (const field of situation.fields)
+        if (field.options)
+          ensure(
+            field.expected.every((a) => field.options!.includes(a)),
+            `${situation.id}: ответ вне выбора`,
+          );
+    }
   }
   return {
     lessons: library.length,
@@ -290,6 +446,10 @@ export function validateContent(
       (exercise) => exercise.provenance.method === "local-original-import",
     ).length,
     routes: routes.length,
+    oge: bank.filter((e) => e.exam === "OGE").length,
+    fixedVariants: materials.variants.length,
+    games: activities.length,
+    situations: activities.reduce((n, a) => n + a.situations.length, 0),
   };
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href)

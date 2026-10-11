@@ -16,10 +16,10 @@ import {
 describe("Целостность библиотеки и поиск", () => {
   it("проверяет весь опубликованный банк вместе с уроками", () => {
     expect(validateContent()).toMatchObject({
-      lessons: 8,
-      topics: 8,
-      exercises: 80,
-      imported: 48,
+      lessons: 16,
+      topics: 16,
+      exercises: 252,
+      imported: 148,
     });
   });
   it("не допускает повторяющиеся маршруты заданий и неверный экзамен навыка", () => {
@@ -99,9 +99,12 @@ describe("Повторение по банку и независимые рез�
       ...createAttempt(first, "2", false),
       skillId: "punctuation.homogeneous",
     };
-    const attempts = readAttempts({
-      getItem: () => JSON.stringify([old, createAttempt(first, "13", true)]),
-    });
+    const attempts = readAttempts(
+      {
+        getItem: () => JSON.stringify([old, createAttempt(first, "13", true)]),
+      },
+      exercises,
+    );
     expect(attempts[0].skillId).toBe(first.skillId);
     expect(localMetrics(attempts)[0]).toMatchObject({
       total: 2,
@@ -115,6 +118,8 @@ describe("Повторение по банку и независимые рез�
       { ...attempt, revision: 999 },
       { ...attempt, results: [{ ...attempt.results[0], answer: "1,3" }] },
     ];
-    expect(readAttempts({ getItem: () => JSON.stringify(raw) })).toEqual([]);
+    expect(
+      readAttempts({ getItem: () => JSON.stringify(raw) }, exercises),
+    ).toEqual([]);
   });
 });

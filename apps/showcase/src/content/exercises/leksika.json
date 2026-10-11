@@ -1,0 +1,1765 @@
+[
+  {
+    "id": "oge-leksika-reading-bench",
+    "slug": "oge-leksika-reading-bench",
+    "revision": 1,
+    "title": "Скамейка у подъезда: значение в контексте",
+    "prompt": "Из предложений 15–18 выпишите слово со значением «испытывающий благодарность».",
+    "sourceTextId": "reading-bench",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "признательный"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "В предложении 17 слово «признательный» характеризует благодарность Ильи за прежнюю заботу. «Внимательными» обозначает другое качество.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-draft",
+    "slug": "oge-leksika-reading-draft",
+    "revision": 1,
+    "title": "Чужой черновик: значение в контексте",
+    "prompt": "Из предложений 4–6 выпишите фразеологизм со значением «тягостное чувство, тревога».",
+    "sourceTextId": "reading-draft",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "камень на душе",
+      "каменьнадуше"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Камень на душе» — устойчивое выражение со значением тягостного чувства. В предложении 5 оно передаёт переживание Даши из-за нечестного поступка.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Фразеологизм"
+  },
+  {
+    "id": "oge-leksika-reading-boat",
+    "slug": "oge-leksika-reading-boat",
+    "revision": 1,
+    "title": "Лодка после дождя: значение в контексте",
+    "prompt": "Из предложений 16–18 выпишите слово со значением «способность заранее учитывать возможные последствия».",
+    "sourceTextId": "reading-boat",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "предусмотрительности"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Сосед удивился «предусмотрительности» Саши (17), то есть его готовности заранее защитить дрова от грозы. Нужно выписать форму из текста.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-letter",
+    "slug": "oge-leksika-reading-letter",
+    "revision": 1,
+    "title": "Письмо из коробки: значение в контексте",
+    "prompt": "Из предложений 1–3 выпишите слово, которое можно заменить синонимом «изношенную».",
+    "sourceTextId": "reading-letter",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "потрёпанную"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Слово «потрёпанную» в предложении 2 описывает изношенную коробку. Принимается также запись «потрепанную»; окончание сохраняется.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-rehearsal",
+    "slug": "oge-leksika-reading-rehearsal",
+    "revision": 1,
+    "title": "Последняя репетиция: значение в контексте",
+    "prompt": "Из предложения 18 выпишите существительное со значением «помощь, ободрение».",
+    "sourceTextId": "reading-rehearsal",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "поддержка"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "В предложении 18 существительное «поддержка» называет помощь, которая позволила Артёму продолжить работу. Глагол «поддерживали» не является требуемым существительным.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-map",
+    "slug": "oge-leksika-reading-map",
+    "revision": 1,
+    "title": "Карта ручья: значение в контексте",
+    "prompt": "Из предложения 10 выпишите слово со значением «предположение, которое ещё нужно проверить».",
+    "sourceTextId": "reading-map",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "догадку"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "В предложении 10 «догадку» — предположение, которое ещё необходимо проверить; нужно сохранить форму винительного падежа.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-seed",
+    "slug": "oge-leksika-reading-seed",
+    "revision": 1,
+    "title": "Невзошедшие семена: значение в контексте",
+    "prompt": "Из предложения 10 выпишите антоним слова «деятельность».",
+    "sourceTextId": "reading-seed",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "бездействия"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Существительное «бездействия» обозначает отсутствие деятельности; выписывается форма из предложения.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Антоним"
+  },
+  {
+    "id": "oge-leksika-reading-bell",
+    "slug": "oge-leksika-reading-bell",
+    "revision": 1,
+    "title": "Звонок для соседа: значение в контексте",
+    "prompt": "Из предложений 7–9 выпишите слово, которое можно заменить синонимом «предположением».",
+    "sourceTextId": "reading-bell",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "догадкой"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "В предложении 9 «догадкой» означает неподтверждённое предположение Оли о причине трудности соседа.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-race",
+    "slug": "oge-leksika-reading-race",
+    "revision": 1,
+    "title": "После финиша: значение в контексте",
+    "prompt": "Из предложения 5 выпишите фразеологизм со значением «крайне уставший человек».",
+    "sourceTextId": "reading-race",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "выжатым лимоном",
+      "выжатымлимоном"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Фразеологизм «выжатым лимоном» обозначает сильную усталость; выписывается форма творительного падежа из текста.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Фразеологизм"
+  },
+  {
+    "id": "oge-leksika-reading-snow",
+    "slug": "oge-leksika-reading-snow",
+    "revision": 1,
+    "title": "Первый снег: значение в контексте",
+    "prompt": "Из предложения 9 выпишите антоним слова «медленнее».",
+    "sourceTextId": "reading-snow",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "быстрее"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Сравнительная степень «быстрее» обозначает большую скорость и противоположна «медленнее».",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Антоним"
+  },
+  {
+    "id": "oge-leksika-reading-tool",
+    "slug": "oge-leksika-reading-tool",
+    "revision": 1,
+    "title": "Вернуть инструмент: значение в контексте",
+    "prompt": "Из предложения 8 выпишите слово, обозначающее уверенность в честности человека.",
+    "sourceTextId": "reading-tool",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "доверие"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Доверие» в предложении 8 обозначает уверенность в честности Никиты. Выписывается именно форма из указанного предложения.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-library",
+    "slug": "oge-leksika-reading-library",
+    "revision": 1,
+    "title": "Тихий читатель: значение в контексте",
+    "prompt": "Из предложения 4 выпишите слово, которое можно заменить синонимом «торопливое».",
+    "sourceTextId": "reading-library",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "поспешное"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Поспешное» суждение вынесено слишком быстро, без понимания причин; это контекстный синоним «торопливое».",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-bread",
+    "slug": "oge-leksika-reading-bread",
+    "revision": 1,
+    "title": "Последний кусок: значение в контексте",
+    "prompt": "Из предложения 5 выпишите фразеологизм со значением «неловко, неуютно».",
+    "sourceTextId": "reading-bread",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "не в своей тарелке",
+      "невсвоейтарелке"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Это устойчивое сочетание обозначает внутреннюю неловкость подруги; все слова выражения обязательны.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Фразеологизм"
+  },
+  {
+    "id": "oge-leksika-reading-repair",
+    "slug": "oge-leksika-reading-repair",
+    "revision": 1,
+    "title": "Сломанный глобус: значение в контексте",
+    "prompt": "Из предложения 2 выпишите антоним слова «открыта».",
+    "sourceTextId": "reading-repair",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "закрыта"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Краткое причастие «закрыта» обозначает противоположное состояние мастерской.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Антоним"
+  },
+  {
+    "id": "oge-leksika-reading-train",
+    "slug": "oge-leksika-reading-train",
+    "revision": 1,
+    "title": "Окно вагона: значение в контексте",
+    "prompt": "Из предложения 9 выпишите слово со значением «торопился».",
+    "sourceTextId": "reading-train",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "спешил"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Глагол «спешил» — синоним «торопился»; отрицание относится к действию, но условие просит само слово.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-team",
+    "slug": "oge-leksika-reading-team",
+    "revision": 1,
+    "title": "Пять минут до старта: значение в контексте",
+    "prompt": "Из предложения 4 выпишите антоним слова «плотно».",
+    "sourceTextId": "reading-team",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "неплотно"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Наречие «неплотно» обозначает неполное, недостаточно тесное соединение и противопоставлено «плотно».",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Антоним"
+  },
+  {
+    "id": "oge-leksika-reading-photo",
+    "slug": "oge-leksika-reading-photo",
+    "revision": 1,
+    "title": "Нерезкий снимок: значение в контексте",
+    "prompt": "Из предложения 10 выпишите слово со значением «полное отсутствие недостатков».",
+    "sourceTextId": "reading-photo",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "безупречность"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Безупречность» означает отсутствие изъянов; в данном случае речь о техническом качестве снимка.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-garden",
+    "slug": "oge-leksika-reading-garden",
+    "revision": 1,
+    "title": "Чужая клумба: значение в контексте",
+    "prompt": "Из предложения 7 выпишите слово со значением «сохранившиеся, не погибшие».",
+    "sourceTextId": "reading-garden",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "уцелевшие"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Причастие «уцелевшие» обозначает растения, сохранившиеся после повреждения клумбы.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-chess",
+    "slug": "oge-leksika-reading-chess",
+    "revision": 1,
+    "title": "Проигранная партия: значение в контексте",
+    "prompt": "Из предложения 3 выпишите слово, которое можно заменить синонимом «торопливые».",
+    "sourceTextId": "reading-chess",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "поспешные"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Поспешные» ходы сделаны без достаточного обдумывания; это синоним «торопливые» в данном контексте.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  },
+  {
+    "id": "oge-leksika-reading-song",
+    "slug": "oge-leksika-reading-song",
+    "revision": 1,
+    "title": "Знакомая песня: значение в контексте",
+    "prompt": "Из предложения 9 выпишите слово со значением «с готовностью, с желанием».",
+    "sourceTextId": "reading-song",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "охотно"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Наречие «охотно» характеризует готовность деда спеть вместе.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Значение и синоним"
+  }
+]

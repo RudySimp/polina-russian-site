@@ -1,7 +1,28 @@
-import { exercises, publishedTopics } from "./content/registry.ts";
+import {
+  exerciseIndex as exercises,
+  publishedTopics,
+} from "./content/catalog.ts";
 export const routes = [
   "/",
   "/oge/",
+  "/oge/theory/",
+  "/oge/bank/",
+  "/oge/variants/",
+  "/oge/generator/",
+  "/oge/games/",
+  "/oge/practice/session/",
+  "/oge/results/",
+  ...Array.from({ length: 13 }, (_, n) => `/oge/bank/${n + 1}/`),
+  ...Array.from({ length: 5 }, (_, n) => `/oge/variants/${n + 1}/`),
+  ...[
+    "foundation",
+    "punctuation",
+    "correction",
+    "phrase",
+    "matching",
+    "spelling",
+    "compression",
+  ].map((id) => `/oge/games/${id}/`),
   "/ege/",
   "/theory/",
   "/practice/",

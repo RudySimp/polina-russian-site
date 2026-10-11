@@ -92,6 +92,9 @@ export type Lesson = {
   relatedTopicIds: string[];
 };
 export type Exercise = Snapshot & {
+  sourceTextId?: string;
+  reviewStages?: { stage: import('../oge/model').ReviewStage; at: string; by: string }[];
+  subtopic?: string;
   slug: string;
   skillId: string;
   misconceptionId: string;

@@ -35,4 +35,83 @@ const library =
   `\nexport const lessonData = [${lessonFiles.map((_, n) => `l${n}`).join(", ")}];\n`;
 await fs.writeFile(path.join(root, "generated.ts"), runtime);
 await fs.writeFile(path.join(root, "generated-library.ts"), library);
+const index = [];
+const collections = [];
+for (const filename of exerciseFiles) {
+  const items = JSON.parse(
+    await fs.readFile(path.join(root, "exercises", filename), "utf8"),
+  );
+  for (const item of items)
+    index.push(
+      Object.fromEntries(
+        [
+          "id",
+          "slug",
+          "revision",
+          "title",
+          "topicTitle",
+          "topicId",
+          "exam",
+          "skillId",
+          "taskLine",
+          "format",
+          "level",
+          "sourceTextId",
+        ]
+          .filter((key) => item[key] !== undefined)
+          .map((key) => [key, item[key]]),
+      ),
+    );
+  collections.push({
+    filename,
+    ids: items.map((item) => item.id),
+    lines: [
+      ...new Set(
+        items
+          .filter((item) => item.exam === "OGE")
+          .map((item) => item.taskLine)
+          .filter(Boolean),
+      ),
+    ],
+  });
+}
+await fs.writeFile(
+  path.join(root, "exercise-index.json"),
+  JSON.stringify(index) + "\n",
+);
+await fs.writeFile(
+  path.join(root, "exercise-loaders.ts"),
+  header +
+    "import type { Exercise } from './model.ts';\n" +
+    `export const collections = [\n${collections.map((c) => ` { ids: ${JSON.stringify(c.ids)}, lines: ${JSON.stringify(c.lines)}, load: () => import('./exercises/${c.filename}', { with: { type: 'json' } }).then(m => m.default as Exercise[]) }`).join(",\n")}\n];\n`,
+);
+const ogeRoot = path.resolve(root, "../oge");
+const materials = JSON.parse(
+  await fs.readFile(path.join(ogeRoot, "materials.json"), "utf8"),
+);
+const activities = JSON.parse(
+  await fs.readFile(path.join(ogeRoot, "activities.json"), "utf8"),
+);
+await fs.writeFile(
+  path.join(ogeRoot, "catalog.json"),
+  JSON.stringify({
+    writing: materials.writing.map(({ id, line, title }) => ({
+      id,
+      line,
+      title,
+    })),
+    variants: materials.variants.map(({ id, number, title, kind }) => ({
+      id,
+      number,
+      title,
+      kind,
+    })),
+    activities: activities.map(({ id, title, description, situations }) => ({
+      id,
+      title,
+      description,
+      situationCount: situations.length,
+    })),
+  }) + "\n",
+);
 console.log("Индекс уроков и упражнений обновлён.");

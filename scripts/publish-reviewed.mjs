@@ -19,6 +19,7 @@ const manifest = JSON.parse(
   await fs.readFile(path.join(root, "content/review-manifest.json"), "utf8"),
 );
 const output = path.join(root, "apps/showcase/src/content/exercises");
+const specification = JSON.parse(await fs.readFile(path.join(root, 'apps/showcase/src/oge/specification.json'), 'utf8'));
 await fs.mkdir(output, { recursive: true });
 const groups = new Map();
 for (const approval of manifest.approved) {
@@ -67,18 +68,22 @@ for (const approval of manifest.approved) {
     prompt = question[0];
     text = question.length > 1 ? question[1] : undefined;
   }
-  const options = candidate.options.map((option) =>
+  const options = question.filter(line => /^\d\)/u.test(line)).map((option) =>
     option.replace(/^\d\)\s*/u, ""),
   );
-  const detail = explanation.filter(
+  const detail = (approval.explanation ?? explanation).filter(
     (line) => !/^Ответ:|^Полный текст:/u.test(line),
   );
-  const kind = candidate.taskLine >= 8 ? "short_text" : "digits_sequence";
+  const line = specification.lines.find(line => line.number === candidate.taskLine);
+  assert(line && line.response !== 'extended', `${candidate.id}: нет проверенной политики линии`);
+  const kind = line.response;
+  if (candidate.taskLine === 4) { prompt = question[0]; text = undefined; }
+  if (candidate.taskLine === 6) { prompt = question[0]; text = undefined; }
   const id = `oge-${approval.topicId}-${String(candidate.sourceNumber).padStart(3, "0")}`;
   const item = {
     id,
     slug: id,
-    revision: 1,
+    revision: approval.revision ?? 1,
     title: approval.title,
     prompt,
     text,
@@ -94,11 +99,11 @@ for (const approval of manifest.approved) {
       trim: true,
       caseSensitive: false,
       collapseSpaces: kind === "short_text",
-      allowYoAsE: false,
-      orderMatters: candidate.taskLine >= 8,
+      allowYoAsE: [8, 9, 12].includes(candidate.taskLine),
+      orderMatters: line.orderMatters,
       allowDigitSeparators: false,
-      minLength: 1,
-      maxLength: kind === "short_text" ? 70 : 9,
+      minLength: line.minLength,
+      maxLength: line.maxLength,
     },
     source: {
       sourceType: "original_demo",
@@ -116,16 +121,17 @@ for (const approval of manifest.approved) {
     instruction:
       kind === "short_text"
         ? candidate.taskLine === 8
-          ? "Запишите одно слово. Буквы Ё и Е различаются."
-          : "Запишите всё словосочетание. Допустимые варианты порядка слов учтены. Буквы Ё и Е различаются."
-        : "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+          ? "Запишите одно слово. Ё можно заменить на Е."
+          : "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е."
+        : line.orderMatters ? 'Установите соответствие в порядке А, Б, В. Порядок цифр важен.' : "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
     options,
-    optionExplanations: options.length ? detail : [],
+    optionExplanations: options.length ? (approval.optionExplanations ?? detail) : [],
+    ...(candidate.taskLine === 4 ? { rules: question.filter(line => /^[АБВ]\)/u.test(line)) } : {}),
     steps: approval.steps,
     hint: approval.hint,
     explanation: detail.join("\n\n"),
     formatLabel: `ОГЭ · ${approval.topicTitle}`,
-    input: kind === "short_text" ? "text" : "digits",
+    input: line.input,
     level: approval.level,
     taskLine: candidate.taskLine,
     format: "exam-model",
@@ -147,7 +153,11 @@ for (const approval of manifest.approved) {
       teacherApproval: "pending",
     },
     reviewStatus: "checked-demo",
+    reviewStages: ['extracted', 'answer-checked', 'explanation-checked', 'publication-approved'].map(stage => ({stage, at: approval.reviewedAt, by: 'Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается'})),
+    subtopic: approval.subtopic ?? approval.title,
   };
+  if (approval.prompt) item.prompt = approval.prompt;
+  if (approval.text) item.text = approval.text;
   const list = groups.get(approval.topicId) ?? [];
   list.push(item);
   groups.set(approval.topicId, list);

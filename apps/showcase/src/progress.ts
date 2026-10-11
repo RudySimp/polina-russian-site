@@ -1,5 +1,11 @@
 import { gradeSubmission, type Result } from "../../../src/lib/grading";
-import { exercises, type Exercise } from "./content";
+import type { Exercise } from "./content/model";
+import { gradeExercise } from "./oge/engine";
+function graded(exercise: Exercise, answer: string) {
+  return gradeSubmission([exercise], { [exercise.id]: answer }).map(
+    (result) => ({ ...result, ...gradeExercise(answer, exercise) }),
+  );
+}
 export type LocalAttempt = {
   id: string;
   createdAt: string;
@@ -13,6 +19,7 @@ export type LocalAttempt = {
 export const storageKey = "polina-showcase-attempts-v1";
 export function readAttempts(
   storage: Pick<Storage, "getItem">,
+  exercises: Exercise[],
 ): LocalAttempt[] {
   try {
     const value: unknown = JSON.parse(storage.getItem(storageKey) ?? "[]");
@@ -51,9 +58,7 @@ export function readAttempts(
       .slice(-1000)
       .map((a) => {
         const exercise = exercises.find((e) => e.id === a.exerciseId)!;
-        const results = gradeSubmission([exercise], {
-          [exercise.id]: a.results[0].answer,
-        });
+        const results = graded(exercise, a.results[0].answer);
         return {
           ...a,
           skillId: exercise.skillId,
@@ -72,7 +77,7 @@ export function createAttempt(
   answer: string,
   repeat: boolean,
 ): LocalAttempt {
-  const results = gradeSubmission([exercise], { [exercise.id]: answer });
+  const results = graded(exercise, answer);
   return {
     id: crypto.randomUUID(),
     createdAt: new Date().toISOString(),
@@ -85,9 +90,7 @@ export function createAttempt(
     results,
   };
 }
-export function localMetrics(
-  attempts: LocalAttempt[],
-): {
+export function localMetrics(attempts: LocalAttempt[]): {
   skillId: string;
   title: string;
   slug: string;

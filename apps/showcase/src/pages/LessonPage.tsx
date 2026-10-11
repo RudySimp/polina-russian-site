@@ -14,6 +14,7 @@ import {
 } from "../components/ui";
 import { LessonBlocks } from "../components/LessonBlocks";
 import { href } from "../routes";
+import { taskLines } from "../oge/specification";
 import { examName } from "../lib/search";
 import { NotFoundPage } from "./InfoPages";
 
@@ -30,7 +31,8 @@ export function LessonPage({ slug }: { slug: string }) {
     : "";
   const requestedReturn = params.get("from") ?? "";
   const returnTo =
-    /^\/theory\/(?:\?|$)/.test(requestedReturn) && requestedReturn.length < 1000
+    /^\/(?:theory|oge\/theory)\/(?:\?|$)/.test(requestedReturn) &&
+    requestedReturn.length < 1000
       ? requestedReturn
       : `/theory/${exam ? `?exam=${exam}` : ""}`;
   const practice = exercisesFor(topic.id, exam);
@@ -63,7 +65,9 @@ export function LessonPage({ slug }: { slug: string }) {
       <div className="lesson-meta">
         <Badge>Демонстрационный урок</Badge>
         <span>
-          {practice.length} заданий{exam ? ` · ${examName(exam)}` : ""}
+          {["izlozhenie", "sochinenie"].includes(topic.id)
+            ? "Письменная практика"
+            : `${practice.length} заданий${exam ? ` · ${examName(exam)}` : ""}`}
         </span>
         <a href={href(returnTo)}>Вернуться к каталогу</a>
       </div>
@@ -89,7 +93,19 @@ export function LessonPage({ slug }: { slug: string }) {
           ))}
           <section id="practice" className="practice-next">
             <h2>Теперь проверим понимание</h2>
-            {practice.length ? (
+            {["izlozhenie", "sochinenie"].includes(topic.id) ? (
+              <>
+                <p>
+                  Пять письменных работ с сохранением черновика, критериями и
+                  самопроверкой. Оценку содержания выставляет эксперт.
+                </p>
+                <LinkButton
+                  to={`/oge/bank/${topic.id === "izlozhenie" ? 1 : 13}/`}
+                >
+                  Открыть письменную практику
+                </LinkButton>
+              </>
+            ) : practice.length ? (
               <>
                 <p>
                   {practice.length} разных заданий с разбором и повторением по
@@ -100,7 +116,9 @@ export function LessonPage({ slug }: { slug: string }) {
                 </LinkButton>
                 <a
                   href={href(
-                    `/practice/?topic=${topic.id}${exam ? `&exam=${exam}` : ""}`,
+                    exam === "OGE"
+                      ? `/oge/bank/?line=${practice[0]?.taskLine ?? 0}&topic=${topic.id}`
+                      : `/practice/?topic=${topic.id}${exam ? `&exam=${exam}` : ""}`,
                   )}
                 >
                   Выбрать задание в банке
@@ -108,10 +126,25 @@ export function LessonPage({ slug }: { slug: string }) {
               </>
             ) : (
               <>
-                <p>
-                  Для этого направления отдельная подборка по теме ещё
-                  готовится. Интерактивы урока доступны для самопроверки.
-                </p>
+                {exam === "OGE" &&
+                taskLines.find((line) => line.topicIds.includes(topic.id)) ? (
+                  <>
+                    <p>
+                      Правило применяется в экзаменационной линии. Продолжите
+                      разбор на заданиях этой линии.
+                    </p>
+                    <LinkButton
+                      to={`/oge/bank/${taskLines.find((line) => line.topicIds.includes(topic.id))!.number}/?view=expanded`}
+                    >
+                      Решать задания с разбором
+                    </LinkButton>
+                  </>
+                ) : (
+                  <p>
+                    Интерактивы урока доступны для самопроверки. Выберите
+                    задания своего направления.
+                  </p>
+                )}
                 <LinkButton to={`/practice/?exam=${exam}`} secondary>
                   Другие задания {examName(exam)}
                 </LinkButton>

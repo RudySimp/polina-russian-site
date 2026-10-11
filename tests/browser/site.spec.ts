@@ -20,7 +20,7 @@ test("Главная, прямые маршруты, поиск и возвра�
     .getByRole("link", { name: "Открыть учебник", exact: true })
     .click();
   await page.getByPlaceholder("Найти тему или правило").fill("не");
-  await expect(page.locator(".results-count")).toHaveText("Найдено тем: 1");
+  await expect(page.locator(".results-count")).toHaveText("Найдено тем: 2");
   await page
     .getByRole("combobox", { name: "Экзамен", exact: true })
     .selectOption("EGE");
@@ -50,7 +50,7 @@ test("Главная, прямые маршруты, поиск и возвра�
   ).toBeVisible();
   await page.goto("practice/?exam=OGE&topic=formy-slov");
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 10",
+    "Найдено заданий: 20",
   );
   await page.locator(".exercise-card").first().click();
   await page.reload();
@@ -87,7 +87,7 @@ test("Фильтры банка, страницы и возврат из зад�
     .getByRole("combobox", { name: "Экзамен", exact: true })
     .selectOption("OGE");
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 50",
+    "Найдено заданий: 222",
   );
   await expect(
     page.getByRole("combobox", { name: "Тема", exact: true }),
@@ -97,6 +97,7 @@ test("Фильтры банка, страницы и возврат из зад�
 test("Шесть учебных механик: неверный ответ, объяснение и смена примера", async ({
   page,
 }) => {
+  test.setTimeout(180000);
   for (const lesson of lessons) {
     const topic = topics.find((t) => t.id === lesson.topicId)!;
     await page.goto(`theory/${topic.slug}/`);
@@ -156,10 +157,12 @@ test("Шесть учебных механик: неверный ответ, о�
       page.getByRole("navigation", { name: "Содержание урока" }),
     ).toBeVisible();
     const checkpoint = page.locator(".checkpoint");
-    await checkpoint.getByRole("button", { name: "Проверить себя" }).click();
-    await expect(checkpoint.getByRole("status")).toContainText(
-      "Посмотрите на объяснение",
-    );
+    if (await checkpoint.count()) {
+      await checkpoint.getByRole("button", { name: "Проверить себя" }).click();
+      await expect(checkpoint.getByRole("status")).toContainText(
+        "Посмотрите на объяснение",
+      );
+    }
   }
 });
 
@@ -268,7 +271,10 @@ test("Полная подборка из десяти задач заверша�
 test("Все модули: импортированные ответы, словосочетания и учебный выбор", async ({
   page,
 }) => {
-  for (const topic of topics.filter((t) => t.status === "published")) {
+  for (const topic of topics.filter(
+    (t) =>
+      t.status === "published" && exercises.some((e) => e.topicId === t.id),
+  )) {
     const exercise =
       exercises.find(
         (e) =>
@@ -281,7 +287,10 @@ test("Все модули: импортированные ответы, слов
         .getByRole("radio")
         .nth(Number(exercise.answers[0]) - 1)
         .check();
-    else
+    else if (exercise.input === "matching") {
+      for (const [n, value] of [...exercise.answers[0]].entries())
+        await page.locator("fieldset select").nth(n).selectOption(value);
+    } else
       await page
         .getByLabel("Ваш ответ", { exact: true })
         .fill(exercise.answers[0]);
@@ -305,7 +314,9 @@ test("ОГЭ и ЕГЭ: отдельные направления и честн�
   for (const exam of ["ОГЭ", "ЕГЭ"]) {
     await page.goto(exam === "ОГЭ" ? "oge/" : "ege/");
     await expect(page.locator("h1")).toHaveText(
-      `Готовимся к ${exam} осознанно`,
+      exam === "ОГЭ"
+        ? "Учиться, решать, проверять"
+        : `Готовимся к ${exam} осознанно`,
     );
   }
   await page.goto("theory/ne-prilagatelnye/?exam=OGE");

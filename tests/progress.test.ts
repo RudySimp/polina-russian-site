@@ -8,15 +8,18 @@ import {
 describe("Локальная история", () => {
   it("не ломается при недоступном или повреждённом хранилище", () => {
     expect(
-      readAttempts({
-        getItem: () => {
-          throw new Error("Запрещено");
+      readAttempts(
+        {
+          getItem: () => {
+            throw new Error("Запрещено");
+          },
         },
-      }),
+        exercises,
+      ),
     ).toEqual([]);
-    expect(readAttempts({ getItem: () => "oops" })).toEqual([]);
+    expect(readAttempts({ getItem: () => "oops" }, exercises)).toEqual([]);
     expect(
-      readAttempts({ getItem: () => '[null, {}, {"results": []}]' }),
+      readAttempts({ getItem: () => '[null, {}, {"results": []}]' }, exercises),
     ).toEqual([]);
   });
   it("сохраняет версию, навык и статус повторной попытки", () => {
@@ -28,16 +31,16 @@ describe("Локальная история", () => {
       misconceptionId: "single-conjunction-comma",
     });
     expect(
-      readAttempts({ getItem: () => JSON.stringify([attempt]) })[0].results[0]
-        .status,
+      readAttempts({ getItem: () => JSON.stringify([attempt]) }, exercises)[0]
+        .results[0].status,
     ).toBe("incorrect");
   });
   it("не доверяет подменённым оценкам в localStorage", () => {
     const attempt = createAttempt(exercises[0], "2", false);
     attempt.results[0].status = "correct";
     expect(
-      readAttempts({ getItem: () => JSON.stringify([attempt]) })[0].results[0]
-        .status,
+      readAttempts({ getItem: () => JSON.stringify([attempt]) }, exercises)[0]
+        .results[0].status,
     ).toBe("incorrect");
   });
   it("сообщает о недостаточной выборке", () => {

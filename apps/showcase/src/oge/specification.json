@@ -1,0 +1,20 @@
+{
+  "id": "oge-ru-2027-project", "exam": "OGE", "year": 2027, "status": "project", "checkedAt": "2026-10-11",
+  "durationMinutes": 235, "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory",
+  "writing": { "minWords": 70, "summaryMax": 6, "essayMax": 8, "literacyMax": 13, "audioPlays": 2, "pauseMinutes": 5 },
+  "lines": [
+    {"number":1,"title":"Сжатое изложение","topicIds":["izlozhenie"],"response":"extended","input":"writing","orderMatters":true,"maxScore":6,"minLength":1,"maxLength":30000},
+    {"number":2,"title":"Грамматическая основа","topicIds":["osnova"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":5,"textGroup":"syntax"},
+    {"number":3,"title":"Синтаксический анализ","topicIds":["sintaksis"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":5,"textGroup":"syntax"},
+    {"number":4,"title":"Правило и предложение","topicIds":["punktuacionnye-pravila"],"response":"digits_sequence","input":"matching","orderMatters":true,"maxScore":1,"minLength":3,"maxLength":3},
+    {"number":5,"title":"Пунктуационный анализ","topicIds":["punktuacionnyy-analiz","odnorodnye"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":9},
+    {"number":6,"title":"Объяснение орфограмм","topicIds":["orfograficheskiy-analiz","ne-prilagatelnye"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":5},
+    {"number":7,"title":"Гласные в тексте","topicIds":["glasnye-v-tekste"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":9},
+    {"number":8,"title":"Грамматические формы","topicIds":["formy-slov"],"response":"short_text","input":"text","orderMatters":true,"maxScore":1,"minLength":1,"maxLength":70},
+    {"number":9,"title":"Связь в словосочетании","topicIds":["slovosochetaniya"],"response":"short_text","input":"text","orderMatters":true,"maxScore":1,"minLength":1,"maxLength":100},
+    {"number":10,"title":"Анализ содержания текста","topicIds":["analiz-teksta"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":5,"textGroup":"reading"},
+    {"number":11,"title":"Средства выразительности","topicIds":["vyrazitelnost"],"response":"digits_sequence","input":"digits","orderMatters":false,"maxScore":1,"minLength":1,"maxLength":5,"textGroup":"reading"},
+    {"number":12,"title":"Лексический анализ","topicIds":["leksika"],"response":"short_text","input":"text","orderMatters":true,"maxScore":1,"minLength":1,"maxLength":100,"textGroup":"reading"},
+    {"number":13,"title":"Сочинение-рассуждение","topicIds":["sochinenie"],"response":"extended","input":"writing","orderMatters":true,"maxScore":8,"minLength":1,"maxLength":30000,"textGroup":"reading"}
+  ]
+}

@@ -14,6 +14,12 @@ import { href } from "../routes";
 const navigation = [
   { path: "/", label: "Главная", icon: Home },
   { path: "/oge/", label: "ОГЭ · 9 класс", icon: GraduationCap },
+  { path: '/oge/theory/', label: 'Вся теория ОГЭ', icon: BookOpen },
+  { path: '/oge/bank/', label: 'Банк заданий ОГЭ', icon: PencilLine },
+  { path: '/oge/variants/', label: 'Готовые варианты', icon: BookOpen },
+  { path: '/oge/generator/', label: 'Генератор варианта', icon: PencilLine },
+  { path: '/oge/games/', label: 'Тематические тренажёры', icon: PencilLine },
+  { path: '/oge/results/', label: 'Работы и черновики', icon: TrendingUp },
   { path: "/ege/", label: "ЕГЭ · 10–11 класс", icon: GraduationCap },
   { path: "/theory/", label: "Учебник", icon: BookOpen },
   { path: "/practice/", label: "Практика", icon: PencilLine },
@@ -59,7 +65,7 @@ export function Layout({
       <nav aria-label="Основная навигация">
         {navigation.map((item) => {
           const active =
-            item.path === "/" ? path === "/" : path.startsWith(item.path);
+            item.path === '/' || item.path === '/oge/' ? path === item.path : path.startsWith(item.path);
           const Icon = item.icon;
           return (
             <a

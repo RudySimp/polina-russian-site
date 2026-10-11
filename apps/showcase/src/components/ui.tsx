@@ -2,12 +2,13 @@ import type { ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Search } from "lucide-react";
 import { href } from "../routes";
 import {
-  exercisesFor,
+  exerciseSummariesFor as exercisesFor,
   sectionTitle,
   type Topic,
   type Exercise,
-} from "../content/registry";
+} from "../content/catalog";
 import { examName, levelName } from "../lib/search";
+import { taskLines } from "../oge/specification";
 
 export function LinkButton({
   to,
@@ -83,6 +84,13 @@ export function TopicCard({
   if (returnTo) params.set("from", returnTo);
   const suffix = params.size ? `?${params}` : "";
   const count = exercisesFor(topic.id, exam).length;
+  const ogeLine =
+    exam === "OGE" && count === 0
+      ? taskLines.find(
+          (line) =>
+            line.topicIds.includes(topic.id) && line.response !== "extended",
+        )
+      : undefined;
   const body = (
     <>
       <div className="card-top">
@@ -96,7 +104,11 @@ export function TopicCard({
       <div className="card-bottom">
         <span>
           {topic.status === "published"
-            ? `${count} заданий · интерактив`
+            ? ["izlozhenie", "sochinenie"].includes(topic.id)
+              ? "Письменная практика · интерактив"
+              : ogeLine
+                ? `Практика задания № ${ogeLine.number} · интерактив`
+                : `${count} заданий · интерактив`
             : "Готовится"}
         </span>
         {topic.status === "published" && (

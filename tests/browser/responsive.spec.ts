@@ -6,7 +6,7 @@ test("Контент, ширины экрана, короткое окно и у
   page,
 }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop");
-  test.setTimeout(120000);
+  test.setTimeout(180000);
   mkdirSync("artifacts", { recursive: true });
   for (const width of [360, 390, 520, 768, 1024, 1280, 1440, 1920]) {
     await page.setViewportSize({ width, height: width === 1024 ? 540 : 1000 });
@@ -15,6 +15,10 @@ test("Контент, ширины экрана, короткое окно и у
       "theory/",
       "theory/osnova/",
       "practice/ege-punctuation/",
+      "oge/",
+      "oge/bank/4/?view=expanded",
+      "oge/generator/",
+      "oge/games/punctuation/",
     ]) {
       await page.goto(path);
       await expect(page.locator("h1")).toBeVisible();
@@ -26,12 +30,12 @@ test("Контент, ширины экрана, короткое окно и у
       ).toBe(true);
       if ([390, 1440].includes(width))
         await page.screenshot({
-          path: `artifacts/preview-${width}-${path.replaceAll("/", "-") || "home"}.png`,
+          path: `artifacts/preview-${width}-${path.replace(/[^a-z0-9-]/giu, "-") || "home"}.png`,
           fullPage: true,
         });
     }
   }
-  const base = new URL("../../", page.url()).href;
+  const base = new URL("/polina-russian-site/", page.url()).href;
   mkdirSync(".cache", { recursive: true });
   const context = await chromium.launchPersistentContext(
     mkdtempSync(resolve(".cache/zoom-")),

@@ -167,11 +167,11 @@ export const topics: Topic[] = [
     title: "Объяснение орфограмм",
     sectionId: "orthography",
     description:
-      "Каталог задания 6 извлечён. Идёт проверка формулировок и объяснений.",
+      "Проверяем не только букву, но и основание: корни, приставки, суффиксы и окончания.",
     keywords: ["орфограммы", "корень", "приставки"],
     examTags: ["OGE"],
-    skillIds: [],
-    status: "planned",
+    skillIds: ['OGE:orthography.analysis'],
+    status: "published",
     order: 9,
   },
   {
@@ -180,11 +180,11 @@ export const topics: Topic[] = [
     title: "Гласные в тексте",
     sectionId: "orthography",
     description:
-      "Каталог задания 7 извлечён. Разборы нуждаются в уточнении конкретных правил.",
+      "Выбираем гласную по части слова, форме и контексту, затем записываем нужные позиции.",
     keywords: ["гласные", "окончания", "орфография"],
     examTags: ["OGE"],
-    skillIds: [],
-    status: "planned",
+    skillIds: ['OGE:orthography.vowels'],
+    status: "published",
     order: 10,
   },
   {
@@ -193,11 +193,11 @@ export const topics: Topic[] = [
     title: "Правило и предложение",
     sectionId: "punctuation",
     description:
-      "100 вариантов сопоставления правил извлечены для следующего этапа проверки.",
+      "Соотносим конкретное пунктуационное основание с предложением, сохраняя порядок А–Б–В.",
     keywords: ["соответствие", "пунктуация"],
     examTags: ["OGE"],
-    skillIds: [],
-    status: "planned",
+    skillIds: ['OGE:punctuation.matching'],
+    status: "published",
     order: 11,
   },
   {
@@ -206,11 +206,11 @@ export const topics: Topic[] = [
     title: "Лексический анализ",
     sectionId: "lexis",
     description:
-      "Найдены теоретические материалы. Подготовка веб-урока и практики продолжается.",
+      "Значение слова в контексте, синонимы, антонимы и устойчивые выражения.",
     keywords: ["синонимы", "антонимы", "фразеологизмы", "паронимы"],
-    examTags: ["OGE", "EGE"],
-    skillIds: [],
-    status: "planned",
+    examTags: ["OGE"],
+    skillIds: ['OGE:lexis.analysis'],
+    status: "published",
     order: 12,
   },
   {
@@ -219,11 +219,11 @@ export const topics: Topic[] = [
     title: "Средства выразительности",
     sectionId: "lexis",
     description:
-      "Теоретический источник найден; самостоятельный модуль ещё не опубликован.",
+      "Находим сравнение, метафору, олицетворение и фразеологизм, объясняя их роль.",
     keywords: ["метафора", "эпитет", "сравнение"],
-    examTags: ["OGE", "EGE"],
-    skillIds: [],
-    status: "planned",
+    examTags: ["OGE"],
+    skillIds: ['OGE:text.expression'],
+    status: "published",
     order: 13,
   },
   {
@@ -232,13 +232,15 @@ export const topics: Topic[] = [
     title: "Сочинение и работа с текстом",
     sectionId: "writing",
     description:
-      "Будущий раздел. Развёрнутые ответы требуют проверки преподавателем.",
+      "Вопрос, два примера из текста, пояснение каждого и вывод: готовим три модели рассуждения.",
     keywords: ["сочинение", "текст", "рассуждение"],
-    examTags: ["OGE", "EGE"],
-    skillIds: [],
-    status: "planned",
+    examTags: ["OGE"],
+    skillIds: ['OGE:writing.essay'],
+    status: "published",
     order: 14,
   },
+  {id:'analiz-teksta',slug:'analiz-teksta',title:'Анализ содержания текста',sectionId:'lexis',description:'Факты, последовательность, причины и мотивы: проверяем утверждение по тексту.',keywords:['содержание','текст','факт','мотив','вывод','последовательность'],examTags:['OGE'],skillIds:['OGE:text.comprehension'],status:'published',order:15},
+  {id:'izlozhenie',slug:'izlozhenie',title:'Сжатое изложение',sectionId:'writing',description:'Выделяем микротемы, исключаем детали, обобщаем и упрощаем без потери смысла.',keywords:['изложение','сжатие','аудио','микротема','обобщение','исключение'],examTags:['OGE'],skillIds:['OGE:writing.summary'],status:'published',order:16},
 ];
 export const skills = topics.flatMap((topic) =>
   topic.skillIds.map((id) => ({

@@ -1,5 +1,5 @@
 import { ArrowRight, BookOpen, Check, Leaf, PencilLine } from "lucide-react";
-import { publishedTopics, exercises } from "../content/registry";
+import { publishedTopics, exerciseIndex as exercises } from "../content/catalog";
 import { href } from "../routes";
 import type { LocalAttempt } from "../progress";
 import { Badge, LinkButton, TopicCard } from "../components/ui";
