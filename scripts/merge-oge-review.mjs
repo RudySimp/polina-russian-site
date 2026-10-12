@@ -52,6 +52,7 @@ for (const entry of additions.entries) {
   const [topicId, topicTitle, skillId] = mapping[entry.taskLine];
   const approval = {
     candidateId: entry.candidateId,
+    revision: entry.revision ?? 1,
     fingerprint: entry.fingerprint,
     topicId,
     topicTitle,
@@ -64,7 +65,7 @@ for (const entry of additions.entries) {
         : `${topicTitle}: вариант ${entry.sourceNumber}`,
     level: "standard",
     rightsBasis: rights,
-    reviewedAt: "2026-10-11",
+    reviewedAt: entry.revision > 1 ? "2026-10-12" : "2026-10-11",
     reviewNote:
       "Полное условие, ключ и объяснения независимо исследованы; внесены перечисленные редакторские исправления. Демонстрационная публикация, окончательное методическое утверждение преподавателем ожидается.",
     steps: steps[entry.taskLine],

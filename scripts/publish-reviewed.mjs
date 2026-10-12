@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
+import { vowelExerciseIssues } from "./lib/content-integrity.ts";
 
 const root = process.cwd();
 const drafts = JSON.parse(
@@ -158,6 +159,10 @@ for (const approval of manifest.approved) {
   };
   if (approval.prompt) item.prompt = approval.prompt;
   if (approval.text) item.text = approval.text;
+  if (candidate.taskLine === 7) {
+    const issues = vowelExerciseIssues(item);
+    assert.equal(issues.length, 0, `${id}: итоговое условие не прошло проверку пропусков: ${issues.join('; ')}`);
+  }
   const list = groups.get(approval.topicId) ?? [];
   list.push(item);
   groups.set(approval.topicId, list);

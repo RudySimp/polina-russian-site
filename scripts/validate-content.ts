@@ -1,3 +1,4 @@
+import { vowelExerciseIssues } from "./lib/content-integrity";
 import { lessons } from "../apps/showcase/src/content/library";
 import { pathToFileURL } from "node:url";
 import { z } from "zod";
@@ -231,6 +232,7 @@ export function validateContent(
         exercise.steps.length >= 2,
       `${exercise.id}: нет условия/разбора/подсказки`,
     );
+    if (exercise.taskLine === 7) ensure(vowelExerciseIssues(exercise).length === 0, `${exercise.id}: ${vowelExerciseIssues(exercise).join("; ")}`);
     const topic = topics.find((topic) => topic.id === exercise.topicId);
     ensure(
       topic?.status === "published" &&

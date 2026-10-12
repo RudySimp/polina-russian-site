@@ -95,7 +95,104 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Сравните окончания «ранним» и «сухие»; у глагола прошедшего времени найдите букву перед -л-."
+    "subtopic": "Сравните окончания «ранним» и «сухие»; у глагола прошедшего времени найдите букву перед -л-.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel",
+      "OGE:7.verb-ending"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.verb-ending",
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+      "/theory/glasnye-v-tekste/?exam=OGE#root"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-002",
@@ -193,7 +290,102 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Не смешивайте корень БИР- с гласной перед -л-; после «к» существительные стоят в дательном падеже."
+    "subtopic": "Не смешивайте корень БИР- с гласной перед -л-; после «к» существительные стоят в дательном падеже.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.root-vowel",
+      "OGE:7.suffix-vowel",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-003",
@@ -291,7 +483,99 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Гласная в «посмотрели» находится в корне, а в «остановились» — перед суффиксом прошедшего времени."
+    "subtopic": "Гласная в «посмотрели» находится в корне, а в «остановились» — перед суффиксом прошедшего времени.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.root-vowel",
+      "OGE:7.suffix-vowel",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-004",
@@ -389,7 +673,104 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У глаголов прошедшего времени сверяйте основу с инфинитивом, а не с личным окончанием."
+    "subtopic": "У глаголов прошедшего времени сверяйте основу с инфинитивом, а не с личным окончанием.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel",
+      "OGE:7.verb-ending",
+      "OGE:7.root-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.verb-ending",
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-005",
@@ -487,7 +868,100 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Сначала определите род и падеж прилагательных, затем отделите наречные суффиксы от окончаний."
+    "subtopic": "Сначала определите род и падеж прилагательных, затем отделите наречные суффиксы от окончаний.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.suffix-vowel",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "suffix-vowel"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.adjective-ending",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+        "errorType": "adjective-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-006",
@@ -585,7 +1059,97 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В СОБИРАЛ и ВЫБИРАЛ работает чередование БЕР/БИР; у «поляне» требуется предложный падеж."
+    "subtopic": "В СОБИРАЛ и ВЫБИРАЛ работает чередование БЕР/БИР; у «поляне» требуется предложный падеж.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.suffix-vowel",
+      "OGE:7.root-vowel",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "suffix-vowel"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-007",
@@ -683,7 +1247,104 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Буквы И в корне с чередованием и перед -л- объясняются разными правилами."
+    "subtopic": "Буквы И в корне с чередованием и перед -л- объясняются разными правилами.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel",
+      "OGE:7.root-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.adjective-ending",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+        "errorType": "adjective-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+      "/theory/glasnye-v-tekste/?exam=OGE#root"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-008",
@@ -781,7 +1442,101 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У «старому» найдите окончание прилагательного; «вечером» обозначает время действия."
+    "subtopic": "У «старому» найдите окончание прилагательного; «вечером» обозначает время действия.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+      "/theory/glasnye-v-tekste/?exam=OGE#root"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-009",
@@ -879,7 +1634,102 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В корнях БИР и ЛОЖ выбор зависит от разных соседних морфем; «путешествие» оканчивается на -ИЕ."
+    "subtopic": "В корнях БИР и ЛОЖ выбор зависит от разных соседних морфем; «путешествие» оканчивается на -ИЕ.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.root-vowel",
+      "OGE:7.suffix-vowel",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-010",
@@ -977,7 +1827,100 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В слове «тетради» после «в свои» требуется винительный множественного числа; у «свои» тоже множественное число."
+    "subtopic": "В слове «тетради» после «в свои» требуется винительный множественного числа; у «свои» тоже множественное число.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.root-vowel",
+      "OGE:7.suffix-vowel",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.root-vowel",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-011",
@@ -1075,7 +2018,101 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Гласная в «стояли» сохраняется из инфинитива. У «красовалась» найдите суффикс -ова-."
+    "subtopic": "Гласная в «стояли» сохраняется из инфинитива. У «красовалась» найдите суффикс -ова-.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel",
+      "OGE:7.root-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-012",
@@ -1173,15 +2210,105 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Отделите корень ЛОЖ от суффикса -ова- и окончания родительного множественного числа."
+    "subtopic": "Отделите корень ЛОЖ от суффикса -ова- и окончания родительного множественного числа.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.root-vowel",
+      "OGE:7.noun-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-013",
     "slug": "oge-glasnye-v-tekste-013",
-    "revision": 1,
+    "revision": 2,
     "title": "Гласные в тексте: вариант 13",
     "prompt": "Прочитайте текст. Вставьте пропущенные буквы. Укажите все цифры, на месте которых пишется буква И.",
-    "text": "В осенн…(1)м парке медл…(2)нно круж…(3)лись жёлтые листья. На скамейк…(4) лежала забыта…(5) книга о природ…(6). У алле…(7) гн…тся(8)т рябины, и ягоды але…(9)т на ветках.",
+    "text": "В осенн…(1)м парке медл…(2)нно круж…(3)лись жёлтые листья. На скамейк…(4) лежала забыта…(5) книга о природ…(6). У алле…(7) гн…(8)тся рябины, и ягоды але…(9)т на ветках.",
     "topicId": "glasnye-v-tekste",
     "topicSlug": "glasnye-v-tekste",
     "topicTitle": "Гласные в тексте",
@@ -1209,7 +2336,7 @@
       "author": "Автор в предоставленном каталоге не указан",
       "rightsStatus": "owned",
       "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
+      "verifiedAt": "2026-10-12",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -1224,7 +2351,7 @@
       "Восстановите каждую гласную по правилу.",
       "Выпишите только позиции с буквой из условия."
     ],
-    "hint": "Найдите родительный падеж после «у» и форму прошедшего времени; цветение обозначается формой 3-го лица множественного числа.",
+    "hint": "Найдите родительный падеж после «у» и форму прошедшего времени. В «гнутся» пропущена гласная ударного личного окончания.",
     "explanation": "1) осеннем — Е. Прилагательное «осенний» согласуется с «парке» в предложном падеже единственного числа мужского рода; мягкий тип склонения даёт окончание -ем.\n\n2) медленно — Е. Наречие образовано от «медленный»; буква Е сохраняется в суффиксе -енн-.\n\n3) кружились — И. Перед -л- сохраняется И основы инфинитива «кружиться».\n\n4) скамейке — Е. Предлог «на» обозначает место; существительное 1-го склонения стоит в предложном падеже, окончание -е.\n\n5) забытая — Я. Причастие согласуется с «книга» в именительном падеже единственного числа женского рода; в окончании -ая пропущена Я.\n\n6) природе — Е. Существительное «природа» 1-го склонения стоит в предложном падеже после «о», окончание -е.\n\n7) аллеи — И. Предлог «у» требует родительного падежа; у существительного «аллея» окончание -и.\n\n8) гнутся — У. Сказуемое согласуется с подлежащим «рябины»: 3-е лицо множественного числа, ударное окончание -ут- перед постфиксом -ся.\n\n9) алеют — Ю. Глагол «алеть» относится к I спряжению; в 3-м лице множественного числа пишется окончание -ют.",
     "formatLabel": "ОГЭ · Гласные в тексте",
     "input": "digits",
@@ -1245,33 +2372,125 @@
       "method": "local-original-import",
       "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
       "reviewNote": "Полное условие, ключ и объяснения независимо исследованы; внесены перечисленные редакторские исправления. Демонстрационная публикация, окончательное методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
+      "reviewedAt": "2026-10-12",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "reviewStages": [
       {
         "stage": "extracted",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "answer-checked",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Найдите родительный падеж после «у» и форму прошедшего времени; цветение обозначается формой 3-го лица множественного числа."
+    "subtopic": "Найдите родительный падеж после «у» и форму прошедшего времени. В «гнутся» пропущена гласная ударного личного окончания.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.suffix-vowel",
+      "OGE:7.past-suffix",
+      "OGE:7.verb-ending"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "suffix-vowel"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.verb-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.verb-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-014",
@@ -1369,7 +2588,100 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "После Ж пишется И. У корня ГОР/ГАР выбор зависит от ударения; перед -л- важен инфинитив."
+    "subtopic": "После Ж пишется И. У корня ГОР/ГАР выбор зависит от ударения; перед -л- важен инфинитив.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.suffix-vowel",
+      "OGE:7.past-suffix",
+      "OGE:7.root-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "suffix-vowel"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-015",
@@ -1467,15 +2779,105 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "После «вдоль» нужен родительный падеж, а прилагательное «поздними» согласуется с «цветами»."
+    "subtopic": "После «вдоль» нужен родительный падеж, а прилагательное «поздними» согласуется с «цветами».",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-016",
     "slug": "oge-glasnye-v-tekste-016",
-    "revision": 1,
+    "revision": 2,
     "title": "Гласные в тексте: вариант 16",
     "prompt": "Прочитайте текст. Вставьте пропущенные буквы. Укажите все цифры, на месте которых пишется буква У.",
-    "text": "У алле…(1) гн…тся(2)т рябины, и ягоды але…(3)т на ветках. Вдоль дорожк…(4) тян…(5)лись клумбы с поздн…(6)ми цветами. К вечер…(7) в парке заг…(8)релись фонари, и небо проясн…(9)лось.",
+    "text": "У алле…(1) гн…(2)тся рябины, и ягоды але…(3)т на ветках. Вдоль дорожк…(4) тян…(5)лись клумбы с поздн…(6)ми цветами. К вечер…(7) в парке заг…(8)релись фонари, и небо проясн…(9)лось.",
     "topicId": "glasnye-v-tekste",
     "topicSlug": "glasnye-v-tekste",
     "topicTitle": "Гласные в тексте",
@@ -1503,7 +2905,7 @@
       "author": "Автор в предоставленном каталоге не указан",
       "rightsStatus": "owned",
       "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
+      "verifiedAt": "2026-10-12",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -1539,33 +2941,125 @@
       "method": "local-original-import",
       "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
       "reviewNote": "Полное условие, ключ и объяснения независимо исследованы; внесены перечисленные редакторские исправления. Демонстрационная публикация, окончательное методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
+      "reviewedAt": "2026-10-12",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "reviewStages": [
       {
         "stage": "extracted",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "answer-checked",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-11",
+        "at": "2026-10-12",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Не считайте Ю буквой У. Различайте ударное окончание «гнутся», основу «тянулись» и окончание «вечеру»."
+    "subtopic": "Не считайте Ю буквой У. Различайте ударное окончание «гнутся», основу «тянулись» и окончание «вечеру».",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.verb-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.adjective-ending",
+      "OGE:7.root-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.verb-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.verb-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+        "errorType": "verb-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.root-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+        "errorType": "root-vowel"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#root",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-017",
@@ -1663,7 +3157,97 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Сравните предложный падеж существительных «музей» и «жизнь» — у них разные склонения."
+    "subtopic": "Сравните предложный падеж существительных «музей» и «жизнь» — у них разные склонения.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-018",
@@ -1761,7 +3345,98 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Число существительного «украшения» задаётся словом «разные». У «глиняные» найдите суффикс."
+    "subtopic": "Число существительного «украшения» задаётся словом «разные». У «глиняные» найдите суффикс.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix",
+      "OGE:7.suffix-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.adjective-ending",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+        "errorType": "adjective-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+      "/theory/glasnye-v-tekste/?exam=OGE#root"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-019",
@@ -1859,7 +3534,99 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Гласная в «глиняные» относится к суффиксу, в «украшения» — к окончанию множественного числа."
+    "subtopic": "Гласная в «глиняные» относится к суффиксу, в «украшения» — к окончанию множественного числа.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.past-suffix",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.suffix-vowel"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.adjective-ending",
+          "OGE:7.suffix-vowel"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+        "errorType": "adjective-ending"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+      "/theory/glasnye-v-tekste/?exam=OGE#root"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-glasnye-v-tekste-020",
@@ -1957,6 +3724,95 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Существительное на -ИЯ после «осмотра» стоит в родительном падеже; глаголы проверьте по инфинитивам."
+    "subtopic": "Существительное на -ИЯ после «осмотра» стоит в родительном падеже; глаголы проверьте по инфинитивам.",
+    "skillIds": [
+      "OGE:orthography.vowels",
+      "OGE:7.noun-ending",
+      "OGE:7.adjective-ending",
+      "OGE:7.past-suffix"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:7.noun-ending",
+          "OGE:7.adjective-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:7.noun-ending"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+        "errorType": "noun-ending"
+      },
+      {
+        "position": 9,
+        "skillIds": [
+          "OGE:7.past-suffix"
+        ],
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+        "errorType": "past-suffix"
+      }
+    ],
+    "rulePaths": [
+      "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+      "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+      "/theory/glasnye-v-tekste/?exam=OGE#agreement"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]
