@@ -1,0 +1,660 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-14",
+  "runtimeCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+  "environment": {
+    "kind": "local-production-preview",
+    "baseURL": "http://127.0.0.1:4173/polina-russian-site/",
+    "projects": [
+      "desktop",
+      "mobile"
+    ],
+    "workers": 3,
+    "retries": 0,
+    "playwrightVersion": "1.64.0"
+  },
+  "checks": {
+    "typecheck": {
+      "status": "passed"
+    },
+    "showcaseTypecheck": {
+      "status": "passed"
+    },
+    "lint": {
+      "status": "passed"
+    },
+    "unit": {
+      "status": "passed",
+      "passed": 125,
+      "failed": 0,
+      "files": 13,
+      "note": "Добавлены 5 backup-bounds и 4 legacy-snapshot unit; 400 генераций bulk seedloop сохранены, бюджет теста 20 секунд."
+    },
+    "nextBuild": {
+      "status": "passed"
+    },
+    "showcaseBuild": {
+      "status": "passed",
+      "contentValidation": "passed",
+      "staticValidation": "passed",
+      "routes": 344,
+      "htmlFiles": 345
+    }
+  },
+  "browser": {
+    "artifact": "artifacts/final-browser-results.json",
+    "stats": {
+      "startTime": "2026-10-14T08:54:12.223Z",
+      "duration": 296233.545,
+      "expected": 101,
+      "skipped": 1,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "total": 102,
+    "passed": 101,
+    "skipped": 1,
+    "failed": 0,
+    "flaky": 0,
+    "perFile": [
+      {
+        "file": "tests/browser/audit-critical.spec.ts",
+        "total": 6,
+        "passed": 6,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/backup-multipart.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/bank-audit.spec.ts",
+        "total": 14,
+        "passed": 14,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/game-history.spec.ts",
+        "total": 4,
+        "passed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/idb-history.spec.ts",
+        "total": 4,
+        "passed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/learning-recovery.spec.ts",
+        "total": 8,
+        "passed": 8,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/legacy-snapshot.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/oge-games-recovery.spec.ts",
+        "total": 8,
+        "passed": 8,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/oge.spec.ts",
+        "total": 14,
+        "passed": 14,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/responsive.spec.ts",
+        "total": 2,
+        "passed": 1,
+        "skipped": 1,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/site.spec.ts",
+        "total": 18,
+        "passed": 18,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/storage-recovery.spec.ts",
+        "total": 18,
+        "passed": 18,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/theory-paragraph-search.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      }
+    ],
+    "skips": [
+      {
+        "file": "tests/browser/responsive.spec.ts",
+        "title": "Контент, ширины экрана, короткое окно и увеличение до 200%",
+        "project": "mobile",
+        "status": "skipped",
+        "reason": "Дублирующий мобильный проект responsive-набора пропущен намеренно; набор ширин/увеличения выполняется один раз в desktop."
+      }
+    ]
+  },
+  "performance": {
+    "status": "passed",
+    "scenarios": 4,
+    "corpusSizes": [
+      1000,
+      5000
+    ],
+    "widths": [
+      1440,
+      390
+    ],
+    "mobileCpuSlowdown": 4,
+    "environment": "local-vite-dev-chrome-headless",
+    "scope": "Технический синтетический корпус; не публиковался и не увеличивает учебный банк."
+  },
+  "commits": [
+    {
+      "sha": "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
+      "title": "fix(oge): correct critical spelling, reading and morphology cases",
+      "files": [
+        "apps/showcase/src/content/exercises/formy-slov.json",
+        "apps/showcase/src/content/exercises/glasnye-v-tekste.json",
+        "apps/showcase/src/content/lessons/analiz-teksta.json",
+        "content/oge-expansion-review.json",
+        "content/oge-review-additions.json",
+        "content/review-manifest.json",
+        "docs/AUDIT_OGE_2026-10-12.md",
+        "docs/AUDIT_OGE_2026-10-12_ISSUES.csv",
+        "docs/audit-fixes.json",
+        "docs/ПЛАН_ИСПРАВЛЕНИЯ_АУДИТА.md",
+        "scripts/lib/content-integrity.ts",
+        "scripts/merge-oge-review.mjs",
+        "scripts/publish-reviewed.mjs",
+        "scripts/validate-content.ts",
+        "tests/browser/audit-critical.spec.ts",
+        "tests/content-integrity.test.ts"
+      ]
+    },
+    {
+      "sha": "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
+      "title": "feat(oge): expand reviewed learning content and versioned catalog",
+      "files": [
+        ".github/workflows/deploy-pages.yml",
+        ".gitignore",
+        "apps/showcase/public/audio/oge-curiosity.mp3",
+        "apps/showcase/public/audio/oge-friendship.mp3",
+        "apps/showcase/public/audio/oge-memory.mp3",
+        "apps/showcase/public/audio/oge-reading.mp3",
+        "apps/showcase/public/audio/oge-responsibility.mp3",
+        "apps/showcase/src/content/catalog-version.json",
+        "apps/showcase/src/content/catalog.ts",
+        "apps/showcase/src/content/exercise-index.json",
+        "apps/showcase/src/content/exercise-loaders.ts",
+        "apps/showcase/src/content/exercise-search.json",
+        "apps/showcase/src/content/exercises/analiz-teksta.json",
+        "apps/showcase/src/content/exercises/formy-slov.json",
+        "apps/showcase/src/content/exercises/leksika.json",
+        "apps/showcase/src/content/exercises/orfograficheskiy-analiz.json",
+        "apps/showcase/src/content/exercises/osnova.json",
+        "apps/showcase/src/content/exercises/punktuacionnye-pravila.json",
+        "apps/showcase/src/content/exercises/punktuacionnyy-analiz.json",
+        "apps/showcase/src/content/exercises/sintaksis.json",
+        "apps/showcase/src/content/exercises/slovosochetaniya.json",
+        "apps/showcase/src/content/exercises/vyrazitelnost.json",
+        "apps/showcase/src/content/generated.ts",
+        "apps/showcase/src/content/lesson-load.ts",
+        "apps/showcase/src/content/lesson-loaders.ts",
+        "apps/showcase/src/content/lesson-search.json",
+        "apps/showcase/src/content/lessons/formy-slov.json",
+        "apps/showcase/src/content/lessons/glasnye-v-tekste.json",
+        "apps/showcase/src/content/lessons/izlozhenie.json",
+        "apps/showcase/src/content/lessons/leksika.json",
+        "apps/showcase/src/content/lessons/ne-prilagatelnye.json",
+        "apps/showcase/src/content/lessons/odnorodnye.json",
+        "apps/showcase/src/content/lessons/orfograficheskiy-analiz.json",
+        "apps/showcase/src/content/lessons/osnova.json",
+        "apps/showcase/src/content/lessons/punktuacionnye-pravila.json",
+        "apps/showcase/src/content/lessons/punktuacionnyy-analiz.json",
+        "apps/showcase/src/content/lessons/sintaksis.json",
+        "apps/showcase/src/content/lessons/slovosochetaniya.json",
+        "apps/showcase/src/content/lessons/sochinenie.json",
+        "apps/showcase/src/content/lessons/vyrazitelnost.json",
+        "apps/showcase/src/content/load.ts",
+        "apps/showcase/src/content/model.ts",
+        "apps/showcase/src/content/subskills.json",
+        "apps/showcase/src/oge/activities.json",
+        "apps/showcase/src/oge/catalog.json",
+        "apps/showcase/src/oge/materials.json",
+        "apps/showcase/src/oge/writing-guides.json",
+        "content/audit-corpus-admission.json",
+        "content/audit-new-games.json",
+        "content/audit-new-reading.json",
+        "content/audit-new-syntax.json",
+        "content/oge-audio-encodings.json",
+        "content/oge-editorial-selection.json",
+        "content/review-manifest.json",
+        "scripts/build-audit-games.mjs",
+        "scripts/build-audit-reading.mjs",
+        "scripts/build-content-index.mjs",
+        "scripts/build-oge-lessons.mjs",
+        "scripts/build-oge-writing-guides.mjs",
+        "scripts/deepen-oge-lessons.mjs",
+        "scripts/inventory-learning-materials.mjs",
+        "scripts/lib/annotate-subskills.mjs",
+        "scripts/merge-audit-corpus.mjs",
+        "scripts/publish-reviewed.mjs",
+        "scripts/register-oge-audio.mjs",
+        "scripts/validate-content.ts",
+        "tests/learning-content.test.ts"
+      ]
+    },
+    {
+      "sha": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
+      "title": "fix(oge): preserve drafts and restore immutable work revisions",
+      "files": [
+        "apps/showcase/src/oge/ExercisePanel.tsx",
+        "apps/showcase/src/oge/GenerationDetails.tsx",
+        "apps/showcase/src/oge/SessionPage.tsx",
+        "apps/showcase/src/oge/WritingGuide.tsx",
+        "apps/showcase/src/oge/WritingReviewPanel.tsx",
+        "apps/showcase/src/oge/backup.ts",
+        "apps/showcase/src/oge/draft.ts",
+        "apps/showcase/src/oge/engine.ts",
+        "apps/showcase/src/oge/game-check.ts",
+        "apps/showcase/src/oge/game-storage.ts",
+        "apps/showcase/src/oge/generation-code.ts",
+        "apps/showcase/src/oge/materials.ts",
+        "apps/showcase/src/oge/model.ts",
+        "apps/showcase/src/oge/repository.ts",
+        "apps/showcase/src/oge/storage.ts",
+        "apps/showcase/src/oge/writing-review.ts",
+        "apps/showcase/src/oge/writing-rubric.ts",
+        "tests/oge-audit.test.ts",
+        "tests/oge-games-storage.test.ts",
+        "tests/oge-generation-code.test.ts",
+        "tests/oge-storage.test.ts",
+        "tests/oge-writing-review.test.ts",
+        "tests/oge.test.ts"
+      ]
+    },
+    {
+      "sha": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
+      "title": "feat(oge): streamline learning flows and verify recovery in browsers",
+      "files": [
+        "apps/showcase/src/app/App.tsx",
+        "apps/showcase/src/components/ContentBoundary.tsx",
+        "apps/showcase/src/components/InteractiveExercise.tsx",
+        "apps/showcase/src/components/Layout.tsx",
+        "apps/showcase/src/components/LessonBlocks.tsx",
+        "apps/showcase/src/components/LessonReading.tsx",
+        "apps/showcase/src/components/QuickPracticeButton.tsx",
+        "apps/showcase/src/components/ui.tsx",
+        "apps/showcase/src/lib/catalog-query.ts",
+        "apps/showcase/src/lib/lesson-state.ts",
+        "apps/showcase/src/lib/recommendations.ts",
+        "apps/showcase/src/oge/BankPage.tsx",
+        "apps/showcase/src/oge/GamePages.tsx",
+        "apps/showcase/src/oge/OverviewPage.tsx",
+        "apps/showcase/src/oge/ResultsPage.tsx",
+        "apps/showcase/src/oge/TheoryPage.tsx",
+        "apps/showcase/src/oge/VariantPages.tsx",
+        "apps/showcase/src/oge/quick-practice.ts",
+        "apps/showcase/src/pages/CatalogPages.tsx",
+        "apps/showcase/src/pages/ExamPage.tsx",
+        "apps/showcase/src/pages/HomePage.tsx",
+        "apps/showcase/src/pages/InfoPages.tsx",
+        "apps/showcase/src/pages/LessonPage.tsx",
+        "apps/showcase/src/pages/PracticePage.tsx",
+        "apps/showcase/src/pages/ProgressPage.tsx",
+        "apps/showcase/src/progress.ts",
+        "apps/showcase/src/styles/layout.css",
+        "apps/showcase/src/styles/oge.css",
+        "eslint.config.mjs",
+        "tests/browser/bank-audit.spec.ts",
+        "tests/browser/game-history.spec.ts",
+        "tests/browser/idb-history.spec.ts",
+        "tests/browser/learning-recovery.spec.ts",
+        "tests/browser/oge-games-recovery.spec.ts",
+        "tests/browser/oge.spec.ts",
+        "tests/browser/site.spec.ts",
+        "tests/browser/storage-recovery.spec.ts",
+        "tests/browser/theory-paragraph-search.spec.ts",
+        "tests/library.test.ts"
+      ]
+    },
+    {
+      "sha": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+      "title": "fix(oge): export large histories and retain historical conditions"
+    }
+  ],
+  "publication": {
+    "status": "pending",
+    "plannedCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+    "actionsRun": null,
+    "verifiedRoutes": [],
+    "followUpCommitPending": true
+  },
+  "limitations": [
+    "Локальный production-прогон не подтверждает новую публичную публикацию.",
+    "Очные испытания со школьниками и фактическое методическое утверждение Полиной не проводились.",
+    "Разметка поднавыков остаётся editorial-draft, официальных заданий 0.",
+    "Воспроизведение MP3 проверено браузером; разборчивость всех записей человеком на слух не подтверждена."
+  ],
+  "previousCompletedProduction": {
+    "runtimeCommit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
+    "checks": {
+      "typecheck": {
+        "status": "passed"
+      },
+      "showcaseTypecheck": {
+        "status": "passed"
+      },
+      "lint": {
+        "status": "passed"
+      },
+      "unit": {
+        "status": "passed",
+        "passed": 116,
+        "failed": 0,
+        "note": "400 генераций в bulk seedloop сохранены; бюджет этого теста 20 секунд при параллельной CPU-нагрузке."
+      },
+      "nextBuild": {
+        "status": "passed"
+      },
+      "showcaseBuild": {
+        "status": "passed",
+        "contentValidation": "passed",
+        "staticValidation": "passed",
+        "routes": 344,
+        "htmlFiles": 345
+      }
+    },
+    "browser": {
+      "artifact": "artifacts/final-browser-results.json",
+      "stats": {
+        "startTime": "2026-10-14T08:10:28.476Z",
+        "duration": 257873.813,
+        "expected": 97,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 98,
+      "passed": 97,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "perFile": [
+        {
+          "file": "tests/browser/audit-critical.spec.ts",
+          "total": 6,
+          "passed": 6,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/bank-audit.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/game-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/idb-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/learning-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge-games-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "total": 2,
+          "passed": 1,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/site.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/storage-recovery.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/theory-paragraph-search.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      ],
+      "skips": [
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "title": "Контент, ширины экрана, короткое окно и увеличение до 200%",
+          "project": "mobile",
+          "status": "skipped",
+          "reason": "Дублирующий мобильный проект responsive-набора пропущен намеренно; набор ширин/увеличения выполняется один раз в desktop."
+        }
+      ]
+    }
+  },
+  "latestBrowser": {
+    "status": "passed",
+    "artifact": "artifacts/final-browser-results.json",
+    "stats": {
+      "startTime": "2026-10-14T08:54:12.223Z",
+      "duration": 296233.545,
+      "expected": 101,
+      "skipped": 1,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "total": 102,
+    "passed": 101,
+    "skipped": 1,
+    "failed": 0,
+    "flaky": 0,
+    "perFile": [
+      {
+        "file": "tests/browser/audit-critical.spec.ts",
+        "total": 6,
+        "passed": 6,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/backup-multipart.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/bank-audit.spec.ts",
+        "total": 14,
+        "passed": 14,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/game-history.spec.ts",
+        "total": 4,
+        "passed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/idb-history.spec.ts",
+        "total": 4,
+        "passed": 4,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/learning-recovery.spec.ts",
+        "total": 8,
+        "passed": 8,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/legacy-snapshot.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/oge-games-recovery.spec.ts",
+        "total": 8,
+        "passed": 8,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/oge.spec.ts",
+        "total": 14,
+        "passed": 14,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/responsive.spec.ts",
+        "total": 2,
+        "passed": 1,
+        "skipped": 1,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/site.spec.ts",
+        "total": 18,
+        "passed": 18,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/storage-recovery.spec.ts",
+        "total": 18,
+        "passed": 18,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      },
+      {
+        "file": "tests/browser/theory-paragraph-search.spec.ts",
+        "total": 2,
+        "passed": 2,
+        "skipped": 0,
+        "failed": 0,
+        "flaky": 0
+      }
+    ]
+  },
+  "followUp": {
+    "status": "verified-in-final-production-run",
+    "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+    "unitFiles": [
+      "tests/oge-backup-bounds.test.ts",
+      "tests/oge-legacy-snapshot.test.ts"
+    ],
+    "browserFiles": [
+      "tests/browser/backup-multipart.spec.ts",
+      "tests/browser/legacy-snapshot.spec.ts"
+    ],
+    "unitSuitePassed": 125,
+    "browserPassed": 101
+  }
+}

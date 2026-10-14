@@ -13,6 +13,10 @@ const assets = readdirSync("apps/showcase/dist/assets")
 assets.push(
   ...readdirSync("apps/showcase/dist/audio").map((file) => `audio/${file}`),
 );
+const currentAudio = JSON.parse(
+  readFileSync("apps/showcase/src/oge/materials.json", "utf8"),
+).audio;
+const browserAudioPlaybacks = [];
 const localHtml = readFileSync("apps/showcase/dist/index.html", "utf8");
 const routeSet = new Set(routes);
 const retryableStatuses = new Set([429, 500, 502, 503, 504]);
@@ -51,10 +55,12 @@ await Promise.all(
         );
       else if (path.startsWith("audio/")) {
         const bytes = Buffer.from(await response.arrayBuffer());
-        assert.equal(
-          bytes.toString("ascii", 0, 4),
-          "RIFF",
-          `${path}: не аудиозапись WAV`,
+        assert(
+          path.endsWith(".mp3")
+            ? bytes.toString("ascii", 0, 3) === "ID3" ||
+                (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0)
+            : bytes.toString("ascii", 0, 4) === "RIFF",
+          `${path}: неподтверждённый аудиоформат`,
         );
         const digest = (value) =>
           createHash("sha256").update(value).digest("hex");
@@ -100,6 +106,60 @@ try {
       path: `artifacts/published-lesson-${name}.png`,
       fullPage: true,
     });
+    await page.locator("h1").click();
+    for (const material of currentAudio) {
+      const played = await page.evaluate(
+        async (path) => {
+          const clip = new Audio(path);
+          const loaded = new Promise((resolve, reject) => {
+            const timer = setTimeout(
+              () => reject(Error("Аудиометаданные не загрузились")),
+              30000,
+            );
+            clip.addEventListener(
+              "loadedmetadata",
+              () => {
+                clearTimeout(timer);
+                resolve(undefined);
+              },
+              { once: true },
+            );
+            clip.addEventListener(
+              "error",
+              () => {
+                clearTimeout(timer);
+                reject(Error("Ошибка аудиодекодера"));
+              },
+              { once: true },
+            );
+          });
+          clip.load();
+          await loaded;
+          await clip.play();
+          await new Promise((resolve) => setTimeout(resolve, 800));
+          const result = { duration: clip.duration, elapsed: clip.currentTime };
+          clip.pause();
+          clip.removeAttribute("src");
+          clip.load();
+          return result;
+        },
+        new URL(material.path.slice(1), base).href,
+      );
+      assert(
+        Math.abs(played.duration - material.durationSeconds) < 1,
+        material.id + ": длительность не соответствует тексту",
+      );
+      assert(
+        played.elapsed > 0.1,
+        material.id + ": браузер не начал воспроизведение",
+      );
+      browserAudioPlaybacks.push({
+        viewport: name,
+        id: material.id,
+        revision: material.revision,
+        ...played,
+      });
+    }
     await page.close();
   }
 } finally {
@@ -114,7 +174,9 @@ writeFileSync(
       routes: routes.length,
       assets: assets.length,
       currentBuildMatches: true,
-      verifiedAudioFiles: 5,
+      verifiedAudioFiles: assets.filter((path) => path.startsWith("audio/"))
+        .length,
+      browserAudioPlaybacks,
       retriedRequests,
       status: "passed",
     },
