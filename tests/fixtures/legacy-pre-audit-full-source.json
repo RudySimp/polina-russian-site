@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "baseline": "3b042ed",
+  "sourcePaths": [
+    "apps/showcase/src/content/exercises/analiz-teksta.json",
+    "apps/showcase/src/content/exercises/formy-slov.json",
+    "apps/showcase/src/content/exercises/glasnye-v-tekste.json",
+    "apps/showcase/src/content/exercises/leksika.json",
+    "apps/showcase/src/content/exercises/ne-prilagatelnye.json",
+    "apps/showcase/src/content/exercises/odnorodnye.json",
+    "apps/showcase/src/content/exercises/orfograficheskiy-analiz.json",
+    "apps/showcase/src/content/exercises/osnova.json",
+    "apps/showcase/src/content/exercises/punktuacionnye-pravila.json",
+    "apps/showcase/src/content/exercises/punktuacionnyy-analiz.json",
+    "apps/showcase/src/content/exercises/retained.json",
+    "apps/showcase/src/content/exercises/sintaksis.json",
+    "apps/showcase/src/content/exercises/slovosochetaniya.json",
+    "apps/showcase/src/content/exercises/udarenie.json",
+    "apps/showcase/src/content/exercises/vyrazitelnost.json"
+  ],
+  "materialsPath": "apps/showcase/src/oge/materials.json",
+  "caseId": "oge-glasnye-v-tekste-013",
+  "revision": 1,
+  "note": "Synthetic full-work fixture assembled from actual baseline published JSON. Not an actual user record. The historically damaged condition is intentionally preserved and never admitted to new publications."
+}

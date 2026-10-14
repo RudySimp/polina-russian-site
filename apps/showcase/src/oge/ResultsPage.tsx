@@ -11,7 +11,12 @@ import {
   saveSessionDurably,
   deleteSessionDurably,
 } from "./repository";
-import { downloadBackup, importSessions } from "./backup";
+import {
+  downloadBackupPart,
+  prepareBackupParts,
+  importSessions,
+  type BackupPart,
+} from "./backup";
 import {
   readGameRecords,
   type HistoricGameRecord,
@@ -32,6 +37,7 @@ export default function ResultsPage({
     [notice, setNotice] = useState(""),
     [deleting, setDeleting] = useState(""),
     [busy, setBusy] = useState(false);
+  const [backupParts, setBackupParts] = useState<BackupPart[]>([]);
   const [sessions, setSessions] = useState<SessionSummary[]>(() => {
     try {
       return listSessionSummaries(localStorage);
@@ -79,10 +85,13 @@ export default function ResultsPage({
   async function exportAll() {
     setBusy(true);
     setError("");
+    setBackupParts([]);
     try {
       const works = await listSessionsDurably();
       if (!works.length) throw Error("Нет работ для резервной копии.");
-      downloadBackup(works);
+      const parts = prepareBackupParts(works);
+      if (parts.length === 1) downloadBackupPart(parts[0], 1, 1);
+      else setBackupParts(parts);
     } catch (e) {
       setError(
         e instanceof Error ? e.message : "Не удалось подготовить копию.",
@@ -159,6 +168,46 @@ export default function ResultsPage({
           />
         </label>
       </div>
+      {backupParts.length > 1 && (
+        <section className="oge-backup-parts">
+          <h2>Скачайте все части резервной копии</h2>
+          <p>
+            История разделена на {backupParts.length} файлов. Каждый содержит не
+            более 200 работ и 20 МБ. Скачайте каждую часть отдельной кнопкой;
+            восстановите все файлы по очереди.
+          </p>
+          <ul>
+            {backupParts.map((part, index) => (
+              <li key={index}>
+                <button
+                  className="button secondary"
+                  onClick={() => {
+                    setError("");
+                    try {
+                      downloadBackupPart(part, index + 1, backupParts.length);
+                    } catch (reason) {
+                      setError(
+                        reason instanceof Error
+                          ? reason.message
+                          : "Не удалось скачать часть резервной копии.",
+                      );
+                    }
+                  }}
+                >
+                  Скачать часть {index + 1} из {backupParts.length}
+                </button>
+                <p>
+                  {part.sessionCount} работ ·{" "}
+                  {(part.bytes / 1_000_000).toLocaleString("ru", {
+                    maximumFractionDigits: 2,
+                  })}{" "}
+                  МБ
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {notice && <p role="status">{notice}</p>}
       {error && <p role="alert">{error}</p>}
       <label className="oge-filter">

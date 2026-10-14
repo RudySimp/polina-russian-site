@@ -183,6 +183,7 @@ export function selectPractice(
 export function validateVariant(
   variant: ExamVariant,
   materials: Materials,
+  validation: { mode?: "publication" | "snapshot" } = {},
 ): void {
   const fail = (message: string): never => {
     throw new Error(`${variant.id}: ${message}`);
@@ -203,7 +204,11 @@ export function validateVariant(
     const e = materials.exercises.find(
       (e) => e.id === ref.id && e.revision === ref.revision,
     );
-    if (!e || !eligible(e) || e.format !== "exam-model")
+    if (
+      !e ||
+      (validation.mode !== "snapshot" && !eligible(e)) ||
+      e.format !== "exam-model"
+    )
       return fail(`задание ${ref.id}: отсутствует проверенная версия`);
     const line = lineFor(e.taskLine ?? 0);
     if (

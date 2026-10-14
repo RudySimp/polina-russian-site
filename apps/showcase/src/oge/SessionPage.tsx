@@ -1,3 +1,4 @@
+import { exerciseIndex } from "../content/catalog";
 import { GenerationDetails } from "./GenerationDetails";
 import { useEffect, useRef, useState } from "react";
 import { AnswerControl } from "../components/AnswerControl";
@@ -73,7 +74,9 @@ function SummaryAudio({
   }, []);
   useEffect(() => {
     const element = audio.current;
-    return () => { element?.pause(); };
+    return () => {
+      element?.pause();
+    };
   }, []);
   useEffect(() => {
     if (blocked) audio.current?.pause();
@@ -259,6 +262,19 @@ export function SessionPage({
   const latest = useRef(session);
   const draft = useRef(session ? new SessionDraft(session) : undefined);
   const [copyMessage, setCopyMessage] = useState("");
+  const [exportError, setExportError] = useState("");
+  function downloadDraftBackup(works: PracticeSession[]) {
+    setExportError("");
+    try {
+      downloadBackup(works);
+    } catch (reason) {
+      setExportError(
+        reason instanceof Error
+          ? reason.message
+          : "Не удалось подготовить резервную копию. Текущий текст остаётся в открытой работе.",
+      );
+    }
+  }
   const [saving, setSaving] = useState(false);
   const [loadingWork, setLoadingWork] = useState(true);
   const [checkpoints, setCheckpoints] = useState<PracticeSession[]>([]);
@@ -460,8 +476,25 @@ export function SessionPage({
         }
       patch = { ...patch, writingReviews: reviews };
     }
-    if (patch.writingReviews && Object.entries(patch.writingReviews).some(([key, review]) => key !== literacyReviewId && review !== work.current.writingReviews?.[key]) && patch.writingReviews[literacyReviewId]) {
-      patch = { ...patch, writingReviews: { ...patch.writingReviews, [literacyReviewId]: { ...patch.writingReviews[literacyReviewId], reviewedAt: undefined } } };
+    if (
+      patch.writingReviews &&
+      Object.entries(patch.writingReviews).some(
+        ([key, review]) =>
+          key !== literacyReviewId &&
+          review !== work.current.writingReviews?.[key],
+      ) &&
+      patch.writingReviews[literacyReviewId]
+    ) {
+      patch = {
+        ...patch,
+        writingReviews: {
+          ...patch.writingReviews,
+          [literacyReviewId]: {
+            ...patch.writingReviews[literacyReviewId],
+            reviewedAt: undefined,
+          },
+        },
+      };
     }
     const next = work.edit(patch);
     setSaving(true);
@@ -534,10 +567,11 @@ export function SessionPage({
       )}
       <button
         className="button secondary"
-        onClick={() => downloadBackup([draft.current!.current])}
+        onClick={() => downloadDraftBackup([draft.current!.current])}
       >
         Скачать резервную копию
       </button>
+      {exportError && <p role="alert">{exportError}</p>}
       <details>
         <summary>Предыдущие сохранённые редакции</summary>
         <p>
@@ -624,7 +658,10 @@ export function SessionPage({
           <button
             className="button secondary"
             onClick={() =>
-              downloadBackup([draft.current!.current, draft.current!.remote!])
+              downloadDraftBackup([
+                draft.current!.current,
+                draft.current!.remote!,
+              ])
             }
           >
             Скачать обе редакции
@@ -686,6 +723,7 @@ export function SessionPage({
         title={session.title}
         text="ОГЭ-2027, проект модели. Ответы и состав работы сохраняются в этом браузере."
       />
+      <HistoricalNotice session={session} />
       <div className="oge-work-status">
         <span>
           Ответов: {session.items.length - empty.length} из{" "}
@@ -956,6 +994,7 @@ export function SessionResults({
         title="Результаты и разбор"
         text={session.title}
       />
+      <HistoricalNotice session={session} />
       {session.endedByTimeout && (
         <p role="status">
           Контрольное время истекло. Ответы зафиксированы автоматически,
@@ -1182,4 +1221,22 @@ export function SessionResults({
       </div>
     </>
   );
+}
+
+const currentRevisions = new Map(
+  exerciseIndex.map((exercise) => [exercise.id, exercise.revision]),
+);
+function HistoricalNotice({ session }: { session: PracticeSession }) {
+  const historical = session.items.some(
+    (item) =>
+      item.kind === "exercise" &&
+      currentRevisions.get(item.exercise.id) !== item.exercise.revision,
+  );
+  return historical ? (
+    <p className="editorial-note" role="status">
+      Эта работа содержит прежние редакции заданий. Условия и ответы показаны из
+      исходного снимка. Для проверки по уточнённым условиям начните{" "}
+      <a href={href("/oge/generator/")}>новую работу в текущем банке</a>.
+    </p>
+  ) : null;
 }

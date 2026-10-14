@@ -1,6 +1,20 @@
+import { useState } from "react";
 import type { PracticeSession } from "./model";
 import { downloadBackup, downloadGenerationCode } from "./backup";
 export function GenerationDetails({ session }: { session: PracticeSession }) {
+  const [error, setError] = useState("");
+  function download(action: () => void) {
+    setError("");
+    try {
+      action();
+    } catch (reason) {
+      setError(
+        reason instanceof Error
+          ? reason.message
+          : "Не удалось подготовить файл.",
+      );
+    }
+  }
   return (
     <details className="oge-generation-details">
       <summary>Код и редакция варианта</summary>
@@ -17,17 +31,18 @@ export function GenerationDetails({ session }: { session: PracticeSession }) {
       <div className="inline-actions">
         <button
           className="button secondary"
-          onClick={() => downloadGenerationCode(session)}
+          onClick={() => download(() => downloadGenerationCode(session))}
         >
           Скачать код состава
         </button>
         <button
           className="button secondary"
-          onClick={() => downloadBackup([session])}
+          onClick={() => download(() => downloadBackup([session]))}
         >
           Скачать работу с условиями
         </button>
       </div>
+      {error && <p role="alert">{error}</p>}
     </details>
   );
 }

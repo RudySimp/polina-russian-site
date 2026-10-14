@@ -2,18 +2,101 @@ import type { PracticeSession } from "./model";
 import { parseSession } from "./storage";
 
 export const backupMaxBytes = 20_000_000;
-export function exportSessions(sessions: PracticeSession[]) {
-  return JSON.stringify(
-    {
+export const backupMaxSessions = 200;
+export type BackupPart = { json: string; sessionCount: number; bytes: number };
+const encoder = new TextEncoder();
+type BackupEntry = { session: string; reproduction: string; bytes: number };
+function backupEntry(session: PracticeSession, index: number): BackupEntry {
+  const json = JSON.stringify(session);
+  const sessionBytes = encoder.encode(json).byteLength;
+  if (sessionBytes > backupMaxBytes)
+    throw Error(
+      "Работа «" +
+        session.title +
+        "» превышает лимит одного файла 20 МБ. Скачивание не начато; исходная работа остаётся в браузере.",
+    );
+  if (json.length > 3_000_000)
+    throw Error(
+      "Работа «" +
+        session.title +
+        "» слишком большая для восстановления: максимум 3 млн символов в одной работе. Данные работы не изменены.",
+    );
+  if (!parseSession(json))
+    throw Error(
+      "Работа " +
+        (index + 1) +
+        " не прошла проверку. Резервная копия не создана; данные работ не изменены.",
+    );
+  const reproduction = JSON.stringify(reproductionFor(session));
+  return {
+    session: json,
+    reproduction,
+    bytes: sessionBytes + encoder.encode(reproduction).byteLength,
+  };
+}
+function backupJson(entries: BackupEntry[], exportedAt: string) {
+  return (
+    JSON.stringify({
       format: "polina-oge-backup",
       version: 1,
-      exportedAt: new Date().toISOString(),
-      reproduction: sessions.map(reproductionFor),
-      sessions,
-    },
-    null,
-    2,
+      exportedAt,
+    }).slice(0, -1) +
+    ',"reproduction":[' +
+    entries.map((entry) => entry.reproduction).join(",") +
+    '],"sessions":[' +
+    entries.map((entry) => entry.session).join(",") +
+    "]}"
   );
+}
+export function exportSessions(sessions: PracticeSession[]) {
+  if (!sessions.length || sessions.length > backupMaxSessions)
+    throw Error(
+      "В одном резервном файле должно быть от 1 до 200 работ. Для всей истории подготовьте копию по частям.",
+    );
+  const json = backupJson(sessions.map(backupEntry), new Date().toISOString());
+  if (encoder.encode(json).byteLength > backupMaxBytes)
+    throw Error(
+      "Резервная копия превышает 20 МБ. Подготовьте копию всей истории по частям; данные работ не изменены.",
+    );
+  return json;
+}
+/** Each independently importable v1 file obeys both the session and UTF-8 limits. */
+export function prepareBackupParts(sessions: PracticeSession[]): BackupPart[] {
+  if (!sessions.length) throw Error("Нет работ для резервной копии.");
+  const exportedAt = new Date().toISOString(),
+    baseBytes = encoder.encode(backupJson([], exportedAt)).byteLength;
+  const parts: BackupPart[] = [];
+  let entries: BackupEntry[] = [],
+    bytes = baseBytes;
+  const finish = () => {
+    const json = backupJson(entries, exportedAt);
+    parts.push({
+      json,
+      sessionCount: entries.length,
+      bytes: encoder.encode(json).byteLength,
+    });
+    entries = [];
+    bytes = baseBytes;
+  };
+  for (const [index, session] of sessions.entries()) {
+    const entry = backupEntry(session, index);
+    if (baseBytes + entry.bytes > backupMaxBytes)
+      throw Error(
+        "Работа «" +
+          session.title +
+          "» превышает лимит одного файла 20 МБ. Скачивание не начато; исходная работа остаётся в браузере.",
+      );
+    const additional = entry.bytes + (entries.length ? 2 : 0);
+    if (
+      entries.length >= backupMaxSessions ||
+      bytes + additional > backupMaxBytes
+    )
+      finish();
+    bytes += entry.bytes + (entries.length ? 2 : 0);
+    entries.push(entry);
+  }
+  if (entries.length) finish();
+  return parts;
 }
 export function importSessions(raw: string): PracticeSession[] {
   if (
@@ -51,17 +134,43 @@ export function importSessions(raw: string): PracticeSession[] {
     return session;
   });
 }
-export function downloadBackup(sessions: PracticeSession[]) {
+function downloadBackupJson(json: string, filename: string) {
   const objectUrl = URL.createObjectURL(
-    new Blob([exportSessions(sessions)], {
-      type: "application/json;charset=utf-8",
-    }),
+    new Blob([json], { type: "application/json;charset=utf-8" }),
   );
   const link = document.createElement("a");
   link.href = objectUrl;
-  link.download = `polina-oge-${new Date().toISOString().slice(0, 10)}.json`;
+  link.download = filename;
   link.click();
   setTimeout(() => URL.revokeObjectURL(objectUrl), 1000);
+}
+export function downloadBackup(sessions: PracticeSession[]) {
+  downloadBackupJson(
+    exportSessions(sessions),
+    "polina-oge-" + new Date().toISOString().slice(0, 10) + ".json",
+  );
+}
+export function downloadBackupPart(
+  part: BackupPart,
+  index: number,
+  total: number,
+) {
+  if (
+    part.sessionCount < 1 ||
+    part.sessionCount > backupMaxSessions ||
+    encoder.encode(part.json).byteLength > backupMaxBytes
+  )
+    throw Error("Часть резервной копии превышает допустимые границы.");
+  downloadBackupJson(
+    part.json,
+    "polina-oge-" +
+      new Date().toISOString().slice(0, 10) +
+      "-part-" +
+      index +
+      "-of-" +
+      total +
+      ".json",
+  );
 }
 export function sessionAnswerText(session: PracticeSession) {
   return [

@@ -535,16 +535,20 @@ export function parseSession(raw: string | null): PracticeSession | undefined {
         reviewStage: "publication-approved" as const,
         teacherApproval: "pending" as const,
       };
-      validateVariant(variant, {
-        texts: session.texts,
-        audio: session.audio,
-        exercises: session.items.flatMap((i) =>
-          i.kind === "exercise" ? [i.exercise] : [],
-        ),
-        writing: session.items.flatMap((i) =>
-          i.kind === "writing" ? [i.writing] : [],
-        ),
-      });
+      validateVariant(
+        variant,
+        {
+          texts: session.texts,
+          audio: session.audio,
+          exercises: session.items.flatMap((i) =>
+            i.kind === "exercise" ? [i.exercise] : [],
+          ),
+          writing: session.items.flatMap((i) =>
+            i.kind === "writing" ? [i.writing] : [],
+          ),
+        },
+        { mode: "snapshot" },
+      );
     }
     return session;
   } catch {
