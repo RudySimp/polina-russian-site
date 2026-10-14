@@ -1,5 +1,1097 @@
 [
   {
+    "id": "oge-osnova-syntax-route",
+    "slug": "oge-osnova-syntax-route",
+    "revision": 1,
+    "title": "Горная тропа: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-route",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "135"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "навигатор показался неисправным (предложение 1)",
+      "путешественники решили (предложение 2)",
+      "появились звёзды (предложение 3)",
+      "воздух был (предложение 4)",
+      "тропа закрыта (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Сказуемое составное именное: связка «показался» и именная часть «неисправным».",
+      "В составное глагольное сказуемое входят «решили вернуться»; инфинитив пропущен.",
+      "Подлежащее «звёзды» стоит после сказуемого «появились»; порядок слов не меняет состав основы.",
+      "Сказуемое «был холоден» составное именное; именная часть пропущена.",
+      "В придаточной части основа «тропа закрыта»; краткое причастие образует сказуемое с нулевой связкой."
+    ],
+    "explanation": "Сказуемое составное именное: связка «показался» и именная часть «неисправным».\n\nВ составное глагольное сказуемое входят «решили вернуться»; инфинитив пропущен.\n\nПодлежащее «звёзды» стоит после сказуемого «появились»; порядок слов не меняет состав основы.\n\nСказуемое «был холоден» составное именное; именная часть пропущена.\n\nВ придаточной части основа «тропа закрыта»; краткое причастие образует сказуемое с нулевой связкой.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Проверьте, не потеряны ли инфинитив и именная часть сказуемого.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal",
+      "OGE:2.compound-verbal",
+      "OGE:2.subject",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-workshop",
+    "slug": "oge-osnova-syntax-workshop",
+    "revision": 1,
+    "title": "В мастерской: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-workshop",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "345"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "починить часы — задача (предложение 1)",
+      "мастер попросил принести (предложение 2)",
+      "пахло (предложение 3)",
+      "ученик снял, проверил и очистил (предложение 4)",
+      "мастер улыбнулся (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Подлежащее выражено инфинитивом «починить», сказуемое — «задача» с нулевой связкой. «Часы» — зависимое дополнение, лишнее в предложенном составе основы.",
+      "«Принести» называет действие ученика, а «попросил» — действие мастера. Основное сказуемое «попросил»; инфинитив не входит в него.",
+      "В безличном предложении главный член — «пахло»; обстоятельство места не является подлежащим.",
+      "У одного подлежащего три однородных простых глагольных сказуемых.",
+      "Это полная основа главной части сложноподчинённого предложения."
+    ],
+    "explanation": "Подлежащее выражено инфинитивом «починить», сказуемое — «задача» с нулевой связкой. «Часы» — зависимое дополнение, лишнее в предложенном составе основы.\n\n«Принести» называет действие ученика, а «попросил» — действие мастера. Основное сказуемое «попросил»; инфинитив не входит в него.\n\nВ безличном предложении главный член — «пахло»; обстоятельство места не является подлежащим.\n\nУ одного подлежащего три однородных простых глагольных сказуемых.\n\nЭто полная основа главной части сложноподчинённого предложения.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Инфинитив входит в сказуемое, когда его действие совершает то же лицо, что и действие вспомогательного слова.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal",
+      "OGE:2.compound-nominal",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal",
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-dawn",
+    "slug": "oge-osnova-syntax-dawn",
+    "revision": 1,
+    "title": "Рассвет у озера: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-dawn",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "135"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "утро (предложение 1)",
+      "над озером прохладно (предложение 2)",
+      "рыбаки переговариваются (предложение 3)",
+      "туман начал (предложение 4)",
+      "оглянись и посмотри (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Главный член назывного предложения — «утро»; определение «раннее» не входит в основу.",
+      "«Над озером» — обстоятельство. Главный член безличного предложения — «прохладно».",
+      "Подлежащее «рыбаки» и сказуемое «переговариваются» образуют полную основу.",
+      "В составное глагольное сказуемое второй части входят «начал редеть».",
+      "Однородные главные члены определённо-личного предложения выражены повелительным наклонением."
+    ],
+    "explanation": "Главный член назывного предложения — «утро»; определение «раннее» не входит в основу.\n\n«Над озером» — обстоятельство. Главный член безличного предложения — «прохладно».\n\nПодлежащее «рыбаки» и сказуемое «переговариваются» образуют полную основу.\n\nВ составное глагольное сказуемое второй части входят «начал редеть».\n\nОднородные главные члены определённо-личного предложения выражены повелительным наклонением.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Не включайте обстоятельство в основу безличного предложения и не теряйте инфинитив «редеть».",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.one-member",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#one-member-types",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-museum",
+    "slug": "oge-osnova-syntax-museum",
+    "revision": 1,
+    "title": "Экскурсия в музее: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-museum",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "1234"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "было спокойно (предложение 1)",
+      "мы с сестрой остановились (предложение 2)",
+      "экскурсовод заметил (предложение 3)",
+      "границы отличаются (предложение 4)",
+      "слушать его — удовольствие (предложение 5)"
+    ],
+    "optionExplanations": [
+      "«Было спокойно» — главный член безличного предложения.",
+      "Сочетание «мы с сестрой» при множественном числе сказуемого обозначает совместных участников и входит в подлежащее.",
+      "Вводное сочетание «к счастью» не входит в основу; полная основа — «экскурсовод заметил».",
+      "В придаточной части подлежащее «границы» и сказуемое «отличаются». Главная часть имеет отдельную основу «он объяснил».",
+      "Подлежащее — инфинитив «слушать», сказуемое — существительное «удовольствие» с нулевой связкой. Дополнение «его» не входит в основу."
+    ],
+    "explanation": "«Было спокойно» — главный член безличного предложения.\n\nСочетание «мы с сестрой» при множественном числе сказуемого обозначает совместных участников и входит в подлежащее.\n\nВводное сочетание «к счастью» не входит в основу; полная основа — «экскурсовод заметил».\n\nВ придаточной части подлежащее «границы» и сказуемое «отличаются». Главная часть имеет отдельную основу «он объяснил».\n\nПодлежащее — инфинитив «слушать», сказуемое — существительное «удовольствие» с нулевой связкой. Дополнение «его» не входит в основу.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Учитывайте число сказуемого при сочетании «мы с сестрой»; дополнение при инфинитиве не входит в основу.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.one-member",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal",
+      "OGE:2.compound-nominal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal",
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#one-member-types",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-news",
+    "slug": "oge-osnova-syntax-news",
+    "revision": 1,
+    "title": "Школьная редакция: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-news",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "1345"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "готовят (предложение 1)",
+      "корреспондент должен (предложение 2)",
+      "редактор уверен (предложение 3)",
+      "фотография размыта (предложение 4)",
+      "читатели стали обсуждать (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Главный член неопределённо-личного предложения — «готовят»; действующие лица не названы.",
+      "Полное составное глагольное сказуемое — «должен проверить», инфинитив пропущен.",
+      "Краткое прилагательное «уверен» образует сказуемое с нулевой связкой.",
+      "В придаточной части основа «фотография размыта»; краткое причастие — именная часть сказуемого с нулевой связкой.",
+      "Вторая часть имеет подлежащее «читатели» и составное глагольное сказуемое «стали обсуждать»."
+    ],
+    "explanation": "Главный член неопределённо-личного предложения — «готовят»; действующие лица не названы.\n\nПолное составное глагольное сказуемое — «должен проверить», инфинитив пропущен.\n\nКраткое прилагательное «уверен» образует сказуемое с нулевой связкой.\n\nВ придаточной части основа «фотография размыта»; краткое причастие — именная часть сказуемого с нулевой связкой.\n\nВторая часть имеет подлежащее «читатели» и составное глагольное сказуемое «стали обсуждать».",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Модальное слово «должен» нуждается в смысловом инфинитиве; фазовое «стали» также не заменяет полное сказуемое.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-verbal",
+      "OGE:2.compound-nominal",
+      "OGE:2.subject",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-snowfall",
+    "slug": "oge-osnova-syntax-snowfall",
+    "revision": 1,
+    "title": "После снегопада: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-snowfall",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "135"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "трое ребят вышли (предложение 1)",
+      "снег продолжал (предложение 2)",
+      "расчистили (предложение 3)",
+      "детям хотелось (предложение 4)",
+      "водитель привёз (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Подлежащее — неделимое количественное сочетание «трое ребят», сказуемое — «вышли».",
+      "Полное составное глагольное сказуемое — «продолжал падать».",
+      "Главный член неопределённо-личного предложения — «расчистили»; исполнители не названы.",
+      "«Детям» — дополнение, главное сказуемое безличного предложения — «хотелось остаться».",
+      "В придаточной части подлежащее «водитель», сказуемое «привёз»; «которую» — дополнение."
+    ],
+    "explanation": "Подлежащее — неделимое количественное сочетание «трое ребят», сказуемое — «вышли».\n\nПолное составное глагольное сказуемое — «продолжал падать».\n\nГлавный член неопределённо-личного предложения — «расчистили»; исполнители не названы.\n\n«Детям» — дополнение, главное сказуемое безличного предложения — «хотелось остаться».\n\nВ придаточной части подлежащее «водитель», сказуемое «привёз»; «которую» — дополнение.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Проверьте неделимое подлежащее, фазовое сказуемое и отличие дополнения в дательном падеже от подлежащего.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-osnova-syntax-meeting",
+    "slug": "oge-osnova-syntax-meeting",
+    "revision": 1,
+    "title": "Перед встречей: основы",
+    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
+    "sourceTextId": "syntax-meeting",
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "234"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-11",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "line-2-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "зал должен быть (предложение 1)",
+      "мы будем встречать (предложение 2)",
+      "дежурный открыл (предложение 3)",
+      "стало свежо (предложение 4)",
+      "ведущая улыбаясь начала рассказывать (предложение 5)"
+    ],
+    "optionExplanations": [
+      "В полное сказуемое входит именная часть «готов»: «должен быть готов».",
+      "Аналитическая форма будущего «будем встречать» — простое глагольное сказуемое.",
+      "Субстантивированное прилагательное «дежурный» — подлежащее, «открыл» — простое глагольное сказуемое. Дополнение «окна» в основу не входит.",
+      "«Стало свежо» — главный член безличного предложения.",
+      "Сказуемое «начала рассказывать» составное глагольное; деепричастие «улыбаясь» обозначает добавочное действие и не входит в основу."
+    ],
+    "explanation": "В полное сказуемое входит именная часть «готов»: «должен быть готов».\n\nАналитическая форма будущего «будем встречать» — простое глагольное сказуемое.\n\nСубстантивированное прилагательное «дежурный» — подлежащее, «открыл» — простое глагольное сказуемое. Дополнение «окна» в основу не входит.\n\n«Стало свежо» — главный член безличного предложения.\n\nСказуемое «начала рассказывать» составное глагольное; деепричастие «улыбаясь» обозначает добавочное действие и не входит в основу.",
+    "steps": [
+      "Определите главные члены каждой части.",
+      "Сохраните все части составного сказуемого.",
+      "Сверьте полный состав предложенной основы."
+    ],
+    "hint": "Аналитическое будущее «будем встречать» отличается от составного сказуемого; деепричастие остаётся второстепенным членом.",
+    "formatLabel": "ОГЭ · задание 2",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-oge-2027-originals",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-11",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-11",
+        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+      }
+    ],
+    "subtopic": "Составное сказуемое и односоставная конструкция",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal",
+      "OGE:2.simple-predicate",
+      "OGE:2.subject",
+      "OGE:2.one-member",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.simple-predicate"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicates",
+        "errorType": "simple-predicate"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.simple-predicate"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#predicates",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
     "id": "oge-osnova-001",
     "slug": "oge-osnova-001",
     "revision": 2,
@@ -107,7 +1199,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Обстоятельство и дополнение"
+    "subtopic": "Обстоятельство и дополнение",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-verbal",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-002",
@@ -217,7 +1357,47 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Составное сказуемое"
+    "subtopic": "Составное сказуемое",
+    "skillIds": [
+      "OGE:syntax.foundation"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-003",
@@ -327,7 +1507,57 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Основа безличного предложения"
+    "subtopic": "Основа безличного предложения",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-004",
@@ -437,7 +1667,54 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Именная часть сказуемого"
+    "subtopic": "Именная часть сказуемого",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-005",
@@ -547,7 +1824,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Главные члены и зависимые слова"
+    "subtopic": "Главные члены и зависимые слова",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-006",
@@ -657,7 +1982,52 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Инфинитив в сказуемом"
+    "subtopic": "Инфинитив в сказуемом",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-007",
@@ -767,7 +2137,51 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Однородные основы в частях"
+    "subtopic": "Однородные основы в частях",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-008",
@@ -877,7 +2291,51 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Союз и грамматическая основа"
+    "subtopic": "Союз и грамматическая основа",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-009",
@@ -987,7 +2445,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Основа предложения о репетиции"
+    "subtopic": "Основа предложения о репетиции",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-010",
@@ -1097,7 +2603,52 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Связка и смысловая часть сказуемого"
+    "subtopic": "Связка и смысловая часть сказуемого",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-verbal",
+      "OGE:2.compound-nominal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-011",
@@ -1207,7 +2758,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Основа предложения о тренировке"
+    "subtopic": "Основа предложения о тренировке",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-verbal",
+      "OGE:2.one-member"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-014",
@@ -1317,7 +2916,51 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Полнота грамматической основы"
+    "subtopic": "Полнота грамматической основы",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-osnova-020",
@@ -1427,22 +3070,68 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Подлежащее, сказуемое и дополнение"
+    "subtopic": "Подлежащее, сказуемое и дополнение",
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-verbal",
+      "OGE:2.subject"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#subject-forms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
-    "id": "oge-osnova-syntax-route",
-    "slug": "oge-osnova-syntax-route",
+    "id": "oge-osnova-syntax-audit-lighthouse",
+    "slug": "oge-osnova-syntax-audit-lighthouse",
     "revision": 1,
-    "title": "Горная тропа: основы",
+    "title": "Новый маяк: грамматическая основа",
     "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-route",
+    "sourceTextId": "syntax-audit-lighthouse",
     "topicId": "osnova",
     "topicSlug": "osnova",
     "topicTitle": "Грамматическая основа",
     "exam": "OGE",
     "responseKind": "digits_sequence",
     "answers": [
-      "135"
+      "245"
     ],
     "maxScore": 1,
     "policy": {
@@ -1462,8 +3151,8 @@
       "sourceTitle": "Оригинальные учебные материалы проекта",
       "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
       "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
+      "licenseNote": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -1471,26 +3160,26 @@
     "misconceptionId": "line-2-analysis",
     "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
     "options": [
-      "навигатор показался неисправным (предложение 1)",
-      "путешественники решили (предложение 2)",
-      "появились звёзды (предложение 3)",
-      "воздух был (предложение 4)",
-      "тропа закрыта (предложение 5)"
+      "на берегу построили (предложение 1)",
+      "свет кажется ярким (предложение 2)",
+      "смотритель начал (предложение 3)",
+      "море затихло (предложение 4)",
+      "ветер не усилился (предложение 5)"
     ],
     "optionExplanations": [
-      "Сказуемое составное именное: связка «показался» и именная часть «неисправным».",
-      "В составное глагольное сказуемое входят «решили вернуться»; инфинитив пропущен.",
-      "Подлежащее «звёзды» стоит после сказуемого «появились»; порядок слов не меняет состав основы.",
-      "Сказуемое «был холоден» составное именное; именная часть пропущена.",
-      "В придаточной части основа «тропа закрыта»; краткое причастие образует сказуемое с нулевой связкой."
+      "Главный член неопределённо-личного предложения — «построили». «На берегу» — обстоятельство места, не входит в основу; неназванный строитель не восстанавливается из текста.",
+      "Подлежащее «свет». Составное именное сказуемое «кажется ярким» содержит глагольную связку и полную именную часть.",
+      "Подлежащее «смотритель». Полное составное глагольное сказуемое — «начал проверять»: фазовый глагол и инфинитив обозначают действие одного лица.",
+      "В придаточной части времени подлежащее «море», сказуемое «затихло». Эта основа названа полностью.",
+      "Во второй части сложносочинённого предложения основа «ветер не усилился». Отрицательная частица сохраняется при сказуемом."
     ],
-    "explanation": "Сказуемое составное именное: связка «показался» и именная часть «неисправным».\n\nВ составное глагольное сказуемое входят «решили вернуться»; инфинитив пропущен.\n\nПодлежащее «звёзды» стоит после сказуемого «появились»; порядок слов не меняет состав основы.\n\nСказуемое «был холоден» составное именное; именная часть пропущена.\n\nВ придаточной части основа «тропа закрыта»; краткое причастие образует сказуемое с нулевой связкой.",
+    "explanation": "Главный член неопределённо-личного предложения — «построили». «На берегу» — обстоятельство места, не входит в основу; неназванный строитель не восстанавливается из текста.\n\nПодлежащее «свет». Составное именное сказуемое «кажется ярким» содержит глагольную связку и полную именную часть.\n\nПодлежащее «смотритель». Полное составное глагольное сказуемое — «начал проверять»: фазовый глагол и инфинитив обозначают действие одного лица.\n\nВ придаточной части времени подлежащее «море», сказуемое «затихло». Эта основа названа полностью.\n\nВо второй части сложносочинённого предложения основа «ветер не усилился». Отрицательная частица сохраняется при сказуемом.",
     "steps": [
       "Определите главные члены каждой части.",
       "Сохраните все части составного сказуемого.",
       "Сверьте полный состав предложенной основы."
     ],
-    "hint": "Проверьте, не потеряны ли инфинитив и именная часть сказуемого.",
+    "hint": "Сохраните именную часть и инфинитив; обстоятельство места не становится подлежащим.",
     "formatLabel": "ОГЭ · задание 2",
     "input": "digits",
     "level": "standard",
@@ -1502,47 +3191,111 @@
       "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
     },
     "provenance": {
-      "sourceId": "project-oge-2027-originals",
+      "sourceId": "project-audit-syntax-2026-10-12",
       "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
+      "rightsBasis": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "reviewNote": "Независимое чтение всех вариантов: Основы: построили; свет кажется ярким; смотритель начал проверять; море затихло / смотритель открыл / которая выходила; похолодало / ветер не усилился. Текст объединяет неопределённо-личность, СИС/СГС и параллельное подчинение без спорного пропуска подлежащего. Утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "reviewStages": [
       {
         "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
       }
     ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
+    "subtopic": "Границы главных членов и тип сказуемого",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-nominal",
+      "OGE:2.compound-verbal"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ],
+    "classificationReview": "editorial-draft"
   },
   {
-    "id": "oge-osnova-syntax-workshop",
-    "slug": "oge-osnova-syntax-workshop",
+    "id": "oge-osnova-syntax-audit-library-display",
+    "slug": "oge-osnova-syntax-audit-library-display",
     "revision": 1,
-    "title": "В мастерской: основы",
+    "title": "Библиотечная выставка: грамматическая основа",
     "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-workshop",
+    "sourceTextId": "syntax-audit-library-display",
     "topicId": "osnova",
     "topicSlug": "osnova",
     "topicTitle": "Грамматическая основа",
     "exam": "OGE",
     "responseKind": "digits_sequence",
     "answers": [
-      "345"
+      "134"
     ],
     "maxScore": 1,
     "policy": {
@@ -1562,108 +3315,8 @@
       "sourceTitle": "Оригинальные учебные материалы проекта",
       "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
       "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
-      "examYear": 2027,
-      "editorialStatus": "needs_review"
-    },
-    "skillId": "OGE:syntax.foundation",
-    "misconceptionId": "line-2-analysis",
-    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
-    "options": [
-      "починить часы — задача (предложение 1)",
-      "мастер попросил принести (предложение 2)",
-      "пахло (предложение 3)",
-      "ученик снял, проверил и очистил (предложение 4)",
-      "мастер улыбнулся (предложение 5)"
-    ],
-    "optionExplanations": [
-      "Подлежащее выражено инфинитивом «починить», сказуемое — «задача» с нулевой связкой. «Часы» — зависимое дополнение, лишнее в предложенном составе основы.",
-      "«Принести» называет действие ученика, а «попросил» — действие мастера. Основное сказуемое «попросил»; инфинитив не входит в него.",
-      "В безличном предложении главный член — «пахло»; обстоятельство места не является подлежащим.",
-      "У одного подлежащего три однородных простых глагольных сказуемых.",
-      "Это полная основа главной части сложноподчинённого предложения."
-    ],
-    "explanation": "Подлежащее выражено инфинитивом «починить», сказуемое — «задача» с нулевой связкой. «Часы» — зависимое дополнение, лишнее в предложенном составе основы.\n\n«Принести» называет действие ученика, а «попросил» — действие мастера. Основное сказуемое «попросил»; инфинитив не входит в него.\n\nВ безличном предложении главный член — «пахло»; обстоятельство места не является подлежащим.\n\nУ одного подлежащего три однородных простых глагольных сказуемых.\n\nЭто полная основа главной части сложноподчинённого предложения.",
-    "steps": [
-      "Определите главные члены каждой части.",
-      "Сохраните все части составного сказуемого.",
-      "Сверьте полный состав предложенной основы."
-    ],
-    "hint": "Инфинитив входит в сказуемое, когда его действие совершает то же лицо, что и действие вспомогательного слова.",
-    "formatLabel": "ОГЭ · задание 2",
-    "input": "digits",
-    "level": "standard",
-    "taskLine": 2,
-    "format": "exam-model",
-    "examModel": {
-      "year": 2027,
-      "status": "project",
-      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
-    },
-    "provenance": {
-      "sourceId": "project-oge-2027-originals",
-      "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
-      "teacherApproval": "pending"
-    },
-    "reviewStatus": "checked-demo",
-    "reviewStages": [
-      {
-        "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      },
-      {
-        "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      },
-      {
-        "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      }
-    ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
-  },
-  {
-    "id": "oge-osnova-syntax-dawn",
-    "slug": "oge-osnova-syntax-dawn",
-    "revision": 1,
-    "title": "Рассвет у озера: основы",
-    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-dawn",
-    "topicId": "osnova",
-    "topicSlug": "osnova",
-    "topicTitle": "Грамматическая основа",
-    "exam": "OGE",
-    "responseKind": "digits_sequence",
-    "answers": [
-      "135"
-    ],
-    "maxScore": 1,
-    "policy": {
-      "version": 1,
-      "trim": true,
-      "caseSensitive": false,
-      "collapseSpaces": false,
-      "allowYoAsE": false,
-      "orderMatters": false,
-      "allowDigitSeparators": false,
-      "minLength": 1,
-      "maxLength": 5
-    },
-    "source": {
-      "sourceType": "original_demo",
-      "sourceUrl": "",
-      "sourceTitle": "Оригинальные учебные материалы проекта",
-      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
-      "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
+      "licenseNote": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -1672,25 +3325,25 @@
     "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
     "options": [
       "утро (предложение 1)",
-      "над озером прохладно (предложение 2)",
-      "рыбаки переговариваются (предложение 3)",
-      "туман начал (предложение 4)",
-      "оглянись и посмотри (предложение 5)"
+      "в библиотеке было (предложение 2)",
+      "две ученицы стали расставлять (предложение 3)",
+      "заведующая попросила (предложение 4)",
+      "мы узнали книги (предложение 5)"
     ],
     "optionExplanations": [
-      "Главный член назывного предложения — «утро»; определение «раннее» не входит в основу.",
-      "«Над озером» — обстоятельство. Главный член безличного предложения — «прохладно».",
-      "Подлежащее «рыбаки» и сказуемое «переговариваются» образуют полную основу.",
-      "В составное глагольное сказуемое второй части входят «начал редеть».",
-      "Однородные главные члены определённо-личного предложения выражены повелительным наклонением."
+      "«Утро» — единственный главный член назывного предложения.",
+      "Главный член безличного предложения — «было тихо». Именная часть «тихо» пропущена; «в библиотеке» — обстоятельство места.",
+      "Подлежащее — количественно-именное сочетание «две ученицы». Сказуемое «стали расставлять» составное глагольное: обе части относятся к ученицам.",
+      "В первой части основа «заведующая попросила». Открывает витрину помощник, поэтому инфинитив «открыть» не входит в сказуемое заведующей.",
+      "Основа главной части — «мы узнали». «Книги» — дополнение внутри придаточной части «на выставку привезли книги», не главный член."
     ],
-    "explanation": "Главный член назывного предложения — «утро»; определение «раннее» не входит в основу.\n\n«Над озером» — обстоятельство. Главный член безличного предложения — «прохладно».\n\nПодлежащее «рыбаки» и сказуемое «переговариваются» образуют полную основу.\n\nВ составное глагольное сказуемое второй части входят «начал редеть».\n\nОднородные главные члены определённо-личного предложения выражены повелительным наклонением.",
+    "explanation": "«Утро» — единственный главный член назывного предложения.\n\nГлавный член безличного предложения — «было тихо». Именная часть «тихо» пропущена; «в библиотеке» — обстоятельство места.\n\nПодлежащее — количественно-именное сочетание «две ученицы». Сказуемое «стали расставлять» составное глагольное: обе части относятся к ученицам.\n\nВ первой части основа «заведующая попросила». Открывает витрину помощник, поэтому инфинитив «открыть» не входит в сказуемое заведующей.\n\nОснова главной части — «мы узнали». «Книги» — дополнение внутри придаточной части «на выставку привезли книги», не главный член.",
     "steps": [
       "Определите главные члены каждой части.",
       "Сохраните все части составного сказуемого.",
       "Сверьте полный состав предложенной основы."
     ],
-    "hint": "Не включайте обстоятельство в основу безличного предложения и не теряйте инфинитив «редеть».",
+    "hint": "Уточните, кто выполняет действие инфинитива: заведующая или её помощник.",
     "formatLabel": "ОГЭ · задание 2",
     "input": "digits",
     "level": "standard",
@@ -1702,140 +3355,106 @@
       "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
     },
     "provenance": {
-      "sourceId": "project-oge-2027-originals",
+      "sourceId": "project-audit-syntax-2026-10-12",
       "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
+      "rightsBasis": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "reviewNote": "Независимое чтение всех вариантов: Основы: утро; было тихо; две ученицы стали расставлять; заведующая попросила / дежурный проверил; мы узнали / привезли / нашли. Две последние придаточные — неопределённо-личные; союзное слово «которые» в последней является дополнением, не подлежащим. Утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "reviewStages": [
       {
         "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
       }
     ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
-  },
-  {
-    "id": "oge-osnova-syntax-museum",
-    "slug": "oge-osnova-syntax-museum",
-    "revision": 1,
-    "title": "Экскурсия в музее: основы",
-    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-museum",
-    "topicId": "osnova",
-    "topicSlug": "osnova",
-    "topicTitle": "Грамматическая основа",
-    "exam": "OGE",
-    "responseKind": "digits_sequence",
-    "answers": [
-      "1234"
-    ],
-    "maxScore": 1,
-    "policy": {
-      "version": 1,
-      "trim": true,
-      "caseSensitive": false,
-      "collapseSpaces": false,
-      "allowYoAsE": false,
-      "orderMatters": false,
-      "allowDigitSeparators": false,
-      "minLength": 1,
-      "maxLength": 5
+    "subtopic": "Границы главных членов и тип сказуемого",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
     },
-    "source": {
-      "sourceType": "original_demo",
-      "sourceUrl": "",
-      "sourceTitle": "Оригинальные учебные материалы проекта",
-      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
-      "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
-      "examYear": 2027,
-      "editorialStatus": "needs_review"
-    },
-    "skillId": "OGE:syntax.foundation",
-    "misconceptionId": "line-2-analysis",
-    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
-    "options": [
-      "было спокойно (предложение 1)",
-      "мы с сестрой остановились (предложение 2)",
-      "экскурсовод заметил (предложение 3)",
-      "границы отличаются (предложение 4)",
-      "слушать его — удовольствие (предложение 5)"
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.compound-nominal",
+      "OGE:2.one-member",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal"
     ],
-    "optionExplanations": [
-      "«Было спокойно» — главный член безличного предложения.",
-      "Сочетание «мы с сестрой» при множественном числе сказуемого обозначает совместных участников и входит в подлежащее.",
-      "Вводное сочетание «к счастью» не входит в основу; полная основа — «экскурсовод заметил».",
-      "В придаточной части подлежащее «границы» и сказуемое «отличаются». Главная часть имеет отдельную основу «он объяснил».",
-      "Подлежащее — инфинитив «слушать», сказуемое — существительное «удовольствие» с нулевой связкой. Дополнение «его» не входит в основу."
-    ],
-    "explanation": "«Было спокойно» — главный член безличного предложения.\n\nСочетание «мы с сестрой» при множественном числе сказуемого обозначает совместных участников и входит в подлежащее.\n\nВводное сочетание «к счастью» не входит в основу; полная основа — «экскурсовод заметил».\n\nВ придаточной части подлежащее «границы» и сказуемое «отличаются». Главная часть имеет отдельную основу «он объяснил».\n\nПодлежащее — инфинитив «слушать», сказуемое — существительное «удовольствие» с нулевой связкой. Дополнение «его» не входит в основу.",
-    "steps": [
-      "Определите главные члены каждой части.",
-      "Сохраните все части составного сказуемого.",
-      "Сверьте полный состав предложенной основы."
-    ],
-    "hint": "Учитывайте число сказуемого при сочетании «мы с сестрой»; дополнение при инфинитиве не входит в основу.",
-    "formatLabel": "ОГЭ · задание 2",
-    "input": "digits",
-    "level": "standard",
-    "taskLine": 2,
-    "format": "exam-model",
-    "examModel": {
-      "year": 2027,
-      "status": "project",
-      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
-    },
-    "provenance": {
-      "sourceId": "project-oge-2027-originals",
-      "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
-      "teacherApproval": "pending"
-    },
-    "reviewStatus": "checked-demo",
-    "reviewStages": [
+    "elements": [
       {
-        "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
       },
       {
-        "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 2,
+        "skillIds": [
+          "OGE:2.compound-nominal",
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-nominal"
       },
       {
-        "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+        "errorType": "compound-verbal"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
       }
     ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#one-member-types"
+    ],
+    "classificationReview": "editorial-draft"
   },
   {
-    "id": "oge-osnova-syntax-news",
-    "slug": "oge-osnova-syntax-news",
+    "id": "oge-osnova-syntax-audit-station-path",
+    "slug": "oge-osnova-syntax-audit-station-path",
     "revision": 1,
-    "title": "Школьная редакция: основы",
+    "title": "Дорога к станции: грамматическая основа",
     "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-news",
+    "sourceTextId": "syntax-audit-station-path",
     "topicId": "osnova",
     "topicSlug": "osnova",
     "topicTitle": "Грамматическая основа",
@@ -1862,8 +3481,8 @@
       "sourceTitle": "Оригинальные учебные материалы проекта",
       "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
       "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
+      "licenseNote": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -1871,26 +3490,26 @@
     "misconceptionId": "line-2-analysis",
     "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
     "options": [
-      "готовят (предложение 1)",
-      "корреспондент должен (предложение 2)",
-      "редактор уверен (предложение 3)",
-      "фотография размыта (предложение 4)",
-      "читатели стали обсуждать (предложение 5)"
+      "не торопись (предложение 1)",
+      "проверить расписание — задача (предложение 2)",
+      "мост вёл (предложение 3)",
+      "ветер усилился (предложение 4)",
+      "поезд не ушёл (предложение 5)"
     ],
     "optionExplanations": [
-      "Главный член неопределённо-личного предложения — «готовят»; действующие лица не названы.",
-      "Полное составное глагольное сказуемое — «должен проверить», инфинитив пропущен.",
-      "Краткое прилагательное «уверен» образует сказуемое с нулевой связкой.",
-      "В придаточной части основа «фотография размыта»; краткое причастие — именная часть сказуемого с нулевой связкой.",
-      "Вторая часть имеет подлежащее «читатели» и составное глагольное сказуемое «стали обсуждать»."
+      "«Не торопись» — главный член определённо-личного предложения, выраженный формой повелительного наклонения; адресат определяется как «ты».",
+      "Подлежащее выражено инфинитивом «проверить», сказуемое — существительным «задача» с нулевой связкой. «Расписание» — зависимое дополнение, поэтому добавлено в основу ошибочно.",
+      "Подлежащее «мост», сказуемое «вёл». Прилагательное «узкий» и причастный оборот не входят в основу.",
+      "В придаточной уступки основа «ветер усилился», названа полностью.",
+      "Во второй изъяснительной части основа «поезд не ушёл»; «ещё» передаёт временную характеристику и не является самостоятельным главным членом."
     ],
-    "explanation": "Главный член неопределённо-личного предложения — «готовят»; действующие лица не названы.\n\nПолное составное глагольное сказуемое — «должен проверить», инфинитив пропущен.\n\nКраткое прилагательное «уверен» образует сказуемое с нулевой связкой.\n\nВ придаточной части основа «фотография размыта»; краткое причастие — именная часть сказуемого с нулевой связкой.\n\nВторая часть имеет подлежащее «читатели» и составное глагольное сказуемое «стали обсуждать».",
+    "explanation": "«Не торопись» — главный член определённо-личного предложения, выраженный формой повелительного наклонения; адресат определяется как «ты».\n\nПодлежащее выражено инфинитивом «проверить», сказуемое — существительным «задача» с нулевой связкой. «Расписание» — зависимое дополнение, поэтому добавлено в основу ошибочно.\n\nПодлежащее «мост», сказуемое «вёл». Прилагательное «узкий» и причастный оборот не входят в основу.\n\nВ придаточной уступки основа «ветер усилился», названа полностью.\n\nВо второй изъяснительной части основа «поезд не ушёл»; «ещё» передаёт временную характеристику и не является самостоятельным главным членом.",
     "steps": [
       "Определите главные члены каждой части.",
       "Сохраните все части составного сказуемого.",
       "Сверьте полный состав предложенной основы."
     ],
-    "hint": "Модальное слово «должен» нуждается в смысловом инфинитиве; фазовое «стали» также не заменяет полное сказуемое.",
+    "hint": "Отличайте инфинитив-подлежащее от его зависимого дополнения.",
     "formatLabel": "ОГЭ · задание 2",
     "input": "digits",
     "level": "standard",
@@ -1902,231 +3521,93 @@
       "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
     },
     "provenance": {
-      "sourceId": "project-oge-2027-originals",
+      "sourceId": "project-audit-syntax-2026-10-12",
       "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
+      "rightsBasis": "Новые самостоятельные учебные микротексты и задания созданы для проекта по поручению владельца. Чужие литературные тексты не воспроизводятся, авторство Полине не приписывается.",
+      "reviewNote": "Независимое чтение всех вариантов: Основы: не торопись; проверить — задача; мост вёл; ветер усилился / мы решили идти; я знал / тропа освещена / поезд не ушёл. Последнее СПП содержит две однородные изъяснительные части; запятая перед их одиночным и не нужна. Утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "reviewStages": [
       {
         "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
       }
     ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
-  },
-  {
-    "id": "oge-osnova-syntax-snowfall",
-    "slug": "oge-osnova-syntax-snowfall",
-    "revision": 1,
-    "title": "После снегопада: основы",
-    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-snowfall",
-    "topicId": "osnova",
-    "topicSlug": "osnova",
-    "topicTitle": "Грамматическая основа",
-    "exam": "OGE",
-    "responseKind": "digits_sequence",
-    "answers": [
-      "135"
-    ],
-    "maxScore": 1,
-    "policy": {
-      "version": 1,
-      "trim": true,
-      "caseSensitive": false,
-      "collapseSpaces": false,
-      "allowYoAsE": false,
-      "orderMatters": false,
-      "allowDigitSeparators": false,
-      "minLength": 1,
-      "maxLength": 5
+    "subtopic": "Границы главных членов и тип сказуемого",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
     },
-    "source": {
-      "sourceType": "original_demo",
-      "sourceUrl": "",
-      "sourceTitle": "Оригинальные учебные материалы проекта",
-      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
-      "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
-      "examYear": 2027,
-      "editorialStatus": "needs_review"
-    },
-    "skillId": "OGE:syntax.foundation",
-    "misconceptionId": "line-2-analysis",
-    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
-    "options": [
-      "трое ребят вышли (предложение 1)",
-      "снег продолжал (предложение 2)",
-      "расчистили (предложение 3)",
-      "детям хотелось (предложение 4)",
-      "водитель привёз (предложение 5)"
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-verbal",
+      "OGE:2.compound-nominal"
     ],
-    "optionExplanations": [
-      "Подлежащее — неделимое количественное сочетание «трое ребят», сказуемое — «вышли».",
-      "Полное составное глагольное сказуемое — «продолжал падать».",
-      "Главный член неопределённо-личного предложения — «расчистили»; исполнители не названы.",
-      "«Детям» — дополнение, главное сказуемое безличного предложения — «хотелось остаться».",
-      "В придаточной части подлежащее «водитель», сказуемое «привёз»; «которую» — дополнение."
-    ],
-    "explanation": "Подлежащее — неделимое количественное сочетание «трое ребят», сказуемое — «вышли».\n\nПолное составное глагольное сказуемое — «продолжал падать».\n\nГлавный член неопределённо-личного предложения — «расчистили»; исполнители не названы.\n\n«Детям» — дополнение, главное сказуемое безличного предложения — «хотелось остаться».\n\nВ придаточной части подлежащее «водитель», сказуемое «привёз»; «которую» — дополнение.",
-    "steps": [
-      "Определите главные члены каждой части.",
-      "Сохраните все части составного сказуемого.",
-      "Сверьте полный состав предложенной основы."
-    ],
-    "hint": "Проверьте неделимое подлежащее, фазовое сказуемое и отличие дополнения в дательном падеже от подлежащего.",
-    "formatLabel": "ОГЭ · задание 2",
-    "input": "digits",
-    "level": "standard",
-    "taskLine": 2,
-    "format": "exam-model",
-    "examModel": {
-      "year": 2027,
-      "status": "project",
-      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
-    },
-    "provenance": {
-      "sourceId": "project-oge-2027-originals",
-      "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
-      "teacherApproval": "pending"
-    },
-    "reviewStatus": "checked-demo",
-    "reviewStages": [
+    "elements": [
       {
-        "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
       },
       {
-        "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 2,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-verbal",
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
       },
       {
-        "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
       }
     ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
-  },
-  {
-    "id": "oge-osnova-syntax-meeting",
-    "slug": "oge-osnova-syntax-meeting",
-    "revision": 1,
-    "title": "Перед встречей: основы",
-    "prompt": "Укажите варианты, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения.",
-    "sourceTextId": "syntax-meeting",
-    "topicId": "osnova",
-    "topicSlug": "osnova",
-    "topicTitle": "Грамматическая основа",
-    "exam": "OGE",
-    "responseKind": "digits_sequence",
-    "answers": [
-      "234"
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
     ],
-    "maxScore": 1,
-    "policy": {
-      "version": 1,
-      "trim": true,
-      "caseSensitive": false,
-      "collapseSpaces": false,
-      "allowYoAsE": false,
-      "orderMatters": false,
-      "allowDigitSeparators": false,
-      "minLength": 1,
-      "maxLength": 5
-    },
-    "source": {
-      "sourceType": "original_demo",
-      "sourceUrl": "",
-      "sourceTitle": "Оригинальные учебные материалы проекта",
-      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
-      "rightsStatus": "owned",
-      "licenseNote": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-11",
-      "examYear": 2027,
-      "editorialStatus": "needs_review"
-    },
-    "skillId": "OGE:syntax.foundation",
-    "misconceptionId": "line-2-analysis",
-    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
-    "options": [
-      "зал должен быть (предложение 1)",
-      "мы будем встречать (предложение 2)",
-      "дежурный открыл (предложение 3)",
-      "стало свежо (предложение 4)",
-      "ведущая улыбаясь начала рассказывать (предложение 5)"
-    ],
-    "optionExplanations": [
-      "В полное сказуемое входит именная часть «готов»: «должен быть готов».",
-      "Аналитическая форма будущего «будем встречать» — простое глагольное сказуемое.",
-      "Субстантивированное прилагательное «дежурный» — подлежащее, «открыл» — простое глагольное сказуемое. Дополнение «окна» в основу не входит.",
-      "«Стало свежо» — главный член безличного предложения.",
-      "Сказуемое «начала рассказывать» составное глагольное; деепричастие «улыбаясь» обозначает добавочное действие и не входит в основу."
-    ],
-    "explanation": "В полное сказуемое входит именная часть «готов»: «должен быть готов».\n\nАналитическая форма будущего «будем встречать» — простое глагольное сказуемое.\n\nСубстантивированное прилагательное «дежурный» — подлежащее, «открыл» — простое глагольное сказуемое. Дополнение «окна» в основу не входит.\n\n«Стало свежо» — главный член безличного предложения.\n\nСказуемое «начала рассказывать» составное глагольное; деепричастие «улыбаясь» обозначает добавочное действие и не входит в основу.",
-    "steps": [
-      "Определите главные члены каждой части.",
-      "Сохраните все части составного сказуемого.",
-      "Сверьте полный состав предложенной основы."
-    ],
-    "hint": "Аналитическое будущее «будем встречать» отличается от составного сказуемого; деепричастие остаётся второстепенным членом.",
-    "formatLabel": "ОГЭ · задание 2",
-    "input": "digits",
-    "level": "standard",
-    "taskLine": 2,
-    "format": "exam-model",
-    "examModel": {
-      "year": 2027,
-      "status": "project",
-      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
-    },
-    "provenance": {
-      "sourceId": "project-oge-2027-originals",
-      "method": "project-original",
-      "rightsBasis": "Оригинальные учебные условия, тексты и объяснения созданы для этого проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
-      "reviewNote": "Ключи сопоставлены с конкретными предложениями и условиями; объяснения раскрывают основание каждого ответа. Методическое утверждение преподавателем ожидается.",
-      "reviewedAt": "2026-10-11",
-      "teacherApproval": "pending"
-    },
-    "reviewStatus": "checked-demo",
-    "reviewStages": [
-      {
-        "stage": "answer-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      },
-      {
-        "stage": "explanation-checked",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      },
-      {
-        "stage": "publication-approved",
-        "at": "2026-10-11",
-        "by": "Редакторская проверка проекта; методическое утверждение ожидается"
-      }
-    ],
-    "subtopic": "Составное сказуемое и односоставная конструкция"
+    "classificationReview": "editorial-draft"
   }
 ]

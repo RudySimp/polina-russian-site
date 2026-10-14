@@ -97,7 +97,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-draft",
@@ -197,7 +248,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-boat",
@@ -297,7 +399,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "олицетворение"
+    "subtopic": "олицетворение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.personification"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-letter",
@@ -397,7 +550,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-rehearsal",
@@ -497,7 +701,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-map",
@@ -597,7 +852,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-seed",
@@ -697,7 +1003,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-bell",
@@ -797,7 +1154,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "олицетворение"
+    "subtopic": "олицетворение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.personification"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-race",
@@ -897,7 +1305,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "фразеологизм"
+    "subtopic": "фразеологизм",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.phraseology"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#other"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-snow",
@@ -997,7 +1456,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-tool",
@@ -1097,7 +1607,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-library",
@@ -1197,7 +1758,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "олицетворение"
+    "subtopic": "олицетворение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.personification"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-bread",
@@ -1297,7 +1909,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "фразеологизм"
+    "subtopic": "фразеологизм",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.phraseology"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#other"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-repair",
@@ -1397,7 +2060,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-train",
@@ -1497,7 +2211,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "олицетворение"
+    "subtopic": "олицетворение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.personification"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-team",
@@ -1597,7 +2362,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-photo",
@@ -1697,7 +2513,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "метафора"
+    "subtopic": "метафора",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-garden",
@@ -1797,7 +2664,58 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "олицетворение"
+    "subtopic": "олицетворение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.personification"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.personification"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "personification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-chess",
@@ -1897,7 +2815,61 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "фразеологизм"
+    "subtopic": "фразеологизм",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.phraseology",
+      "OGE:11.hyperbole"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.hyperbole",
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.phraseology"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+        "errorType": "phraseology"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#other",
+      "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-vyrazitelnost-reading-song",
@@ -1997,6 +2969,548 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "сравнение"
+    "subtopic": "сравнение",
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-vyrazitelnost-reading-audit-voice",
+    "slug": "oge-vyrazitelnost-reading-audit-voice",
+    "revision": 1,
+    "title": "Голос для школьного музея: эпитет",
+    "prompt": "Укажите варианты, в которых содержится эпитет — образное или эмоционально-оценочное определение.",
+    "sourceTextId": "reading-audit-voice",
+    "topicId": "vyrazitelnost",
+    "topicSlug": "vyrazitelnost",
+    "topicTitle": "Средства выразительности",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "135"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.expression",
+    "misconceptionId": "line-11-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "в комнате повисла тревожная тишина",
+      "достал старый диктофон",
+      "его тёплый голос вернул Вере спокойствие",
+      "развернула бумажную карту",
+      "она испытала светлую радость"
+    ],
+    "optionExplanations": [
+      "Тревожная характеризует эмоциональное ощущение тишины перед повторной записью.",
+      "Старый сообщает возраст прибора, в этом контексте это нейтральная характеристика.",
+      "Тёплый передаёт доброжелательность и эмоциональное действие голоса, а не его температуру.",
+      "Бумажная нейтрально обозначает материал карты, образного переноса нет.",
+      "Светлая образно характеризует чувство радости, связанное с удачной записью."
+    ],
+    "explanation": "Тревожная характеризует эмоциональное ощущение тишины перед повторной записью.\n\nСтарый сообщает возраст прибора, в этом контексте это нейтральная характеристика.\n\nТёплый передаёт доброжелательность и эмоциональное действие голоса, а не его температуру.\n\nБумажная нейтрально обозначает материал карты, образного переноса нет.\n\nСветлая образно характеризует чувство радости, связанное с удачной записью.",
+    "steps": [
+      "Определите значение названного средства.",
+      "Проверьте каждую цитату на соответствующий перенос или сопоставление.",
+      "Отличите образное употребление от буквального."
+    ],
+    "hint": "Найдите конкретный признак указанного средства в каждой цитате. Не выбирайте все эмоциональные слова автоматически.",
+    "formatLabel": "ОГЭ · задание 11",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 11,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "эпитет",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.epithet",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.epithet"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "epithet"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.epithet"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "epithet"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.epithet"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "epithet"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor",
+          "OGE:11.epithet"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.epithet"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "epithet"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-vyrazitelnost-reading-audit-model",
+    "slug": "oge-vyrazitelnost-reading-audit-model",
+    "revision": 1,
+    "title": "Мост из бумаги: гипербола",
+    "prompt": "Укажите варианты, в которых содержится гипербола — намеренное преувеличение.",
+    "sourceTextId": "reading-audit-model",
+    "topicId": "vyrazitelnost",
+    "topicSlug": "vyrazitelnost",
+    "topicTitle": "Средства выразительности",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "3"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.expression",
+    "misconceptionId": "line-11-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "собирал бумажную модель моста",
+      "одна полоска бумаги была слишком узкой",
+      "сто миллионов раз проверил этот узел",
+      "испытаний было пять",
+      "на последнем модель выдержала нужный вес"
+    ],
+    "optionExplanations": [
+      "Материал и назначение модели названы буквально, преувеличения нет.",
+      "Ширина полоски объясняет реальный дефект; слишком оценивает пригодность, но не создаёт заведомого преувеличения.",
+      "Сто миллионов — намеренное преувеличение повторных проверок; предложение 7 уточняет реальное число пять.",
+      "Пять — точное число испытаний по тексту, а не гипербола.",
+      "Сообщается результат проверки, увеличения масштаба или количества нет."
+    ],
+    "explanation": "Материал и назначение модели названы буквально, преувеличения нет.\n\nШирина полоски объясняет реальный дефект; слишком оценивает пригодность, но не создаёт заведомого преувеличения.\n\nСто миллионов — намеренное преувеличение повторных проверок; предложение 7 уточняет реальное число пять.\n\nПять — точное число испытаний по тексту, а не гипербола.\n\nСообщается результат проверки, увеличения масштаба или количества нет.",
+    "steps": [
+      "Определите значение названного средства.",
+      "Проверьте каждую цитату на соответствующий перенос или сопоставление.",
+      "Отличите образное употребление от буквального."
+    ],
+    "hint": "Найдите конкретный признак указанного средства в каждой цитате. Не выбирайте все эмоциональные слова автоматически.",
+    "formatLabel": "ОГЭ · задание 11",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 11,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "гипербола",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.hyperbole"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.hyperbole"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.hyperbole"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.hyperbole"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.hyperbole"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.hyperbole"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "hyperbole"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-vyrazitelnost-reading-audit-yard",
+    "slug": "oge-vyrazitelnost-reading-audit-yard",
+    "revision": 1,
+    "title": "Страница нашего двора: метафора",
+    "prompt": "Укажите варианты, в которых содержится метафора — перенос по сходству.",
+    "sourceTextId": "reading-audit-yard",
+    "topicId": "vyrazitelnost",
+    "topicSlug": "vyrazitelnost",
+    "topicTitle": "Средства выразительности",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "1245"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.expression",
+    "misconceptionId": "line-11-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "работа стала цепочкой добрых дел",
+      "улыбки были солнцем этого серого дня",
+      "вечером они полили новые растения",
+      "клумба стала островком надежды",
+      "двор теперь был живой страницей общей истории"
+    ],
+    "optionExplanations": [
+      "Цепочка образно передаёт связь следующих друг за другом поступков; металлической цепи нет.",
+      "Улыбки уподоблены солнцу по ощущению света и радости, а не названы небесным телом буквально.",
+      "Полив сообщает реальное действие, образного переноса в выбранном фрагменте нет.",
+      "Островок надежды переносит пространственный образ на чувство ожидания хорошего.",
+      "Страница общей истории переносит образ книги на двор, где видны следы совместного дела."
+    ],
+    "explanation": "Цепочка образно передаёт связь следующих друг за другом поступков; металлической цепи нет.\n\nУлыбки уподоблены солнцу по ощущению света и радости, а не названы небесным телом буквально.\n\nПолив сообщает реальное действие, образного переноса в выбранном фрагменте нет.\n\nОстровок надежды переносит пространственный образ на чувство ожидания хорошего.\n\nСтраница общей истории переносит образ книги на двор, где видны следы совместного дела.",
+    "steps": [
+      "Определите значение названного средства.",
+      "Проверьте каждую цитату на соответствующий перенос или сопоставление.",
+      "Отличите образное употребление от буквального."
+    ],
+    "hint": "Найдите конкретный признак указанного средства в каждой цитате. Не выбирайте все эмоциональные слова автоматически.",
+    "formatLabel": "ОГЭ · задание 11",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 11,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "метафора",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.metaphor",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison",
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

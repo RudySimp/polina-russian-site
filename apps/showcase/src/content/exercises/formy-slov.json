@@ -2163,5 +2163,483 @@
     ],
     "originCategory": "author-model",
     "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-formy-slov-021",
+    "slug": "oge-formy-slov-021",
+    "revision": 1,
+    "title": "Предложный падеж сложного числительного",
+    "prompt": "Раскройте скобки и запишите слово «пятьдесят» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "В (пятьдесят) километрах от города началась гроза.",
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "пятидесяти"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Не оставляйте первую часть сложного числительного неизменной.",
+    "explanation": "Правильный вариант: В пятидесяти километрах от города началась гроза.\n\nРазбор: В предложном падеже у числительного «пятьдесят» склоняются обе части: пяти-десяти.",
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 21,
+      "paragraph": 211,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "В ... километрах требует предложного падежа расстояния: в пяти-десяти. Обе части склоняются, результат пишется одним словом. Формы пятьдесят и пятьдесяти сохраняют неверную первую часть. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Числительные 50–80: обе части",
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-formy-slov-022",
+    "slug": "oge-formy-slov-022",
+    "revision": 1,
+    "title": "Предложный падеж числительного триста",
+    "prompt": "Раскройте скобки и запишите слово «триста» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "В (триста) шагах от станции стоял маяк.",
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "трёхстах"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Проверьте форму обеих частей: трёх- и -стах.",
+    "explanation": "Правильный вариант: В трёхстах шагах от станции стоял маяк.\n\nРазбор: Форма предложного падежа числительного «триста» — «трёхстах».",
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 22,
+      "paragraph": 215,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "В ... шагах — предложный падеж. Обе части триста меняются: трёх-стах. Трёхста и тристах не соответствуют парадигме; Ё/Е рассматриваются как политика записи, а не как другая словоформа. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Числительные 200–400: обе части",
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-formy-slov-023",
+    "slug": "oge-formy-slov-023",
+    "revision": 1,
+    "title": "Творительный падеж оба",
+    "prompt": "Раскройте скобки и запишите слово «оба» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "Учитель долго беседовал с (оба) друзьями.",
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "обоими"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Различайте мужской род «оба» и женский «обе».",
+    "explanation": "Правильный вариант: Учитель долго беседовал с обоими друзьями.\n\nРазбор: С существительным мужского рода «друзьями» числительное «оба» ставится в творительном падеже: обоими.",
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 23,
+      "paragraph": 219,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "С друзьями — творительный падеж, мужской род исходного существительного. Оба имеет основу обо- в косвенных падежах: с обоими. Обеими относится к женскому роду и здесь не подходит. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Оба/обе: род и падеж",
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-formy-slov-024",
+    "slug": "oge-formy-slov-024",
+    "revision": 1,
+    "title": "Родительный падеж множественного числа",
+    "prompt": "Раскройте скобки и запишите слово «бананы» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "На стол положили связку (бананы).",
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "бананов"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Определите падеж вопросом от слова «связку».",
+    "explanation": "Правильный вариант: На стол положили связку бананов.\n\nРазбор: После слова «связку» требуется родительный падеж множественного числа: бананов.",
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 24,
+      "paragraph": 223,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Связку чего? — бананов. У существительного банан сохраняется нормативное окончание -ов в родительном множественного числа; количество предметов и зависимость от связку заданы контекстом. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Родительный множественного: окончание ОВ",
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.plural-genitive",
+      "OGE:8.verb-form"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#noun-paradigms",
+      "/theory/formy-slov/?exam=OGE#verb-and-comparison"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]

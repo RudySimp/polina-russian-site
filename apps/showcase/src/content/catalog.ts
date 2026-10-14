@@ -13,11 +13,19 @@ export type ExerciseSummary = Pick<
   | "topicId"
   | "exam"
   | "skillId"
+  | "skillIds"
+  | "rulePaths"
+  | "originCategory"
+  | "subtopic"
   | "taskLine"
   | "format"
   | "level"
   | "sourceTextId"
->;
+> & {
+  searchText?: string;
+  provenanceMethod?: string;
+  generationEligible?: boolean;
+};
 export const exerciseIndex = index as ExerciseSummary[];
 export const publishedTopics = topics.filter(
   (topic) => topic.status === "published",

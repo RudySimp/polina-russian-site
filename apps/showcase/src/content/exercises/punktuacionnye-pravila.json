@@ -111,7 +111,65 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У инфинитивов нет личных окончаний. Сравнение отделите от противопоставления двух событий."
+    "subtopic": "У инфинитивов нет личных окончаний. Сравнение отделите от противопоставления двух событий.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.subject-dash",
+      "OGE:4.detached",
+      "OGE:4.homogeneous",
+      "OGE:4.comparative"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-002",
@@ -225,7 +283,56 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У обращения нет связи со сказуемым; в неполной части восстановите повторяющееся слово."
+    "subtopic": "У обращения нет связи со сказуемым; в неполной части восстановите повторяющееся слово.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous",
+      "OGE:4.subject-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.subject-dash",
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-003",
@@ -339,7 +446,58 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Различайте простое перечисление, причину и результат. Подставьте «потому что» и «поэтому»."
+    "subtopic": "Различайте простое перечисление, причину и результат. Подставьте «потому что» и «поэтому».",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.asyndetic-colon",
+      "OGE:4.asyndetic-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-004",
@@ -453,7 +611,60 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Кавычки обозначают прямую речь; причастие зависит от существительного; уточнение сужает время."
+    "subtopic": "Кавычки обозначают прямую речь; причастие зависит от существительного; уточнение сужает время.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-005",
@@ -567,7 +778,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У одиночного деепричастия нет зависимых слов; у деепричастного оборота они есть."
+    "subtopic": "У одиночного деепричастия нет зависимых слов; у деепричастного оборота они есть.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-006",
@@ -681,7 +944,58 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Посмотрите, где стоит обобщающее слово. В условной части мысленно добавьте «если»."
+    "subtopic": "Посмотрите, где стоит обобщающее слово. В условной части мысленно добавьте «если».",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-colon",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-colon",
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-007",
@@ -795,7 +1109,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Не смешивайте обращение с вводным сочетанием. У повторяющегося союза каждый член получает свою часть союза."
+    "subtopic": "Не смешивайте обращение с вводным сочетанием. У повторяющегося союза каждый член получает свою часть союза.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous",
+      "OGE:4.subject-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-008",
@@ -909,7 +1271,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Найдите перечень после общего названия, оценку вероятности и противопоставленные события."
+    "subtopic": "Найдите перечень после общего названия, оценку вероятности и противопоставленные события.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon",
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-009",
@@ -1023,7 +1437,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "После глагола восприятия можно подставить «что»; приложение называет то же лицо; уступка допускает «хотя»."
+    "subtopic": "После глагола восприятия можно подставить «что»; приложение называет то же лицо; уступка допускает «хотя».",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.asyndetic-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-010",
@@ -1137,7 +1599,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Причастный оборот описывает предмет; вставка сообщает попутное замечание; сравнение уподобляет один предмет другому."
+    "subtopic": "Причастный оборот описывает предмет; вставка сообщает попутное замечание; сравнение уподобляет один предмет другому.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.comparative",
+      "OGE:4.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.comparative"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "comparative"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-011",
@@ -1251,7 +1761,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В неполной части мысленно повторите сказуемое. Пояснение раскрывает содержание слова «план»."
+    "subtopic": "В неполной части мысленно повторите сказуемое. Пояснение раскрывает содержание слова «план».",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-012",
@@ -1365,7 +1927,60 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Причина отвечает на «почему?», уточнение — на «когда именно?», результат допускает «поэтому»."
+    "subtopic": "Причина отвечает на «почему?», уточнение — на «когда именно?», результат допускает «поэтому».",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.asyndetic-colon",
+      "OGE:4.subject-dash",
+      "OGE:4.asyndetic-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-013",
@@ -1479,7 +2094,61 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У придаточной части есть своя основа. У деепричастного оборота своего подлежащего нет."
+    "subtopic": "У придаточной части есть своя основа. У деепричастного оборота своего подлежащего нет.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-colon",
+      "OGE:4.detached",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-014",
@@ -1593,7 +2262,58 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Два инфинитива могут составить основу. В сравнении ищите уподобление, в деепричастии — добавочное действие."
+    "subtopic": "Два инфинитива могут составить основу. В сравнении ищите уподобление, в деепричастии — добавочное действие.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.comparative",
+      "OGE:4.detached",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.comparative"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "comparative"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-015",
@@ -1707,7 +2427,53 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Союз «если» обозначает зависимую часть; глагол «увидел» предупреждает о содержании сообщения."
+    "subtopic": "Союз «если» обозначает зависимую часть; глагол «увидел» предупреждает о содержании сообщения.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-016",
@@ -1821,7 +2587,51 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Сначала отделите вставное замечание. У оставшихся сложных предложений установите причину и следствие."
+    "subtopic": "Сначала отделите вставное замечание. У оставшихся сложных предложений установите причину и следствие.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-017",
@@ -1935,7 +2745,54 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Вычисление выражено числовым сочетанием. Затем найдите слова автора перед кавычками и оценку уверенности."
+    "subtopic": "Вычисление выражено числовым сочетанием. Затем найдите слова автора перед кавычками и оценку уверенности.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-018",
@@ -2049,7 +2906,56 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Не путайте пояснение одного сообщения с перечнем однородных членов. У двойного союза найдите обе части."
+    "subtopic": "Не путайте пояснение одного сообщения с перечнем однородных членов. У двойного союза найдите обе части.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon",
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-019",
@@ -2163,7 +3069,61 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Различайте одиночный противительный союз и повторяющийся соединительный союз; деепричастие обозначает добавочное действие."
+    "subtopic": "Различайте одиночный противительный союз и повторяющийся соединительный союз; деепричастие обозначает добавочное действие.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous",
+      "OGE:4.subject-dash",
+      "OGE:4.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnye-pravila-020",
@@ -2277,6 +3237,740 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Обобщение после перечня требует отдельного внимания. В бессоюзном предложении найдите две самостоятельные основы."
+    "subtopic": "Обобщение после перечня требует отдельного внимания. В бессоюзном предложении найдите две самостоятельные основы.",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-punktuacionnye-pravila-021",
+    "slug": "oge-punktuacionnye-pravila-021",
+    "revision": 1,
+    "title": "Дополнение, обобщение и сложносочинённая связь",
+    "prompt": "Установите соответствие между пунктуационными правилами и предложениями. К каждой позиции А, Б, В подберите одно предложение.",
+    "topicId": "punktuacionnye-pravila",
+    "topicSlug": "punktuacionnye-pravila",
+    "topicTitle": "Правило и предложение",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "531"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:punctuation.matching",
+    "misconceptionId": "line-4-analysis",
+    "instruction": "Установите соответствие в порядке А, Б, В. Порядок цифр важен.",
+    "options": [
+      "Солнце поднялось, а туман ещё не рассеялся.",
+      "Мы ожидали ясного неба — начался дождь.",
+      "Дождь, ветер, туман — всё мешало путешествию.",
+      "Посмотришь внимательно — заметишь деталь.",
+      "Я понял: передо мной стоял старый знакомый."
+    ],
+    "optionExplanations": [
+      "Основы «солнце поднялось» и «туман не рассеялся» соединены сочинительным союзом «а»: правило В.",
+      "Вторая часть бессоюзного предложения противопоставлена ожиданию: тире; такого правила в А–В нет.",
+      "Ряд «дождь, ветер, туман» стоит перед обобщающим «всё»: правило Б.",
+      "Первая часть имеет условное значение: если посмотришь внимательно, заметишь деталь.",
+      "Вторая часть поясняет содержание «я понял»: возможен союз «что», правило А."
+    ],
+    "rules": [
+      "А) Если вторая часть бессоюзного сложного предложения дополняет первую, ставится двоеточие.",
+      "Б) Перед обобщающим словом после однородных членов ставится тире.",
+      "В) Между частями сложносочинённого предложения ставится запятая."
+    ],
+    "steps": [
+      "Прочитайте условия правила А.",
+      "Найдите конкретную конструкцию в предложении.",
+      "Повторите для Б и В.",
+      "Запишите номера в порядке А, Б, В."
+    ],
+    "hint": "Разграничьте «понял что» и противопоставление; найдите слово, обобщающее ряд.",
+    "explanation": "Основы «солнце поднялось» и «туман не рассеялся» соединены сочинительным союзом «а»: правило В.\n\nВторая часть бессоюзного предложения противопоставлена ожиданию: тире; такого правила в А–В нет.\n\nРяд «дождь, ветер, туман» стоит перед обобщающим «всё»: правило Б.\n\nПервая часть имеет условное значение: если посмотришь внимательно, заметишь деталь.\n\nВторая часть поясняет содержание «я понял»: возможен союз «что», правило А.",
+    "formatLabel": "ОГЭ · Правило и предложение",
+    "input": "matching",
+    "level": "standard",
+    "taskLine": 4,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-2334668baa51",
+      "filename": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceNumber": 21,
+      "paragraph": 364,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "А→5: понял что — содержание восприятия. Б→3: всё обобщает дождь, ветер, туман. В→1: солнце поднялось / туман не рассеялся с союзом а. 2 противопоставляет ожидание дождю; 4 выражает условие, они не подходят к данным правилам. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "БСП: изъяснение; Обобщающее слово после ряда; ССП без общего члена",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-punktuacionnye-pravila-022",
+    "slug": "oge-punktuacionnye-pravila-022",
+    "revision": 1,
+    "title": "Прямая речь, уточнение и добавочное действие",
+    "prompt": "Установите соответствие между пунктуационными правилами и предложениями. К каждой позиции А, Б, В подберите одно предложение.",
+    "topicId": "punktuacionnye-pravila",
+    "topicSlug": "punktuacionnye-pravila",
+    "topicTitle": "Правило и предложение",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "524"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:punctuation.matching",
+    "misconceptionId": "line-4-analysis",
+    "instruction": "Установите соответствие в порядке А, Б, В. Порядок цифр важен.",
+    "options": [
+      "Телескоп — оптический прибор.",
+      "Вдали, за берёзовой рощей, виднелась деревня.",
+      "Я знаю, что поезд прибудет вовремя.",
+      "Дождавшись сигнала, спортсмены начали забег.",
+      "Экскурсовод объявил: «Сейчас мы войдём в зал»."
+    ],
+    "optionExplanations": [
+      "«Телескоп» и «прибор» — главные члены, выраженные существительными: тире между ними.",
+      "«За берёзовой рощей» уточняет место «вдали»: парные запятые, правило Б.",
+      "Часть «что поезд прибудет вовремя» — изъяснительная придаточная, запятая разделяет части СПП.",
+      "«Дождавшись сигнала» — деепричастный оборот, добавочное действие спортсменов: правило В.",
+      "За словами автора «экскурсовод объявил» следует прямая речь: двоеточие, правило А."
+    ],
+    "rules": [
+      "А) После слов автора перед прямой речью ставится двоеточие.",
+      "Б) Уточняющее обстоятельство места обособляется.",
+      "В) Деепричастный оборот обособляется."
+    ],
+    "steps": [
+      "Прочитайте условия правила А.",
+      "Найдите конкретную конструкцию в предложении.",
+      "Повторите для Б и В.",
+      "Запишите номера в порядке А, Б, В."
+    ],
+    "hint": "Уточнение должно сужать уже названное место, а добавочное действие относится к тому же деятелю.",
+    "explanation": "«Телескоп» и «прибор» — главные члены, выраженные существительными: тире между ними.\n\n«За берёзовой рощей» уточняет место «вдали»: парные запятые, правило Б.\n\nЧасть «что поезд прибудет вовремя» — изъяснительная придаточная, запятая разделяет части СПП.\n\n«Дождавшись сигнала» — деепричастный оборот, добавочное действие спортсменов: правило В.\n\nЗа словами автора «экскурсовод объявил» следует прямая речь: двоеточие, правило А.",
+    "formatLabel": "ОГЭ · Правило и предложение",
+    "input": "matching",
+    "level": "standard",
+    "taskLine": 4,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-2334668baa51",
+      "filename": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceNumber": 22,
+      "paragraph": 377,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "А→5: слова экскурсовода предшествуют реплике. Б→2: за берёзовой рощей сужает значение вдали. В→4: спортсмены дождались сигнала и начали забег. 1 имеет именное сказуемое; 3 содержит изъяснительную придаточную часть. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Прямая речь после автора; Уточнение места; Деепричастный оборот",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.detached",
+      "OGE:4.asyndetic-colon"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-punktuacionnye-pravila-023",
+    "slug": "oge-punktuacionnye-pravila-023",
+    "revision": 1,
+    "title": "Обращение, инфинитивы и следствие",
+    "prompt": "Установите соответствие между пунктуационными правилами и предложениями. К каждой позиции А, Б, В подберите одно предложение.",
+    "topicId": "punktuacionnye-pravila",
+    "topicSlug": "punktuacionnye-pravila",
+    "topicTitle": "Правило и предложение",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "154"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:punctuation.matching",
+    "misconceptionId": "line-4-analysis",
+    "instruction": "Установите соответствие в порядке А, Б, В. Порядок цифр важен.",
+    "options": [
+      "Друзья, собирайтесь у входа.",
+      "На дороге остановился наш транспорт — микроавтобус.",
+      "В школьном дворе шумели дети, на стадионе — спортсмены.",
+      "Дверь распахнулась — в комнату ворвался холодный воздух.",
+      "Бережно хранить книги — сохранять знания."
+    ],
+    "optionExplanations": [
+      "«Друзья» — обращение к адресатам просьбы, отделено запятой: правило А.",
+      "«Микроавтобус» — приложение, поясняющее «транспорт», не результат второй части.",
+      "Во второй части опущено сказуемое «шумели»: тире отмечает неполное предложение.",
+      "Холодный воздух ворвался вследствие открывшейся двери: результат, правило В.",
+      "Главные члены «хранить» и «сохранять» выражены инфинитивами: тире, правило Б."
+    ],
+    "rules": [
+      "А) Обращение выделяется или отделяется запятой.",
+      "Б) Между подлежащим и сказуемым, выраженными неопределённой формой глагола, ставится тире.",
+      "В) Если вторая часть бессоюзного сложного предложения обозначает результат, ставится тире."
+    ],
+    "steps": [
+      "Прочитайте условия правила А.",
+      "Найдите конкретную конструкцию в предложении.",
+      "Повторите для Б и В.",
+      "Запишите номера в порядке А, Б, В."
+    ],
+    "hint": "Проверьте, обозначает ли существительное адресата или выполняет действие.",
+    "explanation": "«Друзья» — обращение к адресатам просьбы, отделено запятой: правило А.\n\n«Микроавтобус» — приложение, поясняющее «транспорт», не результат второй части.\n\nВо второй части опущено сказуемое «шумели»: тире отмечает неполное предложение.\n\nХолодный воздух ворвался вследствие открывшейся двери: результат, правило В.\n\nГлавные члены «хранить» и «сохранять» выражены инфинитивами: тире, правило Б.",
+    "formatLabel": "ОГЭ · Правило и предложение",
+    "input": "matching",
+    "level": "standard",
+    "taskLine": 4,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-2334668baa51",
+      "filename": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceNumber": 23,
+      "paragraph": 390,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "А→1: друзья — адресат просьбы, не подлежащее. Б→5: хранить книги / сохранять знания — инфинитивные главные члены. В→4: распахнувшаяся дверь впускает воздух, вторая часть передаёт результат. 2 называет транспорт приложением; 3 опускает уже названное шумели. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Обращение; Тире между инфинитивами; Следствие в БСП",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.asyndetic-dash"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-punktuacionnye-pravila-024",
+    "slug": "oge-punktuacionnye-pravila-024",
+    "revision": 1,
+    "title": "Однородный ряд и уступительное обстоятельство",
+    "prompt": "Установите соответствие между пунктуационными правилами и предложениями. К каждой позиции А, Б, В подберите одно предложение.",
+    "topicId": "punktuacionnye-pravila",
+    "topicSlug": "punktuacionnye-pravila",
+    "topicTitle": "Правило и предложение",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "251"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:punctuation.matching",
+    "misconceptionId": "line-4-analysis",
+    "instruction": "Установите соответствие в порядке А, Б, В. Порядок цифр важен.",
+    "options": [
+      "Несмотря на задержку, встреча состоялась.",
+      "В саду росли яблони, груши, сливы.",
+      "Зашумели деревья, на улице поднялся ветер.",
+      "Маршрут — мы обсудили его вчера — оказался удобным.",
+      "Мы посетили и музей, и библиотеку, и выставку."
+    ],
+    "optionExplanations": [
+      "«Несмотря на задержку» — уступительное обстоятельство: правило В.",
+      "«Яблони, груши, сливы» — однородные подлежащие без союзов: правило А.",
+      "Основы «деревья зашумели» и «ветер поднялся» разделены запятой в БСП, не ряд однородных членов.",
+      "«Мы обсудили его вчера» — вставное сообщение, выделенное парными тире.",
+      "«И музей, и библиотеку, и выставку» — ряд с повторяющимся союзом: правило Б."
+    ],
+    "rules": [
+      "А) Однородные члены без союзов разделяются запятыми.",
+      "Б) При однородных членах с повторяющимся союзом ставится запятая.",
+      "В) Обстоятельство с предлогом несмотря на обычно обособляется."
+    ],
+    "steps": [
+      "Прочитайте условия правила А.",
+      "Найдите конкретную конструкцию в предложении.",
+      "Повторите для Б и В.",
+      "Запишите номера в порядке А, Б, В."
+    ],
+    "hint": "Однородные члены отвечают на один вопрос; не принимайте две основы за такой ряд.",
+    "explanation": "«Несмотря на задержку» — уступительное обстоятельство: правило В.\n\n«Яблони, груши, сливы» — однородные подлежащие без союзов: правило А.\n\nОсновы «деревья зашумели» и «ветер поднялся» разделены запятой в БСП, не ряд однородных членов.\n\n«Мы обсудили его вчера» — вставное сообщение, выделенное парными тире.\n\n«И музей, и библиотеку, и выставку» — ряд с повторяющимся союзом: правило Б.",
+    "formatLabel": "ОГЭ · Правило и предложение",
+    "input": "matching",
+    "level": "standard",
+    "taskLine": 4,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-2334668baa51",
+      "filename": "ОГЭ русский язык - задание 4 - каталог и 100 вариантов.docx",
+      "sourceNumber": 24,
+      "paragraph": 403,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "А→2: яблони, груши, сливы — ряд подлежащих. Б→5: и музей, и библиотеку, и выставку — повторяющийся союз перед каждым дополнением. В→1: несмотря на задержку — уступка. 3 имеет две основы; 4 содержит вставную конструкцию, их запятые/тире относятся к другим правилам. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Бессоюзный однородный ряд; Повторяющийся и; Несмотря на",
+    "skillIds": [
+      "OGE:punctuation.matching",
+      "OGE:4.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]

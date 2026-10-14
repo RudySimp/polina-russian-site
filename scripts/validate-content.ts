@@ -232,7 +232,11 @@ export function validateContent(
         exercise.steps.length >= 2,
       `${exercise.id}: нет условия/разбора/подсказки`,
     );
-    if (exercise.taskLine === 7) ensure(vowelExerciseIssues(exercise).length === 0, `${exercise.id}: ${vowelExerciseIssues(exercise).join("; ")}`);
+    if (exercise.taskLine === 7)
+      ensure(
+        vowelExerciseIssues(exercise).length === 0,
+        `${exercise.id}: ${vowelExerciseIssues(exercise).join("; ")}`,
+      );
     const topic = topics.find((topic) => topic.id === exercise.topicId);
     ensure(
       topic?.status === "published" &&
@@ -376,9 +380,11 @@ export function validateContent(
     ensure(existsSync(path), `${audio.id}: аудиофайл отсутствует`);
     const bytes = readFileSync(path);
     ensure(
-      bytes.toString("ascii", 0, 4) === "RIFF" &&
-        bytes.toString("ascii", 8, 12) === "WAVE" &&
-        bytes.length > 1000000,
+      (audio.path.endsWith(".mp3")
+        ? bytes.toString("ascii", 0, 3) === "ID3" ||
+          (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0)
+        : bytes.toString("ascii", 0, 4) === "RIFF" &&
+          bytes.toString("ascii", 8, 12) === "WAVE") && bytes.length > 1000000,
       `${audio.id}: некорректная запись`,
     );
     ensure(

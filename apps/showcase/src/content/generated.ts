@@ -17,20 +17,20 @@ import e13 from './exercises/udarenie.json' with { type: 'json' };
 import e14 from './exercises/vyrazitelnost.json' with { type: 'json' };
 export const exerciseData = [...e0, ...e1, ...e2, ...e3, ...e4, ...e5, ...e6, ...e7, ...e8, ...e9, ...e10, ...e11, ...e12, ...e13, ...e14];
 export const lessonLoaders: Record<string, () => Promise<Lesson>> = {
-  'analiz-teksta': () => import('./lessons/analiz-teksta.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'formy-slov': () => import('./lessons/formy-slov.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'glasnye-v-tekste': () => import('./lessons/glasnye-v-tekste.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'izlozhenie': () => import('./lessons/izlozhenie.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'leksika': () => import('./lessons/leksika.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'ne-prilagatelnye': () => import('./lessons/ne-prilagatelnye.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'odnorodnye': () => import('./lessons/odnorodnye.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'orfograficheskiy-analiz': () => import('./lessons/orfograficheskiy-analiz.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'osnova': () => import('./lessons/osnova.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'punktuacionnye-pravila': () => import('./lessons/punktuacionnye-pravila.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'punktuacionnyy-analiz': () => import('./lessons/punktuacionnyy-analiz.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'sintaksis': () => import('./lessons/sintaksis.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'slovosochetaniya': () => import('./lessons/slovosochetaniya.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'sochinenie': () => import('./lessons/sochinenie.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'udarenie': () => import('./lessons/udarenie.json', { with: { type: 'json' } }).then(m => m.default as Lesson),
-  'vyrazitelnost': () => import('./lessons/vyrazitelnost.json', { with: { type: 'json' } }).then(m => m.default as Lesson)
+  'analiz-teksta': () => import('./lessons/analiz-teksta.json').then(m => m.default as Lesson),
+  'formy-slov': () => import('./lessons/formy-slov.json').then(m => m.default as Lesson),
+  'glasnye-v-tekste': () => import('./lessons/glasnye-v-tekste.json').then(m => m.default as Lesson),
+  'izlozhenie': () => import('./lessons/izlozhenie.json').then(m => m.default as Lesson),
+  'leksika': () => import('./lessons/leksika.json').then(m => m.default as Lesson),
+  'ne-prilagatelnye': () => import('./lessons/ne-prilagatelnye.json').then(m => m.default as Lesson),
+  'odnorodnye': () => import('./lessons/odnorodnye.json').then(m => m.default as Lesson),
+  'orfograficheskiy-analiz': () => import('./lessons/orfograficheskiy-analiz.json').then(m => m.default as Lesson),
+  'osnova': () => import('./lessons/osnova.json').then(m => m.default as Lesson),
+  'punktuacionnye-pravila': () => import('./lessons/punktuacionnye-pravila.json').then(m => m.default as Lesson),
+  'punktuacionnyy-analiz': () => import('./lessons/punktuacionnyy-analiz.json').then(m => m.default as Lesson),
+  'sintaksis': () => import('./lessons/sintaksis.json').then(m => m.default as Lesson),
+  'slovosochetaniya': () => import('./lessons/slovosochetaniya.json').then(m => m.default as Lesson),
+  'sochinenie': () => import('./lessons/sochinenie.json').then(m => m.default as Lesson),
+  'udarenie': () => import('./lessons/udarenie.json').then(m => m.default as Lesson),
+  'vyrazitelnost': () => import('./lessons/vyrazitelnost.json').then(m => m.default as Lesson)
 };

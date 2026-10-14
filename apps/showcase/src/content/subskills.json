@@ -1,0 +1,642 @@
+[
+  {
+    "id": "OGE:2.subject",
+    "topicId": "osnova",
+    "line": 2,
+    "title": "Подлежащее и его границы",
+    "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+    "pattern": "подлежащ|двусостав|подлежащее",
+    "errorType": "subject",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:2.simple-predicate",
+    "topicId": "osnova",
+    "line": 2,
+    "title": "Простое глагольное сказуемое",
+    "rulePath": "/theory/osnova/?exam=OGE#predicates",
+    "pattern": "простое глагольн|простым глагольн",
+    "errorType": "simple-predicate",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:2.compound-verbal",
+    "topicId": "osnova",
+    "line": 2,
+    "title": "Составное глагольное сказуемое",
+    "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+    "pattern": "составно.{0,12}глагольн|инфинитив|модальн",
+    "errorType": "compound-verbal",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:2.compound-nominal",
+    "topicId": "osnova",
+    "line": 2,
+    "title": "Составное именное сказуемое",
+    "rulePath": "/theory/osnova/?exam=OGE#predicate-boundaries",
+    "pattern": "составно.{0,12}именн|связк|именная часть|краткое причастие",
+    "errorType": "compound-nominal",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:2.one-member",
+    "topicId": "osnova",
+    "line": 2,
+    "title": "Главный член односоставного предложения",
+    "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+    "pattern": "односостав|безличн|подлежащего нет|подлежащее отсутствует",
+    "errorType": "one-member",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.coordinate",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Сочинительная связь",
+    "rulePath": "/theory/sintaksis/?exam=OGE#classification",
+    "pattern": "сложносочин|сочинительн",
+    "errorType": "coordinate",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.subordinate",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Подчинительная связь",
+    "rulePath": "/theory/sintaksis/?exam=OGE#subordinate-types",
+    "pattern": "сложноподчин|подчинительн|придаточн",
+    "errorType": "subordinate",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.asyndetic",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Бессоюзная связь",
+    "rulePath": "/theory/sintaksis/?exam=OGE#classification",
+    "pattern": "бессоюзн",
+    "errorType": "asyndetic",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.impersonal",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Безличные предложения",
+    "rulePath": "/theory/sintaksis/?exam=OGE#one-member",
+    "pattern": "безличн",
+    "errorType": "impersonal",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.definite-personal",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Определённо-личные предложения",
+    "rulePath": "/theory/sintaksis/?exam=OGE#one-member",
+    "pattern": "определённо-личн",
+    "errorType": "definite-personal",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.indefinite-personal",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Неопределённо-личные предложения",
+    "rulePath": "/theory/sintaksis/?exam=OGE#one-member",
+    "pattern": "неопределённо-личн",
+    "errorType": "indefinite-personal",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:3.complication",
+    "topicId": "sintaksis",
+    "line": 3,
+    "title": "Осложнение простого предложения",
+    "rulePath": "/theory/sintaksis/?exam=OGE#constructions",
+    "pattern": "осложн|обособл|однородн|вводн|обращен",
+    "errorType": "complication",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.subject-dash",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Тире между подлежащим и сказуемым",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+    "pattern": "между подлежащим|оба главных|подлежащее.{0,100}сказуемое",
+    "errorType": "subject-dash",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.comparative",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Обособление сравнительного оборота",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+    "pattern": "сравнительн|сравнение",
+    "errorType": "comparative",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.asyndetic-dash",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Тире в бессоюзном предложении",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+    "pattern": "бессоюзн.{0,140}тире|противопостав|результат|быстрая смена",
+    "errorType": "asyndetic-dash",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.asyndetic-colon",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Двоеточие в бессоюзном предложении",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+    "pattern": "двоеточ|пояснен|причин",
+    "errorType": "asyndetic-colon",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.homogeneous",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Знаки при однородных членах",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+    "pattern": "однородн|повторяющ|обобщающ",
+    "errorType": "homogeneous",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.detached",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Обособление определений и обстоятельств",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+    "pattern": "обособл|причастн|деепричастн",
+    "errorType": "detached",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.homogeneous",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Запятые при однородных членах",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+    "pattern": "однородн|перечислен|повторяющ",
+    "errorType": "homogeneous",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.clarification",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Уточняющие члены предложения",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+    "pattern": "уточняющ|уточнен|уточнение",
+    "errorType": "clarification",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.introductory",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Вводные слова и обращения",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+    "pattern": "вводн|обращен",
+    "errorType": "introductory",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.detached",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Обособленные обороты",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+    "pattern": "обособл|причастн|деепричастн|сравнительн",
+    "errorType": "detached",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.complex",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Знаки между частями сложного предложения",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+    "pattern": "сложн|основы|придаточн|бессоюзн",
+    "errorType": "complex",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:5.direct-speech",
+    "topicId": "punktuacionnyy-analiz",
+    "line": 5,
+    "title": "Прямая речь и слова автора",
+    "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+    "pattern": "прямая речь|слов.{0,8}автора|кавычк",
+    "errorType": "direct-speech",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.checked-root",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Проверяемая гласная в корне",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+    "pattern": "проверяем|проверочн|ударени|однокоренн",
+    "errorType": "checked-root",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.alternating-root",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Чередующиеся корни",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+    "pattern": "черед|раст-|рост-|лаг-|лож-|бир-|бер-|кас-|кос-",
+    "errorType": "alternating-root",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.prefix-z-s",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Приставки на з и с",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+    "pattern": "з/-с|з-/с|на -з|бес-|без-|глух|звонк",
+    "errorType": "prefix-z-s",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.pre-pri",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Приставки пре и при",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+    "pattern": "пре-|при-|приближен|неполн|присоедин",
+    "errorType": "pre-pri",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.n-nn",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Н и НН в причастиях и прилагательных",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+    "pattern": "нн|причаст|отглагольн",
+    "errorType": "n-nn",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.suffix-ek-ik",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Суффиксы ек и ик",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+    "pattern": "-ек-|-ик-|бегл|выпадает",
+    "errorType": "suffix-ek-ik",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:6.joined-separate-hyphen",
+    "topicId": "orfograficheskiy-analiz",
+    "line": 6,
+    "title": "Слитное, раздельное и дефисное написание",
+    "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+    "pattern": "дефис|пол-|слитн|раздельн",
+    "errorType": "joined-separate-hyphen",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.noun-ending",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Падежные окончания существительных",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
+    "pattern": "существительн|падеж|склонени",
+    "errorType": "noun-ending",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.adjective-ending",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Окончания прилагательных",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#agreement",
+    "pattern": "прилагательн|согласован|каким|какой|какие",
+    "errorType": "adjective-ending",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.verb-ending",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Личные окончания глаголов",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
+    "pattern": "спряжен|личн.{0,12}окончан|гнутся|треть.{0,12}лиц|3.{0,8}лиц",
+    "errorType": "verb-ending",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.past-suffix",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Гласная перед л в прошедшем времени",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
+    "pattern": "прошедш|перед -л|инфинитив",
+    "errorType": "past-suffix",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.root-vowel",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Гласные корня",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+    "pattern": "корн|проверочн|черед|непровер",
+    "errorType": "root-vowel",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:7.suffix-vowel",
+    "topicId": "glasnye-v-tekste",
+    "line": 7,
+    "title": "Гласные суффикса",
+    "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#root",
+    "pattern": "суффикс",
+    "errorType": "suffix-vowel",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:8.numeral",
+    "topicId": "formy-slov",
+    "line": 8,
+    "title": "Склонение числительных",
+    "rulePath": "/theory/formy-slov/?exam=OGE#numeral-paradigms",
+    "pattern": "числительн|сорок|девяност|пятьдесят|стами|сот",
+    "errorType": "numeral",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:8.plural-genitive",
+    "topicId": "formy-slov",
+    "line": 8,
+    "title": "Родительный падеж множественного числа",
+    "rulePath": "/theory/formy-slov/?exam=OGE#noun-paradigms",
+    "pattern": "родительн|множествен|носк|чул|туфель|помидор|яблок",
+    "errorType": "plural-genitive",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:8.verb-form",
+    "topicId": "formy-slov",
+    "line": 8,
+    "title": "Нормативные формы глагола",
+    "rulePath": "/theory/formy-slov/?exam=OGE#verb-and-comparison",
+    "pattern": "глагол|повелительн|езжай|ляг|клади|положи",
+    "errorType": "verb-form",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:8.comparative",
+    "topicId": "formy-slov",
+    "line": 8,
+    "title": "Степени сравнения",
+    "rulePath": "/theory/formy-slov/?exam=OGE#verb-and-comparison",
+    "pattern": "сравнени|легче|полегче|лучше|красивее",
+    "errorType": "comparative",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:9.agreement",
+    "topicId": "slovosochetaniya",
+    "line": 9,
+    "title": "Согласование",
+    "rulePath": "/theory/slovosochetaniya/?exam=OGE#types",
+    "pattern": "согласован",
+    "errorType": "agreement",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:9.government",
+    "topicId": "slovosochetaniya",
+    "line": 9,
+    "title": "Управление",
+    "rulePath": "/theory/slovosochetaniya/?exam=OGE#types",
+    "pattern": "управлен",
+    "errorType": "government",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:9.adjacency",
+    "topicId": "slovosochetaniya",
+    "line": 9,
+    "title": "Примыкание",
+    "rulePath": "/theory/slovosochetaniya/?exam=OGE#types",
+    "pattern": "примыкан",
+    "errorType": "adjacency",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:9.meaning-preservation",
+    "topicId": "slovosochetaniya",
+    "line": 9,
+    "title": "Сохранение смысла при преобразовании",
+    "rulePath": "/theory/slovosochetaniya/?exam=OGE#meaning-preservation",
+    "pattern": "значени|смысл|синонимич",
+    "errorType": "meaning-preservation",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:10.fact-inference",
+    "topicId": "analiz-teksta",
+    "line": 10,
+    "title": "Факт и неподтверждённый вывод",
+    "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+    "pattern": "не сообщ|не сказан|нет сведений|прямо|сообщает|домыс|подтвержд",
+    "errorType": "fact-inference",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:10.sequence",
+    "topicId": "analiz-teksta",
+    "line": 10,
+    "title": "Последовательность событий",
+    "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+    "pattern": "после|сначала|позже|раньше|событ|последоват",
+    "errorType": "sequence",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:10.motive",
+    "topicId": "analiz-teksta",
+    "line": 10,
+    "title": "Причина действия и мотив героя",
+    "rulePath": "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+    "pattern": "потому|причин|мотив|решил|почему",
+    "errorType": "motive",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:10.detail",
+    "topicId": "analiz-teksta",
+    "line": 10,
+    "title": "Значимая деталь и изменение героя",
+    "rulePath": "/theory/analiz-teksta/?exam=OGE#details",
+    "pattern": "деталь|впервые|измен|осозн|понял",
+    "errorType": "detail",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.comparison",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Сравнение",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+    "pattern": "сравнени|уподобл|сопоставл",
+    "errorType": "comparison",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.metaphor",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Метафора",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+    "pattern": "метафор|перенос",
+    "errorType": "metaphor",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.personification",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Олицетворение",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+    "pattern": "олицетвор|человеческ",
+    "errorType": "personification",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.epithet",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Эпитет",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+    "pattern": "эпитет|образное определен",
+    "errorType": "epithet",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.hyperbole",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Гипербола",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+    "pattern": "гипербол|преувелич",
+    "errorType": "hyperbole",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:11.phraseology",
+    "topicId": "vyrazitelnost",
+    "line": 11,
+    "title": "Фразеологизм как средство выразительности",
+    "rulePath": "/theory/vyrazitelnost/?exam=OGE#other",
+    "pattern": "фразеолог|устойчив",
+    "errorType": "phraseology",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:12.synonym",
+    "topicId": "leksika",
+    "line": 12,
+    "title": "Контекстный синоним",
+    "rulePath": "/theory/leksika/?exam=OGE#synonyms",
+    "pattern": "синоним",
+    "errorType": "synonym",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:12.antonym",
+    "topicId": "leksika",
+    "line": 12,
+    "title": "Антоним",
+    "rulePath": "/theory/leksika/?exam=OGE#antonyms",
+    "pattern": "антоним",
+    "errorType": "antonym",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:12.phraseology",
+    "topicId": "leksika",
+    "line": 12,
+    "title": "Значение фразеологизма",
+    "rulePath": "/theory/leksika/?exam=OGE#phraseology",
+    "pattern": "фразеолог|устойчив",
+    "errorType": "phraseology",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:12.context-meaning",
+    "topicId": "leksika",
+    "line": 12,
+    "title": "Значение слова в контексте",
+    "rulePath": "/theory/leksika/?exam=OGE#meaning-and-range",
+    "pattern": "контекст|значени",
+    "errorType": "context-meaning",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:1.microthemes",
+    "topicId": "izlozhenie",
+    "line": 1,
+    "title": "Микротемы исходного текста",
+    "rulePath": "/theory/izlozhenie/?exam=OGE#microtopic-workshop",
+    "pattern": "микротем",
+    "errorType": "microthemes",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:1.compression",
+    "topicId": "izlozhenie",
+    "line": 1,
+    "title": "Исключение, обобщение и упрощение",
+    "rulePath": "/theory/izlozhenie/?exam=OGE#compression-workshop",
+    "pattern": "сжати|исключен|обобщен|упрощен",
+    "errorType": "compression",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:13.thesis",
+    "topicId": "sochinenie",
+    "line": 13,
+    "title": "Тезис и ответ на вопрос",
+    "rulePath": "/theory/sochinenie/?exam=OGE#thesis",
+    "pattern": "тезис",
+    "errorType": "thesis",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:13.evidence",
+    "topicId": "sochinenie",
+    "line": 13,
+    "title": "Примеры и их пояснения",
+    "rulePath": "/theory/sochinenie/?exam=OGE#argument-quality",
+    "pattern": "пример|поясн",
+    "errorType": "evidence",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:13.composition",
+    "topicId": "sochinenie",
+    "line": 13,
+    "title": "Композиция и логика рассуждения",
+    "rulePath": "/theory/sochinenie/?exam=OGE#composition",
+    "pattern": "композиц|логик",
+    "errorType": "composition",
+    "classification": "project"
+  }
+]

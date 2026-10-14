@@ -95,7 +95,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От управления к согласованию"
+    "subtopic": "От управления к согласованию",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-002",
@@ -193,7 +206,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От согласования к управлению"
+    "subtopic": "От согласования к управлению",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-003",
@@ -291,7 +317,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От существительного к наречию"
+    "subtopic": "От существительного к наречию",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-004",
@@ -391,7 +430,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От наречия к существительному"
+    "subtopic": "От наречия к существительному",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-005",
@@ -489,7 +541,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Время как зависимый признак"
+    "subtopic": "Время как зависимый признак",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-006",
@@ -587,7 +652,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Неизменяемое слово и прилагательное"
+    "subtopic": "Неизменяемое слово и прилагательное",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-007",
@@ -685,7 +763,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Материал предмета"
+    "subtopic": "Материал предмета",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-008",
@@ -783,7 +874,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Синонимия и буква Ё"
+    "subtopic": "Синонимия и буква Ё",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-009",
@@ -885,7 +989,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Примыкание и значение действия"
+    "subtopic": "Примыкание и значение действия",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-010",
@@ -983,7 +1100,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Грамматическая синонимия"
+    "subtopic": "Грамматическая синонимия",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-011",
@@ -1081,7 +1211,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От согласования к примыканию: время"
+    "subtopic": "От согласования к примыканию: время",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-012",
@@ -1179,7 +1322,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От примыкания к согласованию: способ езды"
+    "subtopic": "От примыкания к согласованию: способ езды",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-014",
@@ -1279,7 +1435,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От согласования к управлению: материал"
+    "subtopic": "От согласования к управлению: материал",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-048",
@@ -1381,7 +1550,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От управления к примыканию: непрерывность"
+    "subtopic": "От управления к примыканию: непрерывность",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-052",
@@ -1481,7 +1663,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Примыкание с деепричастием"
+    "subtopic": "Примыкание с деепричастием",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-066",
@@ -1579,7 +1774,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От управления к согласованию: принадлежность"
+    "subtopic": "От управления к согласованию: принадлежность",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-085",
@@ -1677,7 +1885,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От примыкания к управлению: способ действия"
+    "subtopic": "От примыкания к управлению: способ действия",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-087",
@@ -1775,7 +1996,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От согласования к управлению: принадлежность"
+    "subtopic": "От согласования к управлению: принадлежность",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-091",
@@ -1873,7 +2107,20 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От согласования к управлению: отношение"
+    "subtopic": "От согласования к управлению: отношение",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-slovosochetaniya-099",
@@ -1971,6 +2218,507 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "От управления к согласованию: место"
+    "subtopic": "От управления к согласованию: место",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-slovosochetaniya-013",
+    "slug": "oge-slovosochetaniya-013",
+    "revision": 1,
+    "title": "Материал предмета: управление в согласование",
+    "prompt": "Замените словосочетание «кольцо из золота», построенное на основе управления, синонимичным словосочетанием со связью согласование. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "золотое кольцо",
+      "кольцо золотое"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Сохраните материал предмета, а не только его внешний цвет.",
+    "explanation": "«кольцо из золота» → «золотое кольцо».\n\nЗависимая именная форма исходного сочетания заменена прилагательным; оно согласуется с существительным «кольцо» в требуемой форме. Результат: «золотое кольцо». Главное слово сохранено; тип связи изменён.",
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 13,
+      "paragraph": 268,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Главное слово кольцо сохранено. Из золота заменяется относительным прилагательным золотое, согласованным в среднем роде, единственном числе, именительном падеже. Значение материала сохраняется при обоих порядках слов; золотистое обозначало бы цвет и не равно исходному смыслу. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Материал: существительное → относительное прилагательное",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-slovosochetaniya-018",
+    "slug": "oge-slovosochetaniya-018",
+    "revision": 1,
+    "title": "Согласование прилагательного с главным словом",
+    "prompt": "Замените словосочетание «статуя из мрамора», построенное на основе управления, синонимичным словосочетанием со связью согласование. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "мраморная статуя",
+      "статуя мраморная"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Сверьте род, число и падеж нового зависимого слова.",
+    "explanation": "«статуя из мрамора» → «мраморная статуя».\n\nЗависимая именная форма исходного сочетания заменена прилагательным; оно согласуется с существительным «статуя» в требуемой форме. Результат: «мраморная статуя». Главное слово сохранено; тип связи изменён.",
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 18,
+      "paragraph": 283,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Из мрамора заменяется прилагательным мраморная, которое согласуется со статуя в женском роде, единственном числе, именительном падеже. Главное слово и значение материала остаются прежними; мраморную/мраморное не согласованы с данной формой. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Материал: управление → согласование; Сохранение главного слова",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-slovosochetaniya-019",
+    "slug": "oge-slovosochetaniya-019",
+    "revision": 1,
+    "title": "Материал: согласование в управление",
+    "prompt": "Замените словосочетание «снежная крепость», построенное на основе согласования, синонимичным словосочетанием со связью управление. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "крепость из снега",
+      "снега из крепость"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Преобразование должно обозначать материал, а не место.",
+    "explanation": "«снежная крепость» → «крепость из снега».\n\nСогласованное определение заменено существительным (при необходимости с предлогом), зависимым по падежу от слова «крепость». Результат: «крепость из снега». Главное слово сохранено; тип связи изменён.",
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 19,
+      "paragraph": 286,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Снежная определяет материал крепости. Из снега — зависимое существительное в родительном падеже с предлогом из, то есть управление. Главное слово крепость сохранено. Крепость в снегу обозначает расположение и изменяет смысл. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Относительное прилагательное → материал с ИЗ",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-slovosochetaniya-022",
+    "slug": "oge-slovosochetaniya-022",
+    "revision": 1,
+    "title": "Стекло как материал, а не содержимое",
+    "prompt": "Замените словосочетание «ваза из стекла», построенное на основе управления, синонимичным словосочетанием со связью согласование. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "стеклянная ваза",
+      "ваза стеклянная"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Из стекла и со стеклом выражают разные отношения.",
+    "explanation": "«ваза из стекла» → «стеклянная ваза».\n\nЗависимая именная форма исходного сочетания заменена прилагательным; оно согласуется с существительным «ваза» в требуемой форме. Результат: «стеклянная ваза». Главное слово сохранено; тип связи изменён.",
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 22,
+      "paragraph": 295,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Из стекла означает материал вазы. Стеклянная — относительное прилагательное, согласованное с ваза в женском роде. Главное слово и материал сохранены. Ваза со стеклом обозначала бы содержимое, а не материал. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "Управление → согласование; Семантика материала",
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]

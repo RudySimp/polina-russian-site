@@ -97,7 +97,59 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence",
+      "OGE:10.detail",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-draft",
@@ -197,7 +249,57 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-boat",
@@ -297,7 +399,63 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference",
+      "OGE:10.detail",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.sequence",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+      "/theory/analiz-teksta/?exam=OGE#details"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-letter",
@@ -397,7 +555,53 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-rehearsal",
@@ -497,7 +701,53 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-map",
@@ -597,7 +847,51 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-seed",
@@ -697,7 +991,64 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.detail",
+      "OGE:10.fact-inference",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.sequence",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#details",
+        "errorType": "detail"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#details",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-bell",
@@ -797,7 +1148,63 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive",
+      "OGE:10.fact-inference"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.sequence",
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-race",
@@ -897,7 +1304,61 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-snow",
@@ -997,7 +1458,61 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.detail",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#details",
+        "errorType": "detail"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#details",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-tool",
@@ -1097,7 +1612,60 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.detail",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+      "/theory/analiz-teksta/?exam=OGE#details"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-library",
@@ -1197,7 +1765,59 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.motive",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+        "errorType": "motive"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-bread",
@@ -1297,7 +1917,60 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-repair",
@@ -1397,7 +2070,59 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.motive",
+      "OGE:10.fact-inference",
+      "OGE:10.detail",
+      "OGE:10.sequence"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+        "errorType": "motive"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#actions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-train",
@@ -1497,7 +2222,57 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.detail",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#details",
+        "errorType": "detail"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#details",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-team",
@@ -1597,7 +2372,61 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.detail",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#details",
+        "errorType": "detail"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#details",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-photo",
@@ -1697,7 +2526,51 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-garden",
@@ -1797,7 +2670,55 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-chess",
@@ -1897,7 +2818,56 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence",
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-analiz-teksta-reading-song",
@@ -1997,6 +2967,538 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Факт, последовательность, мотив героя"
+    "subtopic": "Факт, последовательность, мотив героя",
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#cause-motive-evaluation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-analiz-teksta-reading-audit-voice",
+    "slug": "oge-analiz-teksta-reading-audit-voice",
+    "revision": 1,
+    "title": "Голос для школьного музея: смысл и факты",
+    "prompt": "Какие высказывания соответствуют содержанию текста? Укажите номера ответов.",
+    "sourceTextId": "reading-audit-voice",
+    "topicId": "analiz-teksta",
+    "topicSlug": "analiz-teksta",
+    "topicTitle": "Анализ содержания текста",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "14"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.comprehension",
+    "misconceptionId": "line-10-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "После неудачной записи Вера решила сделать новую попытку.",
+      "Дедушка отказался рассказывать о прошлом.",
+      "Вера передала запись в музей без согласования с дедушкой.",
+      "Вера использовала карту, чтобы уточнить место события.",
+      "Дедушка рассказал, как один построил мост через реку."
+    ],
+    "optionExplanations": [
+      "Предложение 3 прямо сообщает решение попробовать ещё раз после шума на первой записи.",
+      "В предложении 2 дедушка согласился, а в 6 рассказал историю; отказа нет.",
+      "В 9–10 дедушка просит предварительное прослушивание, и Вера соглашается; передача без согласования не названа.",
+      "В предложении 7 карта помогает уточнить точное место события.",
+      "В 6 школьники вместе прокладывали тропинку, а не дедушка один строил мост."
+    ],
+    "explanation": "Предложение 3 прямо сообщает решение попробовать ещё раз после шума на первой записи.\n\nВ предложении 2 дедушка согласился, а в 6 рассказал историю; отказа нет.\n\nВ 9–10 дедушка просит предварительное прослушивание, и Вера соглашается; передача без согласования не названа.\n\nВ предложении 7 карта помогает уточнить точное место события.\n\nВ 6 школьники вместе прокладывали тропинку, а не дедушка один строил мост.",
+    "steps": [
+      "Сопоставьте каждое утверждение с текстом.",
+      "Различите прямо названный факт и вывод.",
+      "Не добавляйте отсутствующие события."
+    ],
+    "hint": "Отдельно проверяйте совершённое действие, намерение, количество и последовательность; найдите текстовую опору каждому пункту.",
+    "formatLabel": "ОГЭ · задание 10",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 10,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Факт, намерение и действительный результат",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.sequence",
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-analiz-teksta-reading-audit-model",
+    "slug": "oge-analiz-teksta-reading-audit-model",
+    "revision": 1,
+    "title": "Мост из бумаги: смысл и факты",
+    "prompt": "Какие высказывания соответствуют содержанию текста? Укажите номера ответов.",
+    "sourceTextId": "reading-audit-model",
+    "topicId": "analiz-teksta",
+    "topicSlug": "analiz-teksta",
+    "topicTitle": "Анализ содержания текста",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "2"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.comprehension",
+    "misconceptionId": "line-10-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "Учитель сам полностью собрал новый мост вместо Игоря.",
+      "После проверки Игорь заменил слишком узкую полоску бумаги.",
+      "Игорь провёл ровно сто миллионов испытаний.",
+      "После первой неудачи мальчик сразу ушёл и больше не возвращался к работе.",
+      "Перед выставкой Игорь вместо одноклассницы изготовил её модель."
+    ],
+    "optionExplanations": [
+      "В 3 учитель предлагает проверку, не выполняя работу вместо ученика.",
+      "В 4–5 названы узкая полоска и её замена; это соответствует последовательности событий.",
+      "В 7 прямо названо пять испытаний; сто миллионов в 6 — шутливое преувеличение.",
+      "Решение в 2 не стало окончательным действием: далее герой проверяет и исправляет модель.",
+      "В 9 Игорь объясняет способ проверки чужой модели, а не изготавливает её вместо одноклассницы."
+    ],
+    "explanation": "В 3 учитель предлагает проверку, не выполняя работу вместо ученика.\n\nВ 4–5 названы узкая полоска и её замена; это соответствует последовательности событий.\n\nВ 7 прямо названо пять испытаний; сто миллионов в 6 — шутливое преувеличение.\n\nРешение в 2 не стало окончательным действием: далее герой проверяет и исправляет модель.\n\nВ 9 Игорь объясняет способ проверки чужой модели, а не изготавливает её вместо одноклассницы.",
+    "steps": [
+      "Сопоставьте каждое утверждение с текстом.",
+      "Различите прямо названный факт и вывод.",
+      "Не добавляйте отсутствующие события."
+    ],
+    "hint": "Отдельно проверяйте совершённое действие, намерение, количество и последовательность; найдите текстовую опору каждому пункту.",
+    "formatLabel": "ОГЭ · задание 10",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 10,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Факт, намерение и действительный результат",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.sequence",
+      "OGE:10.fact-inference"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-analiz-teksta-reading-audit-yard",
+    "slug": "oge-analiz-teksta-reading-audit-yard",
+    "revision": 1,
+    "title": "Страница нашего двора: смысл и факты",
+    "prompt": "Какие высказывания соответствуют содержанию текста? Укажите номера ответов.",
+    "sourceTextId": "reading-audit-yard",
+    "topicId": "analiz-teksta",
+    "topicSlug": "analiz-teksta",
+    "topicTitle": "Анализ содержания текста",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "1345"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.comprehension",
+    "misconceptionId": "line-10-analysis",
+    "instruction": "Запишите номера подряд, без пробелов. Порядок цифр не важен.",
+    "options": [
+      "Соседка предложила начать восстановление с небольшого участка.",
+      "Никита обещал, что все растения расцветут немедленно.",
+      "После совместной работы участники договорились поливать растения по очереди.",
+      "Первые листья были замечены через неделю.",
+      "Никита воспринимал восстановленный двор как след совместной заботы."
+    ],
+    "optionExplanations": [
+      "В 3 прямо назван небольшой участок как начало совместного дела.",
+      "В 7 подчёркнуто: Никита не обещал мгновенного цветения.",
+      "В 6 участники поливают растения и договариваются дежурить по очереди.",
+      "В 8 прямо названо наблюдение первых листьев через неделю; точный день их появления из этого не определяется.",
+      "Предложение 10 прямо связывает восприятие двора с общей историей и заботой."
+    ],
+    "explanation": "В 3 прямо назван небольшой участок как начало совместного дела.\n\nВ 7 подчёркнуто: Никита не обещал мгновенного цветения.\n\nВ 6 участники поливают растения и договариваются дежурить по очереди.\n\nВ 8 прямо названо наблюдение первых листьев через неделю; точный день их появления из этого не определяется.\n\nПредложение 10 прямо связывает восприятие двора с общей историей и заботой.",
+    "steps": [
+      "Сопоставьте каждое утверждение с текстом.",
+      "Различите прямо названный факт и вывод.",
+      "Не добавляйте отсутствующие события."
+    ],
+    "hint": "Отдельно проверяйте совершённое действие, намерение, количество и последовательность; найдите текстовую опору каждому пункту.",
+    "formatLabel": "ОГЭ · задание 10",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 10,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Факт, намерение и действительный результат",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.fact-inference"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#actions"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

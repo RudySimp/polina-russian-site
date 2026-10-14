@@ -154,6 +154,7 @@ for (const approval of manifest.approved) {
       teacherApproval: "pending",
     },
     reviewStatus: "checked-demo",
+    ...(approval.publicationReview ? {publicationReview:approval.publicationReview} : {}),
     reviewStages: ['extracted', 'answer-checked', 'explanation-checked', 'publication-approved'].map(stage => ({stage, at: approval.reviewedAt, by: 'Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается'})),
     subtopic: approval.subtopic ?? approval.title,
   };

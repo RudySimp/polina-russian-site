@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-12",
+  "reviewedBy": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+  "mode": "checked-demo",
+  "teacherApproval": "pending",
+  "files": [
+    {
+      "path": "content/audit-new-syntax.json",
+      "sha256": "ca65ffc7714739a21911827beff837a1a824f89f62220a1fa95bb9b0547dcbe3"
+    },
+    {
+      "path": "content/audit-new-reading.json",
+      "sha256": "b2fac50235aca835a13b4469b44bd5ff864365a17e4ae9fc31ce6ea3ffe1a075"
+    }
+  ],
+  "syntaxKeys": {
+    "lighthouse": [
+      "245",
+      "135"
+    ],
+    "library-display": [
+      "134",
+      "235"
+    ],
+    "station-path": [
+      "1345",
+      "34"
+    ],
+    "snowfall": [
+      "125"
+    ],
+    "meeting": [
+      "145"
+    ]
+  },
+  "readingKeys": {
+    "reading-audit-voice": {
+      "10": "14",
+      "11": "135",
+      "12": "упорство"
+    },
+    "reading-audit-model": {
+      "10": "2",
+      "11": "3",
+      "12": "прочным"
+    },
+    "reading-audit-yard": {
+      "10": "1345",
+      "11": "1245",
+      "12": "опустились руки"
+    }
+  },
+  "limitations": [
+    "Это редакционный допуск авторских учебных материалов, не методическое утверждение Полиной и не официальный КИМ."
+  ],
+  "hashEncoding": "compact-json-v1"
+}

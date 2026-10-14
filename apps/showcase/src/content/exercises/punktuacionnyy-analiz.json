@@ -95,7 +95,79 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Уточнение и перечисление"
+    "subtopic": "Уточнение и перечисление",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.clarification",
+      "OGE:5.detached",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.clarification",
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "clarification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.clarification",
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "clarification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-002",
@@ -193,7 +265,73 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Пояснение и прямая речь"
+    "subtopic": "Пояснение и прямая речь",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.complex",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-003",
@@ -291,7 +429,79 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Обобщение и пропуск сказуемого"
+    "subtopic": "Обобщение и пропуск сказуемого",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.homogeneous",
+      "OGE:5.complex"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-004",
@@ -389,7 +599,76 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Придаточное и вводное сочетание"
+    "subtopic": "Придаточное и вводное сочетание",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached",
+      "OGE:5.complex",
+      "OGE:5.introductory"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.detached",
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.introductory",
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "introductory"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-005",
@@ -487,7 +766,79 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Названия и прямая речь"
+    "subtopic": "Названия и прямая речь",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-006",
@@ -585,7 +936,75 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Сравнение и причастный оборот"
+    "subtopic": "Сравнение и причастный оборот",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-009",
@@ -683,7 +1102,72 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Уступка и противительный союз"
+    "subtopic": "Уступка и противительный союз",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-010",
@@ -781,7 +1265,65 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Вставка и противопоставление"
+    "subtopic": "Вставка и противопоставление",
+    "skillIds": [
+      "OGE:punctuation.position"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-011",
@@ -879,7 +1421,74 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Приложение и уточнение"
+    "subtopic": "Приложение и уточнение",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.clarification",
+      "OGE:5.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:5.clarification",
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "clarification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.clarification",
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "clarification"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-014",
@@ -977,7 +1586,71 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Бессоюзная связь и место"
+    "subtopic": "Бессоюзная связь и место",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.homogeneous",
+      "OGE:5.detached",
+      "OGE:5.clarification",
+      "OGE:5.complex"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.clarification"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "clarification"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-012",
@@ -1075,7 +1748,75 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Кавычки в названиях"
+    "subtopic": "Кавычки в названиях",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-016",
@@ -1173,7 +1914,74 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Границы частей сложного предложения"
+    "subtopic": "Границы частей сложного предложения",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.complex",
+      "OGE:5.detached"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.detached",
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-019",
@@ -1271,7 +2079,57 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Тире при числительных и условии"
+    "subtopic": "Тире при числительных и условии",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.complex"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-020",
@@ -1369,7 +2227,76 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Деепричастный оборот и перечень"
+    "subtopic": "Деепричастный оборот и перечень",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-022",
@@ -1467,7 +2394,69 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Двойной союз и приложение"
+    "subtopic": "Двойной союз и приложение",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-025",
@@ -1565,7 +2554,67 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Деепричастие и слова автора"
+    "subtopic": "Деепричастие и слова автора",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-032",
@@ -1663,7 +2712,73 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Двоеточие при пояснении и прямой речи"
+    "subtopic": "Двоеточие при пояснении и прямой речи",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.complex",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-035",
@@ -1761,7 +2876,75 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Название экскурсии и прямая речь"
+    "subtopic": "Название экскурсии и прямая речь",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.direct-speech"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#quotes",
+        "errorType": "direct-speech"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#quotes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-049",
@@ -1859,7 +3042,76 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Причастный оборот и повторяющийся союз"
+    "subtopic": "Причастный оборот и повторяющийся союз",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.detached",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.detached"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "detached"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 6,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 7,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 8,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-punktuacionnyy-analiz-057",
@@ -1957,6 +3209,76 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Условие и обобщающее сочетание"
+    "subtopic": "Условие и обобщающее сочетание",
+    "skillIds": [
+      "OGE:punctuation.position",
+      "OGE:5.complex",
+      "OGE:5.homogeneous"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:5.complex"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+        "errorType": "complex"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 6,
+        "skillIds": [
+          "OGE:5.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#commas",
+        "errorType": "homogeneous"
+      },
+      {
+        "position": 7,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 8,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnyy-analiz/?exam=OGE#algorithm",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#complex-punctuation",
+      "/theory/punktuacionnyy-analiz/?exam=OGE#commas"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]

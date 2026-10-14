@@ -1,11 +1,33 @@
 import { collections } from "./exercise-loaders";
 import type { Exercise } from "./model";
 const cached = new Map<number, Promise<Exercise[]>>();
+const lineCache = new Map<number, Promise<Exercise[]>>();
+let all: Promise<Exercise[]> | undefined;
+const exerciseCache = new Map<string, Promise<Exercise | undefined>>();
+const batchCache = new Map<string, Promise<Exercise[]>>();
+const collectionForId = new Map(
+  collections.flatMap((collection, index) =>
+    collection.ids.map((id) => [id, index] as const),
+  ),
+);
 function loadCollection(index: number) {
-  if (!cached.has(index)) cached.set(index, collections[index].load());
+  if (!cached.has(index))
+    cached.set(
+      index,
+      collections[index].load().catch((error) => {
+        cached.delete(index);
+        throw error;
+      }),
+    );
   return cached.get(index)!;
 }
-const lineCache = new Map<number, Promise<Exercise[]>>();
+export function resetContentLoaders() {
+  cached.clear();
+  lineCache.clear();
+  exerciseCache.clear();
+  batchCache.clear();
+  all = undefined;
+}
 export function loadLine(line: number): Promise<Exercise[]> {
   if (!lineCache.has(line))
     lineCache.set(
@@ -14,21 +36,60 @@ export function loadLine(line: number): Promise<Exercise[]> {
         collections.flatMap((c, i) =>
           c.lines.includes(line) ? [loadCollection(i)] : [],
         ),
-      ).then((groups) =>
-        groups.flat().filter((e) => e.exam === "OGE" && e.taskLine === line),
-      ),
+      )
+        .then((groups) =>
+          groups.flat().filter((e) => e.exam === "OGE" && e.taskLine === line),
+        )
+        .catch((error) => {
+          lineCache.delete(line);
+          throw error;
+        }),
     );
   return lineCache.get(line)!;
 }
-export async function loadExercise(id: string): Promise<Exercise | undefined> {
-  const index = collections.findIndex((c) => c.ids.includes(id));
-  return index < 0
-    ? undefined
-    : (await loadCollection(index)).find((e) => e.id === id);
+export function loadExercise(id: string): Promise<Exercise | undefined> {
+  if (!exerciseCache.has(id)) {
+    const index = collectionForId.get(id);
+    exerciseCache.set(
+      id,
+      index === undefined
+        ? Promise.resolve(undefined)
+        : loadCollection(index)
+            .then((values) => values.find((e) => e.id === id))
+            .catch((error) => {
+              exerciseCache.delete(id);
+              throw error;
+            }),
+    );
+  }
+  return exerciseCache.get(id)!;
 }
-let all: Promise<Exercise[]> | undefined;
+export function loadExercises(ids: string[]): Promise<Exercise[]> {
+  const key = [...new Set(ids)].sort().join("|");
+  if (!batchCache.has(key)) {
+    const wanted = new Set(ids);
+    const indexes = new Set(
+      ids
+        .map((id) => collectionForId.get(id))
+        .filter((i): i is number => i !== undefined),
+    );
+    batchCache.set(
+      key,
+      Promise.all([...indexes].map(loadCollection))
+        .then((groups) => groups.flat().filter((e) => wanted.has(e.id)))
+        .catch((error) => {
+          batchCache.delete(key);
+          throw error;
+        }),
+    );
+  }
+  return batchCache.get(key)!;
+}
 export function loadAllExercises(): Promise<Exercise[]> {
-  return (all ??= Promise.all(
-    collections.map((_, i) => loadCollection(i)),
-  ).then((groups) => groups.flat()));
+  return (all ??= Promise.all(collections.map((_, i) => loadCollection(i)))
+    .then((groups) => groups.flat())
+    .catch((error) => {
+      all = undefined;
+      throw error;
+    }));
 }

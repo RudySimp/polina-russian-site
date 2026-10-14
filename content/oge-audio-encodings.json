@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-13",
+  "durationCheck": "ffprobe подтвердил равную длительность WAV и gapless MP3 для всех пяти записей",
+  "records": [
+    {
+      "path": "/audio/oge-curiosity.mp3",
+      "byteSize": 1477196,
+      "sha256": "ee92723190eb03cc98268acf2ec1ba189655191b99a25605b5b1c4e579382d6a",
+      "encoding": "MP3 64 kbps mono",
+      "sourcePath": "/audio/oge-curiosity.wav"
+    },
+    {
+      "path": "/audio/oge-friendship.mp3",
+      "byteSize": 1501964,
+      "sha256": "da3aea49e6c48b5b990ec2489be1b858aaf7711f5dbe97d8afda2ead99845bdf",
+      "encoding": "MP3 64 kbps mono",
+      "sourcePath": "/audio/oge-friendship.wav"
+    },
+    {
+      "path": "/audio/oge-memory.mp3",
+      "byteSize": 1554092,
+      "sha256": "946405bc381014e92381a339c8d7f52b38a53870bc4ff6002a66c1434b96090c",
+      "encoding": "MP3 64 kbps mono",
+      "sourcePath": "/audio/oge-memory.wav"
+    },
+    {
+      "path": "/audio/oge-reading.mp3",
+      "byteSize": 1518956,
+      "sha256": "b945e8ebc496ed55d19652a2948c8ccc065cd20e3ca20c6a78a9cd472fba1e03",
+      "encoding": "MP3 64 kbps mono",
+      "sourcePath": "/audio/oge-reading.wav"
+    },
+    {
+      "path": "/audio/oge-responsibility.mp3",
+      "byteSize": 1543436,
+      "sha256": "99c480664def575d662213d51b042e650ca4f8baca6bfb2fccb160e2af860fcd",
+      "encoding": "MP3 64 kbps mono",
+      "sourcePath": "/audio/oge-responsibility.wav"
+    }
+  ]
+}

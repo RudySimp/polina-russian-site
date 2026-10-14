@@ -92,8 +92,32 @@ export type Lesson = {
   relatedTopicIds: string[];
 };
 export type Exercise = Snapshot & {
+  skillIds?: string[];
+  elements?: {
+    position: number;
+    skillIds: string[];
+    rulePath: string;
+    errorType: string;
+  }[];
+  rulePaths?: string[];
+  originCategory?: "official" | "author-model" | "learning";
+  publicationReview?: {
+    revision: number;
+    by: string;
+    at: string;
+    mode: "checked-demo" | "method-approved";
+    condition: boolean;
+    key: boolean;
+    alternatives: boolean;
+    explanation: boolean;
+    rights: boolean;
+  };
   sourceTextId?: string;
-  reviewStages?: { stage: import('../oge/model').ReviewStage; at: string; by: string }[];
+  reviewStages?: {
+    stage: import("../oge/model").ReviewStage;
+    at: string;
+    by: string;
+  }[];
   subtopic?: string;
   slug: string;
   skillId: string;

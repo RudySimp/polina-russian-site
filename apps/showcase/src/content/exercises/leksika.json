@@ -85,7 +85,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-draft",
@@ -174,7 +186,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Фразеологизм"
+    "subtopic": "Фразеологизм",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.phraseology",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#phraseology",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-boat",
@@ -262,7 +286,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-letter",
@@ -350,7 +386,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-rehearsal",
@@ -438,7 +486,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-map",
@@ -526,7 +586,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-seed",
@@ -614,7 +686,17 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Антоним"
+    "subtopic": "Антоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.antonym"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#antonyms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-bell",
@@ -702,7 +784,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-race",
@@ -791,7 +885,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Фразеологизм"
+    "subtopic": "Фразеологизм",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.phraseology",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#phraseology",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-snow",
@@ -879,7 +985,17 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Антоним"
+    "subtopic": "Антоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.antonym"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#antonyms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-tool",
@@ -967,7 +1083,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-library",
@@ -1055,7 +1183,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-bread",
@@ -1144,7 +1284,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Фразеологизм"
+    "subtopic": "Фразеологизм",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.phraseology",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#phraseology",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-repair",
@@ -1232,7 +1384,17 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Антоним"
+    "subtopic": "Антоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.antonym"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#antonyms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-train",
@@ -1320,7 +1482,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-team",
@@ -1408,7 +1582,17 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Антоним"
+    "subtopic": "Антоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.antonym"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#antonyms"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-photo",
@@ -1496,7 +1680,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-garden",
@@ -1584,7 +1780,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-chess",
@@ -1672,7 +1880,19 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-leksika-reading-song",
@@ -1760,6 +1980,350 @@
         "by": "Редакторская проверка проекта; методическое утверждение ожидается"
       }
     ],
-    "subtopic": "Значение и синоним"
+    "subtopic": "Значение и синоним",
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-leksika-reading-audit-voice",
+    "slug": "oge-leksika-reading-audit-voice",
+    "revision": 1,
+    "title": "Голос для школьного музея: лексика",
+    "prompt": "Из предложения 9 выпишите слово со значением «настойчивость в достижении цели» в той форме, в которой оно стоит в тексте.",
+    "sourceTextId": "reading-audit-voice",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "упорство"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Упорство — настойчивость: Вера не отказалась после первой неудачи. В предложении 9 названо именно это качество, а не простое согласие на просьбу.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Значение слова в контексте",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-leksika-reading-audit-model",
+    "slug": "oge-leksika-reading-audit-model",
+    "revision": 1,
+    "title": "Мост из бумаги: лексика",
+    "prompt": "Из предложения 8 выпишите слово, являющееся в данном контексте антонимом к слову «хрупкий». Сохраните форму из текста.",
+    "sourceTextId": "reading-audit-model",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "прочным"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Прочный противопоставлен хрупкому по способности выдерживать воздействие. В предложении 8 стоит форма прочным; устройство обозначает предмет анализа, а не противоположный признак.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Контекстный антоним",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.antonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#antonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-leksika-reading-audit-yard",
+    "slug": "oge-leksika-reading-audit-yard",
+    "revision": 1,
+    "title": "Страница нашего двора: лексика",
+    "prompt": "Из предложения 2 выпишите фразеологизм со значением «утратить желание действовать из-за трудности» в форме из текста.",
+    "sourceTextId": "reading-audit-yard",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "опустились руки",
+      "опустилисьруки"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Оригинальные учебные материалы проекта",
+      "author": "Редакция проекта; окончательное утверждение Полиной ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите слово или выражение в форме из текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "Опустились руки — устойчивое выражение утраты решимости, а не буквальное положение рук. У него называет обладателя состояния и не входит в обязательное ядро выписываемого фразеологизма.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сопоставьте значение слова с условием.",
+      "Выпишите требуемую форму полностью."
+    ],
+    "hint": "Условие задаёт значение и диапазон предложений. Не заменяйте найденное слово собственным синонимом.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-12",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные учебные тексты, условия и объяснения созданы для проекта. Сторонние литературные произведения не копируются; авторство Полине не приписывается.",
+      "reviewNote": "Выполнена редакционная проверка событий, логических ограничений, выразительных средств и ответов. Независимая методическая проверка и утверждение Полиной ожидаются.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторский допуск checked-demo; Полина: pending"
+      }
+    ],
+    "subtopic": "Граница фразеологизма",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение исходных текстов, всех вариантов и ключей",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.phraseology",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#phraseology",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

@@ -106,7 +106,66 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Проверьте выпадение гласной при склонении, приставку у причастия и начало слова после «пол-»."
+    "subtopic": "Проверьте выпадение гласной при склонении, приставку у причастия и начало слова после «пол-».",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.suffix-ek-ik",
+      "OGE:6.n-nn",
+      "OGE:6.prefix-z-s",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.checked-root"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.suffix-ek-ik"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "suffix-ek-ik"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-002",
@@ -215,7 +274,55 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Определите наклонение глагола, границу приставки и корня; вспомните исключения после Ц."
+    "subtopic": "Определите наклонение глагола, границу приставки и корня; вспомните исключения после Ц.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.joined-separate-hyphen"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-003",
@@ -324,7 +431,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Для приставки на З/С важен следующий согласный; для окончания — тип склонения."
+    "subtopic": "Для приставки на З/С важен следующий согласный; для окончания — тип склонения.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.prefix-z-s",
+      "OGE:6.n-nn",
+      "OGE:6.joined-separate-hyphen"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-004",
@@ -433,7 +592,62 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У ЖЁЛТЫЙ найдите родственное слово с Е, у ПРИОТКРЫТЬ определите значение приставки."
+    "subtopic": "У ЖЁЛТЫЙ найдите родственное слово с Е, у ПРИОТКРЫТЬ определите значение приставки.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.alternating-root",
+      "OGE:6.n-nn",
+      "OGE:6.pre-pri"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.alternating-root",
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-005",
@@ -542,7 +756,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Проверочное слово должно содержать ударную гласную; спряжение причастия определяйте по глаголу."
+    "subtopic": "Проверочное слово должно содержать ударную гласную; спряжение причастия определяйте по глаголу.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.prefix-z-s",
+      "OGE:6.checked-root",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-006",
@@ -651,7 +917,62 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Отличайте местоименную частицу от приставки и существительное с предлогом от производного предлога."
+    "subtopic": "Отличайте местоименную частицу от приставки и существительное с предлогом от производного предлога.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.pre-pri",
+      "OGE:6.n-nn",
+      "OGE:6.joined-separate-hyphen"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn",
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-007",
@@ -760,7 +1081,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Причину можно передать предлогом «из-за». У причастия прошедшего времени обратитесь к инфинитиву."
+    "subtopic": "Причину можно передать предлогом «из-за». У причастия прошедшего времени обратитесь к инфинитиву.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-008",
@@ -869,7 +1242,60 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У отглагольного прилагательного учитывайте вид исходного глагола; у КОЕ- проверьте дефис."
+    "subtopic": "У отглагольного прилагательного учитывайте вид исходного глагола; у КОЕ- проверьте дефис.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.pre-pri",
+      "OGE:6.joined-separate-hyphen"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.n-nn",
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-009",
@@ -978,7 +1404,63 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "У чередующегося корня найдите суффикс после него; слово ВПОСЛЕДСТВИИ является наречием."
+    "subtopic": "У чередующегося корня найдите суффикс после него; слово ВПОСЛЕДСТВИИ является наречием.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.pre-pri",
+      "OGE:6.alternating-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-010",
@@ -1087,7 +1569,63 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Существительные на -ИЯ имеют особое окончание; в корне РАСТ- выбор связан со следующими согласными."
+    "subtopic": "Существительные на -ИЯ имеют особое окончание; в корне РАСТ- выбор связан со следующими согласными.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.alternating-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.pre-pri",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-011",
@@ -1196,7 +1734,64 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Неизменяемая приставка сохраняет написание независимо от произношения следующего звука."
+    "subtopic": "Неизменяемая приставка сохраняет написание независимо от произношения следующего звука.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.alternating-root",
+      "OGE:6.checked-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.prefix-z-s",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-012",
@@ -1305,7 +1900,61 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Ударение помогает выбрать НЕ/НИ; написание производного предлога нужно отличать от исходного существительного."
+    "subtopic": "Ударение помогает выбрать НЕ/НИ; написание производного предлога нужно отличать от исходного существительного.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-013",
@@ -1414,7 +2063,64 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В корне БИР- ищите следующий суффикс -А-. В сочетании «так же ярко» частицу можно убрать."
+    "subtopic": "В корне БИР- ищите следующий суффикс -А-. В сочетании «так же ярко» частицу можно убрать.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.prefix-z-s",
+      "OGE:6.alternating-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.n-nn",
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-014",
@@ -1523,7 +2229,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В корне ЗАР/ЗОР сначала поставьте ударение. Для Н/НН вспомните три исключения на -ЯН-."
+    "subtopic": "В корне ЗАР/ЗОР сначала поставьте ударение. Для Н/НН вспомните три исключения на -ЯН-.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.prefix-z-s",
+      "OGE:6.checked-root",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.prefix-z-s"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-015",
@@ -1632,7 +2390,58 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "После МЕЖ- действует особое правило. У существительного НОЧЬ установите склонение и падеж."
+    "subtopic": "После МЕЖ- действует особое правило. У существительного НОЧЬ установите склонение и падеж.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.alternating-root",
+      "OGE:6.checked-root"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-016",
@@ -1741,7 +2550,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Корень в слове ГОРИСТЫЙ связан с горой. Для В ТЕЧЕНИЕ проверьте значение времени."
+    "subtopic": "Корень в слове ГОРИСТЫЙ связан с горой. Для В ТЕЧЕНИЕ проверьте значение времени.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.alternating-root",
+      "OGE:6.checked-root",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-017",
@@ -1850,7 +2711,57 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "Причастие настоящего времени наследует спряжение глагола. Твёрдый знак разделяет, но не смягчает."
+    "subtopic": "Причастие настоящего времени наследует спряжение глагола. Твёрдый знак разделяет, но не смягчает.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.checked-root"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-018",
@@ -1959,7 +2870,59 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "После русской приставки на согласную начальная И корня обычно заменяется на Ы."
+    "subtopic": "После русской приставки на согласную начальная И корня обычно заменяется на Ы.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.checked-root",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-019",
@@ -2068,7 +3031,63 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "БРИТЬ — исключение; в отрицательном наречии определите, падает ли ударение на приставку."
+    "subtopic": "БРИТЬ — исключение; в отрицательном наречии определите, падает ли ударение на приставку.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.alternating-root",
+      "OGE:6.pre-pri",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.pre-pri"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "pre-pri"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   },
   {
     "id": "oge-orfograficheskiy-analiz-020",
@@ -2177,6 +3196,751 @@
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
-    "subtopic": "В слове КОЛЮЩИЙ найдите исходный глагол. Существительное на -ИЕ имеет особое падежное окончание."
+    "subtopic": "В слове КОЛЮЩИЙ найдите исходный глагол. Существительное на -ИЕ имеет особое падежное окончание.",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.n-nn",
+      "OGE:6.alternating-root",
+      "OGE:6.joined-separate-hyphen"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 3,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-orfograficheskiy-analiz-021",
+    "slug": "oge-orfograficheskiy-analiz-021",
+    "revision": 1,
+    "title": "Чередующийся корень и разделительный знак",
+    "prompt": "Орфографический анализ. Укажите варианты ответов, в которых дано верное объяснение написания выделенного слова. Запишите номера этих ответов.",
+    "topicId": "orfograficheskiy-analiz",
+    "topicSlug": "orfograficheskiy-analiz",
+    "topicTitle": "Объяснение орфограмм",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "34"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:orthography.analysis",
+    "misconceptionId": "line-6-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "ЛЕСНОЙ — Безударную Е в корне выбирают по суффиксу -А- после корня.",
+      "НЕ ВЫСОКИЙ, А НИЗКИЙ (дом) — НЕ с прилагательным пишется слитно, так как есть синоним «низкий».",
+      "ПРЕДЛОЖЕНИЕ — В корне -лож- перед Ж пишется О.",
+      "ПЬЕДЕСТАЛ — Внутри слова перед Е пишется разделительный Ь.",
+      "ЦИРК — После Ц в корнях любых слов всегда пишется Ы."
+    ],
+    "optionExplanations": [
+      "1) ЛЕСНОЙ — НЕВЕРНО. Корень лес- имеет проверочную форму «лес»; чередования по суффиксу здесь нет.",
+      "2) НЕ ВЫСОКИЙ, А НИЗКИЙ (дом) — НЕВЕРНО. Противопоставление «не высокий, а низкий» требует раздельного написания.",
+      "3) ПРЕДЛОЖЕНИЕ — ВЕРНО. В корнях -лаг-/-лож- перед Ж пишется О.",
+      "4) ПЬЕДЕСТАЛ — ВЕРНО. Пьедестал — имя существительное; Ь разделительный.",
+      "5) ЦИРК — НЕВЕРНО. Цирк — И после Ц в корне."
+    ],
+    "steps": [
+      "Определите часть речи и морфему.",
+      "Назовите правило для конкретного написания.",
+      "Проверьте все условия в объяснении.",
+      "Отберите полностью верные объяснения."
+    ],
+    "hint": "Оценивайте причину написания, даже если само выделенное слово написано верно.",
+    "explanation": "1) ЛЕСНОЙ — НЕВЕРНО. Корень лес- имеет проверочную форму «лес»; чередования по суффиксу здесь нет.\n\n2) НЕ ВЫСОКИЙ, А НИЗКИЙ (дом) — НЕВЕРНО. Противопоставление «не высокий, а низкий» требует раздельного написания.\n\n3) ПРЕДЛОЖЕНИЕ — ВЕРНО. В корнях -лаг-/-лож- перед Ж пишется О.\n\n4) ПЬЕДЕСТАЛ — ВЕРНО. Пьедестал — имя существительное; Ь разделительный.\n\n5) ЦИРК — НЕВЕРНО. Цирк — И после Ц в корне.",
+    "formatLabel": "ОГЭ · Объяснение орфограмм",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 6,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-d60659e0510f",
+      "filename": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceNumber": 21,
+      "paragraph": 306,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "1 неверен: лесной проверяется лес, а не суффиксом. 2 неверен: прямое противопоставление высокий/низкий требует раздельного НЕ. 3 верен: перед Ж в -лож- О. 4 верен: Ь в пьедестал разделяет перед Е. 5 неверен: цирк содержит И; утверждение о любой Ы ошибочно. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "ЛАГ/ЛОЖ; Разделительный Ь; Проверяемая гласная; НЕ с противопоставлением",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.checked-root",
+      "OGE:6.alternating-root",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.n-nn"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.checked-root",
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "joined-separate-hyphen"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.alternating-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "alternating-root"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-orfograficheskiy-analiz-023",
+    "slug": "oge-orfograficheskiy-analiz-023",
+    "revision": 1,
+    "title": "Словарный корень и повелительная форма",
+    "prompt": "Орфографический анализ. Укажите варианты ответов, в которых дано верное объяснение написания выделенного слова. Запишите номера этих ответов.",
+    "topicId": "orfograficheskiy-analiz",
+    "topicSlug": "orfograficheskiy-analiz",
+    "topicTitle": "Объяснение орфограмм",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "14"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:orthography.analysis",
+    "misconceptionId": "line-6-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "ШОРОХ — В корне слова ШОРОХ пишется О, написание запоминается как словарное.",
+      "ПИШЕТ (письмо) — Е в окончании объясняется тем, что глагол II спряжения.",
+      "НЕ СМОТРЯ (под ноги) — В сочетании НЕ СМОТРЯ (под ноги) НЕ пишется слитно, так как это предлог.",
+      "СПРЯЧЬ (тетрадь) — В повелительном наклонении после Ч пишется Ь.",
+      "КЛЮЧИК — В суффиксе -ИК- пишется И, потому что она исчезает при склонении."
+    ],
+    "optionExplanations": [
+      "1) ШОРОХ — ВЕРНО. Шорох — словарное написание О в корне после шипящей.",
+      "2) ПИШЕТ (письмо) — НЕВЕРНО. Писать — I спряжение.",
+      "3) НЕ СМОТРЯ (под ноги) — НЕВЕРНО. «Не смотря под ноги» — отрицательное деепричастие, раздельно.",
+      "4) СПРЯЧЬ (тетрадь) — ВЕРНО. Спрячь — повелительное наклонение глагола.",
+      "5) КЛЮЧИК — НЕВЕРНО. Ключик — ключика; суффикс -ик- сохраняет И."
+    ],
+    "steps": [
+      "Определите часть речи и морфему.",
+      "Назовите правило для конкретного написания.",
+      "Проверьте все условия в объяснении.",
+      "Отберите полностью верные объяснения."
+    ],
+    "hint": "Для «не смотря» выясните, обозначено ли реальное зрительное действие.",
+    "explanation": "1) ШОРОХ — ВЕРНО. Шорох — словарное написание О в корне после шипящей.\n\n2) ПИШЕТ (письмо) — НЕВЕРНО. Писать — I спряжение.\n\n3) НЕ СМОТРЯ (под ноги) — НЕВЕРНО. «Не смотря под ноги» — отрицательное деепричастие, раздельно.\n\n4) СПРЯЧЬ (тетрадь) — ВЕРНО. Спрячь — повелительное наклонение глагола.\n\n5) КЛЮЧИК — НЕВЕРНО. Ключик — ключика; суффикс -ик- сохраняет И.",
+    "formatLabel": "ОГЭ · Объяснение орфограмм",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 6,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-d60659e0510f",
+      "filename": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceNumber": 23,
+      "paragraph": 322,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "1 верен: шорох — словарное О. 2 неверен: писать I спряжения, не II. 3 неверен: не смотря под ноги сохраняет действие смотреть, это отрицательное деепричастие. 4 верен: спрячь — повелительная форма с Ь после Ч. 5 неверен: ключик/ключика сохраняет И. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "О после шипящей в корне; Ь в повелительном наклонении; НЕ с деепричастием; Суффиксы ИК/ЕК",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.joined-separate-hyphen",
+      "OGE:6.suffix-ek-ik"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.n-nn",
+          "OGE:6.joined-separate-hyphen"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.suffix-ek-ik"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "suffix-ek-ik"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-orfograficheskiy-analiz-024",
+    "slug": "oge-orfograficheskiy-analiz-024",
+    "revision": 1,
+    "title": "Суффикс, окончание и неопределённая форма",
+    "prompt": "Орфографический анализ. Укажите варианты ответов, в которых дано верное объяснение написания выделенного слова. Запишите номера этих ответов.",
+    "topicId": "orfograficheskiy-analiz",
+    "topicSlug": "orfograficheskiy-analiz",
+    "topicTitle": "Объяснение орфограмм",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "123"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:orthography.analysis",
+    "misconceptionId": "line-6-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "БАРАБАНЩИК — После Н в суффиксе существительного пишется -ЩИК-.",
+      "БРЕЕТ (бороду) — В безударном личном окончании глагола I спряжения пишется Е.",
+      "ИСПЕЧЬ — В инфинитиве после Ч пишется Ь.",
+      "КНИЖОНКА — После Ж в суффиксе под ударением пишется Е.",
+      "БЕЗЫМЯННЫЙ — После русской приставки на согласный начальная И корня обязательно сохраняется."
+    ],
+    "optionExplanations": [
+      "1) БАРАБАНЩИК — ВЕРНО. Барабанщик — суффикс -щик- после Н.",
+      "2) БРЕЕТ (бороду) — ВЕРНО. Брить — исключение I спряжения, бреет.",
+      "3) ИСПЕЧЬ — ВЕРНО. Испечь — неопределённая форма глагола.",
+      "4) КНИЖОНКА — НЕВЕРНО. В суффиксе существительного после шипящей под ударением пишется О.",
+      "5) БЕЗЫМЯННЫЙ — НЕВЕРНО. Без- + имя → безымянный: после приставки на согласный И переходит в Ы."
+    ],
+    "steps": [
+      "Определите часть речи и морфему.",
+      "Назовите правило для конкретного написания.",
+      "Проверьте все условия в объяснении.",
+      "Отберите полностью верные объяснения."
+    ],
+    "hint": "Сначала установите морфему и часть речи, затем применяйте правило.",
+    "explanation": "1) БАРАБАНЩИК — ВЕРНО. Барабанщик — суффикс -щик- после Н.\n\n2) БРЕЕТ (бороду) — ВЕРНО. Брить — исключение I спряжения, бреет.\n\n3) ИСПЕЧЬ — ВЕРНО. Испечь — неопределённая форма глагола.\n\n4) КНИЖОНКА — НЕВЕРНО. В суффиксе существительного после шипящей под ударением пишется О.\n\n5) БЕЗЫМЯННЫЙ — НЕВЕРНО. Без- + имя → безымянный: после приставки на согласный И переходит в Ы.",
+    "formatLabel": "ОГЭ · Объяснение орфограмм",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 6,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-d60659e0510f",
+      "filename": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceNumber": 24,
+      "paragraph": 330,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "1 верен: после Н суффикс -щик-. 2 верен: брить относится к I спряжению, бреет с Е. 3 верен: испечь — инфинитив с Ь после Ч. 4 неверен: в ударном суффиксе книжонка О. 5 неверен: без- + имя даёт безымянный с Ы. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "ЧИК/ЩИК; Брить: I спряжение; Ь в инфинитиве; И/Ы после приставки",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.n-nn",
+      "OGE:6.checked-root",
+      "OGE:6.prefix-z-s"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.prefix-z-s",
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions",
+        "errorType": "prefix-z-s"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#prefix-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-orfograficheskiy-analiz-025",
+    "slug": "oge-orfograficheskiy-analiz-025",
+    "revision": 1,
+    "title": "Сохранение И и Ь в наречии",
+    "prompt": "Орфографический анализ. Укажите варианты ответов, в которых дано верное объяснение написания выделенного слова. Запишите номера этих ответов.",
+    "topicId": "orfograficheskiy-analiz",
+    "topicSlug": "orfograficheskiy-analiz",
+    "topicTitle": "Объяснение орфограмм",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "14"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-12",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:orthography.analysis",
+    "misconceptionId": "line-6-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "КЛЮЧИК — В суффиксе -ИК- гласная И сохраняется при склонении: ключика.",
+      "СЕМЬЯ — Разделительный Ь здесь показывает только мягкость М и не выполняет разделительной функции.",
+      "ДЕРЖАЩИЙ (книгу) — А в причастии зависит от формы прошедшего времени глагола.",
+      "НАСТЕЖЬ — На конце наречия после шипящей пишется Ь.",
+      "ДЕВЧОНКА — После Ч в суффиксе существительного под ударением пишется Ё."
+    ],
+    "optionExplanations": [
+      "1) КЛЮЧИК — ВЕРНО. Ключик — ключика; суффикс -ик- сохраняет И.",
+      "2) СЕМЬЯ — НЕВЕРНО. Разделительный Ь отделяет согласный от Я, обозначающей два звука.",
+      "3) ДЕРЖАЩИЙ (книгу) — НЕВЕРНО. Держать — исключение II спряжения, держащий.",
+      "4) НАСТЕЖЬ — ВЕРНО. Настежь — наречие с Ь на конце.",
+      "5) ДЕВЧОНКА — НЕВЕРНО. Девчонка: суффикс -онк- под ударением."
+    ],
+    "steps": [
+      "Определите часть речи и морфему.",
+      "Назовите правило для конкретного написания.",
+      "Проверьте все условия в объяснении.",
+      "Отберите полностью верные объяснения."
+    ],
+    "hint": "Разделительный знак и показатель мягкости имеют разные функции.",
+    "explanation": "1) КЛЮЧИК — ВЕРНО. Ключик — ключика; суффикс -ик- сохраняет И.\n\n2) СЕМЬЯ — НЕВЕРНО. Разделительный Ь отделяет согласный от Я, обозначающей два звука.\n\n3) ДЕРЖАЩИЙ (книгу) — НЕВЕРНО. Держать — исключение II спряжения, держащий.\n\n4) НАСТЕЖЬ — ВЕРНО. Настежь — наречие с Ь на конце.\n\n5) ДЕВЧОНКА — НЕВЕРНО. Девчонка: суффикс -онк- под ударением.",
+    "formatLabel": "ОГЭ · Объяснение орфограмм",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 6,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "local-d60659e0510f",
+      "filename": "ОГЭ русский язык - задание 6 - каталог и 100 вариантов.docx",
+      "sourceNumber": 25,
+      "paragraph": 338,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "1 верен: ключик/ключика сохраняет И. 2 неверен: Ь в семья выполняет разделительную функцию перед Я. 3 неверен: держащий образован от глагола II спряжения держать, А определяется настоящим временем, не прошедшим. 4 верен: настежь — наречие с Ь. 5 неверен: девчонка имеет ударный суффикс с О, не Ё. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-12",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
+      "at": "2026-10-12",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "reviewStages": [
+      {
+        "stage": "extracted",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-12",
+        "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
+      }
+    ],
+    "subtopic": "ИК/ЕК; Наречие после шипящей; Разделительный Ь; Причастие II спряжения",
+    "skillIds": [
+      "OGE:orthography.analysis",
+      "OGE:6.suffix-ek-ik",
+      "OGE:6.n-nn",
+      "OGE:6.checked-root"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:6.suffix-ek-ik"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+        "errorType": "suffix-ek-ik"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:6.n-nn"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+        "errorType": "n-nn"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:6.checked-root"
+        ],
+        "rulePath": "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions",
+        "errorType": "checked-root"
+      }
+    ],
+    "rulePaths": [
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffixes",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#algorithm",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#suffix-conditions",
+      "/theory/orfograficheskiy-analiz/?exam=OGE#root-conditions"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft"
   }
 ]

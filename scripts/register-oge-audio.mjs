@@ -5,6 +5,7 @@ const stories = JSON.parse(
 );
 const file = "apps/showcase/src/oge/materials.json",
   data = JSON.parse(await fs.readFile(file, "utf8"));
+const previousAudio = data.audio;
 data.audio = [];
 for (const story of stories) {
   const path = `/audio/oge-${story.id}.wav`,
@@ -22,11 +23,21 @@ for (const story of stories) {
     offset += 8 + length + (length % 2);
   }
   assert(rate > 0 && size > 0, `${story.id}: пустая аудиозапись`);
+  const compressedPath = path.replace(/\.wav$/u, ".mp3");
+  const useCompressed = await fs
+    .access("apps/showcase/public" + compressedPath)
+    .then(() => true)
+    .catch(() => false);
+  const registeredPath = useCompressed ? compressedPath : path;
+  const previous = previousAudio.find((a) => a.id === `audio-${story.id}`);
   data.audio.push({
     id: `audio-${story.id}`,
-    revision: 1,
+    revision:
+      previous?.path === registeredPath
+        ? previous.revision
+        : (previous?.revision ?? 0) + 1,
     textId: `summary-${story.id}`,
-    path,
+    path: registeredPath,
     durationSeconds: Number((size / rate).toFixed(2)),
     kind: "original-synthesized",
     attribution:
