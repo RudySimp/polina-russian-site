@@ -1,5 +1,6 @@
 import { collections } from "./exercise-loaders";
 import type { Exercise } from "./model";
+// React use() must observe the same rejected promise; retries reset explicitly.
 const cached = new Map<number, Promise<Exercise[]>>();
 const lineCache = new Map<number, Promise<Exercise[]>>();
 let all: Promise<Exercise[]> | undefined;
@@ -11,14 +12,7 @@ const collectionForId = new Map(
   ),
 );
 function loadCollection(index: number) {
-  if (!cached.has(index))
-    cached.set(
-      index,
-      collections[index].load().catch((error) => {
-        cached.delete(index);
-        throw error;
-      }),
-    );
+  if (!cached.has(index)) cached.set(index, collections[index].load());
   return cached.get(index)!;
 }
 export function resetContentLoaders() {
@@ -36,14 +30,9 @@ export function loadLine(line: number): Promise<Exercise[]> {
         collections.flatMap((c, i) =>
           c.lines.includes(line) ? [loadCollection(i)] : [],
         ),
-      )
-        .then((groups) =>
-          groups.flat().filter((e) => e.exam === "OGE" && e.taskLine === line),
-        )
-        .catch((error) => {
-          lineCache.delete(line);
-          throw error;
-        }),
+      ).then((groups) =>
+        groups.flat().filter((e) => e.exam === "OGE" && e.taskLine === line),
+      ),
     );
   return lineCache.get(line)!;
 }
@@ -54,12 +43,9 @@ export function loadExercise(id: string): Promise<Exercise | undefined> {
       id,
       index === undefined
         ? Promise.resolve(undefined)
-        : loadCollection(index)
-            .then((values) => values.find((e) => e.id === id))
-            .catch((error) => {
-              exerciseCache.delete(id);
-              throw error;
-            }),
+        : loadCollection(index).then((values) =>
+            values.find((e) => e.id === id),
+          ),
     );
   }
   return exerciseCache.get(id)!;
@@ -75,21 +61,15 @@ export function loadExercises(ids: string[]): Promise<Exercise[]> {
     );
     batchCache.set(
       key,
-      Promise.all([...indexes].map(loadCollection))
-        .then((groups) => groups.flat().filter((e) => wanted.has(e.id)))
-        .catch((error) => {
-          batchCache.delete(key);
-          throw error;
-        }),
+      Promise.all([...indexes].map(loadCollection)).then((groups) =>
+        groups.flat().filter((e) => wanted.has(e.id)),
+      ),
     );
   }
   return batchCache.get(key)!;
 }
 export function loadAllExercises(): Promise<Exercise[]> {
-  return (all ??= Promise.all(collections.map((_, i) => loadCollection(i)))
-    .then((groups) => groups.flat())
-    .catch((error) => {
-      all = undefined;
-      throw error;
-    }));
+  return (all ??= Promise.all(
+    collections.map((_, i) => loadCollection(i)),
+  ).then((groups) => groups.flat()));
 }

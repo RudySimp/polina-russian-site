@@ -1,3 +1,4 @@
+import { LoadRecovery } from "../components/LoadRecovery";
 import searchIndex from "../content/exercise-search.json";
 import { use, useMemo, useState, useEffect } from "react";
 import { loadExercise, loadExercises } from "../content/load";
@@ -286,7 +287,7 @@ export function TrainingLaunch({
           </button>
         </div>
       </details>
-      {error && <p role="alert">{error}</p>}
+      {error && <LoadRecovery message={error} />}
     </section>
   );
 }

@@ -109,11 +109,20 @@ test("после сбоя загрузки урока повторная заг�
   const failed = (url: URL) =>
     url.pathname.includes("analiz-teksta") &&
     (url.pathname.endsWith(".json") || url.pathname.endsWith(".js"));
-  await page.route(failed, (route) => route.abort());
+  let failedRequests = 0;
+  await page.route(failed, (route) => {
+    failedRequests += 1;
+    return route.abort();
+  });
   await page.goto("theory/analiz-teksta/?exam=OGE");
   await expect(page.getByRole("alert")).toContainText(
     "Материалы не загрузились",
   );
+  expect(failedRequests).toBeGreaterThan(0);
+  expect(failedRequests).toBeLessThanOrEqual(3);
+  const settledRequests = failedRequests;
+  await page.waitForTimeout(300);
+  expect(failedRequests).toBe(settledRequests);
   await page.unroute(failed);
   await page
     .getByRole("button", { name: "Повторить загрузку", exact: true })
@@ -255,4 +264,44 @@ test("скачанный код восстанавливает те же усл�
   });
   expect(transferred.items).toEqual(original.items);
   await context.close();
+});
+
+test("сбой быстрой подборки показывает ошибку и допускает повторный запуск после перезагрузки", async ({
+  page,
+}) => {
+  await page.goto("oge/");
+  const failed = (url: URL) => /osnova-\d+(?:-|\.json)/.test(url.pathname);
+  let failedRequests = 0;
+  await page.route(failed, (route) => {
+    failedRequests += 1;
+    return route.abort();
+  });
+  await page
+    .getByRole("button", { name: "Решать задание № 2", exact: true })
+    .click();
+  await expect(page.getByRole("alert")).toContainText("перезагрузите страницу");
+  expect(failedRequests).toBeGreaterThan(0);
+  expect(failedRequests).toBeLessThanOrEqual(4);
+  expect(
+    await page.evaluate(
+      () =>
+        Object.keys(localStorage).filter((key) =>
+          key.startsWith("polina-oge-work-v1:"),
+        ).length,
+    ),
+  ).toBe(0);
+  await page.unroute(failed);
+  await page
+    .getByRole("button", { name: "Перезагрузить страницу", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Решать задание № 2", exact: true })
+    .click();
+  await expect(page.locator("#work-question")).toBeVisible();
+  const count = await page.evaluate(() => {
+    const id = new URLSearchParams(location.search).get("id");
+    return JSON.parse(localStorage.getItem("polina-oge-work-v1:" + id)!).items
+      .length;
+  });
+  expect(count).toBe(5);
 });

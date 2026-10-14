@@ -7,11 +7,10 @@ export function lessonFor(topicId: string): Promise<Lesson> {
   const existing = loaded.get(topicId);
   if (existing) return existing;
   const loader = lessonLoaders[topicId];
-  if (!loader) return Promise.reject(new Error("Учебный раздел не найден."));
-  const pending = loader().catch((error: unknown) => {
-    loaded.delete(topicId);
-    throw error;
-  });
+  // Retain rejected thenables until an explicit reset or a full-page reload.
+  const pending = loader
+    ? loader()
+    : Promise.reject(new Error("Учебный раздел не найден."));
   loaded.set(topicId, pending);
   return pending;
 }

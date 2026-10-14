@@ -1,3 +1,4 @@
+import { LoadRecovery } from "../components/LoadRecovery";
 import { use, useState } from "react";
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
 import { loadOriginals, loadFixedVariant } from "./materials";
@@ -313,7 +314,7 @@ export function Generator({
         ОГЭ-2027 · проект модели. Общие тексты для № 2–3 и № 10–13 подбираются
         совместно. После сохранения состав этой работы не меняется.
       </p>
-      {error && <p role="alert">{error}</p>}
+      {error && <LoadRecovery message={error} />}
     </section>
   );
 }
@@ -378,7 +379,7 @@ function RestoreGenerationCode() {
         />
       </label>
       {busy && <p role="status">Восстанавливаем состав…</p>}
-      {error && <p role="alert">{error}</p>}
+      {error && <LoadRecovery message={error} />}
     </details>
   );
 }

@@ -1,3 +1,4 @@
+import { LoadRecovery } from "./LoadRecovery";
 import { useState } from "react";
 export function QuickPracticeButton({
   label = "5 заданий ОГЭ",
@@ -29,7 +30,7 @@ export function QuickPracticeButton({
       >
         {busy ? "Готовим задания…" : label}
       </button>
-      {error && <p role="alert">{error}</p>}
+      {error && <LoadRecovery message={error} />}
     </>
   );
 }

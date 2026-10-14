@@ -1,3 +1,4 @@
+import { LoadRecovery } from "../components/LoadRecovery";
 import { ExerciseFeedback } from "../oge/ExercisePanel";
 import { use, useState } from "react";
 import { normalize, type Grade } from "../../../../src/lib/grading";
@@ -98,7 +99,7 @@ function Question({
       if (!loaded) throw new Error("Задание не найдено.");
     } catch {
       setLoadError(
-        "Следующее задание не загрузилось. Сохранённый ответ доступен; попробуйте ещё раз.",
+        "Следующее задание не загрузилось. Сохранённый ответ доступен; перезагрузите страницу для повторной загрузки.",
       );
       setLoadingNext(false);
       return;
@@ -366,7 +367,7 @@ function Question({
                   Начать это задание заново
                 </button>
               </div>
-              {loadError && <p role="alert">{loadError}</p>}
+              {loadError && <LoadRecovery message={loadError} />}
             </>
           )}
         </section>
