@@ -17,6 +17,28 @@ export type LocalAttempt = {
   results: Result[];
 };
 export const storageKey = "polina-showcase-attempts-v1";
+export async function readAttemptsAddressed(
+  storage: Pick<Storage, "getItem">,
+  load: (ids: string[]) => Promise<Exercise[]>,
+): Promise<LocalAttempt[]> {
+  let value: unknown;
+  try {
+    value = JSON.parse(storage.getItem(storageKey) ?? "[]");
+  } catch {
+    return [];
+  }
+  if (!Array.isArray(value)) return [];
+  const ids = [
+    ...new Set(
+      value
+        .slice(-1000)
+        .flatMap((a) =>
+          a && typeof a.exerciseId === "string" ? [a.exerciseId] : [],
+        ),
+    ),
+  ];
+  return readAttempts(storage, await load(ids));
+}
 export function readAttempts(
   storage: Pick<Storage, "getItem">,
   exercises: Exercise[],

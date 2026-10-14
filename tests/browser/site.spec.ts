@@ -50,7 +50,10 @@ test("Главная, прямые маршруты, поиск и возвра�
   ).toBeVisible();
   await page.goto("practice/?exam=OGE&topic=formy-slov");
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 20",
+    "Найдено заданий: " +
+      exercises.filter(
+        (item) => item.exam === "OGE" && item.topicId === "formy-slov",
+      ).length,
   );
   await page.locator(".exercise-card").first().click();
   await page.reload();
@@ -87,7 +90,8 @@ test("Фильтры банка, страницы и возврат из зад�
     .getByRole("combobox", { name: "Экзамен", exact: true })
     .selectOption("OGE");
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 222",
+    "Найдено заданий: " +
+      exercises.filter((item) => item.exam === "OGE").length,
   );
   await expect(
     page.getByRole("combobox", { name: "Тема", exact: true }),
@@ -110,6 +114,9 @@ test("Шесть учебных механик: неверный ответ, о�
           exact: true,
         }),
       });
+      await lab
+        .getByRole("button", { name: "Начать заново", exact: true })
+        .click();
       await lab.getByRole("button", { name: "Проверить", exact: true }).click();
       await expect(
         lab.getByRole("heading", { name: "Посмотрим на правило ещё раз" }),
@@ -117,6 +124,9 @@ test("Шесть учебных механик: неверный ответ, о�
       for (const example of block.data.examples) {
         await lab
           .getByRole("button", { name: example.label, exact: true })
+          .click();
+        await lab
+          .getByRole("button", { name: "Начать заново", exact: true })
           .click();
         for (const n of example.expected) {
           if (block.data.kind === "punctuation")
@@ -156,12 +166,35 @@ test("Шесть учебных механик: неверный ответ, о�
     await expect(
       page.getByRole("navigation", { name: "Содержание урока" }),
     ).toBeVisible();
-    const checkpoint = page.locator(".checkpoint");
-    if (await checkpoint.count()) {
-      await checkpoint.getByRole("button", { name: "Проверить себя" }).click();
+    const checkpoints = lesson.sections
+      .flatMap((section) => section.blocks)
+      .filter((block) => block.type === "checkpoint");
+    await expect(page.locator(".checkpoint")).toHaveCount(checkpoints.length);
+    for (const [index, block] of checkpoints.entries()) {
+      const checkpoint = page.locator(".checkpoint").nth(index);
+      const button = checkpoint.getByRole("button", {
+        name: "Проверить себя",
+        exact: true,
+      });
+      await expect(button).toBeDisabled();
+      const wrong = block.options.findIndex(
+        (_, index) => index + 1 !== block.answer,
+      );
+      expect(wrong).toBeGreaterThanOrEqual(0);
+      await checkpoint.getByRole("radio").nth(wrong).check();
+      await button.click();
       await expect(checkpoint.getByRole("status")).toContainText(
         "Посмотрите на объяснение",
       );
+      await expect(checkpoint.getByRole("status")).toContainText(
+        block.explanation,
+      );
+      await checkpoint
+        .getByRole("radio")
+        .nth(block.answer - 1)
+        .check();
+      await button.click();
+      await expect(checkpoint.getByRole("status")).toContainText("Верно.");
     }
   }
 });
@@ -199,8 +232,16 @@ test("Практика: формат, лишний вариант, повтор�
   await expect(
     page.getByRole("button", { name: "Проверить ответ" }),
   ).toBeDisabled();
+  const previous = page.url();
   await page.getByRole("button", { name: "Похожее задание" }).click();
-  await page.getByLabel("Ваш ответ", { exact: true }).fill("31");
+  await expect(page).not.toHaveURL(previous);
+  const nextSlug = new URL(page.url()).pathname
+    .split("/")
+    .filter(Boolean)
+    .at(-1);
+  const next = exercises.find((exercise) => exercise.slug === nextSlug)!;
+  expect(next.skillId).toBe("EGE:punctuation.homogeneous");
+  await page.getByLabel("Ваш ответ", { exact: true }).fill(next.answers[0]);
   await page.getByRole("button", { name: "Проверить ответ" }).click();
   await expect(
     page.getByRole("heading", { name: "Повторение получилось!" }),
@@ -256,8 +297,11 @@ test("Полная подборка из десяти задач заверша�
       .getByLabel("Ваш ответ", { exact: true })
       .fill(exercise.answers[0]);
     await page.getByRole("button", { name: "Проверить ответ" }).click();
-    if (index < 9)
+    if (index < 9) {
+      const previous = page.url();
       await page.getByRole("button", { name: "Следующее упражнение" }).click();
+      await expect(page).not.toHaveURL(previous);
+    }
   }
   await expect(
     page.getByRole("heading", { name: "Подборка завершена" }),
@@ -298,9 +342,17 @@ test("Все модули: импортированные ответы, слов
     await expect(
       page.getByRole("heading", { name: "Верно! Правило работает." }),
     ).toBeVisible();
-    await expect(page.locator(".answer-feedback")).toContainText(
-      exercise.explanation.split("\n\n")[0],
-    );
+    if (exercise.exam === "OGE")
+      await page
+        .locator(".answer-feedback summary")
+        .filter({ hasText: "Полный разбор задания" })
+        .click();
+    const explanation = (
+      exercise.exam === "OGE" && exercise.optionExplanations.length
+        ? exercise.optionExplanations[0]
+        : exercise.explanation.split("\n\n")[0]
+    ).replace(/^\d+\)\s*/u, "");
+    await expect(page.locator(".answer-feedback")).toContainText(explanation);
     await expect(
       page.getByRole("link", { name: "Разобрать правило" }),
     ).toHaveAttribute(
@@ -314,15 +366,13 @@ test("ОГЭ и ЕГЭ: отдельные направления и честн�
   for (const exam of ["ОГЭ", "ЕГЭ"]) {
     await page.goto(exam === "ОГЭ" ? "oge/" : "ege/");
     await expect(page.locator("h1")).toHaveText(
-      exam === "ОГЭ"
-        ? "Учиться, решать, проверять"
-        : `Готовимся к ${exam} осознанно`,
+      exam === "ОГЭ" ? "Подготовка к ОГЭ" : `Готовимся к ${exam} осознанно`,
     );
   }
   await page.goto("theory/ne-prilagatelnye/?exam=OGE");
   await expect(
     page.getByRole("link", { name: "Другие задания ОГЭ" }),
-  ).toHaveAttribute("href", /exam=OGE/);
+  ).toHaveAttribute("href", /\/oge\/bank\//);
   await page.goto("sources/");
   await expect(
     page.getByText("2027: предварительная модель", { exact: true }),

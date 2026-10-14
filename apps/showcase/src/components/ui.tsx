@@ -5,7 +5,7 @@ import {
   exerciseSummariesFor as exercisesFor,
   sectionTitle,
   type Topic,
-  type Exercise,
+  type ExerciseSummary,
 } from "../content/catalog";
 import { examName, levelName } from "../lib/search";
 import { taskLines } from "../oge/specification";
@@ -129,7 +129,7 @@ export function ExerciseCard({
   exercise,
   returnTo,
 }: {
-  exercise: Exercise;
+  exercise: ExerciseSummary;
   returnTo?: string;
 }) {
   return (

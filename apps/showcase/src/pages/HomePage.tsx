@@ -1,16 +1,16 @@
+import { QuickPracticeButton } from "../components/QuickPracticeButton";
 import { ArrowRight, BookOpen, Check, Leaf, PencilLine } from "lucide-react";
-import { publishedTopics, exerciseIndex as exercises } from "../content/catalog";
+import {
+  publishedTopics,
+  exerciseIndex as exercises,
+} from "../content/catalog";
 import { href } from "../routes";
-import type { LocalAttempt } from "../progress";
 import { Badge, LinkButton, TopicCard } from "../components/ui";
 
-export function HomePage({ attempts }: { attempts: LocalAttempt[] }) {
-  const correct = attempts.filter(
-    (attempt) => attempt.results[0].status === "correct",
-  ).length;
+export function HomePage() {
   return (
     <>
-      <section className="hero">
+      <section className="hero home-entry">
         <div className="hero-copy">
           <p className="eyebrow">
             <Leaf size={17} aria-hidden="true" /> РУССКИЙ ЯЗЫК В СВОЁМ ТЕМПЕ
@@ -21,19 +21,22 @@ export function HomePage({ attempts }: { attempts: LocalAttempt[] }) {
             становится <em>понятнее.</em>
           </h1>
           <p className="lede">
-            Изучайте правила, разбирайте примеры и тренируйтесь в заданиях ОГЭ и
-            ЕГЭ. Последовательно, без спешки и с объяснением ошибок.
+            Выберите экзамен, повторяйте правила и решайте задания с разбором
+            ошибок. Начать можно без регистрации.
           </p>
-          <div className="hero-actions">
-            <a className="button" href="#exams">
-              Выбрать экзамен <ArrowRight size={18} />
-            </a>
-            <LinkButton to="/theory/" secondary>
-              Открыть учебник
+          <div className="hero-actions" id="exams">
+            <QuickPracticeButton label="Начать: 5 заданий ОГЭ" />
+            <LinkButton to="/oge/">ОГЭ · 9 класс</LinkButton>
+            <LinkButton to="/ege/" secondary>
+              ЕГЭ · 10–11 класс
             </LinkButton>
           </div>
+          <a href={href("/theory/")} className="text-link home-textbook-link">
+            Открыть учебник <ArrowRight size={18} aria-hidden="true" />
+          </a>
           <p className="hero-footnote">
-            <Check size={17} /> Правило → пример → практика → разбор
+            <Check size={17} aria-hidden="true" /> Правило → пример → практика →
+            разбор
           </p>
         </div>
         <div className="hero-art">
@@ -62,37 +65,6 @@ export function HomePage({ attempts }: { attempts: LocalAttempt[] }) {
           <div className="paper-label">
             <PencilLine size={17} /> Понимание начинается с примера
           </div>
-        </div>
-      </section>
-      <section id="exams" className="home-section">
-        <div className="section-heading">
-          <h2>К какому экзамену готовимся?</h2>
-          <span className="muted">Выберите направление</span>
-        </div>
-        <div className="exam-grid">
-          <a className="exam-card oge" href={href("/oge/")}>
-            <span className="exam-kicker">ОГЭ · 9 класс</span>
-            <h3>
-              От основ
-              <br />к уверенному решению
-            </h3>
-            <p>Грамматическая основа, синтаксис, пунктуация и формы слов.</p>
-            <span className="text-link">
-              Открыть подготовку <ArrowRight size={19} />
-            </span>
-          </a>
-          <a className="exam-card ege" href={href("/ege/")}>
-            <span className="exam-kicker">ЕГЭ · 10–11 класс</span>
-            <h3>
-              Точность в каждом
-              <br />
-              слове и знаке
-            </h3>
-            <p>Орфоэпические нормы, НЕ с прилагательными и однородные члены.</p>
-            <span className="text-link">
-              Открыть подготовку <ArrowRight size={19} />
-            </span>
-          </a>
         </div>
       </section>
       <section className="home-section">
@@ -161,15 +133,10 @@ export function HomePage({ attempts }: { attempts: LocalAttempt[] }) {
       </section>
       <section className="progress-strip">
         <div>
-          <h2>
-            {attempts.length
-              ? "Продолжим с того места, где остановились"
-              : "Ваш прогресс начинается с первого ответа"}
-          </h2>
+          <h2>Ваши сохранённые работы и результаты</h2>
           <p>
-            {attempts.length
-              ? `${correct} верных из ${attempts.length} попыток. История сохранена в этом браузере.`
-              : "История тренировок хранится только в этом браузере и помогает выбирать повторение."}
+            Продолжайте черновики и повторяйте задания по истории этого
+            браузера.
           </p>
         </div>
         <LinkButton to="/progress/" secondary>

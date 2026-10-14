@@ -1,34 +1,27 @@
-import { useState } from "react";
+import { useCatalogQuery } from "../lib/catalog-query";
+import paragraphs from "../content/lesson-search.json";
 import { publishedTopics, sections, sectionTitle } from "../content/catalog";
 import { Breadcrumbs, PageHeading, TopicCard } from "../components/ui";
 import { taskLines } from "./specification";
 import { matchesSearch } from "../lib/search";
 import { href } from "../routes";
 export function OgeTheoryPage() {
-  const [params, setParams] = useState(
-    () => new URLSearchParams(window.location.search),
-  );
+  const { params, change, reset, rememberScroll, endSearch } =
+    useCatalogQuery("/oge/theory/");
   const line = Number(params.get("line")) || 0,
     section = params.get("section") ?? "",
     q = params.get("q") ?? "";
-  function change(key: string, value: string) {
-    const next = new URLSearchParams(params);
-    if (value) next.set(key, value);
-    else next.delete(key);
-    window.history.replaceState(
-      null,
-      "",
-      href("/oge/theory/" + (next.size ? `?${next}` : "")),
-    );
-    setParams(next);
-  }
   const filtered = publishedTopics.filter(
     (t) =>
       t.examTags.includes("OGE") &&
       (!line ||
         taskLines.find((l) => l.number === line)?.topicIds.includes(t.id)) &&
       (!section || t.sectionId === section) &&
-      matchesSearch(q, [t.title, t.description, ...t.keywords]),
+      (!q ||
+        paragraphs.some(
+          (p) => p.topicId === t.id && matchesSearch(q, [p.title, p.text]),
+        ) ||
+        matchesSearch(q, [t.title, t.description, ...t.keywords])),
   );
   return (
     <>
@@ -78,12 +71,64 @@ export function OgeTheoryPage() {
             value={q}
             placeholder="Сказуемое, корень, сравнение…"
             onChange={(e) => change("q", e.target.value)}
+            onBlur={endSearch}
           />
         </label>
       </div>
+      <button className="button secondary" onClick={reset}>
+        Сбросить фильтры
+      </button>
       <p role="status" className="results-count">
         Доступно уроков: {filtered.length}
       </p>
+      {q && (
+        <section className="home-section">
+          <h2>Найденные параграфы</h2>
+          {paragraphs
+            .filter(
+              (p) =>
+                filtered.some((t) => t.id === p.topicId) &&
+                matchesSearch(q, [p.title, p.text]),
+            )
+            .slice(0, 40)
+            .map((p) => {
+              const topic = filtered.find((t) => t.id === p.topicId)!;
+              const text = p.text;
+              const first = q.trim().split(/\s+/u)[0].toLocaleLowerCase("ru");
+              const start = Math.max(
+                0,
+                text.toLocaleLowerCase("ru").indexOf(first) - 60,
+              );
+              return (
+                <article
+                  className="question-card"
+                  key={p.topicId + ":" + p.sectionId}
+                >
+                  <h3>
+                    <a
+                      onClick={rememberScroll}
+                      href={href(
+                        "/theory/" +
+                          topic.slug +
+                          "/?exam=OGE&from=" +
+                          encodeURIComponent("/oge/theory/?" + params) +
+                          "#" +
+                          p.sectionId,
+                      )}
+                    >
+                      {p.title}
+                    </a>
+                  </h3>
+                  <p className="muted">{topic.title}</p>
+                  <p>
+                    {start ? "…" : ""}
+                    {text.slice(start, start + 240)}…
+                  </p>
+                </article>
+              );
+            })}
+        </section>
+      )}
       {sections
         .filter((s) => filtered.some((t) => t.sectionId === s.id))
         .map((s) => (

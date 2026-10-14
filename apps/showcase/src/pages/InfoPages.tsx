@@ -1,7 +1,7 @@
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
-import { publishedTopics, exercises } from "../content/registry";
+import { publishedTopics, exerciseIndex as exercises } from "../content/catalog";
 const importedCount = exercises.filter(
-  (e) => e.provenance.method === "local-original-import",
+  (e) => e.provenanceMethod === "local-original-import",
 ).length;
 
 export function SourcesPage() {

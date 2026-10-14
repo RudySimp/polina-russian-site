@@ -1,19 +1,25 @@
-import { use, useEffect, useState } from "react";
+import { use, useState } from "react";
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
-import { loadMaterials } from "./materials";
-import { generateVariant, sessionFromVariant } from "./engine";
-import { listSessions, saveSession } from "./storage";
+import { loadOriginals, loadFixedVariant } from "./materials";
+import { generateVariantMetadata, sessionFromVariant } from "./engine";
+import { listSessionSummaries } from "./storage";
+import { saveSessionDurably, listSessionSummariesDurably } from "./repository";
 import { href } from "../routes";
 import { historyIds, TrainingLaunch } from "./BankPage";
 import type { LocalAttempt } from "../progress";
-import { topics } from "../content/catalog";
+import { loadExercises } from "../content/load";
+import { exerciseIndex, topics } from "../content/catalog";
 import { ogeCatalog } from "./catalog";
+import {
+  restoreGenerationCode,
+  generationCodeMaxBytes,
+} from "./generation-code";
 
 export function VariantCatalog() {
   const data = ogeCatalog;
-  let sessions: ReturnType<typeof listSessions> = [];
+  let sessions: ReturnType<typeof listSessionSummaries> = [];
   try {
-    sessions = listSessions(window.localStorage);
+    sessions = listSessionSummaries(window.localStorage);
   } catch {}
   return (
     <>
@@ -57,7 +63,7 @@ export function VariantCatalog() {
   );
 }
 export function FixedVariantPage({ number }: { number: number }) {
-  const data = use(loadMaterials()),
+  const data = use(loadFixedVariant(number)),
     variant = data.variants.find((v) => v.number === number);
   const [mode, setMode] = useState<"learn" | "control">("control"),
     [error, setError] = useState("");
@@ -68,9 +74,9 @@ export function FixedVariantPage({ number }: { number: number }) {
         <a href={href("/oge/variants/")}>Каталог вариантов</a>
       </p>
     );
-  let drafts: ReturnType<typeof listSessions> = [];
+  let drafts: ReturnType<typeof listSessionSummaries> = [];
   try {
-    drafts = listSessions(window.localStorage).filter(
+    drafts = listSessionSummaries(window.localStorage).filter(
       (s) => s.originVariantId === variant.id && !s.completedAt,
     );
   } catch {}
@@ -101,10 +107,10 @@ export function FixedVariantPage({ number }: { number: number }) {
         </label>
         <button
           className="button"
-          onClick={() => {
+          onClick={async () => {
             try {
               const session = sessionFromVariant(variant, data, mode);
-              saveSession(window.localStorage, session);
+              await saveSessionDurably(session);
               window.location.assign(
                 href(`/oge/practice/session/?id=${session.id}`),
               );
@@ -176,15 +182,7 @@ export function Generator({
     [only, setOnly] = useState(""),
     [topic, setTopic] = useState(""),
     [busy, setBusy] = useState(false),
-    [error, setError] = useState(""),
-    [thematic, setThematic] =
-      useState<Awaited<ReturnType<typeof loadMaterials>>>();
-  useEffect(() => {
-    if (kind === "thematic")
-      loadMaterials()
-        .then(setThematic)
-        .catch(() => setError("Не удалось загрузить банк. Обновите страницу."));
-  }, [kind]);
+    [error, setError] = useState("");
   return (
     <section className="oge-launch">
       <h2>{compact ? "Генератор" : "Сформировать свою работу"}</h2>
@@ -196,8 +194,6 @@ export function Generator({
             onChange={(e) => {
               setKind(e.target.value);
               setError("");
-              if (e.target.value === "thematic")
-                loadMaterials().then(setThematic);
             }}
           >
             <option value="full">Полный учебный вариант</option>
@@ -232,21 +228,35 @@ export function Generator({
                 setBusy(true);
                 setError("");
                 try {
-                  const data = await loadMaterials(),
-                    history = historyIds(attempts),
+                  const originals = await loadOriginals(),
+                    history = historyIds(
+                      attempts,
+                      await listSessionSummariesDurably(),
+                    ),
                     seed = crypto.randomUUID();
-                  const variant = generateVariant(
-                    data,
+                  const variant = generateVariantMetadata(
+                    { ...originals, exercises: exerciseIndex },
                     kind as "full" | "test",
                     seed,
                     {
                       only: only as "new" | "errors",
                       seenIds: history.seen,
                       errorIds: history.errors,
+                      seenWritingIds: history.seenWritingIds,
+                      seenTextIds: history.seenTextIds,
+                      seenAudioIds: history.seenAudioIds,
                     },
                   );
-                  const session = sessionFromVariant(variant, data, mode, true);
-                  saveSession(window.localStorage, session);
+                  const conditions = await loadExercises(
+                    variant.assignments.map((ref) => ref.id),
+                  );
+                  const session = sessionFromVariant(
+                    variant,
+                    { ...originals, exercises: conditions },
+                    mode,
+                    true,
+                  );
+                  await saveSessionDurably(session);
                   window.location.assign(
                     href(`/oge/practice/session/?id=${session.id}`),
                   );
@@ -285,22 +295,20 @@ export function Generator({
           </label>
         )}
       </div>
-      {kind === "thematic" &&
-        (thematic ? (
-          <TrainingLaunch
-            bank={thematic.exercises.filter(
-              (e) => e.exam === "OGE" && (!topic || e.topicId === topic),
-            )}
-            attempts={attempts}
-            title={
-              topic
-                ? `Тренировка: ${topics.find((t) => t.id === topic)?.title}`
-                : "Смешанная тренировка ОГЭ"
-            }
-          />
-        ) : (
-          <p role="status">Загружаем банк для тематической подборки…</p>
-        ))}
+      {kind === "thematic" && (
+        <TrainingLaunch
+          bank={exerciseIndex.filter(
+            (e) =>
+              e.exam === "OGE" && e.taskLine && (!topic || e.topicId === topic),
+          )}
+          attempts={attempts}
+          title={
+            topic
+              ? "Тренировка: " + topics.find((t) => t.id === topic)?.title
+              : "Смешанная тренировка ОГЭ"
+          }
+        />
+      )}
       <p>
         ОГЭ-2027 · проект модели. Общие тексты для № 2–3 и № 10–13 подбираются
         совместно. После сохранения состав этой работы не меняется.
@@ -321,6 +329,56 @@ export function GeneratorPage({ attempts }: { attempts: LocalAttempt[] }) {
         text="Создайте полный учебный вариант, тестовую часть или подборку навыков. Сохранённую работу можно открыть в локальных результатах."
       />
       <Generator attempts={attempts} />
+      <RestoreGenerationCode />
     </>
+  );
+}
+
+function RestoreGenerationCode() {
+  const [busy, setBusy] = useState(false),
+    [error, setError] = useState("");
+  return (
+    <details className="oge-launch">
+      <summary>Восстановить состав по коду</summary>
+      <p>
+        Загрузите код состава, скачанный из результатов работы. Будет создана
+        новая попытка с теми же условиями. Для старой редакции нужен сохранённый
+        снимок в этом браузере; на другом устройстве используйте полную
+        резервную копию.
+      </p>
+      <label>
+        Файл кода состава
+        <input
+          type="file"
+          accept="application/json,.json"
+          disabled={busy}
+          onChange={async (event) => {
+            const file = event.target.files?.[0];
+            event.target.value = "";
+            if (!file) return;
+            setBusy(true);
+            setError("");
+            try {
+              if (file.size > generationCodeMaxBytes)
+                throw Error("Код состава слишком большой: максимум 1 МБ.");
+              const session = await restoreGenerationCode(await file.text());
+              await saveSessionDurably(session);
+              window.location.assign(
+                href("/oge/practice/session/?id=" + session.id),
+              );
+            } catch (reason) {
+              setError(
+                reason instanceof Error
+                  ? reason.message
+                  : "Не удалось восстановить состав работы.",
+              );
+              setBusy(false);
+            }
+          }}
+        />
+      </label>
+      {busy && <p role="status">Восстанавливаем состав…</p>}
+      {error && <p role="alert">{error}</p>}
+    </details>
   );
 }

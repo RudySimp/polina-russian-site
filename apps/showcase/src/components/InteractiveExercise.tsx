@@ -1,11 +1,63 @@
-import { useState } from "react";
+import { useLessonState } from "../lib/lesson-state";
 import type { Interactive } from "../content/registry";
 import { Badge } from "./ui";
 
-export function InteractiveExercise({ data }: { data: Interactive }) {
-  const [index, setIndex] = useState(0);
-  const [selected, setSelected] = useState<number[]>([]);
-  const [checked, setChecked] = useState(false);
+type CaseState = { selected: number[]; checked: boolean; checks: number };
+type InteractiveState = { index: number; cases: Record<string, CaseState> };
+export function InteractiveExercise({
+  data,
+  scope = data.title,
+}: {
+  data: Interactive;
+  scope?: string;
+}) {
+  const [state, updateState, saveError] = useLessonState<InteractiveState>(
+    scope,
+    { index: 0, cases: {} },
+    (v): v is InteractiveState => {
+      if (!v || typeof v !== "object") return false;
+      const value = v as InteractiveState;
+      return (
+        Number.isInteger(value.index) &&
+        value.index >= 0 &&
+        value.index < data.examples.length &&
+        !!value.cases &&
+        typeof value.cases === "object" &&
+        Object.values(value.cases).every(
+          (c) =>
+            Array.isArray(c.selected) &&
+            c.selected.every((n) => Number.isInteger(n) && n > 0 && n <= 100) &&
+            typeof c.checked === "boolean" &&
+            Number.isInteger(c.checks) &&
+            c.checks >= 0,
+        )
+      );
+    },
+  );
+  const index = state.index,
+    current = state.cases[index] ?? { selected: [], checked: false, checks: 0 },
+    selected = current.selected,
+    checked = current.checked;
+  const setSelected = (selected: number[]) =>
+    updateState({
+      ...state,
+      cases: {
+        ...state.cases,
+        [index]: { ...current, selected, checked: false },
+      },
+    });
+  const setChecked = (checked: boolean) =>
+    updateState({
+      ...state,
+      cases: {
+        ...state.cases,
+        [index]: {
+          ...current,
+          checked,
+          checks: current.checks + (checked ? 1 : 0),
+        },
+      },
+    });
   const example = data.examples[index];
   const correct =
     selected.length === example.expected.length &&
@@ -18,11 +70,15 @@ export function InteractiveExercise({ data }: { data: Interactive }) {
           ? selected.filter((item) => item !== position)
           : [...selected, position],
     );
-    setChecked(false);
   }
   function reset() {
-    setSelected([]);
-    setChecked(false);
+    updateState({
+      ...state,
+      cases: {
+        ...state.cases,
+        [index]: { selected: [], checked: false, checks: current.checks },
+      },
+    });
   }
   return (
     <div className="interactive-card">
@@ -31,6 +87,12 @@ export function InteractiveExercise({ data }: { data: Interactive }) {
         <Badge>Учебный интерактив</Badge>
       </div>
       <p>{data.instruction}</p>
+      {saveError && (
+        <p role="status">
+          Не удалось сохранить учебное действие. Оно доступно до закрытия
+          страницы.
+        </p>
+      )}
       <div className="segmented" role="group" aria-label="Примеры">
         {data.examples.map((item, n) => (
           <button
@@ -38,8 +100,7 @@ export function InteractiveExercise({ data }: { data: Interactive }) {
             className={index === n ? "selected" : ""}
             aria-pressed={index === n}
             onClick={() => {
-              setIndex(n);
-              reset();
+              updateState({ ...state, index: n });
             }}
           >
             {item.label}
@@ -139,6 +200,11 @@ export function InteractiveExercise({ data }: { data: Interactive }) {
               ? "Верно — разберём почему"
               : "Посмотрим на правило ещё раз"}
           </h4>
+          <p>
+            {current.checks === 1
+              ? "Первая самостоятельная проверка."
+              : "Проверка после предыдущего разбора."}
+          </p>
           <p>{example.explanation}</p>
           {example.subject && (
             <p>

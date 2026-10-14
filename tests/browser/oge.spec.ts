@@ -6,13 +6,20 @@ import type {
   InteractiveActivity,
 } from "../../apps/showcase/src/oge/model";
 async function currentWork(page: Page): Promise<PracticeSession> {
-  return page.evaluate(() =>
-    JSON.parse(
-      localStorage.getItem(
-        "polina-oge-work-v1:" + new URLSearchParams(location.search).get("id"),
-      )!,
-    ),
-  );
+  // The immutable assignment and debounced mutable draft are persisted separately.
+  await expect(
+    page.getByRole("status").filter({ hasText: "Черновик сохранён" }),
+  ).toBeVisible();
+  return page.evaluate(() => {
+    const id = new URLSearchParams(location.search).get("id");
+    const snapshot = JSON.parse(
+      localStorage.getItem("polina-oge-work-v1:" + id)!,
+    );
+    const state = JSON.parse(
+      localStorage.getItem("polina-oge-state-v2:" + id) ?? "null",
+    );
+    return { ...snapshot, ...(state?.state ?? {}) };
+  });
 }
 async function finish(page: Page) {
   await page
@@ -46,12 +53,12 @@ test("ОГЭ: пять направлений, теория по линии и �
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("oge/");
-  await expect(page.locator("h1")).toHaveText("Учиться, решать, проверять");
+  await expect(page.locator("h1")).toHaveText("Подготовка к ОГЭ");
   await expect(page.locator(".oge-directions a")).toHaveCount(5);
   await expect(page.locator("#bank .oge-lines a")).toHaveCount(13);
   await page.locator("#bank .oge-lines a").filter({ hasText: "№ 10" }).click();
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 20",
+    "Найдено заданий: 23",
   );
   await page.locator(".exercise-card").first().click();
   await expect(page.locator(".oge-source")).toBeVisible();
@@ -60,7 +67,7 @@ test("ОГЭ: пять направлений, теория по линии и �
     .getByRole("link", { name: "Вернуться к подборке", exact: true })
     .click();
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 20",
+    "Найдено заданий: 23",
   );
   await page.goto("oge/theory/?line=11");
   await expect(page.locator(".topic-card")).toHaveCount(1);
@@ -116,6 +123,7 @@ test("Подборка: контроль в конце, сохранение, ф
   page,
 }) => {
   await page.goto("oge/bank/5/");
+  await page.getByText("Размер, режим и отбор", { exact: true }).click();
   await page
     .getByRole("combobox", { name: "Количество", exact: true })
     .selectOption("5");
@@ -128,10 +136,22 @@ test("Подборка: контроль в конце, сохранение, ф
   for (let n = 0; n < 5; n++) {
     const item = initial.items[n];
     if (item.kind !== "exercise") throw Error("Нет задания");
+    const positions = [
+      ...new Set(
+        [...(item.exercise.text ?? "").matchAll(/\((\d+)\)/gu)].map(
+          (match) => match[1],
+        ),
+      ),
+    ];
+    const wrong = positions.find(
+      (value) => !item.exercise.answers.includes(value),
+    );
+    if (!wrong)
+      throw Error("В условии нет доступного неправильного одиночного ответа");
     if (n !== 3)
       await answerCurrent(
         page,
-        n === 0 || n === 4 ? item.exercise.answers[0] : n === 1 ? "9" : "1,2",
+        n === 0 || n === 4 ? item.exercise.answers[0] : n === 1 ? wrong : "1,2",
       );
     await expect(page.locator("#work-question .feedback")).toHaveCount(0);
     if (n < 4)
@@ -238,6 +258,9 @@ test("Полный вариант: действительное аудио, 13 �
   );
   await expect(page.locator(".oge-written-answer").last()).toHaveText(essay);
   await expect(page.locator("main")).toContainText(
+    "меньше 70 слов — 1; требует проверки — 1",
+  );
+  await expect(page.locator("main")).toContainText(
     "Общий официальный балл и школьная отметка не вычисляются",
   );
   expect(
@@ -280,12 +303,14 @@ test("Генератор: сохранённый состав, независи�
   await expect(page.getByRole("alert")).toContainText("Не хватает");
   await page.goto("oge/generator/?mode=thematic");
   await expect(page.getByLabel("Тип работы")).toHaveValue("thematic");
-  await expect(
-    page.getByRole("button", { name: "Начать подборку", exact: true }),
-  ).toBeVisible();
+  const quick = page.getByRole("button", { name: "5 заданий", exact: true });
+  await expect(quick).toBeVisible();
+  await quick.click();
+  await expect(page.locator("h1")).toHaveText("Смешанная тренировка ОГЭ");
+  expect((await currentWork(page)).items).toHaveLength(5);
 });
 
-test("Семь тренажёров: ошибка, исправление и пять разных ситуаций каждого", async ({
+test("Семь тренажёров: ошибка, исправление и десять разных ситуаций каждого", async ({
   page,
 }) => {
   test.setTimeout(180000);
@@ -352,20 +377,34 @@ test("Семь тренажёров: ошибка, исправление и п�
       await game
         .getByRole("button", { name: "Проверить действие", exact: true })
         .click();
-      await expect(game.locator(".feedback")).toContainText(
-        "Действие выполнено верно",
-      );
+      if (activity.kind === "compression") {
+        await expect(game.locator(".feedback")).toContainText(
+          "Основная информация выбрана",
+        );
+        await expect(game.locator(".feedback")).toContainText(
+          "Черновик написан",
+        );
+        await expect(game.locator(".feedback")).toContainText(
+          "автоматически не оценены",
+        );
+        await expect(game.locator(".feedback")).not.toContainText(
+          "Действие выполнено верно",
+        );
+      } else
+        await expect(game.locator(".feedback")).toContainText(
+          "Действие выполнено верно",
+        );
       await expect(game.locator(".feedback")).toContainText(
         situation.explanation,
       );
-      if (index < 4)
+      if (index < activity.situations.length - 1)
         await page
           .getByRole("button", { name: "Следующая ситуация", exact: true })
           .click();
     }
   }
   await page.goto("oge/results/");
-  await expect(page.locator("main")).toContainText("Проверенных действий: 42");
+  await expect(page.locator("main")).toContainText("Проверенных действий: 77");
 });
 
 test("ОГЭ: доступность каталога, развёрнутого банка, генератора, тренажёров и письменной формы", async ({

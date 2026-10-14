@@ -1,10 +1,10 @@
 import {
-  exercises,
+  exerciseIndex as exercises,
   publishedTopics,
   sections,
   sectionTitle,
   type Exam,
-} from "../content/registry";
+} from "../content/catalog";
 import {
   Breadcrumbs,
   LinkButton,

@@ -1,34 +1,22 @@
 import { use, useState } from "react";
 import { loadActivities } from "./materials";
-import type { ActivitySituation, InteractiveActivity } from "./model";
+import type { InteractiveActivity } from "./model";
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
 import { href } from "../routes";
 import { wordCount } from "./engine";
 import { ogeCatalog } from "./catalog";
-
-export function normalizeActivity(answer: string) {
-  return answer
-    .normalize("NFC")
-    .trim()
-    .toLocaleLowerCase("ru")
-    .replace(/ё/gu, "е")
-    .replace(/\s+/gu, " ");
-}
-export function checkActivity(
-  situation: ActivitySituation,
-  answers: Record<string, string>,
-) {
-  return situation.fields
-    .filter((f) => f.expected.length)
-    .map((field) => ({
-      field,
-      correct: field.expected.some(
-        (expected) =>
-          normalizeActivity(expected) ===
-          normalizeActivity(answers[field.id] ?? ""),
-      ),
-    }));
-}
+import { checkActivity } from "./game-check";
+export { checkActivity, normalizeActivity } from "./game-check";
+import {
+  makeGameDraft,
+  readGameDraft,
+  saveGameDraft,
+  readGameRecords,
+  saveGameRecord,
+  gameOutcome,
+  type GameDraft,
+  type GameRecord,
+} from "./game-storage";
 export function GamesCatalog() {
   const activities = ogeCatalog.activities;
   return (
@@ -42,7 +30,7 @@ export function GamesCatalog() {
       <PageHeading
         eyebrow="ДУМАТЬ И ДЕЙСТВОВАТЬ"
         title="Тематические тренажёры"
-        text="Выделяйте, исправляйте, преобразуйте и сопоставляйте. Каждая механика содержит пять разных ситуаций с объяснением и возможностью исправления."
+        text="Выделяйте, исправляйте, преобразуйте и сопоставляйте. Сохраняйте начатое действие и переходите от разбора ошибки к новому примеру."
       />
       <div className="topic-grid">
         {activities.map((a) => (
@@ -78,35 +66,101 @@ export function GamePage({ id }: { id: string }) {
   return <ActivityPlayer key={id} activity={activity} />;
 }
 function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
-  const [index, setIndex] = useState(0),
-    [answers, setAnswers] = useState<Record<string, string>>({}),
-    [checked, setChecked] = useState(false),
-    [role, setRole] = useState("subject"),
-    [saveError, setSaveError] = useState("");
+  function initialIndex() {
+    try {
+      const key = localStorage.getItem(
+        `polina-oge-game-position-v2:${activity.id}`,
+      );
+      return Math.max(
+        0,
+        activity.situations.findIndex(
+          (situation) => `${situation.id}:${situation.revision ?? 1}` === key,
+        ),
+      );
+    } catch {
+      return 0;
+    }
+  }
+  function loaded(index: number) {
+    const situation = activity.situations[index];
+    try {
+      return (
+        readGameDraft(window.localStorage, activity.id, situation) ??
+        makeGameDraft(activity, situation)
+      );
+    } catch {
+      return makeGameDraft(activity, situation);
+    }
+  }
+  const [index, setIndex] = useState(initialIndex),
+    [state, setState] = useState(() => loaded(initialIndex())),
+    [saveError, setSaveError] = useState(""),
+    [pendingRecord, setPendingRecord] = useState<GameRecord>();
+  const { answers, checked, role } = state;
   const situation = activity.situations[index],
     results = checkActivity(situation, answers),
-    correct = results.every((r) => r.correct);
+    outcome = gameOutcome(activity.kind, situation, answers),
+    correct = outcome.correct;
+  function persist(next: GameDraft) {
+    next = { ...next, updatedAt: new Date().toISOString() };
+    setState(next);
+    try {
+      saveGameDraft(window.localStorage, next);
+      if (!pendingRecord) setSaveError("");
+      return true;
+    } catch {
+      setSaveError(
+        "Текущий ввод остаётся на странице, но браузер не сохранил его. Повторите запись или скачайте текущую попытку перед уходом.",
+      );
+      return false;
+    }
+  }
+  const setRole = (role: GameDraft["role"]) => persist({ ...state, role });
   const change = (id: string, value: string) => {
-    setAnswers((a) => ({ ...a, [id]: value }));
-    setChecked(false);
+    const next = { ...answers, [id]: value };
+    if (activity.kind === "spelling") {
+      const index = situation.fields.findIndex((field) => field.id === id);
+      for (const field of situation.fields.slice(index + 1))
+        delete next[field.id];
+    }
+    persist({ ...state, answers: next, checked: false });
   };
   function chooseWord(n: number) {
     const other = role === "subject" ? "predicate" : "subject";
-    setAnswers((a) => ({
-      ...a,
-      [role]: toggled(a[role] ?? "", n),
-      [other]: (a[other] ?? "")
-        .split(",")
-        .filter((v) => v !== String(n))
-        .join(","),
-    }));
-    setChecked(false);
+    persist({
+      ...state,
+      checked: false,
+      answers: {
+        ...answers,
+        [role]: toggled(answers[role] ?? "", n),
+        [other]: (answers[other] ?? "")
+          .split(",")
+          .filter((v) => v !== String(n))
+          .join(","),
+      },
+    });
   }
   const reset = () => {
-    setAnswers({});
-    setChecked(false);
-    setSaveError("");
+    persist({
+      ...state,
+      answers: {},
+      checked: false,
+      hintUsed: state.hintUsed || state.checks > 0,
+    });
   };
+  function jump(next: number) {
+    setIndex(next);
+    const draft = loaded(next);
+    setState(draft);
+    try {
+      saveGameDraft(window.localStorage, draft);
+      setSaveError("");
+    } catch {
+      setSaveError(
+        "Браузер не сохранил новую позицию. Выполненные редакции не удалены.",
+      );
+    }
+  }
   const expectedLabel = (fieldId: string, values: string[]) =>
     values
       .map((value) =>
@@ -117,12 +171,30 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                 .split(",")
                 .map((n) => situation.tokens![Number(n) - 1])
                 .join(" ")
-            : "подлежащее отсутствует"
+            : fieldId === "subject"
+              ? "подлежащее отсутствует"
+              : "ничего не выделено"
           : activity.kind === "correction" && fieldId === "position"
             ? situation.tokens![Number(value) - 1]
             : value || "знак не нужен",
       )
       .join(" / ");
+  function actionReason(fieldId: string, expected: string) {
+    if (activity.kind === "foundation") {
+      const selected = (answers[fieldId] ?? "").split(",").filter(Boolean),
+        required = expected.split(",").filter(Boolean);
+      const words = (values: string[]) =>
+        values.map((value) => situation.tokens?.[Number(value) - 1]).join(" ");
+      return `Не выделено: ${words(required.filter((value) => !selected.includes(value))) || "нет"}. Лишнее выделение: ${words(selected.filter((value) => !required.includes(value))) || "нет"}.`;
+    }
+    if (activity.kind === "punctuation")
+      return expected === ""
+        ? "Поставлен лишний знак."
+        : !answers[fieldId]
+          ? "Пропущен необходимый знак."
+          : "Выбран знак, который не соответствует связи частей или конструкции.";
+    return "Сопоставьте своё действие с указанным условием правила.";
+  }
   return (
     <>
       <Breadcrumbs
@@ -275,7 +347,10 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                     disabled={
                       activity.kind === "spelling" &&
                       n > 0 &&
-                      !answers[situation.fields[n - 1].id]
+                      !results.find(
+                        (result) =>
+                          result.field.id === situation.fields[n - 1].id,
+                      )?.correct
                     }
                     value={answers[field.id] ?? ""}
                     onChange={(e) => change(field.id, e.target.value)}
@@ -289,6 +364,14 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                   </select>
                 ) : (
                   <input
+                    disabled={
+                      activity.kind === "spelling" &&
+                      n > 0 &&
+                      !results.find(
+                        (result) =>
+                          result.field.id === situation.fields[n - 1].id,
+                      )?.correct
+                    }
                     value={answers[field.id] ?? ""}
                     onChange={(e) => change(field.id, e.target.value)}
                     spellCheck={false}
@@ -301,30 +384,49 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
         <div className="inline-actions">
           <button
             className="button"
+            disabled={!!pendingRecord}
             onClick={() => {
-              setChecked(true);
+              const draftSaved = persist({ ...state, checked: true, checks: state.checks + 1 });
+              const history = readGameRecords(window.localStorage);
+              const seen =
+                history.records.some(
+                  (record) =>
+                    record.activityId === activity.id &&
+                    record.situationId === situation.id &&
+                    record.revision === (situation.revision ?? 1),
+                ) ||
+                history.historic.some(
+                  (record) =>
+                    record.activityId === activity.id &&
+                    record.situationId === situation.id,
+                );
               const record = {
+                schemaVersion: 2 as const,
                 id: crypto.randomUUID(),
                 activityId: activity.id,
-                revision: 1,
+                revision: situation.revision ?? 1,
                 situationId: situation.id,
                 createdAt: new Date().toISOString(),
                 answers,
-                correct,
+                snapshot: {
+                  kind: activity.kind,
+                  title: activity.title,
+                  topicId: activity.topicId,
+                  skillId: activity.skillId,
+                  situation: structuredClone(situation),
+                },
+                firstIndependent:
+                  !seen && state.checks === 0 && !state.hintUsed,
+                assisted: seen || state.checks > 0 || state.hintUsed,
               };
               try {
-                const raw = JSON.parse(
-                  window.localStorage.getItem("polina-oge-games-v1") ?? "[]",
-                );
-                const previous = Array.isArray(raw) ? raw : [];
-                window.localStorage.setItem(
-                  "polina-oge-games-v1",
-                  JSON.stringify([...previous, record].slice(-500)),
-                );
-                setSaveError("");
+                saveGameRecord(window.localStorage, record);
+                setPendingRecord(undefined);
+                if (draftSaved) setSaveError("");
               } catch {
+                setPendingRecord(record);
                 setSaveError(
-                  "Результат виден сейчас, но браузер не сохранил историю тренажёра.",
+                  "Результат виден сейчас, но браузер не сохранил историю тренажёра. Повторите запись действия.",
                 );
               }
             }}
@@ -341,9 +443,13 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
             aria-live="polite"
           >
             <h3>
-              {correct
-                ? "Действие выполнено верно"
-                : "Исправьте выделение или ответ"}
+              {activity.kind === "compression"
+                ? outcome.informationCorrect
+                  ? "Основная информация выбрана; содержание текста проверяет человек"
+                  : "Исправьте выбор основной информации"
+                : correct
+                  ? "Действие выполнено верно"
+                  : "Исправьте выделение или ответ"}
             </h3>
             <ul>
               {results.map(({ field, correct }) => (
@@ -352,6 +458,15 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                   {correct
                     ? "верно"
                     : `ожидается ${expectedLabel(field.id, field.expected)}`}
+                  {!correct && (
+                    <>
+                      . Ваше действие:{" "}
+                      {expectedLabel(field.id, [answers[field.id] ?? ""]) ||
+                        "не заполнено"}
+                      . {actionReason(field.id, field.expected[0])}{" "}
+                      {field.explanation ?? situation.explanation}
+                    </>
+                  )}
                 </li>
               ))}
             </ul>
@@ -363,22 +478,85 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
             </ul>
             {activity.kind === "compression" && (
               <p>
-                Проверено выделение основной информации. Смысл и качество
+                {outcome.writingDraft
+                  ? "Черновик написан."
+                  : "Текст ещё не написан: заполните поле собственного сжатия для завершения этапа письма."}{" "}
+                Проверено только выделение основной информации. Смысл и качество
                 свободного сжатия автоматически не оценены.
               </p>
             )}
+            <p>
+              {state.hintUsed || state.checks > 1
+                ? "Исправление после разбора или подсказки: результат не считается самостоятельным переносом навыка."
+                : "Первая попытка этого случая. Для проверки переноса решите другой пример."}
+            </p>
             <p>Вы можете исправить ответ и проверить снова.</p>
           </section>
         )}
         {saveError && <p role="status">{saveError}</p>}
+        {saveError && (
+          <button className="button secondary" onClick={() => {
+            const draftSaved = persist(state);
+            if (pendingRecord) {
+              try {
+                saveGameRecord(window.localStorage, pendingRecord);
+                setPendingRecord(undefined);
+                if (draftSaved) setSaveError("");
+              } catch {
+                setSaveError("Браузер по-прежнему не сохранил историю. Текущая попытка доступна для скачивания.");
+              }
+            }
+          }}>
+            Повторить запись действия
+          </button>
+        )}
+        <details
+          className="hint"
+          onToggle={(event) => {
+            if (event.currentTarget.open && !state.hintUsed)
+              persist({ ...state, hintUsed: true });
+          }}
+        >
+          <summary>Подсказка к действию</summary>
+          <p>{situation.hint ?? situation.details[0]}</p>
+        </details>
+        <button
+          className="button secondary"
+          onClick={() => {
+            const url = URL.createObjectURL(
+              new Blob(
+                [
+                  JSON.stringify(
+                    {
+                      format: "polina-oge-game-draft",
+                      version: 2,
+                      snapshot: situation,
+                      draft: state,
+                      pendingRecord,
+                    },
+                    null,
+                    2,
+                  ),
+                ],
+                { type: "application/json;charset=utf-8" },
+              ),
+            );
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = `polina-game-${activity.id}-${situation.id}.json`;
+            link.click();
+            setTimeout(() => URL.revokeObjectURL(url), 1000);
+          }}
+        >
+          Скачать текущую попытку
+        </button>
       </article>
       <div className="inline-actions">
         <button
           className="button secondary"
           disabled={index === 0}
           onClick={() => {
-            setIndex(index - 1);
-            reset();
+            jump(index - 1);
           }}
         >
           Предыдущая ситуация
@@ -387,8 +565,7 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
           className="button"
           disabled={index === activity.situations.length - 1}
           onClick={() => {
-            setIndex(index + 1);
-            reset();
+            jump(index + 1);
           }}
         >
           Следующая ситуация
@@ -396,6 +573,31 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
         <LinkButton to={`/theory/${activity.topicId}/?exam=OGE`} secondary>
           Правило этой темы
         </LinkButton>
+        <button
+          className="button secondary"
+          onClick={() => {
+            const unknown = activity.situations
+              .map((candidate, index) => ({ candidate, index }))
+              .filter(
+                ({ candidate }) =>
+                  !readGameDraft(window.localStorage, activity.id, candidate)
+                    ?.checks && candidate.id !== situation.id,
+              );
+            const analogous =
+              unknown.find(({ candidate }) =>
+                candidate.skillIds?.some((skill) =>
+                  situation.skillIds?.includes(skill),
+                ),
+              ) ?? unknown[0];
+            if (analogous) jump(analogous.index);
+            else
+              setSaveError(
+                "Новых случаев этой темы больше нет. Повторение прежнего примера доступно, но не считается независимой проверкой.",
+              );
+          }}
+        >
+          Новый пример этой темы
+        </button>
       </div>
       {index === activity.situations.length - 1 && checked && (
         <p>

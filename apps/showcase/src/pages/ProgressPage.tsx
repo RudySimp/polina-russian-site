@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { confidence, localMetrics, type LocalAttempt } from "../progress";
-import { exercises } from "../content/registry";
+import { exerciseIndex as exercises } from "../content/catalog";
 import { recommendations } from "../lib/recommendations";
 import { examName } from "../lib/search";
 import {
@@ -76,7 +76,7 @@ export function ProgressPage({
           title="Здесь появятся ваши первые результаты"
           text={`Начните практику ${examName(exam)}. Форматные ошибки не считаются ошибками по предметному навыку.`}
         >
-          <LinkButton to={`/practice/?exam=${exam}`}>
+          <LinkButton to={exam === "OGE" ? "/oge/bank/" : `/practice/?exam=${exam}`}>
             Начать практику
           </LinkButton>
         </EmptyState>

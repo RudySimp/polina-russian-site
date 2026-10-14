@@ -1,7 +1,12 @@
+import { ContentBoundary } from "../components/ContentBoundary";
 import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Layout } from "../components/Layout";
 import { currentPath } from "../routes";
-import { readAttempts, storageKey, type LocalAttempt } from "../progress";
+import {
+  readAttemptsAddressed,
+  storageKey,
+  type LocalAttempt,
+} from "../progress";
 import { HomePage } from "../pages/HomePage";
 const ExamPage = lazy(() =>
   import("../pages/ExamPage").then((m) => ({ default: m.ExamPage })),
@@ -40,15 +45,25 @@ export function App() {
   const path = currentPath(window.location.pathname);
   const [attempts, setAttempts] = useState<LocalAttempt[]>([]);
   const attemptsRef = useRef<LocalAttempt[]>([]);
+  const [storageError, setStorageError] = useState(false);
   useEffect(() => {
+    if (
+      path === "/" ||
+      path === "/oge/" ||
+      path.startsWith("/theory/") ||
+      path === "/oge/theory/" ||
+      path === "/ege/"
+    )
+      return;
     let active = true;
     try {
       if (window.localStorage.getItem(storageKey))
         import("../content/load")
-          .then((m) => m.loadAllExercises())
-          .then((bank) => {
+          .then((m) =>
+            readAttemptsAddressed(window.localStorage, m.loadExercises),
+          )
+          .then((previous) => {
             if (active) {
-              const previous = readAttempts(window.localStorage, bank);
               const pending = attemptsRef.current;
               const ids = new Set(previous.map((a) => a.id));
               const next = [
@@ -58,6 +73,9 @@ export function App() {
               attemptsRef.current = next;
               setAttempts(next);
             }
+          })
+          .catch(() => {
+            if (active) setStorageError(true);
           });
     } catch {
       /* History is optional when local storage is disabled. */
@@ -65,8 +83,7 @@ export function App() {
     return () => {
       active = false;
     };
-  }, []);
-  const [storageError, setStorageError] = useState(false);
+  }, [path]);
   function save(attempt: LocalAttempt) {
     const next = [...attemptsRef.current, attempt].slice(-1000);
     attemptsRef.current = next;
@@ -101,7 +118,7 @@ export function App() {
     }
   }
   let page;
-  if (path === "/") page = <HomePage attempts={attempts} />;
+  if (path === "/") page = <HomePage />;
   else if (path.startsWith("/oge/"))
     page = <OgeRouter path={path} attempts={attempts} save={save} />;
   else if (path === "/ege/") page = <ExamPage exam="EGE" />;
@@ -126,15 +143,17 @@ export function App() {
           закрытия этой страницы.
         </p>
       )}
-      <Suspense
-        fallback={
-          <p className="route-loading" role="status">
-            Загружаем учебные материалы…
-          </p>
-        }
-      >
-        {page}
-      </Suspense>
+      <ContentBoundary>
+        <Suspense
+          fallback={
+            <p className="route-loading" role="status">
+              Загружаем учебные материалы…
+            </p>
+          }
+        >
+          {page}
+        </Suspense>
+      </ContentBoundary>
     </Layout>
   );
 }

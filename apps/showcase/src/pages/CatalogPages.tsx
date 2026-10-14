@@ -1,5 +1,6 @@
-import { useState } from "react";
-import { exercises, topics, sections, sectionTitle } from "../content/registry";
+import { useEffect, useState } from "react";
+import { exerciseIndex as exercises, topics, sections, sectionTitle } from "../content/catalog";
+import searchIndex from "../content/exercise-search.json";
 import {
   Breadcrumbs,
   EmptyState,
@@ -9,10 +10,17 @@ import {
 } from "../components/ui";
 import { examName, levelName, matchesSearch } from "../lib/search";
 
+const exerciseSearch = new Map(searchIndex.map((item) => [item.id, item.text]));
+
 function useFilters() {
   const [params, setParams] = useState(
     () => new URLSearchParams(window.location.search),
   );
+  useEffect(() => {
+    const restore = () => setParams(new URLSearchParams(window.location.search));
+    window.addEventListener("popstate", restore);
+    return () => window.removeEventListener("popstate", restore);
+  }, []);
   function update(key: string, value: string) {
     const next = new URLSearchParams(params);
     if (value) next.set(key, value);
@@ -23,7 +31,7 @@ function useFilters() {
       next.delete("skill");
       if (value === "EGE") next.delete("line");
     }
-    window.history.replaceState(
+    window.history[key === "q" ? "replaceState" : "pushState"](
       null,
       "",
       `${window.location.pathname}${next.size ? `?${next}` : ""}`,
@@ -31,7 +39,7 @@ function useFilters() {
     setParams(next);
   }
   function reset() {
-    window.history.replaceState(null, "", window.location.pathname);
+    window.history.pushState(null, "", window.location.pathname);
     setParams(new URLSearchParams());
   }
   return { params, update, reset };
@@ -177,9 +185,7 @@ export function PracticeCatalogPage() {
       matchesSearch(query, [
         exercise.title,
         exercise.topicTitle,
-        exercise.prompt,
-        exercise.text ?? "",
-        ...exercise.options,
+        exerciseSearch.get(exercise.id) ?? "",
       ]),
   );
   const activeSkills = [
@@ -202,7 +208,7 @@ export function PracticeCatalogPage() {
       <PageHeading
         eyebrow="ПРАКТИКА С РАЗБОРОМ"
         title="От понимания к решению"
-        text={`${exercises.length} проверенных демонстрационных заданий. Выберите экзамен, тему или конкретный навык; каждый ответ сопровождается объяснением.`}
+        text={`${exercises.length} учебных заданий с разбором. Для всех номеров ОГЭ, подборок и письменных работ откройте банк ОГЭ.`}
       />
       <div className="catalog-controls">
         <label className="search-field">
@@ -257,7 +263,7 @@ export function PracticeCatalogPage() {
             onChange={(event) => change("level", event.target.value)}
           >
             <option value="">Все уровни</option>
-            {["basic", "standard", "advanced"].map((item) => (
+            {[...new Set(exercises.filter((item) => (!exam || item.exam === exam) && (!topic || item.topicId === topic)).map((item) => item.level))].map((item) => (
               <option value={item} key={item}>
                 {levelName(item)}
               </option>
@@ -293,7 +299,7 @@ export function PracticeCatalogPage() {
                 onChange={(event) => change("line", event.target.value)}
               >
                 <option value="">Любая линия</option>
-                {[2, 3, 5, 8, 9].map((item) => (
+                {[...new Set(exercises.filter((item) => item.exam === "OGE" && item.taskLine).map((item) => item.taskLine!))].sort((a,b) => a-b).map((item) => (
                   <option key={item} value={item}>
                     Задание {item}
                   </option>

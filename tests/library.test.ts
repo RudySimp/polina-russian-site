@@ -18,8 +18,8 @@ describe("Целостность библиотеки и поиск", () => {
     expect(validateContent()).toMatchObject({
       lessons: 16,
       topics: 16,
-      exercises: 252,
-      imported: 148,
+      exercises: 285,
+      imported: 164,
     });
   });
   it("не допускает повторяющиеся маршруты заданий и неверный экзамен навыка", () => {
@@ -33,7 +33,9 @@ describe("Целостность библиотеки и поиск", () => {
   it("отклоняет ключ вне вариантов и ударение на согласной", () => {
     const wrongKey = structuredClone(exercises);
     wrongKey[0].answers = ["9"];
-    expect(() => validateContent(wrongKey)).toThrow("номер ответа отсутствует");
+    expect(() => validateContent(wrongKey)).toThrow(
+      /ключ не проходит политику|номер ответа отсутствует/u,
+    );
     const wrongStress = structuredClone(lessons);
     const block = wrongStress
       .flatMap((l) => l.sections)
@@ -74,7 +76,7 @@ describe("Повторение по банку и независимые рез�
       );
       const next = nextExercise(current, attempts);
       if (!next) break;
-      current = next;
+      current = exercises.find((e) => e.id === next.id)!;
     }
     expect(visited.size).toBe(10);
     expect(nextExercise(current, attempts)).toBeUndefined();

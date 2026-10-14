@@ -1,10 +1,10 @@
 import { use } from "react";
 import {
-  exercisesFor,
-  lessonFor,
+  exerciseSummariesFor as exercisesFor,
   topics,
   sectionTitle,
-} from "../content/registry";
+} from "../content/catalog";
+import { lessonFor } from "../content/lesson-load";
 import {
   Breadcrumbs,
   Badge,
@@ -12,7 +12,7 @@ import {
   PageHeading,
   TopicCard,
 } from "../components/ui";
-import { LessonBlocks } from "../components/LessonBlocks";
+import { LessonReading } from "../components/LessonReading";
 import { href } from "../routes";
 import { taskLines } from "../oge/specification";
 import { examName } from "../lib/search";
@@ -34,7 +34,9 @@ export function LessonPage({ slug }: { slug: string }) {
     /^\/(?:theory|oge\/theory)\/(?:\?|$)/.test(requestedReturn) &&
     requestedReturn.length < 1000
       ? requestedReturn
-      : `/theory/${exam ? `?exam=${exam}` : ""}`;
+      : exam === "OGE"
+        ? "/oge/theory/"
+        : `/theory/${exam ? `?exam=${exam}` : ""}`;
   const practice = exercisesFor(topic.id, exam);
   const neighbors = topics.filter(
     (item) =>
@@ -52,7 +54,10 @@ export function LessonPage({ slug }: { slug: string }) {
           { label: "Учебник", path: returnTo },
           {
             label: sectionTitle(topic.sectionId),
-            path: `/theory/?section=${topic.sectionId}${exam ? `&exam=${exam}` : ""}`,
+            path:
+              exam === "OGE"
+                ? `/oge/theory/?section=${topic.sectionId}`
+                : `/theory/?section=${topic.sectionId}${exam ? `&exam=${exam}` : ""}`,
           },
           { label: topic.title },
         ]}
@@ -81,22 +86,13 @@ export function LessonPage({ slug }: { slug: string }) {
               ))}
             </ul>
           </section>
-          {lesson.sections.map((section) => (
-            <section
-              id={section.id}
-              className="lesson-section"
-              key={section.id}
-            >
-              <h2>{section.title}</h2>
-              <LessonBlocks blocks={section.blocks} />
-            </section>
-          ))}
+          <LessonReading lesson={lesson} />
           <section id="practice" className="practice-next">
             <h2>Теперь проверим понимание</h2>
             {["izlozhenie", "sochinenie"].includes(topic.id) ? (
               <>
                 <p>
-                  Пять письменных работ с сохранением черновика, критериями и
+                  Письменные работы с сохранением черновика, критериями и
                   самопроверкой. Оценку содержания выставляет эксперт.
                 </p>
                 <LinkButton
@@ -145,7 +141,10 @@ export function LessonPage({ slug }: { slug: string }) {
                     задания своего направления.
                   </p>
                 )}
-                <LinkButton to={`/practice/?exam=${exam}`} secondary>
+                <LinkButton
+                  to={exam === "OGE" ? "/oge/bank/" : `/practice/?exam=${exam}`}
+                  secondary
+                >
                   Другие задания {examName(exam)}
                 </LinkButton>
               </>

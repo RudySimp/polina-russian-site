@@ -102,6 +102,42 @@
 }
 .topbar-context {
   font-size: var(--text-sm);
+  text-decoration: none;
+  color: var(--green);
+}
+.exam-switch {
+  display: flex;
+  gap: 0.375rem;
+  margin-left: auto;
+}
+.exam-switch a {
+  display: grid;
+  place-items: center;
+  min-height: 44px;
+  min-width: 48px;
+  padding: 0.375rem 0.625rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: var(--text-sm);
+}
+.exam-switch a[aria-current] {
+  background: var(--sage);
+  font-weight: 650;
+}
+.home-entry {
+  padding: var(--space-6);
+}
+.home-entry h1 {
+  margin: var(--space-3) 0 var(--space-4);
+}
+.home-entry .hero-actions {
+  margin-top: var(--space-4);
+}
+.home-textbook-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
 }
 .release-label {
   font-size: var(--text-xs);
@@ -275,7 +311,7 @@ main:focus {
   }
   .topbar {
     left: 0;
-    height: 72px;
+    height: 56px;
     padding: 0 var(--space-5);
   }
   .mobile-toggle {
@@ -283,7 +319,7 @@ main:focus {
   }
   .page-shell {
     margin-left: 0;
-    padding-top: 96px;
+    padding-top: 76px;
   }
   .hero {
     grid-template-columns: minmax(0, 1fr) minmax(240px, 0.75fr);
@@ -291,11 +327,27 @@ main:focus {
 }
 @media (max-width: 600px) {
   .page-shell {
-    padding: 92px var(--space-4) var(--space-5);
+    padding: 72px var(--space-4) var(--space-5);
   }
   .topbar {
     padding: 0 var(--space-4);
     gap: var(--space-3);
+  }
+  .exam-switch {
+    gap: 0;
+  }
+  .exam-switch a {
+    padding-inline: 0.5rem;
+    min-width: 44px;
+  }
+  .home-entry .eyebrow {
+    font-size: var(--text-xs);
+  }
+  .home-entry .hero-copy h1 {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  .home-entry .hero-footnote {
+    margin-top: var(--space-4);
   }
   .topbar-context {
     font-size: var(--text-xs);

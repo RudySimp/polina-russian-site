@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useLessonState } from "../lib/lesson-state";
 import type { LessonBlock } from "../content/registry";
 import { InteractiveExercise } from "./InteractiveExercise";
 
-function StepByStep({ items }: { items: string[] }) {
-  const [visible, setVisible] = useState(0);
+function StepByStep({ items, scope }: { items: string[]; scope: string }) {
+  const [visible, setVisible] = useLessonState<number>(
+    scope + ":steps",
+    0,
+    (v): v is number =>
+      typeof v === "number" &&
+      Number.isInteger(v) &&
+      v >= 0 &&
+      v <= items.length,
+  );
   return (
     <div className="step-explanation">
       {visible > 0 && (
@@ -41,11 +49,26 @@ function StepByStep({ items }: { items: string[] }) {
 }
 function Checkpoint({
   block,
+  scope,
 }: {
   block: Extract<LessonBlock, { type: "checkpoint" }>;
+  scope: string;
 }) {
-  const [selected, setSelected] = useState(0);
-  const [checked, setChecked] = useState(false);
+  const [state, update, saveError] = useLessonState(
+    scope,
+    { selected: 0, checked: false },
+    (v): v is { selected: number; checked: boolean } =>
+      !!v &&
+      typeof v === "object" &&
+      "selected" in v &&
+      typeof v.selected === "number" &&
+      Number.isInteger(v.selected) &&
+      v.selected >= 0 &&
+      v.selected <= block.options.length &&
+      "checked" in v &&
+      typeof v.checked === "boolean",
+  );
+  const { selected, checked } = state;
   return (
     <div className="checkpoint">
       <h3>{block.title}</h3>
@@ -59,15 +82,21 @@ function Checkpoint({
               name={block.question}
               checked={selected === index + 1}
               onChange={() => {
-                setSelected(index + 1);
-                setChecked(false);
+                update({ selected: index + 1, checked: false });
               }}
             />
             <span>{option}</span>
           </label>
         ))}
       </fieldset>
-      <button className="button secondary" onClick={() => setChecked(true)}>
+      {saveError && (
+        <p role="status">Учебное действие не сохранено в браузере.</p>
+      )}
+      <button
+        className="button secondary"
+        disabled={!selected}
+        onClick={() => update({ ...state, checked: true })}
+      >
         Проверить себя
       </button>
       {checked && (
@@ -82,14 +111,28 @@ function Checkpoint({
     </div>
   );
 }
-export function LessonBlocks({ blocks }: { blocks: LessonBlock[] }) {
+export function LessonBlocks({
+  blocks,
+  scope = "lesson",
+}: {
+  blocks: LessonBlock[];
+  scope?: string;
+}) {
   return (
     <>
       {blocks.map((block, index) => {
         if (block.type === "interactive")
-          return <InteractiveExercise key={index} data={block.data} />;
+          return (
+            <InteractiveExercise
+              key={index}
+              data={block.data}
+              scope={scope + ":" + index}
+            />
+          );
         if (block.type === "checkpoint")
-          return <Checkpoint key={index} block={block} />;
+          return (
+            <Checkpoint key={index} block={block} scope={scope + ":" + index} />
+          );
         if (block.type === "example")
           return (
             <div className="example-block" key={index}>
@@ -97,7 +140,7 @@ export function LessonBlocks({ blocks }: { blocks: LessonBlock[] }) {
               <h3>{block.title}</h3>
               <p className="example-text">{block.text}</p>
               {block.counterexample && <p>Сравните: {block.counterexample}</p>}
-              <StepByStep items={block.steps} />
+              <StepByStep items={block.steps} scope={scope + ":" + index} />
             </div>
           );
         if (block.type === "comparison")

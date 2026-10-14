@@ -1,14 +1,13 @@
+import { ExerciseFeedback } from "../oge/ExercisePanel";
 import { use, useState } from "react";
+import { normalize, type Grade } from "../../../../src/lib/grading";
 import {
-  normalize,
-  type Grade,
-} from "../../../../src/lib/grading";
-import {
-  exercises,
+  exerciseIndex as exercises,
   sectionTitle,
   topics,
   type Exercise,
-} from "../content/registry";
+} from "../content/catalog";
+import { loadExercise } from "../content/load";
 import { createAttempt, type LocalAttempt } from "../progress";
 import { nextExercise } from "../lib/recommendations";
 import { examName, levelName } from "../lib/search";
@@ -17,11 +16,18 @@ import { href } from "../routes";
 import { NotFoundPage } from "./InfoPages";
 
 import { AnswerControl } from "../components/AnswerControl";
-import { gradeExercise } from '../oge/engine';
-import { SourcePassage } from '../oge/ExercisePanel';
-import { loadOriginals } from '../oge/materials';
+import { gradeExercise } from "../oge/engine";
+import { SourcePassage } from "../oge/ExercisePanel";
+import { loadOriginals } from "../oge/materials";
 
-function OriginalPassage({id}:{id:string}) {const text=use(loadOriginals()).texts.find(t=>t.id===id);return text?<SourcePassage text={text}/>:<p role='alert'>Исходный текст задания не найден.</p>;}
+function OriginalPassage({ id }: { id: string }) {
+  const text = use(loadOriginals()).texts.find((t) => t.id === id);
+  return text ? (
+    <SourcePassage text={text} />
+  ) : (
+    <p role="alert">Исходный текст задания не найден.</p>
+  );
+}
 
 export function PracticePage({
   slug,
@@ -37,9 +43,11 @@ export function PracticePage({
     "ege-stress": "ege-stress-1",
     "oge-syntax": "oge-syntax-1",
   };
-  const exercise = exercises.find(
+  const summary = exercises.find(
     (exercise) => exercise.slug === (aliases[slug] ?? slug),
   );
+  if (!summary) return <NotFoundPage />;
+  const exercise = use(loadExercise(summary.id));
   if (!exercise) return <NotFoundPage />;
   return <Question initial={exercise} attempts={attempts} save={save} />;
 }
@@ -59,9 +67,15 @@ function Question({
     new URLSearchParams(window.location.search).has("repeat"),
   );
   const [locked, setLocked] = useState(false);
+  const [loadingNext, setLoadingNext] = useState(false);
+  const [loadError, setLoadError] = useState("");
   const [returnTo] = useState(() => {
     const from = new URLSearchParams(window.location.search).get("from") ?? "";
-    return /^\/(?:practice\/(?:\?|$)|oge\/bank\/(?:\d+\/)?(?:\?|$)|oge\/results\/(?:\?|$))/.test(from) && from.length < 1000 ? from : "";
+    return /^\/(?:practice\/(?:\?|$)|oge\/bank\/(?:\d+\/)?(?:\?|$)|oge\/results\/(?:\?|$))/.test(
+      from,
+    ) && from.length < 1000
+      ? from
+      : "";
   });
   const next = nextExercise(exercise, attempts);
   const expected = exercise.answers[0];
@@ -74,13 +88,27 @@ function Question({
       setLocked(true);
     }
   }
-  function continuePractice() {
-    if (!next) return;
-    setExercise(next);
+  async function continuePractice() {
+    if (!next || loadingNext) return;
+    setLoadingNext(true);
+    setLoadError("");
+    let loaded;
+    try {
+      loaded = await loadExercise(next.id);
+      if (!loaded) throw new Error("Задание не найдено.");
+    } catch {
+      setLoadError(
+        "Следующее задание не загрузилось. Сохранённый ответ доступен; попробуйте ещё раз.",
+      );
+      setLoadingNext(false);
+      return;
+    }
+    setExercise(loaded);
     setAnswer("");
     setGrade(null);
     setLocked(false);
     setRepeat(true);
+    setLoadingNext(false);
     window.history.replaceState(
       null,
       "",
@@ -101,7 +129,10 @@ function Question({
           {
             label: "Практика",
             path:
-              returnTo || `/practice/?exam=${exercise.exam}&topic=${topic.id}`,
+              returnTo ||
+              (exercise.exam === "OGE"
+                ? `/oge/bank/${exercise.taskLine ?? ""}/?topic=${topic.id}`
+                : `/practice/?exam=${exercise.exam}&topic=${topic.id}`),
           },
           {
             label: topic.title,
@@ -134,7 +165,9 @@ function Question({
         <article className="question-card">
           <h2>Условие</h2>
           <p className="question-prompt">{exercise.prompt}</p>
-          {exercise.sourceTextId&&<OriginalPassage id={exercise.sourceTextId}/>}
+          {exercise.sourceTextId && (
+            <OriginalPassage id={exercise.sourceTextId} />
+          )}
           {exercise.text && <div className="source-text">{exercise.text}</div>}
           {exercise.rules && (
             <ul className="rules-list">
@@ -199,7 +232,13 @@ function Question({
           >
             Вернуться к правилу
           </LinkButton>
-          <a href={href(`/practice/?exam=${exercise.exam}&topic=${topic.id}`)}>
+          <a
+            href={href(
+              exercise.exam === "OGE"
+                ? `/oge/bank/${exercise.taskLine ?? ""}/?topic=${topic.id}`
+                : `/practice/?exam=${exercise.exam}&topic=${topic.id}`,
+            )}
+          >
             Все задания по теме
           </a>
         </aside>
@@ -228,51 +267,67 @@ function Question({
             </>
           ) : (
             <>
-              <p>
-                Ваш ответ: <strong>{answer}</strong>. Правильный ответ:{" "}
-                <strong>{expected}</strong>.
-              </p>
-              <div className="explanation-text">
-                {exercise.explanation.split("\n\n").map((paragraph, index) => (
-                  <p key={index}>{paragraph}</p>
-                ))}
-              </div>
-              {exercise.optionExplanations.length > 0 && (
-                <div className="option-analysis">
-                  <h3>Разбор вариантов</h3>
-                  {exercise.optionExplanations.map((explanation, index) => {
-                    const number = String(index + 1),
-                      selected = normalize(
-                        answer,
-                        exercise.responseKind,
-                        exercise.policy,
-                      ).includes(number),
-                      needed = expected.includes(number);
-                    return (
-                      <div key={index}>
-                        <h4>
-                          Вариант {number}:{" "}
-                          {exercise.input==='matching'?'разбор предложения':selected && !needed
-                            ? "выбран лишний вариант"
-                            : !selected && needed
-                              ? "верный вариант пропущен"
-                              : needed
-                                ? "верный вариант"
-                                : "не подходит"}
-                          .
-                        </h4>
-                        <p>{explanation.replace(/^\d\)\s*/u, "")}</p>
-                      </div>
-                    );
-                  })}
-                </div>
+              {exercise.exam === "OGE" ? (
+                <ExerciseFeedback exercise={exercise} answer={answer} />
+              ) : (
+                <>
+                  <p>
+                    Ваш ответ: <strong>{answer}</strong>. Правильный ответ:{" "}
+                    <strong>{expected}</strong>.
+                  </p>
+                  <div className="explanation-text">
+                    {exercise.explanation
+                      .split("\n\n")
+                      .map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                  </div>
+                  {exercise.optionExplanations.length > 0 && (
+                    <div className="option-analysis">
+                      <h3>Разбор вариантов</h3>
+                      {exercise.optionExplanations.map((explanation, index) => {
+                        const number = String(index + 1),
+                          selected = normalize(
+                            answer,
+                            exercise.responseKind,
+                            exercise.policy,
+                          ).includes(number),
+                          needed = expected.includes(number);
+                        return (
+                          <div key={index}>
+                            <h4>
+                              Вариант {number}:{" "}
+                              {exercise.input === "matching"
+                                ? "разбор предложения"
+                                : selected && !needed
+                                  ? "выбран лишний вариант"
+                                  : !selected && needed
+                                    ? "верный вариант пропущен"
+                                    : needed
+                                      ? "верный вариант"
+                                      : "не подходит"}
+                              .
+                            </h4>
+                            <p>{explanation.replace(/^\d\)\s*/u, "")}</p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
+                </>
               )}
               <div className="inline-actions">
                 {next ? (
-                  <button className="button" onClick={continuePractice}>
-                    {grade.status === "correct"
-                      ? "Следующее упражнение"
-                      : "Похожее задание"}
+                  <button
+                    className="button"
+                    onClick={continuePractice}
+                    disabled={loadingNext}
+                  >
+                    {loadingNext
+                      ? "Загружаем задание…"
+                      : grade.status === "correct"
+                        ? "Следующее упражнение"
+                        : "Похожее задание"}
                   </button>
                 ) : (
                   <div className="collection-complete">
@@ -282,7 +337,11 @@ function Question({
                       навыка. Можно повторить правило или выбрать другую тему.
                     </p>
                     <LinkButton
-                      to={`/practice/?exam=${exercise.exam}`}
+                      to={
+                        exercise.exam === "OGE"
+                          ? "/oge/bank/"
+                          : `/practice/?exam=${exercise.exam}`
+                      }
                       secondary
                     >
                       Выбрать другую тему
@@ -307,6 +366,7 @@ function Question({
                   Начать это задание заново
                 </button>
               </div>
+              {loadError && <p role="alert">{loadError}</p>}
             </>
           )}
         </section>
