@@ -14,11 +14,10 @@
       "tests": [
         "tests/content-integrity.test.ts: 29 предметных регрессий прошли",
         "tests/browser/audit-critical.spec.ts: 6 случаев прошли, desktop/mobile.",
-        "tests/browser/audit-critical.spec.ts: финальный production-прогон 14 октября — 6/6 passed; desktop/mobile."
+        "tests/browser/audit-critical.spec.ts: публичный прогон 14 октября — 6/6 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Повторная проверка опубликованных исправлений после развёртывания ещё не выполнена.",
         "Исторический снимок до исправления может содержать повреждённое условие rev1. Он сохраняется без подмены; snapshot-проверка не означает допуска старой редакции к сегодняшней публикации."
       ],
       "changes": "Восстановлены целые словоформы гн…(8)тся / гн…(2)тся, независимо перепроверены 18 позиций и ключи 37 / 257, revision 2. Валидация и допуск проверяют финальную веб-редакцию.",
@@ -31,7 +30,20 @@
       "commits": [
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/audit-critical.spec.ts",
+            "total": 6,
+            "passed": 6,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P0-02",
@@ -45,11 +57,11 @@
         "tests/content-integrity.test.ts: независимые логические решения прошли",
         "tests/browser/audit-critical.spec.ts: 6 случаев прошли, desktop/mobile.",
         "tests/learning-content.test.ts: 19 проверок прошли",
-        "tests/browser/audit-critical.spec.ts: финальный production-прогон 14 октября — 6/6 passed; desktop/mobile."
+        "tests/browser/audit-critical.spec.ts: публичный прогон 14 октября — 6/6 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Публичный урок проверяется после публикации."
+        "Публичный урок проверен автоматизацией; независимое методическое утверждение учитывается отдельно."
       ],
       "changes": "Ключ «Не подтверждено» отличает время наблюдения от времени появления. Перепроверены все пять логических сравнений, включая ошибочное обобщение запрета исследования; revision урока повышена.",
       "files": [
@@ -60,7 +72,20 @@
       "commits": [
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/audit-critical.spec.ts",
+            "total": 6,
+            "passed": 6,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P0-03",
@@ -73,9 +98,9 @@
       "tests": [
         "tests/content-integrity.test.ts: нормативные и ненормативные формы проверены",
         "tests/browser/audit-critical.spec.ts: 6 случаев прошли, desktop/mobile.",
-        "tests/browser/audit-critical.spec.ts: финальный production-прогон 14 октября — 6/6 passed; desktop/mobile."
+        "tests/browser/audit-critical.spec.ts: публичный прогон 14 октября — 6/6 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Это редакционная сверка конкретного задания. Решение Полины и независимая экспертиза всех альтернатив №8–9 ожидаются."
       ],
@@ -88,7 +113,20 @@
       "commits": [
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/audit-critical.spec.ts",
+            "total": 6,
+            "passed": 6,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P0-04",
@@ -99,14 +137,14 @@
       "status": "confirmed-local",
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
-        "tests/oge-storage.test.ts: отказ→ввод→восстановление и конфликт; в составе финального прогона 116/116 unit",
+        "tests/oge-storage.test.ts: отказ→ввод→восстановление и конфликт; в составе финального прогона 129/129 unit",
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Финальный публичный прогон восстановления ещё не выполнен; никогда не записанный текст не переживает принудительное закрытие браузера."
+        "Никогда не записанный текст не переживает принудительное закрытие браузера."
       ],
       "changes": "Текущий ввод отделён от последней успешной основы записи. Отказ обоих хранилищ не повышает saved.updatedAt; повтор записи, копирование, резервный файл и реальный конфликт с сохранением обеих редакций доступны.",
       "files": [
@@ -118,7 +156,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-01",
@@ -132,7 +189,7 @@
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
         "Инвентаризация: 164/800 допущено, 636 авторских кандидатов остаются в очереди"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Официальных заданий — 0. 253 авторских редакции не удовлетворяют требованию массового банка реальных ОГЭ. Сторонние 671 кандидата остаются в карантине; числа не доказывают полноты."
       ],
@@ -147,7 +204,13 @@
       "commits": [
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-02",
@@ -159,9 +222,9 @@
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Разметка всех 253 карточек — editorial-draft по шаблонам. Совпадение слова в неверном утверждении не удостоверяет положительное покрытие. Это внутренние ID проекта, не официальные коды ФИПИ; разметка письма отсутствует."
       ],
@@ -177,7 +240,20 @@
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-03",
@@ -192,7 +268,7 @@
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
         "Отдельное чтение новых параграфов всех 15 глав описано в методическом отчёте"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Полнота учебника по каждому поднавыку и достаточность разнообразия не подтверждены независимым преподавателем. Сплошное чтение всех сторонних учебников не проводилось."
       ],
@@ -207,7 +283,13 @@
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-04",
@@ -220,10 +302,10 @@
       "tests": [
         "tests/learning-content.test.ts: 19 прошли, соответствие exact writing/source revision и минимум 70 слов",
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Образцы проекта не являются официальными эталонами, им не приписаны фиктивные экспертные баллы. Фактическое решение Полины ожидается."
       ],
@@ -238,7 +320,26 @@
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-05",
@@ -249,12 +350,12 @@
       "status": "confirmed-local",
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
-        "tests/oge-writing-review.test.ts: порог 139/140, зачёт содержания, тема и полнота листа; в составе финального прогона 116/116 unit",
+        "tests/oge-writing-review.test.ts: порог 139/140, зачёт содержания, тема и полнота листа; в составе финального прогона 129/129 unit",
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Рубрика основана на проекте 2027, а не объявлена окончательно утверждённой. Роль expert требует введённого реального проверяющего и решения; приложение не устанавливает компетентность человека автоматически."
       ],
@@ -269,7 +370,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-06",
@@ -281,9 +401,9 @@
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
-        "tests/oge-audit.test.ts: metadata и полный банк дают тот же состав, в составе финального прогона 116/116 unit"
+        "tests/oge-audit.test.ts: metadata и полный банк дают тот же состав, в составе финального прогона 129/129 unit"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "73 из 253 текущих карточек не входят в полный пул, 28 — в тестовый. Для полной новой работы остаётся только 5 изложений с аудио; требуется дальнейшее разнообразие согласованных комплектов."
       ],
@@ -298,7 +418,13 @@
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-07",
@@ -312,7 +438,7 @@
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
         "Предметные обоснования 16 отобранных кандидатов и новых авторских комплектов; технические проверки не объявляются преподавательским решением"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "teacherApproval: pending у всех 253 текущих упражнений. Фактического утверждения Полиной нет. Структурный допуск, собственный эталон и проверка редактором не равны независимой преподавательской экспертизе всего банка."
       ],
@@ -329,7 +455,13 @@
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-08",
@@ -342,9 +474,9 @@
       "tests": [
         "scripts/benchmark-bank.mjs: 4/4 локальных сценария, 1000/5000 записей × 1440/390 px; 390 px CPU4×.",
         "Браузерная нагрузка: запуск пяти на y=558–570 px, ширина 390 px",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Фактические испытания со школьниками не проводились; публичная сборка проверяется отдельно; локальные размеры и увеличение проверены."
       ],
@@ -356,7 +488,20 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-09",
@@ -368,12 +513,12 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile.",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Число действий проверено автоматизацией, не наблюдением за учениками; итоговая проверка прямых публичных маршрутов ожидается."
+        "Число действий проверено автоматизацией на публичном сайте, без наблюдения за учениками."
       ],
       "changes": "Все пять направлений ведут к рабочим страницам. Главная и обзор запускают пять заданий одним действием; контекст ОГЭ сохранён в общей навигации, варианты и игры открываются прямо.",
       "files": [
@@ -384,7 +529,26 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-10",
@@ -397,14 +561,14 @@
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/oge-audit.test.ts: сохранённый снимок не меняется после смены каталога, в составе финального прогона 116/116 unit",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/oge-audit.test.ts: сохранённый снимок не меняется после смены каталога, в составе финального прогона 129/129 unit",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Новая публикация банка не переписывает прежний снимок. Публичная проверка итогового просмотра и печати ещё не выполнена."
+        "Новая публикация банка не переписывает прежний снимок; публичные просмотр и вызов печати проверены автоматизацией."
       ],
       "changes": "Итоги восстанавливают исходный снимок задания, общий текст, варианты, пользовательский ответ и разбор; сочинение использует сохранённый выбор 13.1/13.2/13.3. Завершённая работа доступна для просмотра.",
       "files": [
@@ -416,7 +580,32 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-11",
@@ -428,10 +617,10 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/oge-audit.test.ts: формат / предметный ответ, в составе финального прогона 116/116 unit",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/oge-audit.test.ts: формат / предметный ответ, в составе финального прогона 129/129 unit",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Для коротких ответов выводится перечень ограничений, а не независимый морфологический/синтаксический разбор введённой фразы. Новизна по причине зависит от editorial-draft разметки; произвольные синонимы не оцениваются автоматически."
       ],
@@ -446,7 +635,20 @@
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-12",
@@ -459,7 +661,7 @@
       "tests": [
         "tests/learning-content.test.ts: независимые решения и обе позиции ключа в восьми наборах — 19 прошли"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Сбалансированная позиция не удостоверяет освоение навыка. Результат после подсказки или повторной проверки выделяется отдельно; сохранение урока подтверждено финальным production-прогоном."
       ],
@@ -474,7 +676,13 @@
         "09ed6bea6bc3964da15fa9b95d5f731c5f32984c",
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-13",
@@ -487,7 +695,7 @@
       "tests": [
         "tests/learning-content.test.ts: независимые верные и неверные ответы в новых voice/model/yard — 19 прошли"
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "№10: 19 из 23 ключей имеют три позиции; №11: 20 из 23 — две. Корпус остаётся существенно предсказуемым; ненулевые regex-метки эпитета/гиперболы не доказывают достаточного содержательного покрытия."
       ],
@@ -500,7 +708,13 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P1-14",
@@ -511,11 +725,11 @@
       "status": "confirmed-local",
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
-        "tests/oge-audit.test.ts + tests/progress.test.ts: формат и ограничения, в составе финального прогона 116/116 unit",
+        "tests/oge-audit.test.ts + tests/progress.test.ts: формат и ограничения, в составе финального прогона 129/129 unit",
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Грамматическая корректность любого неизвестного синонима не определяется по нормализации. Приняты только редакционно перечисленные варианты."
       ],
@@ -529,7 +743,20 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P1-15",
@@ -540,18 +767,17 @@
       "status": "confirmed-local",
       "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
       "tests": [
-        "tests/progress.test.ts + tests/oge-audit.test.ts: редакции и неизменяемый снимок, в составе финального прогона 116/116 unit",
+        "tests/progress.test.ts + tests/oge-audit.test.ts: редакции и неизменяемый снимок, в составе финального прогона 129/129 unit",
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/idb-history.spec.ts: финальный production-прогон 14 октября — 4/4 passed; desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/oge-legacy-snapshot.test.ts: 4 новых unit прошли в составе 125/125, включая условие №7 до аудита",
-        "tests/browser/legacy-snapshot.spec.ts: новый сценарий старого полного снимка без подмены подготовлен; новый общий прогон ещё выполняется."
+        "tests/browser/idb-history.spec.ts: публичный прогон 14 октября — 4/4 PASS; desktop/mobile.",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/oge-legacy-snapshot.test.ts: 4 новых unit прошли в составе 129/129, включая условие №7 до аудита",
+        "tests/browser/legacy-snapshot.spec.ts: синтетический исторический снимок с условиями до аудита, публичный desktop/mobile — 2/2 PASS."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "История сравнивает id/revision; прежний снимок сохраняется. Историческое знакомство не считается выполнением текущей редакции.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "История сравнивает id/revision; прежний снимок сохраняется. Историческое знакомство не считается выполнением текущей редакции."
       ],
       "changes": "История сравнивает текущие id/revision, прежние работы сохраняются. Компактные ссылки на редакции, ответы и статусы используются фильтрами; добавлен durable-index hook для работ, сохранённых только в IDB. Валидация исторического полного снимка отделена от сегодняшнего допуска публикации: структура, форматы и связи проверяются, но прежнее условие не подменяется текущим.",
       "files": [
@@ -568,8 +794,39 @@
       ],
       "followUp": {
         "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-        "status": "verified-in-final-production-run",
-        "unitSuitePassed": 125
+        "status": "verified-in-ci-and-public",
+        "unitSuitePassed": 129
+      },
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/idb-history.spec.ts",
+            "total": 4,
+            "passed": 4,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/legacy-snapshot.spec.ts",
+            "total": 2,
+            "passed": 2,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
       }
     },
     {
@@ -583,16 +840,16 @@
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
         "scripts/benchmark-bank.mjs: 4/4 локальных сценария, 1000/5000 записей × 1440/390 px; 390 px CPU4×.",
-        "tests/oge-storage.test.ts: в составе финального прогона 116/116 unit",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/oge-backup-bounds.test.ts: 5 новых unit вошли в подтверждённый прогон 125/125; границы количества/UTF-8 и отказ слишком большой работы",
-        "tests/browser/backup-multipart.spec.ts: новый сценарий 201 IDB-работы → части 200+1 подготовлен; общий новый прогон 102 ещё выполняется."
+        "tests/oge-storage.test.ts: в составе финального прогона 129/129 unit",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/oge-backup-bounds.test.ts: 5 новых unit вошли в подтверждённый прогон 129/129; границы количества/UTF-8 и отказ слишком большой работы",
+        "tests/browser/backup-multipart.spec.ts: 201 IDB-работа → части 200+1, публичный desktop/mobile — 2/2 PASS."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "При запрете IDB используется совместимый синхронный путь. 5000 записей нагрузочного корпуса не означают одну проверенную работу на 5000 ответов. Большая история выгружается частями; один снимок сверх границ импорта не разбивается и даёт понятный отказ.",
-        "Новые 201-работа/старый снимок браузерные сценарии выполняются в отдельном прогоне; их завершённый результат ещё не заявлен."
+        "История 201 работы и перенос старого снимка проверены синтетическими данными; это не история реальных учеников."
       ],
       "changes": "Снимки, изменяемые ответы, компактный индекс и контрольные точки разделены в асинхронном IndexedDB. Совместимое зеркало localStorage не переписывает полный снимок при каждом вводе; список истории читает индексы. Экспорт большой истории предварительно формирует независимые части по не более чем 200 работ и 20 000 000 байт UTF-8; перечень частей показывается до скачивания.",
       "files": [
@@ -609,8 +866,33 @@
       ],
       "followUp": {
         "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-        "status": "verified-in-final-production-run",
-        "unitSuitePassed": 125
+        "status": "verified-in-ci-and-public",
+        "unitSuitePassed": 129
+      },
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/backup-multipart.spec.ts",
+            "total": 2,
+            "passed": 2,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
       }
     },
     {
@@ -622,18 +904,17 @@
       "status": "confirmed-local",
       "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
       "tests": [
-        "tests/oge-storage.test.ts + tests/oge-audit.test.ts: валидированный backup и независимость от будущего каталога, в составе финального прогона 116/116 unit",
+        "tests/oge-storage.test.ts + tests/oge-audit.test.ts: валидированный backup и независимость от будущего каталога, в составе финального прогона 129/129 unit",
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/learning-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/oge-backup-bounds.test.ts: 5 новых unit прошли в составе 125/125; каждый полученный файл соответствует тем же ограничениям импорта",
-        "tests/browser/backup-multipart.spec.ts: 201 работа / 2 файла; новый общий браузерный прогон ещё выполняется."
+        "tests/browser/learning-recovery.spec.ts: публичный прогон 14 октября — 10/10 PASS; desktop/mobile.",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/oge-backup-bounds.test.ts: 5 новых unit прошли в составе 129/129; каждый полученный файл соответствует тем же ограничениям импорта",
+        "tests/browser/backup-multipart.spec.ts: 201 работа / 2 файла, публичный desktop/mobile — 2/2 PASS."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Каждый файл: 1–200 работ, до 20 000 000 байт UTF-8; одна работа до 3 000 000 символов сериализованного JSON (String.length). JSON не содержит звуковые байты; старые аудиопути сохранены отдельно.",
-        "Новый общий браузерный прогон 102 ещё выполняется; публичная проверка отдельно после публикации."
+        "Каждый файл: 1–200 работ, до 20 000 000 байт UTF-8; одна работа до 3 000 000 символов сериализованного JSON (String.length). JSON не содержит звуковые байты; старые аудиопути сохранены отдельно."
       ],
       "changes": "Есть копирование ответов, JSON-экспорт полной работы, печать, сохраняемый лист оценки и импорт с проверкой всех снимков до записи; совпавший id создаёт отдельную копию. Каждая часть экспортируется компактным JSON и импортируется отдельно. Один снимок ограничен 3 млн символов сериализованного JSON; превышение/ошибка валидации останавливает подготовку до скачивания. Все потребители download показывают отказ без потери работы.",
       "files": [
@@ -649,8 +930,39 @@
       ],
       "followUp": {
         "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-        "status": "verified-in-final-production-run",
-        "unitSuitePassed": 125
+        "status": "verified-in-ci-and-public",
+        "unitSuitePassed": 129
+      },
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/backup-multipart.spec.ts",
+            "total": 2,
+            "passed": 2,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/learning-recovery.spec.ts",
+            "total": 10,
+            "passed": 10,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
       }
     },
     {
@@ -663,11 +975,11 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "scripts/benchmark-bank.mjs: 4/4 локальных сценария, 1000/5000 записей × 1440/390 px; 390 px CPU4×.",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Время измерялось локально в dev, не на мобильной сети; финальная публикация ожидается."
+        "Время измерялось локально в dev, без оценки задержек мобильной сети."
       ],
       "changes": "Фильтры и доступные значения показывают фактические количества; невозможный размер отключён, есть сброс. Счётчики вычисляются из общей отфильтрованной выборки.",
       "files": [
@@ -676,7 +988,20 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-02",
@@ -688,11 +1013,11 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "scripts/benchmark-bank.mjs: 4/4 локальных сценария, 1000/5000 записей × 1440/390 px; 390 px CPU4×.",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Фильтры, поиск, переход к параграфу и возврат подтверждены финальным локальным production-прогоном; публичные маршруты проверяются после публикации."
+        "Фильтры, поиск, переход к параграфу и возврат подтверждены публичным desktop/mobile-прогоном."
       ],
       "changes": "Семантические фильтры и страница создают отдельные записи истории, поисковый ввод — одну согласованную; popstate восстанавливает запрос/номер/страницу, возврат из карточки сохраняет контекст.",
       "files": [
@@ -703,7 +1028,20 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-03",
@@ -716,12 +1054,11 @@
       "tests": [
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
         "Предметное чтение 15 глав подтверждает наличие материала, не качество всех поисковых результатов",
-        "tests/browser/theory-paragraph-search.spec.ts: финальный production-прогон 14 октября — 2/2 passed; desktop/mobile."
+        "tests/browser/theory-paragraph-search.spec.ts: публичный прогон 14 октября — 2/2 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Поиск отображает действительный текст и якорь параграфа. Совпадение не удостоверяет методическую полноту или релевантность всех результатов.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "Поиск отображает действительный текст и якорь параграфа. Совпадение не удостоверяет методическую полноту или релевантность всех результатов."
       ],
       "changes": "Генерируется индекс текста каждого параграфа, поиск показывает найденный фрагмент и прямой якорь нужного раздела вместо поиска только по названию темы. В поисковом тексте исключены служебные type/kind/id/revision/anchor/path/url; проверены фрагмент правила, osnova#predicate-boundaries, возврат с запросом.",
       "files": [
@@ -734,7 +1071,20 @@
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/theory-paragraph-search.spec.ts",
+            "total": 2,
+            "passed": 2,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-04",
@@ -745,9 +1095,9 @@
       "status": "confirmed-local",
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Письменный ответ ожидает ручной оценки; он не прибавляется к автоматическому тестовому баллу."
       ],
@@ -760,7 +1110,20 @@
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-05",
@@ -772,11 +1135,11 @@
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/oge-writing-review.test.ts: объём и зачёт содержания, в составе финального прогона 116/116 unit",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/oge-writing-review.test.ts: объём и зачёт содержания, в составе финального прогона 129/129 unit",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Достаточный объём не доказывает содержание или грамотность и не создаёт экспертного листа автоматически."
       ],
@@ -790,7 +1153,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-06",
@@ -802,11 +1184,11 @@
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/oge-writing-review.test.ts: другой promptId, неполный лист и снятая фиксация, в составе финального прогона 116/116 unit",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/oge-writing-review.test.ts: другой promptId, неполный лист и снятая фиксация, в составе финального прогона 129/129 unit",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Приложение различает роль self/expert, но не удостоверяет личность или профессиональную квалификацию введённого проверяющего."
       ],
@@ -820,7 +1202,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-07",
@@ -832,10 +1233,10 @@
       "commit": "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Контроль является локальным учебным режимом, не внешним экзаменационным мониторингом; финальная публичная проверка ожидается."
       ],
@@ -848,7 +1249,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-08",
@@ -862,11 +1282,11 @@
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
         "Сравнены реальные размеры пяти MP3/WAV и сохранены прежние пути; базовый аудиосценарий прошёл",
         "tests/browser/oge.spec.ts: 14/14 baseline прошли, включая полный вариант с реальным воспроизведением MP3; слуховая экспертиза не проводилась.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Разборчивость всех новых MP3 на слух и публичное воспроизведение после конвертации ещё не подтверждены. Старый снимок использует свою revision аудио."
       ],
@@ -881,7 +1301,32 @@
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-09",
@@ -894,12 +1339,12 @@
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/oge-games-storage.test.ts: в составе финального прогона 116/116 unit; 35 новых ситуаций прочитаны отдельно",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/oge-games-storage.test.ts: в составе финального прогона 129/129 unit; 35 новых ситуаций прочитаны отдельно",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile.",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Корпус конечен, аналог по конкретной причине зависит от черновой разметки; резервный выбор может идти по теме. Десять случаев на механику не доказывают полноты поднавыков."
       ],
@@ -916,7 +1361,32 @@
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-10",
@@ -928,15 +1398,14 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/oge-games-storage.test.ts: в составе финального прогона 116/116 unit",
-        "tests/browser/learning-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/oge-games-storage.test.ts: в составе финального прогона 129/129 unit",
+        "tests/browser/learning-recovery.spec.ts: публичный прогон 14 октября — 10/10 PASS; desktop/mobile.",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Состояние относится к той же revision; результат после раскрытого пояснения выделяется как повторный, не независимая первая попытка.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "Состояние относится к той же revision; результат после раскрытого пояснения выделяется как повторный, не независимая первая попытка."
       ],
       "changes": "Игра сохраняет незавершённый ввод, выделение, роль и признаки самостоятельности. Урок сохраняет выбранный случай, ответ, checkpoint, открытые шаги и отметки чтения параграфов.",
       "files": [
@@ -949,7 +1418,32 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/learning-recovery.spec.ts",
+            "total": 10,
+            "passed": 10,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-11",
@@ -962,11 +1456,11 @@
       "tests": [
         "tests/oge-games-storage.test.ts: 7 unit прошли отдельным прогоном; сохранённые редакции и исторические записи",
         "tests/browser/game-history.spec.ts: финальные 4/4 прошли, desktop/mobile; immutable v2, другая revision/удалённая ситуация, current stats и пагинация 21→20+1 для v2/v1",
-        "tests/browser/game-history.spec.ts: финальный production-прогон 14 октября — 4/4 passed; desktop/mobile."
+        "tests/browser/game-history.spec.ts: публичный прогон 14 октября — 4/4 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Общий прогон замороженной production-сборки и новая публичная проверка ещё не выполнены. v1 без снимка нельзя восстановить как доказанную текущую редакцию."
+        "v1 без снимка нельзя восстановить как доказанную текущую редакцию."
       ],
       "changes": "Игровой результат хранит revision и полный снимок ситуации. История раскрывает сохранённое условие, действия, ключ и объяснение; другая редакция/удалённая ситуация оценивается по своему снимку и исключается из текущих метрик. Записи v1 без снимка остаются историческими, оба списка показывают по 20 записей.",
       "files": [
@@ -977,7 +1471,20 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/game-history.spec.ts",
+            "total": 4,
+            "passed": 4,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-12",
@@ -989,11 +1496,11 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "tests/browser/storage-recovery.spec.ts + tests/browser/oge-games-recovery.spec.ts: 26 случаев прошли, desktop/mobile.",
-        "tests/oge-games-storage.test.ts: пустое письмо / отсутствие автооценки содержания, в составе финального прогона 116/116 unit",
-        "tests/browser/storage-recovery.spec.ts: финальный production-прогон 14 октября — 18/18 passed; desktop/mobile.",
-        "tests/browser/oge-games-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/oge-games-storage.test.ts: пустое письмо / отсутствие автооценки содержания, в составе финального прогона 129/129 unit",
+        "tests/browser/storage-recovery.spec.ts: публичный прогон 14 октября — 18/18 PASS; desktop/mobile.",
+        "tests/browser/oge-games-recovery.spec.ts: публичный прогон 14 октября — 8/8 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Содержание написанного сжатого текста оценивается вручную; автоматического экспертного балла нет."
       ],
@@ -1007,7 +1514,26 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge-games-recovery.spec.ts",
+            "total": 8,
+            "passed": 8,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/storage-recovery.spec.ts",
+            "total": 18,
+            "passed": 18,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-13",
@@ -1021,9 +1547,9 @@
         "scripts/benchmark-bank.mjs: 4/4 локальных сценария, 1000/5000 записей × 1440/390 px; 390 px CPU4×.",
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
         "Нагрузка: 0 полных условий на главной/компактном банке; одна карточка загружает порцию до 20; история 101 работы использует индекс",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "5000 метаданных занимают около 3,965 МБ, полный поисковый индекс — 4,074 МБ и пока загружается при открытии банка. Адресные условия загружаются целыми порциями, не по одному сетевому файлу на карточку."
       ],
@@ -1039,7 +1565,20 @@
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-14",
@@ -1051,15 +1590,14 @@
       "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
       "tests": [
         "tests/oge-generation-code.test.ts: 10 unit прошли; порядок/тема/фиксированный вариант, старый снимок без чтения нынешнего банка, неизвестные редакции и несогласованные составы отклоняются",
-        "tests/oge-audit.test.ts: код и полный backup после изменения каталога в финальном прогоне 116/116 unit",
-        "tests/browser/learning-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile.",
+        "tests/oge-audit.test.ts: код и полный backup после изменения каталога в финальном прогоне 129/129 unit",
+        "tests/browser/learning-recovery.spec.ts: публичный прогон 14 октября — 10/10 PASS; desktop/mobile.",
         "tests/oge-legacy-snapshot.test.ts: 4 unit прошли; current publication guard по-прежнему отклоняет повреждённую редакцию №7-013 rev1",
-        "tests/browser/legacy-snapshot.spec.ts: браузерный перенос старого полного снимка включён в выполняющийся новый прогон."
+        "tests/browser/legacy-snapshot.spec.ts: синтетический исторический снимок с условиями до аудита, публичный desktop/mobile — 2/2 PASS."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Один seed без фиксированных версий не гарантирует прежний вариант. Старый код без соответствующего снимка требует полной копии; JSON не содержит звуковые байты.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "Один seed без фиксированных версий не гарантирует прежний вариант. Старый код без соответствующего снимка требует полной копии; JSON не содержит звуковые байты."
       ],
       "changes": "Снимок и код состава хранят seed, specificationId, catalogVersion, generationVersion 2 и exact id/revision. Подключены отображение короткой версии, кнопка скачивания кода и восстановление отдельной попытки из генератора. Старый каталог восстанавливается по соответствующему сохранённому снимку; при его отсутствии требуется полная копия. Хеш канонического JSON не зависит от CRLF. Старый полный снимок переносится и воспроизводится в snapshot-режиме проверки, сохраняя даже известную историческую ошибку условия. Это не разрешает такую редакцию к текущей публикации.",
       "files": [
@@ -1081,8 +1619,27 @@
       ],
       "followUp": {
         "commit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-        "status": "verified-in-final-production-run",
-        "unitSuitePassed": 125
+        "status": "verified-in-ci-and-public",
+        "unitSuitePassed": 129
+      },
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/learning-recovery.spec.ts",
+            "total": 10,
+            "passed": 10,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/legacy-snapshot.spec.ts",
+            "total": 2,
+            "passed": 2,
+            "skipped": 0
+          }
+        ]
       }
     },
     {
@@ -1094,14 +1651,13 @@
       "status": "confirmed-local",
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
-        "tests/oge-audit.test.ts: повтор writing/source/audio revision запрещён, в составе финального прогона 116/116 unit",
+        "tests/oge-audit.test.ts: повтор writing/source/audio revision запрещён, в составе финального прогона 129/129 unit",
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют.",
-        "tests/browser/idb-history.spec.ts: финальный production-прогон 14 октября — 4/4 passed; desktop/mobile."
+        "tests/browser/idb-history.spec.ts: публичный прогон 14 октября — 4/4 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Новизна проверяется по revision упражнения, письма, общего текста и аудио. Полные новые комплекты ограничены пятью изложениями.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "Новизна проверяется по revision упражнения, письма, общего текста и аудио. Полные новые комплекты ограничены пятью изложениями."
       ],
       "changes": "Only-new учитывает revision письменного задания, общего текста и аудио раздельно; при исчерпании согласованной группы/изложения выдаёт причину нехватки. История получает компактные ссылки этих материалов.",
       "files": [
@@ -1113,38 +1669,73 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/idb-history.spec.ts",
+            "total": 4,
+            "passed": 4,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-16",
       "priority": "P2",
       "description": "Нет понятного восстановления после неудачной загрузки учебного блока",
       "location": "`app/App.tsx`, `oge/OgeRouter.tsx`, `content/load.ts`, `oge/materials.ts`.",
-      "plan": "границы ошибок у учебных маршрутов, повтор загрузки со сбросом отклонённого кеша и сохранением локального ответа; проверка отказа одного chunk.",
+      "plan": "Стабильные rejected Promise для React.use, понятная граница ошибки и явная полная перезагрузка после проверки соединения; сохранённые работы сохраняются.",
       "status": "confirmed-local",
-      "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
+      "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
       "tests": [
-        "tests/browser/learning-recovery.spec.ts: финальный production-прогон 14 октября — 8/8 passed; desktop/mobile."
+        "tests/browser/learning-recovery.spec.ts: публичный прогон 14 октября — 10/10 PASS; desktop/mobile.",
+        "tests/content-load-recovery.test.ts: 4/4 PASS — стабильность rejected Promise и явный reset зависимостей.",
+        "tests/browser/learning-recovery.spec.ts: отказ урока ≤3 запроса без повторов; отказ quick5 ≤4 запроса без создания работы; после полной перезагрузки оба сценария работают, desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
-        "Повторная загрузка сохраняет записанный снимок, но не гарантирует сохранность текста, который ни разу не был записан.",
-        "Новая публичная проверка выполняется отдельно после развёртывания."
+        "Повторная загрузка сохраняет записанный снимок, но не гарантирует сохранность текста, который ни разу не был записан."
       ],
-      "changes": "ContentBoundary выводит понятный отказ и повтор загрузки. Отклонённые Promise упражнений, уроков и материалов удаляются из кэша; сохранённые работы остаются локально.",
+      "changes": "Кэши упражнений, уроков и материалов сохраняют отклонённый Promise до явного reset/full reload. React.use передаёт стабильную ошибку ContentBoundary без повторных запросов. Императивные загрузки подборки, генератора, следующего упражнения и кода состава показывают кнопку полной перезагрузки.",
       "files": [
         "apps/showcase/src/components/ContentBoundary.tsx",
         "apps/showcase/src/content/load.ts",
         "apps/showcase/src/content/lesson-load.ts",
         "apps/showcase/src/oge/materials.ts",
-        "apps/showcase/src/app/App.tsx"
+        "apps/showcase/src/app/App.tsx",
+        "apps/showcase/src/components/LoadRecovery.tsx",
+        "apps/showcase/src/components/QuickPracticeButton.tsx",
+        "apps/showcase/src/pages/PracticePage.tsx",
+        "apps/showcase/src/oge/BankPage.tsx",
+        "apps/showcase/src/oge/VariantPages.tsx",
+        "tests/content-load-recovery.test.ts",
+        "tests/browser/learning-recovery.spec.ts"
       ],
       "checkedAt": "2026-10-14",
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d",
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
-        "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+        "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
+        "f718fde8b16e085234a4c420948b908f28c863e4"
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/learning-recovery.spec.ts",
+            "total": 10,
+            "passed": 10,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P2-17",
@@ -1158,7 +1749,7 @@
         "Инвентаризация повторена 13 октября; суммы private registry и публичного документа сверены с текущим банком",
         "scripts/report-oge-coverage.ts: 64 плана metadata→полные условия→validateVariant прошли, все 64 якоря параграфов существуют."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Для большинства сторонних PDF прочитаны выборочные страницы и оглавления, не весь текст и не OCR. Пустой PDF и нерелевантная статья изолированы; права и утверждение Полины не подтверждены автоматически."
       ],
@@ -1172,7 +1763,13 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "3a7e2deead91ecd50560dcef13bdabbd81b53e7d"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": []
+      }
     },
     {
       "id": "P3-01",
@@ -1185,9 +1782,9 @@
       "tests": [
         "Прочитан итоговый компонент: один полный список, отдельные существенные различия",
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Краткий разбор конкретной ошибки может повторять относящийся к ней пункт полного списка — это функционально оправданная адресная обратная связь."
       ],
@@ -1199,7 +1796,20 @@
       "commits": [
         "411cedd4ba3a387407d1c0883fea4005e6cbe7ab",
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     },
     {
       "id": "P3-02",
@@ -1211,10 +1821,10 @@
       "commit": "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b",
       "tests": [
         "tests/browser/oge.spec.ts: базовые 14 случаев прошли, desktop/mobile.",
-        "tests/browser/bank-audit.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile.",
-        "tests/browser/oge.spec.ts: финальный production-прогон 14 октября — 14/14 passed; desktop/mobile."
+        "tests/browser/bank-audit.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile.",
+        "tests/browser/oge.spec.ts: публичный прогон 14 октября — 14/14 PASS; desktop/mobile."
       ],
-      "verification": "Проверено в итоговой локальной production-сборке: 125 unit и 101 браузерный сценарий; публичная проверка ожидается.",
+      "verification": "GitHub Actions: 129 unit PASS, 103/104 браузерных случаев PASS, 1 намеренный SKIP. На опубликованной версии: 103 PASS / 1 SKIP / 0 FAIL / 0 flaky; соответствующие проверки перечислены ниже. Это не методическое утверждение корпуса.",
       "limitations": [
         "Редактура интерфейса не заменяет проверку понятности школьниками; реальные испытания не проводились."
       ],
@@ -1227,12 +1837,31 @@
       "checkedAt": "2026-10-14",
       "commits": [
         "57146d7a14c0e1aabba53d4e1078b7bc2d93a30b"
-      ]
+      ],
+      "publicVerification": {
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "actionsRun": "38542871907",
+        "routeCheck": "344 маршрута / 86 ассетов; точное совпадение сборки",
+        "browserFiles": [
+          {
+            "file": "tests/browser/bank-audit.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          },
+          {
+            "file": "tests/browser/oge.spec.ts",
+            "total": 14,
+            "passed": 14,
+            "skipped": 0
+          }
+        ]
+      }
     }
   ],
   "checkedAt": "2026-10-14",
   "statusDefinitions": {
-    "confirmed-local": "Исправление конкретного замечания подтверждено локальными проверками в указанном объёме; не означает успешную новую публикацию или утверждение преподавателем.",
+    "confirmed-local": "Исправление конкретного дефекта подтверждено указанными локальными проверками; сведения об успешной публикации и публичных сценариях записаны отдельно. Статус не означает утверждения материала преподавателем.",
     "partial": "Есть конкретные изменения и проверки, но явные критерии замечания либо новые сценарии ещё не выполнены.",
     "pending-methodical": "Требуется фактическое решение независимого предметного проверяющего/Полины; его нельзя заменить структурной валидацией."
   },
@@ -1241,22 +1870,26 @@
     "final": false,
     "unit": {
       "status": "passed",
-      "passed": 125,
+      "passed": 129,
       "failed": 0,
-      "files": 13
+      "files": 14,
+      "note": "4 новых регрессионных теста стабильности rejected Promise. Все проверки также прошли в GitHub Actions."
     },
     "browser": {
-      "artifact": "artifacts/final-browser-results.json",
+      "status": "passed",
+      "artifact": "artifacts/public-browser-results.json",
+      "environment": "public-github-pages",
+      "baseURL": "https://rudysimp.github.io/polina-russian-site/",
       "stats": {
-        "startTime": "2026-10-14T08:54:12.223Z",
-        "duration": 296233.545,
-        "expected": 101,
+        "startTime": "2026-10-14T12:59:13.084Z",
+        "duration": 307909.218,
+        "expected": 103,
         "skipped": 1,
         "unexpected": 0,
         "flaky": 0
       },
-      "total": 102,
-      "passed": 101,
+      "total": 104,
+      "passed": 103,
       "skipped": 1,
       "failed": 0,
       "flaky": 0,
@@ -1303,8 +1936,8 @@
         },
         {
           "file": "tests/browser/learning-recovery.spec.ts",
-          "total": 8,
-          "passed": 8,
+          "total": 10,
+          "passed": 10,
           "skipped": 0,
           "failed": 0,
           "flaky": 0
@@ -1379,9 +2012,10 @@
       },
       "unit": {
         "status": "passed",
-        "passed": 125,
+        "passed": 129,
         "failed": 0,
-        "files": 13
+        "files": 14,
+        "note": "4 новых регрессионных теста стабильности rejected Promise. Все проверки также прошли в GitHub Actions."
       },
       "nextBuild": {
         "status": "passed"
@@ -1410,8 +2044,7 @@
       "scope": "Технический синтетический корпус; не публиковался и не увеличивает учебный банк."
     },
     "remaining": [
-      "Новая публичная публикация, Actions и прямые маршруты",
-      "Реальное методическое утверждение, права стороннего корпуса, расширение содержательного покрытия и испытания со школьниками"
+      "Независимое методическое утверждение, права стороннего корпуса, расширение содержательного покрытия, прослушивание человеком и испытания со школьниками"
     ],
     "previousCompletedProduction": {
       "unitPassed": 116,
@@ -1422,17 +2055,19 @@
     },
     "latestBrowser": {
       "status": "passed",
-      "artifact": "artifacts/final-browser-results.json",
+      "artifact": "artifacts/public-browser-results.json",
+      "environment": "public-github-pages",
+      "baseURL": "https://rudysimp.github.io/polina-russian-site/",
       "stats": {
-        "startTime": "2026-10-14T08:54:12.223Z",
-        "duration": 296233.545,
-        "expected": 101,
+        "startTime": "2026-10-14T12:59:13.084Z",
+        "duration": 307909.218,
+        "expected": 103,
         "skipped": 1,
         "unexpected": 0,
         "flaky": 0
       },
-      "total": 102,
-      "passed": 101,
+      "total": 104,
+      "passed": 103,
       "skipped": 1,
       "failed": 0,
       "flaky": 0,
@@ -1479,8 +2114,8 @@
         },
         {
           "file": "tests/browser/learning-recovery.spec.ts",
-          "total": 8,
-          "passed": 8,
+          "total": 10,
+          "passed": 10,
           "skipped": 0,
           "failed": 0,
           "flaky": 0
@@ -1544,17 +2179,233 @@
       ]
     },
     "latestNextBuild": {
-      "status": "passed"
-    }
+      "status": "passed",
+      "environment": "GitHub Actions"
+    },
+    "releaseVerified": true
   },
   "publication": {
-    "status": "pending",
-    "commit": null,
-    "actionsRun": null,
+    "status": "verified",
+    "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+    "actionsRun": "38542871907",
+    "actionsURL": "https://github.com/RudySimp/polina-russian-site/actions/runs/38542871907",
     "url": "https://rudysimp.github.io/polina-russian-site/",
-    "verifiedRoutes": [],
-    "plannedCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-    "followUpCommitPending": true
+    "checkedAt": "2026-10-14T12:59:27.604Z",
+    "verifiedRouteCount": 344,
+    "verifiedAssetCount": 86,
+    "currentBuildMatches": true,
+    "verifiedAudioFiles": 10,
+    "browserAudioPlaybacks": [
+      {
+        "viewport": "desktop",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.495152
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.763501
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.761182
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.765604
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.762868
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.629124
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.693076
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.767021
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.759746
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.72862
+      }
+    ],
+    "publicBrowser": {
+      "status": "passed",
+      "artifact": "artifacts/public-browser-results.json",
+      "environment": "public-github-pages",
+      "baseURL": "https://rudysimp.github.io/polina-russian-site/",
+      "stats": {
+        "startTime": "2026-10-14T12:59:13.084Z",
+        "duration": 307909.218,
+        "expected": 103,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 104,
+      "passed": 103,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "perFile": [
+        {
+          "file": "tests/browser/audit-critical.spec.ts",
+          "total": 6,
+          "passed": 6,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/backup-multipart.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/bank-audit.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/game-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/idb-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/learning-recovery.spec.ts",
+          "total": 10,
+          "passed": 10,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/legacy-snapshot.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge-games-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "total": 2,
+          "passed": 1,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/site.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/storage-recovery.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/theory-paragraph-search.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      ]
+    },
+    "checkArtifact": "artifacts/public-check.json",
+    "verifiedRoutes": [
+      "https://rudysimp.github.io/polina-russian-site/",
+      "https://rudysimp.github.io/polina-russian-site/oge/",
+      "https://rudysimp.github.io/polina-russian-site/oge/theory/",
+      "https://rudysimp.github.io/polina-russian-site/oge/bank/",
+      "https://rudysimp.github.io/polina-russian-site/oge/generator/",
+      "https://rudysimp.github.io/polina-russian-site/oge/variants/",
+      "https://rudysimp.github.io/polina-russian-site/oge/games/",
+      "https://rudysimp.github.io/polina-russian-site/oge/results/",
+      "https://rudysimp.github.io/polina-russian-site/theory/analiz-teksta/?exam=OGE",
+      "https://rudysimp.github.io/polina-russian-site/theory/osnova/?exam=OGE",
+      "https://rudysimp.github.io/polina-russian-site/ege/"
+    ]
   },
   "verificationDocument": "docs/verification-2026-10-14.json"
 }

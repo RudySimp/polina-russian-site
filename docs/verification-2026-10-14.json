@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "checkedAt": "2026-10-14",
-  "runtimeCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+  "runtimeCommit": "f718fde8b16e085234a4c420948b908f28c863e4",
   "environment": {
-    "kind": "local-production-preview",
-    "baseURL": "http://127.0.0.1:4173/polina-russian-site/",
+    "kind": "public-github-pages",
+    "baseURL": "https://rudysimp.github.io/polina-russian-site/",
     "projects": [
       "desktop",
       "mobile"
@@ -25,10 +25,10 @@
     },
     "unit": {
       "status": "passed",
-      "passed": 125,
+      "passed": 129,
       "failed": 0,
-      "files": 13,
-      "note": "Добавлены 5 backup-bounds и 4 legacy-snapshot unit; 400 генераций bulk seedloop сохранены, бюджет теста 20 секунд."
+      "files": 14,
+      "note": "4 новых регрессионных теста стабильности rejected Promise. Все проверки также прошли в GitHub Actions."
     },
     "nextBuild": {
       "status": "passed"
@@ -42,17 +42,20 @@
     }
   },
   "browser": {
-    "artifact": "artifacts/final-browser-results.json",
+    "status": "passed",
+    "artifact": "artifacts/public-browser-results.json",
+    "environment": "public-github-pages",
+    "baseURL": "https://rudysimp.github.io/polina-russian-site/",
     "stats": {
-      "startTime": "2026-10-14T08:54:12.223Z",
-      "duration": 296233.545,
-      "expected": 101,
+      "startTime": "2026-10-14T12:59:13.084Z",
+      "duration": 307909.218,
+      "expected": 103,
       "skipped": 1,
       "unexpected": 0,
       "flaky": 0
     },
-    "total": 102,
-    "passed": 101,
+    "total": 104,
+    "passed": 103,
     "skipped": 1,
     "failed": 0,
     "flaky": 0,
@@ -99,8 +102,8 @@
       },
       {
         "file": "tests/browser/learning-recovery.spec.ts",
-        "total": 8,
-        "passed": 8,
+        "total": 10,
+        "passed": 10,
         "skipped": 0,
         "failed": 0,
         "flaky": 0
@@ -160,15 +163,6 @@
         "skipped": 0,
         "failed": 0,
         "flaky": 0
-      }
-    ],
-    "skips": [
-      {
-        "file": "tests/browser/responsive.spec.ts",
-        "title": "Контент, ширины экрана, короткое окно и увеличение до 200%",
-        "project": "mobile",
-        "status": "skipped",
-        "reason": "Дублирующий мобильный проект responsive-набора пропущен намеренно; набор ширин/увеличения выполняется один раз в desktop."
       }
     ]
   },
@@ -359,18 +353,282 @@
     },
     {
       "sha": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-      "title": "fix(oge): export large histories and retain historical conditions"
+      "title": "fix(oge): export large histories and retain historical conditions",
+      "files": [
+        "apps/showcase/src/oge/GenerationDetails.tsx",
+        "apps/showcase/src/oge/ResultsPage.tsx",
+        "apps/showcase/src/oge/SessionPage.tsx",
+        "apps/showcase/src/oge/backup.ts",
+        "apps/showcase/src/oge/engine.ts",
+        "apps/showcase/src/oge/storage.ts",
+        "tests/browser/backup-multipart.spec.ts",
+        "tests/browser/legacy-snapshot.spec.ts",
+        "tests/fixtures/legacy-pre-audit-full-source.json",
+        "tests/fixtures/legacy-pre-audit-full.json",
+        "tests/oge-backup-bounds.test.ts",
+        "tests/oge-legacy-snapshot.test.ts"
+      ]
+    },
+    {
+      "sha": "d663f2719b251918904278225acb35b6436c2f98",
+      "title": "docs(oge): record all audit fixes and final validation",
+      "files": [
+        "docs/audit-fixes.json",
+        "docs/oge-coverage.json",
+        "docs/verification-2026-10-14.json",
+        "\"docs/\\320\\220\\320\\240\\320\\245\\320\\230\\320\\242\\320\\225\\320\\232\\320\\242\\320\\243\\320\\240\\320\\220_\\320\\221\\320\\220\\320\\235\\320\\232\\320\\220_\\320\\230_\\320\\222\\320\\220\\320\\240\\320\\230\\320\\220\\320\\235\\320\\242\\320\\236\\320\\222.md\"",
+        "\"docs/\\320\\234\\320\\220\\320\\242\\320\\240\\320\\230\\320\\246\\320\\220_\\320\\237\\320\\236\\320\\232\\320\\240\\320\\253\\320\\242\\320\\230\\320\\257_\\320\\236\\320\\223\\320\\255.md\"",
+        "\"docs/\\320\\234\\320\\225\\320\\242\\320\\236\\320\\224\\320\\230\\320\\247\\320\\225\\320\\241\\320\\232\\320\\220\\320\\257_\\320\\237\\320\\240\\320\\236\\320\\222\\320\\225\\320\\240\\320\\232\\320\\220.md\"",
+        "\"docs/\\320\\236\\320\\242\\320\\247\\320\\201\\320\\242_\\320\\230\\320\\241\\320\\237\\320\\240\\320\\220\\320\\222\\320\\233\\320\\225\\320\\235\\320\\230\\320\\231_\\320\\220\\320\\243\\320\\224\\320\\230\\320\\242\\320\\220.md\"",
+        "\"docs/\\320\\237\\320\\240\\320\\236\\320\\222\\320\\225\\320\\240\\320\\232\\320\\220_\\320\\237\\320\\236\\320\\233\\320\\254\\320\\227\\320\\236\\320\\222\\320\\220\\320\\242\\320\\225\\320\\233\\320\\254\\320\\241\\320\\232\\320\\230\\320\\245_\\320\\241\\320\\246\\320\\225\\320\\235\\320\\220\\320\\240\\320\\230\\320\\225\\320\\222.md\"",
+        "\"docs/\\320\\240\\320\\225\\320\\225\\320\\241\\320\\242\\320\\240_\\320\\243\\320\\247\\320\\225\\320\\221\\320\\235\\320\\253\\320\\245_\\320\\234\\320\\220\\320\\242\\320\\225\\320\\240\\320\\230\\320\\220\\320\\233\\320\\236\\320\\222.md\"",
+        "scripts/benchmark-bank.mjs",
+        "scripts/check-public.mjs",
+        "scripts/report-oge-coverage.ts"
+      ]
+    },
+    {
+      "sha": "f718fde8b16e085234a4c420948b908f28c863e4",
+      "title": "fix(oge): stabilize failed resource loads and provide explicit recovery",
+      "files": [
+        "apps/showcase/src/components/LoadRecovery.tsx",
+        "apps/showcase/src/components/QuickPracticeButton.tsx",
+        "apps/showcase/src/content/lesson-load.ts",
+        "apps/showcase/src/content/load.ts",
+        "apps/showcase/src/oge/BankPage.tsx",
+        "apps/showcase/src/oge/VariantPages.tsx",
+        "apps/showcase/src/oge/materials.ts",
+        "apps/showcase/src/pages/PracticePage.tsx",
+        "tests/browser/learning-recovery.spec.ts",
+        "tests/content-load-recovery.test.ts"
+      ]
     }
   ],
   "publication": {
-    "status": "pending",
-    "plannedCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
-    "actionsRun": null,
-    "verifiedRoutes": [],
-    "followUpCommitPending": true
+    "status": "verified",
+    "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+    "actionsRun": "38542871907",
+    "actionsURL": "https://github.com/RudySimp/polina-russian-site/actions/runs/38542871907",
+    "url": "https://rudysimp.github.io/polina-russian-site/",
+    "checkedAt": "2026-10-14T12:59:27.604Z",
+    "verifiedRouteCount": 344,
+    "verifiedAssetCount": 86,
+    "currentBuildMatches": true,
+    "verifiedAudioFiles": 10,
+    "browserAudioPlaybacks": [
+      {
+        "viewport": "desktop",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.495152
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.763501
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.761182
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.765604
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.762868
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.629124
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.693076
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.767021
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.759746
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.72862
+      }
+    ],
+    "publicBrowser": {
+      "status": "passed",
+      "artifact": "artifacts/public-browser-results.json",
+      "environment": "public-github-pages",
+      "baseURL": "https://rudysimp.github.io/polina-russian-site/",
+      "stats": {
+        "startTime": "2026-10-14T12:59:13.084Z",
+        "duration": 307909.218,
+        "expected": 103,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 104,
+      "passed": 103,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "perFile": [
+        {
+          "file": "tests/browser/audit-critical.spec.ts",
+          "total": 6,
+          "passed": 6,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/backup-multipart.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/bank-audit.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/game-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/idb-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/learning-recovery.spec.ts",
+          "total": 10,
+          "passed": 10,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/legacy-snapshot.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge-games-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "total": 2,
+          "passed": 1,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/site.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/storage-recovery.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/theory-paragraph-search.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      ]
+    },
+    "checkArtifact": "artifacts/public-check.json",
+    "verifiedRoutes": [
+      "https://rudysimp.github.io/polina-russian-site/",
+      "https://rudysimp.github.io/polina-russian-site/oge/",
+      "https://rudysimp.github.io/polina-russian-site/oge/theory/",
+      "https://rudysimp.github.io/polina-russian-site/oge/bank/",
+      "https://rudysimp.github.io/polina-russian-site/oge/generator/",
+      "https://rudysimp.github.io/polina-russian-site/oge/variants/",
+      "https://rudysimp.github.io/polina-russian-site/oge/games/",
+      "https://rudysimp.github.io/polina-russian-site/oge/results/",
+      "https://rudysimp.github.io/polina-russian-site/theory/analiz-teksta/?exam=OGE",
+      "https://rudysimp.github.io/polina-russian-site/theory/osnova/?exam=OGE",
+      "https://rudysimp.github.io/polina-russian-site/ege/"
+    ]
   },
   "limitations": [
-    "Локальный production-прогон не подтверждает новую публичную публикацию.",
+    "Публичные проверки выполнены автоматизацией в Chrome desktop/mobile; нагрузочные показатели остаются локальными синтетическими измерениями.",
     "Очные испытания со школьниками и фактическое методическое утверждение Полиной не проводились.",
     "Разметка поднавыков остаётся editorial-draft, официальных заданий 0.",
     "Воспроизведение MP3 проверено браузером; разборчивость всех записей человеком на слух не подтверждена."
@@ -522,17 +780,19 @@
   },
   "latestBrowser": {
     "status": "passed",
-    "artifact": "artifacts/final-browser-results.json",
+    "artifact": "artifacts/public-browser-results.json",
+    "environment": "public-github-pages",
+    "baseURL": "https://rudysimp.github.io/polina-russian-site/",
     "stats": {
-      "startTime": "2026-10-14T08:54:12.223Z",
-      "duration": 296233.545,
-      "expected": 101,
+      "startTime": "2026-10-14T12:59:13.084Z",
+      "duration": 307909.218,
+      "expected": 103,
       "skipped": 1,
       "unexpected": 0,
       "flaky": 0
     },
-    "total": 102,
-    "passed": 101,
+    "total": 104,
+    "passed": 103,
     "skipped": 1,
     "failed": 0,
     "flaky": 0,
@@ -579,8 +839,8 @@
       },
       {
         "file": "tests/browser/learning-recovery.spec.ts",
-        "total": 8,
-        "passed": 8,
+        "total": 10,
+        "passed": 10,
         "skipped": 0,
         "failed": 0,
         "flaky": 0
@@ -656,5 +916,401 @@
     ],
     "unitSuitePassed": 125,
     "browserPassed": 101
+  },
+  "ciCheckpoints": [
+    {
+      "id": "38540431408",
+      "url": "https://github.com/RudySimp/polina-russian-site/actions/runs/38540431408",
+      "commit": "d663f2719b251918904278225acb35b6436c2f98",
+      "status": "failed",
+      "environment": "GitHub Actions",
+      "checks": {
+        "typecheck": "passed",
+        "showcaseTypecheck": "passed",
+        "lint": "passed",
+        "unit": {
+          "status": "passed",
+          "passed": 125
+        },
+        "nextBuild": "passed",
+        "showcaseBuild": "passed",
+        "staticValidation": "passed"
+      },
+      "browser": {
+        "total": 102,
+        "passed": 99,
+        "failed": 2,
+        "skipped": 1,
+        "failingFile": "tests/browser/learning-recovery.spec.ts",
+        "failure": "Два сценария сетевого отказа загрузки урока не получили сообщение границы ошибки: автоматическое удаление rejected Promise запускает повторные запросы при React.use.",
+        "observedRequests": "более 2000"
+      },
+      "correction": {
+        "status": "verified-in-ci-and-public",
+        "policy": "Rejected thenable удерживается до явного сброса или полной перезагрузки; автоматического retry при render нет.",
+        "unitPassed": 129,
+        "targetedBrowserPassed": 4,
+        "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+        "successfulRun": "38542871907"
+      },
+      "deployment": "skipped-after-build-failure"
+    },
+    {
+      "id": "38542871907",
+      "url": "https://github.com/RudySimp/polina-russian-site/actions/runs/38542871907",
+      "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+      "status": "passed",
+      "environment": "GitHub Actions Ubuntu / Chromium",
+      "checks": {
+        "typecheck": "passed",
+        "showcaseTypecheck": "passed",
+        "lint": "passed",
+        "unit": {
+          "status": "passed",
+          "passed": 129,
+          "files": 14
+        },
+        "nextBuild": "passed",
+        "showcaseBuild": "passed",
+        "staticValidation": "passed"
+      },
+      "browser": {
+        "total": 104,
+        "passed": 103,
+        "failed": 0,
+        "skipped": 1,
+        "flaky": 0
+      },
+      "deployment": "success"
+    }
+  ],
+  "latestCheckpoint": {
+    "kind": "github-actions-and-public-browser",
+    "id": "38542871907",
+    "status": "passed",
+    "commit": "f718fde8b16e085234a4c420948b908f28c863e4"
+  },
+  "ciFailureDoesNotReplaceLocalCheckpoint": true,
+  "cacheFixVerification": {
+    "status": "ci-and-public-passed",
+    "commit": "f718fde8b16e085234a4c420948b908f28c863e4",
+    "checks": {
+      "typecheck": "passed",
+      "showcaseTypecheck": "passed",
+      "lint": "passed",
+      "unit": {
+        "status": "passed",
+        "passed": 129,
+        "files": 14,
+        "newCacheTests": 4
+      },
+      "showcaseBuild": {
+        "status": "passed",
+        "contentValidation": "passed",
+        "staticValidation": "passed",
+        "routes": 344,
+        "htmlFiles": 345
+      }
+    },
+    "targetedProductionBrowser": {
+      "total": 4,
+      "passed": 4,
+      "scope": "Network abort урока и quick5, desktop/mobile: ограниченное число запросов и явная полная перезагрузка."
+    },
+    "fullCiStatus": "passed",
+    "fullCiBrowser": {
+      "total": 104,
+      "passed": 103,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0
+    },
+    "publicBrowser": {
+      "status": "passed",
+      "artifact": "artifacts/public-browser-results.json",
+      "environment": "public-github-pages",
+      "baseURL": "https://rudysimp.github.io/polina-russian-site/",
+      "stats": {
+        "startTime": "2026-10-14T12:59:13.084Z",
+        "duration": 307909.218,
+        "expected": 103,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 104,
+      "passed": 103,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "perFile": [
+        {
+          "file": "tests/browser/audit-critical.spec.ts",
+          "total": 6,
+          "passed": 6,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/backup-multipart.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/bank-audit.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/game-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/idb-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/learning-recovery.spec.ts",
+          "total": 10,
+          "passed": 10,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/legacy-snapshot.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge-games-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "total": 2,
+          "passed": 1,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/site.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/storage-recovery.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/theory-paragraph-search.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      ]
+    }
+  },
+  "previousCompletedLocalProduction": {
+    "runtimeCommit": "1a034aea9441d4270e02039e9cb852b502d17bb8",
+    "checks": {
+      "typecheck": {
+        "status": "passed"
+      },
+      "showcaseTypecheck": {
+        "status": "passed"
+      },
+      "lint": {
+        "status": "passed"
+      },
+      "unit": {
+        "status": "passed",
+        "passed": 129,
+        "failed": 0,
+        "files": 14,
+        "note": "4 новых регрессионных теста стабильности rejected Promise. Все проверки также прошли в GitHub Actions."
+      },
+      "nextBuild": {
+        "status": "passed"
+      },
+      "showcaseBuild": {
+        "status": "passed",
+        "contentValidation": "passed",
+        "staticValidation": "passed",
+        "routes": 344,
+        "htmlFiles": 345
+      }
+    },
+    "browser": {
+      "artifact": "artifacts/final-browser-results.json",
+      "stats": {
+        "startTime": "2026-10-14T08:54:12.223Z",
+        "duration": 296233.545,
+        "expected": 101,
+        "skipped": 1,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "total": 102,
+      "passed": 101,
+      "skipped": 1,
+      "failed": 0,
+      "flaky": 0,
+      "perFile": [
+        {
+          "file": "tests/browser/audit-critical.spec.ts",
+          "total": 6,
+          "passed": 6,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/backup-multipart.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/bank-audit.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/game-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/idb-history.spec.ts",
+          "total": 4,
+          "passed": 4,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/learning-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/legacy-snapshot.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge-games-recovery.spec.ts",
+          "total": 8,
+          "passed": 8,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/oge.spec.ts",
+          "total": 14,
+          "passed": 14,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "total": 2,
+          "passed": 1,
+          "skipped": 1,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/site.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/storage-recovery.spec.ts",
+          "total": 18,
+          "passed": 18,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        },
+        {
+          "file": "tests/browser/theory-paragraph-search.spec.ts",
+          "total": 2,
+          "passed": 2,
+          "skipped": 0,
+          "failed": 0,
+          "flaky": 0
+        }
+      ],
+      "skips": [
+        {
+          "file": "tests/browser/responsive.spec.ts",
+          "title": "Контент, ширины экрана, короткое окно и увеличение до 200%",
+          "project": "mobile",
+          "status": "skipped",
+          "reason": "Дублирующий мобильный проект responsive-набора пропущен намеренно; набор ширин/увеличения выполняется один раз в desktop."
+        }
+      ]
+    }
   }
 }
