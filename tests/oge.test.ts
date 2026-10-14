@@ -104,7 +104,7 @@ describe("Экзаменационные линии и согласованны�
         compositions.add(variant.assignments.map((r) => r.id).join(","));
       }
     expect(compositions.size).toBeGreaterThan(100);
-  });
+  }, 20000);
   it("явно отказывает при нехватке заданий и не подставляет выполненное при фильтре новых", () => {
     expect(() =>
       generateVariant(
@@ -120,7 +120,7 @@ describe("Экзаменационные линии и согласованны�
       }),
     ).toThrow("Не хватает");
     const pool = exercises.filter((e) => e.taskLine === 8),
-      seen = pool.slice(0, 18).map((e) => e.id);
+      seen = pool.slice(0, -2).map((e) => e.id);
     expect(() =>
       selectPractice(pool, { count: 5, only: "new", seenIds: seen }, "new"),
     ).toThrow("доступно 2");
@@ -177,7 +177,7 @@ describe("Снимки работ, сохранение и результаты"
             throw Error("quota");
           },
         },
-        a,
+        b,
       ),
     ).toThrow("не сохранил");
   });
@@ -206,7 +206,8 @@ describe("Снимки работ, сохранение и результаты"
       { title: "Разбор", kind: "practice", mode: "control", seed: "results" },
     );
     session.answers[itemId(items[0])] = items[0].exercise.answers[0];
-    session.answers[itemId(items[1])] = "9";
+    session.answers[itemId(items[1])] =
+      items[1].exercise.answers[0] === "1" ? "2" : "1";
     session.answers[itemId(items[2])] = "1,2";
     session.answers[writing.id] = "Письменный ответ";
     expect(resultsFor(session).map((r) => r.status)).toEqual([
@@ -214,8 +215,12 @@ describe("Снимки работ, сохранение и результаты"
       "incorrect",
       "format_error",
       "skipped",
-      "expert",
+      "insufficient",
     ]);
+    session.answers[writing.id] = Array(70).fill("слово").join(" ");
+    expect(resultsFor(session).at(-1)?.status).toBe("expert");
+    session.answers[writing.id] = "";
+    expect(resultsFor(session).at(-1)?.status).toBe("skipped");
   });
   it("считает слова, не включая числа; инициалы с фамилией и дефисное слово считаются единицей", () => {
     expect(

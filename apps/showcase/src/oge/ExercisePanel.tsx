@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { Exercise } from "../content/model";
+import subskills from "../content/subskills.json";
 import { AnswerControl } from "../components/AnswerControl";
 import { href } from "../routes";
 import { gradeExercise } from "./engine";
@@ -48,6 +49,44 @@ export function ExerciseStatement({
     </>
   );
 }
+export function answerDifference(exercise: Exercise, answer: string) {
+  const value = answer.replace(/[ ,]/gu, "").trim(),
+    expected = exercise.answers[0] ?? "";
+  if (exercise.responseKind !== "digits_sequence") return [];
+  if (exercise.input === "matching")
+    return [...expected].flatMap((digit, n) =>
+      value[n] === digit
+        ? []
+        : [
+            {
+              position: Number(digit),
+              title: "Правило " + String.fromCharCode(1040 + n),
+              detail:
+                "Вы выбрали предложение " +
+                (value[n] ?? "—") +
+                "; правило объясняет предложение " +
+                digit +
+                ".",
+            },
+          ],
+    );
+  const given = new Set([...value]),
+    wanted = new Set([...expected]);
+  return [...new Set([...value, ...expected])]
+    .filter((d) => given.has(d) !== wanted.has(d))
+    .map((d) => ({
+      position: Number(d),
+      title: (wanted.has(d) ? "Пропущена" : "Лишняя") + " позиция " + d,
+      detail:
+        exercise.optionExplanations[Number(d) - 1] ??
+        [
+          ...exercise.explanation.matchAll(
+            /(?:^|\n)(?:\((\d+)\)|(\d+)\))\s*([^\n]+)/gu,
+          ),
+        ].find((row) => Number(row[1] ?? row[2]) === Number(d))?.[3] ??
+        "Проверьте условие выбора и правило для этой позиции.",
+    }));
+}
 export function ExerciseFeedback({
   exercise,
   answer,
@@ -57,10 +96,34 @@ export function ExerciseFeedback({
   answer: string;
   revealKey?: boolean;
 }) {
-  const grade = gradeExercise(answer, exercise);
+  const grade = gradeExercise(answer, exercise),
+    differences = answerDifference(exercise, answer);
+  const paths = [
+    ...new Set(
+      differences.flatMap(
+        (d) =>
+          exercise.elements?.find((e) => e.position === d.position)?.rulePath ??
+          [],
+      ),
+    ),
+  ];
+  if (!paths.length)
+    paths.push(
+      ...(exercise.rulePaths?.slice(0, 2) ?? [
+        "/theory/" + exercise.topicSlug + "/?exam=OGE#algorithm",
+      ]),
+    );
+  const errorSkill =
+    differences.flatMap(
+      (d) =>
+        exercise.elements?.find((e) => e.position === d.position)?.skillIds ??
+        [],
+    )[0] ?? exercise.skillIds?.find((s) => s !== exercise.skillId);
   return (
     <section
-      className={`feedback ${grade.status === "correct" ? "correct" : "incorrect"}`}
+      className={
+        "feedback " + (grade.status === "correct" ? "correct" : "incorrect")
+      }
       aria-live="polite"
     >
       <h3>
@@ -76,25 +139,70 @@ export function ExerciseFeedback({
       {(grade.status !== "format_error" || revealKey) && (
         <>
           <p>
-            Ваш ответ: <strong>{answer}</strong>. Эталон:{" "}
+            Ваш ответ: <strong>{answer || "не дан"}</strong>. Эталон:{" "}
             <strong>{exercise.answers.join(" / ")}</strong>.
           </p>
-          {exercise.explanation.split("\n\n").map((p, n) => (
-            <p key={n}>{p}</p>
-          ))}
-          {exercise.optionExplanations.length > 0 && (
-            <details>
-              <summary>Разбор каждого варианта</summary>
+          {differences.length > 0 && (
+            <ul className="oge-answer-difference">
+              {differences.map((d) => (
+                <li key={d.title}>
+                  <strong>{d.title}.</strong> {d.detail}
+                  {exercise.input === "matching" && (
+                    <p>{exercise.optionExplanations[d.position - 1]}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+          {exercise.responseKind === "short_text" &&
+            grade.status !== "correct" && (
+              <p>
+                {exercise.taskLine === 9
+                  ? "Проверьте вид связи, зависимое слово и сохранение исходного смысла."
+                  : exercise.taskLine === 8
+                    ? "Проверьте падеж, число, время или степень сравнения, заданные контекстом."
+                    : "Проверьте значение слова именно в данном фрагменте."}{" "}
+                Принимаются перечисленные варианты эталона; произвольные
+                синонимы автоматически не оцениваются.
+              </p>
+            )}
+          <details open={grade.status === "correct"}>
+            <summary>Полный разбор задания</summary>
+            {!exercise.optionExplanations.length &&
+              exercise.explanation
+                .split("\n\n")
+                .map((p, n) => <p key={n}>{p}</p>)}
+            {exercise.optionExplanations.length > 0 && (
               <ol>
                 {exercise.optionExplanations.map((p, n) => (
                   <li key={n}>{p.replace(/^\d\)\s*/u, "")}</li>
                 ))}
               </ol>
-            </details>
-          )}
-          <a href={href(`/theory/${exercise.topicSlug}/?exam=OGE`)}>
-            Повторить правило: {exercise.topicTitle}
-          </a>
+            )}
+          </details>
+          <div className="inline-actions">
+            {paths.slice(0, 3).map((path) => (
+              <a key={path} href={href(path)}>
+                {"Повторить: " +
+                  (subskills.find((skill) => skill.rulePath === path)?.title ??
+                    exercise.topicTitle)}
+              </a>
+            ))}
+            {grade.status === "incorrect" && (
+              <a
+                href={href(
+                  "/oge/bank/" +
+                    (exercise.taskLine ?? "") +
+                    "/?status=new" +
+                    (errorSkill
+                      ? "&skill=" + encodeURIComponent(errorSkill)
+                      : ""),
+                )}
+              >
+                Новая задача на этот навык
+              </a>
+            )}
+          </div>
         </>
       )}
     </section>

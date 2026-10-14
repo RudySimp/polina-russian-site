@@ -96,6 +96,8 @@ export type WorkItem =
   | { kind: "writing"; writing: WritingAssignment };
 export type PracticeSession = {
   schemaVersion: 1;
+  catalogVersion?: string;
+  generationVersion?: 1 | 2;
   id: string;
   title: string;
   kind: WorkKind;
@@ -118,6 +120,18 @@ export type PracticeSession = {
   audioCompletedPlays: Record<string, number>;
   audioPositions: Record<string, number>;
   originVariantId?: string;
+  writingReviews?: Record<string, WritingReview>;
+  endedByTimeout?: boolean;
+};
+export type WritingReview = {
+  contentAccepted?: boolean;
+  checks: number[];
+  note: string;
+  role: "self" | "expert";
+  scores: Record<string, number>;
+  reviewer?: string;
+  reviewedAt?: string;
+  promptId?: string;
 };
 export type GeneratedVariant = PracticeSession & {
   kind: "generated-full" | "generated-test";
@@ -140,6 +154,9 @@ export type InteractiveActivity = {
 };
 export type ActivitySituation = {
   id: string;
+  revision?: number;
+  skillIds?: string[];
+  hint?: string;
   title: string;
   instruction: string;
   text: string;
@@ -149,6 +166,7 @@ export type ActivitySituation = {
     label: string;
     options?: string[];
     expected: string[];
+    explanation?: string;
   }[];
   explanation: string;
   details: string[];

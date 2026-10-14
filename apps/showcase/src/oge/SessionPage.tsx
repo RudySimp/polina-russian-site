@@ -1,10 +1,27 @@
+import { GenerationDetails } from "./GenerationDetails";
 import { useEffect, useRef, useState } from "react";
 import { AnswerControl } from "../components/AnswerControl";
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
 import { href } from "../routes";
 import { createAttempt, type LocalAttempt } from "../progress";
-import { ExerciseFeedback, ExerciseStatement } from "./ExercisePanel";
-import { advanceSession, readSession, saveSession } from "./storage";
+import {
+  ExerciseFeedback,
+  ExerciseStatement,
+  SourcePassage,
+} from "./ExercisePanel";
+import {
+  readSession,
+  saveSession,
+  sessionKeyPrefix,
+  sessionStateKeyPrefix,
+} from "./storage";
+import {
+  readSessionDurably,
+  saveSessionDurably,
+  sessionRevisions,
+} from "./repository";
+import { SessionDraft } from "./draft";
+import { downloadBackup, sessionAnswerText } from "./backup";
 import {
   gradeExercise,
   itemId,
@@ -14,6 +31,9 @@ import {
   wordCount,
 } from "./engine";
 import { specification } from "./specification";
+import { WritingCriteria, LiteracyCriteria } from "./WritingReviewPanel";
+import { literacyReviewId } from "./writing-rubric";
+import { WritingGuide } from "./WritingGuide";
 import type { PracticeSession, WritingAssignment } from "./model";
 
 function initialWork(): PracticeSession | undefined {
@@ -25,66 +45,6 @@ function initialWork(): PracticeSession | undefined {
   } catch {
     return undefined;
   }
-}
-function WritingCriteria({ writing }: { writing: WritingAssignment }) {
-  return (
-    <details className="oge-criteria" open>
-      <summary>Критерии и самопроверка</summary>
-      <p>
-        Минимум — 70 слов. Счётчик помогает проверить объём; содержание, логику,
-        речевые и языковые ошибки оценивает эксперт.
-      </p>
-      <table>
-        <caption>
-          Проект ОГЭ-2027: {writing.line === 1 ? "изложение" : "сочинение"}
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Критерий</th>
-            <th scope="col">Максимум</th>
-          </tr>
-        </thead>
-        <tbody>
-          {(writing.line === 1
-            ? [
-                ["ИК1 · Сохранение микротем", "2"],
-                ["ИК2 · Приёмы сжатия", "2"],
-                ["ИК3 · Логика", "2"],
-              ]
-            : [
-                ["СК1 · Ответ на вопрос", "1"],
-                ["СК2 · Два примера из текста и пояснение каждого", "4"],
-                ["СК3 · Логика", "2"],
-                ["СК4 · Композиция", "1"],
-              ]
-          ).map(([label, score]) => (
-            <tr key={label}>
-              <th scope="row">{label}</th>
-              <td>{score}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <ul>
-        {writing.checklist.map((item) => (
-          <li key={item}>
-            <label>
-              <input type="checkbox" /> {item}
-            </label>
-          </li>
-        ))}
-      </ul>
-      <p>
-        Грамотность и фактическая точность проверяются совместно по двум
-        письменным ответам, максимум — 13 баллов. Для этой проверки нужны
-        суммарные 140 слов; если зачтена только одна работа, в ней самой должно
-        быть не менее 140.
-      </p>
-      <a href={specification.sourceUrl} target="_blank" rel="noreferrer">
-        Документы ФИПИ: модель и критерии
-      </a>
-    </details>
-  );
 }
 function SummaryAudio({
   session,
@@ -99,12 +59,25 @@ function SummaryAudio({
     lastSaved = useRef(0);
   const [playing, setPlaying] = useState(false),
     [error, setError] = useState(""),
+    [position, setPosition] = useState(
+      () => session.audioPositions[writing.audioId ?? ""] ?? 0,
+    ),
     [now, setNow] = useState(() => Date.now());
   const material = session.audio.find((a) => a.id === writing.audioId);
+  const blocked =
+    !!session.completedAt ||
+    (session.mode === "control" && remainingSeconds(session, now) === 0);
   useEffect(() => {
     const interval = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(interval);
   }, []);
+  useEffect(() => {
+    const element = audio.current;
+    return () => { element?.pause(); };
+  }, []);
+  useEffect(() => {
+    if (blocked) audio.current?.pause();
+  }, [blocked]);
   if (!material)
     return (
       <p role="alert">
@@ -136,14 +109,30 @@ function SummaryAudio({
       <audio
         ref={audio}
         src={href(material.path)}
+        controls={session.mode === "learn" && !blocked}
         preload="metadata"
         onLoadedMetadata={() => {
           if (audio.current)
-            audio.current.currentTime =
-              session.audioPositions[material.id] ?? 0;
+            audio.current.currentTime = Math.min(
+              session.audioPositions[material.id] ?? 0,
+              audio.current.duration || material.durationSeconds,
+            );
         }}
+        onPlay={() => {
+          if (blocked || limit || waiting > 0) {
+            audio.current?.pause();
+            return;
+          }
+          setPlaying(true);
+          if (started === completed)
+            update({
+              audioPlays: { ...session.audioPlays, [material.id]: started + 1 },
+            });
+        }}
+        onPause={() => setPlaying(false)}
         onTimeUpdate={() => {
           const position = audio.current?.currentTime ?? 0;
+          setPosition(position);
           if (Math.abs(position - lastSaved.current) >= 5) {
             lastSaved.current = position;
             update({
@@ -178,7 +167,7 @@ function SummaryAudio({
       />
       <button
         className="button secondary"
-        disabled={limit || waiting > 0 || !!session.completedAt}
+        disabled={limit || waiting > 0 || blocked}
         onClick={async () => {
           setError("");
           if (!audio.current) return;
@@ -189,13 +178,6 @@ function SummaryAudio({
             try {
               await audio.current.play();
               setPlaying(true);
-              if (started === completed)
-                update({
-                  audioPlays: {
-                    ...session.audioPlays,
-                    [material.id]: started + 1,
-                  },
-                });
             } catch {
               setError("Браузер не начал воспроизведение. Повторите нажатие.");
             }
@@ -208,6 +190,37 @@ function SummaryAudio({
             ? "Продолжить прослушивание"
             : "Слушать текст"}
       </button>
+      {session.mode === "learn" && (
+        <>
+          <p>
+            Позиция: {Math.floor(position / 60)}:
+            {String(Math.floor(position % 60)).padStart(2, "0")} из{" "}
+            {Math.floor(material.durationSeconds / 60)}:
+            {String(Math.floor(material.durationSeconds % 60)).padStart(2, "0")}
+            . Можно выбрать место на полосе аудиоплеера.
+          </p>
+          <button
+            className="button secondary"
+            disabled={blocked}
+            onClick={async () => {
+              if (!audio.current) return;
+              audio.current.currentTime = Math.max(
+                0,
+                audio.current.currentTime - 10,
+              );
+              try {
+                await audio.current.play();
+              } catch {
+                setError(
+                  "Браузер не начал повтор фрагмента. Нажмите кнопку воспроизведения.",
+                );
+              }
+            }}
+          >
+            Повторить последние 10 секунд
+          </button>
+        </>
+      )}
       <p role="status">
         {session.mode === "control"
           ? `Завершено прослушиваний: ${completed} из 2. Между ними — пауза 5 минут.`
@@ -244,20 +257,161 @@ export function SessionPage({
     [confirm, setConfirm] = useState(false),
     [now, setNow] = useState(() => Date.now());
   const latest = useRef(session);
+  const draft = useRef(session ? new SessionDraft(session) : undefined);
+  const [copyMessage, setCopyMessage] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [loadingWork, setLoadingWork] = useState(true);
+  const [checkpoints, setCheckpoints] = useState<PracticeSession[]>([]);
+  const finishRef = useRef<(timeout?: boolean) => void>(() => {});
+  const [savedAt, setSavedAt] = useState(session?.updatedAt);
+  const [remoteSession, setRemoteSession] = useState<PracticeSession>();
+  useEffect(() => {
+    let canceled = false;
+    const id = new URLSearchParams(window.location.search).get("id") ?? "";
+    void readSessionDurably(id).then((stored) => {
+      if (canceled) return;
+      if (stored) {
+        if (draft.current) draft.current.receive(stored);
+        else draft.current = new SessionDraft(stored);
+        latest.current = draft.current.current;
+        setSession(draft.current.current);
+        setSaveError(draft.current.error);
+        setSavedAt(draft.current.saved.updatedAt);
+        setRemoteSession(draft.current.remote);
+      }
+      setLoadingWork(false);
+    });
+    return () => {
+      canceled = true;
+    };
+  }, []);
   useEffect(() => {
     const interval = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(interval);
   }, []);
   useEffect(() => {
-    const listener = (event: StorageEvent) => {
-      if (latest.current && event.key?.endsWith(latest.current.id))
-        setSaveError(
-          "Работа изменена в другой вкладке. Обновите страницу перед продолжением.",
-        );
+    const receive = async () => {
+      const work = draft.current;
+      if (!work) return;
+      const remote = await readSessionDurably(work.current.id);
+      if (!remote) return;
+      work.receive(remote);
+      latest.current = work.current;
+      setSession(work.current);
+      setSaveError(work.error);
+      setSavedAt(work.saved.updatedAt);
+      setRemoteSession(work.remote);
     };
+    const listener = (event: StorageEvent) => {
+      const id = draft.current?.current.id;
+      if (
+        id &&
+        (event.key === sessionKeyPrefix + id ||
+          event.key === sessionStateKeyPrefix + id)
+      )
+        void receive();
+    };
+    const channel =
+      typeof BroadcastChannel === "undefined"
+        ? undefined
+        : new BroadcastChannel("polina-oge-work-changes");
+    if (channel)
+      channel.onmessage = (event) => {
+        if (event.data === draft.current?.current.id) void receive();
+      };
     window.addEventListener("storage", listener);
-    return () => window.removeEventListener("storage", listener);
+    return () => {
+      window.removeEventListener("storage", listener);
+      channel?.close();
+    };
   }, []);
+  useEffect(() => {
+    function persist() {
+      const work = draft.current;
+      if (!work) return true;
+      const saved = work.save((next, previous) =>
+        saveSession(window.localStorage, next, previous),
+      );
+      setSaveError(work.error);
+      setSavedAt(work.saved.updatedAt);
+      setRemoteSession(work.remote);
+      return saved;
+    }
+    const beforeUnload = (event: BeforeUnloadEvent) => {
+      if (!persist() || draft.current?.dirty) {
+        event.preventDefault();
+        event.returnValue = "";
+      }
+    };
+    const leaving = (event: MouseEvent) => {
+      const link = (event.target as HTMLElement).closest?.("a[href]");
+      if (!link || !draft.current?.dirty) return;
+      const target = new URL(link.getAttribute("href")!, window.location.href);
+      if (
+        target.pathname === window.location.pathname &&
+        target.search === window.location.search
+      )
+        return;
+      if (
+        !persist() &&
+        !window.confirm(
+          "Последние ответы не сохранены. Текст останется доступен только пока эта страница открыта. Покинуть работу?",
+        )
+      ) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    };
+    const visibility = () => {
+      if (document.visibilityState === "hidden") persist();
+    };
+    const interval = setInterval(() => {
+      if (draft.current?.dirty && !draft.current.remote) {
+        setSaving(true);
+        void draft.current.saveAsync(saveSessionDurably).then(() => {
+          setSaveError(draft.current?.error ?? "");
+          setSavedAt(draft.current?.saved.updatedAt);
+          setRemoteSession(draft.current?.remote);
+          setSaving(false);
+        });
+      }
+    }, 10000);
+    window.addEventListener("beforeunload", beforeUnload);
+    document.addEventListener("click", leaving, true);
+    document.addEventListener("visibilitychange", visibility);
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("beforeunload", beforeUnload);
+      document.removeEventListener("click", leaving, true);
+      document.removeEventListener("visibilitychange", visibility);
+    };
+  }, []);
+  useEffect(() => {
+    if (!session || !draft.current?.dirty || draft.current.remote) return;
+    setSaving(true);
+    const timer = setTimeout(() => {
+      void draft.current!.saveAsync(saveSessionDurably).then(() => {
+        setSaveError(draft.current?.error ?? "");
+        setSavedAt(draft.current?.saved.updatedAt);
+        setRemoteSession(draft.current?.remote);
+        setSaving(false);
+      });
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [session]);
+  useEffect(() => {
+    finishRef.current = complete;
+  });
+  useEffect(() => {
+    if (session && !session.completedAt && remainingSeconds(session, now) === 0)
+      finishRef.current(true);
+  }, [session, now]);
+  if (loadingWork && !session)
+    return (
+      <p className="route-loading" role="status">
+        Открываем сохранённую работу…
+      </p>
+    );
   if (!session)
     return (
       <>
@@ -279,16 +433,38 @@ export function SessionPage({
   const seconds = remainingSeconds(session, now),
     expired = seconds === 0 && !session.completedAt;
   function update(patch: Partial<PracticeSession>) {
-    const previous = latest.current!;
-    const next = advanceSession(previous, patch);
-    try {
-      saveSession(window.localStorage, next, previous.updatedAt);
-      setSaveError("");
-    } catch (error) {
-      setSaveError(
-        error instanceof Error ? error.message : "Не удалось сохранить ответы.",
-      );
+    const work = draft.current!;
+    if (patch.answers || patch.selectedPrompts) {
+      const reviews = { ...work.current.writingReviews };
+      for (const item of work.current.items)
+        if (item.kind === "writing") {
+          const id = item.writing.id;
+          if (patch.answers && patch.answers[id] !== work.current.answers[id]) {
+            for (const key of Object.keys(reviews))
+              if (key === id || key.startsWith(`${id}:`))
+                reviews[key] = { ...reviews[key], reviewedAt: undefined };
+            if (reviews[literacyReviewId])
+              reviews[literacyReviewId] = {
+                ...reviews[literacyReviewId],
+                reviewedAt: undefined,
+              };
+          }
+          const before =
+            work.current.selectedPrompts[id] ?? item.writing.prompts[0].id;
+          const after = patch.selectedPrompts?.[id] ?? before;
+          if (before !== after && reviews[literacyReviewId])
+            reviews[literacyReviewId] = {
+              ...reviews[literacyReviewId],
+              reviewedAt: undefined,
+            };
+        }
+      patch = { ...patch, writingReviews: reviews };
     }
+    if (patch.writingReviews && Object.entries(patch.writingReviews).some(([key, review]) => key !== literacyReviewId && review !== work.current.writingReviews?.[key]) && patch.writingReviews[literacyReviewId]) {
+      patch = { ...patch, writingReviews: { ...patch.writingReviews, [literacyReviewId]: { ...patch.writingReviews[literacyReviewId], reviewedAt: undefined } } };
+    }
+    const next = work.edit(patch);
+    setSaving(true);
     latest.current = next;
     setSession(next);
   }
@@ -297,8 +473,9 @@ export function SessionPage({
     setFormatError("");
     document.getElementById("work-question")?.focus();
   }
-  function complete() {
+  function complete(timeout = false) {
     const previous = latest.current!;
+    if (previous.completedAt) return;
     for (const result of resultsFor(previous))
       if (
         result.item.kind === "exercise" &&
@@ -307,22 +484,190 @@ export function SessionPage({
         !previous.checkedIds.includes(itemId(result.item))
       )
         saveAttempt(createAttempt(result.item.exercise, result.answer, false));
-    update({ completedAt: new Date().toISOString() });
+    update({
+      completedAt: new Date().toISOString(),
+      ...(timeout ? { endedByTimeout: true } : {}),
+    });
     setConfirm(false);
     document.getElementById("main")?.scrollIntoView({ behavior: "instant" });
   }
+
   const empty = session.items.filter(
     (item) => !(session.answers[itemId(item)] ?? "").trim(),
+  );
+  const recovery = (
+    <section
+      className="oge-draft-tools"
+      aria-label="Сохранение и резервная копия"
+    >
+      <p role="status">
+        {saving
+          ? "Сохраняем изменения…"
+          : session.updatedAt !== savedAt
+            ? "Есть несохранённые изменения"
+            : "Черновик сохранён"}
+        {" · Последняя запись: "}
+        {savedAt
+          ? new Date(savedAt).toLocaleTimeString("ru-RU")
+          : "ещё не выполнена"}
+      </p>
+      {saveError && (
+        <p className="storage-error" role="alert">
+          {saveError}
+        </p>
+      )}
+      {saveError && (
+        <button
+          className="button"
+          onClick={async () => {
+            const work = draft.current!;
+            setSaving(true);
+            await work.saveAsync(saveSessionDurably);
+            setSaveError(work.error);
+            setSavedAt(work.saved.updatedAt);
+            setRemoteSession(work.remote);
+            setSaving(false);
+          }}
+        >
+          Повторить сохранение
+        </button>
+      )}
+      <button
+        className="button secondary"
+        onClick={() => downloadBackup([draft.current!.current])}
+      >
+        Скачать резервную копию
+      </button>
+      <details>
+        <summary>Предыдущие сохранённые редакции</summary>
+        <p>
+          Контрольные копии создаются примерно раз в минуту и при завершении.
+          Восстановление создаёт отдельную работу и сохраняет текущую редакцию.
+        </p>
+        <button
+          className="button secondary"
+          onClick={async () =>
+            setCheckpoints(await sessionRevisions(session.id))
+          }
+        >
+          Показать редакции
+        </button>
+        {checkpoints.map((checkpoint) => (
+          <div key={checkpoint.updatedAt}>
+            <span>
+              {new Date(checkpoint.updatedAt).toLocaleString("ru-RU")} ·
+              Ответов:{" "}
+              {
+                Object.values(checkpoint.answers).filter((answer) =>
+                  answer.trim(),
+                ).length
+              }
+            </span>
+            <button
+              className="button secondary"
+              onClick={async () => {
+                const copy = {
+                  ...checkpoint,
+                  id: crypto.randomUUID(),
+                  title: "Восстановленная редакция: " + checkpoint.title,
+                };
+                try {
+                  await saveSessionDurably(copy);
+                  window.location.assign(
+                    href(`/oge/practice/session/?id=${copy.id}`),
+                  );
+                } catch (error) {
+                  setSaveError(
+                    error instanceof Error
+                      ? error.message
+                      : "Не удалось восстановить редакцию.",
+                  );
+                }
+              }}
+            >
+              Открыть отдельной работой
+            </button>
+          </div>
+        ))}
+        {!checkpoints.length && (
+          <p>
+            После загрузки здесь появятся доступные контрольные копии. Старые
+            работы до миграции могут иметь только одну редакцию.
+          </p>
+        )}
+      </details>
+      <button
+        className="button secondary"
+        onClick={async () => {
+          try {
+            await navigator.clipboard.writeText(
+              sessionAnswerText(draft.current!.current),
+            );
+            setCopyMessage("Все текущие ответы скопированы.");
+          } catch {
+            setCopyMessage(
+              "Копирование недоступно. Скачайте резервную копию или выделите текст ответов вручную.",
+            );
+          }
+        }}
+      >
+        Скопировать ответы
+      </button>
+      {copyMessage && <p role="status">{copyMessage}</p>}
+      {remoteSession && (
+        <>
+          <p>
+            Редакция другой вкладки:{" "}
+            {new Date(remoteSession.updatedAt).toLocaleString("ru-RU")}. Текущая
+            редакция: {new Date(session.updatedAt).toLocaleString("ru-RU")}.
+          </p>
+          <button
+            className="button secondary"
+            onClick={() =>
+              downloadBackup([draft.current!.current, draft.current!.remote!])
+            }
+          >
+            Скачать обе редакции
+          </button>
+          <button
+            className="button"
+            onClick={async () => {
+              const copy = {
+                ...draft.current!.current,
+                id: crypto.randomUUID(),
+                title: "Отдельный черновик: " + draft.current!.current.title,
+              };
+              try {
+                await saveSessionDurably(copy);
+                draft.current = new SessionDraft(copy);
+                latest.current = copy;
+                setSession(copy);
+                setSaveError("");
+                setSavedAt(copy.updatedAt);
+                setRemoteSession(undefined);
+                const url = new URL(window.location.href);
+                url.searchParams.set("id", copy.id);
+                window.history.replaceState(null, "", url);
+              } catch (error) {
+                setSaveError(
+                  error instanceof Error
+                    ? error.message
+                    : "Не удалось сохранить отдельный черновик.",
+                );
+              }
+            }}
+          >
+            Сохранить текущую редакцию отдельно
+          </button>
+        </>
+      )}
+    </section>
   );
   if (session.completedAt)
     return (
       <>
-        {saveError && (
-          <p className="storage-error" role="alert">
-            {saveError}
-          </p>
-        )}
-        <SessionResults session={session} />
+        {recovery}
+        <SessionResults session={session} update={update} />
       </>
     );
   return (
@@ -342,9 +687,6 @@ export function SessionPage({
         text="ОГЭ-2027, проект модели. Ответы и состав работы сохраняются в этом браузере."
       />
       <div className="oge-work-status">
-        <span role="status">
-          {saveError ? "Сохранение требует внимания" : "Черновик сохранён"}
-        </span>
         <span>
           Ответов: {session.items.length - empty.length} из{" "}
           {session.items.length}
@@ -357,14 +699,10 @@ export function SessionPage({
           </span>
         )}
       </div>
-      {saveError && (
-        <p className="storage-error" role="alert">
-          {saveError}
-        </p>
-      )}
+      {recovery}
       {expired && (
         <p role="alert">
-          Время истекло. Завершите работу, чтобы открыть результат.
+          Время истекло. Ответы фиксируются, открывается разбор.
         </p>
       )}
       <nav className="oge-work-nav" aria-label="Задания работы">
@@ -517,14 +855,24 @@ export function SessionPage({
               <p role="status">
                 Слов: {wordCount(answer)}.{" "}
                 {wordCount(answer) < 70
-                  ? "До рекомендуемого минимума: " +
+                  ? "До обязательного минимума: " +
                     (70 - wordCount(answer)) +
                     "."
                   : ""}{" "}
                 Сложные сокращения и служебные пометы проверьте вручную.
               </p>
             </fieldset>
-            <WritingCriteria writing={item.writing} />
+            <WritingCriteria
+              writing={item.writing}
+              session={session}
+              update={update}
+            />
+            <LiteracyCriteria session={session} update={update} />
+            <WritingGuide
+              key={`${item.writing.id}:${item.writing.revision}`}
+              writing={item.writing}
+              session={session}
+            />
           </>
         )}
         {formatError && (
@@ -560,7 +908,7 @@ export function SessionPage({
               ? `Без ответа осталось заданий: ${empty.length}. Вы можете вернуться и заполнить их.`
               : "Все поля заполнены. После завершения ответы этой попытки будут зафиксированы."}
           </p>
-          <button className="button" onClick={complete}>
+          <button className="button" onClick={() => complete()}>
             Подтвердить завершение
           </button>
           <button
@@ -574,13 +922,26 @@ export function SessionPage({
     </>
   );
 }
-export function SessionResults({ session }: { session: PracticeSession }) {
+export function SessionResults({
+  session,
+  update,
+}: {
+  session: PracticeSession;
+  update: (patch: Partial<PracticeSession>) => void;
+}) {
   const results = resultsFor(session),
     correct = results.filter((r) => r.status === "correct").length,
     incorrect = results.filter((r) => r.status === "incorrect"),
-    skipped = results.filter((r) => r.status === "skipped"),
+    skipped = results.filter(
+      (r) => r.status === "skipped" && r.item.kind === "exercise",
+    ),
     format = results.filter((r) => r.status === "format_error"),
-    expert = results.filter((r) => r.status === "expert");
+    expert = results.filter((r) => r.status === "expert"),
+    missingWriting = results.filter(
+      (r) => r.item.kind === "writing" && r.status === "skipped",
+    ),
+    insufficient = results.filter((r) => r.status === "insufficient"),
+    reviewed = results.filter((r) => r.status === "reviewed");
   return (
     <>
       <Breadcrumbs
@@ -595,6 +956,35 @@ export function SessionResults({ session }: { session: PracticeSession }) {
         title="Результаты и разбор"
         text={session.title}
       />
+      {session.endedByTimeout && (
+        <p role="status">
+          Контрольное время истекло. Ответы зафиксированы автоматически,
+          продолжить эту попытку нельзя.
+        </p>
+      )}
+      <div className="inline-actions oge-print-tools">
+        <button
+          className="button secondary"
+          onClick={() => {
+            document
+              .querySelectorAll<HTMLDetailsElement>(
+                ".oge-result details, .oge-criteria",
+              )
+              .forEach((detail) => {
+                detail.open = true;
+              });
+            window.print();
+          }}
+        >
+          Распечатать полную работу
+        </button>
+      </div>
+      <p>
+        Состав: {session.id.slice(0, 8)} · Код выбора: {session.seed} · Модель:{" "}
+        {session.specificationId}. Задания и редакции взяты из сохранённого
+        снимка этой работы.
+      </p>
+      <GenerationDetails session={session} />
       <div className="stats-grid">
         <div>
           <strong>{correct}</strong>
@@ -615,17 +1005,23 @@ export function SessionResults({ session }: { session: PracticeSession }) {
         формата: {format.length}. Развёрнутых ответов для эксперта:{" "}
         {expert.length}.
       </p>
-      {expert.length > 0 && (
+      <p>
+        Письменная часть: не написано — {missingWriting.length}; меньше 70 слов
+        — {insufficient.length}; требует проверки — {expert.length}; записана
+        оценка эксперта — {reviewed.length}.
+      </p>
+      {results.some((result) => result.item.kind === "writing") && (
         <p className="editorial-note">
-          Изложение, сочинение и общая грамотность ещё не оценены. Общий
-          официальный балл и школьная отметка не вычисляются.
+          Изложение, сочинение и общую грамотность оценивает человек.
+          Сохранённая локальная оценка не является официальным экзаменационным
+          результатом. Общий официальный балл и школьная отметка не вычисляются.
         </p>
       )}
       {incorrect.length > 0 && (
         <div className="inline-actions">
           <button
             className="button"
-            onClick={() => {
+            onClick={async () => {
               try {
                 const ids = incorrect
                   .filter((r) => r.item.kind === "exercise")
@@ -647,8 +1043,10 @@ export function SessionResults({ session }: { session: PracticeSession }) {
                   updatedAt: new Date().toISOString(),
                   completedAt: undefined,
                   durationMinutes: undefined,
+                  writingReviews: undefined,
+                  endedByTimeout: undefined,
                 };
-                saveSession(window.localStorage, repeat);
+                await saveSessionDurably(repeat);
                 window.location.assign(
                   href(`/oge/practice/session/?id=${repeat.id}`),
                 );
@@ -672,63 +1070,110 @@ export function SessionResults({ session }: { session: PracticeSession }) {
         Один результат показывает правильность этой работы. Для вывода об
         освоении навыка нужны разные задания и повторные проверки.
       </p>
-      {results.map((result, n) => (
-        <section className="question-card oge-result" key={itemId(result.item)}>
-          <h2>
-            {session.kind === "practice"
-              ? `Упражнение ${n + 1}`
-              : `Задание № ${itemLine(result.item)}`}
-            :{" "}
-            {result.item.kind === "exercise"
-              ? result.item.exercise.title
-              : result.item.writing.title}
-          </h2>
-          {result.item.kind === "exercise" ? (
-            result.status === "skipped" ? (
+      {results.map((result, n) => {
+        const item = result.item;
+        const sourceId =
+          item.kind === "exercise"
+            ? item.exercise.sourceTextId
+            : item.writing.sourceTextId;
+        const source = session.texts.find((text) => text.id === sourceId);
+        const selected =
+          item.kind === "writing"
+            ? (item.writing.prompts.find(
+                (prompt) =>
+                  prompt.id === session.selectedPrompts[item.writing.id],
+              ) ?? item.writing.prompts[0])
+            : undefined;
+        return (
+          <section
+            className="question-card oge-result"
+            key={itemId(result.item)}
+          >
+            <h2>
+              {session.kind === "practice"
+                ? `Упражнение ${n + 1}`
+                : `Задание № ${itemLine(result.item)}`}
+              :{" "}
+              {result.item.kind === "exercise"
+                ? result.item.exercise.title
+                : result.item.writing.title}
+            </h2>
+            {result.item.kind === "exercise" ? (
               <>
-                <p>
-                  Пропущено. Эталон: {result.item.exercise.answers.join(" / ")}.
+                <ExerciseStatement
+                  exercise={result.item.exercise}
+                  text={source}
+                />
+                <p className="muted">
+                  Сохранённая редакция: {result.item.exercise.id}, revision{" "}
+                  {result.item.exercise.revision}.
                 </p>
-                <p>{result.item.exercise.explanation}</p>
-                <a
-                  href={href(
-                    `/theory/${result.item.exercise.topicSlug}/?exam=OGE`,
-                  )}
-                >
-                  Повторить правило
-                </a>
+                {result.status === "skipped" ? (
+                  <>
+                    <p>
+                      Пропущено. Эталон:{" "}
+                      {result.item.exercise.answers.join(" / ")}.
+                    </p>
+                    <p>{result.item.exercise.explanation}</p>
+                    <a
+                      href={href(
+                        `/theory/${result.item.exercise.topicSlug}/?exam=OGE`,
+                      )}
+                    >
+                      Повторить правило
+                    </a>
+                  </>
+                ) : (
+                  <ExerciseFeedback
+                    exercise={result.item.exercise}
+                    answer={result.answer}
+                    revealKey
+                  />
+                )}
               </>
             ) : (
-              <ExerciseFeedback
-                exercise={result.item.exercise}
-                answer={result.answer}
-                revealKey
-              />
-            )
-          ) : (
-            <>
-              <p>
-                Требуется экспертная проверка · {wordCount(result.answer)} слов.
-              </p>
-              <div className="oge-written-answer">
-                {result.answer || "Письменный ответ не записан."}
-              </div>
-              <WritingCriteria writing={result.item.writing} />
-              <details>
-                <summary>Пример анализа содержания</summary>
-                <p>{result.item.writing.analysis}</p>
-                {result.item.writing.microtopics && (
-                  <ol>
-                    {result.item.writing.microtopics.map((t) => (
-                      <li key={t}>{t}</li>
-                    ))}
-                  </ol>
-                )}
-              </details>
-            </>
-          )}
-        </section>
-      ))}
+              <>
+                {source && <SourcePassage text={source} />}
+                <p className="question-prompt">
+                  Выбранная тема: {selected?.label}
+                </p>
+                <p>{selected?.text}</p>
+                <p>
+                  {result.status === "skipped"
+                    ? "Не написано"
+                    : result.status === "insufficient"
+                      ? "Недостаточный объём: обязательный минимум — 70 слов"
+                      : result.status === "reviewed"
+                        ? "Сохранена локальная оценка эксперта"
+                        : "Требуется экспертная проверка"}{" "}
+                  · {wordCount(result.answer)} слов.
+                </p>
+                <div className="oge-written-answer">
+                  {result.answer || "Письменный ответ не записан."}
+                </div>
+                <WritingCriteria
+                  writing={result.item.writing}
+                  session={session}
+                  update={update}
+                />
+                <WritingGuide writing={result.item.writing} session={session} />
+                <details>
+                  <summary>Пример анализа содержания</summary>
+                  <p>{result.item.writing.analysis}</p>
+                  {result.item.writing.microtopics && (
+                    <ol>
+                      {result.item.writing.microtopics.map((t) => (
+                        <li key={t}>{t}</li>
+                      ))}
+                    </ol>
+                  )}
+                </details>
+              </>
+            )}
+          </section>
+        );
+      })}
+      <LiteracyCriteria session={session} update={update} />
       <div className="inline-actions">
         <LinkButton to="/oge/results/">Все сохранённые работы</LinkButton>
         <LinkButton to="/oge/bank/" secondary>

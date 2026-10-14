@@ -1,3 +1,5 @@
+import type { ExerciseSummary } from "../content/catalog";
+import catalogVersion from "../content/catalog-version.json" with { type: "json" };
 import { gradeAnswer, type Grade } from "../../../../src/lib/grading";
 import type { Exercise } from "../content/model";
 import type {
@@ -9,6 +11,7 @@ import type {
   WritingAssignment,
 } from "./model";
 import { specification, testLines, lineFor } from "./specification";
+import { vowelExerciseIssues } from "../../../../scripts/lib/content-integrity";
 
 export type Materials = {
   exercises: Exercise[];
@@ -25,6 +28,9 @@ export type Selection = {
   only?: "new" | "errors";
   seenIds?: string[];
   errorIds?: string[];
+  seenWritingIds?: string[];
+  seenTextIds?: string[];
+  seenAudioIds?: string[];
 };
 export function shuffled<T>(values: T[], seed: string): T[] {
   let state = 2166136261;
@@ -50,13 +56,73 @@ export function eligible(exercise: Exercise) {
     exercise.examModel.year === specification.year &&
     exercise.examModel.status === specification.status &&
     exercise.reviewStatus === "checked-demo" &&
+    !!exercise.prompt?.trim() &&
+    !!exercise.explanation?.trim() &&
+    !!exercise.provenance?.rightsBasis?.trim() &&
+    exercise.source.rightsStatus !== "unknown" &&
+    ["answer-checked", "explanation-checked", "publication-approved"].every(
+      (stage) =>
+        exercise.reviewStages?.some(
+          (review) =>
+            review.stage === stage &&
+            review.by.trim() &&
+            Number.isFinite(Date.parse(review.at)),
+        ),
+    ) &&
+    (exercise.taskLine !== 7 || vowelExerciseIssues(exercise).length === 0) &&
+    (!exercise.publicationReview ||
+      (exercise.publicationReview.revision === exercise.revision &&
+        [
+          exercise.publicationReview.condition,
+          exercise.publicationReview.key,
+          exercise.publicationReview.alternatives,
+          exercise.publicationReview.explanation,
+          exercise.publicationReview.rights,
+        ].every(Boolean))) &&
     !!exercise.answers.length &&
     exercise.answers.every(
       (answer) => gradeExercise(answer, exercise).status === "correct",
     )
   );
 }
+export function answerPositions(exercise: Exercise): number[] {
+  if (exercise.options.length) return exercise.options.map((_, n) => n + 1);
+  return [
+    ...new Set(
+      [
+        ...((exercise.text ?? "") + exercise.prompt).matchAll(/\((\d+)\)/gu),
+      ].map((m) => Number(m[1])),
+    ),
+  ];
+}
 export function gradeExercise(answer: string, exercise: Exercise): Grade {
+  if (exercise.responseKind === "digits_sequence") {
+    const value = exercise.policy.allowDigitSeparators
+      ? answer.replace(/[ ,]/gu, "").trim()
+      : answer.trim();
+    const positions = answerPositions(exercise);
+    if (
+      /^[1-9]+$/u.test(value) &&
+      positions.length &&
+      [...value].some((char) => !positions.includes(Number(char)))
+    )
+      return {
+        status: "format_error",
+        score: 0,
+        maxScore: exercise.maxScore,
+        message: `В условии доступны только позиции ${positions.join(", ")}. Укажите их номера.`,
+      };
+    if (
+      exercise.input === "matching" &&
+      value.length !== (exercise.rules?.length ?? 3)
+    )
+      return {
+        status: "format_error",
+        score: 0,
+        maxScore: exercise.maxScore,
+        message: `Запишите ${exercise.rules?.length ?? 3} цифры в порядке правил А–Б–В.`,
+      };
+  }
   const line =
     exercise.exam === "OGE" ? lineFor(exercise.taskLine ?? 0) : undefined;
   if (line?.response === "short_text" && !/^[а-яё\s-]+$/iu.test(answer.trim()))
@@ -73,6 +139,11 @@ export function gradeExercise(answer: string, exercise: Exercise): Grade {
       maxScore: exercise.maxScore,
       message: "В этом задании требуется одно слово.",
     };
+  if (line && [9, 12].includes(line.number))
+    return gradeAnswer(answer.replace(/\s/gu, ""), {
+      ...exercise,
+      answers: exercise.answers.map((a) => a.replace(/\s/gu, "")),
+    });
   return gradeAnswer(answer, exercise);
 }
 export function selectPractice(
@@ -85,7 +156,9 @@ export function selectPractice(
       eligible(e) &&
       (!selection.lines?.length || selection.lines.includes(e.taskLine ?? 0)) &&
       (!selection.topicId || e.topicId === selection.topicId) &&
-      (!selection.skillId || e.skillId === selection.skillId) &&
+      (!selection.skillId ||
+        e.skillId === selection.skillId ||
+        e.skillIds?.includes(selection.skillId)) &&
       (!selection.level || e.level === selection.level) &&
       (selection.only !== "new" || !selection.seenIds?.includes(e.id)) &&
       (selection.only !== "errors" || selection.errorIds?.includes(e.id)),
@@ -202,21 +275,51 @@ export function validateVariant(
   } else if (writings.length)
     fail("в тестовой части не должно быть письменных заданий");
 }
-export function generateVariant(
-  materials: Materials,
+type CatalogMaterials = Omit<Materials, "exercises"> & {
+  exercises: ExerciseSummary[];
+};
+function buildVariant(
+  materials: Materials | CatalogMaterials,
   kind: "full" | "test",
   seed: string,
-  selection: Pick<Selection, "only" | "seenIds" | "errorIds" | "level"> = {},
+  selection: Pick<
+    Selection,
+    | "only"
+    | "seenIds"
+    | "errorIds"
+    | "level"
+    | "seenWritingIds"
+    | "seenTextIds"
+    | "seenAudioIds"
+  > = {},
+  full = true,
 ): ExamVariant {
-  const bank = materials.exercises.filter(
-    (e) =>
-      eligible(e) &&
-      e.format === "exam-model" &&
-      (!selection.level || e.level === selection.level) &&
-      (selection.only !== "new" || !selection.seenIds?.includes(e.id)) &&
-      (selection.only !== "errors" || selection.errorIds?.includes(e.id)),
-  );
-  const selected: Exercise[] = [];
+  const bank = materials.exercises
+    .filter(
+      (e) =>
+        (full
+          ? eligible(e as Exercise)
+          : "generationEligible" in e && e.generationEligible === true) &&
+        e.format === "exam-model" &&
+        (!selection.level || e.level === selection.level) &&
+        (selection.only !== "new" || !selection.seenIds?.includes(e.id)) &&
+        (selection.only !== "errors" || selection.errorIds?.includes(e.id)),
+    )
+    .sort((a, b) => a.id.localeCompare(b.id, "en") || a.revision - b.revision);
+  const usedText = (id: string) => {
+    const text = materials.texts.find((t) => t.id === id);
+    return (
+      selection.only === "new" &&
+      (selection.seenTextIds?.includes(id) ||
+        selection.seenTextIds?.includes(`${id}@${text?.revision}`))
+    );
+  };
+  const usedWriting = (writing: WritingAssignment) =>
+    selection.only === "new" &&
+    (selection.seenWritingIds?.includes(writing.id) ||
+      selection.seenWritingIds?.includes(`${writing.id}@${writing.revision}`) ||
+      usedText(writing.sourceTextId));
+  const selected: (Exercise | ExerciseSummary)[] = [];
   for (const group of ["syntax", "reading"] as const) {
     const numbers = testLines
       .filter((line) => line.textGroup === group)
@@ -230,13 +333,14 @@ export function generateVariant(
     ].filter((id): id is string => !!id);
     const compatible = ids.filter(
       (id) =>
+        !usedText(id) &&
         numbers.every((n) =>
           bank.some((e) => e.taskLine === n && e.sourceTextId === id),
         ) &&
         (group !== "reading" ||
           kind !== "full" ||
           materials.writing.some(
-            (w) => w.line === 13 && w.sourceTextId === id,
+            (w) => w.line === 13 && w.sourceTextId === id && !usedWriting(w),
           )),
     );
     const textId = shuffled(compatible, `${seed}:${group}`)[0];
@@ -266,7 +370,16 @@ export function generateVariant(
   const reading = selected.find((e) => e.taskLine === 10)!.sourceTextId;
   const summary = shuffled(
     materials.writing.filter(
-      (w) => w.line === 1 && materials.audio.some((a) => a.id === w.audioId),
+      (w) =>
+        w.line === 1 &&
+        !usedWriting(w) &&
+        materials.audio.some(
+          (a) =>
+            a.id === w.audioId &&
+            (selection.only !== "new" ||
+              (!selection.seenAudioIds?.includes(a.id) &&
+                !selection.seenAudioIds?.includes(`${a.id}@${a.revision}`))),
+        ),
     ),
     `${seed}:summary`,
   )[0];
@@ -305,8 +418,25 @@ export function generateVariant(
     reviewStage: "publication-approved",
     teacherApproval: "pending",
   };
-  validateVariant(result, materials);
+  if (full) validateVariant(result, materials as Materials);
   return result;
+}
+export function generateVariant(
+  materials: Materials,
+  kind: "full" | "test",
+  seed: string,
+  selection: Parameters<typeof buildVariant>[3] = {},
+) {
+  return buildVariant(materials, kind, seed, selection, true);
+}
+/** A plan is checked against complete conditions before a work can be saved. */
+export function generateVariantMetadata(
+  materials: CatalogMaterials,
+  kind: "full" | "test",
+  seed: string,
+  selection: Parameters<typeof buildVariant>[3] = {},
+) {
+  return buildVariant(materials, kind, seed, selection, false);
 }
 export function createSession(
   items: WorkItem[],
@@ -329,6 +459,8 @@ export function createSession(
   );
   return structuredClone({
     schemaVersion: 1,
+    catalogVersion: catalogVersion.version,
+    generationVersion: 2,
     id: crypto.randomUUID(),
     title: options.title,
     kind: options.kind,
@@ -405,6 +537,33 @@ export function remainingSeconds(session: PracticeSession, now = Date.now()) {
         ),
       );
 }
+export function writingStatus(
+  session: PracticeSession,
+  writing: WritingAssignment,
+  answer: string,
+): "skipped" | "insufficient" | "expert" | "reviewed" {
+  if (!answer.trim()) return "skipped";
+  if (wordCount(answer) < specification.writing.minWords) return "insufficient";
+  const promptId = session.selectedPrompts[writing.id] ?? writing.prompts[0].id;
+  const review = session.writingReviews?.[`${writing.id}:${promptId}`];
+  const limits =
+    writing.line === 1
+      ? { ИК1: 2, ИК2: 2, ИК3: 2 }
+      : { СК1: 1, СК2: 4, СК3: 2, СК4: 1 };
+  const checked =
+    review?.role === "expert" &&
+    !!review.reviewer?.trim() &&
+    !!review.reviewedAt &&
+    Number.isFinite(Date.parse(review.reviewedAt)) &&
+    (!review.promptId || review.promptId === promptId) &&
+    Object.entries(limits).every(
+      ([id, max]) =>
+        Number.isInteger(review.scores[id]) &&
+        review.scores[id] >= 0 &&
+        review.scores[id] <= max,
+    );
+  return checked ? "reviewed" : "expert";
+}
 export function resultsFor(session: PracticeSession) {
   return session.items.map((item) => {
     const answer = session.answers[itemId(item)] ?? "";
@@ -418,7 +577,7 @@ export function resultsFor(session: PracticeSession) {
       grade,
       status:
         item.kind === "writing"
-          ? "expert"
+          ? writingStatus(session, item.writing, answer)
           : !answer.trim()
             ? "skipped"
             : grade!.status,
