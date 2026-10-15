@@ -66,7 +66,7 @@ test("резервный файл проверяется до импорта, с
   await expect(
     page.getByRole("status").filter({ hasText: "Сохранённых работ:" }),
   ).toContainText("1");
-  const upload = page.locator("input[type=file]");
+  const upload = page.getByLabel("Восстановить из файла", { exact: true });
   await upload.setInputFiles({
     name: "wrong.json",
     mimeType: "application/json",

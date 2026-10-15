@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { reviewedSourceScope, materialWorkScope } from "./lib/source-scope.mjs";
 import { getDocument } from "pdfjs-dist/legacy/build/pdf.mjs";
 
 // Source files and extracted paragraphs stay private. This command never
@@ -50,9 +51,11 @@ for (const root of roots) {
     const published = linked.filter((candidate) => admitted.has(candidate.id)).length;
     const isBook = root === "Учебники";
     const scope = isBook ? bookScope(filename) : { exam: source?.exam ?? (/ЕГЭ/u.test(filename) ? "EGE-reference" : "OGE"), theme: source?.title?.split("\n")[0]?.slice(0, 200) ?? filename };
+    const reviewedScope = reviewedSourceScope(hash);
     const record = {
       sourceId, filename, path: relative, sha256: hash, bytes: bytes.length,
       format: format.slice(1), ...scope, taskLine: source?.taskLine ?? (Number(filename.match(/^(9|10|11|12)\s+задание/iu)?.[1]) || null),
+      ...(reviewedScope ?? {}),
       containsConditions: source?.practice ?? "not-assessed",
       containsAnswers: source?.answers ?? "not-assessed",
       containsExplanations: source?.explanations ?? "not-assessed",
@@ -62,6 +65,7 @@ for (const root of roots) {
       teacherApproval: "pending", candidates: linked.length, admittedDemo: published,
       inspectedAt, pages: source?.pages ?? null, issues: [],
     };
+    Object.assign(record, materialWorkScope(record));
     if (bytes.length === 0) record.issues.push("Пустой файл: не является рабочим учебным источником.");
     if (record.origin === "third-party-compilation") record.issues.push("671 кандидат в карантине; право публичного воспроизведения не подтверждено.");
     if (record.exam === "EGE-reference") record.issues.push("Материал старшей школы зарегистрирован; ЕГЭ не расширяется.");
@@ -150,12 +154,14 @@ const summary = {
 await fs.writeFile(`${destination}/learning-materials-registry.json`, JSON.stringify({ version: 1, inspectedAt, summary, identicalFiles, records }, null, 2) + "\n");
 await fs.writeFile(`${destination}/editorial-queue.json`, JSON.stringify({ version: 1, generatedAt: inspectedAt, summary, records: queue }, null, 2) + "\n");
 
-let report = `# Реестр учебных материалов\n\nАктуализация: 13 октября 2026 года. Воспроизводимая команда: \`node scripts/inventory-learning-materials.mjs\`. Полные условия, извлечённые страницы и редакторская очередь находятся только в исключённой из Git папке \`private-materials/import\`. Исходные файлы не изменены и не публикуются.\n\nОбнаружены **${summary.files} файлов: ${summary.docx} DOCX и ${summary.pdf} PDF; ${summary.nonempty} непустых и ${summary.empty} пустой**. Все файлы имеют свежий SHA-256. В восьми авторских каталогах ${summary.originalCandidates} кандидатов: ${summary.admittedOriginalDemos} ранее допущенных демонстрационных редакций, **${summary.queuedOriginalCandidates} ждут предметного отбора**. Сторонние ${summary.thirdPartyQuarantined} кандидата остаются в карантине. Содержимое JSON с ключом не считается утверждением учителя.\n\n| Файл / путь | SHA-256 | Байт | Страниц | Область / номер | Условия / ответы / разборы | Право / обработка |\n|---|---|---:|---:|---|---|---|\n`;
+let report = `# Реестр учебных материалов\n\nАктуализация: 15 октября 2026 года. Воспроизводимая команда: \`node scripts/inventory-learning-materials.mjs\`. Полные условия, извлечённые страницы и редакторская очередь находятся только в исключённой из Git папке \`private-materials/import\`. Исходные файлы не изменены и не публикуются.\n\nОбнаружены **${summary.files} файлов: ${summary.docx} DOCX и ${summary.pdf} PDF; ${summary.nonempty} непустых и ${summary.empty} пустой**. Все файлы имеют свежий SHA-256. В авторских каталогах ${summary.originalCandidates} кандидатов: ${summary.admittedOriginalDemos} ранее допущенных демонстрационных редакций, **${summary.queuedOriginalCandidates} ждут предметного отбора**. Сторонние ${summary.thirdPartyQuarantined} кандидата остаются в карантине. Содержимое JSON с ключом не считается утверждением учителя.\n\n| Файл / путь | SHA-256 | Байт | Страниц | Источник / целевое применение | Условия / ответы / разборы | Право / обработка |\n|---|---|---:|---:|---|---|---|\n`;
 const presence = (value) => value === true ? "да" : value === false ? "нет" : "не проверено";
 for (const record of records) {
-  report += `| ${record.path} | \`${record.sha256}\` | ${record.bytes} | ${record.pages ?? "—"} | ${record.exam}${record.taskLine ? ` · № ${record.taskLine}` : ""} | ${presence(record.containsConditions)} / ${presence(record.containsAnswers)} / ${presence(record.containsExplanations)} | ${record.rightsStatus}; ${record.processingStatus} |\n`;
+  report += `| ${record.path} | \`${record.sha256}\` | ${record.bytes} | ${record.pages ?? "—"} | ${record.materialKind}; работа: ${record.workKind}; источник: ${record.sourceExam}, № ${record.sourceTaskNumber ?? "—"}, год ${record.sourceYear ?? "не установлен"}; ОГЭ: ${record.targetOgeLines.join(", ") || "—"}; ${record.courseUse}${record.exclusionReason ? "; " + record.exclusionReason : ""} | ${presence(record.containsConditions)} / ${presence(record.containsAnswers)} / ${presence(record.containsExplanations)} | ${record.rightsStatus}; ${record.processingStatus} |\n`;
 }
-report += `\nДля новых учебников и PDF извлечён **выборочный индекс начальных и последних страниц**, чтобы определить название, оглавление и релевантность. Это не OCR, не сплошное чтение и не банк разрешённых упражнений. Материалы старшей школы зарегистрированы как справочные; расширение ЕГЭ не выполняется. Право воспроизводить сторонние книги не подтверждено: допускается предметная сверка правил и самостоятельные объяснения, без перепечатки текста/сканов.\n\nСтатус методического утверждения Полиной — **ожидается** для каждого источника/демонстрационного упражнения. Пустой PDF имеет статус \`empty-unusable\` и не входит в ${summary.nonempty} непустых файлов. Статья отдельно требует проверки релевантности.\n\nРедакторская очередь сохраняет условие, ключ, объяснение, исходный номер, fingerprint и проверки структуры для всех ${queue.length} оставшихся авторских кандидатов. Отдельно отмечены повторяющиеся варианты ответов, сомнительные грамматические формулировки и необходимость проверки нормативных альтернатив в № 8–9. Ни одна автоматическая отметка не публикует материал.\n`;
+report += `\nВ четырёх таблицах с исходными номерами 9–12 номер относится к исходному материалу, а не к линиям ОГЭ. Заголовки описывают корни, приставки, суффиксы и глагольные окончания; целевое применение — орфография № 6–7 и грамотность ГК1. Экзамен и год источника в прочитанных страницах не названы и не приписываются по номеру. Разметка привязана к SHA-256: замена файла требует нового просмотра.
+
+Для новых учебников и PDF извлечён **выборочный индекс начальных и последних страниц**, чтобы определить название, оглавление и релевантность. Это не OCR, не сплошное чтение и не банк разрешённых упражнений. Материалы старшей школы зарегистрированы как справочные; расширение ЕГЭ не выполняется. Право воспроизводить сторонние книги не подтверждено: допускается предметная сверка правил и самостоятельные объяснения, без перепечатки текста/сканов.\n\nСтатус методического утверждения Полиной — **ожидается** для каждого источника/демонстрационного упражнения. Пустой PDF имеет статус \`empty-unusable\` и не входит в ${summary.nonempty} непустых файлов. Математическая статья исключена из курса русского языка после проверки заголовка, аннотации и ключевых слов первой страницы; источник сохранён.\n\nРедакторская очередь сохраняет условие, ключ, объяснение, исходный номер, fingerprint и проверки структуры для всех ${queue.length} оставшихся авторских кандидатов. Отдельно отмечены повторяющиеся варианты ответов, сомнительные грамматические формулировки и необходимость проверки нормативных альтернатив в № 8–9. Ни одна автоматическая отметка не публикует материал.\n`;
 if (identicalFiles.length) report += `\nСовпадающие по SHA-256 физические файлы: ${identicalFiles.map((group) => group.join(" = ")).join("; ")}. Они учитываются как физические файлы, а не как новый корпус содержания.\n`;
 await fs.writeFile("docs/РЕЕСТР_УЧЕБНЫХ_МАТЕРИАЛОВ.md", report);
 console.log(JSON.stringify(summary));

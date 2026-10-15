@@ -2,6 +2,8 @@ import type { PracticeSession } from "./model";
 import {
   applySessionState,
   listSessions,
+  listSessionSummaries,
+  deleteSession,
   parseSession,
   parseSessionSummary,
   readSession,
@@ -9,11 +11,32 @@ import {
   sessionState,
   sessionSummary,
   SessionStorageError,
+  validateSessionSnapshot,
   type SessionSummary,
 } from "./storage";
 
 const databaseName = "polina-oge-works-v2";
 let database: Promise<IDBDatabase> | undefined;
+// Private copies keep repeated draft writes from serializing the immutable bank.
+const acceptedSnapshots = new Map<string, PracticeSession>();
+function rememberSnapshot(base: PracticeSession) {
+  if (acceptedSnapshots.has(base.id)) return;
+  if (acceptedSnapshots.size >= 8)
+    acceptedSnapshots.delete(acceptedSnapshots.keys().next().value!);
+  acceptedSnapshots.set(base.id, structuredClone(base));
+}
+function checkedWrite(session: PracticeSession) {
+  const base =
+    acceptedSnapshots.get(session.id) ??
+    parseSession(validateSessionSnapshot(session))!;
+  const checked = applySessionState(base, session);
+  if (!checked)
+    throw new SessionStorageError(
+      "invalid",
+      "Состояние работы не прошло проверку. Текущие ответы остаются на странице.",
+    );
+  return { base, checked };
+}
 function openDatabase(): Promise<IDBDatabase> {
   if (database) return database;
   database = new Promise<IDBDatabase>((resolve, reject) => {
@@ -94,6 +117,7 @@ export async function readSessionDurably(
       requestValue(transaction.objectStore("drafts").get(id)),
     ]);
     const checked = base ? parseSession(JSON.stringify(base)) : undefined;
+    if (checked) rememberSnapshot(checked);
     const stored =
       checked && state ? applySessionState(checked, state) : checked;
     const result = newest(legacy, stored);
@@ -110,11 +134,9 @@ async function writeDatabase(
   session: PracticeSession,
   previousUpdatedAt?: string,
 ) {
-  if (!applySessionState(session, sessionState(session)))
-    throw new SessionStorageError(
-      "invalid",
-      "Состояние работы не прошло проверку. Текущие ответы остаются на странице.",
-    );
+  // A rejected initial snapshot must not open a database or enter any transaction.
+  const { base, checked } = checkedWrite(session);
+  session = checked;
   const db = await openDatabase();
   const transaction = db.transaction(
     ["snapshots", "drafts", "index", "revisions"],
@@ -144,7 +166,7 @@ async function writeDatabase(
       keyRequest.onerror = () => reject(keyRequest.error);
       keyRequest.onsuccess = () => {
         if (keyRequest.result === undefined)
-          transaction.objectStore("snapshots").put(session, session.id);
+          transaction.objectStore("snapshots").put(base, session.id);
         // Recovery checkpoints are separate from the immutable assignment snapshot.
         if (
           existing &&
@@ -190,6 +212,8 @@ async function writeDatabase(
       );
     throw error;
   }
+  rememberSnapshot(base);
+  return session;
 }
 export async function saveSessionDurably(
   session: PracticeSession,
@@ -202,19 +226,22 @@ export async function saveSessionDurably(
       "В другой вкладке сохранена новая редакция. Сохраните обе версии или отдельный черновик.",
       local,
     );
+  let written: PracticeSession;
   try {
-    await writeDatabase(session, previousUpdatedAt);
+    written = await writeDatabase(session, previousUpdatedAt);
   } catch (error) {
-    if (error instanceof SessionStorageError && error.code === "conflict")
+    if (error instanceof SessionStorageError && error.code !== "unavailable")
       throw error;
     // Browsers that deny IndexedDB retain the compatible, split localStorage path.
     saveSession(window.localStorage, session, previousUpdatedAt);
+    const accepted = localWork(session.id);
+    if (accepted) rememberSnapshot(accepted);
     announce(session.id);
     return;
   }
   // Mirror for older routes/tabs. A failed mirror does not undo a committed IDB write.
   try {
-    saveSession(window.localStorage, session, local?.updatedAt);
+    saveSession(window.localStorage, written, local?.updatedAt);
   } catch {
     /* Durable IndexedDB still holds every answer. */
   }
@@ -245,7 +272,6 @@ export async function listSessionsDurably(): Promise<PracticeSession[]> {
   );
 }
 export async function listSessionSummariesDurably(): Promise<SessionSummary[]> {
-  const { listSessionSummaries } = await import("./storage");
   const summaries = new Map<string, SessionSummary>();
   try {
     for (const summary of listSessionSummaries(window.localStorage))
@@ -284,7 +310,6 @@ export async function listSessionSummariesDurably(): Promise<SessionSummary[]> {
   );
 }
 export async function deleteSessionDurably(id: string) {
-  const { deleteSession } = await import("./storage");
   let db: IDBDatabase | undefined;
   try {
     db = await openDatabase();
@@ -312,6 +337,7 @@ export async function deleteSessionDurably(id: string) {
     await finish;
   }
   deleteSession(window.localStorage, id);
+  acceptedSnapshots.delete(id);
   announce(id);
 }
 

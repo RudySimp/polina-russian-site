@@ -134,7 +134,7 @@
     "topicId": "punktuacionnye-pravila",
     "line": 4,
     "title": "Обособление сравнительного оборота",
-    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
     "pattern": "сравнительн|сравнение",
     "errorType": "comparative",
     "classification": "project"
@@ -145,7 +145,7 @@
     "line": 4,
     "title": "Тире в бессоюзном предложении",
     "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-    "pattern": "бессоюзн.{0,140}тире|противопостав|результат|быстрая смена",
+    "pattern": "бессоюзн.{0,140}тире",
     "errorType": "asyndetic-dash",
     "classification": "project"
   },
@@ -155,7 +155,7 @@
     "line": 4,
     "title": "Двоеточие в бессоюзном предложении",
     "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-    "pattern": "двоеточ|пояснен|причин",
+    "pattern": "бессоюзн.{0,140}двоеточ",
     "errorType": "asyndetic-colon",
     "classification": "project"
   },
@@ -164,8 +164,8 @@
     "topicId": "punktuacionnye-pravila",
     "line": 4,
     "title": "Знаки при однородных членах",
-    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-    "pattern": "однородн|повторяющ|обобщающ",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+    "pattern": "однородн|обобщающ",
     "errorType": "homogeneous",
     "classification": "project"
   },
@@ -175,7 +175,7 @@
     "line": 4,
     "title": "Обособление определений и обстоятельств",
     "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-    "pattern": "обособл|причастн|деепричастн",
+    "pattern": "причастн|деепричаст|обстоятельство с предлогом несмотря",
     "errorType": "detached",
     "classification": "project"
   },
@@ -637,6 +637,106 @@
     "rulePath": "/theory/sochinenie/?exam=OGE#composition",
     "pattern": "композиц|логик",
     "errorType": "composition",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.coordinate",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Запятая между частями сложносочинённого предложения",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+    "pattern": "сложносочин",
+    "errorType": "coordinate",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.subordinate",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Запятая между главной и придаточной частями",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+    "pattern": "сложноподчин|между главной и придаточной",
+    "errorType": "subordinate",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.asyndetic-comma",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Запятая при бессоюзном перечислении",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+    "pattern": "бессоюзн.{0,140}(?:перечислен|запятая)",
+    "errorType": "asyndetic-comma",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.address",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Знаки при обращении",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+    "pattern": "обращение",
+    "errorType": "address",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.introductory",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Знаки при вводных словах",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+    "pattern": "вводн",
+    "errorType": "introductory",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.ellipsis",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Тире на месте пропущенного члена",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+    "pattern": "неполном предложении|пропущенного члена",
+    "errorType": "ellipsis",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.clarification",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Уточняющие члены предложения",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+    "pattern": "уточняющ",
+    "errorType": "clarification",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.apposition",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Обособленное и пояснительное приложение",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+    "pattern": "приложение",
+    "errorType": "apposition",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.insertion",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Вставная конструкция",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+    "pattern": "вставная конструкция",
+    "errorType": "insertion",
+    "classification": "project"
+  },
+  {
+    "id": "OGE:4.direct-speech",
+    "topicId": "punktuacionnye-pravila",
+    "line": 4,
+    "title": "Знаки при прямой речи",
+    "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+    "pattern": "прямой реч",
+    "errorType": "direct-speech",
     "classification": "project"
   }
 ]

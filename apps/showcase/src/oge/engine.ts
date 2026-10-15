@@ -1,3 +1,6 @@
+import { publicationAdmission } from "../content/publication-admission.mjs";
+import { reviewMatchesAnswer, writingWordCount } from "./writing-review";
+export { wordCount } from "./word-count";
 import type { ExerciseSummary } from "../content/catalog";
 import catalogVersion from "../content/catalog-version.json" with { type: "json" };
 import { gradeAnswer, type Grade } from "../../../../src/lib/grading";
@@ -70,15 +73,7 @@ export function eligible(exercise: Exercise) {
         ),
     ) &&
     (exercise.taskLine !== 7 || vowelExerciseIssues(exercise).length === 0) &&
-    (!exercise.publicationReview ||
-      (exercise.publicationReview.revision === exercise.revision &&
-        [
-          exercise.publicationReview.condition,
-          exercise.publicationReview.key,
-          exercise.publicationReview.alternatives,
-          exercise.publicationReview.explanation,
-          exercise.publicationReview.rights,
-        ].every(Boolean))) &&
+    publicationAdmission(exercise) !== null &&
     !!exercise.answers.length &&
     exercise.answers.every(
       (answer) => gradeExercise(answer, exercise).status === "correct",
@@ -523,12 +518,6 @@ export const itemId = (item: WorkItem) =>
   item.kind === "exercise" ? item.exercise.id : item.writing.id;
 export const itemLine = (item: WorkItem) =>
   item.kind === "exercise" ? (item.exercise.taskLine ?? 0) : item.writing.line;
-export const wordCount = (text: string) =>
-  (
-    text
-      .replace(/(?:\p{Lu}\.\s*){1,2}(\p{Lu}\p{Ll}+)/gu, "$1")
-      .match(/\p{L}+(?:[-’']\p{L}+)*/gu) ?? []
-  ).length;
 export function remainingSeconds(session: PracticeSession, now = Date.now()) {
   return session.durationMinutes === undefined
     ? undefined
@@ -548,7 +537,10 @@ export function writingStatus(
   answer: string,
 ): "skipped" | "insufficient" | "expert" | "reviewed" {
   if (!answer.trim()) return "skipped";
-  if (wordCount(answer) < specification.writing.minWords) return "insufficient";
+  if (
+    writingWordCount(session, writing, answer) < specification.writing.minWords
+  )
+    return "insufficient";
   const promptId = session.selectedPrompts[writing.id] ?? writing.prompts[0].id;
   const review = session.writingReviews?.[`${writing.id}:${promptId}`];
   const limits =
@@ -560,7 +552,7 @@ export function writingStatus(
     !!review.reviewer?.trim() &&
     !!review.reviewedAt &&
     Number.isFinite(Date.parse(review.reviewedAt)) &&
-    (!review.promptId || review.promptId === promptId) &&
+    reviewMatchesAnswer(session, writing, review, answer) &&
     Object.entries(limits).every(
       ([id, max]) =>
         Number.isInteger(review.scores[id]) &&

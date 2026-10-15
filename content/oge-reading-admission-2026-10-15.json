@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "mode": "checked-demo",
+  "hashEncoding": "compact-json-v1",
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+  "teacherApproval": "pending",
+  "files": [
+    {
+      "path": "content/oge-reading-batch-2026-10-15.json",
+      "sha256": "822b3ce5f6628be11aec3535e181ef57ed816e1838afcab64068ab671363b58f"
+    }
+  ],
+  "keys": {
+    "reading-audit-subtitles": {
+      "10": [
+        "25"
+      ],
+      "11": [
+        "145"
+      ],
+      "12": [
+        "робко",
+        "несмело"
+      ]
+    },
+    "reading-audit-printproof": {
+      "10": [
+        "4"
+      ],
+      "11": [
+        "1235"
+      ],
+      "12": [
+        "неторопливо"
+      ]
+    }
+  },
+  "counts": {
+    "sourceTexts": 2,
+    "testExercises": 6,
+    "writingAssignments": 2,
+    "prompts": 6,
+    "official": 0
+  },
+  "limitations": [
+    "Редакторский допуск checked-demo, не утверждение Полиной и не официальный КИМ.",
+    "Учебные сочинения в отдельном writing batch пока ожидают независимого чтения и сюда не допущены.",
+    "Две новые группы повышают разнообразие сюжетов и длины ключей; большой корпус и методическую полноту они не заменяют."
+  ]
+}

@@ -38,7 +38,18 @@ const situationSchema = z.object({
   skillIds: z.array(z.string()).optional(),
   hint: text.optional(),
 });
-const draftSchema = z.object({
+const controlMetadata = {
+  mode: z.enum(["practice", "control"]).optional(),
+  controlFrom: z
+    .object({
+      situationId: z.string(),
+      revision: z.number().int().positive(),
+      matchedSkillIds: z.array(z.string()).max(20),
+    })
+    .optional(),
+};
+export const gameDraftSchema = z.object({
+  ...controlMetadata,
   schemaVersion: z.literal(2),
   activityId: z.string(),
   situationId: z.string(),
@@ -50,8 +61,9 @@ const draftSchema = z.object({
   role: z.enum(["subject", "predicate"]),
   updatedAt: z.iso.datetime(),
 });
-export type GameDraft = z.infer<typeof draftSchema>;
-const recordSchema = z.object({
+export type GameDraft = z.infer<typeof gameDraftSchema>;
+export const gameRecordSchema = z.object({
+  ...controlMetadata,
   schemaVersion: z.literal(2),
   id: z.string().uuid(),
   activityId: z.string(),
@@ -69,7 +81,7 @@ const recordSchema = z.object({
   firstIndependent: z.boolean(),
   assisted: z.boolean(),
 });
-export type GameRecord = z.infer<typeof recordSchema>;
+export type GameRecord = z.infer<typeof gameRecordSchema>;
 export type GameHistoryRecord = GameRecord & {
   correct: boolean;
   informationCorrect: boolean;
@@ -95,7 +107,7 @@ export function readGameDraft(
   situation: ActivitySituation,
 ): GameDraft | undefined {
   try {
-    const parsed = draftSchema.safeParse(
+    const parsed = gameDraftSchema.safeParse(
       JSON.parse(storage.getItem(key(activityId, situation)) ?? "null"),
     );
     if (
@@ -114,7 +126,7 @@ export function readGameDraft(
   }
 }
 export function saveGameDraft(storage: LocalStorage, draft: GameDraft) {
-  draftSchema.parse(draft);
+  gameDraftSchema.parse(draft);
   storage.setItem(
     `${draftPrefix}${draft.activityId}:${draft.situationId}:${draft.revision}`,
     JSON.stringify(draft),
@@ -182,7 +194,7 @@ export function readGameRecords(
     const raw: unknown = JSON.parse(storage.getItem(gameRecordsKey) ?? "[]");
     if (Array.isArray(raw))
       for (const value of raw) {
-        const parsed = recordSchema.safeParse(value);
+        const parsed = gameRecordSchema.safeParse(value);
         if (
           !parsed.success ||
           parsed.data.snapshot.situation.id !== parsed.data.situationId ||
@@ -238,7 +250,7 @@ export function readGameRecords(
   return { records, historic, damaged };
 }
 export function saveGameRecord(storage: LocalStorage, record: GameRecord) {
-  recordSchema.parse(record);
+  gameRecordSchema.parse(record);
   const raw = storage.getItem(gameRecordsKey);
   const previous: unknown = raw ? JSON.parse(raw) : [];
   if (!Array.isArray(previous))

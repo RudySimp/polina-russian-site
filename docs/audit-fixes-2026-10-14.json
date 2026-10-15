@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-14",
+  "baselineCommit": "1fc22baaec6e086215cf61670ead8d87d3533ffa",
+  "sourceAudit": "docs/AUDIT_OGE_2026-10-14.md",
+  "sourceIssues": "docs/AUDIT_OGE_2026-10-14_ISSUES.csv",
+  "userRequest": "Исправить замечания в проекте",
+  "publication": {
+    "status": "pending"
+  },
+  "issues": [
+    {
+      "id": "P0-01",
+      "priority": "P0",
+      "description": "Нечитаемая работа после запуска всех заданий большого банка — условный P0",
+      "location": "`oge/BankPage.tsx`, `TrainingLaunch.start()`; `oge/repository.ts:109`, `writeDatabase()`; `readSessionDurably():85`; ограничение снимка в `oge/storage.ts`.",
+      "plan": "единый контракт записи/чтения и предварительная проверка полного нового снимка до транзакции; явный предел одной подборки, понятный размер и пакетный запуск. Нельзя просто увеличить лимит до любого числа, не измерив размер и восстановление. Сохранённый объект должен успешно читаться сразу и после перезагрузки. Проверить отказ и обратное чтение для предельных размеров.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/session-limits.ts",
+        "apps/showcase/src/oge/repository.ts",
+        "apps/showcase/src/oge/BankPage.tsx"
+      ],
+      "tests": [
+        "tests/oge-session-contract.test.ts",
+        "tests/browser/session-contract.spec.ts",
+        "scripts/benchmark-bank.mjs"
+      ],
+      "commits": [],
+      "limitations": [
+        "Одна работа ограничена 100 заданиями; большие выборки запускаются явными порциями."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-01",
+      "priority": "P1",
+      "description": "Новые таблицы зарегистрированы под неправильными номерами ОГЭ",
+      "location": "`scripts/inventory-learning-materials.mjs:52–55`, `private-materials/import/learning-materials-registry.json`, `docs/РЕЕСТР_УЧЕБНЫХ_МАТЕРИАЛОВ.md`.",
+      "plan": "раздельные `sourceExam`, `sourceTaskNumber`, `targetOgeLines`, тема, год и вид материала; для этих таблиц назначить ОГЭ № 6–7 и ГК1 по содержанию. Сохранить оригинальные имена файлов.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "scripts/lib/source-scope.mjs",
+        "scripts/inventory-learning-materials.mjs"
+      ],
+      "tests": [
+        "tests/audit-content-followup.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Исходный экзамен/год четырёх таблиц не указан в прочитанных страницах; хранится unknown/null."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-02",
+      "priority": "P1",
+      "description": "Адресные ссылки ведут к несуществующему параграфу",
+      "location": "метаданные 24 карточек; `scripts/lib/annotate-subskills.mjs:43`; `ExercisePanel.tsx`; `/theory/punktuacionnye-pravila/?exam=OGE#algorithm` и аналогичный путь гласных.",
+      "plan": "явные стабильные адреса правил и проверка всех `rulePaths`, включая fallback, во время сборки; содержательно верный резервный путь.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "scripts/lib/rule-link-integrity.ts",
+        "scripts/lib/annotate-subskills.mjs"
+      ],
+      "tests": [
+        "tests/audit-content-followup.test.ts",
+        "tests/browser/rule-feedback.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-03",
+      "priority": "P1",
+      "description": "Следующее упражнение предлагается по чужой причине ошибки",
+      "location": "`ExercisePanel.tsx`, вычисление `errorSkill`; `oge-punktuacionnye-pravila-002`, элементы 4/5.",
+      "plan": "разметить навыки каждого правила/пары; выбирать по фактической ошибке, при неизвестной причине показывать общую линию без ложного обещания адресности. Добавить обращения, пропуск членов и другие реальные основания в карту № 4.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/rule-feedback.ts",
+        "apps/showcase/src/content/subskills.json"
+      ],
+      "tests": [
+        "tests/audit-content-followup.test.ts",
+        "tests/browser/rule-feedback.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Неизвестные основания получают общий маршрут без выдуманной точной причины."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-04",
+      "priority": "P1",
+      "description": "Требование большого банка реальных ОГЭ всё ещё не выполнено",
+      "location": "опубликованные упражнения, `originCategory`, `provenance`, `docs/oge-coverage.json`.",
+      "plan": "различать официальное происхождение, авторский материал по модели и упражнение на поднавык; развивать корпус по содержанию, источникам и допустимому использованию.",
+      "status": "partial",
+      "files": [
+        "content/oge-corpus-admission-2026-10-15.json",
+        "content/oge-reading-admission-2026-10-15.json"
+      ],
+      "tests": [
+        "tests/oge-corpus-batch.test.ts",
+        "tests/oge-reading-batch.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "22 новых авторских модельных задания; официальных подтверждённых 0. Большой корпус реальных официальных ОГЭ не заявляется готовым; сторонние 671 кандидат в карантине."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-05",
+      "priority": "P1",
+      "description": "Расширение общего счётчика не устранило дефицит согласованных вариантов",
+      "location": "`oge/engine.ts`, `generateVariantMetadata()` и текстовые связи материалов.",
+      "plan": "пополнять № 2–3 и № 10–13 целыми согласованными группами; показывать число независимых комплектов, а не число возможных комбинаций.",
+      "status": "partial",
+      "files": [
+        "apps/showcase/src/oge/materials.json",
+        "content/oge-reading-batch-2026-10-15.json"
+      ],
+      "tests": [
+        "tests/oge-corpus-batch.test.ts",
+        "tests/oge-reading-batch.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Добавлены 2 полные синтаксические и 2 читательские группы; разнообразие большого корпуса остаётся задачей."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-06",
+      "priority": "P1",
+      "description": "Разметка 64 поднавыков не равна полноценному покрытию",
+      "location": "`content/subskills.json`, `docs/oge-coverage.json`, `scripts/report-oge-coverage.ts`.",
+      "plan": "предметная проверка разметки, серии прямых задач и сильных отвлекающих вариантов, обязательный новый пример после обучения. Письменную практику считать другой метрикой, не как короткие карточки.",
+      "status": "partial",
+      "files": [
+        "apps/showcase/src/content/subskills.json",
+        "content/oge-course.json",
+        "content/oge-theory-modules.json"
+      ],
+      "tests": [
+        "tests/oge-course.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "74 внутренних поднавыка не равны официальному кодификатору или полному положительному покрытию."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-07",
+      "priority": "P1",
+      "description": "Публикационный допуск остаётся неполным и неодинаковым",
+      "location": "`oge/engine.ts:73`, типы `publicationReview`, манифесты допуска.",
+      "plan": "определённые режимы учебного допуска, неизменяемая запись проверки конкретной редакции, независимые ключи и альтернативы; не подставлять имя Полины или `approved` ради прохождения схемы. Старые материалы проверять постепенно, не отключать автоматически весь банк одной сменой условия.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "content/oge-legacy-admission.json",
+        "apps/showcase/src/content/publication-admission.mjs",
+        "scripts/build-content-index.mjs"
+      ],
+      "tests": [
+        "tests/oge-publication-admission.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "220 прежних редакций сохранены в отдельном допуске сSHA; это регистрация прежнего допуска, не новая предметная проверка. Методическое утверждение ожидается."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-08",
+      "priority": "P1",
+      "description": "Нет доказанной карты переноса имеющейся теории в сайт",
+      "location": "12 приоритетных PDF, `content/lessons/*.json`, происхождение глав и реестр источников.",
+      "plan": "инвентарь микротем всех 174 страниц, устранение пересечений, авторское изложение в веб-блоках и полная таблица переноса с причинами исключения нерелевантного.",
+      "status": "partial",
+      "files": [
+        "content/oge-theory-transfer.json",
+        "content/oge-theory-modules.json",
+        "docs/КАРТА_ПЕРЕНОСА_ТЕОРИИ_ОГЭ.md"
+      ],
+      "tests": [
+        "tests/oge-course.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "174 страницы размечены;8 новых модулей переносят узкие части 19 микротем. Полный перенос 174 страниц не заявляется."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-09",
+      "priority": "P1",
+      "description": "Углублённые главы стали слишком крупными для одной учебной последовательности",
+      "location": "`/theory/osnova/?exam=OGE`, `LessonPage.tsx`, `LessonReading.tsx`.",
+      "plan": "короткие самостоятельные модули с предпосылками, одним понятным результатом, практикой по месту и продолжением; общая глава остаётся обзором/справкой. Не уменьшать шрифт ради сокращения страницы.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/ModulePage.tsx",
+        "apps/showcase/src/content/course-index.json",
+        "apps/showcase/src/styles/oge.css"
+      ],
+      "tests": [
+        "tests/browser/course-modules.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Общие главы сохраняются справочными;40 коротких маршрутов включают 32 группы существующих разделов и 8 новых авторских модулей."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-10",
+      "priority": "P1",
+      "description": "Предсказуемость ключей чтения уменьшилась лишь частично",
+      "location": "линии № 10–11, JSON опубликованных заданий.",
+      "plan": "содержательное расширение корпуса и нейтральных/образных контрпримеров; проверка распределений без искажения правильных решений ради равномерности.",
+      "status": "partial",
+      "files": [
+        "content/oge-reading-batch-2026-10-15.json"
+      ],
+      "tests": [
+        "tests/oge-reading-batch.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Новые ключи №10:25/4;№11:145/1235 получены из содержания. Два новых сюжета не образуют большой непредсказуемый корпус."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-11",
+      "priority": "P1",
+      "description": "Диагностика свободного ответа остаётся в основном общей",
+      "location": "`ExercisePanel.tsx`, короткие ответы № 8/9/12.",
+      "plan": "формализуемые ограничения проверять отдельно, альтернативы утверждать по нормативным источникам и контексту, при неустановленной причине не выдавать выдуманный диагноз.",
+      "status": "partial",
+      "files": [
+        "apps/showcase/src/oge/rule-feedback.ts",
+        "apps/showcase/src/content/model.ts"
+      ],
+      "tests": [
+        "tests/oge-short-feedback.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Явная проверка сохранения главного слова размечена в 4 новых№9; старые ответы остаются без выдуманного диагноза. Контекстные альтернативы не подменяются общим автоматическим морфологическим анализом."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-12",
+      "priority": "P1",
+      "description": "Письменные маршруты ещё не являются полным курсом оценивания",
+      "location": "`writing-guides.json`, `WritingGuide.tsx`, `WritingReviewPanel.tsx`.",
+      "plan": "оценённые образцы разных уровней, фрагментные замечания, самостоятельные задачи на тезис/пояснение/микротему, затем цельный ответ.",
+      "status": "partial",
+      "files": [
+        "content/oge-writing-workshops.json",
+        "apps/showcase/src/oge/WritingWorkshop.tsx"
+      ],
+      "tests": [
+        "tests/oge-writing-workshops.test.ts",
+        "tests/browser/writing-workshops.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Первый пакет 4 маршрута/12 оценённых образцов/13 свободных операций; независимая редакторская сверка выполняется. Полный курс всех 35 маршрутов и преподавательское утверждение не заявлены."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-13",
+      "priority": "P1",
+      "description": "Счётчик не полностью реализует правила ФИПИ, но участвует в допуске по объёму",
+      "location": "`oge/engine.ts:526`, `writingStatus()`, `writing-review.ts`.",
+      "plan": "документированный подсчёт и ручное уточнение проверяющим с сохранением причины; не удалять автоматически смысловые употребления слов.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/word-count.ts",
+        "apps/showcase/src/oge/WritingWordCountPanel.tsx",
+        "apps/showcase/src/oge/writing-review.ts"
+      ],
+      "tests": [
+        "tests/oge-manual-word-count.test.ts",
+        "tests/browser/manual-word-count.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Автоматический объём предварительный. Ручной объём привязан к точному тексту/теме/редакции, самопроверка не является зачётом содержания."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-14",
+      "priority": "P1",
+      "description": "Завершение урока по-прежнему ведёт к одному и тому же первому упражнению",
+      "location": "`pages/LessonPage.tsx:110`, `practice[0]`.",
+      "plan": "запуск адресной короткой подборки по текущей теме/поднавыку, отдельный выбор нового примера и повтор ошибок; при исчерпании объяснить его.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/content/course-practice.ts",
+        "apps/showcase/src/pages/LessonPage.tsx",
+        "apps/showcase/src/oge/ModulePage.tsx"
+      ],
+      "tests": [
+        "tests/oge-course.test.ts",
+        "tests/browser/course-modules.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "При исчерпании новых примеров интерфейс сообщает об этом; повтор не выдаётся за новый."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-15",
+      "priority": "P1",
+      "description": "Исходные PDF нельзя автоматически переносить без редакторской сверки",
+      "location": "новые «Теория в таблицах», извлечённые тексты и изображения страниц.",
+      "plan": "проверка текста по изображению страницы, исправление по нормативному источнику и самостоятельный пример; OCR применять только где требуется, каждую строку таблицы подтверждать. Не считать любой дефект извлечения ошибкой авторского оригинала без визуальной сверки.",
+      "status": "partial",
+      "files": [
+        "content/oge-theory-transfer.json",
+        "content/oge-theory-modules.json"
+      ],
+      "tests": [
+        "tests/oge-course.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "174 текстовых слоя прочитаны,92 страницы визуально сверены, включая 21 страницу новых таблиц. Полная визуальная проверка каждой строки всех 174 страниц не заявляется."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-16",
+      "priority": "P1",
+      "description": "Учебник пока организован вокруг крупных номеров, а не полного курса предпосылок",
+      "location": "`/oge/theory/`, 15 глав, `topics.ts`, `subskills.json`.",
+      "plan": "самостоятельный блок «Теория ОГЭ» с двумя входами — номера и предметные темы; предпосылки, порядок изучения, формы таблица/объяснение/практика. Можно сохранить общий рендерер и существующие ссылки.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/TheoryPage.tsx",
+        "content/oge-course.json",
+        "apps/showcase/src/content/course-index.json"
+      ],
+      "tests": [
+        "tests/browser/course-modules.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Два входа и предпосылки работают; предметная полнота курса оценивается отдельно вP1-08."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P1-17",
+      "priority": "P1",
+      "description": "Формулировка о частицах допускает противоположное прочтение",
+      "location": "`content/lessons/osnova.json`, раздел `predicate-boundaries`; `scripts/deepen-oge-lessons.mjs`.",
+      "plan": "явное «Частицы „пусть“, „бы“, „не“ учитывайте…» с примером того, что именно сохраняется и как определяется тип сказуемого. Перепроверить вводные инструкции и параллельные формулировки в сборщиках.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/content/lessons/osnova.json",
+        "scripts/deepen-oge-lessons.mjs"
+      ],
+      "tests": [
+        "tests/audit-content-followup.test.ts"
+      ],
+      "commits": [],
+      "limitations": [],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-01",
+      "priority": "P2",
+      "description": "Подготовленная библиотека изображений не включена в учебный интерфейс",
+      "location": "`apps/showcase/public`, проверенные главная/ОГЭ/теория/банк/игры; Drive.",
+      "plan": "небольшой набор предметных иллюстраций для основных направлений, ошибок и письма, без вытеснения действия.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/components/OgeIllustration.tsx",
+        "apps/showcase/src/components/ui.tsx",
+        "content/oge-images.json"
+      ],
+      "tests": [
+        "tests/browser/audit-followup.spec.ts",
+        "scripts/prepare-oge-images.mjs --check-public"
+      ],
+      "commits": [],
+      "limitations": [
+        "Установлена предметная выборка 17 иллюстраций; подготовка всех 42 не означает размещение всех на страницах."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-02",
+      "priority": "P2",
+      "description": "Исходные PNG слишком тяжёлые для прямого массового включения",
+      "location": "42 Drive-PNG, 66 334 355 байт.",
+      "plan": "локальные WebP/при необходимости AVIF и оправданный fallback, несколько размеров, альфа, размеры в разметке, lazy-loading ниже первого экрана, ограничение первого экрана.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "scripts/prepare-oge-images.mjs",
+        "apps/showcase/src/content/image-index.json"
+      ],
+      "tests": [
+        "scripts/prepare-oge-images.mjs --check-public"
+      ],
+      "commits": [],
+      "limitations": [
+        "168WebPвариантов 42 исходников;10,181,688 байт против 66,334,355 байтPNG. ИсходныеPNGне публикуются."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-03",
+      "priority": "P2",
+      "description": "Портрет нельзя использовать как выдуманное авторство текста",
+      "location": "12 портретов и `SourceText.authorship` текущих оригинальных материалов.",
+      "plan": "связь только по подтверждённому автору; назвать портрет иллюстративным, проверить имя/атрибуцию; не назначать бюст № 15 конкретному писателю.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "content/oge-images.json",
+        "apps/showcase/src/components/OgeIllustration.tsx"
+      ],
+      "tests": [
+        "scripts/prepare-oge-images.mjs --check-public"
+      ],
+      "commits": [],
+      "limitations": [
+        "12 портретов подготовлены в резерв; подтверждённого авторства текущих текстов для их привязки нет."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-04",
+      "priority": "P2",
+      "description": "Декоративные схемы не являются готовыми учебными разборами",
+      "location": "картинки № 05, 06, 13, 19, 30.",
+      "plan": "декоративные alt и отдельные реальные схемы из проверенных данных; не размечать картинку как источник верного ответа.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/components/OgeIllustration.tsx",
+        "content/oge-images.json"
+      ],
+      "tests": [
+        "tests/browser/audit-followup.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Декоративные схемы не используются как источник ключей; учебные действия выводятся из проверяемых структурированных данных."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-05",
+      "priority": "P2",
+      "description": "Метрика покрытия письма создаёт формальные нулевые пробелы",
+      "location": "`report-oge-coverage.ts`, пять записей навыков № 1/13.",
+      "plan": "отдельная модель покрытия письменных операций и критериев, связывающая тексты, образцы, действия и оценки.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "scripts/report-oge-coverage.ts",
+        "content/oge-writing-workshops.json"
+      ],
+      "tests": [
+        "tests/oge-writing-workshops.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Письменные операции/критерии считаются отдельно; остаток маршрутов без оценённых примеров должен оставаться видимым."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-06",
+      "priority": "P2",
+      "description": "Резервная копия работ не охватывает весь учебный прогресс",
+      "location": "`oge/backup.ts`, `game-storage.ts`, `lib/lesson-state.ts`.",
+      "plan": "общий версионированный экспорт гостевого прогресса или очень ясное разделение нескольких экспортов; сохранить обратную совместимость.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/lib/progress-backup.ts",
+        "apps/showcase/src/components/ProgressBackupPanel.tsx",
+        "apps/showcase/src/oge/ResultsPage.tsx"
+      ],
+      "tests": [
+        "tests/oge-progress-backup.test.ts",
+        "tests/browser/progress-backup.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Для полного переноса нужны 2 явно названных файла: работы и учебный прогресс. Совпавшие черновики/отметки не заменяются."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-07",
+      "priority": "P2",
+      "description": "Поиск параграфов обрезает результаты без полноценного продолжения",
+      "location": "`TheoryPage.tsx:93`, `.slice(0,40)`.",
+      "plan": "число найденных фрагментов, ранжирование, продолжение/пагинация и точные адреса, понятный запрос без обязательного совпадения со случайной меткой.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/TheoryPage.tsx"
+      ],
+      "tests": [
+        "tests/browser/audit-followup.spec.ts",
+        "tests/browser/course-modules.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-08",
+      "priority": "P2",
+      "description": "Семь игр остаются короткими фиксированными наборами",
+      "location": "`activities.json`, `GamePages.tsx`.",
+      "plan": "больше ситуаций по поднавыкам, новые случаи после ошибки, отдельный этап самостоятельной контрольной операции. Сохранять уже реализованные выделение, исправление и конструирование.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "content/oge-game-control-cases.json",
+        "apps/showcase/src/oge/GamePages.tsx",
+        "apps/showcase/src/oge/game-storage.ts"
+      ],
+      "tests": [
+        "tests/oge-game-control.test.ts",
+        "tests/browser/game-control.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "84 случая,14 новых; самостоятельный этап не означает освоение темы. Сжатие свободного текста требует человека."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-09",
+      "priority": "P2",
+      "description": "Ссылки на страницы источника не различают физические и печатные номера",
+      "location": "`Lesson.provenance.pages`, например сочинение с `20/21/22` у демоверсии в 13 физических PDF-страницах.",
+      "plan": "`pdfPage`, `printedPage`, раздел/цитируемый фрагмент и хеш версии; учитывать оба вида адреса при переносе.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/content/lessons/sochinenie.json",
+        "apps/showcase/src/content/lessons/izlozhenie.json",
+        "scripts/deepen-oge-lessons.mjs"
+      ],
+      "tests": [
+        "tests/oge-writing-workshops.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "Старые неоднозначные pages сохранены как исторический указатель; новые ссылки явно разделяют физические/печатные номера иSHAверсии."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-10",
+      "priority": "P2",
+      "description": "Реестр не различает виды учебной работы достаточно точно",
+      "location": "реестр 44 файлов, документы собеседования, сборник 2026, статья по математике, пустой PDF.",
+      "plan": "явный вид экзамена/работы, год и назначение; исключить пустой файл и математическую статью из русского курса, сохранить реестр исключения.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "scripts/lib/source-scope.mjs",
+        "scripts/inventory-learning-materials.mjs",
+        "docs/РЕЕСТР_УЧЕБНЫХ_МАТЕРИАЛОВ.md"
+      ],
+      "tests": [
+        "tests/source-work-scope.test.ts"
+      ],
+      "commits": [],
+      "limitations": [
+        "44 файла имеют явный вид работы; математика/пустойPDFисключены, собеседование и ЕГЭ отделены. Оригиналы сохранены."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-11",
+      "priority": "P2",
+      "description": "Проверки не подтверждают работу на всех реальных школьных устройствах",
+      "location": "Playwright-проекты Chrome desktop/mobile и синтетический локальный benchmark.",
+      "plan": "ограниченный реальный матричный выпускной прогон по доступным целевым устройствам; чтение таблиц, аудио, storage, импорт/экспорт и первый визит без помощи.",
+      "status": "unverified",
+      "files": [
+        "playwright.config.ts"
+      ],
+      "tests": [],
+      "commits": [],
+      "limitations": [
+        "Chrome desktop/mobile — автоматизация на доступной машине, не испытание на реальных устройствах учащихся. Матрица физических школьных устройств и первый визит ребёнка без помощи не выполнены."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P2-12",
+      "priority": "P2",
+      "description": "Разделение загрузок не везде соответствует видимым намерениям кода",
+      "location": "`repository.ts`/`storage.ts`, предупреждение `INEFFECTIVE_DYNAMIC_IMPORT`; общий поисковый корпус `exercise-search.json`.",
+      "plan": "бюджеты метаданных и поиска, адресные условия, осмысленный граф импортов; оптимизировать только по измерению, не дробить каждый модуль ради числа chunks.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/repository.ts",
+        "apps/showcase/src/oge/TheoryPage.tsx",
+        "scripts/benchmark-bank.mjs"
+      ],
+      "tests": [
+        "tests/browser/course-modules.spec.ts",
+        "scripts/benchmark-bank.mjs"
+      ],
+      "commits": [],
+      "limitations": [
+        "Измерения синтетического Vite dev сCPU4x на 390px; это не реальные 5000 учебных материалов и не все школьные устройства."
+      ],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P3-01",
+      "priority": "P3",
+      "description": "Все проверенные страницы имеют одинаковый заголовок вкладки",
+      "location": "статический HTML, `document.title`, 27 браузерных состояний.",
+      "plan": "краткий title по маршруту, разделу и номеру; уникальные метаданные публичных уроков по возможности. При изменении статических title обновить проверку публикации, которая сейчас требует одинаковый HTML всех маршрутов.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/route-metadata.ts",
+        "apps/showcase/vite.config.ts",
+        "scripts/check-public.mjs"
+      ],
+      "tests": [
+        "tests/browser/audit-followup.spec.ts",
+        "scripts/check-static.mjs"
+      ],
+      "commits": [],
+      "limitations": [],
+      "updatedAt": "2026-10-15"
+    },
+    {
+      "id": "P3-02",
+      "priority": "P3",
+      "description": "Одинаковые уровни всё ещё называются по-разному",
+      "location": "`lib/search.ts`, `BankPage.tsx:592`.",
+      "plan": "единый словарь, при этом отдельно объяснить, что учебное усложнение не является официальным уровнем другого экзамена.",
+      "status": "implemented-awaiting-release",
+      "files": [
+        "apps/showcase/src/oge/BankPage.tsx",
+        "apps/showcase/src/lib/search.ts"
+      ],
+      "tests": [
+        "tests/browser/audit-followup.spec.ts"
+      ],
+      "commits": [],
+      "limitations": [],
+      "updatedAt": "2026-10-15"
+    }
+  ],
+  "updatedAt": "2026-10-15",
+  "statusDefinitions": {
+    "partial": "Есть конкретное улучшение; весь предметный запрос замечания ещё не выполнен.",
+    "implemented-awaiting-release": "Реализовано и проверено указанными локальными сценариями; публикация текущего пакета ещё не подтверждена.",
+    "implemented-awaiting-verification": "Реализовано, актуальная проверка нового поведения выполняется.",
+    "unverified": "Требуемое подтверждение не получено; не объявляется пройденным."
+  }
+}

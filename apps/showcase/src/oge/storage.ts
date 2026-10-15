@@ -1,8 +1,10 @@
 import { z } from "zod";
+import { sessionLimits, serializedSessionBytes } from "./session-limits";
 import { policySchema } from "../../../../src/lib/grading";
 import type { PracticeSession } from "./model";
 import { gradeExercise, itemId, validateVariant } from "./engine";
 import { lineFor } from "./specification";
+import { invalidateWritingReviews } from "./writing-review";
 import {
   summaryCriteria,
   essayCriteria,
@@ -22,7 +24,7 @@ export class SessionStorageError extends Error {
     this.name = "SessionStorageError";
   }
 }
-const text = z.string().max(50000);
+const text = z.string().max(sessionLimits.maxFieldChars);
 const exerciseSchema = z
   .object({
     id: z.string(),
@@ -94,7 +96,7 @@ const schema = z.object({
       ]),
     )
     .min(1)
-    .max(1000),
+    .max(sessionLimits.maxItems),
   texts: z.array(
     z.object({
       id: z.string(),
@@ -144,6 +146,22 @@ const schema = z.object({
         reviewedAt: z.iso.datetime().optional(),
         promptId: z.string().optional(),
         contentAccepted: z.boolean().optional(),
+        answerText: text.optional(),
+        writingRevision: z.number().int().positive().optional(),
+        reviewedWordCount: z.number().int().min(0).max(50_000).optional(),
+        wordCountCorrection: z
+          .object({
+            count: z.number().int().min(0).max(50_000),
+            reason: z.string().trim().min(1).max(2000),
+            reviewer: z.string().trim().min(1).max(200),
+            role: z.enum(["self", "expert"]),
+            recordedAt: z.iso.datetime(),
+            answerText: text,
+            promptId: z.string(),
+            writingRevision: z.number().int().positive(),
+            invalidatedAt: z.iso.datetime().optional(),
+          })
+          .optional(),
       }),
     )
     .optional(),
@@ -276,8 +294,8 @@ const summarySchema = schema
   })
   .extend({
     historyVersion: z.literal(2),
-    itemCount: z.number().int().min(1).max(1000),
-    answerCount: z.number().int().nonnegative().max(1000),
+    itemCount: z.number().int().min(1).max(sessionLimits.maxItems),
+    answerCount: z.number().int().nonnegative().max(sessionLimits.maxItems),
     originVariantId: z.string().optional(),
     exerciseRefs: z
       .array(
@@ -290,7 +308,7 @@ const summarySchema = schema
           status: z.enum(["correct", "incorrect", "format_error"]).optional(),
         }),
       )
-      .max(1000),
+      .max(sessionLimits.maxItems),
     writingRefs: z
       .array(
         z.object({
@@ -300,12 +318,12 @@ const summarySchema = schema
           answered: z.boolean(),
         }),
       )
-      .max(1000),
+      .max(sessionLimits.maxItems),
     textRefs: z
       .array(
         z.object({ id: z.string(), revision: z.number().int().positive() }),
       )
-      .max(1000),
+      .max(sessionLimits.maxItems),
     audioRefs: z
       .array(
         z.object({
@@ -315,7 +333,7 @@ const summarySchema = schema
           played: z.boolean(),
         }),
       )
-      .max(1000),
+      .max(sessionLimits.maxItems),
   });
 /** A compact cache is trusted only when it matches the current history format. */
 export function parseSessionSummary(
@@ -389,6 +407,27 @@ function validReviews(
           (review.promptId && id === `${item.writing.id}:${review.promptId}`)),
     );
     if (id !== literacyReviewId && writing?.kind !== "writing") return false;
+    const correction = review.wordCountCorrection;
+    if (
+      correction &&
+      (writing?.kind !== "writing" ||
+        correction.writingRevision !== writing.writing.revision ||
+        correction.promptId !== review.promptId ||
+        !writing.writing.prompts.some(
+          (prompt) => prompt.id === correction.promptId,
+        ) ||
+        Date.parse(correction.recordedAt) < Date.parse(base.startedAt) ||
+        (correction.invalidatedAt &&
+          Date.parse(correction.invalidatedAt) <
+            Date.parse(correction.recordedAt)))
+    )
+      return false;
+    if (
+      review.writingRevision !== undefined &&
+      (writing?.kind !== "writing" ||
+        review.writingRevision !== writing.writing.revision)
+    )
+      return false;
     const criteria =
       id === literacyReviewId
         ? literacyCriteria
@@ -437,7 +476,12 @@ function readSessionStrict(storage: LocalStorage, id: string) {
   }
 }
 export function parseSession(raw: string | null): PracticeSession | undefined {
-  if (!raw || raw.length > 3_000_000) return undefined;
+  if (
+    !raw ||
+    raw.length > sessionLimits.maxSerializedChars ||
+    serializedSessionBytes(raw) > sessionLimits.maxSerializedBytes
+  )
+    return undefined;
   try {
     const result = schema.safeParse(JSON.parse(raw));
     if (!result.success) return undefined;
@@ -555,6 +599,47 @@ export function parseSession(raw: string | null): PracticeSession | undefined {
     return undefined;
   }
 }
+/** The initial writer and reader accept exactly the same complete v1 snapshot. */
+export function validateSessionSnapshot(session: PracticeSession): string {
+  let raw: string;
+  try {
+    raw = JSON.stringify(session);
+  } catch {
+    throw new SessionStorageError(
+      "invalid",
+      "Работа не прошла проверку структуры. Данные работы не изменены.",
+    );
+  }
+  if (!raw || !Array.isArray(session?.items))
+    throw new SessionStorageError(
+      "invalid",
+      "Работа не прошла проверку структуры. Данные работы не изменены.",
+    );
+  if (session.items.length > sessionLimits.maxItems)
+    throw new SessionStorageError(
+      "invalid",
+      "Одна работа может содержать не более " +
+        sessionLimits.maxItems +
+        " заданий. Начните несколько подборок.",
+    );
+  if (raw.length > sessionLimits.maxSerializedChars)
+    throw new SessionStorageError(
+      "invalid",
+      "Снимок работы слишком большой: максимум 3 млн символов JSON. Выберите меньшую подборку; данные работы не изменены.",
+    );
+  if (serializedSessionBytes(raw) > sessionLimits.maxSerializedBytes)
+    throw new SessionStorageError(
+      "invalid",
+      "Снимок работы превышает 9 МБ UTF-8. Выберите меньшую подборку; данные работы не изменены.",
+    );
+  if (!parseSession(raw))
+    throw new SessionStorageError(
+      "invalid",
+      "Работа не прошла проверку структуры, редакций или связей. Данные работы не изменены.",
+    );
+  return raw;
+}
+
 export function readSession(
   storage: LocalStorage,
   id: string,
@@ -606,9 +691,9 @@ export function saveSession(
       "Эта работа изменена в другой вкладке. Ваш текущий текст остаётся на этой странице. Сохраните его отдельной работой или экспортируйте обе редакции.",
       existing,
     );
-  const state = applySessionState(session, sessionState(session));
-  const raw = existing ? undefined : JSON.stringify(session);
-  if (!state || (raw && !parseSession(raw)))
+  const state = applySessionState(existing ?? session, session);
+  const raw = existing ? undefined : validateSessionSnapshot(session);
+  if (!state)
     throw new SessionStorageError(
       "invalid",
       "Черновик не прошёл проверку целостности. Скопируйте ответы перед закрытием страницы.",
@@ -621,7 +706,7 @@ export function saveSession(
         statePrefix + session.id,
         JSON.stringify({
           snapshotUpdatedAt: base.updatedAt,
-          state: sessionState(session),
+          state: sessionState(state),
         }),
       );
     }
@@ -636,7 +721,7 @@ export function saveSession(
   try {
     storage.setItem(
       indexPrefix + session.id,
-      JSON.stringify(sessionSummary(session)),
+      JSON.stringify(sessionSummary(state)),
     );
   } catch {
     /* Rebuilt on demand. */
@@ -693,11 +778,12 @@ export function advanceSession(
   session: PracticeSession,
   patch: Partial<PracticeSession>,
 ): PracticeSession {
+  const updatedAt = new Date(
+    Math.max(Date.now(), Date.parse(session.updatedAt) + 1),
+  ).toISOString();
   return {
     ...session,
-    ...patch,
-    updatedAt: new Date(
-      Math.max(Date.now(), Date.parse(session.updatedAt) + 1),
-    ).toISOString(),
+    ...invalidateWritingReviews(session, patch, updatedAt),
+    updatedAt,
   };
 }

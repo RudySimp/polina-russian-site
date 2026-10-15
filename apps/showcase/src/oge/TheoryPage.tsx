@@ -1,27 +1,72 @@
+import { use } from "react";
+import { theorySearchFor } from "../content/course-search";
+import { courseReadingCount } from "../content/course-practice";
+import { courseModules, modulePath } from "../content/course";
+import "../styles/course.css";
 import { useCatalogQuery } from "../lib/catalog-query";
-import paragraphs from "../content/lesson-search.json";
 import { publishedTopics, sections, sectionTitle } from "../content/catalog";
-import { Breadcrumbs, PageHeading, TopicCard } from "../components/ui";
+import { Breadcrumbs, PageHeading } from "../components/ui";
 import { taskLines } from "./specification";
-import { matchesSearch } from "../lib/search";
+import { matchesSearch, normalizeSearch } from "../lib/search";
 import { href } from "../routes";
 export function OgeTheoryPage() {
   const { params, change, reset, rememberScroll, endSearch } =
     useCatalogQuery("/oge/theory/");
   const line = Number(params.get("line")) || 0,
     section = params.get("section") ?? "",
-    q = params.get("q") ?? "";
+    q = params.get("q") ?? "",
+    topicId = params.get("topic") ?? "";
+  const allParagraphs = q ? use(theorySearchFor()) : [];
   const filtered = publishedTopics.filter(
     (t) =>
       t.examTags.includes("OGE") &&
       (!line ||
-        taskLines.find((l) => l.number === line)?.topicIds.includes(t.id)) &&
+        courseModules.some(
+          (m) => m.topicId === t.id && m.ogeLines.includes(line),
+        )) &&
+      (!topicId || t.id === topicId) &&
       (!section || t.sectionId === section) &&
       (!q ||
-        paragraphs.some(
+        allParagraphs.some(
           (p) => p.topicId === t.id && matchesSearch(q, [p.title, p.text]),
         ) ||
-        matchesSearch(q, [t.title, t.description, ...t.keywords])),
+        matchesSearch(q, [t.title, t.description, ...t.keywords]) ||
+        courseModules.some(
+          (m) =>
+            m.topicId === t.id &&
+            matchesSearch(q, [m.title, m.outcome, ...(m.microtopicIds ?? [])]),
+        )),
+  );
+  const normalizedQuery = normalizeSearch(q);
+  const relevance = (p: (typeof allParagraphs)[number]) =>
+    normalizeSearch(p.title).includes(normalizedQuery)
+      ? 2
+      : normalizeSearch(p.text).includes(normalizedQuery)
+        ? 1
+        : 0;
+  const matches = q
+    ? allParagraphs
+        .filter(
+          (p) =>
+            filtered.some((t) => t.id === p.topicId) &&
+            matchesSearch(q, [p.title, p.text]),
+        )
+        .sort(
+          (a, b) =>
+            relevance(b) - relevance(a) ||
+            a.title.localeCompare(b.title, "ru") ||
+            a.topicId.localeCompare(b.topicId),
+        )
+    : [];
+  const pageSize = 20;
+  const pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
+  const resultPage = Math.max(
+    1,
+    Math.min(Number(params.get("page")) || 1, pageCount),
+  );
+  const visibleMatches = matches.slice(
+    (resultPage - 1) * pageSize,
+    resultPage * pageSize,
   );
   return (
     <>
@@ -29,10 +74,20 @@ export function OgeTheoryPage() {
         items={[{ label: "ОГЭ", path: "/oge/" }, { label: "Вся теория" }]}
       />
       <PageHeading
+        illustration="03-books-branch"
         eyebrow="УЧЕБНИК ОГЭ"
         title="Теория по номеру и по теме"
-        text="Выберите экзаменационную линию или раздел русского языка. Каждый урок содержит правило, границы применения, примеры, ошибки и практику."
+        text="Выберите номер ОГЭ или предметную тему. Изучайте короткими шагами: правило, самостоятельная проверка и новый пример. Полные справочные главы и прежние ссылки сохранены."
       />
+      {topicId && (
+        <p>
+          Выбрана тема:{" "}
+          {publishedTopics.find((t) => t.id === topicId)?.title ?? topicId}.{" "}
+          <a href={href("/oge/theory/" + (line ? "?line=" + line : ""))}>
+            Показать все темы
+          </a>
+        </p>
+      )}
       <div className="catalog-controls">
         <label>
           Номер ОГЭ
@@ -84,49 +139,72 @@ export function OgeTheoryPage() {
       {q && (
         <section className="home-section">
           <h2>Найденные параграфы</h2>
-          {paragraphs
-            .filter(
-              (p) =>
-                filtered.some((t) => t.id === p.topicId) &&
-                matchesSearch(q, [p.title, p.text]),
-            )
-            .slice(0, 40)
-            .map((p) => {
-              const topic = filtered.find((t) => t.id === p.topicId)!;
-              const text = p.text;
-              const first = q.trim().split(/\s+/u)[0].toLocaleLowerCase("ru");
-              const start = Math.max(
-                0,
-                text.toLocaleLowerCase("ru").indexOf(first) - 60,
-              );
-              return (
-                <article
-                  className="question-card"
-                  key={p.topicId + ":" + p.sectionId}
-                >
-                  <h3>
-                    <a
-                      onClick={rememberScroll}
-                      href={href(
+          <p role="status">
+            Найдено фрагментов: {matches.length}.{" "}
+            {matches.length > 0 &&
+              `Показаны ${(resultPage - 1) * pageSize + 1}–${Math.min(resultPage * pageSize, matches.length)}.`}
+          </p>
+          {visibleMatches.map((p) => {
+            const topic = filtered.find((t) => t.id === p.topicId)!;
+            const text = p.text;
+            const first = q.trim().split(/\s+/u)[0].toLocaleLowerCase("ru");
+            const start = Math.max(
+              0,
+              text.toLocaleLowerCase("ru").indexOf(first) - 60,
+            );
+            return (
+              <article
+                className="question-card"
+                key={p.route ?? p.topicId + ":" + p.sectionId}
+              >
+                <h3>
+                  <a
+                    onClick={rememberScroll}
+                    href={href(
+                      p.route ??
                         "/theory/" +
                           topic.slug +
                           "/?exam=OGE&from=" +
                           encodeURIComponent("/oge/theory/?" + params) +
                           "#" +
                           p.sectionId,
-                      )}
-                    >
-                      {p.title}
-                    </a>
-                  </h3>
-                  <p className="muted">{topic.title}</p>
-                  <p>
-                    {start ? "…" : ""}
-                    {text.slice(start, start + 240)}…
-                  </p>
-                </article>
-              );
-            })}
+                    )}
+                  >
+                    {p.title}
+                  </a>
+                </h3>
+                <p className="muted">{topic.title}</p>
+                <p>
+                  {start ? "…" : ""}
+                  {text.slice(start, start + 240)}…
+                </p>
+              </article>
+            );
+          })}
+          {pageCount > 1 && (
+            <nav
+              className="inline-actions"
+              aria-label="Страницы результатов поиска"
+            >
+              <button
+                className="button secondary"
+                disabled={resultPage === 1}
+                onClick={() => change("page", String(resultPage - 1))}
+              >
+                Предыдущая
+              </button>
+              <span>
+                Страница {resultPage} из {pageCount}
+              </span>
+              <button
+                className="button secondary"
+                disabled={resultPage === pageCount}
+                onClick={() => change("page", String(resultPage + 1))}
+              >
+                Следующая
+              </button>
+            </nav>
+          )}
         </section>
       )}
       {sections
@@ -134,16 +212,66 @@ export function OgeTheoryPage() {
         .map((s) => (
           <section className="home-section" key={s.id}>
             <h2>{sectionTitle(s.id)}</h2>
-            <div className="topic-grid">
+            <div className="course-topics">
               {filtered
                 .filter((t) => t.sectionId === s.id)
                 .map((t) => (
-                  <TopicCard
-                    key={t.id}
-                    topic={t}
-                    exam="OGE"
-                    returnTo={`/oge/theory/${params.size ? `?${params}` : ""}`}
-                  />
+                  <article className="course-topic" key={t.id}>
+                    <h3>{t.title}</h3>
+                    <p className="course-section-note">{t.description}</p>
+                    <div className="course-module-list">
+                      {courseModules
+                        .filter(
+                          (m) =>
+                            m.topicId === t.id &&
+                            (!line || m.ogeLines.includes(line)),
+                        )
+                        .map((m) => (
+                          <article className="course-module-card" key={m.id}>
+                            <h4>
+                              <a
+                                onClick={rememberScroll}
+                                href={href(modulePath(m.id))}
+                              >
+                                {m.title}
+                              </a>
+                            </h4>
+                            <p>{m.outcome}</p>
+                            <p className="muted">
+                              ОГЭ {m.ogeLines.map((n) => "№ " + n).join(", ")} ·{" "}
+                              {m.sectionIds.length} параграфа
+                            </p>
+                            <p className="muted">
+                              Отметки чтения:{" "}
+                              {courseReadingCount(m, localStorage)} из{" "}
+                              {m.sectionIds.length}; это не оценка освоения.
+                            </p>
+                            <a
+                              onClick={rememberScroll}
+                              href={href(modulePath(m.id))}
+                            >
+                              Изучить этот шаг →
+                            </a>
+                          </article>
+                        ))}
+                    </div>
+                    <div className="course-topic-actions">
+                      <a
+                        onClick={rememberScroll}
+                        href={href(
+                          "/theory/" +
+                            t.slug +
+                            "/?exam=OGE&from=" +
+                            encodeURIComponent("/oge/theory/?" + params),
+                        )}
+                      >
+                        Полная справочная глава
+                      </a>
+                      <a href={href("/oge/bank/?topic=" + t.id)}>
+                        Практика темы
+                      </a>
+                    </div>
+                  </article>
                 ))}
             </div>
           </section>

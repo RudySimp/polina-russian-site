@@ -263,6 +263,10 @@ test("Оценочный лист: тема, галочки и экспертн�
   );
   await saved(page);
   await page.reload();
+  await expect(sheet).not.toContainText("По этим критериям:");
+  await sheet
+    .getByRole("button", { name: "Зафиксировать оценку", exact: true })
+    .click();
   await expect(sheet).toContainText("По этим критериям: 7 из 8");
   await page
     .getByRole("button", { name: "Завершить работу", exact: true })

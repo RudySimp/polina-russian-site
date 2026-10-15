@@ -28,6 +28,7 @@ export function VariantCatalog() {
         items={[{ label: "ОГЭ", path: "/oge/" }, { label: "Готовые варианты" }]}
       />
       <PageHeading
+        illustration="27-book-bookmark"
         eyebrow="ПОСТОЯННЫЕ КОМПЛЕКТЫ"
         title="Готовые учебные варианты ОГЭ"
         text="Каждый номер имеет фиксированный состав. Полные работы включают аудиоизложение, задания 2–12 и выбор сочинения 13.1, 13.2 или 13.3."
@@ -91,6 +92,7 @@ export function FixedVariantPage({ number }: { number: number }) {
         ]}
       />
       <PageHeading
+        illustration="27-book-bookmark"
         eyebrow="ФИКСИРОВАННЫЙ СОСТАВ · ПРОЕКТ 2027"
         title={variant.title}
         text="Изложение с оригинальным учебным аудио, согласованная тестовая часть и сочинение. В контрольном режиме разбор раскрывается после завершения."
@@ -217,7 +219,7 @@ export function Generator({
             <label>
               Отбор
               <select value={only} onChange={(e) => setOnly(e.target.value)}>
-                <option value="">Весь проверенный банк</option>
+                <option value="">Весь учебный банк</option>
                 <option value="new">Исключить выполненные</option>
                 <option value="errors">Только неисправленные ошибки</option>
               </select>
@@ -325,6 +327,7 @@ export function GeneratorPage({ attempts }: { attempts: LocalAttempt[] }) {
         items={[{ label: "ОГЭ", path: "/oge/" }, { label: "Генератор" }]}
       />
       <PageHeading
+        illustration="25-time-book"
         eyebrow="РАБОТА ИЗ ПРОВЕРЕННОГО БАНКА"
         title="Генератор варианта ОГЭ"
         text="Создайте полный учебный вариант, тестовую часть или подборку навыков. Сохранённую работу можно открыть в локальных результатах."

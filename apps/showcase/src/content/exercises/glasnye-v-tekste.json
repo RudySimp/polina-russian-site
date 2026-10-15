@@ -151,7 +151,7 @@
       {
         "position": 6,
         "skillIds": [],
-        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#gap-localization",
         "errorType": "rule-identification"
       },
       {
@@ -185,7 +185,7 @@
     ],
     "rulePaths": [
       "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
-      "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+      "/theory/glasnye-v-tekste/?exam=OGE#gap-localization",
       "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
       "/theory/glasnye-v-tekste/?exam=OGE#conjugation",
       "/theory/glasnye-v-tekste/?exam=OGE#agreement",
@@ -513,7 +513,7 @@
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+        "rulePath": "/theory/glasnye-v-tekste/?exam=OGE#gap-localization",
         "errorType": "rule-identification"
       },
       {
@@ -569,7 +569,7 @@
     ],
     "rulePaths": [
       "/theory/glasnye-v-tekste/?exam=OGE#case-endings",
-      "/theory/glasnye-v-tekste/?exam=OGE#algorithm",
+      "/theory/glasnye-v-tekste/?exam=OGE#gap-localization",
       "/theory/glasnye-v-tekste/?exam=OGE#root",
       "/theory/glasnye-v-tekste/?exam=OGE#verb-derived",
       "/theory/glasnye-v-tekste/?exam=OGE#agreement"

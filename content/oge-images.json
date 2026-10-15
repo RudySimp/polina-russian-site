@@ -1,0 +1,3043 @@
+{
+  "schemaVersion": 1,
+  "sourcePlan": "docs/OGE_ASSETS_PLAN_2026-10-14.json",
+  "sourceDate": "2026-10-14",
+  "encoding": {
+    "format": "webp",
+    "quality": 85,
+    "alphaQuality": 100,
+    "effort": 6,
+    "smartSubsample": true
+  },
+  "preparation": {
+    "preserveAlpha": true,
+    "preserveAspectRatio": true,
+    "withoutEnlargement": true,
+    "widths": [
+      160,
+      320,
+      640,
+      960
+    ],
+    "portraitAttributionConfirmed": false,
+    "sourceOriginalsPublished": false,
+    "signedUrlsIncluded": false
+  },
+  "totals": {
+    "assets": 42,
+    "illustrations": 30,
+    "portraits": 12,
+    "variants": 168,
+    "originalBytes": 66334355,
+    "webBytes": 10181688
+  },
+  "assets": [
+    {
+      "id": "01-book-branch",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Обложка раздела ОГЭ; небольшой акцент рядом с заголовком, без вытеснения начала практики",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/16xDk7lCqUpLyUBhhLwgruDV3MqhO8JyC.png",
+        "filename": "01 - Открытая книга с растущей ветвью.png",
+        "sha256": "ed50f4088c79647bbf8608a773ca4b38a1b4b92460aa298567d6bf00df265c32",
+        "bytes": 1148732,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "16xDk7lCqUpLyUBhhLwgruDV3MqhO8JyC",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 9838,
+          "sha256": "aac47d3d08c9e385814317a2fbfca0c1b056468fc30a9d4e108f8c6df9124d88",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/01-book-branch-160.webp",
+          "url": "images/oge/01-book-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 24936,
+          "sha256": "aaebcb4d430826254c432bf5f17469eb12f4108a56c3a68f2ed628a87ded6216",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/01-book-branch-320.webp",
+          "url": "images/oge/01-book-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 67620,
+          "sha256": "b7d3ccc79e1ac8b853bf93b0284ec56c1795ec68975046161ab83eb6686e0bb4",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/01-book-branch-640.webp",
+          "url": "images/oge/01-book-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 132122,
+          "sha256": "2f191e1daa6150cb15c0e253b6fc5c521920c76107a5bbcc41667e0c556ca648",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/01-book-branch-960.webp",
+          "url": "images/oge/01-book-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "02-notebook-pencil",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Изложение/сочинение: ввод и редактирование черновика",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1ojTYSIqdDztJJhF4J-a_8Bho-jZZNSJg.png",
+        "filename": "02 - Тетрадный лист и карандаш.png",
+        "sha256": "285a512b7ec2ec07583b0008a4d5eeaacdddbaf9807890dabc65038836621f00",
+        "bytes": 1218797,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1ojTYSIqdDztJJhF4J-a_8Bho-jZZNSJg",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 6534,
+          "sha256": "43180939745f16bd03a0a5f5e63c6d80ac2ff3cf426661d2205f32b4d4c88d4d",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/02-notebook-pencil-160.webp",
+          "url": "images/oge/02-notebook-pencil-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 15736,
+          "sha256": "3033f8b8704f628c3fdb7636a3163e51ae0b98fa44b664d6a7a99e16192f90ce",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/02-notebook-pencil-320.webp",
+          "url": "images/oge/02-notebook-pencil-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 39970,
+          "sha256": "49af3d87a84aa3a4b319000f7de91433e65d5f51e7f36f061f772f1f7a5bf01c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/02-notebook-pencil-640.webp",
+          "url": "images/oge/02-notebook-pencil-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 73882,
+          "sha256": "6b265ad502db95416f245613a07df4f9322347ac42e80440753326b3f342e1c3",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/02-notebook-pencil-960.webp",
+          "url": "images/oge/02-notebook-pencil-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "03-books-branch",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Каталог всей теории ОГЭ",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1FxzhsiSvhsI4_lTo8b6CXy0KPNOQ6DNe.png",
+        "filename": "03 - Стопка книг с зелёной ветвью.png",
+        "sha256": "76820715ede7d6c9483e9900ccfd7fd8b82831df571648d0df50b26ef4df442d",
+        "bytes": 1750285,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1FxzhsiSvhsI4_lTo8b6CXy0KPNOQ6DNe",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/theory/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8332,
+          "sha256": "ff1d716c5a7277c76e847f05463348e7e3efdd2eb274ad474f661b7b1055d482",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/03-books-branch-160.webp",
+          "url": "images/oge/03-books-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 20532,
+          "sha256": "cfe4c25d61f4af15537848b172120c303cd6396c44c3f865d9d3d56b57d8510f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/03-books-branch-320.webp",
+          "url": "images/oge/03-books-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 59668,
+          "sha256": "4e7dad2518424afe01201bcda805da91bd59c9097593e42e8233c6c1f52cd882",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/03-books-branch-640.webp",
+          "url": "images/oge/03-books-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 127812,
+          "sha256": "1c7cc6f393c5968a819f8f2ae9d23efed2f2ae1afafd4b5c12838dbeb6c6fe82",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/03-books-branch-960.webp",
+          "url": "images/oge/03-books-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "04-comma-leaves",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Пунктуация №4–5: декоративный акцент",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1E_EjM4RQeW_wgFSHJxXBleVBKqpNshdU.png",
+        "filename": "04 - Запятая с листьями.png",
+        "sha256": "955e94d6925f59b4f7cfd43969c6a28f7d8f822ce80ebe2cd16d1a4c39964909",
+        "bytes": 728361,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1E_EjM4RQeW_wgFSHJxXBleVBKqpNshdU",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/punktuacionnye-pravila/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 5668,
+          "sha256": "3a27ed7c90d20c7375eaa6a366107251029ccad77a2968619e4a459e5c7ada2f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/04-comma-leaves-160.webp",
+          "url": "images/oge/04-comma-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 12830,
+          "sha256": "31a9df86e55fcd170675d09acded20ff9ca4476d57976413eebe2f929e40b1fb",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/04-comma-leaves-320.webp",
+          "url": "images/oge/04-comma-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 31940,
+          "sha256": "569bf2938c920246e9e2a92d3024707459ec504a1e28a0b46bc94d9f4d53f0e0",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/04-comma-leaves-640.webp",
+          "url": "images/oge/04-comma-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 62214,
+          "sha256": "6c1844014cb2d99a121ce9b583f5c5e7cc2e43c8613da318143a5b8c4f1c8971",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/04-comma-leaves-960.webp",
+          "url": "images/oge/04-comma-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "05-word-roots-tree",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Орфография №6–7: декоративная обложка, не разбор морфем",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1o_Ztj9iWStOBJxEusD0Qe2xRai3QST1H.png",
+        "filename": "05 - Дерево знаний и корни слова.png",
+        "sha256": "d2cbebb402d45c8c4f91ab0daf6fa3fe7cd26de9d5562fb4e6d6f4a446028af1",
+        "bytes": 1504070,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1o_Ztj9iWStOBJxEusD0Qe2xRai3QST1H",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/orfograficheskiy-analiz/",
+          "/theory/glasnye-v-tekste/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 15660,
+          "sha256": "52b4e38d47ab6809e55415edaed61b3b8e199d3db55e75dc6878ac6b0d0e7c0a",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/05-word-roots-tree-160.webp",
+          "url": "images/oge/05-word-roots-tree-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 41836,
+          "sha256": "f9cf049024fe1f1efe09c6ee296881c0f429afb3484aefcaf0ba44e419183dba",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/05-word-roots-tree-320.webp",
+          "url": "images/oge/05-word-roots-tree-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 114420,
+          "sha256": "fa5394cde74b83fb46d8f771a4a818a63ed9cd38278c35071881b864664e7b33",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/05-word-roots-tree-640.webp",
+          "url": "images/oge/05-word-roots-tree-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 221268,
+          "sha256": "eab909d1066ffb790da6361507a8af170118d453f4ce97fb4a0fa547d94751b9",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/05-word-roots-tree-960.webp",
+          "url": "images/oge/05-word-roots-tree-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "06-sentence-scheme",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Синтаксис №2–3: оформление; схемы заданий строятся отдельно из данных",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/150g5g9SFjh88vMe7vL_Cr1Nzv_WBWQCy.png",
+        "filename": "06 - Схема предложения.png",
+        "sha256": "e7b89604772702a8e4c96772b4838df509a47a89de3505f2ef4d5678a74c2cd3",
+        "bytes": 743877,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "150g5g9SFjh88vMe7vL_Cr1Nzv_WBWQCy",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/osnova/",
+          "/theory/sintaksis/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10858,
+          "sha256": "f9b6ee41e576ebcbdaea1f11f9d5ce831cd1b68310e213b22a878ad96b56523d",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/06-sentence-scheme-160.webp",
+          "url": "images/oge/06-sentence-scheme-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 23802,
+          "sha256": "fba70793b70d264d06318f0d9dd7fa5ffa0f80f044a32baf160cda0a8654fa1c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/06-sentence-scheme-320.webp",
+          "url": "images/oge/06-sentence-scheme-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 56390,
+          "sha256": "c3192e81a7fecc7b06c807b9e3c282a41e741d97289316c7d8b03bdc166f4f3c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/06-sentence-scheme-640.webp",
+          "url": "images/oge/06-sentence-scheme-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 103102,
+          "sha256": "5b97cc21891a4f9dd42162ffb17c30c85ea3e08adae5f6931b6daaf46052cd1f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/06-sentence-scheme-960.webp",
+          "url": "images/oge/06-sentence-scheme-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "07-editing-pencil",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Разбор ошибок и редактирование письменной работы",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1VljYBbMAi_uVXPtIkrAhcla5Y1Cp8-cC.png",
+        "filename": "07 - Лист с исправлениями и карандаш.png",
+        "sha256": "ff604463026342b48a410224c45ec9462cb0647cb075f1023aeb768a5ab8f3e2",
+        "bytes": 1385386,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1VljYBbMAi_uVXPtIkrAhcla5Y1Cp8-cC",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/formy-slov/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 6854,
+          "sha256": "53b0a77034a9cad460781c4b9cfcf6044048b58d6881b96c93434365c45482c1",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/07-editing-pencil-160.webp",
+          "url": "images/oge/07-editing-pencil-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 15700,
+          "sha256": "e4f01c459221cf98183290683e6cb4aa7d707ded30a4c3e4ff76bb6272473301",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/07-editing-pencil-320.webp",
+          "url": "images/oge/07-editing-pencil-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 36686,
+          "sha256": "8e159c28218d344e028af922f6fd093dbddb5b02fe13ab978932d3d9645d0a3b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/07-editing-pencil-640.webp",
+          "url": "images/oge/07-editing-pencil-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 66916,
+          "sha256": "3f120d7ee52b1069ffc60e640b9718413567a4784739627967cd9dbdae0306b6",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/07-editing-pencil-960.webp",
+          "url": "images/oge/07-editing-pencil-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "08-autumn-book",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Чтение и смысловой анализ №10",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1wK4Ma7GRxDJdZDwVR1H5TR3c1i41Hgy_.png",
+        "filename": "08 - Раскрытая книга с осенним листом.png",
+        "sha256": "0eea5e38753bb7a40255d8dd61fcfb5ce1ec1b43d4227c28ac46fd0c14b3f75b",
+        "bytes": 964436,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1wK4Ma7GRxDJdZDwVR1H5TR3c1i41Hgy_",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 5312,
+          "sha256": "8a80301ee0dc41a237ed8f650d615c3b06e4709f2a16bc678ee9bc1a41363617",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/08-autumn-book-160.webp",
+          "url": "images/oge/08-autumn-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 13070,
+          "sha256": "d41cfe6db5bf98b0e6960458820a85b1aeac110c6be37948bc43f389d41b6b4b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/08-autumn-book-320.webp",
+          "url": "images/oge/08-autumn-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 35970,
+          "sha256": "017a0f3daa92f0d7f042cced9578d4a4dccfdbb139b66b2c43a64860f9e89d2f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/08-autumn-book-640.webp",
+          "url": "images/oge/08-autumn-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 72468,
+          "sha256": "7ac8b57ed06896f60b9341f37e1cf076e9763854cfd49c6a323cd3680afbc69f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/08-autumn-book-960.webp",
+          "url": "images/oge/08-autumn-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "09-notebook-sprout",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Прогресс учебного маршрута; не значок подтверждённого освоения",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1ntmrF7fXK0t0NhNEv29hsTTL9T7R1D0j.png",
+        "filename": "09 - Росток из тетрадного листа.png",
+        "sha256": "0e28528396ae2aae6707078d427986e65779f21f629a274e13cd616ed218ac3b",
+        "bytes": 996765,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1ntmrF7fXK0t0NhNEv29hsTTL9T7R1D0j",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 7838,
+          "sha256": "2c305d026f328838de74116dcad24f162a1f54eef8059945e33765ffd2e0183e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/09-notebook-sprout-160.webp",
+          "url": "images/oge/09-notebook-sprout-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 18664,
+          "sha256": "e687b631305ea07fb7781339b310a29cbdfb8632db982195eb174f686a27cacd",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/09-notebook-sprout-320.webp",
+          "url": "images/oge/09-notebook-sprout-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 48762,
+          "sha256": "e509895c7ea464c02386813be023d036bec0a967b7398fb74a126da3b44fd647",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/09-notebook-sprout-640.webp",
+          "url": "images/oge/09-notebook-sprout-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 91932,
+          "sha256": "a2c214d43ee466cbdb294eb20090fd6351ee46686f82b87d0aba22bb53054b7c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/09-notebook-sprout-960.webp",
+          "url": "images/oge/09-notebook-sprout-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "10-learning-stages",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Учебные этапы правила: теория → действие → перенос",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/17ko7IB4QoFt8htiBuB_83-udVf9gQo-S.png",
+        "filename": "10 - Карточки этапов обучения.png",
+        "sha256": "00349111e36d73a52f4cc02f24827f5f2f083d79412a402461e7fbe05bc1449d",
+        "bytes": 801144,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "17ko7IB4QoFt8htiBuB_83-udVf9gQo-S",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/games/"
+        ],
+        "reason": "Декоративный акцент этапов учебного действия; отдельный текст и работа ученика определяют смысл.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 7524,
+          "sha256": "49a59da8867fde470d620270c81d1b7f589f20dc0f009bf696495588aa7e7c71",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/10-learning-stages-160.webp",
+          "url": "images/oge/10-learning-stages-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 18142,
+          "sha256": "ffdb5d16edee17bee561d4c744502dc525b8b6610882e4ba93c7aadecf049b59",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/10-learning-stages-320.webp",
+          "url": "images/oge/10-learning-stages-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 47854,
+          "sha256": "eeff0befaf83686e410e12b98b1330df8b5759587a75c9cc4d5b953b051fbd9a",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/10-learning-stages-640.webp",
+          "url": "images/oge/10-learning-stages-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 92472,
+          "sha256": "5cd587d25e129f445800af30ff51667766e50e218ef24d3844f9937d028ff85e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/10-learning-stages-960.webp",
+          "url": "images/oge/10-learning-stages-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "11-text-search",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Поиск доказательства в тексте, №10",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1NOneb2tY76V8i5LFi4-b7yuyyxo4aDU9.png",
+        "filename": "11 - Лупа и вопросительный знак.png",
+        "sha256": "d54db783b2ffc6c14d55579f30cf20f60e321c1587af217ee5471082b9b21f81",
+        "bytes": 1474925,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1NOneb2tY76V8i5LFi4-b7yuyyxo4aDU9",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/analiz-teksta/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8840,
+          "sha256": "bdc3906d2a4c3a2a4a8c01f0d50ee0ed66e0826ef2a93da60891528d994a37fa",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/11-text-search-160.webp",
+          "url": "images/oge/11-text-search-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 20452,
+          "sha256": "ced53e9f8d8f0a6f04f80b06aef1655eaaa2a07ebf547b8cbfee9be4930bd841",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/11-text-search-320.webp",
+          "url": "images/oge/11-text-search-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 53276,
+          "sha256": "448db4251f3b9f650ffa6bcad06952b56f220a07d50321242897f17051b3b602",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/11-text-search-640.webp",
+          "url": "images/oge/11-text-search-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 105928,
+          "sha256": "a49532d817745f254b8e2add894f4674bb184f9b3216f6a161c70d597a29dd49",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/11-text-search-960.webp",
+          "url": "images/oge/11-text-search-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "12-punctuation-leaves",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Тематические тренажёры по пунктуации",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1TVRdA342yZZ5zbJPSTwdafSgbPy9E2Bq.png",
+        "filename": "12 - Знаки препинания с листьями.png",
+        "sha256": "560d40698d8a022c7928c059252e41dcbe94b28b9a8ffa1cb6f5b4a633f546eb",
+        "bytes": 783586,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1TVRdA342yZZ5zbJPSTwdafSgbPy9E2Bq",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/punktuacionnyy-analiz/",
+          "/theory/odnorodnye/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 7962,
+          "sha256": "aa85e45ad38a7f75f16ba5ac7bc9966b91f5d33659b7462bac531d14e7fc9d7a",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/12-punctuation-leaves-160.webp",
+          "url": "images/oge/12-punctuation-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 18454,
+          "sha256": "398af8ebfcb632510eb215d60f0c1f748f40ff414464a063a0af464b204d3768",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/12-punctuation-leaves-320.webp",
+          "url": "images/oge/12-punctuation-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 45880,
+          "sha256": "4038c417da29bdab1d2f172a0ff4fce2abd2e20172313a83f8a348d8d479add5",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/12-punctuation-leaves-640.webp",
+          "url": "images/oge/12-punctuation-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 87504,
+          "sha256": "615fc0c8b54df7910afbe5a08570e3077762e653bb679d0edb8a303edd9ff964",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/12-punctuation-leaves-960.webp",
+          "url": "images/oge/12-punctuation-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "13-word-chain",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Словосочетание №9 и связи в предложении",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1ms2Ml4dG5QHaFnICgVCBPhqIHuHzQYVS.png",
+        "filename": "13 - Цепочка слов в предложении.png",
+        "sha256": "5bcdf843eaa6e869bb68eb0a0aeeec47ae41f34bfd3ec5ab8c98f860ca864d57",
+        "bytes": 683977,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1ms2Ml4dG5QHaFnICgVCBPhqIHuHzQYVS",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/slovosochetaniya/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8048,
+          "sha256": "289c3a06af2792c061665540e6a8147648c74b4c67e99c486b5a9323c39a4727",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/13-word-chain-160.webp",
+          "url": "images/oge/13-word-chain-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 19352,
+          "sha256": "cf77597060f62e773218803cd94ba09e507414f86600cff803e35af68c627dce",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/13-word-chain-320.webp",
+          "url": "images/oge/13-word-chain-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 47824,
+          "sha256": "b8f851b6151aea35451e309ecd31935abdb8e050083473fac60827886b82a003",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/13-word-chain-640.webp",
+          "url": "images/oge/13-word-chain-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 87308,
+          "sha256": "528879e3206c682305811bc58402ea7aa9d36b24f9946e6d932bc83bf0c14d24",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/13-word-chain-960.webp",
+          "url": "images/oge/13-word-chain-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "14-bookshelf",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Справочные материалы/каталог теории",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1bLi750XQTM48cuFOjKBTUi6o4SaOI2NJ.png",
+        "filename": "14 - Книжная полка с очками.png",
+        "sha256": "15a63d1a5825ca1aa97922f8c457d101d1fda49d409f0148f175b3bfcffc3ac0",
+        "bytes": 1396291,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1bLi750XQTM48cuFOjKBTUi6o4SaOI2NJ",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8226,
+          "sha256": "4ec6c9cc90eea8b772718f3667e0382908d08ff8784a5d14d6a930059a356868",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/14-bookshelf-160.webp",
+          "url": "images/oge/14-bookshelf-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 21626,
+          "sha256": "88e6c008585b1055f0f239458636dc88a86c921992f137ccaf7d5e68facb940e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/14-bookshelf-320.webp",
+          "url": "images/oge/14-bookshelf-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 58548,
+          "sha256": "f6d0407565c750ed233ebd841ca236abfe51aca1b8d5d74b872af97076bc58db",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/14-bookshelf-640.webp",
+          "url": "images/oge/14-bookshelf-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 118698,
+          "sha256": "c6bd5232e1becefa757418f23f4291e1dc61b0a82314953dea8ead09d8f46453",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/14-bookshelf-960.webp",
+          "url": "images/oge/14-bookshelf-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "15-writer-bust",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Общий мотив литературы; не портрет конкретного автора",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1Nl2_vxau9Rrt73HJsw98yEdgabUyfPHq.png",
+        "filename": "15 - Образ классического писателя.png",
+        "sha256": "af6b9630130279effbfb1f9ad7cfed084aadf1e615911ddf8c806b7953d3b1c1",
+        "bytes": 1716575,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1Nl2_vxau9Rrt73HJsw98yEdgabUyfPHq",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10132,
+          "sha256": "03f6e09d1df1c9eb274d6542943eae45e07a14064ddc4b9a40dc42ba7c8c2470",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/15-writer-bust-160.webp",
+          "url": "images/oge/15-writer-bust-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 25234,
+          "sha256": "1ea03bbfeb3cdad9ce2efb94648bdf2197bbbe80eeb3ad5a56d6884f63bbc9b8",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/15-writer-bust-320.webp",
+          "url": "images/oge/15-writer-bust-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 67206,
+          "sha256": "a7d7eb11d2db54716d089f2cf4ba1ab79840ed5e5b9b4f25177782ec5b3097b0",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/15-writer-bust-640.webp",
+          "url": "images/oge/15-writer-bust-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 138262,
+          "sha256": "a83083f924be672eaf75c6a3aa70e83357faddbf9525c13bbfa74f9e03fccec0",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/15-writer-bust-960.webp",
+          "url": "images/oge/15-writer-bust-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "16-reading-candle",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Дополнительный мотив чтения; опционально",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1yFrZNQInS-3unlMajf1monkuIShkGA4Y.png",
+        "filename": "16 - Книга и свеча.png",
+        "sha256": "03d278de995d7dca29da407e456c2f56aea66730f2d172ddcfc6446733946715",
+        "bytes": 1357534,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1yFrZNQInS-3unlMajf1monkuIShkGA4Y",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 9692,
+          "sha256": "acdb5f722d6bff39f2ce4b92fc0e01e1b2c9a357b4e7869bf26271f65fcc803c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/16-reading-candle-160.webp",
+          "url": "images/oge/16-reading-candle-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 25218,
+          "sha256": "8c14a260f4606d28fe29608add3de301ea38e1aa48445bca71c1a5500dc11593",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/16-reading-candle-320.webp",
+          "url": "images/oge/16-reading-candle-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 71530,
+          "sha256": "6f617910f1ffc4cc10d9f551101543d916fa4d6f0ce2ef8c131f7b177ad43cd1",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/16-reading-candle-640.webp",
+          "url": "images/oge/16-reading-candle-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 145292,
+          "sha256": "d41caf318456df50186f238cc9656b034f8e6ee9d69fa76798391b04b12c95c0",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/16-reading-candle-960.webp",
+          "url": "images/oge/16-reading-candle-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "17-learning-path",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Карта курса ОГЭ",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/11LYzGvxivuvjfrmbL76KTiK6005i7oV8.png",
+        "filename": "17 - Дорога из книжных страниц.png",
+        "sha256": "75609429c297da28cfcf320e4ba058f9ae0b9a721878adc57e3532cafd38b217",
+        "bytes": 1108021,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "11LYzGvxivuvjfrmbL76KTiK6005i7oV8",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8378,
+          "sha256": "8fa6a4195288579548f03922a133b33d88c1e9a406705ea8c2e5b0be062cab8f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/17-learning-path-160.webp",
+          "url": "images/oge/17-learning-path-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 20672,
+          "sha256": "285f5571da9ad38e03919253ffc71305d00f119dad746c5ab80163c5f0864797",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/17-learning-path-320.webp",
+          "url": "images/oge/17-learning-path-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 53160,
+          "sha256": "fa17a564db81e1e9a06f8a9ecf5604fe49eac1f04e937831f4f202468536fe2b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/17-learning-path-640.webp",
+          "url": "images/oge/17-learning-path-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 101360,
+          "sha256": "03b686a9a019e3e36d110ce909b28c9df6c86454233cf9d74e12986af13440e0",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/17-learning-path-960.webp",
+          "url": "images/oge/17-learning-path-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "18-herbarium-book",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Чтение/память: опционально",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1wGKbCYICPgYwiBxPiZgLOWM6ntG5-pFH.png",
+        "filename": "18 - Гербарий между страницами книги.png",
+        "sha256": "2e705d3dd5114e4790b52c086a7442a86e31f8bbe8def76d8dd64b295a553b21",
+        "bytes": 1751520,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1wGKbCYICPgYwiBxPiZgLOWM6ntG5-pFH",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 7776,
+          "sha256": "6f50c6ae4664761ed4794db18ad74988ba67fecb07a797281defdfca3a348552",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/18-herbarium-book-160.webp",
+          "url": "images/oge/18-herbarium-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 18526,
+          "sha256": "d06b6e81a32d013dbb1568700f798d13cda80e7c7c4c40ef6c17bba9c9bcc345",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/18-herbarium-book-320.webp",
+          "url": "images/oge/18-herbarium-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 48644,
+          "sha256": "9578a04d024820616b89c0ec6111d2052c6b8a0afaf055919a7af7cd4730941f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/18-herbarium-book-640.webp",
+          "url": "images/oge/18-herbarium-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 94676,
+          "sha256": "d9ef59956748567be9b22bb3a2d6f0e933824b6e8accc9f966745deee249ccde",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/18-herbarium-book-960.webp",
+          "url": "images/oge/18-herbarium-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "19-bird-letters",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Средства выразительности №11; декоративно",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1SpFXQEdMXeZvhoPgYAnex0g0Ru9rnsSo.png",
+        "filename": "19 - Птица и летящие буквы.png",
+        "sha256": "7414a5f2fe2009e2d8b2e3f7537d2bf3f50c70b912bb66dca1121d3f95d8715d",
+        "bytes": 1328604,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1SpFXQEdMXeZvhoPgYAnex0g0Ru9rnsSo",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/vyrazitelnost/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10998,
+          "sha256": "7c20033ee1202ef997aef9eca277dd562ad05f0114411c2093a51f729e44c0f4",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/19-bird-letters-160.webp",
+          "url": "images/oge/19-bird-letters-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 26480,
+          "sha256": "404d47404b13baadc1f750366fc70cf4ae2b8e24c9edcb15ac3048e5eee18840",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/19-bird-letters-320.webp",
+          "url": "images/oge/19-bird-letters-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 69174,
+          "sha256": "a8dba4b5a8d9a3c203613f0948beca34dc07a46fc861aae749a95ed54e5e4b76",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/19-bird-letters-640.webp",
+          "url": "images/oge/19-bird-letters-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 136888,
+          "sha256": "0c46e8e1343b3eb9f86f5734a9754dcaffbfad053d748222b94978e939d1cfd5",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/19-bird-letters-960.webp",
+          "url": "images/oge/19-bird-letters-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "20-reading-corner",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Дополнительное оформление учебника; опционально",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1QwreadM-5XhjEnI7X3d8n5OMfBazgMrZ.png",
+        "filename": "20 - Уютный уголок для чтения.png",
+        "sha256": "248a18b490f255299093732c2a104f24f6bd511a4afbe3cb1acc72256ccef652",
+        "bytes": 1698260,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1QwreadM-5XhjEnI7X3d8n5OMfBazgMrZ",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10076,
+          "sha256": "42f5511bd002329b83f789181ee3a16559082034364723b9351757e0f573082b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/20-reading-corner-160.webp",
+          "url": "images/oge/20-reading-corner-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 24672,
+          "sha256": "a142215a2fdf2746e9f7c86c7c064cd495ffa1814341ebe4565a7c879b29e7cf",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/20-reading-corner-320.webp",
+          "url": "images/oge/20-reading-corner-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 67850,
+          "sha256": "b82cb3d0e95319ed86dbe933d38130023f749375c2e57d91046d5b6b01902889",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/20-reading-corner-640.webp",
+          "url": "images/oge/20-reading-corner-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 144940,
+          "sha256": "41c17f219d42e26079531a33488c9f8b34634f5bfdb6570ce26c1309dd14edbc",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/20-reading-corner-960.webp",
+          "url": "images/oge/20-reading-corner-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "21-quill-ink",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Сочинение и письменные разборы №13",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1QpKw8bzHQYo15_oJ9XTfRCIGtc2jsAnb.png",
+        "filename": "21 - Перьевая ручка и чернильница.png",
+        "sha256": "f29fd8dbcc834608de64bbce9970ab3e0a6e44d53fd60c5138f12db211de77c0",
+        "bytes": 1492438,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1QpKw8bzHQYo15_oJ9XTfRCIGtc2jsAnb",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/bank/13/",
+          "/theory/sochinenie/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10504,
+          "sha256": "2eb4183ace997d6cfbf92a3471525cadffca58b92980441c6e710df66c6671e7",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/21-quill-ink-160.webp",
+          "url": "images/oge/21-quill-ink-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 25766,
+          "sha256": "00a77f06aae17a47dadf5b0e01e1af1dd5dfaf6837bc5fc016697c54e822ef75",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/21-quill-ink-320.webp",
+          "url": "images/oge/21-quill-ink-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 68682,
+          "sha256": "9365df9b24a4dda6d0d6dbe3c7e6775a6a4ea2ff099baca0bf24373464c64932",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/21-quill-ink-640.webp",
+          "url": "images/oge/21-quill-ink-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 136600,
+          "sha256": "9242e8849530088cee8cc099b4e731ccd03a54e3dde1089c17b8c699f414db81",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/21-quill-ink-960.webp",
+          "url": "images/oge/21-quill-ink-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "22-dictionary",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Лексика №12 и словарная справка",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1EOZ-OSXZXhDCkWfaLM44hHF3WgVD7E2h.png",
+        "filename": "22 - Раскрытый словарь с закладками.png",
+        "sha256": "58d17536e35d0a8b1dd4cf08c3dc45a0cd55b6d79f3de024700ad717a62d18a5",
+        "bytes": 1518695,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1EOZ-OSXZXhDCkWfaLM44hHF3WgVD7E2h",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/theory/leksika/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8580,
+          "sha256": "1a0f0dfdbd62dd8537e3c29142f54cf9077e90b37936ab03a406f9bcf5d55411",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/22-dictionary-160.webp",
+          "url": "images/oge/22-dictionary-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 22204,
+          "sha256": "695e89113642f2385cec92ecef88e4272510d68bcab84c1b0e3139fc436387f2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/22-dictionary-320.webp",
+          "url": "images/oge/22-dictionary-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 59940,
+          "sha256": "748607458250685935dcf4aeec98932d78c05c15068b9d431a586d16106a033f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/22-dictionary-640.webp",
+          "url": "images/oge/22-dictionary-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 113678,
+          "sha256": "042452b074cb55d94be018a5f5daa263e87714921615d90542a2170823fbc48b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/22-dictionary-960.webp",
+          "url": "images/oge/22-dictionary-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "23-book-speech",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Изложение и аудиопрактика №1",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1zzbtYZ0Yp2HrED4P-62aqLWKb1JmW0J5.png",
+        "filename": "23 - Книга и облако речи.png",
+        "sha256": "b89ff947592b322a00e3329aaabaa91db74b599edfd6a2908541186f341ae501",
+        "bytes": 1599598,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1zzbtYZ0Yp2HrED4P-62aqLWKb1JmW0J5",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/bank/1/",
+          "/theory/izlozhenie/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 10420,
+          "sha256": "63e563a1fb970a9ef30d669e280156bfd511bd884e6927ff27cf22f089b2b621",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/23-book-speech-160.webp",
+          "url": "images/oge/23-book-speech-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 25618,
+          "sha256": "293bb136c1d3471607bc1dd89f0b47d0a794b74eb9c13957e836248cc24016cb",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/23-book-speech-320.webp",
+          "url": "images/oge/23-book-speech-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 70212,
+          "sha256": "c6fdf90bccedac975b54e91164e473ea9d4f53cef4ffbc788622133af3cf63e3",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/23-book-speech-640.webp",
+          "url": "images/oge/23-book-speech-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 139898,
+          "sha256": "2ab386b2141ccb7bd90748e8aededcd7053f64145ef3079a45b69e793d5f8c44",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/23-book-speech-960.webp",
+          "url": "images/oge/23-book-speech-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "24-letter-branch",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Авторский текст письма/письменная практика, при подходящем контексте",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1WFSZdC3Nccp_5_Nc7GZLbA7M_MPO4Gaa.png",
+        "filename": "24 - Письмо в конверте с ветвью.png",
+        "sha256": "debee519a7584548240d59c906e54f62ecf5067a30037ce6a757e03cd80dd710",
+        "bytes": 1536988,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1WFSZdC3Nccp_5_Nc7GZLbA7M_MPO4Gaa",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 6984,
+          "sha256": "f528f9a67d180b831540c83bb8adfe59f4dc631609ffa36f0d780c00cd0cda21",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/24-letter-branch-160.webp",
+          "url": "images/oge/24-letter-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 16878,
+          "sha256": "36bbdfb6d527b896f3d17d935355f19aedb1e727bea2801cd1a01eb131b11453",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/24-letter-branch-320.webp",
+          "url": "images/oge/24-letter-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 43834,
+          "sha256": "b6c36da50082edfdff17a60c1448035558ad4907d98a5e8cc5cba81f11049fc9",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/24-letter-branch-640.webp",
+          "url": "images/oge/24-letter-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 83288,
+          "sha256": "b599bac0ff1faafe8e662670a27afea1dbd6ac1c374521aecce8df7506d7b2be",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/24-letter-branch-960.webp",
+          "url": "images/oge/24-letter-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "25-time-book",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Полные контрольные варианты: декоративный мотив времени",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1wTI27kLMptkcohMHGZtwTBBeM8S3wJUO.png",
+        "filename": "25 - Песочные часы и книга.png",
+        "sha256": "29696c700fe5d2d9e5920bf7b335b171598852b449f35aec2a5c3de287318e87",
+        "bytes": 1385480,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1wTI27kLMptkcohMHGZtwTBBeM8S3wJUO",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/generator/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 9508,
+          "sha256": "11f9dfd71c70e9296a1d9a7feb6e0832d17fd96b5552dd2324bc9d9c651f3553",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/25-time-book-160.webp",
+          "url": "images/oge/25-time-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 22974,
+          "sha256": "6939bb3233f6ebd758398417506ec730174bda06a78f352ae9dba69ffecf8881",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/25-time-book-320.webp",
+          "url": "images/oge/25-time-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 60388,
+          "sha256": "10f6da72e7e1bf510a546b217460b0344de2a209c98c3c7346d156af17f5b661",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/25-time-book-640.webp",
+          "url": "images/oge/25-time-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 118900,
+          "sha256": "c6759731fd722c4fbebb0e9e5b13f9591b188ecb95bf08045f218ef82aeefe1c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/25-time-book-960.webp",
+          "url": "images/oge/25-time-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "26-card-catalog",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Каталог банка заданий ОГЭ",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/12pyqDqHbBrI-rvykz-jZcavGY2Vx6XLd.png",
+        "filename": "26 - Библиотечная картотека.png",
+        "sha256": "ea7130e2e127d4d278740270bfd4ba0d2e80c81ce345e7d94e4a222d180c7e2c",
+        "bytes": 1541653,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "12pyqDqHbBrI-rvykz-jZcavGY2Vx6XLd",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/bank/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 9478,
+          "sha256": "701988f8691a5e07fab88e7c36dcbd9fb58bafb60cdbf856bd158dea253f877c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/26-card-catalog-160.webp",
+          "url": "images/oge/26-card-catalog-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 23152,
+          "sha256": "092cddd722d3c5a581d9ca2619555b478477557b5abe8217e877c8cb7338d851",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/26-card-catalog-320.webp",
+          "url": "images/oge/26-card-catalog-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 63262,
+          "sha256": "984940419cd6416c41cc6880addb0afa10053ca500d2a1f0a0d3ad62d44acaea",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/26-card-catalog-640.webp",
+          "url": "images/oge/26-card-catalog-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 126524,
+          "sha256": "fe2cbec4818d4dafff3864c6e04136d47b39f0064e5115a682d5c60cf6677075",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/26-card-catalog-960.webp",
+          "url": "images/oge/26-card-catalog-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "27-book-bookmark",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Готовые варианты",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1TH7LVliIlOYCmuMdE9Xm9oKymh_OKkQP.png",
+        "filename": "27 - Закрытая книга с лентой-закладкой.png",
+        "sha256": "95e8594bd49de72555228fe4d20ae8b69457aac90960794925388c85562e888e",
+        "bytes": 1323017,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1TH7LVliIlOYCmuMdE9Xm9oKymh_OKkQP",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "installed",
+        "usedOn": [
+          "/oge/variants/",
+          "/oge/variants/1/",
+          "/oge/variants/2/",
+          "/oge/variants/3/",
+          "/oge/variants/4/",
+          "/oge/variants/5/"
+        ],
+        "reason": "Декоративный акцент подходящего направления, без подмены текста, схемы или ответа.",
+        "exam": "OGE"
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 7754,
+          "sha256": "21a80a5ad002a3ee21269d057275c7d46d33941a9801c59503ce46128b73a610",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/27-book-bookmark-160.webp",
+          "url": "images/oge/27-book-bookmark-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 18706,
+          "sha256": "c8804bb4bade1971e9d786ee33b405461a72b02c8a18a91212dca8a7e9247028",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/27-book-bookmark-320.webp",
+          "url": "images/oge/27-book-bookmark-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 50840,
+          "sha256": "027284fb67fcbb5f66e581393b81b7c1ef688947a2fb1dc27a1a5ac879996545",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/27-book-bookmark-640.webp",
+          "url": "images/oge/27-book-bookmark-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 106660,
+          "sha256": "af89ebbb64fd96f16100d75e28740188f4cc28347308992f651c9bd0e4fe0eb8",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/27-book-bookmark-960.webp",
+          "url": "images/oge/27-book-bookmark-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "28-quotation-leaves",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Цитаты и пояснения примеров №11/13",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1kFyXf8V1kquV6yi9a11P5-23ZDzVc7AO.png",
+        "filename": "28 - Кавычки из бумаги и листьев.png",
+        "sha256": "5bc4647706cd6e9556aad9d316194315ca02b4fbcaaf9373929899993a385e9b",
+        "bytes": 1161970,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1kFyXf8V1kquV6yi9a11P5-23ZDzVc7AO",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8898,
+          "sha256": "2629f2ad48e704c30b4fca7569669b32c7709a1e47703f0568896ddb8fd8b9a3",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/28-quotation-leaves-160.webp",
+          "url": "images/oge/28-quotation-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 20512,
+          "sha256": "4354b55614dd20b246b1d99901eddc6ea12828932d2c5e19c76e77fc125b411e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/28-quotation-leaves-320.webp",
+          "url": "images/oge/28-quotation-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 51726,
+          "sha256": "10e804fd8a68ba13201937594590873d55ce65e3cfb35c274070796d0494ff0e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/28-quotation-leaves-640.webp",
+          "url": "images/oge/28-quotation-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 98058,
+          "sha256": "8e2c6f798bb41dd88288cdd04e39ed3411b3f089239846c38dc7ffcb82845e98",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/28-quotation-leaves-960.webp",
+          "url": "images/oge/28-quotation-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "29-scroll",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Итог работы/разбор: опционально; сертификаты не создавать",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1vpkWkDB_1HIaEqlr78B1fOXMKLP1d9Hl.png",
+        "filename": "29 - Свиток с сургучной печатью.png",
+        "sha256": "0dfca84448163d92c49d73b0de4bd1dcb89c097ddff65ffc7e456d2f2aa8ec30",
+        "bytes": 1434181,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1vpkWkDB_1HIaEqlr78B1fOXMKLP1d9Hl",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 8638,
+          "sha256": "8ce5bb760acf74c789ee68a1aa227223a732109a6f27594ee4df0926f8fe2576",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/29-scroll-160.webp",
+          "url": "images/oge/29-scroll-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 20754,
+          "sha256": "e6a07e2d1161e7b112011519b7e787954954430b21e0ca14cc8273dd74ebbbec",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/29-scroll-320.webp",
+          "url": "images/oge/29-scroll-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 55540,
+          "sha256": "dca0adfd6b775528ae40a7dcac672b11d0731854c13d0485e2da1e218dadb578",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/29-scroll-640.webp",
+          "url": "images/oge/29-scroll-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 110358,
+          "sha256": "cc2980db74030b5351c61cda302287dfd041c2d514934382accf9ce49c55a613",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/29-scroll-960.webp",
+          "url": "images/oge/29-scroll-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "30-alphabet-cards",
+      "kind": "illustration",
+      "subject": null,
+      "decorative": true,
+      "alt": "",
+      "role": "Общий мотив русского языка; алфавитный курс не создавать",
+      "captionRule": "Декоративная иллюстрация; не заменяет текст правила",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1VzgpodrPo-SbhDjeJVAJ-y361YbhLQH1.png",
+        "filename": "30 - Карточки с буквами русского алфавита.png",
+        "sha256": "f282848d733ecd099f6cbe1f9f48154ac31a110e22db5badb4e5657d345512e2",
+        "bytes": 1641997,
+        "width": 1254,
+        "height": 1254,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1VzgpodrPo-SbhDjeJVAJ-y361YbhLQH1",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "prepared-reserve",
+        "usedOn": [],
+        "reason": "Подготовленный резерв: соответствующее место пока не требует дополнительной иллюстрации; практика и текст имеют приоритет."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "bytes": 11186,
+          "sha256": "55bc37c1ba69bf5754924a2c5a0d1e7a9ad63083540109d7c372dd5c14d7ced2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/30-alphabet-cards-160.webp",
+          "url": "images/oge/30-alphabet-cards-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "bytes": 27168,
+          "sha256": "d8d6b4291996f3c8c5949dc936a7850b1698bddff0a403dd7c82b552545cf366",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/30-alphabet-cards-320.webp",
+          "url": "images/oge/30-alphabet-cards-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "bytes": 69486,
+          "sha256": "f3fb99523e60385704440006b33c7892416d59d90969afbd26db9286968a3351",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/30-alphabet-cards-640.webp",
+          "url": "images/oge/30-alphabet-cards-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "bytes": 133686,
+          "sha256": "bb90dd0b4347cf2cc1257ececdfc7f86f85dd46cbf5a1f25e6a71977acaf4fc2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/30-alphabet-cards-960.webp",
+          "url": "images/oge/30-alphabet-cards-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-bunin",
+      "kind": "portrait",
+      "subject": {
+        "name": "Бунин Иван Алексеевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Бунин Иван Алексеевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Бунин Иван Алексеевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1ok2NW7Rjtixh45XE4bxZnEvfSn1cyrgK.png",
+        "filename": "Бунин Иван Алексеевич.png",
+        "sha256": "6d2d1166aae66f7ac885e8e906b03ff31c4a6b28a3d4dee4d3a11bc84fd4ab09",
+        "bytes": 2312821,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1ok2NW7Rjtixh45XE4bxZnEvfSn1cyrgK",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 9566,
+          "sha256": "45b5a450a4a6e71659fe90ae39ed0687c42b5852bd467f2fdcc7da766271887d",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-bunin-160.webp",
+          "url": "images/oge/portrait-bunin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 26912,
+          "sha256": "49780c0c6b381143515df96c0e9b3fcdc80834647e30da4376898ccb4e7b9c97",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-bunin-320.webp",
+          "url": "images/oge/portrait-bunin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 103380,
+          "sha256": "6d08f5447e5e0497f44a9433fde071c1cf120289dd7624b710b7c79f7f3e669b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-bunin-640.webp",
+          "url": "images/oge/portrait-bunin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 213646,
+          "sha256": "86bbd213626f5e509a31930233dad86c38f132ed602e4a935ed3b99a09e86fcf",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-bunin-960.webp",
+          "url": "images/oge/portrait-bunin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-gogol",
+      "kind": "portrait",
+      "subject": {
+        "name": "Гоголь Николай Васильевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Гоголь Николай Васильевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Гоголь Николай Васильевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1XUGKpjA531rovp7vESHwREktShhyrp3r.png",
+        "filename": "Гоголь Николай Васильевич.png",
+        "sha256": "b2dc074ad7988ffec654614ece89679848a6dd06da3171f9a7686bac8543daea",
+        "bytes": 2242807,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1XUGKpjA531rovp7vESHwREktShhyrp3r",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 10746,
+          "sha256": "8665dedb1326582a741bedc77bb9dca66fb5ed832d714e1734c4aee69c5a2d48",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-gogol-160.webp",
+          "url": "images/oge/portrait-gogol-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 28468,
+          "sha256": "6d7d0340b00ef6ef868608f73bcd8db8c668100d73f7a89ff744d01cf5043db5",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-gogol-320.webp",
+          "url": "images/oge/portrait-gogol-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 94788,
+          "sha256": "d6e7819b085736a3439f844c890c26e0d4dc00179b10a243a1b31f9f1dc4be84",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-gogol-640.webp",
+          "url": "images/oge/portrait-gogol-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 208274,
+          "sha256": "ea99679ee53fdea06a0815b6946532abea5d5142f0ce98068455da67b9ca8fb3",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-gogol-960.webp",
+          "url": "images/oge/portrait-gogol-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-dostoevsky",
+      "kind": "portrait",
+      "subject": {
+        "name": "Достоевский Фёдор Михайлович",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Достоевский Фёдор Михайлович; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Достоевский Фёдор Михайлович; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1X4rmvaEnQk7HJudt0-9rBddFn-hizmTT.png",
+        "filename": "Достоевский Фёдор Михайлович.png",
+        "sha256": "f60ba5b5660157dd424f9530907b679754e60aaf9b5e9b933db88398d904dbbd",
+        "bytes": 2252531,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1X4rmvaEnQk7HJudt0-9rBddFn-hizmTT",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 10280,
+          "sha256": "92012610b70a0bd753efe2787d2ededffbedeff1766554937c2fa8bdf8cef2d9",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-dostoevsky-160.webp",
+          "url": "images/oge/portrait-dostoevsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 26282,
+          "sha256": "d61d2d867d3956982649777615c5cdc0b0520819b768306f6421787897a6943c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-dostoevsky-320.webp",
+          "url": "images/oge/portrait-dostoevsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 81096,
+          "sha256": "c6150c80d306ab8c0a726c0df0625f0ae236ab56ba4c833af0b50832b52c475f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-dostoevsky-640.webp",
+          "url": "images/oge/portrait-dostoevsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 173126,
+          "sha256": "d8fd8d8f4d3648bb355b95797ca2b74efe8703d7592f5a30e6940de574429840",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-dostoevsky-960.webp",
+          "url": "images/oge/portrait-dostoevsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-yesenin",
+      "kind": "portrait",
+      "subject": {
+        "name": "Есенин Сергей Александрович",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Есенин Сергей Александрович; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Есенин Сергей Александрович; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1UOC1VaQv2KsX9lycFuANREZyAK1vkJ27.png",
+        "filename": "Есенин Сергей Александрович.png",
+        "sha256": "03aa2a314a6fea86893d941ebec9076f1d298f6e52987c1d2c508b7884db2e10",
+        "bytes": 2079920,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1UOC1VaQv2KsX9lycFuANREZyAK1vkJ27",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 8344,
+          "sha256": "8f7e7872b6dc20dab163a7e72f78aa9a12f5287b99b57df78c4191fa2f025771",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-yesenin-160.webp",
+          "url": "images/oge/portrait-yesenin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 22146,
+          "sha256": "40bbbef32caa8dd446669101a4341957d52f98adee01412fac41e5cb3cee648e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-yesenin-320.webp",
+          "url": "images/oge/portrait-yesenin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 77466,
+          "sha256": "a94f19c3363fc1acfb20c384adb4297408b9d70ec06c5fe33800c4c505b9c612",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-yesenin-640.webp",
+          "url": "images/oge/portrait-yesenin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 166160,
+          "sha256": "9cca0b0575ad3031b90e2cde864504f91589cd433beba3994fe6e196ff9024d2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-yesenin-960.webp",
+          "url": "images/oge/portrait-yesenin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-lermontov",
+      "kind": "portrait",
+      "subject": {
+        "name": "Лермонтов Михаил Юрьевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Лермонтов Михаил Юрьевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Лермонтов Михаил Юрьевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1EgK9XqideP7aWSRAe_fgr-YMGOLxJe-K.png",
+        "filename": "Лермонтов Михаил Юрьевич.png",
+        "sha256": "437d7c539d97e70806f3f92a6fef06ff7c8207af752d0f006caa4fe88e6d0ecf",
+        "bytes": 2437433,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1EgK9XqideP7aWSRAe_fgr-YMGOLxJe-K",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 14552,
+          "sha256": "e696b468ddf6a3eaa6d508f18ab2d4fe6a4809e4eb8d3865b473d98e3101a7b4",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-lermontov-160.webp",
+          "url": "images/oge/portrait-lermontov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 41936,
+          "sha256": "cbbe53c086ab788c2bbffe9ee56879953da366e4d2222e0dea1de03acd792f56",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-lermontov-320.webp",
+          "url": "images/oge/portrait-lermontov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 141282,
+          "sha256": "531ade09f142eff667e5a200b36b654436d68bb84368a95643df92d04f44594b",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-lermontov-640.webp",
+          "url": "images/oge/portrait-lermontov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 282654,
+          "sha256": "ea61fd5c5148aeaf3840cefdac36d5813a504e2f3ce112e6835bf330bb2d8589",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-lermontov-960.webp",
+          "url": "images/oge/portrait-lermontov-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-mayakovsky",
+      "kind": "portrait",
+      "subject": {
+        "name": "Маяковский Владимир Владимирович",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Маяковский Владимир Владимирович; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Маяковский Владимир Владимирович; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1_s_KQJMkm_Jkxw_PABwXNrdabUJoo9-B.png",
+        "filename": "Маяковский Владимир Владимирович.png",
+        "sha256": "8b1ff8964a2f24c42aa5a7aa36298669332359280c97d554f09a967eab3ca2b8",
+        "bytes": 2492813,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1_s_KQJMkm_Jkxw_PABwXNrdabUJoo9-B",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 9306,
+          "sha256": "ec125fc883ac8374cfffd1b07a1053049b0d812447e1dc242f8bb8fad297911e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-mayakovsky-160.webp",
+          "url": "images/oge/portrait-mayakovsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 28256,
+          "sha256": "8c2ca609b7c7170f020a5775a58991625616af0d0b3f5ce2f01f8497653829bb",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-mayakovsky-320.webp",
+          "url": "images/oge/portrait-mayakovsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 102090,
+          "sha256": "8bc131fd8fe6ee077e21bd667a9b32aead4a6db454f838fcd4354a7c25d1faf2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-mayakovsky-640.webp",
+          "url": "images/oge/portrait-mayakovsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 199192,
+          "sha256": "4cc0ea54f0af64a275a846b5f029607a813174ffe56c632d42f8fd31427bff1f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-mayakovsky-960.webp",
+          "url": "images/oge/portrait-mayakovsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-nekrasov",
+      "kind": "portrait",
+      "subject": {
+        "name": "Некрасов Николай Алексеевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Некрасов Николай Алексеевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Некрасов Николай Алексеевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1nC6Tlf50B1smC8Gx13XhEe4oAjzn1PzA.png",
+        "filename": "Некрасов Николай Алексеевич.png",
+        "sha256": "7c4d8cc7586602b3eb2aecbf5a36226c5467036f29d78593adba0621fac20f5a",
+        "bytes": 2348847,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1nC6Tlf50B1smC8Gx13XhEe4oAjzn1PzA",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 11168,
+          "sha256": "e7c3deaa8a5382640f1b71ec77cae72468c1ce23ac00325126d074c12762c868",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-nekrasov-160.webp",
+          "url": "images/oge/portrait-nekrasov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 28826,
+          "sha256": "46d845e63c566c2491eb2d2170fad524b1963c69da6d3101d5a2134c78763adc",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-nekrasov-320.webp",
+          "url": "images/oge/portrait-nekrasov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 99260,
+          "sha256": "9a267a7b402d097e0756e387e8c41ac663c76400ca7e99fb0da990aad6aa39ef",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-nekrasov-640.webp",
+          "url": "images/oge/portrait-nekrasov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 224722,
+          "sha256": "da2b5e0dce141be40f1ec4286721560a8148b116c7ed64f5f189bba44c68c74e",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-nekrasov-960.webp",
+          "url": "images/oge/portrait-nekrasov-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-ostrovsky",
+      "kind": "portrait",
+      "subject": {
+        "name": "Островский Александр Николаевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Островский Александр Николаевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Островский Александр Николаевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1n0TdyFmf8KDlnbpk3EBSXitMjPWJ0DfC.png",
+        "filename": "Островский Александр Николаевич.png",
+        "sha256": "b6fe688068dbfb4d45c46bf7799d15664648429ec05820ef61fe17b8f6c8fcab",
+        "bytes": 2219028,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1n0TdyFmf8KDlnbpk3EBSXitMjPWJ0DfC",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 11998,
+          "sha256": "3bfdf315b6221bd380d46f9f4b2f3b33f017ac0f834d221b7499888d49f85cd7",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-ostrovsky-160.webp",
+          "url": "images/oge/portrait-ostrovsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 31880,
+          "sha256": "ebf944cb4962f657ec0275f33ad13a1ec11445f7c64842841951686a6419966c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-ostrovsky-320.webp",
+          "url": "images/oge/portrait-ostrovsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 99502,
+          "sha256": "396b145875c3d87e27c5a23667364ce6a563d6665b1ba0e4cff546d3fac1dcc2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-ostrovsky-640.webp",
+          "url": "images/oge/portrait-ostrovsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 209518,
+          "sha256": "78c859576aeeba4890c6d6e20e014f55e157159a2d25bb6fc4b1e905ba609ee2",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-ostrovsky-960.webp",
+          "url": "images/oge/portrait-ostrovsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-pushkin",
+      "kind": "portrait",
+      "subject": {
+        "name": "Пушкин Александр Сергеевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Пушкин Александр Сергеевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Пушкин Александр Сергеевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1kRcRz_STG6hQGH1IH71i_P2sD8SKjcIA.png",
+        "filename": "Пушкин Александр Сергеевич.png",
+        "sha256": "5534d2cc76a2b803e82f2175973ea134fb9945a3a577f2e1b03fc86a989db3da",
+        "bytes": 2157048,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1kRcRz_STG6hQGH1IH71i_P2sD8SKjcIA",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 11660,
+          "sha256": "8e9b20af247ebb11fde7655d642fbf2f756e9a093df45c93000102ce4c184d2c",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-pushkin-160.webp",
+          "url": "images/oge/portrait-pushkin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 32376,
+          "sha256": "b220916e1e8fe30f91107059efcbc4bb68309d04b348ac8ed951ebfcd2437630",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-pushkin-320.webp",
+          "url": "images/oge/portrait-pushkin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 104892,
+          "sha256": "8356bbcb21357144b3acbbe56daceb9266ac7ad6ace7093c8f81364761e18ddb",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-pushkin-640.webp",
+          "url": "images/oge/portrait-pushkin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 218964,
+          "sha256": "01fb6d1cc54bce6d2cf78ce9ae4224910ba17c2adb682da6230906458ccb9838",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-pushkin-960.webp",
+          "url": "images/oge/portrait-pushkin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-tolstoy",
+      "kind": "portrait",
+      "subject": {
+        "name": "Толстой Лев Николаевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Толстой Лев Николаевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Толстой Лев Николаевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1agWbYjV0972TZlFhLMvmw0t1S4x39FPu.png",
+        "filename": "Толстой Лев Николаевич.png",
+        "sha256": "702c8ae507bd7658f750933cd2767a3f9cf4a96d130e9e2a353006230bdd7be0",
+        "bytes": 2211506,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1agWbYjV0972TZlFhLMvmw0t1S4x39FPu",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 11762,
+          "sha256": "8844d04f02fc539638db663063f34c6082b44477b7e316df01a79d6b1d9c14d1",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-tolstoy-160.webp",
+          "url": "images/oge/portrait-tolstoy-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 34714,
+          "sha256": "3d2146512430a3e8ed18637b60174507bb4889aa7054e5de46453373b365e0dd",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-tolstoy-320.webp",
+          "url": "images/oge/portrait-tolstoy-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 123030,
+          "sha256": "2eb69e13fff1fe1d32e65472bac0608cba57fd21329f8249b97923ad533296f8",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-tolstoy-640.webp",
+          "url": "images/oge/portrait-tolstoy-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 252870,
+          "sha256": "7f7f844159192d2bda2f51543ce10a04c47d1de3447e18ff3e7175330ed89006",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-tolstoy-960.webp",
+          "url": "images/oge/portrait-tolstoy-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-turgenev",
+      "kind": "portrait",
+      "subject": {
+        "name": "Тургенев Иван Сергеевич",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Тургенев Иван Сергеевич; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Тургенев Иван Сергеевич; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1emfuSu66aMqwzoJI8wOBY0R7pcFes4lx.png",
+        "filename": "Тургенев Иван Сергеевич.png",
+        "sha256": "9af20e50da06d7d4a55399dd65a11633259dec67d87a11d7a7f5a7872b7a3885",
+        "bytes": 2062527,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1emfuSu66aMqwzoJI8wOBY0R7pcFes4lx",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 10600,
+          "sha256": "26b8bdaa11ddcb9d8578bb416c8d8c2f512ba21f47c4107d114630d9d6e5e4bd",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-turgenev-160.webp",
+          "url": "images/oge/portrait-turgenev-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 27554,
+          "sha256": "6ebf0f3ef182a657db589b45ac4bd782a669a93fedeb410e467cb9445371d9ad",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-turgenev-320.webp",
+          "url": "images/oge/portrait-turgenev-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 86310,
+          "sha256": "1d501402df8b061a1dd347a10ef6ad0dd5d5cdbb5df914d409128b55a8329cf8",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-turgenev-640.webp",
+          "url": "images/oge/portrait-turgenev-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 183662,
+          "sha256": "fce3a7303d81774be6da8eac7d05852d51ec87a37bc5c569a269688113870adb",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-turgenev-960.webp",
+          "url": "images/oge/portrait-turgenev-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-chekhov",
+      "kind": "portrait",
+      "subject": {
+        "name": "Чехов Антон Павлович",
+        "attributionStatus": "filename-only-unverified",
+        "depiction": "stylized-illustration"
+      },
+      "decorative": false,
+      "alt": "Стилизованная иллюстрация: предполагаемый Чехов Антон Павлович; атрибуция не подтверждена",
+      "role": "Рядом с текстом реального автора Чехов Антон Павлович; не приписывать ему оригинальные тексты проекта",
+      "captionRule": "Иллюстративный портрет; атрибуцию проверить до использования",
+      "source": {
+        "file": "artifacts/audit-2026-10-14/images/1VCldztU-CeravO31yu2bbW5TBiHWZ585.png",
+        "filename": "Чехов Антон Павлович.png",
+        "sha256": "46f6b152af8cc6a7d93bd195a7e8e51e5391deee1072b769d14c23b282f6324d",
+        "bytes": 2339911,
+        "width": 1086,
+        "height": 1448,
+        "hasAlpha": true,
+        "provenance": "user-provided-google-drive-assets",
+        "driveId": "1VCldztU-CeravO31yu2bbW5TBiHWZ585",
+        "rightsEvidence": "not-stated-in-provided-plan",
+        "creator": null
+      },
+      "usage": {
+        "status": "reserve-unverified-attribution",
+        "usedOn": [],
+        "reason": "Имя взято из имени исходного файла; достоверность портрета и связь с авторством текущих текстов не подтверждены. Портрет не установлен в интерфейс."
+      },
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "bytes": 9214,
+          "sha256": "74b981d9863c7ceeadf93cc87e4a115d326c171b3bccb4551b7a388e6c5583bf",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-chekhov-160.webp",
+          "url": "images/oge/portrait-chekhov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "bytes": 22492,
+          "sha256": "1a514d697ff78c6308c122e52145863ce20fdc4f5934858ccb03e5f4d8b12c60",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-chekhov-320.webp",
+          "url": "images/oge/portrait-chekhov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "bytes": 74388,
+          "sha256": "236c47d7992a5e24f12f11a707e3ab3798f4bad4b1b17f1367b70e308e1d2c9f",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-chekhov-640.webp",
+          "url": "images/oge/portrait-chekhov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "bytes": 175240,
+          "sha256": "21b308e4745cedac7aa382a1445cf2fa1d39c950eb90aa222595a8dbb5b09eda",
+          "format": "webp",
+          "hasAlpha": true,
+          "file": "apps/showcase/public/images/oge/portrait-chekhov-960.webp",
+          "url": "images/oge/portrait-chekhov-960.webp"
+        }
+      ]
+    }
+  ]
+}

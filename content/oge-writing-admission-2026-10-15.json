@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "batchPath": "content/oge-writing-batch-2026-10-15.json",
+  "sha256": "00dfe1a9c9c7ce13fa013cbec129edfab6d7be587662d10537ecef77b271ede2",
+  "hashEncoding": "compact-json-v1",
+  "mode": "checked-demo",
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "Codex root: независимое полное чтение 12 образцов, 12 стадий и шести адресных разборов критериев",
+  "teacherApproval": "pending",
+  "guideIds": [
+    "guide-essay-audit-subtitles",
+    "guide-essay-audit-printproof"
+  ],
+  "counts": {
+    "guides": 2,
+    "routes": 6,
+    "strongTexts": 6,
+    "weakTexts": 6,
+    "official": 0
+  },
+  "limitations": [
+    "Учебные образцы показывают ход рассуждения и предметные ошибки; это не автоматическая оценка по шкале экзамена.",
+    "Редакторский допуск checked-demo не является утверждением Полиной или официальным эталоном ФИПИ."
+  ]
+}

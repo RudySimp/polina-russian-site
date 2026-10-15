@@ -58,7 +58,7 @@ test("ОГЭ: пять направлений, теория по линии и �
   await expect(page.locator("#bank .oge-lines a")).toHaveCount(13);
   await page.locator("#bank .oge-lines a").filter({ hasText: "№ 10" }).click();
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 23",
+    "Найдено заданий: 25",
   );
   await page.locator(".exercise-card").first().click();
   await expect(page.locator(".oge-source")).toBeVisible();
@@ -67,11 +67,13 @@ test("ОГЭ: пять направлений, теория по линии и �
     .getByRole("link", { name: "Вернуться к подборке", exact: true })
     .click();
   await expect(page.locator(".results-count")).toHaveText(
-    "Найдено заданий: 23",
+    "Найдено заданий: 25",
   );
   await page.goto("oge/theory/?line=11");
-  await expect(page.locator(".topic-card")).toHaveCount(1);
-  await page.locator(".topic-card").click();
+  await expect(page.locator(".course-topic")).toHaveCount(1);
+  await page
+    .getByRole("link", { name: "Полная справочная глава", exact: true })
+    .click();
   await expect(page.locator("h1")).toHaveText("Средства выразительности");
   await page
     .getByRole("link", { name: "Вернуться к каталогу", exact: true })
@@ -310,7 +312,7 @@ test("Генератор: сохранённый состав, независи�
   expect((await currentWork(page)).items).toHaveLength(5);
 });
 
-test("Семь тренажёров: ошибка, исправление и десять разных ситуаций каждого", async ({
+test("Семь тренажёров: ошибка, исправление и все ситуации каждой механики", async ({
   page,
 }) => {
   test.setTimeout(180000);
@@ -404,7 +406,13 @@ test("Семь тренажёров: ошибка, исправление и д�
     }
   }
   await page.goto("oge/results/");
-  await expect(page.locator("main")).toContainText("Проверенных действий: 77");
+  await expect(page.locator("main")).toContainText(
+    "Проверенных действий: " +
+      activities.reduce(
+        (sum, activity) => sum + activity.situations.length + 1,
+        0,
+      ),
+  );
 });
 
 test("ОГЭ: доступность каталога, развёрнутого банка, генератора, тренажёров и письменной формы", async ({

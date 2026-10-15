@@ -1,3 +1,4 @@
+import { routeMetadata, pageHtml } from "./src/route-metadata.ts";
 import { defineConfig } from "vite";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
@@ -25,10 +26,17 @@ export default defineConfig({
       writeBundle() {
         const dist = resolve(root, "dist");
         const html = readFileSync(resolve(dist, "index.html"), "utf8");
+        writeFileSync(
+          resolve(dist, "index.html"),
+          pageHtml(html, routeMetadata("/")),
+        );
         for (const route of routes.filter((route) => route !== "/")) {
           const directory = resolve(dist, route.slice(1));
           mkdirSync(directory, { recursive: true });
-          writeFileSync(resolve(directory, "index.html"), html);
+          writeFileSync(
+            resolve(directory, "index.html"),
+            pageHtml(html, routeMetadata(route)),
+          );
         }
         writeFileSync(resolve(dist, "404.html"), html);
         writeFileSync(resolve(dist, "routes.json"), JSON.stringify(routes));

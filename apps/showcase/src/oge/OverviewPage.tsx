@@ -91,6 +91,7 @@ export default function OverviewPage({
     <div className="oge-overview">
       <Breadcrumbs items={[{ label: "ОГЭ" }]} />
       <PageHeading
+        illustration="01-book-branch"
         eyebrow="РУССКИЙ ЯЗЫК · ОГЭ"
         title="Подготовка к ОГЭ"
         text="Правила, задания и варианты с разбором и сохранением."

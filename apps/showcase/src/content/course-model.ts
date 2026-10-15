@@ -1,0 +1,31 @@
+import type { Lesson, LessonBlock } from "./model.ts";
+export type CourseSource = {
+  sourceId: string;
+  filename: string;
+  pdfPage: number;
+  printedPage?: number | null;
+  sourceSha256: string;
+  section: string;
+};
+export type CourseModuleDescriptor = {
+  id: string;
+  revision: number;
+  title: string;
+  outcome: string;
+  topicId: string;
+  ogeLines: number[];
+  prerequisiteIds: string[];
+  prerequisitePaths: { title: string; route: string }[];
+  skillIds: string[];
+  microtopicIds?: string[];
+  kind: "chapter-sections" | "original";
+  sectionIds: string[];
+  sourceLessonId?: string;
+  sourceLessonRevision?: number;
+  review: "checked-demo";
+  teacherApproval: "pending";
+  sources?: CourseSource[];
+  normativeSources?: { title: string; url: string; checkedAt: string }[];
+};
+export type CoursePayload = { lesson?: Lesson; checkpoint?: LessonBlock };
+export type CourseContent = { lesson: Lesson; checkpoint?: LessonBlock };

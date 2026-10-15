@@ -1,3 +1,4 @@
+import { routeMetadata } from "../route-metadata";
 import { ContentBoundary } from "../components/ContentBoundary";
 import { Suspense, lazy, useEffect, useRef, useState } from "react";
 import { Layout } from "../components/Layout";
@@ -43,6 +44,25 @@ const OgeRouter = lazy(() => import("../oge/OgeRouter"));
 
 export function App() {
   const path = currentPath(window.location.pathname);
+  useEffect(() => {
+    const update = () => {
+      const metadata = routeMetadata(
+        window.location.pathname,
+        window.location.search,
+      );
+      document.title = metadata.title;
+      document
+        .querySelector<HTMLMetaElement>('meta[name="description"]')
+        ?.setAttribute("content", metadata.description);
+    };
+    update();
+    window.addEventListener("popstate", update);
+    window.addEventListener("polina-catalog-changed", update);
+    return () => {
+      window.removeEventListener("popstate", update);
+      window.removeEventListener("polina-catalog-changed", update);
+    };
+  }, [path]);
   const [attempts, setAttempts] = useState<LocalAttempt[]>([]);
   const attemptsRef = useRef<LocalAttempt[]>([]);
   const [storageError, setStorageError] = useState(false);

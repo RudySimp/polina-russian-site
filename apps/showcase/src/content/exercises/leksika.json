@@ -2325,5 +2325,230 @@
       "/theory/leksika/?exam=OGE#meaning-and-range"
     ],
     "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-leksika-reading-audit-subtitles",
+    "slug": "oge-leksika-reading-audit-subtitles",
+    "revision": 1,
+    "title": "Строки под кадром: лексика",
+    "prompt": "Из предложений 7–9 выпишите любой один синоним к слову «нерешительно», передающий неуверенность Глеба в разговоре.",
+    "sourceTextId": "reading-audit-subtitles",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "робко",
+      "несмело"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите один подходящий ответ в форме из указанного диапазона текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "«Робко» в предложении 7 и «несмело» в предложении 9 обозначают неуверенную манеру просьбы и пояснения. Принимается любой один из этих ответов. Оба слова — наречия и сохранены в форме из диапазона. «Неловко» из предложения 10 относится к рассказчице и находится за пределами диапазона, поэтому не подходит.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сверьте значение и часть речи с условием.",
+      "Выпишите один подходящий ответ в форме из текста."
+    ],
+    "hint": "Нужен ответ из указанного диапазона, а не любой ваш синоним или антоним.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "Контекстные синонимы и границы диапазона",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-leksika-reading-audit-printproof",
+    "slug": "oge-leksika-reading-audit-printproof",
+    "revision": 1,
+    "title": "Первый оттиск: лексика",
+    "prompt": "Из предложений 20–23 выпишите антоним к слову «поспешно», характеризующий чтение Ильёй второго пробного листа.",
+    "sourceTextId": "reading-audit-printproof",
+    "topicId": "leksika",
+    "topicSlug": "leksika",
+    "topicTitle": "Лексический анализ",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "неторопливо"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:lexis.analysis",
+    "misconceptionId": "line-12-analysis",
+    "instruction": "Выпишите один подходящий ответ в форме из указанного диапазона текста. Ё можно заменить на Е.",
+    "options": [],
+    "optionExplanations": [],
+    "explanation": "В предложении 21 Илья читает «неторопливо»: без прежней спешки, последовательно от начала до конца. В данном контексте это антоним к «поспешно». Нужно выписать наречие из указанного диапазона; «спокойно» есть только в предложении 15 и относится к мастеру, а собственные синонимы «медленно», «неспешно» отсутствуют в диапазоне и не принимаются.",
+    "steps": [
+      "Прочитайте указанный диапазон предложений.",
+      "Сверьте значение и часть речи с условием.",
+      "Выпишите один подходящий ответ в форме из текста."
+    ],
+    "hint": "Нужен ответ из указанного диапазона, а не любой ваш синоним или антоним.",
+    "formatLabel": "ОГЭ · задание 12",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 12,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "Контекстный антоним и форма из текста",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:lexis.analysis",
+      "OGE:12.synonym",
+      "OGE:12.antonym",
+      "OGE:12.context-meaning"
+    ],
+    "elements": [],
+    "rulePaths": [
+      "/theory/leksika/?exam=OGE#synonyms",
+      "/theory/leksika/?exam=OGE#antonyms",
+      "/theory/leksika/?exam=OGE#meaning-and-range"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

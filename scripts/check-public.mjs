@@ -1,5 +1,11 @@
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "node:fs";
+import {
+  readFileSync,
+  readdirSync,
+  mkdirSync,
+  writeFileSync,
+  existsSync,
+} from "node:fs";
 import { chromium } from "@playwright/test";
 import { createHash } from "node:crypto";
 const base =
@@ -13,11 +19,17 @@ const assets = readdirSync("apps/showcase/dist/assets")
 assets.push(
   ...readdirSync("apps/showcase/dist/audio").map((file) => `audio/${file}`),
 );
+if (existsSync("apps/showcase/dist/images"))
+  assets.push(
+    ...readdirSync("apps/showcase/dist/images", { recursive: true })
+      .filter((path) => typeof path === "string" && path.endsWith(".webp"))
+      .map((path) => "images/" + path.split(String.fromCharCode(92)).join("/")),
+  );
 const currentAudio = JSON.parse(
   readFileSync("apps/showcase/src/oge/materials.json", "utf8"),
 ).audio;
 const browserAudioPlaybacks = [];
-const localHtml = readFileSync("apps/showcase/dist/index.html", "utf8");
+
 const routeSet = new Set(routes);
 const retryableStatuses = new Set([429, 500, 502, 503, 504]);
 let retriedRequests = 0;
@@ -50,24 +62,27 @@ await Promise.all(
       if (routeSet.has(path))
         assert.equal(
           await response.text(),
-          localHtml,
+          readFileSync(`apps/showcase/dist/${path}index.html`, "utf8"),
           `${path}: опубликована другая сборка`,
         );
-      else if (path.startsWith("audio/")) {
+      else if (path.startsWith("audio/") || path.startsWith("images/")) {
         const bytes = Buffer.from(await response.arrayBuffer());
         assert(
-          path.endsWith(".mp3")
-            ? bytes.toString("ascii", 0, 3) === "ID3" ||
+          path.endsWith(".webp")
+            ? bytes.toString("ascii", 0, 4) === "RIFF" &&
+                bytes.toString("ascii", 8, 12) === "WEBP"
+            : path.endsWith(".mp3")
+              ? bytes.toString("ascii", 0, 3) === "ID3" ||
                 (bytes[0] === 0xff && (bytes[1] & 0xe0) === 0xe0)
-            : bytes.toString("ascii", 0, 4) === "RIFF",
-          `${path}: неподтверждённый аудиоформат`,
+              : bytes.toString("ascii", 0, 4) === "RIFF",
+          `${path}: неподтверждённый формат файла`,
         );
         const digest = (value) =>
           createHash("sha256").update(value).digest("hex");
         assert.equal(
           digest(bytes),
           digest(readFileSync(`apps/showcase/dist/${path}`)),
-          `${path}: другая версия аудио`,
+          `${path}: другая версия файла`,
         );
       } else await response.body?.cancel();
     }
@@ -175,6 +190,8 @@ writeFileSync(
       assets: assets.length,
       currentBuildMatches: true,
       verifiedAudioFiles: assets.filter((path) => path.startsWith("audio/"))
+        .length,
+      verifiedImageFiles: assets.filter((path) => path.startsWith("images/"))
         .length,
       browserAudioPlaybacks,
       retriedRequests,

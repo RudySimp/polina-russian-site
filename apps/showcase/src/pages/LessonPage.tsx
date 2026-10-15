@@ -1,3 +1,9 @@
+import { courseModulesFor, modulePath } from "../content/course";
+import {
+  chooseCoursePractice,
+  storedCourseAttempts,
+} from "../content/course-practice";
+import { topicIllustrations } from "../components/OgeIllustration";
 import { use } from "react";
 import {
   exerciseSummariesFor as exercisesFor,
@@ -38,6 +44,11 @@ export function LessonPage({ slug }: { slug: string }) {
         ? "/oge/theory/"
         : `/theory/${exam ? `?exam=${exam}` : ""}`;
   const practice = exercisesFor(topic.id, exam);
+  const selectedPractice =
+    exam === "OGE"
+      ? chooseCoursePractice(practice, storedCourseAttempts())
+      : { exercise: practice[0], fresh: false };
+  const learningModules = exam === "OGE" ? courseModulesFor(topic.id) : [];
   const neighbors = topics.filter(
     (item) =>
       item.status === "published" &&
@@ -63,6 +74,7 @@ export function LessonPage({ slug }: { slug: string }) {
         ]}
       />
       <PageHeading
+        illustration={exam === "OGE" ? topicIllustrations[topic.id] : undefined}
         eyebrow={sectionTitle(topic.sectionId).toLocaleUpperCase("ru")}
         title={topic.title}
         text={topic.description}
@@ -76,6 +88,23 @@ export function LessonPage({ slug }: { slug: string }) {
         </span>
         <a href={href(returnTo)}>Вернуться к каталогу</a>
       </div>
+      {learningModules.length > 0 && (
+        <section className="practice-next">
+          <h2>Изучать короткими шагами</h2>
+          <p>
+            Эта страница — полная справочная глава. Модули выделяют один учебный
+            шаг с предпосылками и практикой; отметки и ответы в параграфах
+            общие.
+          </p>
+          <ul>
+            {learningModules.map((m) => (
+              <li key={m.id}>
+                <a href={href(modulePath(m.id))}>{m.title}</a> — {m.outcome}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       <div className="lesson-layout">
         <article className="lesson-body">
           <section className="lesson-goals">
@@ -107,8 +136,15 @@ export function LessonPage({ slug }: { slug: string }) {
                   {practice.length} разных заданий с разбором и повторением по
                   этому навыку.
                 </p>
-                <LinkButton to={`/practice/${practice[0].slug}/`}>
-                  Начать практику{exam ? ` ${examName(exam)}` : ""}
+                <LinkButton
+                  to={`/practice/${selectedPractice.exercise!.slug}/`}
+                >
+                  {exam === "OGE"
+                    ? selectedPractice.fresh
+                      ? "Решить новый пример"
+                      : "Повторить пример"
+                    : "Начать практику"}
+                  {exam ? ` ${examName(exam)}` : ""}
                 </LinkButton>
                 <a
                   href={href(
@@ -158,12 +194,37 @@ export function LessonPage({ slug }: { slug: string }) {
               PDF не распространяются.
             </p>
             {lesson.provenance.map((source, n) => (
-              <p key={n}>
-                {source.filename ?? source.sourceId}
-                {source.pages?.length
-                  ? ` · страницы ${source.pages.join(", ")}`
-                  : ""}
-              </p>
+              <section key={n}>
+                <p>{source.filename ?? source.sourceId}</p>
+                {source.pageReferences?.length ? (
+                  <ul>
+                    {source.pageReferences.map((reference, index) => (
+                      <li key={index}>
+                        PDF-страница {reference.pdfPage}
+                        {reference.printedPage
+                          ? ", печатная страница " + reference.printedPage
+                          : ", печатный номер не установлен"}
+                        : {reference.section}.
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                {source.sourceSha256 && (
+                  <p className="muted">
+                    Проверенная редакция источника, SHA-256:{" "}
+                    <code style={{ overflowWrap: "anywhere" }}>
+                      {source.sourceSha256}
+                    </code>
+                    .
+                  </p>
+                )}
+                {source.pages?.length ? (
+                  <p className="muted">
+                    Номера из прежней ссылки сохранены без подтверждения их
+                    системы нумерации: {source.pages.join(", ")}.
+                  </p>
+                ) : null}
+              </section>
             ))}
             <a href={href("/sources/")}>О происхождении материалов</a>
           </details>

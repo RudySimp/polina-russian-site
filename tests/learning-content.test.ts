@@ -64,12 +64,12 @@ describe("Reviewed lesson decisions", () => {
 });
 
 describe("Writing learning cycles", () => {
-  it("links all 29 routes to the exact writing and source revisions", () => {
+  it("links all 35 routes to the exact writing and source revisions", () => {
     expect(guidesData.schemaVersion).toBe(1);
     const writing = [...materials.writing, ...readingPackage.writing.filter((item) => !materials.writing.some((current) => current.id === item.id))];
     const texts = [...materials.texts, ...readingPackage.texts.filter((item) => !materials.texts.some((current) => current.id === item.id))];
-    expect(guidesData.guides.length).toBe(13);
-    expect(guidesData.guides.reduce((sum, guide) => sum + guide.routes.length, 0)).toBe(29);
+    expect(guidesData.guides.length).toBe(15);
+    expect(guidesData.guides.reduce((sum, guide) => sum + guide.routes.length, 0)).toBe(35);
     for (const guide of guidesData.guides) {
       const assignment = writing.find((item) => item.id === guide.writingId)!;
       const source = texts.find((item) => item.id === guide.sourceTextId)!;

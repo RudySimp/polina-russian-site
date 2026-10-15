@@ -443,3 +443,33 @@ audio {
     display: block !important;
   }
 }
+
+.page-heading.with-illustration {
+  position: relative;
+  padding-inline-end: 146px;
+  min-height: 128px;
+}
+.page-heading .oge-illustration {
+  position: absolute;
+  inset-block-start: -8px;
+  inset-inline-end: 0;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  pointer-events: none;
+}
+@media (max-width: 600px) {
+  .page-heading.with-illustration {
+    padding-inline-end: 98px;
+    min-height: 100px;
+  }
+  .page-heading .oge-illustration {
+    width: 88px;
+    height: 88px;
+    inset-block-start: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lesson-toc { position: static; top: auto; }
+}

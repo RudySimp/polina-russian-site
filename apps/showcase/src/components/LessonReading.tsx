@@ -2,7 +2,19 @@ import type { Lesson } from "../content/model";
 import { useLessonState } from "../lib/lesson-state";
 import { LessonBlocks } from "./LessonBlocks";
 type ReadingProgress = { read: string[]; last?: string };
-export function LessonReading({ lesson }: { lesson: Lesson }) {
+export function LessonReading({
+  lesson,
+  sectionIds,
+}: {
+  lesson: Lesson;
+  sectionIds?: string[];
+}) {
+  const visibleSections = sectionIds
+    ? sectionIds.flatMap((id) => {
+        const section = lesson.sections.find((s) => s.id === id);
+        return section ? [section] : [];
+      })
+    : lesson.sections;
   const [state, update, error] = useLessonState<ReadingProgress>(
     lesson.id + "@" + lesson.revision + ":reading",
     { read: [] },
@@ -24,9 +36,13 @@ export function LessonReading({ lesson }: { lesson: Lesson }) {
     <>
       <div className="lesson-reading-progress">
         <p>
-          Отмечено прочитанным: {state.read.length} из {lesson.sections.length}{" "}
-          параграфов.
-          {state.last && (
+          Отмечено прочитанным:{" "}
+          {
+            state.read.filter((id) => visibleSections.some((s) => s.id === id))
+              .length
+          }{" "}
+          из {visibleSections.length} параграфов.
+          {state.last && visibleSections.some((s) => s.id === state.last) && (
             <>
               {" "}
               <a href={"#" + state.last}>Продолжить чтение</a>
@@ -35,7 +51,7 @@ export function LessonReading({ lesson }: { lesson: Lesson }) {
         </p>
         {error && <p role="status">Отметки чтения не сохранены в браузере.</p>}
       </div>
-      {lesson.sections.map((section, n) => (
+      {visibleSections.map((section, n) => (
         <section id={section.id} className="lesson-section" key={section.id}>
           <h2>{section.title}</h2>
           <LessonBlocks
@@ -51,8 +67,8 @@ export function LessonReading({ lesson }: { lesson: Lesson }) {
                 : [...state.read, section.id];
               update({
                 read,
-                last: lesson.sections[
-                  Math.min(n + 1, lesson.sections.length - 1)
+                last: visibleSections[
+                  Math.min(n + 1, visibleSections.length - 1)
                 ].id,
               });
             }}

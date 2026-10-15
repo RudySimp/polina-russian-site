@@ -1,5 +1,6 @@
 import type { PracticeSession } from "./model";
 import { parseSession } from "./storage";
+import { sessionLimits, serializedSessionBytes } from "./session-limits";
 
 export const backupMaxBytes = 20_000_000;
 export const backupMaxSessions = 200;
@@ -8,14 +9,14 @@ const encoder = new TextEncoder();
 type BackupEntry = { session: string; reproduction: string; bytes: number };
 function backupEntry(session: PracticeSession, index: number): BackupEntry {
   const json = JSON.stringify(session);
-  const sessionBytes = encoder.encode(json).byteLength;
+  const sessionBytes = serializedSessionBytes(json);
   if (sessionBytes > backupMaxBytes)
     throw Error(
       "Работа «" +
         session.title +
         "» превышает лимит одного файла 20 МБ. Скачивание не начато; исходная работа остаётся в браузере.",
     );
-  if (json.length > 3_000_000)
+  if (json.length > sessionLimits.maxSerializedChars)
     throw Error(
       "Работа «" +
         session.title +
@@ -101,7 +102,7 @@ export function prepareBackupParts(sessions: PracticeSession[]): BackupPart[] {
 export function importSessions(raw: string): PracticeSession[] {
   if (
     raw.length > backupMaxBytes ||
-    new TextEncoder().encode(raw).byteLength > backupMaxBytes
+    serializedSessionBytes(raw) > backupMaxBytes
   )
     throw new Error("Резервный файл слишком большой (максимум 20 МБ).");
   let value: unknown;
@@ -120,7 +121,7 @@ export function importSessions(raw: string): PracticeSession[] {
     !("sessions" in value) ||
     !Array.isArray(value.sessions) ||
     value.sessions.length < 1 ||
-    value.sessions.length > 200
+    value.sessions.length > backupMaxSessions
   )
     throw new Error(
       "Неизвестная структура или версия резервной копии. Исходные работы не изменены.",

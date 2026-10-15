@@ -33,11 +33,13 @@ export function useCatalogQuery(base: string) {
     else window.history.pushState(null, "", url);
     searching.current = key === "q";
     setParams(next);
+    window.dispatchEvent(new Event("polina-catalog-changed"));
   }
   function reset() {
     searching.current = false;
     window.history.pushState(null, "", href(base));
     setParams(new URLSearchParams());
+    window.dispatchEvent(new Event("polina-catalog-changed"));
   }
   function rememberScroll() {
     try {

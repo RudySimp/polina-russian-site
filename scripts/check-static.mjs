@@ -27,9 +27,17 @@ assert(
   ),
   "Исходные материалы попали в публикацию",
 );
+const titles = new Set();
 for (const file of htmlFiles) {
   const html = readFileSync(resolve(dist, file), "utf8");
   assert(html.includes('lang="ru"'), `${file}: язык страницы`);
+  const title = html.match(/<title>([^<]+)<\/title>/)?.[1];
+  assert(title && title.includes("Сайт Полины"), `${file}: заголовок вкладки`);
+  assert(
+    /<meta name="description" content="[^"]+"/.test(html),
+    `${file}: описание`,
+  );
+  if (file !== "404.html") titles.add(title);
   for (const [, url] of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
     if (/^(https?:|data:)/.test(url)) continue;
     assert(url.startsWith(base), `${file}: неверный путь ${url}`);

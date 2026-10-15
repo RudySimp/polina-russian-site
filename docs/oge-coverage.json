@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-10-13",
+  "checkedAt": "2026-10-15",
   "specification": {
     "id": "oge-ru-2027-project",
     "year": 2027,
     "status": "project"
   },
-  "catalogVersion": "62f7ca4ebfb03caca463c3ce35ba8711f234de644fc17d823939e3a16681ef90",
+  "catalogVersion": "fcb1d7f908e249d4ea2d5a2f8e3dcbfaf9b279a77120a0e860b03659d91fc3f8",
   "baseline": {
     "totalExercises": 252,
     "currentOge": 220,
@@ -14,39 +14,40 @@
     "sourceFiles": 39
   },
   "counts": {
-    "totalExercises": 285,
-    "currentOge": 253,
+    "totalExercises": 307,
+    "currentOge": 275,
     "legacyOge": 2,
     "ege": 30,
-    "localOriginalImports": 164,
+    "localOriginalImports": 178,
     "official": 0,
     "origins": {
       "official": 0,
-      "author-model": 253,
+      "author-model": 275,
       "learning": 0,
       "unclassified": 0
     },
     "provenance": {
-      "local-original-import": 164,
-      "project-original": 89
+      "local-original-import": 178,
+      "project-original": 97
     },
-    "teacherPending": 253,
+    "teacherPending": 275,
     "teacherApproved": 0,
-    "classificationDraft": 253,
-    "revisionMatchedReceipts": 33,
+    "classificationDraft": 275,
+    "revisionMatchedReceipts": 55,
     "lessonsOge": 15,
-    "writing": 13,
+    "writing": 15,
     "summaries": 5,
-    "essays": 8,
-    "writingGuides": 13,
-    "guideRoutes": 29,
+    "essays": 10,
+    "writingGuides": 15,
+    "guideRoutes": 35,
     "activities": 7,
-    "gameSituations": 70,
-    "sourceTexts": 38,
+    "gameSituations": 84,
+    "sourceTexts": 42,
     "audio": 5,
     "fixedVariants": 5,
-    "subskills": 64,
-    "zeroPositiveSubskills": 5,
+    "subskills": 74,
+    "shortAnswerSubskills": 69,
+    "zeroPositiveSubskills": 0,
     "exerciseShards": 24,
     "maxExercisesPerShard": 20
   },
@@ -62,18 +63,18 @@
     {
       "number": 2,
       "title": "Грамматическая основа",
-      "current": 23,
-      "eligible": 23,
-      "fullPool": 10,
-      "testPool": 10
+      "current": 25,
+      "eligible": 25,
+      "fullPool": 12,
+      "testPool": 12
     },
     {
       "number": 3,
       "title": "Синтаксический анализ",
-      "current": 25,
-      "eligible": 25,
-      "fullPool": 10,
-      "testPool": 10
+      "current": 27,
+      "eligible": 27,
+      "fullPool": 12,
+      "testPool": 12
     },
     {
       "number": 4,
@@ -110,51 +111,53 @@
     {
       "number": 8,
       "title": "Грамматические формы",
-      "current": 24,
-      "eligible": 24,
-      "fullPool": 24,
-      "testPool": 24
+      "current": 32,
+      "eligible": 32,
+      "fullPool": 32,
+      "testPool": 32
     },
     {
       "number": 9,
       "title": "Связь в словосочетании",
-      "current": 24,
-      "eligible": 24,
-      "fullPool": 24,
-      "testPool": 24
+      "current": 28,
+      "eligible": 28,
+      "fullPool": 28,
+      "testPool": 28
     },
     {
       "number": 10,
       "title": "Анализ содержания текста",
-      "current": 23,
-      "eligible": 23,
-      "fullPool": 8,
-      "testPool": 23
+      "current": 25,
+      "eligible": 25,
+      "fullPool": 10,
+      "testPool": 25
     },
     {
       "number": 11,
       "title": "Средства выразительности",
-      "current": 23,
-      "eligible": 23,
-      "fullPool": 8,
-      "testPool": 23
+      "current": 25,
+      "eligible": 25,
+      "fullPool": 10,
+      "testPool": 25
     },
     {
       "number": 12,
       "title": "Лексический анализ",
-      "current": 23,
-      "eligible": 23,
-      "fullPool": 8,
-      "testPool": 23
+      "current": 25,
+      "eligible": 25,
+      "fullPool": 10,
+      "testPool": 25
     }
   ],
   "generation": {
-    "eligible": 253,
+    "eligible": 275,
     "syntaxTextIds": [
       "syntax-audit-library-display",
       "syntax-audit-lighthouse",
       "syntax-audit-station-path",
       "syntax-dawn",
+      "syntax-local-school-017",
+      "syntax-local-school-019",
       "syntax-meeting",
       "syntax-museum",
       "syntax-news",
@@ -164,6 +167,8 @@
     ],
     "readingTestTextIds": [
       "reading-audit-model",
+      "reading-audit-printproof",
+      "reading-audit-subtitles",
       "reading-audit-voice",
       "reading-audit-yard",
       "reading-bell",
@@ -189,6 +194,8 @@
     ],
     "readingFullTextIds": [
       "reading-audit-model",
+      "reading-audit-printproof",
+      "reading-audit-subtitles",
       "reading-audit-voice",
       "reading-audit-yard",
       "reading-bench",
@@ -204,8 +211,8 @@
       "summary-friendship",
       "summary-curiosity"
     ],
-    "fullPool": 180,
-    "testPool": 225,
+    "fullPool": 202,
+    "testPool": 247,
     "indexMismatch": [],
     "probes": [
       {
@@ -225,45 +232,451 @@
       "id": "foundation",
       "title": "Собери грамматическую основу",
       "kind": "foundation",
-      "count": 10
+      "count": 12
     },
     {
       "id": "punctuation",
       "title": "Поставь знаки препинания",
       "kind": "punctuation",
-      "count": 10
+      "count": 12
     },
     {
       "id": "correction",
       "title": "Исправь грамматическую ошибку",
       "kind": "correction",
-      "count": 10
+      "count": 12
     },
     {
       "id": "phrase",
       "title": "Преобразуй словосочетание",
       "kind": "phrase",
-      "count": 10
+      "count": 12
     },
     {
       "id": "matching",
       "title": "Сопоставь правило и пример",
       "kind": "matching",
-      "count": 10
+      "count": 12
     },
     {
       "id": "spelling",
       "title": "Орфографический конструктор",
       "kind": "spelling",
-      "count": 10
+      "count": 12
     },
     {
       "id": "compression",
       "title": "Сожми текст",
       "kind": "compression",
-      "count": 10
+      "count": 12
     }
   ],
+  "writingCoverage": {
+    "assessmentKind": "writing-operations",
+    "source": "content/oge-writing-workshops.json",
+    "model": {
+      "specificationId": "oge-ru-2027-project",
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://doc.fipi.ru/oge/demoversii-specifikacii-kodifikatory/2027/ru_9_2027.zip",
+      "sourcePageUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory",
+      "documentSha256": "1db946d4a90e897b4c07dea14a7f7f529358462346ce1d6c1bdee4a2f41e23a2",
+      "physicalPdfPages": [
+        8,
+        11,
+        12
+      ],
+      "printedPages": [
+        16,
+        22,
+        23,
+        24
+      ],
+      "checkedAt": "2026-10-15"
+    },
+    "teacherApproval": "pending",
+    "counts": {
+      "operations": 8,
+      "workshops": 4,
+      "coveredWritingAssignments": 2,
+      "coveredTexts": 2,
+      "reviewedSamples": 12,
+      "freeResponseMicrotasks": 13,
+      "guideRoutes": 35,
+      "coveredGuideRoutes": 4,
+      "shortAnswerMetricExcludedSkills": 5
+    },
+    "operations": [
+      {
+        "id": "summary-microtopic",
+        "line": 1,
+        "title": "Передать микротему без добавления своей мысли",
+        "criteriaCodes": [
+          "ИК1"
+        ],
+        "workshopIds": [
+          "workshop-summary-reading-1"
+        ],
+        "sourceTextIds": [
+          "summary-reading"
+        ],
+        "freeResponseMicrotasks": 2,
+        "criterionScoredSamples": 3
+      },
+      {
+        "id": "summary-compression",
+        "line": 1,
+        "title": "Сжать перечень и сохранить смысловое условие",
+        "criteriaCodes": [
+          "ИК2"
+        ],
+        "workshopIds": [
+          "workshop-summary-reading-1"
+        ],
+        "sourceTextIds": [
+          "summary-reading"
+        ],
+        "freeResponseMicrotasks": 1,
+        "criterionScoredSamples": 3
+      },
+      {
+        "id": "summary-coherence",
+        "line": 1,
+        "title": "Сохранить связь микротем и точность переходов",
+        "criteriaCodes": [
+          "ИК3"
+        ],
+        "workshopIds": [
+          "workshop-summary-reading-1"
+        ],
+        "sourceTextIds": [
+          "summary-reading"
+        ],
+        "freeResponseMicrotasks": 1,
+        "criterionScoredSamples": 3
+      },
+      {
+        "id": "essay-thesis",
+        "line": 13,
+        "title": "Ответить тезисом на выбранный вопрос",
+        "criteriaCodes": [
+          "СК1"
+        ],
+        "workshopIds": [
+          "workshop-essay-bench-13-1",
+          "workshop-essay-bench-13-2",
+          "workshop-essay-bench-13-3"
+        ],
+        "sourceTextIds": [
+          "reading-bench"
+        ],
+        "freeResponseMicrotasks": 3,
+        "criterionScoredSamples": 9
+      },
+      {
+        "id": "essay-example",
+        "line": 13,
+        "title": "Выбрать самостоятельный пример из заданного текста",
+        "criteriaCodes": [
+          "СК2"
+        ],
+        "workshopIds": [
+          "workshop-essay-bench-13-1",
+          "workshop-essay-bench-13-2",
+          "workshop-essay-bench-13-3"
+        ],
+        "sourceTextIds": [
+          "reading-bench"
+        ],
+        "freeResponseMicrotasks": 1,
+        "criterionScoredSamples": 9
+      },
+      {
+        "id": "essay-explanation",
+        "line": 13,
+        "title": "Пояснить, как пример подтверждает тезис",
+        "criteriaCodes": [
+          "СК2"
+        ],
+        "workshopIds": [
+          "workshop-essay-bench-13-1",
+          "workshop-essay-bench-13-2",
+          "workshop-essay-bench-13-3"
+        ],
+        "sourceTextIds": [
+          "reading-bench"
+        ],
+        "freeResponseMicrotasks": 3,
+        "criterionScoredSamples": 9
+      },
+      {
+        "id": "essay-coherence",
+        "line": 13,
+        "title": "Проверить вывод и смысловые переходы",
+        "criteriaCodes": [
+          "СК3"
+        ],
+        "workshopIds": [
+          "workshop-essay-bench-13-1",
+          "workshop-essay-bench-13-2",
+          "workshop-essay-bench-13-3"
+        ],
+        "sourceTextIds": [
+          "reading-bench"
+        ],
+        "freeResponseMicrotasks": 1,
+        "criterionScoredSamples": 9
+      },
+      {
+        "id": "essay-composition",
+        "line": 13,
+        "title": "Построить тезис, доказательную часть и вывод",
+        "criteriaCodes": [
+          "СК4"
+        ],
+        "workshopIds": [
+          "workshop-essay-bench-13-1",
+          "workshop-essay-bench-13-2",
+          "workshop-essay-bench-13-3"
+        ],
+        "sourceTextIds": [
+          "reading-bench"
+        ],
+        "freeResponseMicrotasks": 1,
+        "criterionScoredSamples": 9
+      }
+    ],
+    "criteria": [
+      {
+        "code": "ИК1",
+        "scoredSamples": 3
+      },
+      {
+        "code": "ИК2",
+        "scoredSamples": 3
+      },
+      {
+        "code": "ИК3",
+        "scoredSamples": 3
+      },
+      {
+        "code": "СК1",
+        "scoredSamples": 9
+      },
+      {
+        "code": "СК2",
+        "scoredSamples": 9
+      },
+      {
+        "code": "СК3",
+        "scoredSamples": 9
+      },
+      {
+        "code": "СК4",
+        "scoredSamples": 9
+      }
+    ],
+    "literacyCriteria": {
+      "codes": [
+        "ГК1",
+        "ГК2",
+        "ГК3",
+        "ГК4",
+        "ФК1"
+      ],
+      "scoredSamples": 0,
+      "note": "Грамотность и фактическая точность проверяются отдельно; эти содержательные образцы не дают общей оценки ГК/ФК."
+    },
+    "remainingRoutes": [
+      {
+        "writingId": "summary-memory",
+        "writingRevision": 1,
+        "sourceTextId": "summary-memory",
+        "promptId": "1"
+      },
+      {
+        "writingId": "summary-responsibility",
+        "writingRevision": 1,
+        "sourceTextId": "summary-responsibility",
+        "promptId": "1"
+      },
+      {
+        "writingId": "summary-friendship",
+        "writingRevision": 1,
+        "sourceTextId": "summary-friendship",
+        "promptId": "1"
+      },
+      {
+        "writingId": "summary-curiosity",
+        "writingRevision": 1,
+        "sourceTextId": "summary-curiosity",
+        "promptId": "1"
+      },
+      {
+        "writingId": "essay-draft",
+        "writingRevision": 1,
+        "sourceTextId": "reading-draft",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-draft",
+        "writingRevision": 1,
+        "sourceTextId": "reading-draft",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-draft",
+        "writingRevision": 1,
+        "sourceTextId": "reading-draft",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-boat",
+        "writingRevision": 1,
+        "sourceTextId": "reading-boat",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-boat",
+        "writingRevision": 1,
+        "sourceTextId": "reading-boat",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-boat",
+        "writingRevision": 1,
+        "sourceTextId": "reading-boat",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-letter",
+        "writingRevision": 1,
+        "sourceTextId": "reading-letter",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-letter",
+        "writingRevision": 1,
+        "sourceTextId": "reading-letter",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-letter",
+        "writingRevision": 1,
+        "sourceTextId": "reading-letter",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-rehearsal",
+        "writingRevision": 1,
+        "sourceTextId": "reading-rehearsal",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-rehearsal",
+        "writingRevision": 1,
+        "sourceTextId": "reading-rehearsal",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-rehearsal",
+        "writingRevision": 1,
+        "sourceTextId": "reading-rehearsal",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-audit-voice",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-voice",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-audit-voice",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-voice",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-audit-voice",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-voice",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-audit-model",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-model",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-audit-model",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-model",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-audit-model",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-model",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-audit-yard",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-yard",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-audit-yard",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-yard",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-audit-yard",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-yard",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-audit-subtitles",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-subtitles",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-audit-subtitles",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-subtitles",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-audit-subtitles",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-subtitles",
+        "promptId": "13.3"
+      },
+      {
+        "writingId": "essay-audit-printproof",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-printproof",
+        "promptId": "13.1"
+      },
+      {
+        "writingId": "essay-audit-printproof",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-printproof",
+        "promptId": "13.2"
+      },
+      {
+        "writingId": "essay-audit-printproof",
+        "writingRevision": 1,
+        "sourceTextId": "reading-audit-printproof",
+        "promptId": "13.3"
+      }
+    ],
+    "limits": "4 узких маршрута и 2 исходных текста не подтверждают полноту курса оценивания. Баллы редакторские; методическое утверждение преподавателем и дополнительные исходные тексты остаются необходимыми. Свободные микрозадачи не получают автоматический зачёт содержания."
+  },
   "coverage": [
     {
       "id": "OGE:2.subject",
@@ -274,15 +687,17 @@
       "pattern": "подлежащ|двусостав|подлежащее",
       "errorType": "subject",
       "classification": "project",
-      "annotatedExercises": 14,
-      "positiveExercises": 10,
-      "selectedPositions": 14,
-      "distractorPositions": 7,
+      "annotatedExercises": 16,
+      "positiveExercises": 12,
+      "selectedPositions": 18,
+      "distractorPositions": 9,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 4,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -294,15 +709,17 @@
       "pattern": "простое глагольн|простым глагольн",
       "errorType": "simple-predicate",
       "classification": "project",
-      "annotatedExercises": 1,
-      "positiveExercises": 1,
-      "selectedPositions": 2,
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 4,
       "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -314,15 +731,17 @@
       "pattern": "составно.{0,12}глагольн|инфинитив|модальн",
       "errorType": "compound-verbal",
       "classification": "project",
-      "annotatedExercises": 19,
-      "positiveExercises": 2,
-      "selectedPositions": 3,
+      "annotatedExercises": 20,
+      "positiveExercises": 3,
+      "selectedPositions": 4,
       "distractorPositions": 18,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 3,
+      "gameSituations": 4,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -334,15 +753,17 @@
       "pattern": "составно.{0,12}именн|связк|именная часть|краткое причастие",
       "errorType": "compound-nominal",
       "classification": "project",
-      "annotatedExercises": 13,
-      "positiveExercises": 3,
-      "selectedPositions": 5,
+      "annotatedExercises": 14,
+      "positiveExercises": 4,
+      "selectedPositions": 6,
       "distractorPositions": 10,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 2,
+      "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -354,15 +775,17 @@
       "pattern": "односостав|безличн|подлежащего нет|подлежащее отсутствует",
       "errorType": "one-member",
       "classification": "project",
-      "annotatedExercises": 12,
-      "positiveExercises": 3,
-      "selectedPositions": 3,
+      "annotatedExercises": 13,
+      "positiveExercises": 4,
+      "selectedPositions": 4,
       "distractorPositions": 6,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -374,15 +797,17 @@
       "pattern": "сложносочин|сочинительн",
       "errorType": "coordinate",
       "classification": "project",
-      "annotatedExercises": 15,
+      "annotatedExercises": 17,
       "positiveExercises": 8,
       "selectedPositions": 9,
-      "distractorPositions": 9,
+      "distractorPositions": 12,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -394,15 +819,17 @@
       "pattern": "сложноподчин|подчинительн|придаточн",
       "errorType": "subordinate",
       "classification": "project",
-      "annotatedExercises": 18,
-      "positiveExercises": 12,
-      "selectedPositions": 14,
-      "distractorPositions": 12,
+      "annotatedExercises": 19,
+      "positiveExercises": 13,
+      "selectedPositions": 15,
+      "distractorPositions": 13,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -414,15 +841,17 @@
       "pattern": "бессоюзн",
       "errorType": "asyndetic",
       "classification": "project",
-      "annotatedExercises": 7,
+      "annotatedExercises": 9,
       "positiveExercises": 4,
       "selectedPositions": 4,
-      "distractorPositions": 3,
+      "distractorPositions": 5,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -434,15 +863,17 @@
       "pattern": "безличн",
       "errorType": "impersonal",
       "classification": "project",
-      "annotatedExercises": 12,
-      "positiveExercises": 6,
-      "selectedPositions": 6,
-      "distractorPositions": 6,
+      "annotatedExercises": 14,
+      "positiveExercises": 7,
+      "selectedPositions": 7,
+      "distractorPositions": 7,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -463,6 +894,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -483,6 +916,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -494,15 +929,17 @@
       "pattern": "осложн|обособл|однородн|вводн|обращен",
       "errorType": "complication",
       "classification": "project",
-      "annotatedExercises": 22,
-      "positiveExercises": 10,
-      "selectedPositions": 14,
-      "distractorPositions": 22,
+      "annotatedExercises": 24,
+      "positiveExercises": 12,
+      "selectedPositions": 18,
+      "distractorPositions": 23,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -515,14 +952,16 @@
       "errorType": "subject-dash",
       "classification": "project",
       "annotatedExercises": 5,
-      "positiveExercises": 2,
-      "selectedPositions": 2,
-      "distractorPositions": 4,
+      "positiveExercises": 5,
+      "selectedPositions": 5,
+      "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -530,19 +969,21 @@
       "topicId": "punktuacionnye-pravila",
       "line": 4,
       "title": "Обособление сравнительного оборота",
-      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
       "pattern": "сравнительн|сравнение",
       "errorType": "comparative",
       "classification": "project",
       "annotatedExercises": 3,
-      "positiveExercises": 2,
-      "selectedPositions": 2,
+      "positiveExercises": 3,
+      "selectedPositions": 3,
       "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
-      "paragraphExamples": 2,
-      "paragraphCounterexamples": 0,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
       "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -551,18 +992,20 @@
       "line": 4,
       "title": "Тире в бессоюзном предложении",
       "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "pattern": "бессоюзн.{0,140}тире|противопостав|результат|быстрая смена",
+      "pattern": "бессоюзн.{0,140}тире",
       "errorType": "asyndetic-dash",
       "classification": "project",
-      "annotatedExercises": 8,
-      "positiveExercises": 4,
-      "selectedPositions": 4,
-      "distractorPositions": 4,
+      "annotatedExercises": 7,
+      "positiveExercises": 7,
+      "selectedPositions": 7,
+      "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 2,
+      "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -571,18 +1014,20 @@
       "line": 4,
       "title": "Двоеточие в бессоюзном предложении",
       "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "pattern": "двоеточ|пояснен|причин",
+      "pattern": "бессоюзн.{0,140}двоеточ",
       "errorType": "asyndetic-colon",
       "classification": "project",
-      "annotatedExercises": 12,
-      "positiveExercises": 11,
-      "selectedPositions": 11,
-      "distractorPositions": 2,
+      "annotatedExercises": 8,
+      "positiveExercises": 8,
+      "selectedPositions": 8,
+      "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 1,
+      "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -590,19 +1035,21 @@
       "topicId": "punktuacionnye-pravila",
       "line": 4,
       "title": "Знаки при однородных членах",
-      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "pattern": "однородн|повторяющ|обобщающ",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "pattern": "однородн|обобщающ",
       "errorType": "homogeneous",
       "classification": "project",
-      "annotatedExercises": 14,
+      "annotatedExercises": 9,
       "positiveExercises": 9,
       "selectedPositions": 12,
-      "distractorPositions": 11,
+      "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
-      "paragraphExamples": 2,
-      "paragraphCounterexamples": 0,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -611,18 +1058,20 @@
       "line": 4,
       "title": "Обособление определений и обстоятельств",
       "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "pattern": "обособл|причастн|деепричастн",
+      "pattern": "причастн|деепричаст|обстоятельство с предлогом несмотря",
       "errorType": "detached",
       "classification": "project",
-      "annotatedExercises": 13,
-      "positiveExercises": 10,
-      "selectedPositions": 11,
-      "distractorPositions": 5,
+      "annotatedExercises": 12,
+      "positiveExercises": 12,
+      "selectedPositions": 12,
+      "distractorPositions": 0,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 5,
+      "gameSituations": 6,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -643,6 +1092,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -663,6 +1114,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -683,6 +1136,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -702,7 +1157,9 @@
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 4,
+      "gameSituations": 5,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -722,7 +1179,9 @@
       "paragraphExists": true,
       "paragraphExamples": 3,
       "paragraphCounterexamples": 3,
-      "gameSituations": 2,
+      "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -743,6 +1202,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -763,6 +1224,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -783,6 +1246,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -803,6 +1268,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -823,6 +1290,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -843,6 +1312,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 2,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -863,6 +1334,8 @@
       "paragraphExamples": 2,
       "paragraphCounterexamples": 0,
       "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -883,6 +1356,8 @@
       "paragraphExamples": 2,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -903,6 +1378,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -923,6 +1400,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -943,6 +1422,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -963,6 +1444,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -983,6 +1466,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1002,7 +1487,9 @@
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 0,
+      "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1014,15 +1501,17 @@
       "pattern": "числительн|сорок|девяност|пятьдесят|стами|сот",
       "errorType": "numeral",
       "classification": "project",
-      "annotatedExercises": 11,
-      "positiveExercises": 11,
+      "annotatedExercises": 14,
+      "positiveExercises": 14,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 11,
+      "directShortAnswers": 14,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 3,
+      "gameSituations": 5,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1034,15 +1523,17 @@
       "pattern": "родительн|множествен|носк|чул|туфель|помидор|яблок",
       "errorType": "plural-genitive",
       "classification": "project",
-      "annotatedExercises": 10,
-      "positiveExercises": 10,
+      "annotatedExercises": 15,
+      "positiveExercises": 15,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 10,
+      "directShortAnswers": 15,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 4,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1063,6 +1554,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1074,15 +1567,17 @@
       "pattern": "сравнени|легче|полегче|лучше|красивее",
       "errorType": "comparative",
       "classification": "project",
-      "annotatedExercises": 1,
-      "positiveExercises": 1,
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 1,
+      "directShortAnswers": 2,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1094,15 +1589,17 @@
       "pattern": "согласован",
       "errorType": "agreement",
       "classification": "project",
-      "annotatedExercises": 17,
-      "positiveExercises": 17,
+      "annotatedExercises": 19,
+      "positiveExercises": 19,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 17,
+      "directShortAnswers": 19,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 7,
+      "gameSituations": 8,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1114,15 +1611,17 @@
       "pattern": "управлен",
       "errorType": "government",
       "classification": "project",
-      "annotatedExercises": 20,
-      "positiveExercises": 20,
+      "annotatedExercises": 23,
+      "positiveExercises": 23,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 20,
+      "directShortAnswers": 23,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 8,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1134,15 +1633,17 @@
       "pattern": "примыкан",
       "errorType": "adjacency",
       "classification": "project",
-      "annotatedExercises": 11,
-      "positiveExercises": 11,
+      "annotatedExercises": 14,
+      "positiveExercises": 14,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 11,
+      "directShortAnswers": 14,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
-      "gameSituations": 5,
+      "gameSituations": 6,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1154,15 +1655,17 @@
       "pattern": "значени|смысл|синонимич",
       "errorType": "meaning-preservation",
       "classification": "project",
-      "annotatedExercises": 24,
-      "positiveExercises": 24,
+      "annotatedExercises": 28,
+      "positiveExercises": 28,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 24,
+      "directShortAnswers": 28,
       "paragraphExists": true,
       "paragraphExamples": 3,
       "paragraphCounterexamples": 3,
       "gameSituations": 3,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1174,15 +1677,17 @@
       "pattern": "не сообщ|не сказан|нет сведений|прямо|сообщает|домыс|подтвержд",
       "errorType": "fact-inference",
       "classification": "project",
-      "annotatedExercises": 14,
-      "positiveExercises": 11,
-      "selectedPositions": 14,
-      "distractorPositions": 4,
+      "annotatedExercises": 16,
+      "positiveExercises": 13,
+      "selectedPositions": 16,
+      "distractorPositions": 6,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1194,15 +1699,17 @@
       "pattern": "после|сначала|позже|раньше|событ|последоват",
       "errorType": "sequence",
       "classification": "project",
-      "annotatedExercises": 23,
-      "positiveExercises": 15,
-      "selectedPositions": 22,
-      "distractorPositions": 11,
+      "annotatedExercises": 25,
+      "positiveExercises": 17,
+      "selectedPositions": 24,
+      "distractorPositions": 14,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1214,15 +1721,17 @@
       "pattern": "потому|причин|мотив|решил|почему",
       "errorType": "motive",
       "classification": "project",
-      "annotatedExercises": 21,
+      "annotatedExercises": 22,
       "positiveExercises": 5,
       "selectedPositions": 5,
-      "distractorPositions": 1,
+      "distractorPositions": 2,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 2,
       "paragraphCounterexamples": 2,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1234,15 +1743,17 @@
       "pattern": "деталь|впервые|измен|осозн|понял",
       "errorType": "detail",
       "classification": "project",
-      "annotatedExercises": 8,
-      "positiveExercises": 6,
-      "selectedPositions": 6,
-      "distractorPositions": 3,
+      "annotatedExercises": 9,
+      "positiveExercises": 7,
+      "selectedPositions": 7,
+      "distractorPositions": 4,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1254,15 +1765,17 @@
       "pattern": "сравнени|уподобл|сопоставл",
       "errorType": "comparison",
       "classification": "project",
-      "annotatedExercises": 7,
-      "positiveExercises": 7,
-      "selectedPositions": 13,
-      "distractorPositions": 18,
+      "annotatedExercises": 8,
+      "positiveExercises": 8,
+      "selectedPositions": 16,
+      "distractorPositions": 20,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1274,15 +1787,17 @@
       "pattern": "метафор|перенос",
       "errorType": "metaphor",
       "classification": "project",
-      "annotatedExercises": 8,
-      "positiveExercises": 7,
-      "selectedPositions": 16,
-      "distractorPositions": 20,
+      "annotatedExercises": 9,
+      "positiveExercises": 8,
+      "selectedPositions": 20,
+      "distractorPositions": 21,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1303,6 +1818,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1314,15 +1831,17 @@
       "pattern": "эпитет|образное определен",
       "errorType": "epithet",
       "classification": "project",
-      "annotatedExercises": 1,
-      "positiveExercises": 1,
-      "selectedPositions": 3,
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 4,
       "distractorPositions": 2,
       "directShortAnswers": 0,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1343,6 +1862,8 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1363,6 +1884,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1374,15 +1897,17 @@
       "pattern": "синоним",
       "errorType": "synonym",
       "classification": "project",
-      "annotatedExercises": 13,
-      "positiveExercises": 13,
+      "annotatedExercises": 15,
+      "positiveExercises": 15,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 13,
+      "directShortAnswers": 15,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1394,15 +1919,17 @@
       "pattern": "антоним",
       "errorType": "antonym",
       "classification": "project",
-      "annotatedExercises": 5,
-      "positiveExercises": 5,
+      "annotatedExercises": 6,
+      "positiveExercises": 6,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 5,
+      "directShortAnswers": 6,
       "paragraphExists": true,
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1423,6 +1950,8 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1434,15 +1963,17 @@
       "pattern": "контекст|значени",
       "errorType": "context-meaning",
       "classification": "project",
-      "annotatedExercises": 19,
-      "positiveExercises": 19,
+      "annotatedExercises": 21,
+      "positiveExercises": 21,
       "selectedPositions": 0,
       "distractorPositions": 0,
-      "directShortAnswers": 19,
+      "directShortAnswers": 21,
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
       "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
       "gap": false
     },
     {
@@ -1462,8 +1993,10 @@
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 0,
-      "gap": true
+      "gameSituations": 2,
+      "assessmentKind": "writing-operations",
+      "shortAnswerApplicable": false,
+      "gap": false
     },
     {
       "id": "OGE:1.compression",
@@ -1482,8 +2015,10 @@
       "paragraphExists": true,
       "paragraphExamples": 1,
       "paragraphCounterexamples": 1,
-      "gameSituations": 3,
-      "gap": true
+      "gameSituations": 5,
+      "assessmentKind": "writing-operations",
+      "shortAnswerApplicable": false,
+      "gap": false
     },
     {
       "id": "OGE:13.thesis",
@@ -1503,7 +2038,9 @@
       "paragraphExamples": 1,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
-      "gap": true
+      "assessmentKind": "writing-operations",
+      "shortAnswerApplicable": false,
+      "gap": false
     },
     {
       "id": "OGE:13.evidence",
@@ -1523,7 +2060,9 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
-      "gap": true
+      "assessmentKind": "writing-operations",
+      "shortAnswerApplicable": false,
+      "gap": false
     },
     {
       "id": "OGE:13.composition",
@@ -1543,7 +2082,229 @@
       "paragraphExamples": 0,
       "paragraphCounterexamples": 0,
       "gameSituations": 0,
-      "gap": true
+      "assessmentKind": "writing-operations",
+      "shortAnswerApplicable": false,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.coordinate",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Запятая между частями сложносочинённого предложения",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "pattern": "сложносочин",
+      "errorType": "coordinate",
+      "classification": "project",
+      "annotatedExercises": 3,
+      "positiveExercises": 3,
+      "selectedPositions": 3,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.subordinate",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Запятая между главной и придаточной частями",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "pattern": "сложноподчин|между главной и придаточной",
+      "errorType": "subordinate",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.asyndetic-comma",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Запятая при бессоюзном перечислении",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "pattern": "бессоюзн.{0,140}(?:перечислен|запятая)",
+      "errorType": "asyndetic-comma",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.address",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Знаки при обращении",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "pattern": "обращение",
+      "errorType": "address",
+      "classification": "project",
+      "annotatedExercises": 3,
+      "positiveExercises": 3,
+      "selectedPositions": 3,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.introductory",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Знаки при вводных словах",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "pattern": "вводн",
+      "errorType": "introductory",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 1,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.ellipsis",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Тире на месте пропущенного члена",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+      "pattern": "неполном предложении|пропущенного члена",
+      "errorType": "ellipsis",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.clarification",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Уточняющие члены предложения",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+      "pattern": "уточняющ",
+      "errorType": "clarification",
+      "classification": "project",
+      "annotatedExercises": 3,
+      "positiveExercises": 3,
+      "selectedPositions": 3,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.apposition",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Обособленное и пояснительное приложение",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+      "pattern": "приложение",
+      "errorType": "apposition",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.insertion",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Вставная конструкция",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+      "pattern": "вставная конструкция",
+      "errorType": "insertion",
+      "classification": "project",
+      "annotatedExercises": 2,
+      "positiveExercises": 2,
+      "selectedPositions": 2,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 1,
+      "paragraphCounterexamples": 1,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
+    },
+    {
+      "id": "OGE:4.direct-speech",
+      "topicId": "punktuacionnye-pravila",
+      "line": 4,
+      "title": "Знаки при прямой речи",
+      "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+      "pattern": "прямой реч",
+      "errorType": "direct-speech",
+      "classification": "project",
+      "annotatedExercises": 4,
+      "positiveExercises": 4,
+      "selectedPositions": 4,
+      "distractorPositions": 0,
+      "directShortAnswers": 0,
+      "paragraphExists": true,
+      "paragraphExamples": 0,
+      "paragraphCounterexamples": 0,
+      "gameSituations": 0,
+      "assessmentKind": "short-answer",
+      "shortAnswerApplicable": true,
+      "gap": false
     }
   ]
 }

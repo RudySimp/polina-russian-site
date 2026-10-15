@@ -4079,5 +4079,355 @@
       "/theory/sintaksis/?exam=OGE#constructions"
     ],
     "classificationReview": "editorial-draft"
+  },
+  {
+    "revision": 1,
+    "topicId": "sintaksis",
+    "topicSlug": "sintaksis",
+    "topicTitle": "Синтаксический анализ",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "134"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "options": [
+      "Предложение 1 осложнено уточняющим обстоятельством времени.",
+      "Предложение 2 бессоюзное сложное.",
+      "Предложение 3 осложнено обособленным причастным оборотом.",
+      "Предложение 4 односоставное безличное.",
+      "Предложение 5 сложносочинённое."
+    ],
+    "optionExplanations": [
+      "«В девять часов» отвечает на тот же вопрос «когда?» и сужает время, названное словом «утром»; это уточняющее обстоятельство.",
+      "Основы «учитель показал» и «ученица кивнула» соединены сочинительным союзом «и», поэтому бессоюзной связи нет.",
+      "«Приглашённые заранее» — причастный оборот после определяемого существительного «специалисты»; он обособлен.",
+      "«Не работалось» — главный член безличного предложения; сочетание «в школе» является обстоятельством, не подлежащим.",
+      "У одного подлежащего «учитель» однородные сказуемые «мог ошибиться» и «исправился»; новая грамматическая основа после «но» не возникает."
+    ],
+    "formatLabel": "ОГЭ · Синтаксический анализ",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 3,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:3.complication"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#constructions",
+        "errorType": "complication"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:3.coordinate",
+          "OGE:3.asyndetic"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#classification",
+        "errorType": "coordinate"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:3.complication"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#constructions",
+        "errorType": "complication"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:3.impersonal"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#one-member",
+        "errorType": "impersonal"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:3.coordinate",
+          "OGE:3.complication"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#classification",
+        "errorType": "coordinate"
+      }
+    ],
+    "id": "oge-sintaksis-017",
+    "slug": "oge-sintaksis-017",
+    "title": "Школа: уточнение и однородные сказуемые",
+    "prompt": "Укажите варианты ответов, в которых даны верные характеристики предложений текста. Запишите номера ответов.",
+    "sourceTextId": "syntax-local-school-017",
+    "steps": [
+      "Найдите грамматические основы.",
+      "Различите союзную и бессоюзную связь.",
+      "Проверьте осложняющие элементы.",
+      "Сверьте каждую характеристику по тексту."
+    ],
+    "hint": "Проверьте, возникает ли новая основа после союза «но».",
+    "explanation": "«В девять часов» отвечает на тот же вопрос «когда?» и сужает время, названное словом «утром»; это уточняющее обстоятельство. Основы «учитель показал» и «ученица кивнула» соединены сочинительным союзом «и», поэтому бессоюзной связи нет. «Приглашённые заранее» — причастный оборот после определяемого существительного «специалисты»; он обособлен. «Не работалось» — главный член безличного предложения; сочетание «в школе» является обстоятельством, не подлежащим. У одного подлежащего «учитель» однородные сказуемые «мог ошибиться» и «исправился»; новая грамматическая основа после «но» не возникает.",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "subtopic": "Школа: уточнение и однородные сказуемые",
+    "skillId": "OGE:syntax.analysis",
+    "misconceptionId": "wrong-sentence-characteristic",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 3 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-ac1542dffe05",
+      "filename": "ОГЭ русский язык - задание 3 - каталог и 100 вариантов.docx",
+      "sourceNumber": 17,
+      "paragraph": 206,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«В девять часов» отвечает на тот же вопрос «когда?» и сужает время, названное словом «утром»; это уточняющее обстоятельство. Основы «учитель показал» и «ученица кивнула» соединены сочинительным союзом «и», поэтому бессоюзной связи нет. «Приглашённые заранее» — причастный оборот после определяемого существительного «специалисты»; он обособлен. «Не работалось» — главный член безличного предложения; сочетание «в школе» является обстоятельством, не подлежащим. У одного подлежащего «учитель» однородные сказуемые «мог ошибиться» и «исправился»; новая грамматическая основа после «но» не возникает. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.analysis",
+      "OGE:3.complication",
+      "OGE:3.coordinate",
+      "OGE:3.asyndetic",
+      "OGE:3.impersonal"
+    ],
+    "rulePaths": [
+      "/theory/sintaksis/?exam=OGE#constructions",
+      "/theory/sintaksis/?exam=OGE#classification",
+      "/theory/sintaksis/?exam=OGE#one-member"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "sintaksis",
+    "topicSlug": "sintaksis",
+    "topicTitle": "Синтаксический анализ",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "134"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "options": [
+      "Предложение 1 простое с однородными сказуемыми.",
+      "Предложение 2 бессоюзное сложное.",
+      "Предложение 3 сложноподчинённое с придаточным определительным.",
+      "Предложение 4 осложнено вводным словом.",
+      "Предложение 5 простое."
+    ],
+    "optionExplanations": [
+      "Подлежащее «мы» относится к двум однородным сказуемым «подошли» и «остановились»; это простое предложение.",
+      "Основы «фонари погасли» и «окна светились» связаны сочинительным союзом «зато», поэтому предложение не бессоюзное.",
+      "Придаточная часть «который вскоре усилился» определяет существительное «дождь», отвечает на вопрос «какой?»; предложение сложноподчинённое.",
+      "«Вероятно» выражает степень уверенности говорящего и не входит в основу «учитель вернётся»; это вводное слово.",
+      "«Оказалось» — главный член безличной главной части; «встреча перенесена» — основа придаточной изъяснительной. Предложение сложноподчинённое, а не простое."
+    ],
+    "formatLabel": "ОГЭ · Синтаксический анализ",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 3,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:3.complication"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#constructions",
+        "errorType": "complication"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:3.coordinate",
+          "OGE:3.asyndetic"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#classification",
+        "errorType": "coordinate"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:3.subordinate"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#subordinate-types",
+        "errorType": "subordinate"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:3.complication"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#constructions",
+        "errorType": "complication"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:3.subordinate",
+          "OGE:3.impersonal"
+        ],
+        "rulePath": "/theory/sintaksis/?exam=OGE#subordinate-types",
+        "errorType": "subordinate"
+      }
+    ],
+    "id": "oge-sintaksis-019",
+    "slug": "oge-sintaksis-019",
+    "title": "Школа: союз и придаточная часть",
+    "prompt": "Укажите варианты ответов, в которых даны верные характеристики предложений текста. Запишите номера ответов.",
+    "sourceTextId": "syntax-local-school-019",
+    "steps": [
+      "Найдите грамматические основы.",
+      "Различите союзную и бессоюзную связь.",
+      "Проверьте осложняющие элементы.",
+      "Сверьте каждую характеристику по тексту."
+    ],
+    "hint": "Отличайте союз «зато» от бессоюзной связи и вводное слово от члена предложения.",
+    "explanation": "Подлежащее «мы» относится к двум однородным сказуемым «подошли» и «остановились»; это простое предложение. Основы «фонари погасли» и «окна светились» связаны сочинительным союзом «зато», поэтому предложение не бессоюзное. Придаточная часть «который вскоре усилился» определяет существительное «дождь», отвечает на вопрос «какой?»; предложение сложноподчинённое. «Вероятно» выражает степень уверенности говорящего и не входит в основу «учитель вернётся»; это вводное слово. «Оказалось» — главный член безличной главной части; «встреча перенесена» — основа придаточной изъяснительной. Предложение сложноподчинённое, а не простое.",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "subtopic": "Школа: союз и придаточная часть",
+    "skillId": "OGE:syntax.analysis",
+    "misconceptionId": "wrong-sentence-characteristic",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 3 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-ac1542dffe05",
+      "filename": "ОГЭ русский язык - задание 3 - каталог и 100 вариантов.docx",
+      "sourceNumber": 19,
+      "paragraph": 224,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Подлежащее «мы» относится к двум однородным сказуемым «подошли» и «остановились»; это простое предложение. Основы «фонари погасли» и «окна светились» связаны сочинительным союзом «зато», поэтому предложение не бессоюзное. Придаточная часть «который вскоре усилился» определяет существительное «дождь», отвечает на вопрос «какой?»; предложение сложноподчинённое. «Вероятно» выражает степень уверенности говорящего и не входит в основу «учитель вернётся»; это вводное слово. «Оказалось» — главный член безличной главной части; «встреча перенесена» — основа придаточной изъяснительной. Предложение сложноподчинённое, а не простое. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.analysis",
+      "OGE:3.complication",
+      "OGE:3.coordinate",
+      "OGE:3.asyndetic",
+      "OGE:3.subordinate",
+      "OGE:3.impersonal"
+    ],
+    "rulePaths": [
+      "/theory/sintaksis/?exam=OGE#constructions",
+      "/theory/sintaksis/?exam=OGE#classification",
+      "/theory/sintaksis/?exam=OGE#subordinate-types",
+      "/theory/sintaksis/?exam=OGE#one-member"
+    ]
   }
 ]

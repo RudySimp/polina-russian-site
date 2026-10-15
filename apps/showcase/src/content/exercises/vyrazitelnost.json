@@ -3512,5 +3512,332 @@
       "/theory/vyrazitelnost/?exam=OGE#tropes"
     ],
     "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-vyrazitelnost-reading-audit-subtitles",
+    "slug": "oge-vyrazitelnost-reading-audit-subtitles",
+    "revision": 1,
+    "title": "Строки под кадром: выразительные средства",
+    "prompt": "Укажите варианты, в которых средством выразительности является сравнение.",
+    "sourceTextId": "reading-audit-subtitles",
+    "topicId": "vyrazitelnost",
+    "topicSlug": "vyrazitelnost",
+    "topicTitle": "Средства выразительности",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "145"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.expression",
+    "misconceptionId": "line-11-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "«мокрая глина послушно вытягивалась под ладонями мастера, как тесто под скалкой» (предложение 2)",
+      "«мы открыли ноутбук и устроили первый просмотр» (предложение 4)",
+      "«выбрали для каждой своё время» (предложение 14)",
+      "«короткие строки ложились под кадрами, как ровные камни через ручей» (предложение 17)",
+      "«надписи, словно маленькие ступеньки, помогали Глебу двигаться вслед за историей» (предложение 20)"
+    ],
+    "optionExplanations": [
+      "Глина при обработке уподоблена тесту под скалкой; обе части сопоставления названы, связь выражена союзом «как».",
+      "Это буквальное сообщение о действиях участников. Два однородных сказуемых сами по себе не образуют сравнения.",
+      "Названо время появления каждой части подписи. Уподобления другому предмету или явлению в цитате нет.",
+      "Строки уподоблены камням, по которым удобно перейти ручей. Сравнение делает понятной их роль в последовательном понимании фильма.",
+      "Надписи уподоблены ступенькам при помощи «словно»; образ передаёт постепенное движение зрителя вслед за рассказом."
+    ],
+    "explanation": "Глина при обработке уподоблена тесту под скалкой; обе части сопоставления названы, связь выражена союзом «как».\n\nЭто буквальное сообщение о действиях участников. Два однородных сказуемых сами по себе не образуют сравнения.\n\nНазвано время появления каждой части подписи. Уподобления другому предмету или явлению в цитате нет.\n\nСтроки уподоблены камням, по которым удобно перейти ручей. Сравнение делает понятной их роль в последовательном понимании фильма.\n\nНадписи уподоблены ступенькам при помощи «словно»; образ передаёт постепенное движение зрителя вслед за рассказом.",
+    "steps": [
+      "Назовите признак выбранного выразительного средства.",
+      "Проверьте перенос или уподобление в каждой цитате.",
+      "Отличите образное определение от буквальной характеристики."
+    ],
+    "hint": "Наличие прилагательного или союза само по себе ещё не доказывает нужное средство.",
+    "formatLabel": "ОГЭ · задание 11",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 11,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "сравнение",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.comparison"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.comparison"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "comparison"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-vyrazitelnost-reading-audit-printproof",
+    "slug": "oge-vyrazitelnost-reading-audit-printproof",
+    "revision": 1,
+    "title": "Первый оттиск: выразительные средства",
+    "prompt": "Укажите варианты, в которых средством выразительности является метафорический эпитет — образное определение, основанное на переносе признака.",
+    "sourceTextId": "reading-audit-printproof",
+    "topicId": "vyrazitelnost",
+    "topicSlug": "vyrazitelnost",
+    "topicTitle": "Средства выразительности",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "1235"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.expression",
+    "misconceptionId": "line-11-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "«колючая насмешка» (предложение 8)",
+      "«тяжёлое молчание» (предложение 11)",
+      "«холодная вежливость» (предложение 14)",
+      "«белый лист» (предложение 3)",
+      "«хрупкая уверенность» (предложение 23)"
+    ],
+    "optionExplanations": [
+      "«Колючая» передаёт болезненность насмешки через признак предмета, способного уколоть. Это образное определение, а не буквальная характеристика звука.",
+      "«Тяжёлое» относится к психологически напряжённому молчанию. У молчания нет физического веса; признак перенесён на состояние людей.",
+      "«Холодная» выражает ощущаемую Ильёй отстранённость и строгость ответа мастера, а не температуру его речи. Предложение 14 отмечает субъективное впечатление героя.",
+      "«Белый» буквально называет цвет бумажного листа. В этом контексте цвет не становится переносным образом, поэтому это нейтральное определение.",
+      "«Хрупкая» передаёт ещё непрочную уверенность, которую легко утратить. Признак ломкого предмета перенесён на внутреннее состояние героя."
+    ],
+    "explanation": "«Колючая» передаёт болезненность насмешки через признак предмета, способного уколоть. Это образное определение, а не буквальная характеристика звука.\n\n«Тяжёлое» относится к психологически напряжённому молчанию. У молчания нет физического веса; признак перенесён на состояние людей.\n\n«Холодная» выражает ощущаемую Ильёй отстранённость и строгость ответа мастера, а не температуру его речи. Предложение 14 отмечает субъективное впечатление героя.\n\n«Белый» буквально называет цвет бумажного листа. В этом контексте цвет не становится переносным образом, поэтому это нейтральное определение.\n\n«Хрупкая» передаёт ещё непрочную уверенность, которую легко утратить. Признак ломкого предмета перенесён на внутреннее состояние героя.",
+    "steps": [
+      "Назовите признак выбранного выразительного средства.",
+      "Проверьте перенос или уподобление в каждой цитате.",
+      "Отличите образное определение от буквальной характеристики."
+    ],
+    "hint": "Наличие прилагательного или союза само по себе ещё не доказывает нужное средство.",
+    "formatLabel": "ОГЭ · задание 11",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 11,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "метафорический эпитет",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.expression",
+      "OGE:11.epithet",
+      "OGE:11.metaphor"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:11.epithet",
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+        "errorType": "epithet"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:11.metaphor"
+        ],
+        "rulePath": "/theory/vyrazitelnost/?exam=OGE#tropes",
+        "errorType": "metaphor"
+      }
+    ],
+    "rulePaths": [
+      "/theory/vyrazitelnost/?exam=OGE#literal-and-figurative",
+      "/theory/vyrazitelnost/?exam=OGE#tropes"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

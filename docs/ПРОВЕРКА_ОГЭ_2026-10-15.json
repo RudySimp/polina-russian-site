@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-14",
+  "checkedAt": "2026-10-15",
+  "baseCommit": "1fc22baaec6e086215cf61670ead8d87d3533ffa",
+  "publication": {
+    "status": "pending"
+  },
+  "counts": {
+    "totalExercises": 307,
+    "currentOge": 275,
+    "legacyOge": 2,
+    "ege": 30,
+    "localOriginalImports": 178,
+    "official": 0,
+    "origins": {
+      "official": 0,
+      "author-model": 275,
+      "learning": 0,
+      "unclassified": 0
+    },
+    "provenance": {
+      "local-original-import": 178,
+      "project-original": 97
+    },
+    "teacherPending": 275,
+    "teacherApproved": 0,
+    "classificationDraft": 275,
+    "revisionMatchedReceipts": 55,
+    "lessonsOge": 15,
+    "writing": 15,
+    "summaries": 5,
+    "essays": 10,
+    "writingGuides": 15,
+    "guideRoutes": 35,
+    "activities": 7,
+    "gameSituations": 84,
+    "sourceTexts": 42,
+    "audio": 5,
+    "fixedVariants": 5,
+    "subskills": 74,
+    "shortAnswerSubskills": 69,
+    "zeroPositiveSubskills": 0,
+    "exerciseShards": 24,
+    "maxExercisesPerShard": 20
+  },
+  "verification": {
+    "unit": {
+      "passed": 231,
+      "failed": 0,
+      "files": 28
+    },
+    "nextBuild": "passed",
+    "showcaseBuild": {
+      "status": "passed",
+      "html": 407,
+      "routes": 406,
+      "searchPageJsBytes": 6430,
+      "staticCheck": "passed"
+    },
+    "types": "passed",
+    "lint": "passed:0errors,0warnings",
+    "browser": {
+      "uniqueScenarios": 148,
+      "passedAcrossVerifiedRuns": 147,
+      "skipped": 1,
+      "fullRun": {
+        "passed": 139,
+        "failed": 8,
+        "skipped": 1,
+        "artifact": "artifacts/audit-browser-final.json"
+      },
+      "correctionRuns": [
+        {
+          "passed": 10,
+          "failed": 2,
+          "artifact": "artifacts/audit-browser-corrections.json"
+        },
+        {
+          "passed": 2,
+          "failed": 0,
+          "artifact": "artifacts/audit-browser-navigation-final.json"
+        }
+      ],
+      "courseTypographyRun": {
+        "passed": 10,
+        "failed": 0,
+        "artifact": "artifacts/audit-course-typography-final.json"
+      },
+      "notes": "Eight failures of four scenarios were corrected and rerun: separate file upload input, expanded corpus counts, current course topic markup, restored prior EGE practice action. Workshop accessibility additionally checked with axe. Separate CI whole-suite run remains pending."
+    }
+  },
+  "images": {
+    "sources": 42,
+    "variants": 168,
+    "sourceBytes": 66334355,
+    "webpBytes": 10181688,
+    "installedIllustrations": 17,
+    "portraitsUsed": 0,
+    "checks": "passed"
+  },
+  "benchmark": {
+    "synthetic": true,
+    "environment": "Local Vite dev, Chrome headless; 390px CPU slowdown 4x; concurrent work may affect absolute timings",
+    "scenarios": [
+      {
+        "size": 1000,
+        "width": 1440,
+        "cpuSlowdown": 1,
+        "times": {
+          "homeCold": 982.1,
+          "bankCold": 658.7,
+          "conditionSearch": 63.3,
+          "discreteFilter": 63.1,
+          "pagination": 43.9,
+          "openOne": 941.1,
+          "browserBack": 619.1,
+          "startAndSaveFive": 984.9,
+          "answerAndSave": 892.6,
+          "homeWithHistory": 616,
+          "historyList": 1136.9,
+          "openGenerator": 665.9,
+          "generateAndSaveFull": 1020.9,
+          "startAndSaveAllPortion": 1302.4,
+          "reloadAllPortion": 1257.1
+        },
+        "allPortion": {
+          "label": "Порция 100 из 968",
+          "items": 100,
+          "bytes": 799788,
+          "readAfterReload": true,
+          "immutableItems": true
+        },
+        "fullSnapshotReads": 0,
+        "pageErrors": []
+      },
+      {
+        "size": 1000,
+        "width": 390,
+        "cpuSlowdown": 4,
+        "times": {
+          "homeCold": 1785.9,
+          "bankCold": 1562.2,
+          "conditionSearch": 308.4,
+          "discreteFilter": 217.7,
+          "pagination": 194.2,
+          "openOne": 1633.1,
+          "browserBack": 2068.4,
+          "startAndSaveFive": 1931.4,
+          "answerAndSave": 1282.7,
+          "homeWithHistory": 1260.6,
+          "historyList": 1479,
+          "openGenerator": 1965.7,
+          "generateAndSaveFull": 2224.6,
+          "startAndSaveAllPortion": 2282.4,
+          "reloadAllPortion": 1128.3
+        },
+        "allPortion": {
+          "label": "Порция 100 из 968",
+          "items": 100,
+          "bytes": 790086,
+          "readAfterReload": true,
+          "immutableItems": true
+        },
+        "fullSnapshotReads": 0,
+        "pageErrors": []
+      },
+      {
+        "size": 5000,
+        "width": 1440,
+        "cpuSlowdown": 1,
+        "times": {
+          "homeCold": 637.1,
+          "bankCold": 759.5,
+          "conditionSearch": 72.1,
+          "discreteFilter": 51.5,
+          "pagination": 48.9,
+          "openOne": 1041.2,
+          "browserBack": 767,
+          "startAndSaveFive": 1046.3,
+          "answerAndSave": 895.1,
+          "homeWithHistory": 632.9,
+          "historyList": 848.4,
+          "openGenerator": 797,
+          "generateAndSaveFull": 958.6,
+          "startAndSaveAllPortion": 1441.7,
+          "reloadAllPortion": 1229.7
+        },
+        "allPortion": {
+          "label": "Порция 100 из 4968",
+          "items": 100,
+          "bytes": 797352,
+          "readAfterReload": true,
+          "immutableItems": true
+        },
+        "fullSnapshotReads": 0,
+        "pageErrors": []
+      },
+      {
+        "size": 5000,
+        "width": 390,
+        "cpuSlowdown": 4,
+        "times": {
+          "homeCold": 1415.4,
+          "bankCold": 1568.2,
+          "conditionSearch": 310.6,
+          "discreteFilter": 330.1,
+          "pagination": 116.3,
+          "openOne": 1292.6,
+          "browserBack": 1702.7,
+          "startAndSaveFive": 1999.3,
+          "answerAndSave": 1105,
+          "homeWithHistory": 1102.9,
+          "historyList": 1679.4,
+          "openGenerator": 1643.6,
+          "generateAndSaveFull": 1738,
+          "startAndSaveAllPortion": 2669.7,
+          "reloadAllPortion": 1313.6
+        },
+        "allPortion": {
+          "label": "Порция 100 из 4968",
+          "items": 100,
+          "bytes": 793327,
+          "readAfterReload": true,
+          "immutableItems": true
+        },
+        "fullSnapshotReads": 0,
+        "pageErrors": []
+      }
+    ]
+  },
+  "writing": {
+    "operations": 8,
+    "workshops": 4,
+    "samples": 12,
+    "microtasks": 13,
+    "coveredTexts": 2,
+    "coveredGuideRoutes": 4,
+    "allGuideRoutes": 35,
+    "teacherApproval": "pending",
+    "contentTotals": [
+      {
+        "id": "workshop-summary-reading-1",
+        "scores": [
+          6,
+          4,
+          1
+        ]
+      },
+      {
+        "id": "workshop-essay-bench-13-1",
+        "scores": [
+          8,
+          7,
+          5
+        ]
+      },
+      {
+        "id": "workshop-essay-bench-13-2",
+        "scores": [
+          8,
+          7,
+          5
+        ]
+      },
+      {
+        "id": "workshop-essay-bench-13-3",
+        "scores": [
+          8,
+          7,
+          5
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "Это проверка редакторской учебной версии; полный предметный перенос174страниц и большой официальный корпус не завершены.",
+    "Физические школьные устройства и первый визит ребёнка без помощи не проверялись.",
+    "Методическое утверждение преподавателем, оценка качества аудио человеком и официальность авторских заданий не подменяются автоматическими тестами."
+  ]
+}

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { ProgressBackupPanel } from "../components/ProgressBackupPanel";
 import { Breadcrumbs, LinkButton, PageHeading } from "../components/ui";
 import { href } from "../routes";
 import { exerciseIndex } from "../content/catalog";
@@ -208,6 +209,7 @@ export default function ResultsPage({
           </ul>
         </section>
       )}
+      <ProgressBackupPanel />
       {notice && <p role="status">{notice}</p>}
       {error && <p role="alert">{error}</p>}
       <label className="oge-filter">

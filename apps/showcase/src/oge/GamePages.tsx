@@ -1,3 +1,4 @@
+import { nextGameControl } from "./game-control";
 import { use, useState } from "react";
 import { loadActivities } from "./materials";
 import type { InteractiveActivity } from "./model";
@@ -28,6 +29,7 @@ export function GamesCatalog() {
         ]}
       />
       <PageHeading
+        illustration="10-learning-stages"
         eyebrow="ДУМАТЬ И ДЕЙСТВОВАТЬ"
         title="Тематические тренажёры"
         text="Выделяйте, исправляйте, преобразуйте и сопоставляйте. Сохраняйте начатое действие и переходите от разбора ошибки к новому примеру."
@@ -161,6 +163,34 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
       );
     }
   }
+  function beginControl() {
+    if (pendingRecord) return;
+    const history = readGameRecords(window.localStorage);
+    const selected = nextGameControl(
+      activity,
+      situation,
+      history.records,
+      history.historic,
+      (candidate) => readGameDraft(window.localStorage, activity.id, candidate),
+    );
+    if (!selected) {
+      setSaveError(
+        "Новых случаев этой механики больше нет. Повторение доступно, но не считается независимой проверкой.",
+      );
+      return;
+    }
+    const next = {
+      ...makeGameDraft(activity, selected.situation),
+      mode: "control" as const,
+      controlFrom: {
+        situationId: situation.id,
+        revision: situation.revision ?? 1,
+        matchedSkillIds: selected.matchedSkillIds,
+      },
+    };
+    setIndex(selected.index);
+    persist(next);
+  }
   const expectedLabel = (fieldId: string, values: string[]) =>
     values
       .map((value) =>
@@ -212,6 +242,17 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
       <p>
         Ситуация {index + 1} из {activity.situations.length} · {situation.title}
       </p>
+      {state.mode === "control" && (
+        <p role="status" className="control-stage">
+          Самостоятельная контрольная операция на новом случае. До отправки
+          ответа подсказка закрыта.
+          {state.controlFrom?.matchedSkillIds.length
+            ? " Сохранён общий поднавык исходного случая."
+            : " Выбран другой случай этой механики; совпадение узкого поднавыка не подтверждено."}
+          {activity.kind === "compression" &&
+            " Автоматически проверяется только выбор информации; собственное сжатие проверяет человек."}
+        </p>
+      )}
       <article className="interactive-card oge-game">
         <h2>{situation.title}</h2>
         <p>{situation.instruction}</p>
@@ -346,6 +387,7 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                   <select
                     disabled={
                       activity.kind === "spelling" &&
+                      state.mode !== "control" &&
                       n > 0 &&
                       !results.find(
                         (result) =>
@@ -366,6 +408,7 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                   <input
                     disabled={
                       activity.kind === "spelling" &&
+                      state.mode !== "control" &&
                       n > 0 &&
                       !results.find(
                         (result) =>
@@ -386,7 +429,11 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
             className="button"
             disabled={!!pendingRecord}
             onClick={() => {
-              const draftSaved = persist({ ...state, checked: true, checks: state.checks + 1 });
+              const draftSaved = persist({
+                ...state,
+                checked: true,
+                checks: state.checks + 1,
+              });
               const history = readGameRecords(window.localStorage);
               const seen =
                 history.records.some(
@@ -408,6 +455,8 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
                 situationId: situation.id,
                 createdAt: new Date().toISOString(),
                 answers,
+                mode: state.mode,
+                controlFrom: state.controlFrom,
                 snapshot: {
                   kind: activity.kind,
                   title: activity.title,
@@ -493,33 +542,49 @@ function ActivityPlayer({ activity }: { activity: InteractiveActivity }) {
             <p>Вы можете исправить ответ и проверить снова.</p>
           </section>
         )}
+        {checked && (
+          <button
+            className="button"
+            disabled={!!pendingRecord}
+            onClick={beginControl}
+          >
+            Самостоятельный контроль на новом случае
+          </button>
+        )}
         {saveError && <p role="status">{saveError}</p>}
         {saveError && (
-          <button className="button secondary" onClick={() => {
-            const draftSaved = persist(state);
-            if (pendingRecord) {
-              try {
-                saveGameRecord(window.localStorage, pendingRecord);
-                setPendingRecord(undefined);
-                if (draftSaved) setSaveError("");
-              } catch {
-                setSaveError("Браузер по-прежнему не сохранил историю. Текущая попытка доступна для скачивания.");
+          <button
+            className="button secondary"
+            onClick={() => {
+              const draftSaved = persist(state);
+              if (pendingRecord) {
+                try {
+                  saveGameRecord(window.localStorage, pendingRecord);
+                  setPendingRecord(undefined);
+                  if (draftSaved) setSaveError("");
+                } catch {
+                  setSaveError(
+                    "Браузер по-прежнему не сохранил историю. Текущая попытка доступна для скачивания.",
+                  );
+                }
               }
-            }
-          }}>
+            }}
+          >
             Повторить запись действия
           </button>
         )}
-        <details
-          className="hint"
-          onToggle={(event) => {
-            if (event.currentTarget.open && !state.hintUsed)
-              persist({ ...state, hintUsed: true });
-          }}
-        >
-          <summary>Подсказка к действию</summary>
-          <p>{situation.hint ?? situation.details[0]}</p>
-        </details>
+        {(state.mode !== "control" || checked) && (
+          <details
+            className="hint"
+            onToggle={(event) => {
+              if (event.currentTarget.open && !state.hintUsed)
+                persist({ ...state, hintUsed: true });
+            }}
+          >
+            <summary>Подсказка к действию</summary>
+            <p>{situation.hint ?? situation.details[0]}</p>
+          </details>
+        )}
         <button
           className="button secondary"
           onClick={() => {

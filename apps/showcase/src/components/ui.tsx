@@ -1,3 +1,4 @@
+import { OgeIllustration } from "./OgeIllustration";
 import type { ReactNode } from "react";
 import { ArrowRight, ArrowUpRight, Search } from "lucide-react";
 import { href } from "../routes";
@@ -33,13 +34,18 @@ export function PageHeading({
   eyebrow,
   title,
   text,
+  illustration,
 }: {
+  illustration?: string;
   eyebrow: string;
   title: string;
   text: string;
 }) {
   return (
-    <div className="page-heading">
+    <div
+      className={"page-heading" + (illustration ? " with-illustration" : "")}
+    >
+      {illustration && <OgeIllustration id={illustration} priority />}
       <p className="eyebrow">{eyebrow}</p>
       <h1>{title}</h1>
       <p className="lede">{text}</p>

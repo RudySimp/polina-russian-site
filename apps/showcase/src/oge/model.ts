@@ -123,7 +123,22 @@ export type PracticeSession = {
   writingReviews?: Record<string, WritingReview>;
   endedByTimeout?: boolean;
 };
+export type WordCountCorrection = {
+  count: number;
+  reason: string;
+  reviewer: string;
+  role: "self" | "expert";
+  recordedAt: string;
+  answerText: string;
+  promptId: string;
+  writingRevision: number;
+  invalidatedAt?: string;
+};
 export type WritingReview = {
+  wordCountCorrection?: WordCountCorrection;
+  answerText?: string;
+  writingRevision?: number;
+  reviewedWordCount?: number;
   contentAccepted?: boolean;
   checks: number[];
   note: string;

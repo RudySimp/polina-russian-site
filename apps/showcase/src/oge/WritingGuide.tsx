@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ComponentType } from "react";
 import type { PracticeSession, WritingAssignment } from "./model";
 import { wordCount } from "./engine";
 
@@ -20,6 +20,58 @@ type Guide = {
   title: string;
   routes: GuideRoute[];
 };
+function WritingWorkshopEntry({
+  session,
+  writing,
+}: {
+  session: PracticeSession;
+  writing: WritingAssignment;
+}) {
+  const [Workshop, setWorkshop] =
+    useState<
+      ComponentType<{ session: PracticeSession; writing: WritingAssignment }>
+    >();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  async function load() {
+    if (Workshop || loading) return;
+    setLoading(true);
+    setError("");
+    try {
+      const workshopModule = await import("./WritingWorkshop");
+      setWorkshop(() => workshopModule.WritingWorkshop);
+    } catch {
+      setError(
+        "Не удалось загрузить письменный практикум. Ваш основной ответ остаётся в работе; повторите загрузку.",
+      );
+    } finally {
+      setLoading(false);
+    }
+  }
+  return (
+    <details
+      onToggle={(event) => {
+        if (event.currentTarget.open) void load();
+      }}
+    >
+      <summary>Письменные операции и оценённые образцы</summary>
+      {loading && <p role="status">Загружаем письменный практикум…</p>}
+      {error && (
+        <>
+          <p role="status">{error}</p>
+          <button
+            className="button secondary"
+            onClick={() => window.location.reload()}
+          >
+            Повторить загрузку практикума
+          </button>
+        </>
+      )}
+      {Workshop && <Workshop session={session} writing={writing} />}
+    </details>
+  );
+}
+
 export function WritingGuide({
   session,
   writing,
@@ -131,6 +183,19 @@ export function WritingGuide({
               </li>
             ))}
           </ul>
+          <WritingWorkshopEntry
+            key={
+              session.id +
+              ":" +
+              writing.id +
+              ":" +
+              writing.revision +
+              ":" +
+              promptId
+            }
+            session={session}
+            writing={writing}
+          />
           <h4>Перед окончательной редакцией</h4>
           <ul>
             {route.checkpoints.map((item) => (

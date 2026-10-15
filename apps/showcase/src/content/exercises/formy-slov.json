@@ -2641,5 +2641,920 @@
     ],
     "originCategory": "author-model",
     "classificationReview": "editorial-draft"
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "мандаринов"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-014",
+    "slug": "oge-formy-slov-014",
+    "title": "Фрукты: родительный множественного",
+    "prompt": "Раскройте скобки и запишите слово «мандарины» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "К празднику привезли несколько коробок (мандарины).",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "После обозначения количества проверьте родительный падеж множественного числа.",
+    "explanation": "«Несколько коробок» обозначает количество содержимого: нужны мандарины в родительном множественного. Словарь даёт «мандаринов»; окончание -ов сохраняется, форма «мандарин» в этом контексте не является литературным ключом.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Фрукты: родительный множественного",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 14,
+      "paragraph": 183,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Несколько коробок» обозначает количество содержимого: нужны мандарины в родительном множественного. Словарь даёт «мандаринов»; окончание -ов сохраняется, форма «мандарин» в этом контексте не является литературным ключом. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.plural-genitive"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#noun-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "доктора"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-016",
+    "slug": "oge-formy-slov-016",
+    "title": "Врачи: именительный множественного",
+    "prompt": "Раскройте скобки и запишите слово «доктор» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "В отделении дежурили опытные (доктор).",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Проверьте именительный множественного в значении «врачи».",
+    "explanation": "«Дежурили опытные» требует подлежащего во множественном числе. В контексте отделения названы врачи, не учёные степени; нормативный именительный множественного «доктора».",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Врачи: именительный множественного",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 16,
+      "paragraph": 191,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Дежурили опытные» требует подлежащего во множественном числе. В контексте отделения названы врачи, не учёные степени; нормативный именительный множественного «доктора». Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.plural-genitive"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#noun-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "полотенец"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-025",
+    "slug": "oge-formy-slov-025",
+    "title": "Полотенце: родительный множественного",
+    "prompt": "Раскройте скобки и запишите слово «полотенца» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "В шкафу не оказалось чистых (полотенца).",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "В родительном множественного не добавляйте окончание -ов по аналогии.",
+    "explanation": "«Не оказалось чистых» требует родительного множественного. У «полотенце» нормативная форма «полотенец», а не «полотенцев»; вставная е сохраняет сочетание согласных.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Полотенце: родительный множественного",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 25,
+      "paragraph": 227,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Не оказалось чистых» требует родительного множественного. У «полотенце» нормативная форма «полотенец», а не «полотенцев»; вставная е сохраняет сочетание согласных. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.plural-genitive"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#noun-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "пути"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-027",
+    "slug": "oge-formy-slov-027",
+    "title": "Разносклоняемое существительное путь",
+    "prompt": "Раскройте скобки и запишите слово «путь» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "После долгого (путь) туристы добрались до станции.",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Падеж определяет предлог «после», число — слово «долгого».",
+    "explanation": "Предлог «после» требует родительного; «долгого» указывает на единственное число. Для разносклоняемого «путь» словарная форма родительного единственного — «пути», а не «путя».",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Разносклоняемое существительное путь",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 27,
+      "paragraph": 235,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Предлог «после» требует родительного; «долгого» указывает на единственное число. Для разносклоняемого «путь» словарная форма родительного единственного — «пути», а не «путя». Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.plural-genitive"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#noun-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "тоньше",
+      "потоньше"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-030",
+    "slug": "oge-formy-slov-030",
+    "title": "Сравнительная степень: тонкий",
+    "prompt": "Раскройте скобки и запишите слово «тонкий» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "Эта ткань заметно (тонкий), чем плотный лён.",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Сравните толщину двух тканей и запишите простую сравнительную форму одним словом.",
+    "explanation": "Союз «чем» и сравнение двух тканей требуют сравнительной степени. Простая форма «тоньше» подтверждена словарём. Нормативное слитное «потоньше» зарегистрировано АКАДЕМОС; в данном бытовом сопоставлении также сохраняет сравнительный признак. Это редакторский вывод для контекста, а не отдельный официальный экзаменационный ключ. «Более тонкая» — два слова, а инструкция требует одно.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Сравнительная степень: тонкий",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 30,
+      "paragraph": 247,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Союз «чем» и сравнение двух тканей требуют сравнительной степени. Простая форма «тоньше» подтверждена словарём. Нормативное слитное «потоньше» зарегистрировано АКАДЕМОС; в данном бытовом сопоставлении также сохраняет сравнительный признак. Это редакторский вывод для контекста, а не отдельный официальный экзаменационный ключ. «Более тонкая» — два слова, а инструкция требует одно. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.comparative"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#verb-and-comparison"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "шестьюдесятью"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-031",
+    "slug": "oge-formy-slov-031",
+    "title": "Творительный падеж: шестьдесят",
+    "prompt": "Раскройте скобки и запишите слово «шестьдесят» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "Экскурсовод разговаривал с (шестьдесят) туристами.",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "В числительном на -десят измените обе части.",
+    "explanation": "«Разговаривал с туристами» требует творительного. Склоняются обе части сложного числительного: шестью + десятью. Формы «шестидесятью» и «шестьюдесяти» ошибочны.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Творительный падеж: шестьдесят",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 31,
+      "paragraph": 251,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Разговаривал с туристами» требует творительного. Склоняются обе части сложного числительного: шестью + десятью. Формы «шестидесятью» и «шестьюдесяти» ошибочны. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "четырёмстам"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-032",
+    "slug": "oge-formy-slov-032",
+    "title": "Дательный падеж: четыреста",
+    "prompt": "Раскройте скобки и запишите слово «четыреста» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "К (четыреста) страницам отчёта приложили схемы.",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Проверьте обе части числительного в падеже после «к».",
+    "explanation": "Предлог «к» и форма «страницам» требуют дательного. Словарь прямо даёт «четырёмстам»; изменяются обе части числительного. Политика допускает замену ё на е без отдельного ключа.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Дательный падеж: четыреста",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 32,
+      "paragraph": 255,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Предлог «к» и форма «страницам» требуют дательного. Словарь прямо даёт «четырёмстам»; изменяются обе части числительного. Политика допускает замену ё на е без отдельного ключа. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "formy-slov",
+    "topicSlug": "formy-slov",
+    "topicTitle": "Грамматические формы слов",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "обеими"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 70
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Грамматические формы слов",
+    "input": "text",
+    "level": "basic",
+    "taskLine": 8,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-formy-slov-033",
+    "slug": "oge-formy-slov-033",
+    "title": "Женский род: обеими",
+    "prompt": "Раскройте скобки и запишите слово «обе» в соответствующей форме, соблюдая нормы современного русского литературного языка.",
+    "text": "Мы встретились с (обе) подругами после уроков.",
+    "steps": [
+      "Определите часть речи.",
+      "Установите форму, которую требует контекст.",
+      "Проверьте нормативное образование формы.",
+      "Запишите только одно слово."
+    ],
+    "hint": "Учтите одновременно род существительного и падеж после «с».",
+    "explanation": "«Подругами» — женский род, творительный множественного. Собирательное числительное «обе» в этом падеже принимает форму «обеими»; мужская форма «обоими» здесь не согласуется.",
+    "instruction": "Запишите одно слово. Ё можно заменить на Е.",
+    "subtopic": "Женский род: обеими",
+    "skillId": "OGE:morphology.forms",
+    "misconceptionId": "wrong-word-form",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-3d1b69f19a6c",
+      "filename": "ОГЭ русский язык - задание 8 - каталог и 100 вариантов.docx",
+      "sourceNumber": 33,
+      "paragraph": 259,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Подругами» — женский род, творительный множественного. Собирательное числительное «обе» в этом падеже принимает форму «обеими»; мужская форма «обоими» здесь не согласуется. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:morphology.forms",
+      "OGE:8.numeral",
+      "OGE:8.plural-genitive"
+    ],
+    "rulePaths": [
+      "/theory/formy-slov/?exam=OGE#numeral-paradigms",
+      "/theory/formy-slov/?exam=OGE#noun-paradigms"
+    ]
   }
 ]

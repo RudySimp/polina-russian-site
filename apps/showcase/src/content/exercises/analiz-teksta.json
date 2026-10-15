@@ -3500,5 +3500,337 @@
       "/theory/analiz-teksta/?exam=OGE#actions"
     ],
     "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-analiz-teksta-reading-audit-subtitles",
+    "slug": "oge-analiz-teksta-reading-audit-subtitles",
+    "revision": 1,
+    "title": "Строки под кадром: смысл текста",
+    "prompt": "Какие из высказываний соответствуют содержанию текста? Укажите номера ответов.",
+    "sourceTextId": "reading-audit-subtitles",
+    "topicId": "analiz-teksta",
+    "topicSlug": "analiz-teksta",
+    "topicTitle": "Анализ содержания текста",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "25"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.comprehension",
+    "misconceptionId": "line-10-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "Рассказчица снимала фильм о выступлении музыкального кружка.",
+      "Глеб смотрел фильм впервые и ещё не знал, кто в нём говорит.",
+      "Все подписи к фильму Глеб написал самостоятельно, пока рассказчица отдыхала.",
+      "Рассказчица посмотрела весь готовый фильм без звука ещё до первого показа ребятам.",
+      "После обсуждения замечаний Глеба рассказчица проверила несколько сцен без звука."
+    ],
+    "optionExplanations": [
+      "Неверно: в предложении 1 назван кружок керамики. Музыка есть в звуковой дорожке (предложение 3), но она не меняет тему фильма.",
+      "Верно: в предложении 9 Глеб прямо говорит, что смотрит фильм впервые и ещё не знает участников.",
+      "Неверно: над изменениями работают рассказчица с подругой (11–14); Глеб сообщает замечания. Самостоятельное создание им всех подписей и отдых рассказчицы не названы.",
+      "Неверно: проверка без звука относится к нескольким сценам (18) и происходит после первого просмотра и обсуждения, а не до него.",
+      "Верно: последовательность 12–18 показывает обсуждение замечаний, правку подписей и затем просмотр рассказчицей нескольких сцен без звука."
+    ],
+    "explanation": "Неверно: в предложении 1 назван кружок керамики. Музыка есть в звуковой дорожке (предложение 3), но она не меняет тему фильма.\n\nВерно: в предложении 9 Глеб прямо говорит, что смотрит фильм впервые и ещё не знает участников.\n\nНеверно: над изменениями работают рассказчица с подругой (11–14); Глеб сообщает замечания. Самостоятельное создание им всех подписей и отдых рассказчицы не названы.\n\nНеверно: проверка без звука относится к нескольким сценам (18) и происходит после первого просмотра и обсуждения, а не до него.\n\nВерно: последовательность 12–18 показывает обсуждение замечаний, правку подписей и затем просмотр рассказчицей нескольких сцен без звука.",
+    "steps": [
+      "Сверьте каждое утверждение с событиями текста.",
+      "Различите намерение, действие и достигнутый результат.",
+      "Учитывайте автора реплики и границы утверждения."
+    ],
+    "hint": "Подтверждайте вывод конкретным действием или репликой; не добавляйте причины, которых в тексте нет.",
+    "formatLabel": "ОГЭ · задание 10",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 10,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "Факт, границы утверждения и последовательность проверки",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.detail",
+      "OGE:10.sequence"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.detail"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#actions",
+      "/theory/analiz-teksta/?exam=OGE#details"
+    ],
+    "classificationReview": "editorial-draft"
+  },
+  {
+    "id": "oge-analiz-teksta-reading-audit-printproof",
+    "slug": "oge-analiz-teksta-reading-audit-printproof",
+    "revision": 1,
+    "title": "Первый оттиск: смысл текста",
+    "prompt": "Какие из высказываний соответствуют содержанию текста? Укажите номера ответов.",
+    "sourceTextId": "reading-audit-printproof",
+    "topicId": "analiz-teksta",
+    "topicSlug": "analiz-teksta",
+    "topicTitle": "Анализ содержания текста",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "4"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "source": {
+      "sourceType": "original_demo",
+      "sourceUrl": "",
+      "sourceTitle": "Новые оригинальные учебные тексты проекта, 15.10.2026",
+      "author": "Редакция проекта; утверждение преподавателем ожидается",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "skillId": "OGE:text.comprehension",
+    "misconceptionId": "line-10-analysis",
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "options": [
+      "На первом пробном листе было неверно написано имя мастера.",
+      "Илья заметил неверный месяц ещё до того, как увидел пробный оттиск.",
+      "После насмешки Кирилла мастер решил отстранить Илью от работы.",
+      "Перед печатью остальных листов Илья исправил месяц и передал второй пробный лист Кириллу для проверки.",
+      "Кирилл объяснил ошибку Ильи тем, что мальчик не умеет выбирать шрифт."
+    ],
+    "optionExplanations": [
+      "Неверно: в предложениях 6–7 указана ошибка в месяце — октябрь вместо ноября. Ошибка в имени мастера не названа.",
+      "Неверно: в предложении 4 Илья не перечитывает дату, а ошибку замечает Кирилл на пробном листе (6–7).",
+      "Неверно: мастер продолжает работу с Ильёй и предлагает ему самому определить строку для замены (15–17). В предложении 16 прямо сказано об отношении к нему как к участнику работы.",
+      "Верно: месяц исправлен в макете (17), после чего Илья читает второй лист и передаёт Кириллу (21–22). В предложении 24 подтверждено, что остальные листы ещё не напечатаны.",
+      "Неверно: упрекнуть Кирилла в неумении выбирать шрифт собирался Илья (9); он не произнёс этой реплики. Утверждение меняет говорящего и превращает намерение в событие."
+    ],
+    "explanation": "Неверно: в предложениях 6–7 указана ошибка в месяце — октябрь вместо ноября. Ошибка в имени мастера не названа.\n\nНеверно: в предложении 4 Илья не перечитывает дату, а ошибку замечает Кирилл на пробном листе (6–7).\n\nНеверно: мастер продолжает работу с Ильёй и предлагает ему самому определить строку для замены (15–17). В предложении 16 прямо сказано об отношении к нему как к участнику работы.\n\nВерно: месяц исправлен в макете (17), после чего Илья читает второй лист и передаёт Кириллу (21–22). В предложении 24 подтверждено, что остальные листы ещё не напечатаны.\n\nНеверно: упрекнуть Кирилла в неумении выбирать шрифт собирался Илья (9); он не произнёс этой реплики. Утверждение меняет говорящего и превращает намерение в событие.",
+    "steps": [
+      "Сверьте каждое утверждение с событиями текста.",
+      "Различите намерение, действие и достигнутый результат.",
+      "Учитывайте автора реплики и границы утверждения."
+    ],
+    "hint": "Подтверждайте вывод конкретным действием или репликой; не добавляйте причины, которых в тексте нет.",
+    "formatLabel": "ОГЭ · задание 10",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 10,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "provenance": {
+      "sourceId": "project-audit-reading-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные художественные учебные микротексты, условия, объяснения и задания к сочинениям созданы для проекта по поручению владельца. Сторонние литературные произведения не воспроизводятся; авторство Полине не приписывается.",
+      "reviewNote": "Полные тексты, каждый вариант, ключ, альтернативы и все шесть тем сочинений независимо прочитаны Codex root 15.10.2026. Редакторский допуск демонстрационной авторской модели; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "subtopic": "Кто заметил ошибку: факт, намерение и говорящий",
+    "originCategory": "author-model",
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение обоих полных текстов, шести условий, ключей, альтернатив и шести тем сочинения; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:text.comprehension",
+      "OGE:10.fact-inference",
+      "OGE:10.sequence",
+      "OGE:10.motive"
+    ],
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.sequence",
+          "OGE:10.motive"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:10.fact-inference",
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#evidence-types",
+        "errorType": "fact-inference"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:10.sequence"
+        ],
+        "rulePath": "/theory/analiz-teksta/?exam=OGE#actions",
+        "errorType": "sequence"
+      }
+    ],
+    "rulePaths": [
+      "/theory/analiz-teksta/?exam=OGE#algorithm",
+      "/theory/analiz-teksta/?exam=OGE#evidence-types",
+      "/theory/analiz-teksta/?exam=OGE#actions"
+    ],
+    "classificationReview": "editorial-draft"
   }
 ]

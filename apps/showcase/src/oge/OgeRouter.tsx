@@ -7,6 +7,9 @@ const Bank = lazy(() =>
 const Theory = lazy(() =>
   import("./TheoryPage").then((m) => ({ default: m.OgeTheoryPage })),
 );
+const Module = lazy(() =>
+  import("./ModulePage").then((m) => ({ default: m.ModulePage })),
+);
 const Variants = lazy(() =>
   import("./VariantPages").then((m) => ({ default: m.VariantCatalog })),
 );
@@ -44,6 +47,8 @@ export default function OgeRouter({
       <Bank line={Number(path.split("/")[3])} attempts={attempts} save={save} />
     );
   else if (path === "/oge/theory/") page = <Theory />;
+  else if (path.startsWith("/oge/theory/modules/"))
+    page = <Module id={path.split("/")[4]} />;
   else if (path === "/oge/variants/") page = <Variants />;
   else if (/^\/oge\/variants\/[1-5]\/$/u.test(path))
     page = <Variant number={Number(path.split("/")[3])} />;

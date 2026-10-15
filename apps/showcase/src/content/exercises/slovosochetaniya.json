@@ -2720,5 +2720,493 @@
     ],
     "originCategory": "author-model",
     "classificationReview": "editorial-draft"
+  },
+  {
+    "revision": 1,
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "прогулки зимой",
+      "зимой прогулки"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-slovosochetaniya-017",
+    "slug": "oge-slovosochetaniya-017",
+    "title": "Согласование → примыкание: время",
+    "prompt": "Замените словосочетание «зимние прогулки», построенное на основе согласования, синонимичным словосочетанием со связью примыкание. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Замените зависимое прилагательное наречием времени; главное существительное сохраните.",
+    "explanation": "«Зимние» означает происходящие зимой. Зависимое согласованное прилагательное заменяется неизменяемым наречием времени «зимой»; главное существительное «прогулки» сохраняется. Обратный порядок «зимой прогулки» сохраняет тот же главный компонент и смысл в словосочетании. «Прогулки в зиму» содержит предложно-падежную форму, а не требуемое примыкание.",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "subtopic": "Согласование → примыкание: время",
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 17,
+      "paragraph": 280,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Зимние» означает происходящие зимой. Зависимое согласованное прилагательное заменяется неизменяемым наречием времени «зимой»; главное существительное «прогулки» сохраняется. Обратный порядок «зимой прогулки» сохраняет тот же главный компонент и смысл в словосочетании. «Прогулки в зиму» содержит предложно-падежную форму, а не требуемое примыкание. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "прогулки"
+      ]
+    }
+  },
+  {
+    "revision": 1,
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "прошептал тревожно",
+      "тревожно прошептал"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-slovosochetaniya-020",
+    "slug": "oge-slovosochetaniya-020",
+    "title": "Управление → примыкание: тревога",
+    "prompt": "Замените словосочетание «прошептал с тревогой», построенное на основе управления, синонимичным словосочетанием со связью примыкание. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Сохраните глагол и замените существительное с предлогом наречием образа действия.",
+    "explanation": "«С тревогой» указывает на беспокойство при произнесении слов. «Тревожно» в словаре является наречием, в отличие от употребления безличным сказуемым «мне тревожно». При глаголе «прошептал» оно обозначает образ действия; предлог и падежная форма существительного устранены. Обратный порядок слов не меняет примыкания и смысла.",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "subtopic": "Управление → примыкание: тревога",
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 20,
+      "paragraph": 289,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«С тревогой» указывает на беспокойство при произнесении слов. «Тревожно» в словаре является наречием, в отличие от употребления безличным сказуемым «мне тревожно». При глаголе «прошептал» оно обозначает образ действия; предлог и падежная форма существительного устранены. Обратный порядок слов не меняет примыкания и смысла. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "прошептал"
+      ]
+    }
+  },
+  {
+    "revision": 1,
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "говорил с лаской",
+      "с лаской говорил"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-slovosochetaniya-021",
+    "slug": "oge-slovosochetaniya-021",
+    "title": "Примыкание → управление: ласка",
+    "prompt": "Замените словосочетание «говорил ласково», построенное на основе примыкания, синонимичным словосочетанием со связью управление. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Передайте образ действия существительным с предлогом и сохраните главное слово.",
+    "explanation": "«Ласково» обозначает мягкое, приветливое обращение. Зависимое наречие заменяется сочетанием «с лаской»: существительное в творительном с предлогом образует управление. Главный глагол «говорил» сохраняется; обратный порядок «с лаской говорил» синтаксически допустим и передаёт тот же способ речи. Дополнительные лексические синонимы без отдельного контекстного разбора не добавляются.",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "subtopic": "Примыкание → управление: ласка",
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 21,
+      "paragraph": 292,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Ласково» обозначает мягкое, приветливое обращение. Зависимое наречие заменяется сочетанием «с лаской»: существительное в творительном с предлогом образует управление. Главный глагол «говорил» сохраняется; обратный порядок «с лаской говорил» синтаксически допустим и передаёт тот же способ речи. Дополнительные лексические синонимы без отдельного контекстного разбора не добавляются. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.government",
+      "OGE:9.adjacency",
+      "OGE:9.meaning-preservation"
+    ],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "говорил"
+      ]
+    }
+  },
+  {
+    "revision": 1,
+    "topicId": "slovosochetaniya",
+    "topicSlug": "slovosochetaniya",
+    "topicTitle": "Связь в словосочетаниях",
+    "exam": "OGE",
+    "responseKind": "short_text",
+    "answers": [
+      "кожаные перчатки",
+      "перчатки кожаные"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": true,
+      "allowYoAsE": true,
+      "orderMatters": true,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "options": [],
+    "optionExplanations": [],
+    "formatLabel": "ОГЭ · Связь в словосочетаниях",
+    "input": "text",
+    "level": "standard",
+    "taskLine": 9,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [],
+    "id": "oge-slovosochetaniya-026",
+    "slug": "oge-slovosochetaniya-026",
+    "title": "Управление → согласование: материал",
+    "prompt": "Замените словосочетание «перчатки из кожи», построенное на основе управления, синонимичным словосочетанием со связью согласование. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
+    "steps": [
+      "Найдите главное слово.",
+      "Определите часть речи зависимого слова.",
+      "Измените её по требуемому типу связи.",
+      "Проверьте смысл и сохранение главного слова."
+    ],
+    "hint": "Относительное прилагательное должно называть тот же материал и согласоваться с существительным.",
+    "explanation": "«Из кожи» называет материал. Словарь определяет «кожаный» как сделанный из кожи. Прилагательное «кожаные» согласовано с главным словом «перчатки» во множественном числе; оба порядка сохраняют материал и главное слово. «Перчатки кожи» и «перчатки с кожей» не сохраняют требуемую связь и отношение материала.",
+    "instruction": "Запишите словосочетание. Принимаются только явно проверенные нормативные варианты. Ё можно заменить на Е.",
+    "subtopic": "Управление → согласование: материал",
+    "skillId": "OGE:syntax.rephrase",
+    "misconceptionId": "changed-head-or-meaning",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceUrl": "",
+      "author": "Автор в предоставленном каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "local-14167d61d33e",
+      "filename": "ОГЭ русский язык - задание 9 - каталог и 100 вариантов.docx",
+      "sourceNumber": 26,
+      "paragraph": 307,
+      "importedAt": "2026-10-10T21:19:24.329Z",
+      "method": "local-original-import",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "«Из кожи» называет материал. Словарь определяет «кожаный» как сделанный из кожи. Прилагательное «кожаные» согласовано с главным словом «перчатки» во множественном числе; оба порядка сохраняют материал и главное слово. «Перчатки кожи» и «перчатки с кожей» не сохраняют требуемую связь и отношение материала. Полное условие и все принимаемые варианты прочитаны редактором; независимое второе чтение всех условий, ключей, альтернатив и объяснений выполнено Codex root 15.10.2026; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.rephrase",
+      "OGE:9.agreement",
+      "OGE:9.government",
+      "OGE:9.meaning-preservation"
+    ],
+    "rulePaths": [
+      "/theory/slovosochetaniya/?exam=OGE#types",
+      "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
+    ],
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "перчатки"
+      ]
+    }
   }
 ]

@@ -57,6 +57,18 @@ function fixture(size) {
       slug: id,
       title,
     };
+    // Synthetic clones have their own explicit educational receipt; no human review is claimed.
+    exercise.publicationReview = {
+      revision: exercise.revision,
+      by: "Synthetic load fixture",
+      at: "2026-10-15",
+      mode: "checked-demo",
+      condition: true,
+      key: true,
+      alternatives: true,
+      explanation: true,
+      rights: true,
+    };
     exercise.prompt +=
       " Синтетический маркер нагрузочной проверки: нагрузочныймаркер.";
     conditions.push(exercise);
@@ -112,7 +124,7 @@ async function clocked(action) {
 }
 
 async function currentWork(page) {
-  return page.evaluate(() => {
+  return page.evaluate(async () => {
     const id = new URLSearchParams(location.search).get("id");
     const snapshot = JSON.parse(
       localStorage.getItem("polina-oge-work-v1:" + id),
@@ -120,7 +132,28 @@ async function currentWork(page) {
     const state = JSON.parse(
       localStorage.getItem("polina-oge-state-v2:" + id) ?? "null",
     );
-    return { ...snapshot, ...(state?.state ?? {}) };
+    if (snapshot) return { ...snapshot, ...(state?.state ?? {}) };
+    const db = await new Promise((resolve, reject) => {
+      const request = indexedDB.open("polina-oge-works-v2", 1);
+      request.onsuccess = () => resolve(request.result);
+      request.onerror = () => reject(request.error);
+    });
+    try {
+      const transaction = db.transaction(["snapshots", "drafts"], "readonly");
+      const get = (name) =>
+        new Promise((resolve, reject) => {
+          const request = transaction.objectStore(name).get(id);
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error);
+        });
+      const [base, draft] = await Promise.all([
+        get("snapshots"),
+        get("drafts"),
+      ]);
+      return { ...base, ...draft };
+    } finally {
+      db.close();
+    }
   });
 }
 
@@ -148,6 +181,7 @@ async function install(page, data, counters) {
     );
     const body = JSON.stringify(data.shards[number]);
     counters.conditionLoads.push({
+      document: counters.document,
       shard: number,
       conditions: data.shards[number].length,
       bytes: Buffer.byteLength(body),
@@ -161,7 +195,8 @@ async function run(browser, data, width) {
     viewport: { width, height: 844 },
   });
   const page = await context.newPage();
-  const counters = { metadataLoads: 0, searchLoads: 0, conditionLoads: [] };
+  const counters = { metadataLoads: 0, searchLoads: 0, conditionLoads: [], document: 0 };
+  page.on("framenavigated", frame => {if (frame === page.mainFrame()) counters.document++;});
   const errors = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await install(page, data, counters);
@@ -447,13 +482,58 @@ async function run(browser, data, width) {
     );
     assert(
       generateLoads.reduce((sum, item) => sum + item.conditions, 0) <=
-        (11 + historicalAttemptShards.size) * collectionSize,
+        (11 + 2 * historicalAttemptShards.size) * collectionSize,
       "Generation loaded excessive conditions",
     );
+    for (const loads of Map.groupBy(generateLoads, item => item.document).values()) {
+      assert.equal(new Set(loads.map(item => item.shard)).size, loads.length, "One document requested the same condition shard twice");
+    }
+    // Generation ends with a document navigation. The addressed attempt-history shard may load once in each document.
     await page.screenshot({
       path: `${directory}/full-variant-${data.size}-${width}.png`,
     });
+    await page.goto(new URL("oge/bank/", base).href);
+    const portion = page.getByRole("button", { name: /^Порция 100 из / });
+    await expect(portion).toBeVisible();
+    const portionLabel = await portion.innerText();
+    await page.getByText("Размер, режим и отбор", { exact: true }).click();
+    await expect(
+      page
+        .getByRole("combobox", { name: "Количество", exact: true })
+        .locator('option[value="all"]'),
+    ).toHaveJSProperty("disabled", true);
+    times.startAndSaveAllPortion = await clocked(async () => {
+      await portion.click();
+      await expect(page.locator("#work-question")).toBeVisible();
+    });
+    const portionWork = await currentWork(page);
+    assert.equal(
+      portionWork.items.length,
+      100,
+      "All must be an explicit bounded portion",
+    );
+    const portionId = portionWork.id;
+    times.reloadAllPortion = await clocked(async () => {
+      await page.reload();
+      await expect(page.locator("#work-question")).toBeVisible();
+    });
+    const rereadPortion = await currentWork(page);
+    assert.equal(rereadPortion.id, portionId);
+    assert.deepEqual(
+      rereadPortion.items,
+      portionWork.items,
+      "The entire saved portion must survive reload unchanged",
+    );
+    assert.equal(rereadPortion.items.length, 100);
+    const portionBytes = Buffer.byteLength(JSON.stringify(portionWork));
     const result = {
+      allPortion: {
+        label: portionLabel,
+        items: 100,
+        bytes: portionBytes,
+        readAfterReload: true,
+        immutableItems: true,
+      },
       size: data.size,
       width,
       cpuSlowdown,

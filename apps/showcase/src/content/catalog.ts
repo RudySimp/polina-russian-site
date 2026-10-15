@@ -25,6 +25,7 @@ export type ExerciseSummary = Pick<
   searchText?: string;
   provenanceMethod?: string;
   generationEligible?: boolean;
+  admissionMode?: "legacy-editorial" | "revision-reviewed" | "method-approved" | null;
 };
 export const exerciseIndex = index as ExerciseSummary[];
 export const publishedTopics = topics.filter(

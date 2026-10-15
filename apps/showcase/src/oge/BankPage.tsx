@@ -10,7 +10,8 @@ import {
 import subskills from "../content/subskills.json";
 import { Breadcrumbs, ExerciseCard, PageHeading } from "../components/ui";
 import { href } from "../routes";
-import { matchesSearch } from "../lib/search";
+import { matchesSearch, levelName } from "../lib/search";
+import { sessionLimits } from "./session-limits";
 import { useCatalogQuery } from "../lib/catalog-query";
 import { createAttempt, type LocalAttempt } from "../progress";
 import { taskLines } from "./specification";
@@ -153,6 +154,7 @@ export function TrainingLaunch({
   };
   const pool = bank.filter(
     (e) =>
+      e.generationEligible === true &&
       (!selection?.lines?.length ||
         selection.lines.includes(e.taskLine ?? 0)) &&
       (!selection?.topicId || e.topicId === selection.topicId) &&
@@ -163,6 +165,8 @@ export function TrainingLaunch({
       (only !== "new" || !statusSets.seen.has(e.id)) &&
       (only !== "errors" || statusSets.errors.has(e.id)),
   );
+  const batchLimit = sessionLimits.practiceBatchItems;
+  const errorCount = pool.filter((e) => statusSets.errors.has(e.id)).length;
   async function start(requested: number | "all", errors = false) {
     setBusy(true);
     setError("");
@@ -172,6 +176,10 @@ export function TrainingLaunch({
         ? pool.filter((e) => statusSets.errors.has(e.id))
         : pool;
       const n = requested === "all" ? chosenPool.length : requested;
+      if (n > batchLimit)
+        throw Error(
+          `Одна подборка включает не более ${batchLimit} заданий. Выберите порцию или сузьте отбор.`,
+        );
       if (n < 1 || n > chosenPool.length)
         throw Error(
           "Доступно " +
@@ -189,6 +197,10 @@ export function TrainingLaunch({
         }
       const conditions = await loadExercises(chosen.map((e) => e.id));
       const items = selectPractice(conditions, { count: "all" }, seed);
+      if (items.length !== n)
+        throw Error(
+          "Не все выбранные задания доступны в текущей редакции. Обновите банк и повторите подборку.",
+        );
       const data = await loadOriginals();
       const s = createSession(
         items.map((exercise) => ({ kind: "exercise", exercise })),
@@ -227,18 +239,31 @@ export function TrainingLaunch({
         <button
           className="button secondary"
           disabled={busy || !pool.length}
-          onClick={() => start("all")}
+          onClick={() => start(pool.length > batchLimit ? batchLimit : "all")}
         >
-          Все ({pool.length})
+          {pool.length > batchLimit
+            ? `Порция ${batchLimit} из ${pool.length}`
+            : `Все (${pool.length})`}
         </button>
         <button
           className="button secondary"
           disabled={busy || !pool.some((e) => statusSets.errors.has(e.id))}
-          onClick={() => start("all", true)}
+          onClick={() =>
+            start(errorCount > batchLimit ? batchLimit : "all", true)
+          }
         >
-          Повторить ошибки
+          {errorCount > batchLimit
+            ? `Повторить ${batchLimit} из ${errorCount} ошибок`
+            : "Повторить ошибки"}
         </button>
       </div>
+      {pool.length > batchLimit && (
+        <p className="muted">
+          В этой выборке {pool.length} заданий. Одна работа — до {batchLimit};
+          после этой порции останется {pool.length - batchLimit}. Чтобы
+          продолжить без повторов, решайте порциями с отбором «Только новые».
+        </p>
+      )}
       <details>
         <summary>Размер, режим и отбор</summary>
         <div className="catalog-controls">
@@ -249,9 +274,15 @@ export function TrainingLaunch({
                 <option
                   key={n}
                   value={n}
-                  disabled={n !== "all" && Number(n) > pool.length}
+                  disabled={
+                    n === "all"
+                      ? pool.length > batchLimit
+                      : Number(n) > pool.length
+                  }
                 >
-                  {n === "all" ? "Все доступные" : n + " заданий"}
+                  {n === "all"
+                    ? `Все доступные (до ${batchLimit})`
+                    : n + " заданий"}
                 </option>
               ))}
             </select>
@@ -279,7 +310,9 @@ export function TrainingLaunch({
             disabled={
               busy ||
               !pool.length ||
-              (count !== "all" && Number(count) > pool.length)
+              (count === "all"
+                ? pool.length > batchLimit
+                : Number(count) > pool.length)
             }
             onClick={() => start(count === "all" ? "all" : Number(count))}
           >
@@ -449,6 +482,13 @@ export function BankPage({
         items={[{ label: "ОГЭ", path: "/oge/" }, { label: "Банк заданий" }]}
       />
       <PageHeading
+        illustration={
+          line === 1
+            ? "23-book-speech"
+            : line === 13
+              ? "21-quill-ink"
+              : "26-card-catalog"
+        }
         eyebrow="ОГЭ · БАНК С РАЗБОРОМ"
         title={
           line
@@ -583,14 +623,15 @@ export function BankPage({
           <label>
             Сложность
             <select
+              aria-describedby="bank-level-note"
               value={level}
               onChange={(e) => change("level", e.target.value)}
             >
               <option value="">Все уровни</option>
               {[
-                ["basic", "Базовый"],
-                ["standard", "Обычный"],
-                ["advanced", "Усложнённый учебный"],
+                ["basic", levelName("basic")],
+                ["standard", levelName("standard")],
+                ["advanced", levelName("advanced")],
               ].map(([id, label]) => (
                 <option
                   key={id}
@@ -609,6 +650,7 @@ export function BankPage({
               ))}
             </select>
           </label>
+          <p id="bank-level-note" className="muted">Учебные уровни помогают выбрать практику; они не являются официальной шкалой сложности КИМ.</p>
           <label>
             Решение
             <select

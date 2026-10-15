@@ -3609,5 +3609,339 @@
       "/theory/osnova/?exam=OGE#predicate-boundaries"
     ],
     "classificationReview": "editorial-draft"
+  },
+  {
+    "revision": 1,
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "145"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "options": [
+      "школьники собрались (предложение 1)",
+      "учитель показал список (предложение 2)",
+      "приглашённые заняли (предложение 3)",
+      "не работалось (предложение 4)",
+      "учитель мог ошибиться, исправился (предложение 5)"
+    ],
+    "optionExplanations": [
+      "Подлежащее «школьники» и простое глагольное сказуемое «собрались» названы полностью; обстоятельства времени и места не входят в основу.",
+      "Основа первой части — «учитель показал». Слово «список» — дополнение: показал что? Его ошибочно добавили в основу.",
+      "Подлежащее — «специалисты», сказуемое — «заняли». Причастие «приглашённые» входит в зависимый обособленный оборот, не заменяет подлежащее.",
+      "В безличном предложении главный член — «не работалось». Предложно-падежное сочетание «в школе» — обстоятельство.",
+      "При подлежащем «учитель» названы оба однородных сказуемых: составное глагольное «мог ошибиться» и простое глагольное «исправился»."
+    ],
+    "formatLabel": "ОГЭ · Грамматическая основа",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.simple-predicate"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:2.one-member"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#one-member-types",
+        "errorType": "one-member"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.simple-predicate",
+          "OGE:2.compound-verbal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      }
+    ],
+    "id": "oge-osnova-syntax-local-school-017",
+    "slug": "oge-osnova-syntax-local-school-017",
+    "title": "Школа: полный состав основы",
+    "prompt": "Укажите варианты ответов, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения текста. Запишите номера ответов.",
+    "sourceTextId": "syntax-local-school-017",
+    "explanation": "Подлежащее «школьники» и простое глагольное сказуемое «собрались» названы полностью; обстоятельства времени и места не входят в основу.\n\nОснова первой части — «учитель показал». Слово «список» — дополнение: показал что? Его ошибочно добавили в основу.\n\nПодлежащее — «специалисты», сказуемое — «заняли». Причастие «приглашённые» входит в зависимый обособленный оборот, не заменяет подлежащее.\n\nВ безличном предложении главный член — «не работалось». Предложно-падежное сочетание «в школе» — обстоятельство.\n\nПри подлежащем «учитель» названы оба однородных сказуемых: составное глагольное «мог ошибиться» и простое глагольное «исправился».",
+    "hint": "Проверьте дополнение при глаголе и полный состав обоих однородных сказуемых.",
+    "steps": [
+      "Найдите главные члены каждой части.",
+      "Сохраните все части составного и однородные сказуемые.",
+      "Исключите зависимые второстепенные члены.",
+      "Сверьте полный состав каждой предложенной основы."
+    ],
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "foundation-extra-or-missing",
+    "subtopic": "Границы основы, составное и однородные сказуемые",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Парное учебное задание проекта к локальному авторскому тексту",
+      "sourceUrl": "",
+      "author": "Редакция проекта; автор исходного текста в каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-audit-syntax-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Новое самостоятельное задание №2 к тексту local-ac1542dffe05-017; не дополнительный импорт. Все пять вариантов и их состав основ независимо разобраны; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.simple-predicate",
+      "OGE:2.one-member",
+      "OGE:2.compound-verbal"
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#one-member-types",
+      "/theory/osnova/?exam=OGE#predicates",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ]
+  },
+  {
+    "revision": 1,
+    "topicId": "osnova",
+    "topicSlug": "osnova",
+    "topicTitle": "Грамматическая основа",
+    "exam": "OGE",
+    "responseKind": "digits_sequence",
+    "answers": [
+      "235"
+    ],
+    "maxScore": 1,
+    "policy": {
+      "version": 1,
+      "trim": true,
+      "caseSensitive": false,
+      "collapseSpaces": false,
+      "allowYoAsE": false,
+      "orderMatters": false,
+      "allowDigitSeparators": false,
+      "minLength": 1,
+      "maxLength": 5
+    },
+    "options": [
+      "мы подошли (предложение 1)",
+      "фонари погасли (предложение 2)",
+      "который усилился (предложение 3)",
+      "учитель вероятно вернётся (предложение 4)",
+      "встреча перенесена (предложение 5)"
+    ],
+    "optionExplanations": [
+      "При подлежащем «мы» однородные сказуемые «подошли» и «остановились»; второе сказуемое в варианте пропущено, основа неполная.",
+      "В первой части сложносочинённого предложения полная основа «фонари погасли»; порядок слов относительно исходного текста изменён, состав главных членов сохранён.",
+      "В придаточном определительном союзное слово «который» выполняет роль подлежащего; сказуемое — «усилился». «Вскоре» — обстоятельство.",
+      "Вводное слово «вероятно» не является членом предложения. Основа — «учитель вернётся», поэтому лишнее слово делает вариант ошибочным.",
+      "Основа изъяснительной придаточной части — «встреча перенесена»: подлежащее и краткое страдательное причастие в роли сказуемого с нулевой связкой."
+    ],
+    "formatLabel": "ОГЭ · Грамматическая основа",
+    "input": "digits",
+    "level": "standard",
+    "taskLine": 2,
+    "format": "exam-model",
+    "examModel": {
+      "year": 2027,
+      "status": "project",
+      "sourceUrl": "https://fipi.ru/oge/demoversii-specifikacii-kodifikatory"
+    },
+    "elements": [
+      {
+        "position": 1,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:2.subject"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      },
+      {
+        "position": 4,
+        "skillIds": [],
+        "rulePath": "/theory/osnova/?exam=OGE#algorithm",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 5,
+        "skillIds": [
+          "OGE:2.subject",
+          "OGE:2.compound-nominal"
+        ],
+        "rulePath": "/theory/osnova/?exam=OGE#subject-forms",
+        "errorType": "subject"
+      }
+    ],
+    "id": "oge-osnova-syntax-local-school-019",
+    "slug": "oge-osnova-syntax-local-school-019",
+    "title": "Школа: основы частей сложного предложения",
+    "prompt": "Укажите варианты ответов, в которых верно определена грамматическая основа одного из предложений или одной из частей сложного предложения текста. Запишите номера ответов.",
+    "sourceTextId": "syntax-local-school-019",
+    "explanation": "При подлежащем «мы» однородные сказуемые «подошли» и «остановились»; второе сказуемое в варианте пропущено, основа неполная.\n\nВ первой части сложносочинённого предложения полная основа «фонари погасли»; порядок слов относительно исходного текста изменён, состав главных членов сохранён.\n\nВ придаточном определительном союзное слово «который» выполняет роль подлежащего; сказуемое — «усилился». «Вскоре» — обстоятельство.\n\nВводное слово «вероятно» не является членом предложения. Основа — «учитель вернётся», поэтому лишнее слово делает вариант ошибочным.\n\nОснова изъяснительной придаточной части — «встреча перенесена»: подлежащее и краткое страдательное причастие в роли сказуемого с нулевой связкой.",
+    "hint": "Союзное слово может быть подлежащим, а вводное слово в основу не входит.",
+    "steps": [
+      "Найдите главные члены каждой части.",
+      "Сохраните все части составного и однородные сказуемые.",
+      "Исключите зависимые второстепенные члены.",
+      "Сверьте полный состав каждой предложенной основы."
+    ],
+    "instruction": "Запишите номера подряд, без пробелов и запятых. Порядок цифр не важен; повторять цифры нельзя.",
+    "skillId": "OGE:syntax.foundation",
+    "misconceptionId": "foundation-extra-or-missing",
+    "subtopic": "Границы основы, составное и однородные сказуемые",
+    "source": {
+      "sourceType": "original_demo",
+      "sourceTitle": "Парное учебное задание проекта к локальному авторскому тексту",
+      "sourceUrl": "",
+      "author": "Редакция проекта; автор исходного текста в каталоге не указан",
+      "rightsStatus": "owned",
+      "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "verifiedAt": "2026-10-15",
+      "examYear": 2027,
+      "editorialStatus": "needs_review"
+    },
+    "provenance": {
+      "sourceId": "project-audit-syntax-2026-10-15",
+      "method": "project-original",
+      "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
+      "reviewNote": "Новое самостоятельное задание №2 к тексту local-ac1542dffe05-019; не дополнительный импорт. Все пять вариантов и их состав основ независимо разобраны; утверждение преподавателем ожидается.",
+      "reviewedAt": "2026-10-15",
+      "teacherApproval": "pending"
+    },
+    "reviewStatus": "checked-demo",
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "reviewStages": [
+      {
+        "stage": "answer-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "explanation-checked",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      },
+      {
+        "stage": "publication-approved",
+        "at": "2026-10-15",
+        "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка"
+      }
+    ],
+    "publicationReview": {
+      "revision": 1,
+      "by": "Codex root: независимое чтение всех 16 полных условий, ключей, альтернатив и объяснений; corpus_resume: первичная редакторская проверка",
+      "at": "2026-10-15",
+      "mode": "checked-demo",
+      "condition": true,
+      "key": true,
+      "alternatives": true,
+      "explanation": true,
+      "rights": true
+    },
+    "skillIds": [
+      "OGE:syntax.foundation",
+      "OGE:2.subject",
+      "OGE:2.compound-nominal"
+    ],
+    "rulePaths": [
+      "/theory/osnova/?exam=OGE#subject-forms",
+      "/theory/osnova/?exam=OGE#algorithm",
+      "/theory/osnova/?exam=OGE#predicate-boundaries"
+    ]
   }
 ]

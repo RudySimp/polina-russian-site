@@ -1,4 +1,8 @@
 import fs from "node:fs/promises";
+import { publicationAdmission, admissionPayload } from "../apps/showcase/src/content/publication-admission.mjs";
+const legacyAdmission = JSON.parse(await fs.readFile("content/oge-legacy-admission.json", "utf8"));
+const legacyById = new Map(legacyAdmission.entries.map(entry => [entry.id, entry]));
+import { buildOgeCourse } from "./lib/build-oge-course.mjs";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { annotateSubskills } from "./lib/annotate-subskills.mjs";
@@ -136,16 +140,23 @@ for (const filename of exerciseFiles) {
   for (const item of items) {
     const entry = index.find((value) => value.id === item.id);
     entry.provenanceMethod = item.provenance.method;
+    const admission = publicationAdmission(item);
+    if (admission === "legacy-editorial") {
+      const fingerprint = createHash("sha256").update(admissionPayload(item)).digest("hex");
+      if (fingerprint !== legacyById.get(item.id)?.sha256) throw Error(item.id + ": прежняя редакция изменилась; требуется новая проверка условия, ключей и объяснения");
+    }
+    entry.admissionMode = admission;
     entry.generationEligible =
       item.exam === "OGE" &&
       !!item.taskLine &&
       item.examModel.year === 2027 &&
       item.examModel.status === "project" &&
       item.reviewStatus === "checked-demo" &&
+      admission !== null &&
       !!item.provenance.rightsBasis &&
       item.source.rightsStatus !== "unknown" &&
       ["answer-checked", "explanation-checked", "publication-approved"].every(
-        (stage) => item.reviewStages?.some((r) => r.stage === stage),
+        (stage) => item.reviewStages?.some((r) => r.stage === stage && r.by.trim() && Number.isFinite(Date.parse(r.at))),
       );
     searchIndex.push({
       id: item.id,
@@ -254,4 +265,5 @@ await writeIfDifferent(
     })),
   }) + "\n",
 );
+await buildOgeCourse();
 console.log("Индекс уроков и упражнений обновлён.");

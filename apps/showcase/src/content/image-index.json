@@ -1,0 +1,1181 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "id": "01-book-branch",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/01-book-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/01-book-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/01-book-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/01-book-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "02-notebook-pencil",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/02-notebook-pencil-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/02-notebook-pencil-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/02-notebook-pencil-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/02-notebook-pencil-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "03-books-branch",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/03-books-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/03-books-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/03-books-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/03-books-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "04-comma-leaves",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/04-comma-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/04-comma-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/04-comma-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/04-comma-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "05-word-roots-tree",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/05-word-roots-tree-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/05-word-roots-tree-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/05-word-roots-tree-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/05-word-roots-tree-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "06-sentence-scheme",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/06-sentence-scheme-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/06-sentence-scheme-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/06-sentence-scheme-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/06-sentence-scheme-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "07-editing-pencil",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/07-editing-pencil-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/07-editing-pencil-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/07-editing-pencil-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/07-editing-pencil-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "08-autumn-book",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/08-autumn-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/08-autumn-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/08-autumn-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/08-autumn-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "09-notebook-sprout",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/09-notebook-sprout-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/09-notebook-sprout-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/09-notebook-sprout-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/09-notebook-sprout-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "10-learning-stages",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/10-learning-stages-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/10-learning-stages-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/10-learning-stages-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/10-learning-stages-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "11-text-search",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/11-text-search-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/11-text-search-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/11-text-search-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/11-text-search-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "12-punctuation-leaves",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/12-punctuation-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/12-punctuation-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/12-punctuation-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/12-punctuation-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "13-word-chain",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/13-word-chain-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/13-word-chain-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/13-word-chain-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/13-word-chain-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "14-bookshelf",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/14-bookshelf-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/14-bookshelf-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/14-bookshelf-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/14-bookshelf-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "15-writer-bust",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/15-writer-bust-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/15-writer-bust-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/15-writer-bust-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/15-writer-bust-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "16-reading-candle",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/16-reading-candle-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/16-reading-candle-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/16-reading-candle-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/16-reading-candle-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "17-learning-path",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/17-learning-path-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/17-learning-path-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/17-learning-path-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/17-learning-path-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "18-herbarium-book",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/18-herbarium-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/18-herbarium-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/18-herbarium-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/18-herbarium-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "19-bird-letters",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/19-bird-letters-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/19-bird-letters-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/19-bird-letters-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/19-bird-letters-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "20-reading-corner",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/20-reading-corner-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/20-reading-corner-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/20-reading-corner-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/20-reading-corner-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "21-quill-ink",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/21-quill-ink-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/21-quill-ink-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/21-quill-ink-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/21-quill-ink-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "22-dictionary",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/22-dictionary-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/22-dictionary-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/22-dictionary-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/22-dictionary-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "23-book-speech",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/23-book-speech-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/23-book-speech-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/23-book-speech-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/23-book-speech-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "24-letter-branch",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/24-letter-branch-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/24-letter-branch-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/24-letter-branch-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/24-letter-branch-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "25-time-book",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/25-time-book-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/25-time-book-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/25-time-book-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/25-time-book-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "26-card-catalog",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/26-card-catalog-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/26-card-catalog-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/26-card-catalog-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/26-card-catalog-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "27-book-bookmark",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/27-book-bookmark-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/27-book-bookmark-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/27-book-bookmark-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/27-book-bookmark-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "28-quotation-leaves",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/28-quotation-leaves-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/28-quotation-leaves-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/28-quotation-leaves-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/28-quotation-leaves-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "29-scroll",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/29-scroll-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/29-scroll-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/29-scroll-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/29-scroll-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "30-alphabet-cards",
+      "kind": "illustration",
+      "alt": "",
+      "decorative": true,
+      "variants": [
+        {
+          "width": 160,
+          "height": 160,
+          "url": "images/oge/30-alphabet-cards-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 320,
+          "url": "images/oge/30-alphabet-cards-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 640,
+          "url": "images/oge/30-alphabet-cards-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 960,
+          "url": "images/oge/30-alphabet-cards-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-bunin",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Бунин Иван Алексеевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-bunin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-bunin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-bunin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-bunin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-gogol",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Гоголь Николай Васильевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-gogol-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-gogol-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-gogol-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-gogol-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-dostoevsky",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Достоевский Фёдор Михайлович; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-dostoevsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-dostoevsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-dostoevsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-dostoevsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-yesenin",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Есенин Сергей Александрович; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-yesenin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-yesenin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-yesenin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-yesenin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-lermontov",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Лермонтов Михаил Юрьевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-lermontov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-lermontov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-lermontov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-lermontov-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-mayakovsky",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Маяковский Владимир Владимирович; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-mayakovsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-mayakovsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-mayakovsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-mayakovsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-nekrasov",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Некрасов Николай Алексеевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-nekrasov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-nekrasov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-nekrasov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-nekrasov-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-ostrovsky",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Островский Александр Николаевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-ostrovsky-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-ostrovsky-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-ostrovsky-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-ostrovsky-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-pushkin",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Пушкин Александр Сергеевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-pushkin-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-pushkin-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-pushkin-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-pushkin-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-tolstoy",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Толстой Лев Николаевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-tolstoy-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-tolstoy-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-tolstoy-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-tolstoy-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-turgenev",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Тургенев Иван Сергеевич; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-turgenev-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-turgenev-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-turgenev-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-turgenev-960.webp"
+        }
+      ]
+    },
+    {
+      "id": "portrait-chekhov",
+      "kind": "portrait",
+      "alt": "Стилизованная иллюстрация: предполагаемый Чехов Антон Павлович; атрибуция не подтверждена",
+      "decorative": false,
+      "variants": [
+        {
+          "width": 160,
+          "height": 213,
+          "url": "images/oge/portrait-chekhov-160.webp"
+        },
+        {
+          "width": 320,
+          "height": 427,
+          "url": "images/oge/portrait-chekhov-320.webp"
+        },
+        {
+          "width": 640,
+          "height": 853,
+          "url": "images/oge/portrait-chekhov-640.webp"
+        },
+        {
+          "width": 960,
+          "height": 1280,
+          "url": "images/oge/portrait-chekhov-960.webp"
+        }
+      ]
+    }
+  ]
+}

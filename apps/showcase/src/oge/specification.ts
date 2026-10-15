@@ -1,5 +1,5 @@
 import data from "./specification.json" with { type: "json" };
-import type { ExamSpecification } from "./model";
+import type { ExamSpecification } from "./model.ts";
 export const specification = data as ExamSpecification;
 export const taskLines = specification.lines;
 export const testLines = taskLines.filter(

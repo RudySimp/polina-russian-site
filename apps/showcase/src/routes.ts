@@ -1,3 +1,4 @@
+import { courseModules, modulePath } from "./content/course.ts";
 import {
   exerciseIndex as exercises,
   publishedTopics,
@@ -6,6 +7,7 @@ export const routes = [
   "/",
   "/oge/",
   "/oge/theory/",
+  ...courseModules.map((m) => modulePath(m.id)),
   "/oge/bank/",
   "/oge/variants/",
   "/oge/generator/",

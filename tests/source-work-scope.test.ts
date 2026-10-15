@@ -1,0 +1,8 @@
+import {describe,it,expect} from "vitest";
+import {materialWorkScope} from "../scripts/lib/source-scope.mjs";
+const base={sha256:"unknown",bytes:100,taskLine:null,exam:"OGE",origin:"unknown"};
+describe("P2-10 source work scope",()=>{
+ it("excludes empty bytes and the reviewed mathematics article without changing source files",()=>{expect(materialWorkScope({...base,bytes:0})).toMatchObject({materialKind:"empty-file",courseUse:"excluded",targetOgeLines:[]});expect(materialWorkScope({...base,sha256:"9fa6f2fb675be4441bf3f15950737043152b72f59acb0cbb3795b285e4483a40"})).toMatchObject({materialKind:"mathematics-article",workKind:"mathematics",courseUse:"excluded",sourceYear:2021,targetOgeLines:[]});});
+ it("separates oral interview from the written exam model and third-party practice",()=>{expect(materialWorkScope({...base,sha256:"4e4316aff9f3a653387f2b6ff9891a1af6cbc88fc661dfc6ccf06ca383f15854"}).workKind).toBe("oral-interview");expect(materialWorkScope({...base,sha256:"1db946d4a90e897b4c07dea14a7f7f529358462346ce1d6c1bdee4a2f41e23a2"})).toMatchObject({workKind:"written-exam-model",materialKind:"model-demo",sourceYear:2027});expect(materialWorkScope({...base,sha256:"fa4bed2fc59d95fbb56e519de591a6f2fcef89d5a95e15a0a7050b1763f942dd"})).toMatchObject({sourceYear:2026,courseUse:"quarantined-rights-and-subject-review"});});
+ it("does not turn an upper-school textbook into current exam practice or manufacture an unknown year",()=>{expect(materialWorkScope({...base,exam:"EGE-reference",origin:"third-party-textbook"})).toMatchObject({materialKind:"upper-school-textbook",sourceExam:"not-applicable",sourceYear:null,targetOgeLines:[]});expect(materialWorkScope(base)).toMatchObject({materialKind:"unclassified",sourceYear:null,courseUse:"needs-review"});});
+});

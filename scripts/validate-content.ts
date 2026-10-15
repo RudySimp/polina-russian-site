@@ -1,3 +1,10 @@
+import { courseIssues } from './lib/oge-course-integrity';
+import { courseModules } from '../apps/showcase/src/content/course';
+import courseSource from '../content/oge-course.json' with {type:'json'};
+import originalModules from '../content/oge-theory-modules.json' with {type:'json'};
+import courseReferences from '../content/oge-theory-transfer.json' with {type:'json'};
+import { exerciseRuleLinkIssues, rulePathIssue } from "./lib/rule-link-integrity";
+import subskills from "../apps/showcase/src/content/subskills.json" with { type: "json" };
 import { vowelExerciseIssues } from "./lib/content-integrity";
 import { lessons } from "../apps/showcase/src/content/library";
 import { pathToFileURL } from "node:url";
@@ -219,7 +226,18 @@ export function validateContent(
       }
     }
   }
+  for (const skill of subskills) ensure(!rulePathIssue(skill.rulePath, library, topics), skill.id + ": " + rulePathIssue(skill.rulePath, library, topics));
   for (const exercise of bank) {
+    const ruleIssues = exerciseRuleLinkIssues(exercise, library, topics);
+    ensure(!ruleIssues.length, exercise.id + ": " + ruleIssues.join("; "));
+    if (exercise.ruleElements) {
+      ensure(exercise.input === "matching" && exercise.ruleElements.length === exercise.rules?.length, exercise.id + ": неверное число правил сопоставления");
+      unique(exercise.ruleElements.map((item) => String(item.ruleIndex)), exercise.id + ": индексы правил");
+      for (const item of exercise.ruleElements) {
+        ensure(Number.isInteger(item.ruleIndex) && item.ruleIndex >= 0 && item.ruleIndex < (exercise.rules?.length ?? 0) && item.position === Number(exercise.answers[0]?.[item.ruleIndex]), exercise.id + ": неверная связь правила и предложения");
+        ensure(item.skillIds.every((id) => subskills.some((skill) => skill.id === id && skill.line === exercise.taskLine && skill.rulePath === item.rulePath)), exercise.id + ": неверный навык конкретного правила");
+      }
+    }
     ensure(
       exercise.reviewStatus === "checked-demo" &&
         exercise.provenance.teacherApproval === "pending",
@@ -446,7 +464,10 @@ export function validateContent(
           );
     }
   }
+  const courseErrors = courseIssues(courseModules, [...courseSource.modules, ...originalModules.modules] as Parameters<typeof courseIssues>[1], library, topics, subskills, courseReferences.sources);
+  ensure(!courseErrors.length, 'Курс ОГЭ: '+courseErrors.join('; '));
   return {
+    courseModules: courseModules.length,
     lessons: library.length,
     topics: topics.filter((topic) => topic.status === "published").length,
     exercises: bank.length,

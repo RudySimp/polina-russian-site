@@ -1,12 +1,11 @@
 import { useState } from "react";
-import { wordCount } from "./engine";
 import type {
   PracticeSession,
   WritingAssignment,
   WritingReview,
 } from "./model";
 import { specification } from "./specification";
-import { literacyEligibility } from "./writing-review";
+import { literacyEligibility, writingWordCount } from "./writing-review";
 import {
   essayCriteria,
   literacyCriteria,
@@ -22,6 +21,7 @@ function EvaluationSheet({
   checklist,
   promptId,
   eligible,
+  writing,
   update,
 }: {
   session: PracticeSession;
@@ -30,6 +30,7 @@ function EvaluationSheet({
   checklist: string[];
   promptId?: string;
   eligible: boolean;
+  writing?: WritingAssignment;
   update: (patch: Partial<PracticeSession>) => void;
 }) {
   const review: WritingReview = session.writingReviews?.[reviewId] ?? {
@@ -163,6 +164,13 @@ function EvaluationSheet({
             const next = {
               ...review,
               promptId,
+              ...(writing
+                ? {
+                    answerText: session.answers[writing.id] ?? "",
+                    writingRevision: writing.revision,
+                    reviewedWordCount: writingWordCount(session, writing),
+                  }
+                : {}),
               reviewedAt: new Date().toISOString(),
             };
             update({
@@ -180,7 +188,7 @@ function EvaluationSheet({
         {review.reviewedAt && (
           <p>
             {review.role === "expert"
-              ? `Эксперт: ${review.reviewer}.`
+              ? `Указанный проверяющий: ${review.reviewer}.`
               : "Самооценка ученика."}{" "}
             Дата: {new Date(review.reviewedAt).toLocaleString("ru-RU")}. По этим
             критериям:{" "}
@@ -273,7 +281,8 @@ export function WritingCriteria({
         criteria={criteria}
         checklist={writing.checklist}
         promptId={promptId}
-        eligible={wordCount(session.answers[writing.id] ?? "") >= 70}
+        writing={writing}
+        eligible={writingWordCount(session, writing) >= 70}
         update={update}
       />
       <a href={specification.sourceUrl} target="_blank" rel="noreferrer">
@@ -292,7 +301,7 @@ export function LiteracyCriteria({
   const writing = session.items.filter((item) => item.kind === "writing");
   if (!writing.length) return null;
   const counts = writing.map((item) =>
-    wordCount(session.answers[itemIdForWriting(item)] ?? ""),
+    item.kind === "writing" ? writingWordCount(session, item.writing) : 0,
   );
   const accepted = literacyEligibility(session);
   return (
@@ -340,7 +349,4 @@ export function LiteracyCriteria({
       />
     </details>
   );
-}
-function itemIdForWriting(item: PracticeSession["items"][number]) {
-  return item.kind === "writing" ? item.writing.id : item.exercise.id;
 }

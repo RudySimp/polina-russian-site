@@ -5,6 +5,12 @@ import { AnswerControl } from "../components/AnswerControl";
 import { href } from "../routes";
 import { gradeExercise } from "./engine";
 import type { SourceText } from "./model";
+import {
+  answerDifference,
+  feedbackRuleTargets,
+  shortAnswerFeedback,
+} from "./rule-feedback";
+export { answerDifference } from "./rule-feedback";
 
 export function SourcePassage({ text }: { text: SourceText }) {
   return (
@@ -49,44 +55,6 @@ export function ExerciseStatement({
     </>
   );
 }
-export function answerDifference(exercise: Exercise, answer: string) {
-  const value = answer.replace(/[ ,]/gu, "").trim(),
-    expected = exercise.answers[0] ?? "";
-  if (exercise.responseKind !== "digits_sequence") return [];
-  if (exercise.input === "matching")
-    return [...expected].flatMap((digit, n) =>
-      value[n] === digit
-        ? []
-        : [
-            {
-              position: Number(digit),
-              title: "Правило " + String.fromCharCode(1040 + n),
-              detail:
-                "Вы выбрали предложение " +
-                (value[n] ?? "—") +
-                "; правило объясняет предложение " +
-                digit +
-                ".",
-            },
-          ],
-    );
-  const given = new Set([...value]),
-    wanted = new Set([...expected]);
-  return [...new Set([...value, ...expected])]
-    .filter((d) => given.has(d) !== wanted.has(d))
-    .map((d) => ({
-      position: Number(d),
-      title: (wanted.has(d) ? "Пропущена" : "Лишняя") + " позиция " + d,
-      detail:
-        exercise.optionExplanations[Number(d) - 1] ??
-        [
-          ...exercise.explanation.matchAll(
-            /(?:^|\n)(?:\((\d+)\)|(\d+)\))\s*([^\n]+)/gu,
-          ),
-        ].find((row) => Number(row[1] ?? row[2]) === Number(d))?.[3] ??
-        "Проверьте условие выбора и правило для этой позиции.",
-    }));
-}
 export function ExerciseFeedback({
   exercise,
   answer,
@@ -98,27 +66,7 @@ export function ExerciseFeedback({
 }) {
   const grade = gradeExercise(answer, exercise),
     differences = answerDifference(exercise, answer);
-  const paths = [
-    ...new Set(
-      differences.flatMap(
-        (d) =>
-          exercise.elements?.find((e) => e.position === d.position)?.rulePath ??
-          [],
-      ),
-    ),
-  ];
-  if (!paths.length)
-    paths.push(
-      ...(exercise.rulePaths?.slice(0, 2) ?? [
-        "/theory/" + exercise.topicSlug + "/?exam=OGE#algorithm",
-      ]),
-    );
-  const errorSkill =
-    differences.flatMap(
-      (d) =>
-        exercise.elements?.find((e) => e.position === d.position)?.skillIds ??
-        [],
-    )[0] ?? exercise.skillIds?.find((s) => s !== exercise.skillId);
+  const { links, errorSkill } = feedbackRuleTargets(exercise, differences);
   return (
     <section
       className={
@@ -154,6 +102,10 @@ export function ExerciseFeedback({
               ))}
             </ul>
           )}
+          {grade.status === "incorrect" &&
+            shortAnswerFeedback(exercise, answer) && (
+              <p>{shortAnswerFeedback(exercise, answer)}</p>
+            )}
           {exercise.responseKind === "short_text" &&
             grade.status !== "correct" && (
               <p>
@@ -181,10 +133,10 @@ export function ExerciseFeedback({
             )}
           </details>
           <div className="inline-actions">
-            {paths.slice(0, 3).map((path) => (
+            {links.slice(0, 3).map(({ path, skillId }) => (
               <a key={path} href={href(path)}>
                 {"Повторить: " +
-                  (subskills.find((skill) => skill.rulePath === path)?.title ??
+                  (subskills.find((skill) => skill.id === skillId)?.title ??
                     exercise.topicTitle)}
               </a>
             ))}
@@ -199,7 +151,9 @@ export function ExerciseFeedback({
                       : ""),
                 )}
               >
-                Новая задача на этот навык
+                {errorSkill
+                  ? "Новая задача на этот навык"
+                  : `Другие задания № ${exercise.taskLine ?? ""}`}
               </a>
             )}
           </div>

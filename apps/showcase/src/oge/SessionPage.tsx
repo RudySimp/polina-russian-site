@@ -29,11 +29,11 @@ import {
   itemLine,
   remainingSeconds,
   resultsFor,
-  wordCount,
 } from "./engine";
 import { specification } from "./specification";
 import { WritingCriteria, LiteracyCriteria } from "./WritingReviewPanel";
-import { literacyReviewId } from "./writing-rubric";
+import { WritingWordCountPanel } from "./WritingWordCountPanel";
+import { writingWordCount } from "./writing-review";
 import { WritingGuide } from "./WritingGuide";
 import type { PracticeSession, WritingAssignment } from "./model";
 
@@ -450,52 +450,6 @@ export function SessionPage({
     expired = seconds === 0 && !session.completedAt;
   function update(patch: Partial<PracticeSession>) {
     const work = draft.current!;
-    if (patch.answers || patch.selectedPrompts) {
-      const reviews = { ...work.current.writingReviews };
-      for (const item of work.current.items)
-        if (item.kind === "writing") {
-          const id = item.writing.id;
-          if (patch.answers && patch.answers[id] !== work.current.answers[id]) {
-            for (const key of Object.keys(reviews))
-              if (key === id || key.startsWith(`${id}:`))
-                reviews[key] = { ...reviews[key], reviewedAt: undefined };
-            if (reviews[literacyReviewId])
-              reviews[literacyReviewId] = {
-                ...reviews[literacyReviewId],
-                reviewedAt: undefined,
-              };
-          }
-          const before =
-            work.current.selectedPrompts[id] ?? item.writing.prompts[0].id;
-          const after = patch.selectedPrompts?.[id] ?? before;
-          if (before !== after && reviews[literacyReviewId])
-            reviews[literacyReviewId] = {
-              ...reviews[literacyReviewId],
-              reviewedAt: undefined,
-            };
-        }
-      patch = { ...patch, writingReviews: reviews };
-    }
-    if (
-      patch.writingReviews &&
-      Object.entries(patch.writingReviews).some(
-        ([key, review]) =>
-          key !== literacyReviewId &&
-          review !== work.current.writingReviews?.[key],
-      ) &&
-      patch.writingReviews[literacyReviewId]
-    ) {
-      patch = {
-        ...patch,
-        writingReviews: {
-          ...patch.writingReviews,
-          [literacyReviewId]: {
-            ...patch.writingReviews[literacyReviewId],
-            reviewedAt: undefined,
-          },
-        },
-      };
-    }
     const next = work.edit(patch);
     setSaving(true);
     latest.current = next;
@@ -890,16 +844,18 @@ export function SessionPage({
                   }
                 />
               </label>
-              <p role="status">
-                Слов: {wordCount(answer)}.{" "}
-                {wordCount(answer) < 70
-                  ? "До обязательного минимума: " +
-                    (70 - wordCount(answer)) +
-                    "."
-                  : ""}{" "}
-                Сложные сокращения и служебные пометы проверьте вручную.
-              </p>
             </fieldset>
+            <WritingWordCountPanel
+              key={
+                item.writing.id +
+                ":" +
+                (session.selectedPrompts[item.writing.id] ??
+                  item.writing.prompts[0].id)
+              }
+              session={session}
+              writing={item.writing}
+              update={update}
+            />
             <WritingCriteria
               writing={item.writing}
               session={session}
@@ -1185,11 +1141,22 @@ export function SessionResults({
                       : result.status === "reviewed"
                         ? "Сохранена локальная оценка эксперта"
                         : "Требуется экспертная проверка"}{" "}
-                  · {wordCount(result.answer)} слов.
+                  · {writingWordCount(session, result.item.writing)} слов.
                 </p>
                 <div className="oge-written-answer">
                   {result.answer || "Письменный ответ не записан."}
                 </div>
+                <WritingWordCountPanel
+                  key={
+                    result.item.writing.id +
+                    ":" +
+                    (session.selectedPrompts[result.item.writing.id] ??
+                      result.item.writing.prompts[0].id)
+                  }
+                  session={session}
+                  writing={result.item.writing}
+                  update={update}
+                />
                 <WritingCriteria
                   writing={result.item.writing}
                   session={session}

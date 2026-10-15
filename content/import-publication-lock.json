@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-15",
+  "purpose": "Механическая защита текущих опубликованных редакций и исправлений при повторном импорте. Хеши не являются новой методической проверкой или утверждением преподавателем. Изменение одобрения требует новой редакции с независимым допуском.",
+  "hashEncoding": "approval-json-and-admission-payload-v1",
+  "entries": [
+    {
+      "candidateId": "local-d91251bae0ea-001",
+      "id": "oge-osnova-001",
+      "approvalHash": "f535e9e1be730dc7c0f3cee537812f46f63de50297c4cd77fc89cc84cd369228",
+      "publishedRevision": 2,
+      "publishedHash": "12b3666c8e1999a07a8d776a92e54cc9f9186e89685eed8dddaf63277921797d"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-002",
+      "id": "oge-osnova-002",
+      "approvalHash": "bbf4dc1f7e88f6aca4f399a13072cbace7e41e13639d916daf253ea85db7ecba",
+      "publishedRevision": 2,
+      "publishedHash": "450562016140c4b742956be228d86480b584c78f471eb337491506813f81e9f7"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-003",
+      "id": "oge-osnova-003",
+      "approvalHash": "2f31e2a4d4e7fe3e9558f741413aa27c2883ffa78b3afb69555823dd6c0547d7",
+      "publishedRevision": 2,
+      "publishedHash": "c88c0a3816888f947d14da39afbd7b425df1a238abcc9f8ee101206e73c851b7"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-004",
+      "id": "oge-osnova-004",
+      "approvalHash": "c2b1ef0b11933f94be690da3b602b82873503d06948785d7a25a295e16ede117",
+      "publishedRevision": 2,
+      "publishedHash": "477a11e660bb26c0d60d90cdc81d7de0b5d934c5c18b09be9ea0626004bf84b9"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-005",
+      "id": "oge-osnova-005",
+      "approvalHash": "984052ffc1135337aabb54d114f49f02643278d6dd2b00376b933e4df37249a3",
+      "publishedRevision": 2,
+      "publishedHash": "240d5ffaf875f3a96bbcf8ec88b6df7872cb1e899dc6d09495f4ec4865d031c6"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-006",
+      "id": "oge-osnova-006",
+      "approvalHash": "3b19a2e857ef895532c5928c35012b890828d071bc5f20ec2e34d2c59d16d541",
+      "publishedRevision": 2,
+      "publishedHash": "defafa06d152815f927f43c9856b63e79b60e7b15b29b14b4404c2fed2528440"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-007",
+      "id": "oge-osnova-007",
+      "approvalHash": "c144c6c982cb8adeebed7577c59640b3797e501ac67b269500250674fddc8a25",
+      "publishedRevision": 2,
+      "publishedHash": "45d6e6db63ef44585be47e897c1796a33ac7516484395aa946e79b51c3300bca"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-008",
+      "id": "oge-osnova-008",
+      "approvalHash": "7dc7d45b059ff089e98cdf1c9821e241664dac199cb4b15d86e9220a6fa120e4",
+      "publishedRevision": 2,
+      "publishedHash": "c83f086e1e419b7b563246ac8e6c1f05633a44cbea218c8a6f816a1e96d82a9a"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-001",
+      "id": "oge-sintaksis-001",
+      "approvalHash": "24ff4f7f2107da6e8ad07673e7c2cef4cefd17198d727a8d4b9c9735a7b6897c",
+      "publishedRevision": 2,
+      "publishedHash": "1f28d5b182653cc1df5c684a959ba3ab58481df45b9662ed08786fc69419abf7"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-002",
+      "id": "oge-sintaksis-002",
+      "approvalHash": "b2bb9ae1e95ad55f42e5521a837962f10651ba6527af2605090ce0a5490d9efd",
+      "publishedRevision": 2,
+      "publishedHash": "bc9851d6c6bcce62f1995664f1e7561ea558612edae2716550d4323058cebdb5"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-003",
+      "id": "oge-sintaksis-003",
+      "approvalHash": "28ccb3bd3fd249ac51866ebfef8c19dbed467c5d392dbc204313a94c6ff81205",
+      "publishedRevision": 2,
+      "publishedHash": "49a5a01c9619036dace1c6e33b45ad0515eddc9d3c0a3263bb5b8699d851a6b4"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-004",
+      "id": "oge-sintaksis-004",
+      "approvalHash": "37178ea4e5e5af4a8021f3c293f45ac690b83d786d520f2a2886180a187e4297",
+      "publishedRevision": 2,
+      "publishedHash": "5acaae992ddb51c3921b265f4de12791f57c465ad5db187dba37b7e4bc9d75fc"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-005",
+      "id": "oge-sintaksis-005",
+      "approvalHash": "cbc798eab4b1b0d79a623d4519c74652830e292cefb43ceb308e6c9e34911439",
+      "publishedRevision": 2,
+      "publishedHash": "5db3fe9197c3f839e91a32b7e1c626f6ff371c8499b11a8ae8dc784e5e2cebea"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-006",
+      "id": "oge-sintaksis-006",
+      "approvalHash": "97d92e27dd0dfc2e0ab9312cd1149c88132d1d2aee47a82374cd5e946de144f6",
+      "publishedRevision": 2,
+      "publishedHash": "a81cd90ab15aab0f89ac48bcd65eab1352faeeafdd2d7c95df8ac7645c1f85c4"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-007",
+      "id": "oge-sintaksis-007",
+      "approvalHash": "d8d9a225e40e5f4fee9118616b7751fb8d0358532dda2763f9ef45bd981f9aa1",
+      "publishedRevision": 2,
+      "publishedHash": "f3020d9cc0768fd2e0abdcbf07a97beef1c4a3b19b089f9af1ead0eb368e241b"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-008",
+      "id": "oge-sintaksis-008",
+      "approvalHash": "f2007657550963fe8d95f66077b59cb6995aa7c592f92f52df899b1d4d4428ff",
+      "publishedRevision": 2,
+      "publishedHash": "4993ffb80bbd3238d9010fd7a1eb52f50bac7e6b39268bbc0857acaa4c69ea79"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-009",
+      "id": "oge-sintaksis-009",
+      "approvalHash": "ed9657397ad9d2a1b8de7d9714d461f2237143cc63a9a750d76cbf2c9993815b",
+      "publishedRevision": 2,
+      "publishedHash": "72329656abcff2d789e354f4929674d22b186118c8613c9f8a2fa1b168029f8a"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-010",
+      "id": "oge-sintaksis-010",
+      "approvalHash": "ad821f4ba97aef7753fc3c21fd312ffc69c4e2d283e827c9e69d37d5bb05a63b",
+      "publishedRevision": 2,
+      "publishedHash": "a85e53735e5cf9cd4c283fa8e35826f864960b04b2e211150896abc97574072d"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-001",
+      "id": "oge-punktuacionnyy-analiz-001",
+      "approvalHash": "323a91136d01b5fef44d8e55a78d31ce20f2dfdad023baacae51092ed534d51a",
+      "publishedRevision": 2,
+      "publishedHash": "9982626443967e28c022ebed7dd1ad91fba9597c0b3fff1b9893fa33ed9c1b4e"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-002",
+      "id": "oge-punktuacionnyy-analiz-002",
+      "approvalHash": "45a60145f41f44d654cf86c7c22788373a25bea55fc4e7fccc5815427de05a15",
+      "publishedRevision": 2,
+      "publishedHash": "07755edbc1701345191f14b35a031566dd3ae539310b3a27ab705c12192ba34e"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-003",
+      "id": "oge-punktuacionnyy-analiz-003",
+      "approvalHash": "3ea01ace304813530c32baad750107e612be55ca25c36ccd76e3525773972a6f",
+      "publishedRevision": 2,
+      "publishedHash": "8eb5a779ad323c74c6c393058cef131aa5675b51b50707ff7957e4d42e6cc7c9"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-004",
+      "id": "oge-punktuacionnyy-analiz-004",
+      "approvalHash": "fa70addc6b2fdfbc20b8e3f639ddc937c9c554d38a2ba5ed19eb4bc9e2ca5bcf",
+      "publishedRevision": 2,
+      "publishedHash": "e73a447fcad0eefe4000f7e3d20b730bf1012c0f1cce6aa44e17434cd5a62480"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-005",
+      "id": "oge-punktuacionnyy-analiz-005",
+      "approvalHash": "181b7c07af2888be4afc84e00631ca5add0c69e73e99c17da254d4cd5d98b7bf",
+      "publishedRevision": 2,
+      "publishedHash": "5b107b6554e695aadd4204f9dbace7f5ae33adffc2dcf51cc553c0bb4ba8b23c"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-006",
+      "id": "oge-punktuacionnyy-analiz-006",
+      "approvalHash": "a783c76382aac53f9b4aa55c6277dfe524e6f104f72384468f5727131203a1f6",
+      "publishedRevision": 2,
+      "publishedHash": "696603203725591c7dd9dda89e6a093f3163292d32a2389e9b01f5ac9e7a1445"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-009",
+      "id": "oge-punktuacionnyy-analiz-009",
+      "approvalHash": "b00a1d029e677f72f97147193d6e9cc505dda5ae91efc491a216ae34e56e1757",
+      "publishedRevision": 2,
+      "publishedHash": "ae877f3dcf3f7f7c8c88a284e1b72bbe145dad303f68322700cc8f60e8c7cee5"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-010",
+      "id": "oge-punktuacionnyy-analiz-010",
+      "approvalHash": "596e65d2a971764d111a933b6a3d8c85908e4ddb11488c4956a96dec9c1266b2",
+      "publishedRevision": 2,
+      "publishedHash": "cb43e0c4ec046f4163af6ea6d1dbe290ed5f224719cf5e87895a95abd89e2497"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-011",
+      "id": "oge-punktuacionnyy-analiz-011",
+      "approvalHash": "d8b685a7ecc533af4f196b17435243f33a23bea76b8a7a0844f2a92867c14d8d",
+      "publishedRevision": 2,
+      "publishedHash": "fe8f3cca516032c0a0fe0bf313db6f0dd851766374f511b55eb8bfcea690ee0a"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-014",
+      "id": "oge-punktuacionnyy-analiz-014",
+      "approvalHash": "6c4d9b2d9c80af2c0d91a999ef35189c817fe9246f5b2f017cbea37d96cded45",
+      "publishedRevision": 2,
+      "publishedHash": "e9a06a5408325beee7572dd101da4bd01e3a292059c9a817f90a6d231841e509"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-001",
+      "id": "oge-formy-slov-001",
+      "approvalHash": "39f8420d62ce5deaf2ea36bf3d91571b280419e348ddec8cf98b69f88b6e83c6",
+      "publishedRevision": 2,
+      "publishedHash": "f202cfd2381065e01bb3f0b66e627d6047c9da3a9448b5d02c3218a11efd6dbe"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-002",
+      "id": "oge-formy-slov-002",
+      "approvalHash": "64bdafefd6b9b2e1f7f4326a12ff734b9255e5b414b919f7efb1e5a91ed4958e",
+      "publishedRevision": 2,
+      "publishedHash": "3f4183f82a31597a47c269733785b8a0bbcef88223f7b77afc5a4199918d5762"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-003",
+      "id": "oge-formy-slov-003",
+      "approvalHash": "24edf87edd03639ef42e83f2b5688850458bb12292cdd3a42940264f94fe73d6",
+      "publishedRevision": 2,
+      "publishedHash": "137cd53fcf91f57745ae2c27c25ff0d8746e0d6274667a60ee86d03b9a9fb485"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-004",
+      "id": "oge-formy-slov-004",
+      "approvalHash": "3748b1c990cb46c65773876d29beadd84a0b35932c3d658d40d9f3fd72ebc15a",
+      "publishedRevision": 2,
+      "publishedHash": "ce1301603ee5f34f70f42d5e3c8f8616a0ff534dfad3dac4407947795fba2328"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-005",
+      "id": "oge-formy-slov-005",
+      "approvalHash": "c824d0348a420be1f09910b7079ef0fb25eaf3047e65f8b53ea02d1e4b9ad1b3",
+      "publishedRevision": 2,
+      "publishedHash": "7fd9ba8c392490ddb76a3f6fbe23456d5a486ad1006fe5e1d1056df7ae33cd68"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-006",
+      "id": "oge-formy-slov-006",
+      "approvalHash": "4c00252d0ae653b67a03b461ae9c02b07ca1ebb3a0468623a6160ef59a79588f",
+      "publishedRevision": 2,
+      "publishedHash": "c026e959986752c09d50aff3dd08e8275de3deab93f110acef640de580798353"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-007",
+      "id": "oge-formy-slov-007",
+      "approvalHash": "13c2c5fa06fdd71e5e721a93ba9b44d92f50a9f86b19daddeca82a10adc9a00f",
+      "publishedRevision": 2,
+      "publishedHash": "002b3d8e17a5e774f762d5a78797c28b02a846224316e81141d4caecaf1d7ed0"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-008",
+      "id": "oge-formy-slov-008",
+      "approvalHash": "5570007c203c37046570d367cfb53850518007b153be57896e810a0436b44358",
+      "publishedRevision": 2,
+      "publishedHash": "11290d52ccf2037337b88a4c22e8aa459c59e3bfc534d92849b5fa15b467bb89"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-009",
+      "id": "oge-formy-slov-009",
+      "approvalHash": "280672ef2d0cea6890d2f865d95793d34c466a0e796d758e0244995cd06250b8",
+      "publishedRevision": 2,
+      "publishedHash": "41d284006e54fd6f34b3b7ce0f62199301c588e0d1c4f1af1e8121ff295ccf9c"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-010",
+      "id": "oge-formy-slov-010",
+      "approvalHash": "14bc5a339df5b6b8c5dd05c79e7c6126207ac14a9e62e5be9b9a813d7c91c9f0",
+      "publishedRevision": 2,
+      "publishedHash": "44b68f30cdfd6637a5b9eaf4abece2a29c035577bc02c53233d55868bce0fe2c"
+    },
+    {
+      "candidateId": "local-14167d61d33e-001",
+      "id": "oge-slovosochetaniya-001",
+      "approvalHash": "1aa3cf86f2bad0f7af2128161a84d9857fba7a3c7ceb2adbd559d05606714bfe",
+      "publishedRevision": 2,
+      "publishedHash": "3a3d04abac4edcc4290d66cf410698ac070abaab8eec169c1de74c79ec91dc14"
+    },
+    {
+      "candidateId": "local-14167d61d33e-002",
+      "id": "oge-slovosochetaniya-002",
+      "approvalHash": "e3736e487e6b638ddc84bf3e545cb511076d634e082f0dcfd1157f0febf59cee",
+      "publishedRevision": 2,
+      "publishedHash": "8b48035079ca6e829df1aa5bf8abb26e6c02ccf1af4eead6cb37c97d5267cdd0"
+    },
+    {
+      "candidateId": "local-14167d61d33e-003",
+      "id": "oge-slovosochetaniya-003",
+      "approvalHash": "4461a72121c5f881fe51a803f13db8f18202cddd38d6207919c3a90840bce932",
+      "publishedRevision": 2,
+      "publishedHash": "04583fdd36a2dc38293cb0b05da3b676d73700d702bab6487f6b2d57436755db"
+    },
+    {
+      "candidateId": "local-14167d61d33e-004",
+      "id": "oge-slovosochetaniya-004",
+      "approvalHash": "4502c86668a79c99cb3dfe7ab3fbfa21a91137b1d703009f97ea99cac35faef6",
+      "publishedRevision": 2,
+      "publishedHash": "c5e112a102ebad0d61c2604f48d3dce64e70931e4f77c1d5fa72e146fa962131"
+    },
+    {
+      "candidateId": "local-14167d61d33e-005",
+      "id": "oge-slovosochetaniya-005",
+      "approvalHash": "eeef950be4f21c8a3554476d6043fd5d416a5575d03489b59fbc5090b4e8624a",
+      "publishedRevision": 2,
+      "publishedHash": "f3c2399b1740a088d735073ac16945349c8d70ecd39acf38433e424f7ae6864f"
+    },
+    {
+      "candidateId": "local-14167d61d33e-006",
+      "id": "oge-slovosochetaniya-006",
+      "approvalHash": "6a6bef027f6a315620b57b813edc38ba8310e1a21589fbe98a0f3128fd80f626",
+      "publishedRevision": 2,
+      "publishedHash": "b0dd3289782d86214be973c7bb89072c84b7bd09b2198b5d0466272842c0c2aa"
+    },
+    {
+      "candidateId": "local-14167d61d33e-007",
+      "id": "oge-slovosochetaniya-007",
+      "approvalHash": "1e99ce52c7bd6ba3ae2407ee260bdba2b768ca512cf9534593061a3e7bb2182c",
+      "publishedRevision": 2,
+      "publishedHash": "1c4d014f6ecaff4016cfc419bdbe0e8556e484e280224fb65c8ca2ee8a8d2cdf"
+    },
+    {
+      "candidateId": "local-14167d61d33e-008",
+      "id": "oge-slovosochetaniya-008",
+      "approvalHash": "79abe77d1171f204a83a0f18f3c2bb8ab6629751e0ca2ee71ca1d0128666b074",
+      "publishedRevision": 2,
+      "publishedHash": "7fa959818082134918f85831771e2017276dc1b1095dea05632c6c50f60599b6"
+    },
+    {
+      "candidateId": "local-14167d61d33e-009",
+      "id": "oge-slovosochetaniya-009",
+      "approvalHash": "d6bc81f073aec465c881fdaefbb8e25fbf469bf13520a23c788c73ea6ddd3044",
+      "publishedRevision": 2,
+      "publishedHash": "be9fb45bb3a04010f5d166e0dd0a33be610103e7d5fbd843e9f9c24901595a10"
+    },
+    {
+      "candidateId": "local-14167d61d33e-010",
+      "id": "oge-slovosochetaniya-010",
+      "approvalHash": "5fcdcc8c86a48674e3513079da3ea8ec6b8c98477c4624dbbf107b7e11b6dc97",
+      "publishedRevision": 2,
+      "publishedHash": "45284f9d48b98a65de1210495f52a4f48fd91ca0eeed940866ba0d4fb33e46df"
+    },
+    {
+      "candidateId": "local-2334668baa51-001",
+      "id": "oge-punktuacionnye-pravila-001",
+      "approvalHash": "c89612aa0408d4b6abee46e516ad5457d0ef806e1f407f8abd999dcc2c37f0dd",
+      "publishedRevision": 1,
+      "publishedHash": "263c2b97cfb06d59b415addea3cc4733ca5f51f588e0a957183676e23e3142e9"
+    },
+    {
+      "candidateId": "local-2334668baa51-002",
+      "id": "oge-punktuacionnye-pravila-002",
+      "approvalHash": "672e2ebdc9536742d7f2d9bee5e9395cebe555fff4bf1c84a1664e18619ff85c",
+      "publishedRevision": 1,
+      "publishedHash": "b7673dce12d0f5340f0341c89197601c290374fd3bf62cc08784b763f5bc6082"
+    },
+    {
+      "candidateId": "local-2334668baa51-003",
+      "id": "oge-punktuacionnye-pravila-003",
+      "approvalHash": "74ffb2b970ee975b9077c43023778b24702bee7e65abd0b5a47496eab3c242b2",
+      "publishedRevision": 1,
+      "publishedHash": "5443d4d667e16963cc8a0f128f1ed497d5435d7ca6a2790dcda3489fa52b1640"
+    },
+    {
+      "candidateId": "local-2334668baa51-004",
+      "id": "oge-punktuacionnye-pravila-004",
+      "approvalHash": "f0142d263500557a7bdb410bdaf8bce6a5b876775d410cffc0ef96f3da1096fa",
+      "publishedRevision": 1,
+      "publishedHash": "20efdc756e4f0cf53390a7a816b664c8aabffd41e0017c8b9123cf5d71645b0e"
+    },
+    {
+      "candidateId": "local-2334668baa51-005",
+      "id": "oge-punktuacionnye-pravila-005",
+      "approvalHash": "9ba3566268771f5937fcfb8dd4c19e2e2fae4faf6f21c971534c350f46126bc7",
+      "publishedRevision": 1,
+      "publishedHash": "fc073bff6db880146364682a486b728aef53960d7a64ab9e4b8b3613d31ab385"
+    },
+    {
+      "candidateId": "local-2334668baa51-006",
+      "id": "oge-punktuacionnye-pravila-006",
+      "approvalHash": "bc890a5b403ba22b86aac6f240f5240a88f09f9361fae65155ff5ba607e19964",
+      "publishedRevision": 1,
+      "publishedHash": "21dc982226eba43aa2b61cdea9597df632003bdb5c3ef11aa266c10b43e1db43"
+    },
+    {
+      "candidateId": "local-2334668baa51-007",
+      "id": "oge-punktuacionnye-pravila-007",
+      "approvalHash": "1a981a6f54a75d5631151f8d0b94482f6ede9d96f9ff46c42bd17a2aeb74a234",
+      "publishedRevision": 1,
+      "publishedHash": "f5b03cab462511bf3518fdf9e5d9127a62e9b1f95bf7e5f58800d722cf2cd719"
+    },
+    {
+      "candidateId": "local-2334668baa51-008",
+      "id": "oge-punktuacionnye-pravila-008",
+      "approvalHash": "7cfbb82977463ce9491bdcfffa2961d9238e40f7ce01751bc0e1f1835fa4f645",
+      "publishedRevision": 1,
+      "publishedHash": "322621726c1cd09d3275245fa319c6e291164b3186eb0fb080f8ebe1ffb86d93"
+    },
+    {
+      "candidateId": "local-2334668baa51-009",
+      "id": "oge-punktuacionnye-pravila-009",
+      "approvalHash": "cda3c166f0aeca94ceaa8fca177297fbeea532827353a7d45aa76d7ccddeb650",
+      "publishedRevision": 1,
+      "publishedHash": "31d1295981aafb2787fbd7e32bd03da5cd57c22dbe7ee8924ad7cb50cf36eec0"
+    },
+    {
+      "candidateId": "local-2334668baa51-010",
+      "id": "oge-punktuacionnye-pravila-010",
+      "approvalHash": "25b584904f3ca0341049f71f156b2590c130ac24e075678a8a14cf2fcf7e45c6",
+      "publishedRevision": 1,
+      "publishedHash": "6be2148a3e4b16640f2544adf11fdb8b03410a08c74cd595c916097261e083a7"
+    },
+    {
+      "candidateId": "local-2334668baa51-011",
+      "id": "oge-punktuacionnye-pravila-011",
+      "approvalHash": "0a23fa9ab9f7d4496183cb20ec5b58ee1d93de4bff036cef269a1e694b2e5cce",
+      "publishedRevision": 1,
+      "publishedHash": "fcf045bee56e96c805ac7b6fa015c3c53dfe29866d7dc9130777c80f48a9bbbb"
+    },
+    {
+      "candidateId": "local-2334668baa51-012",
+      "id": "oge-punktuacionnye-pravila-012",
+      "approvalHash": "8ae8b7e5f0f4e3101baad158f9612f69820d1350cb82430fc7377f84adef8b95",
+      "publishedRevision": 1,
+      "publishedHash": "c72b675434f85dd605e65f5f4e712e7b985284414948402f27b5fac4ec14050e"
+    },
+    {
+      "candidateId": "local-2334668baa51-013",
+      "id": "oge-punktuacionnye-pravila-013",
+      "approvalHash": "99a1e5a2c715ac4142f31d99fe0248852d156eab03f2c5d3a64878aa4ac324d2",
+      "publishedRevision": 1,
+      "publishedHash": "24292d2ff1974c9920ef0262faeafa05e03969c0f9e05f6d031218c8468aba9b"
+    },
+    {
+      "candidateId": "local-2334668baa51-014",
+      "id": "oge-punktuacionnye-pravila-014",
+      "approvalHash": "003118370e431729a34edee563e8e0c87cdcdbae7db78f63e4eb92bc97e5da75",
+      "publishedRevision": 1,
+      "publishedHash": "99140e62009d1b45ede73c4f514118cf5f3bb7760fd92a808f7dcb623703da47"
+    },
+    {
+      "candidateId": "local-2334668baa51-015",
+      "id": "oge-punktuacionnye-pravila-015",
+      "approvalHash": "b643032fc76cd2419cec8b69a3f8db43566f435a84a3485d4071a1c078ad8235",
+      "publishedRevision": 1,
+      "publishedHash": "a52f512c319954e33485d1738d49b9a20a36e146dce1d04435fb2051c5f4957e"
+    },
+    {
+      "candidateId": "local-2334668baa51-016",
+      "id": "oge-punktuacionnye-pravila-016",
+      "approvalHash": "e93d3a1656dfb4e152d3312eb7f003aeb452e177ee3aeeee533ed970727d09c1",
+      "publishedRevision": 1,
+      "publishedHash": "d3eb8463771930cdbfc3f91400fada5c88e7ffdf3ffb18d7063cb8dd73ebc2ae"
+    },
+    {
+      "candidateId": "local-2334668baa51-017",
+      "id": "oge-punktuacionnye-pravila-017",
+      "approvalHash": "780095ae07cb5e3dd4d20333d04f0fe37dd130f74791f51d758968758ef79a4b",
+      "publishedRevision": 1,
+      "publishedHash": "a4fa8aea883d536eeb473bffa2975e95a1e3a327b4f59a401ecfd01d1d631fec"
+    },
+    {
+      "candidateId": "local-2334668baa51-018",
+      "id": "oge-punktuacionnye-pravila-018",
+      "approvalHash": "94738a417592ab8ad37ca9658a13bb6100edaae59da0952824b58cb5cc216f47",
+      "publishedRevision": 1,
+      "publishedHash": "395bbb225e01f2fe47cc74889f8ffbfbe3a6b58fbf8c08f39e002356f7635bcb"
+    },
+    {
+      "candidateId": "local-2334668baa51-019",
+      "id": "oge-punktuacionnye-pravila-019",
+      "approvalHash": "476ce5158c5875a8a0567e3e02dfe34087f001ef8c727b411cbe374963e52721",
+      "publishedRevision": 1,
+      "publishedHash": "72c31c475020ccdc066e1f171cde51e6b8d6d7bc619a84206d25876513d2989b"
+    },
+    {
+      "candidateId": "local-2334668baa51-020",
+      "id": "oge-punktuacionnye-pravila-020",
+      "approvalHash": "ee8e77db85b40254fb7c39ba8396d3b6d9b6ce3c2e4bc18974c2d73981976e1c",
+      "publishedRevision": 1,
+      "publishedHash": "1dce60bc44834bb672c381c8b8c77d79fd3626073652e9a40bceee4b1e878db2"
+    },
+    {
+      "candidateId": "local-d60659e0510f-001",
+      "id": "oge-orfograficheskiy-analiz-001",
+      "approvalHash": "937293559f79d9ac6ca910e5875f2999e1e5c8f423604b4fd0b682477efc980e",
+      "publishedRevision": 1,
+      "publishedHash": "63f7ec34d1175dc7832485ac58c6ac1ed445359e38a0b2c48a450289e17612ee"
+    },
+    {
+      "candidateId": "local-d60659e0510f-002",
+      "id": "oge-orfograficheskiy-analiz-002",
+      "approvalHash": "9f1cb22da29602c0c60466e9ce576916e1d04849ea8d99510877d09aebb56bbe",
+      "publishedRevision": 1,
+      "publishedHash": "ea92b4c9f17095890f659dd94c7c78e3369aebe75912c02a070c6c9ef546cf8e"
+    },
+    {
+      "candidateId": "local-d60659e0510f-003",
+      "id": "oge-orfograficheskiy-analiz-003",
+      "approvalHash": "5ee3d18bfedcd2c52c6eb644d1ef84727cb4e8d20de71a057b2610e4b86d4527",
+      "publishedRevision": 1,
+      "publishedHash": "ad433bc86b5ffdbb930e136d3cd0be163878c446bb1c7f56967d5728bfa8c84d"
+    },
+    {
+      "candidateId": "local-d60659e0510f-004",
+      "id": "oge-orfograficheskiy-analiz-004",
+      "approvalHash": "894715d464a0d6a2996af8a8f6080ce5922d96fd8a5d0bff32ec473c5093ab71",
+      "publishedRevision": 1,
+      "publishedHash": "00b19cd5b3ab3fcfff817da8c5930b4e048d0f937932adcff191e8e6399aa689"
+    },
+    {
+      "candidateId": "local-d60659e0510f-005",
+      "id": "oge-orfograficheskiy-analiz-005",
+      "approvalHash": "a12228ece6e505dedf7edab07f6480e93ea122077762b14cfa6307c124f54cba",
+      "publishedRevision": 1,
+      "publishedHash": "7fae8c9456bdf85092436a15442c055ca646fc3c97a6c57a6874a95020e6fc8a"
+    },
+    {
+      "candidateId": "local-d60659e0510f-006",
+      "id": "oge-orfograficheskiy-analiz-006",
+      "approvalHash": "210fed79bfb6f69284d822e3ba2ec3fb11b0c9a02fc5b1e67a7f6bfe5b44ca23",
+      "publishedRevision": 1,
+      "publishedHash": "f366903f28139be19abcd56af2a6a91fcb537256b66b6cdacba477db02cf4d1e"
+    },
+    {
+      "candidateId": "local-d60659e0510f-007",
+      "id": "oge-orfograficheskiy-analiz-007",
+      "approvalHash": "744f73f2eeb4c41558cf5552de1eea4310c43301968ebd462f83cb218a91d221",
+      "publishedRevision": 1,
+      "publishedHash": "ba5ea64cff4ba9fc85d7bee6cc68e9e10a2a5dc374940e00ea99b1b3d7c35e4b"
+    },
+    {
+      "candidateId": "local-d60659e0510f-008",
+      "id": "oge-orfograficheskiy-analiz-008",
+      "approvalHash": "843c727611141f5739a48dbbcd4ef157b8e145fa8b51a5214b34535299a43a2c",
+      "publishedRevision": 1,
+      "publishedHash": "c1c9c71a520db74e3157630cb892fb0b53b0eaa6f5edb6c990f5c701f7c4b223"
+    },
+    {
+      "candidateId": "local-d60659e0510f-009",
+      "id": "oge-orfograficheskiy-analiz-009",
+      "approvalHash": "cffdde7363210e6027a431b3ff0ea7a589d4a6f6def57920989299aab3ce034a",
+      "publishedRevision": 1,
+      "publishedHash": "e24db53bafa72777de81e92f7538c6c35b602739e1fd7e31c5e30ef9b9d5388d"
+    },
+    {
+      "candidateId": "local-d60659e0510f-010",
+      "id": "oge-orfograficheskiy-analiz-010",
+      "approvalHash": "75ae48f7707501debda17cd21ed7384f2b56237053f5ba87ba91b941572dae50",
+      "publishedRevision": 1,
+      "publishedHash": "89742d4537660bf2c057c1e581e20609a38caac43beba21f6270891404622625"
+    },
+    {
+      "candidateId": "local-d60659e0510f-011",
+      "id": "oge-orfograficheskiy-analiz-011",
+      "approvalHash": "fe039f77e8c20321a6b84ab4c2cba35606359c515f478410bd3052d9e1c9db31",
+      "publishedRevision": 1,
+      "publishedHash": "e614843415f330bd190cb723b29660b375fa460a37ed7298f41e4326146e4dc4"
+    },
+    {
+      "candidateId": "local-d60659e0510f-012",
+      "id": "oge-orfograficheskiy-analiz-012",
+      "approvalHash": "8425a40191c2018a480adee283e3ceb0c65a2d40fd1e44388c8d6800402c02ad",
+      "publishedRevision": 1,
+      "publishedHash": "fd3c16a60754eb2a331bbb99d751c5fa37db88e48c7d980ecaab24d929da971c"
+    },
+    {
+      "candidateId": "local-d60659e0510f-013",
+      "id": "oge-orfograficheskiy-analiz-013",
+      "approvalHash": "6485cdae414b3b82f999772381650b846dab2ad1bb91eb43c65a5f7659458deb",
+      "publishedRevision": 1,
+      "publishedHash": "eae28352cf6f50d1f635c2722664887a2307d7a327cffd96599b37cf7fec847e"
+    },
+    {
+      "candidateId": "local-d60659e0510f-014",
+      "id": "oge-orfograficheskiy-analiz-014",
+      "approvalHash": "8ede9806d58f66132b65b62b2f27be69e7c65e4166e2aa121ac0bbabe9eb33bd",
+      "publishedRevision": 1,
+      "publishedHash": "d290e3f273271c0c3c19602cd64abc6958f7d4e91874fc1632dceaf17f2b775b"
+    },
+    {
+      "candidateId": "local-d60659e0510f-015",
+      "id": "oge-orfograficheskiy-analiz-015",
+      "approvalHash": "da4f4308999bcce74f37ade53585a02f343f686547affbfb99aef89b17e7fc28",
+      "publishedRevision": 1,
+      "publishedHash": "bbbb0c6d9419790dfe39bd357c3dfa80897fb728113bb8b1f7c67b6f3003d0d1"
+    },
+    {
+      "candidateId": "local-d60659e0510f-016",
+      "id": "oge-orfograficheskiy-analiz-016",
+      "approvalHash": "6694aafed83a5b4ea00948059b432b22461732833a66fc58266e7b88ce3876ec",
+      "publishedRevision": 1,
+      "publishedHash": "284be68d649aa3a0f47d45e76c8a2d6f77d9baf2f086dfbcd08dbf6cf643f884"
+    },
+    {
+      "candidateId": "local-d60659e0510f-017",
+      "id": "oge-orfograficheskiy-analiz-017",
+      "approvalHash": "3faed9d941d43915f81d0df080ca0b930e0c0481d326634d673fd21b3d51811a",
+      "publishedRevision": 1,
+      "publishedHash": "7ef718d967daac40571442a3e18f4e7ac7f4d166df187c121ac1fada621a3468"
+    },
+    {
+      "candidateId": "local-d60659e0510f-018",
+      "id": "oge-orfograficheskiy-analiz-018",
+      "approvalHash": "ee0cf704c24404964fa007b20489fe9424b8c69182946ec6dd2070d4e6841b8d",
+      "publishedRevision": 1,
+      "publishedHash": "67fbf75b34267fe0f0f2d32ff6af4afe4eb7e323acaa002672ba888ab350fd01"
+    },
+    {
+      "candidateId": "local-d60659e0510f-019",
+      "id": "oge-orfograficheskiy-analiz-019",
+      "approvalHash": "4cb1a3f0e83567d88ff5327b0f65bafa6cb3445ebda770448497f4724e4c6283",
+      "publishedRevision": 1,
+      "publishedHash": "38aa562f244d1984fc1dee23de1e64fed3afaeb927bb3559d4aa3a71e6015540"
+    },
+    {
+      "candidateId": "local-d60659e0510f-020",
+      "id": "oge-orfograficheskiy-analiz-020",
+      "approvalHash": "3194042f731203ea3f1f32e2cbe621f81ffac328bef6768e4d5845db1fd1d107",
+      "publishedRevision": 1,
+      "publishedHash": "e704f4a9313c63f12e9b4497c79222deccc51ff09f13c272e07d440195888a98"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-001",
+      "id": "oge-glasnye-v-tekste-001",
+      "approvalHash": "6771f9123cc543331e39aebb083d4120c03d6af4c8a5eb5d9bc6ae36f3d08bde",
+      "publishedRevision": 1,
+      "publishedHash": "b93607586176691bcaced221ab4e13c808337c81064c32d4e3700031b08f5a94"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-002",
+      "id": "oge-glasnye-v-tekste-002",
+      "approvalHash": "85a9deab4c9503d45f53f9ab8eb88526b2c969fabbd9912769dbaeb51a034e6d",
+      "publishedRevision": 1,
+      "publishedHash": "dcc3574384656b1efe21ab6f5e422428e9f3c533303c138ad99bfa6e6a02ff61"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-003",
+      "id": "oge-glasnye-v-tekste-003",
+      "approvalHash": "6a9f528b35a9229cbe7afff59b7da80154ee9d6184e44c08c5b4818664e5f689",
+      "publishedRevision": 1,
+      "publishedHash": "ab9bc563b1286193da90c170433422e831bb44690fe074fcc6b25e3af98a54c0"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-004",
+      "id": "oge-glasnye-v-tekste-004",
+      "approvalHash": "1d69f424c6266f57fdc8321e63b82ed94f3b5a4dfdd5fc34bb97dd4bc1fdd9d7",
+      "publishedRevision": 1,
+      "publishedHash": "a54603a65f4e48b817524ef931f23cf76b9426bfc15d28d4e2e1f287f5549e53"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-005",
+      "id": "oge-glasnye-v-tekste-005",
+      "approvalHash": "033e7c154441468bbb5ac84a1d48032e27252ea6d33310fc0b2b9eef4ed518ce",
+      "publishedRevision": 1,
+      "publishedHash": "2afefae11da106201721dd0efcf14813c9f1ecf5e1d1353bc4d45ff00ceb9ee7"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-006",
+      "id": "oge-glasnye-v-tekste-006",
+      "approvalHash": "c46a42fb81e81e659c447c2366a4bdb24925fffb70af6941c3be993a978ab6dd",
+      "publishedRevision": 1,
+      "publishedHash": "eb7bcffca1d02de498a16ba7ca0dc90f7ec05d9e53413fe02911a8dc0187f4f8"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-007",
+      "id": "oge-glasnye-v-tekste-007",
+      "approvalHash": "c11f560d669b0e58762ab63f90bed45f74750b648a66829509b857749ca5f954",
+      "publishedRevision": 1,
+      "publishedHash": "3508d3b2e3cada49023fc59ef6c026393b07a85d3a0d14a670093c668e53594f"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-008",
+      "id": "oge-glasnye-v-tekste-008",
+      "approvalHash": "2bf7451d59aadf1d3d98bf117aa2b564a259644fb1310ed7893e31eea9ffad0f",
+      "publishedRevision": 1,
+      "publishedHash": "55c680d9864a18dec64d1210738fcb0f462e25976b365d27def20aa65be89afa"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-009",
+      "id": "oge-glasnye-v-tekste-009",
+      "approvalHash": "99753620d0b0c767fdb10058e452e2cf38607efa3340ffd4142bc5885f8e7f02",
+      "publishedRevision": 1,
+      "publishedHash": "e50e863eef3abc19a91b0afc2045913555f2d78f58aa15a8d532d51869376b10"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-010",
+      "id": "oge-glasnye-v-tekste-010",
+      "approvalHash": "d6c80f3e615c1947c2c1a3686356389854e3933aba41698534e800a3b253047f",
+      "publishedRevision": 1,
+      "publishedHash": "7aacfadea7b2325bdc18f3383df6ad15a81a5673bde6de26893d4be967f10b99"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-011",
+      "id": "oge-glasnye-v-tekste-011",
+      "approvalHash": "78db5e31061dd8eee6327f69e18b354bb09100aa062b59a4010663c22f859f48",
+      "publishedRevision": 1,
+      "publishedHash": "35743c75d0be8da1130cee8ba7cc978affeb69478863bf96dc4d7c5fd5dc06b3"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-012",
+      "id": "oge-glasnye-v-tekste-012",
+      "approvalHash": "3a383af196800c15ee464a8db84b22d3bb3c18af89f65043c58894a8bd4abec8",
+      "publishedRevision": 1,
+      "publishedHash": "0a744dbbcb384d7032260a0b33bda8e821d35612df9a086a22c37b6a1be11c75"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-013",
+      "id": "oge-glasnye-v-tekste-013",
+      "approvalHash": "476fd491ce4a9935dbb0f98b6307ade4a49999926474f3b17317405366ce1a90",
+      "publishedRevision": 2,
+      "publishedHash": "60a328c2bf1e6c2dbc1f2f32004e5be161b59dc0782aaec87a341c52e5570d50"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-014",
+      "id": "oge-glasnye-v-tekste-014",
+      "approvalHash": "59aae55eb00601975c801bfcdd36016b2c7dbac009e1aa652c4a919c9be86089",
+      "publishedRevision": 1,
+      "publishedHash": "1ca509f32b93b26f3055889ac7778d4ce6091373d12bf574d4918986d09de987"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-015",
+      "id": "oge-glasnye-v-tekste-015",
+      "approvalHash": "23a02702622f5eb71b06b93ea5ebf0e48af993efa4336b3542e968712543d6ab",
+      "publishedRevision": 1,
+      "publishedHash": "22f55b3c47cafe21de53d05fefa0bda554cb27297cae4d2b5c6740cb87fa3e0a"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-016",
+      "id": "oge-glasnye-v-tekste-016",
+      "approvalHash": "e7f3edb40f068d01c0432e39b17120ad4e151cc4beeb0fa9cb3c68fcf7e8fab3",
+      "publishedRevision": 2,
+      "publishedHash": "499e97712e6f07146d15fdf1cc7a6af524c5e7ff56fb56de4782168cc3ec7fad"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-017",
+      "id": "oge-glasnye-v-tekste-017",
+      "approvalHash": "1acf08e91c4661e18728ad37f6df9e83a9c9d74d5f4eac2fefd3fc3694b437e0",
+      "publishedRevision": 1,
+      "publishedHash": "e6bf4efebe23bfe783a894abe7d39f7fc224938afb4beb9e3135f9f8d2c0c83e"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-018",
+      "id": "oge-glasnye-v-tekste-018",
+      "approvalHash": "e72bf81f5c5c0d191a2accef12db7ee1c030492646ab845570022546e6da9060",
+      "publishedRevision": 1,
+      "publishedHash": "c896b67712d9934894c9071d0141ae0a5c1dabcd485c67e872ead15a6b8fa6e7"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-019",
+      "id": "oge-glasnye-v-tekste-019",
+      "approvalHash": "4f2af2d4e98934e907b813a085161819e271e7cdb56c90a02f25c659ff4e9ec6",
+      "publishedRevision": 1,
+      "publishedHash": "acec788377bd9e630787518f8912558639cbf7e0473fdb4017359606dfa99e3c"
+    },
+    {
+      "candidateId": "local-fd7ea747898d-020",
+      "id": "oge-glasnye-v-tekste-020",
+      "approvalHash": "9b09817788a8e94d35921f07fe0047361931a26483c58eb1db83be3e592d0a02",
+      "publishedRevision": 1,
+      "publishedHash": "b713f1a76776e75fde0ed1b3c60635deef9528e0596a255f6274d96babbecf4e"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-009",
+      "id": "oge-osnova-009",
+      "approvalHash": "81d0e0b0bfe280104a82bd1580a1554de336afe0ed78386e5134f5540a712069",
+      "publishedRevision": 1,
+      "publishedHash": "f4f48553cdd1edc91b015d2d4e8a03b25cb3facb04b6e195a58a97f0d9584ec3"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-010",
+      "id": "oge-osnova-010",
+      "approvalHash": "d0cab1e75659de53583aea22bc640778edbfd553ff9433155249802cc1c63128",
+      "publishedRevision": 1,
+      "publishedHash": "ce1a9941245463897b55fb59b2ce235408c78be0ac130d90ae5ab7a6802cfaa5"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-011",
+      "id": "oge-osnova-011",
+      "approvalHash": "30f080e53c30da7faa69f0a4cba97bbef65153a99d11742bd86c57ac638df6b3",
+      "publishedRevision": 1,
+      "publishedHash": "7dbaff8a7662049b45145d38716cb62903c4f6b82f6e9802fdd7810c4ee9ce0b"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-014",
+      "id": "oge-osnova-014",
+      "approvalHash": "97ad804bc71def8b7cc8db32892ed80460a768e51d06c54f835e82f7e8da249b",
+      "publishedRevision": 1,
+      "publishedHash": "54545f7a34fd98e0b15fd1863484e8631d7287227941ef0d4d67c029c24c8d2c"
+    },
+    {
+      "candidateId": "local-d91251bae0ea-020",
+      "id": "oge-osnova-020",
+      "approvalHash": "99f87ee5e4b836427ca129252c0f62aca3ab4d4b4c5e9f8ad9787f8fa57d03d8",
+      "publishedRevision": 1,
+      "publishedHash": "5c3f7b40124729ed07e9327e6a045ab0711f8599d13fd13092810dbe64fbb099"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-011",
+      "id": "oge-sintaksis-011",
+      "approvalHash": "a58fe95de6d087e5b6a048de2df65ab88c5be22a968bfe7b905800ac1e125251",
+      "publishedRevision": 1,
+      "publishedHash": "f856ce7e5a5a093f6c0a5cfea47b3179f05a0bc9ccafc842b47308093ba5603f"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-012",
+      "id": "oge-sintaksis-012",
+      "approvalHash": "57fa0f1df6dd22ac5a774279f232a282bca072a5ba12a889d3c3ba2d2739f5a3",
+      "publishedRevision": 1,
+      "publishedHash": "aab2a3f88bbe78056e4fe394d543d0ff1c864e02909d32e39f3566b6fbb02e3b"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-016",
+      "id": "oge-sintaksis-016",
+      "approvalHash": "d29e27741cbf79137d08d2e8166b35d4be15591f4f8d46ca70acff8be136ceea",
+      "publishedRevision": 1,
+      "publishedHash": "91ef8dfeda89d96155acbaa149f92c4b45579da7740e1114a69b4c2eff025de3"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-018",
+      "id": "oge-sintaksis-018",
+      "approvalHash": "06017a9ce429874ca5288036764df651bcc186971ad210c326dc69c879fdf3ac",
+      "publishedRevision": 1,
+      "publishedHash": "e248d8e3c0857e8e4d2f966274577e212219a9e9557c4edb3ed1a29ec8defd2b"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-020",
+      "id": "oge-sintaksis-020",
+      "approvalHash": "33a63e819b7e8dd7da9328ba96f4a11ae8d65d4d5eea049b8e9dd70a4d52c062",
+      "publishedRevision": 1,
+      "publishedHash": "19460d669f99ba9dcd47338915a1fc7c597e6e49f4cabe652f61732f1174eaf4"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-012",
+      "id": "oge-punktuacionnyy-analiz-012",
+      "approvalHash": "3d40ff0faeb5f9bdd19048a3c566b6e7d98bf2e666a813754ef16ab848005d27",
+      "publishedRevision": 1,
+      "publishedHash": "652509d7b082887134942350e86b8d5fbb1b0b1c2bda3ac11d7abed9e36e4851"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-016",
+      "id": "oge-punktuacionnyy-analiz-016",
+      "approvalHash": "74628fb60c423647f26f89d2b027723c6be404074c1c5e97243fd3133d148d72",
+      "publishedRevision": 1,
+      "publishedHash": "ada5a3fc9ec7a19f22bcc104ee58cb74845fc29491294ce58b861f03bde4e15e"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-019",
+      "id": "oge-punktuacionnyy-analiz-019",
+      "approvalHash": "f026f3e37f071011893af40f4489b39eb9b60e1f6695d1e5898a82b93a0d3dbb",
+      "publishedRevision": 1,
+      "publishedHash": "85f10df1dd13ec2728cf951967ba91154f4f79f93ae127459f108d2af3f0547f"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-020",
+      "id": "oge-punktuacionnyy-analiz-020",
+      "approvalHash": "f15da885244c0453533a2cf8bd1fb000a4cd97aacfee97882ec60712bafaf781",
+      "publishedRevision": 1,
+      "publishedHash": "77b89e16ef402d681d452a5ace33947eacf2678c9601e93d319432597211bda3"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-022",
+      "id": "oge-punktuacionnyy-analiz-022",
+      "approvalHash": "c586298d0c4b6160fe7c3db7a40b43ea66bbff31496478dd46691df140a5ca78",
+      "publishedRevision": 1,
+      "publishedHash": "8cda5bd18ba9c2eb0aa081e676c854c320a55989528952c824892f08c133c82c"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-025",
+      "id": "oge-punktuacionnyy-analiz-025",
+      "approvalHash": "8da7ac5d42935863f3bdf49009218af3f7b5f35655f6248f6a2c4950b114d488",
+      "publishedRevision": 1,
+      "publishedHash": "3aa55747ee2fbe83146707980ea7233dd82f6d98273c867c84faefcfcb7d2268"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-032",
+      "id": "oge-punktuacionnyy-analiz-032",
+      "approvalHash": "d9260daedd956f747cca4c68d204e65716d4ca2369a81fad92eafb99e0532365",
+      "publishedRevision": 1,
+      "publishedHash": "0f32e99ea323bf92433009f719ef0aa33796226040ef3ae442a3b98a634732ed"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-035",
+      "id": "oge-punktuacionnyy-analiz-035",
+      "approvalHash": "e0240226c2aa15116bfe4e09aac607ebab9402a1b8c7e16e4b172a8d4f058b3a",
+      "publishedRevision": 1,
+      "publishedHash": "d8c34cbc958d2652631e37e9a44c8a1fe2600776af1d5ed7544530759592255f"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-049",
+      "id": "oge-punktuacionnyy-analiz-049",
+      "approvalHash": "b580a33b3920074e6715a7acb6fb3abad2a1010cd0bc9ec8d7147bc5b85d4985",
+      "publishedRevision": 1,
+      "publishedHash": "74cd5a0794f30c5cffd020bb8d6b68351991194e28e267e7f3a23784bc649c77"
+    },
+    {
+      "candidateId": "local-79de6e206a3b-057",
+      "id": "oge-punktuacionnyy-analiz-057",
+      "approvalHash": "3447e3c861c44175f860f4c4130295992e905dcc62ebb58b650123f0bd3ad895",
+      "publishedRevision": 1,
+      "publishedHash": "edd34067d118b16c696d5988aafb14380ea37e3bca63680e24b282db4a75cbb1"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-011",
+      "id": "oge-formy-slov-011",
+      "approvalHash": "082d3e553074b03c17dac9aefa867dddae6b6a80b5a2bc3b2142a3e7c41baf53",
+      "publishedRevision": 1,
+      "publishedHash": "b735872d2f1d22465058e1cad28c9cb6fb59ae5d71d8eef6df6034d671a520cb"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-012",
+      "id": "oge-formy-slov-012",
+      "approvalHash": "1aacc54f5dabd2c9ed0a9757c896db84e6e380cef3e5c63024532a336ac6f23b",
+      "publishedRevision": 1,
+      "publishedHash": "1fdca7deac9d19fbfacfe91f54076290e232799a50f3f5080c7586bf561cd19a"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-013",
+      "id": "oge-formy-slov-013",
+      "approvalHash": "e81ca18ac2d481a6c2edcff4fd107ae2e632bb9094e9942685768637aa854fa1",
+      "publishedRevision": 1,
+      "publishedHash": "88c964473bf0f481a5c5f6882c0333581939f01b02e5a880e01a8372b1539225"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-015",
+      "id": "oge-formy-slov-015",
+      "approvalHash": "6afdeb74fc4481e85333e9d071da47cba4504dee9f71904b92b44447c5056a06",
+      "publishedRevision": 1,
+      "publishedHash": "c3204c872c6f6d91a00e7b1328a8b4069e9e0d63a4318607a1fe4ca9305bbe40"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-017",
+      "id": "oge-formy-slov-017",
+      "approvalHash": "a7a2f48f3f425cfb7473180e2bb4ba0c1dbac74b49687a173a205f29adf47d7c",
+      "publishedRevision": 1,
+      "publishedHash": "e18bd9d9f8354d731e185109de9fa7dba57432637370eacb28ebfc1c7138e59c"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-020",
+      "id": "oge-formy-slov-020",
+      "approvalHash": "831d2966b115f773fb1346a11a921a095fd0a6717334da16de17995a77f21f7a",
+      "publishedRevision": 2,
+      "publishedHash": "38f742b5ba23eb6f59fedac87836845ad78ef49e1e031e9d1bfe4758bfc9bcbf"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-028",
+      "id": "oge-formy-slov-028",
+      "approvalHash": "49ea5b7c3d9ebfee1321733bb0309191596a93635ad0d0ed66db5542be713bbd",
+      "publishedRevision": 1,
+      "publishedHash": "94be7941ca8fa936015f387d06574dc973a31d78dd6b5631803a1528dad1177a"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-036",
+      "id": "oge-formy-slov-036",
+      "approvalHash": "c8cb979d69fddfafc667fc2ef4bd794356d128d1e63b2c7fec6df3df3be78f76",
+      "publishedRevision": 1,
+      "publishedHash": "1d790a08a3b8d6dcc5acf6fe058ce550fd3b9f77b77b158bf0675f6ab51360d2"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-039",
+      "id": "oge-formy-slov-039",
+      "approvalHash": "606a1b4fdf91090e82011af76bb26b937a81f02a7e0075ce20e864bde1207103",
+      "publishedRevision": 1,
+      "publishedHash": "e97346766668807f244030b35053f8b3af7236ebdfaa56ad1acc6e220edc9f03"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-043",
+      "id": "oge-formy-slov-043",
+      "approvalHash": "d3510a9cf512b29513e6e01456e03fd6f6797da142bd9b77c43f52a19a695e51",
+      "publishedRevision": 1,
+      "publishedHash": "1cb937f33ae4f67c8ff9a7abcc9b3bf32c4c788c80648b28d99de08791e024e6"
+    },
+    {
+      "candidateId": "local-14167d61d33e-011",
+      "id": "oge-slovosochetaniya-011",
+      "approvalHash": "7ab527179abe2d645d9c8c8801f12949aed72caf5d3cd20f4d4d6660e4e88f2c",
+      "publishedRevision": 1,
+      "publishedHash": "efbd898a82ba025840310a611c71e42cf03d9af59a9481c330d58b7e2d055aab"
+    },
+    {
+      "candidateId": "local-14167d61d33e-012",
+      "id": "oge-slovosochetaniya-012",
+      "approvalHash": "6dd40bdf13ccb7202d1fe5f59e88caf714a45685d24967521bcb5525ec0e7f87",
+      "publishedRevision": 1,
+      "publishedHash": "0787c249b862bf89190456ea583f6ec9e426093ca8df3beb6e8389fed11ea597"
+    },
+    {
+      "candidateId": "local-14167d61d33e-014",
+      "id": "oge-slovosochetaniya-014",
+      "approvalHash": "6a72d3928b720d8b166a67fa9c0eef6b004b72550c387b837637c811b528658a",
+      "publishedRevision": 1,
+      "publishedHash": "4fb36aef54456006b64e4e63ef5469c68a7b7bf4118d46d92b16536daed61437"
+    },
+    {
+      "candidateId": "local-14167d61d33e-048",
+      "id": "oge-slovosochetaniya-048",
+      "approvalHash": "944c1b2e1409fa158aff0923c1933976871b075bd116357c35a427d30b5631c3",
+      "publishedRevision": 1,
+      "publishedHash": "1453f84ba02def8ff6b69036545624583c4b5627c9e738bd229ebb480f166ea2"
+    },
+    {
+      "candidateId": "local-14167d61d33e-052",
+      "id": "oge-slovosochetaniya-052",
+      "approvalHash": "c1b0e0e189f625a1f8eac9c9c31c4888ec9603790bd541032e4ffa3182dd0d8c",
+      "publishedRevision": 1,
+      "publishedHash": "d7ab34b32a9babd4bd99f510af37cba2d05e8d436cb7c92b6e137839fd9fdb88"
+    },
+    {
+      "candidateId": "local-14167d61d33e-066",
+      "id": "oge-slovosochetaniya-066",
+      "approvalHash": "82d13509ea763f7f87373855f376f33a05ce4a0719bd4756a30064ca0cc05a62",
+      "publishedRevision": 1,
+      "publishedHash": "6c034f9ef2c874f88c3d090184ce44a1fb17967c5c98f78f52b0305b33dc0b46"
+    },
+    {
+      "candidateId": "local-14167d61d33e-085",
+      "id": "oge-slovosochetaniya-085",
+      "approvalHash": "a9dbe0c3caee78d7ee42b9b1c4a3f59fba9798f6d634f82c672b5cdbb2af0c1b",
+      "publishedRevision": 1,
+      "publishedHash": "94b9eddb7f1577932d6ae8aa937b2eaf6f1ce698205b7ca405f2342195254c84"
+    },
+    {
+      "candidateId": "local-14167d61d33e-087",
+      "id": "oge-slovosochetaniya-087",
+      "approvalHash": "3c25c6336b6223326d5a1d7ffc515759cf2ecb9eaddf71a902fc1fbebe563c11",
+      "publishedRevision": 1,
+      "publishedHash": "48d63dac2c29bd7e06c405a5e486eadabe1f3fa6a1a4f73eab67d7bd97e14fb9"
+    },
+    {
+      "candidateId": "local-14167d61d33e-091",
+      "id": "oge-slovosochetaniya-091",
+      "approvalHash": "3a8ae0c8033c1731eed1d7bb557304550ff56a23caa4c21139d3681df36846f6",
+      "publishedRevision": 1,
+      "publishedHash": "47872475741b1c25fa441a3a5189b1d9b9df75409a0323e2a53f3125d8233562"
+    },
+    {
+      "candidateId": "local-14167d61d33e-099",
+      "id": "oge-slovosochetaniya-099",
+      "approvalHash": "d10824f304383735fe40df1915950ce267b5b626cc87dd67a8a3a238a1c47b1a",
+      "publishedRevision": 1,
+      "publishedHash": "c6bd19db6013f0cc5e7d1dd1c172f31b35c64c7c822e06dedcf797efd228282e"
+    },
+    {
+      "candidateId": "local-2334668baa51-021",
+      "id": "oge-punktuacionnye-pravila-021",
+      "approvalHash": "f8d6fb974d7fa30b931e38028f9bef6a1de34521d822416a49726495b0fea11c",
+      "publishedRevision": 1,
+      "publishedHash": "0dd804c24cdad204bbe6b42acee5d929b80fd9713e02be84012a9a64e5a41a90"
+    },
+    {
+      "candidateId": "local-2334668baa51-022",
+      "id": "oge-punktuacionnye-pravila-022",
+      "approvalHash": "463a8216fc9a49afa8b17275e57cd9c0a1cc5f91f9992f14bce2adac7cee085e",
+      "publishedRevision": 1,
+      "publishedHash": "c2d12d18ed6afdd145e9dede1e67f4777fb327aa7264de4aef1ec661ba08a853"
+    },
+    {
+      "candidateId": "local-2334668baa51-023",
+      "id": "oge-punktuacionnye-pravila-023",
+      "approvalHash": "90514886f7de5391df8f9f09ae1d72c2af7278d985fabfd37da4dc1be0ff1614",
+      "publishedRevision": 1,
+      "publishedHash": "6f9ad6e701c8d52f9fd388e0e57a82dff191378dd76e5cb96325843d70adc25e"
+    },
+    {
+      "candidateId": "local-2334668baa51-024",
+      "id": "oge-punktuacionnye-pravila-024",
+      "approvalHash": "1be63388ee45a8c45f34f58d601a3641288ce8a57afaf7e7a633cc0f71dbdb94",
+      "publishedRevision": 1,
+      "publishedHash": "246c0336e5dd059b28c70aa52ce1062bb2f1539682c5be576008d6dcdb1bd9ba"
+    },
+    {
+      "candidateId": "local-d60659e0510f-021",
+      "id": "oge-orfograficheskiy-analiz-021",
+      "approvalHash": "bb3c49c1a4568c438c039e82df25e408dccbb126b1c967fd24e0bc0fec75ca8b",
+      "publishedRevision": 1,
+      "publishedHash": "9d45cb0924e7c7f5505b6fdc9a09bdcd0394df85cc2db289183318bec0696c08"
+    },
+    {
+      "candidateId": "local-d60659e0510f-023",
+      "id": "oge-orfograficheskiy-analiz-023",
+      "approvalHash": "072c6730efcc83d3408d5df75a90b464b561b6ccc14fd5b561ed28bb8754266c",
+      "publishedRevision": 1,
+      "publishedHash": "00c0e44ac80802954429f23830921f3f047e082df755b935212517db59fb0ee0"
+    },
+    {
+      "candidateId": "local-d60659e0510f-024",
+      "id": "oge-orfograficheskiy-analiz-024",
+      "approvalHash": "a0256f0e34100989086716c4458033b5f6f1fbd8444c6e59aa24b94286ca9fa2",
+      "publishedRevision": 1,
+      "publishedHash": "46ebe95348a72357a6c8220df6f3d85cb67e5cb33ce4f25dab7756d6f5717e13"
+    },
+    {
+      "candidateId": "local-d60659e0510f-025",
+      "id": "oge-orfograficheskiy-analiz-025",
+      "approvalHash": "b833aee39a2f3e5424db05a3b4e53f1a8996cb29fda402d1655a192813ffa317",
+      "publishedRevision": 1,
+      "publishedHash": "3b10bb7b44f0f2f29c10cfeb7f4507dabb4ae1dfb4ec447a4e59a955b59705ec"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-021",
+      "id": "oge-formy-slov-021",
+      "approvalHash": "b3fae3a2e1bae3c41db94777d5b8445127b892c479b8453faf156368d4e4c79a",
+      "publishedRevision": 1,
+      "publishedHash": "a2379e707d0e7ff0abad024f95a174c720db2723b71da86411e53edd89c43a09"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-022",
+      "id": "oge-formy-slov-022",
+      "approvalHash": "58f13fabd4f08663e74e196787f019a24e2f19fdd080b181b609c14e0b176764",
+      "publishedRevision": 1,
+      "publishedHash": "e001bd8232d4b15a1d79e44141e2ccc206a8e0a69745b59ef6a041f61878b60f"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-023",
+      "id": "oge-formy-slov-023",
+      "approvalHash": "957e7e8ba15b81a4f1aac6d01a0d414e41d817943b5c12804f9fe2f1df494737",
+      "publishedRevision": 1,
+      "publishedHash": "48a7716b0b42a5c63a0c6fe41aa9a76e43dc7e3e384efb322ed9c28aa62863a8"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-024",
+      "id": "oge-formy-slov-024",
+      "approvalHash": "61b02fd06ad86441d0bad032427fa0ba6fb3ff49249015856bc2cbe57417601b",
+      "publishedRevision": 1,
+      "publishedHash": "1265a34dda3de3ee2d09a16e6576b0017767f8164ff143a5538e88bd92975c36"
+    },
+    {
+      "candidateId": "local-14167d61d33e-013",
+      "id": "oge-slovosochetaniya-013",
+      "approvalHash": "85d8d9dc487b1fd75587a843fc4acc5bc8ddad27297b7c93320c1d7a95befb35",
+      "publishedRevision": 1,
+      "publishedHash": "6080149f2a6ee71f3ff3f2838a9733ec69362966ce7681218984339a7de485cc"
+    },
+    {
+      "candidateId": "local-14167d61d33e-018",
+      "id": "oge-slovosochetaniya-018",
+      "approvalHash": "0b9c28e7d286a439624dd050571b86c57df5872d5f9b03b1d9fc6cec5cefe1d4",
+      "publishedRevision": 1,
+      "publishedHash": "a6de566a8db9c7f52b37dfc328a53e084e22022bced55d5f0efb47cbe86e603f"
+    },
+    {
+      "candidateId": "local-14167d61d33e-019",
+      "id": "oge-slovosochetaniya-019",
+      "approvalHash": "7b2754860dd6b2f0a23016238f4095040e267165e92bd514f1092c497936e62e",
+      "publishedRevision": 1,
+      "publishedHash": "6ceda975c939718ee6397a64baa3cfac90c582a15a90b2773eba4d669047477b"
+    },
+    {
+      "candidateId": "local-14167d61d33e-022",
+      "id": "oge-slovosochetaniya-022",
+      "approvalHash": "8e6de632046ea3f0ef58ef3f644396fded3cc58770b504283cfbc74f75836df2",
+      "publishedRevision": 1,
+      "publishedHash": "8808058bdd97c6754b9518c93eb93188a464a804a849e1cb98a23ef4b1e67363"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-014",
+      "id": "oge-formy-slov-014",
+      "approvalHash": "305987d468f679a005ce221bdae930586876122c4d25da233c8f08245b864f63",
+      "publishedRevision": 1,
+      "publishedHash": "4b9721270f2c4faa845e80a3c99e90c34f29f07d3bc778851abf4e556a9f831b"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-016",
+      "id": "oge-formy-slov-016",
+      "approvalHash": "53ebcf107b24d111bf525e8b7f2d4a1b2ea7b1aabcb86673c32c81187ea5e8b3",
+      "publishedRevision": 1,
+      "publishedHash": "13e56951177b144ef5d708d711220d14f34b1a73726a6a03d56a4be18d781a74"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-025",
+      "id": "oge-formy-slov-025",
+      "approvalHash": "08be51eeea2f79164b943d556fad19a17c3778b7e75e6839fe81c19690527860",
+      "publishedRevision": 1,
+      "publishedHash": "843643892fcaccfeab23ed65b781fa5dc9681f76b52fb7b755344f52274b44cb"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-027",
+      "id": "oge-formy-slov-027",
+      "approvalHash": "c445db0a97269d9575a12391dac3f5261945a486139b0bfd65d77b9d99be7026",
+      "publishedRevision": 1,
+      "publishedHash": "9c1aa574e065af2758c22927d57648f42a149a4d4cd1f4f0cbedc53c12e17cbd"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-030",
+      "id": "oge-formy-slov-030",
+      "approvalHash": "c453601d8880c8a001d5290e5b97d1f646e2689362e53a6f09f8fdcbde7b0644",
+      "publishedRevision": 1,
+      "publishedHash": "b6005a955d45cc0fdcf68f3f29d29e306b785a442c1312c48648ba85cafb92dd"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-031",
+      "id": "oge-formy-slov-031",
+      "approvalHash": "8a936d73a40a3513bb9f4d70c0b0d05615886968860639006de8b585eac72ad3",
+      "publishedRevision": 1,
+      "publishedHash": "c3409bb263839f13a6a5622f6de77fddf787f0a721e71b798d89592cbaf4b93f"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-032",
+      "id": "oge-formy-slov-032",
+      "approvalHash": "5860500e3a66d180930355826cf1d5bd64f5b7da16b92a9bdc4ea69dbe447af0",
+      "publishedRevision": 1,
+      "publishedHash": "3196e20cb47755a78b918e3b7c8febc6462a3608c0209215a81fad5bcbe78f70"
+    },
+    {
+      "candidateId": "local-3d1b69f19a6c-033",
+      "id": "oge-formy-slov-033",
+      "approvalHash": "c233178a1cd1bb9500535301aaab859668ca55731666cfb4660479524da517de",
+      "publishedRevision": 1,
+      "publishedHash": "23863bb3d4547a067e47c337e6c89182578b835075a601ca53b9d89c6249c3ca"
+    },
+    {
+      "candidateId": "local-14167d61d33e-017",
+      "id": "oge-slovosochetaniya-017",
+      "approvalHash": "e50c42275895f7b017bf0224f6350183b676154acda566265a91dd6e241eb8fa",
+      "publishedRevision": 1,
+      "publishedHash": "8219eb77d755fbb159fd96c773d41f1e80b91ce7bbc2c9248e98a2108150fb21"
+    },
+    {
+      "candidateId": "local-14167d61d33e-020",
+      "id": "oge-slovosochetaniya-020",
+      "approvalHash": "ac9903a9407a8025c7acd2b15bb2e81f20b625e3a7696da2ca8c484e9370a4ce",
+      "publishedRevision": 1,
+      "publishedHash": "ed566ef6834738871e9e90be6016df12c9de488e662c785c784cc20d4cfacdbf"
+    },
+    {
+      "candidateId": "local-14167d61d33e-021",
+      "id": "oge-slovosochetaniya-021",
+      "approvalHash": "01bc3cac1c91d456e00abe7174d1143d379bdc2f59ea104f64cedd51276415c0",
+      "publishedRevision": 1,
+      "publishedHash": "743f3797cfc6224187878a94bbf542a30ee6f97d89af74e622f3a51f70f9e99b"
+    },
+    {
+      "candidateId": "local-14167d61d33e-026",
+      "id": "oge-slovosochetaniya-026",
+      "approvalHash": "91705d91387e8d40f942299215519d9988d9504c70e1a8b27dedf4d61d618735",
+      "publishedRevision": 1,
+      "publishedHash": "e41849a47c830c84eb62142e14a604bdfac40703dfe9766527499ead0b49c82e"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-017",
+      "id": "oge-sintaksis-017",
+      "approvalHash": "40155e145bd47cf6bc85da51243d2780bca2619dffdab7d67b6aa4b4fea32e2a",
+      "publishedRevision": 1,
+      "publishedHash": "ff0390b2652a6ab555a04c8b289b4de7ed591702ed20b4355621d3c0a65e8a65"
+    },
+    {
+      "candidateId": "local-ac1542dffe05-019",
+      "id": "oge-sintaksis-019",
+      "approvalHash": "f302bd21ca2b7220ab7c360d69e4cf4d87b6a6124b8c8051fad06e6fb78ae7b3",
+      "publishedRevision": 1,
+      "publishedHash": "1b97bc208d3d6784c34af409e5f8703e476a555c3cfdf7e9b6e98e1f2476b998"
+    }
+  ]
+}

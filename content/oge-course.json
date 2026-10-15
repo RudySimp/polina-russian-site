@@ -1,0 +1,1250 @@
+{
+  "schemaVersion": 1,
+  "modules": [
+    {
+      "id": "osnova-subject",
+      "revision": 1,
+      "title": "Подлежащее и главный член",
+      "outcome": "Находить подлежащее и отличать его отсутствие от пропуска.",
+      "topicId": "osnova",
+      "ogeLines": [
+        2
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:2.subject",
+        "OGE:2.one-member"
+      ],
+      "sectionIds": [
+        "concept",
+        "subject-forms",
+        "one-member",
+        "one-member-types"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В предложении «Вечереет» главный член —",
+        "options": [
+          "подлежащее",
+          "сказуемое; подлежащего нет",
+          "пропущенное слово «вечер»"
+        ],
+        "answer": 2,
+        "explanation": "«Вечереет» — безличное предложение. Не добавляйте подлежащее, которого нет в структуре."
+      }
+    },
+    {
+      "id": "osnova-predicate",
+      "revision": 1,
+      "title": "Границы сказуемого",
+      "outcome": "Сохранять все компоненты составного сказуемого.",
+      "topicId": "osnova",
+      "ogeLines": [
+        2
+      ],
+      "prerequisiteIds": [
+        "osnova-subject"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:2.simple-predicate",
+        "OGE:2.compound-verbal",
+        "OGE:2.compound-nominal"
+      ],
+      "sectionIds": [
+        "predicates",
+        "predicate-boundaries",
+        "mistakes",
+        "interactive",
+        "foundation-scheme"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В основе «Я начал читать» сказуемое —",
+        "options": [
+          "начал",
+          "читать",
+          "начал читать"
+        ],
+        "answer": 3,
+        "explanation": "Фазовый глагол и инфинитив одного действующего лица составляют сказуемое «начал читать»."
+      }
+    },
+    {
+      "id": "sintaksis-structure",
+      "revision": 1,
+      "title": "Простое и сложное предложение",
+      "outcome": "Различать количество основ и способы связи частей.",
+      "topicId": "sintaksis",
+      "ogeLines": [
+        3
+      ],
+      "prerequisiteIds": [
+        "osnova-predicate"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:3.coordinate",
+        "OGE:3.subordinate",
+        "OGE:3.asyndetic"
+      ],
+      "sectionIds": [
+        "concept",
+        "connections",
+        "classification",
+        "subordinate-types"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Как различить ССП и СПП?",
+        "options": [
+          "По длине предложения",
+          "По равноправию частей или зависимости одной части от другой",
+          "По числу запятых"
+        ],
+        "answer": 2,
+        "explanation": "Сочинение связывает равноправные части, при подчинении от одной части задают вопрос к другой."
+      }
+    },
+    {
+      "id": "sintaksis-complications",
+      "revision": 1,
+      "title": "Односоставность и осложнения",
+      "outcome": "Разбирать односоставность, осложнения и подчинение как разные признаки.",
+      "topicId": "sintaksis",
+      "ogeLines": [
+        3
+      ],
+      "prerequisiteIds": [
+        "sintaksis-structure"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:3.impersonal",
+        "OGE:3.definite-personal",
+        "OGE:3.indefinite-personal",
+        "OGE:3.complication"
+      ],
+      "sectionIds": [
+        "one-member",
+        "constructions",
+        "interactive",
+        "check",
+        "subordination",
+        "boundary-cases"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Причастный оборот всегда делает предложение сложным?",
+        "options": [
+          "Да, потому что он длинный",
+          "Нет: отдельная грамматическая основа у оборота не появляется"
+        ],
+        "answer": 2,
+        "explanation": "Оборот осложняет простое предложение. Для сложного предложения нужны несколько предикативных частей."
+      }
+    },
+    {
+      "id": "punktuacionnye-pravila-simple",
+      "revision": 1,
+      "title": "Знаки в простом предложении",
+      "outcome": "Объяснять тире, однородность и обособление по конструкции.",
+      "topicId": "punktuacionnye-pravila",
+      "ogeLines": [
+        4
+      ],
+      "prerequisiteIds": [
+        "osnova-predicate"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:4.homogeneous",
+        "OGE:4.ellipsis"
+      ],
+      "sectionIds": [
+        "principle",
+        "simple",
+        "ellipsis-dash",
+        "homogeneous-signs",
+        "definitions"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «Зимой — снег, летом — дождь» тире связано с",
+        "options": [
+          "Неполнотой параллельных частей",
+          "Любой паузой",
+          "Обращением"
+        ],
+        "answer": 1,
+        "explanation": "Тире возможно на месте пропущенного сказуемого в параллельных неполных частях; одной паузы недостаточно."
+      }
+    },
+    {
+      "id": "punktuacionnye-pravila-complex",
+      "revision": 1,
+      "title": "Знаки между частями и сопоставление правил",
+      "outcome": "Соотносить правило с причиной знака и сохранять порядок А–Б–В.",
+      "topicId": "punktuacionnye-pravila",
+      "ogeLines": [
+        4
+      ],
+      "prerequisiteIds": [
+        "sintaksis-structure",
+        "punktuacionnye-pravila-simple"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:4.subject-dash",
+        "OGE:4.asyndetic-dash",
+        "OGE:4.asyndetic-colon",
+        "OGE:4.coordinate",
+        "OGE:4.subordinate",
+        "OGE:4.asyndetic-comma"
+      ],
+      "sectionIds": [
+        "complex",
+        "complex-boundaries",
+        "match",
+        "errors",
+        "interactive",
+        "dash-conditions"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В ответе на сопоставление А–Б–В сначала записывают",
+        "options": [
+          "Номера в порядке возрастания",
+          "Номер примера для правила А"
+        ],
+        "answer": 2,
+        "explanation": "Порядок ответа задают правила А, Б, В. Сортировка цифр может разрушить сопоставление."
+      }
+    },
+    {
+      "id": "punktuacionnye-pravila-constructions",
+      "revision": 1,
+      "title": "Обороты, уточнение и прямая речь",
+      "outcome": "Отличать вводность, обращение, вставку и сравнительный оборот.",
+      "topicId": "punktuacionnye-pravila",
+      "ogeLines": [
+        4
+      ],
+      "prerequisiteIds": [
+        "punktuacionnye-pravila-simple"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:4.comparative",
+        "OGE:4.detached",
+        "OGE:4.address",
+        "OGE:4.introductory",
+        "OGE:4.clarification",
+        "OGE:4.apposition",
+        "OGE:4.insertion",
+        "OGE:4.direct-speech"
+      ],
+      "sectionIds": [
+        "clarification-insertion",
+        "comparative-turn",
+        "detached",
+        "introductory-address",
+        "direct-speech"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «Маша, открой окно» слово «Маша» —",
+        "options": [
+          "Подлежащее",
+          "Обращение",
+          "Вводное слово"
+        ],
+        "answer": 2,
+        "explanation": "В побудительном предложении «Маша» называет адресата речи и выделяется как обращение."
+      }
+    },
+    {
+      "id": "punktuacionnyy-analiz-positions",
+      "revision": 1,
+      "title": "Выбор позиции для знака",
+      "outcome": "Сначала определять конструкцию, затем требуемый знак.",
+      "topicId": "punktuacionnyy-analiz",
+      "ogeLines": [
+        5
+      ],
+      "prerequisiteIds": [
+        "sintaksis-structure"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:5.homogeneous",
+        "OGE:5.clarification",
+        "OGE:5.introductory",
+        "OGE:5.detached",
+        "OGE:5.direct-speech"
+      ],
+      "sectionIds": [
+        "concept",
+        "commas",
+        "dash-colon",
+        "quotes",
+        "interactive",
+        "check"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Если условие спрашивает позиции двоеточия, нужно отметить",
+        "options": [
+          "Все места любых знаков",
+          "Только позиции двоеточия"
+        ],
+        "answer": 2,
+        "explanation": "Ответ ограничен именно запрошенным знаком. Правильная запятая не становится частью такого ответа."
+      }
+    },
+    {
+      "id": "punktuacionnyy-analiz-relations",
+      "revision": 1,
+      "title": "Смысловые отношения и сочетание конструкций",
+      "outcome": "Объяснять двоеточие и тире и видеть обороты внутри сложных частей.",
+      "topicId": "punktuacionnyy-analiz",
+      "ogeLines": [
+        5
+      ],
+      "prerequisiteIds": [
+        "punktuacionnyy-analiz-positions"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:5.complex"
+      ],
+      "sectionIds": [
+        "decision-tree",
+        "complex-punctuation",
+        "bsp-relations",
+        "layered-case"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «Я оглянулся: сзади послышался шорох» вторая часть",
+        "options": [
+          "Сообщает причину первой",
+          "Просто повторяет первую",
+          "Называет адресата"
+        ],
+        "answer": 1,
+        "explanation": "Шорох объясняет причину действия: возможна проверка союзом «потому что»."
+      }
+    },
+    {
+      "id": "orfograficheskiy-analiz-roots",
+      "revision": 1,
+      "title": "Как проверить объяснение орфограммы",
+      "outcome": "Устанавливать морфему и условие выбора корневой гласной.",
+      "topicId": "orfograficheskiy-analiz",
+      "ogeLines": [
+        6
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:6.checked-root",
+        "OGE:6.alternating-root"
+      ],
+      "sectionIds": [
+        "principle",
+        "roots",
+        "spelling-map",
+        "root-conditions"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Почему «касаться» нельзя проверять словом «коснулся»?",
+        "options": [
+          "Это разные буквы в чередующемся корне",
+          "В слове нет корня",
+          "Любые гласные нельзя проверять"
+        ],
+        "answer": 1,
+        "explanation": "В кас/кос выбор зависит от суффикса -а-, а не от подбора ударной формы."
+      }
+    },
+    {
+      "id": "orfograficheskiy-analiz-affixes",
+      "revision": 1,
+      "title": "Приставки, суффиксы и форма слова",
+      "outcome": "Отличать звуковое условие приставки от грамматического условия суффикса.",
+      "topicId": "orfograficheskiy-analiz",
+      "ogeLines": [
+        6
+      ],
+      "prerequisiteIds": [
+        "orfograficheskiy-analiz-roots"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:6.prefix-z-s",
+        "OGE:6.pre-pri",
+        "OGE:6.n-nn",
+        "OGE:6.suffix-ek-ik",
+        "OGE:6.joined-separate-hyphen"
+      ],
+      "sectionIds": [
+        "prefixes",
+        "suffixes",
+        "prefix-conditions",
+        "suffix-conditions",
+        "word-spelling",
+        "interactive"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В слове «расписать» С в приставке выбирается",
+        "options": [
+          "Перед глухим П",
+          "По ударению",
+          "Потому что приставка всегда неизменяемая"
+        ],
+        "answer": 1,
+        "explanation": "В приставках на З/С конечная согласная зависит от последующего звука; П — глухой."
+      }
+    },
+    {
+      "id": "glasnye-v-tekste-noun",
+      "revision": 1,
+      "title": "Пропуск, морфема и падеж",
+      "outcome": "Выбирать гласную в окончании существительного и прилагательного.",
+      "topicId": "glasnye-v-tekste",
+      "ogeLines": [
+        7
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:7.noun-ending",
+        "OGE:7.adjective-ending"
+      ],
+      "sectionIds": [
+        "condition",
+        "nouns",
+        "agreement",
+        "gap-localization",
+        "case-endings"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Для выбора окончания в «в син…м море» сначала определяют",
+        "options": [
+          "Только число букв",
+          "Падеж и согласование с существительным",
+          "Только приставку"
+        ],
+        "answer": 2,
+        "explanation": "Форма прилагательного связана с формой «море»: предложный падеж, средний род, единственное число."
+      }
+    },
+    {
+      "id": "glasnye-v-tekste-verb",
+      "revision": 1,
+      "title": "Гласная в глаголе и производной форме",
+      "outcome": "Различать личное окончание, прошедшее время и суффикс.",
+      "topicId": "glasnye-v-tekste",
+      "ogeLines": [
+        7
+      ],
+      "prerequisiteIds": [
+        "glasnye-v-tekste-noun"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:7.verb-ending",
+        "OGE:7.past-suffix",
+        "OGE:7.root-vowel",
+        "OGE:7.suffix-vowel"
+      ],
+      "sectionIds": [
+        "verbs",
+        "root",
+        "interactive",
+        "conjugation",
+        "verb-derived"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Личное окончание глагола и суффикс перед -л- в прошедшем времени",
+        "options": [
+          "Выбираются одним правилом спряжения",
+          "Требуют разных правил"
+        ],
+        "answer": 2,
+        "explanation": "Спряжение помогает с личными окончаниями. Гласную перед -л- соотносят с основой инфинитива."
+      }
+    },
+    {
+      "id": "formy-slov-nouns-numerals",
+      "revision": 1,
+      "title": "Форма существительного и числительного",
+      "outcome": "Определять требуемую падежную форму по контексту.",
+      "topicId": "formy-slov",
+      "ogeLines": [
+        8
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:8.numeral",
+        "OGE:8.plural-genitive"
+      ],
+      "sectionIds": [
+        "concept",
+        "numbers",
+        "nouns",
+        "context-and-variants",
+        "noun-paradigms",
+        "numeral-paradigms"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «нет пятисот рублей» изменены",
+        "options": [
+          "Обе части числительного пятьсот",
+          "Только первая часть",
+          "Только слово рублей"
+        ],
+        "answer": 1,
+        "explanation": "В количественном числительном пятьсот при склонении изменяются обе части."
+      }
+    },
+    {
+      "id": "formy-slov-verbs-comparison",
+      "revision": 1,
+      "title": "Глаголы и степень сравнения",
+      "outcome": "Избегать смешения простой и составной степени сравнения.",
+      "topicId": "formy-slov",
+      "ogeLines": [
+        8
+      ],
+      "prerequisiteIds": [
+        "formy-slov-nouns-numerals"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:8.verb-form",
+        "OGE:8.comparative"
+      ],
+      "sectionIds": [
+        "verbs-comparison",
+        "interactive",
+        "check",
+        "verb-and-comparison"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Нормативная форма —",
+        "options": [
+          "более легче",
+          "более лёгкий",
+          "самый наилучший"
+        ],
+        "answer": 2,
+        "explanation": "Составная сравнительная степень: «более лёгкий». С простой формой «легче» слово «более» не соединяют."
+      }
+    },
+    {
+      "id": "slovosochetaniya-connections",
+      "revision": 1,
+      "title": "Границы словосочетания и виды связи",
+      "outcome": "Находить главное слово и отличать согласование, управление, примыкание.",
+      "topicId": "slovosochetaniya",
+      "ogeLines": [
+        9
+      ],
+      "prerequisiteIds": [
+        "osnova-subject"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:9.agreement",
+        "OGE:9.government",
+        "OGE:9.adjacency"
+      ],
+      "sectionIds": [
+        "concept",
+        "types",
+        "phrase-boundaries",
+        "relation-tests",
+        "interactive"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «говорить тихо» зависимое слово связано",
+        "options": [
+          "Согласованием",
+          "Управлением",
+          "Примыканием"
+        ],
+        "answer": 3,
+        "explanation": "Неизменяемое наречие «тихо» присоединяется по смыслу; это примыкание."
+      }
+    },
+    {
+      "id": "slovosochetaniya-transform",
+      "revision": 1,
+      "title": "Замена связи с сохранением смысла",
+      "outcome": "Преобразовывать словосочетание без потери исходного значения.",
+      "topicId": "slovosochetaniya",
+      "ogeLines": [
+        9
+      ],
+      "prerequisiteIds": [
+        "slovosochetaniya-connections"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:9.meaning-preservation"
+      ],
+      "sectionIds": [
+        "transform",
+        "check",
+        "meaning-preservation",
+        "answer-check"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "При замене «дом из кирпича» на согласование подходит",
+        "options": [
+          "кирпичный дом",
+          "каменный дом вообще",
+          "кирпич дома"
+        ],
+        "answer": 1,
+        "explanation": "«Кирпичный дом» сохраняет конкретный материал и меняет управление на согласование."
+      }
+    },
+    {
+      "id": "analiz-teksta-evidence",
+      "revision": 1,
+      "title": "Факт, порядок событий и доказательство",
+      "outcome": "Отделять подтверждённый факт от предположения читателя.",
+      "topicId": "analiz-teksta",
+      "ogeLines": [
+        10
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:10.fact-inference",
+        "OGE:10.sequence"
+      ],
+      "sectionIds": [
+        "principle",
+        "actions",
+        "evidence-types",
+        "restrictions-and-quotation",
+        "interactive"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Утверждение «герой всегда опаздывает» подтверждает",
+        "options": [
+          "Один описанный случай опоздания",
+          "Прямое указание на постоянное поведение"
+        ],
+        "answer": 2,
+        "explanation": "Слово «всегда» расширяет факт. Одного случая недостаточно для вывода о постоянстве."
+      }
+    },
+    {
+      "id": "analiz-teksta-motives",
+      "revision": 1,
+      "title": "Мотив, причина и роль детали",
+      "outcome": "Различать причину события, намерение героя и авторскую оценку.",
+      "topicId": "analiz-teksta",
+      "ogeLines": [
+        10
+      ],
+      "prerequisiteIds": [
+        "analiz-teksta-evidence"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:10.motive",
+        "OGE:10.detail"
+      ],
+      "sectionIds": [
+        "motives",
+        "details",
+        "algorithm",
+        "cause-motive-evaluation"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Причину поступка следует выводить",
+        "options": [
+          "Из текстовых связей и доказательств",
+          "Только из собственного жизненного опыта"
+        ],
+        "answer": 1,
+        "explanation": "Опыт читателя может подсказать гипотезу, но ответ проверяют по данному тексту."
+      }
+    },
+    {
+      "id": "vyrazitelnost-tropes",
+      "revision": 1,
+      "title": "Признаки образного выражения",
+      "outcome": "Различать сравнение, метафору, олицетворение и буквальное значение.",
+      "topicId": "vyrazitelnost",
+      "ogeLines": [
+        11
+      ],
+      "prerequisiteIds": [
+        "analiz-teksta-evidence"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:11.comparison",
+        "OGE:11.metaphor",
+        "OGE:11.personification",
+        "OGE:11.epithet",
+        "OGE:11.hyperbole",
+        "OGE:11.phraseology"
+      ],
+      "sectionIds": [
+        "principle",
+        "tropes",
+        "other",
+        "literal-and-figurative",
+        "interactive"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "«Ветер шептал» — олицетворение, потому что",
+        "options": [
+          "Есть слово ветер",
+          "Природе приписано человеческое действие",
+          "Есть любое красивое слово"
+        ],
+        "answer": 2,
+        "explanation": "Шептать как человек — перенесённое действие; решает признак в контексте, а не слово «ветер»."
+      }
+    },
+    {
+      "id": "vyrazitelnost-function",
+      "revision": 1,
+      "title": "Функция образа, повтор и выразительный синтаксис",
+      "outcome": "Объяснять действие средства в конкретном контексте.",
+      "topicId": "vyrazitelnost",
+      "ogeLines": [
+        11
+      ],
+      "prerequisiteIds": [
+        "vyrazitelnost-tropes"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "role",
+        "algorithm",
+        "expressive-syntax",
+        "phrase-and-role"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Хорошее объяснение функции метафоры",
+        "options": [
+          "Называет конкретный образ и его смысл здесь",
+          "Ограничивается фразой «делает текст красивым»"
+        ],
+        "answer": 1,
+        "explanation": "Название средства дополняют объяснением, какой образ и оттенок смысла создаются в данном фрагменте."
+      }
+    },
+    {
+      "id": "leksika-meaning",
+      "revision": 1,
+      "title": "Значение слова и лексические отношения",
+      "outcome": "Выбирать значение, синоним или антоним в данном контексте.",
+      "topicId": "leksika",
+      "ogeLines": [
+        12
+      ],
+      "prerequisiteIds": [
+        "analiz-teksta-evidence"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:12.synonym",
+        "OGE:12.antonym",
+        "OGE:12.context-meaning"
+      ],
+      "sectionIds": [
+        "meaning",
+        "synonyms",
+        "antonyms",
+        "meaning-and-range",
+        "lexical-relations"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Синоним в задании подбирают",
+        "options": [
+          "К любому значению словарной статьи",
+          "К значению слова в данном предложении"
+        ],
+        "answer": 2,
+        "explanation": "Многозначное слово допускает разные замены. Нужное значение устанавливают по контексту."
+      }
+    },
+    {
+      "id": "leksika-phraseology",
+      "revision": 1,
+      "title": "Устойчивое выражение и точная форма ответа",
+      "outcome": "Отличать фразеологизм и выписывать требуемый фрагмент без расширения.",
+      "topicId": "leksika",
+      "ogeLines": [
+        12
+      ],
+      "prerequisiteIds": [
+        "leksika-meaning"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:12.phraseology"
+      ],
+      "sectionIds": [
+        "phraseology",
+        "algorithm",
+        "interactive",
+        "style-and-collocation"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «держать язык за зубами» в значении молчать нужно выписать",
+        "options": [
+          "Только слово язык",
+          "Весь фразеологизм в форме текста"
+        ],
+        "answer": 2,
+        "explanation": "Фразеологическое значение принадлежит устойчивому сочетанию, а не одному слову."
+      }
+    },
+    {
+      "id": "izlozhenie-listening",
+      "revision": 1,
+      "title": "Слушание и карта микротем",
+      "outcome": "Восстанавливать основные мысли и их порядок после прослушивания.",
+      "topicId": "izlozhenie",
+      "ogeLines": [
+        1
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:1.microthemes"
+      ],
+      "sectionIds": [
+        "purpose",
+        "listening",
+        "microtopic-workshop"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Микротема —",
+        "options": [
+          "Каждая отдельная подробность",
+          "Основная мысль смыслового фрагмента"
+        ],
+        "answer": 2,
+        "explanation": "Подробности могут развивать одну микротему. План фиксирует основные мысли, а не каждую деталь."
+      }
+    },
+    {
+      "id": "izlozhenie-compression",
+      "revision": 1,
+      "title": "Приёмы сжатия без потери мысли",
+      "outcome": "Применять исключение, обобщение и упрощение осмысленно.",
+      "topicId": "izlozhenie",
+      "ogeLines": [
+        1
+      ],
+      "prerequisiteIds": [
+        "izlozhenie-listening"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:1.compression"
+      ],
+      "sectionIds": [
+        "compress",
+        "boundaries",
+        "interactive",
+        "compression-workshop"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "При сжатии можно исключить",
+        "options": [
+          "Повторяющие подробности при сохранении основной мысли",
+          "Причину события, без которой смысл меняется"
+        ],
+        "answer": 1,
+        "explanation": "Сжатие уменьшает объём, сохраняя содержательные связи и основные микротемы."
+      }
+    },
+    {
+      "id": "izlozhenie-editing",
+      "revision": 1,
+      "title": "Связность и проверка изложения",
+      "outcome": "Проверять логику связей и грамотность отдельными проходами.",
+      "topicId": "izlozhenie",
+      "ogeLines": [
+        1
+      ],
+      "prerequisiteIds": [
+        "izlozhenie-compression"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "plan",
+        "coherence-and-editing",
+        "written-literacy"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "После сокращения текста сначала стоит проверить",
+        "options": [
+          "Только количество слов",
+          "Сохранность микротем и связей между ними"
+        ],
+        "answer": 2,
+        "explanation": "Формальный объём не гарантирует сохранность содержания. Затем отдельно проверяют языковые ошибки."
+      }
+    },
+    {
+      "id": "sochinenie-thesis",
+      "revision": 1,
+      "title": "Вопрос, тезис и два примера",
+      "outcome": "Строить ответ на выбранный вопрос и пояснять доказательства.",
+      "topicId": "sochinenie",
+      "ogeLines": [
+        13
+      ],
+      "prerequisiteIds": [
+        "analiz-teksta-evidence"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [
+        "OGE:13.thesis",
+        "OGE:13.evidence",
+        "OGE:13.composition"
+      ],
+      "sectionIds": [
+        "question",
+        "thesis",
+        "evidence",
+        "composition",
+        "interactive",
+        "argument-quality"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Пояснение примера должно",
+        "options": [
+          "Повторить цитату другими словами",
+          "Показать связь примера с тезисом"
+        ],
+        "answer": 2,
+        "explanation": "Пример становится аргументом, когда объяснено, как он доказывает ответ на вопрос."
+      }
+    },
+    {
+      "id": "sochinenie-routes",
+      "revision": 1,
+      "title": "Маршруты 13.1, 13.2 и 13.3",
+      "outcome": "Выбирать действия по типу вопроса вместо универсального шаблона.",
+      "topicId": "sochinenie",
+      "ogeLines": [
+        13
+      ],
+      "prerequisiteIds": [
+        "sochinenie-thesis"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "language",
+        "route-13-1",
+        "route-13-2",
+        "route-13-3",
+        "essay-literacy"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В работе 13.1 языковое средство нужно",
+        "options": [
+          "Только назвать",
+          "Связать с его действием и смыслом фрагмента"
+        ],
+        "answer": 2,
+        "explanation": "Языковой анализ связывает средство, его функцию и смысл. Одного термина недостаточно."
+      }
+    },
+    {
+      "id": "odnorodnye-row",
+      "revision": 1,
+      "title": "Однородный ряд и союзы",
+      "outcome": "Устанавливать границы ряда и влияние одиночной, повторяющейся и двойной связи.",
+      "topicId": "odnorodnye",
+      "ogeLines": [
+        4,
+        5
+      ],
+      "prerequisiteIds": [
+        "osnova-predicate"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "concept",
+        "unions",
+        "pairs",
+        "rows-and-pairs",
+        "interactive"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Перед одиночным И между двумя однородными членами обычно",
+        "options": [
+          "Ставят запятую",
+          "Не ставят запятую"
+        ],
+        "answer": 2,
+        "explanation": "Решает структура однородного ряда. Не переносите этот случай на любое сложное предложение с И."
+      }
+    },
+    {
+      "id": "odnorodnye-boundaries",
+      "revision": 1,
+      "title": "Обобщение, неоднородность и несколько основ",
+      "outcome": "Не смешивать однородные члены с частями сложного предложения.",
+      "topicId": "odnorodnye",
+      "ogeLines": [
+        4,
+        5
+      ],
+      "prerequisiteIds": [
+        "odnorodnye-row"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "complex",
+        "check",
+        "generalizing",
+        "non-homogeneous"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "Для различения однородных сказуемых и сложного предложения проверяют",
+        "options": [
+          "Только повтор глаголов",
+          "Количество и границы грамматических основ"
+        ],
+        "answer": 2,
+        "explanation": "Несколько глаголов могут относиться к одному подлежащему. Определяют предикативную структуру."
+      }
+    },
+    {
+      "id": "ne-prilagatelnye-quality",
+      "revision": 1,
+      "title": "НЕ: новый признак или отрицание",
+      "outcome": "Различать утверждение нового признака и его отрицание в контексте.",
+      "topicId": "ne-prilagatelnye",
+      "ogeLines": [
+        6
+      ],
+      "prerequisiteIds": [],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "concept",
+        "opposition",
+        "boundaries",
+        "interactive",
+        "negation-or-quality"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "В «не высокий, а низкий дом» НЕ пишется",
+        "options": [
+          "Слитно",
+          "Раздельно"
+        ],
+        "answer": 2,
+        "explanation": "Здесь противопоставлены признаки «высокий» и «низкий», утверждается отрицание первого."
+      }
+    },
+    {
+      "id": "ne-prilagatelnye-limits",
+      "revision": 1,
+      "title": "Усилители отрицания и границы правила",
+      "outcome": "Не переносить правило прилагательных на все части речи.",
+      "topicId": "ne-prilagatelnye",
+      "ogeLines": [
+        6
+      ],
+      "prerequisiteIds": [
+        "ne-prilagatelnye-quality"
+      ],
+      "prerequisitePaths": [],
+      "skillIds": [],
+      "sectionIds": [
+        "check",
+        "reinforcing-words",
+        "other-parts-ne",
+        "algorithm",
+        "summary"
+      ],
+      "kind": "chapter-sections",
+      "review": "checked-demo",
+      "teacherApproval": "pending",
+      "checkpoint": {
+        "type": "checkpoint",
+        "title": "Самостоятельная проверка модуля",
+        "question": "«Вовсе не интересный» при усиленном отрицании пишется",
+        "options": [
+          "Слитно",
+          "Раздельно"
+        ],
+        "answer": 2,
+        "explanation": "В данном значении «вовсе» усиливает отрицание. Смысл усилителя проверяют в контексте."
+      }
+    }
+  ]
+}

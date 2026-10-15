@@ -1,0 +1,1109 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "1fc22baaec6e086215cf61670ead8d87d3533ffa",
+  "registeredAt": "2026-10-15",
+  "mode": "legacy-editorial",
+  "note": "This frozen list preserves the prior educational admission. Registration is not a new independent condition/key review or teacher approval. New or changed revisions need a revision-specific receipt.",
+  "entries": [
+    {
+      "id": "oge-analiz-teksta-reading-bench",
+      "revision": 1,
+      "sha256": "f53f06bd8e98a32f9cc7066cc516d12e2b40b7d35dada356cd64a40d2d108778"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-draft",
+      "revision": 1,
+      "sha256": "692a24fbc29a7f09d38de13ffe70ca29b5b6fd8da3a7eab37ebb485aba76ed57"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-boat",
+      "revision": 1,
+      "sha256": "72a24f2a7b3bb097aa6ed469330f06afe00098a4ecf3dc094ba09364c484244f"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-letter",
+      "revision": 1,
+      "sha256": "c14a5dcd8135fa21a9e0e5583a152141b8b9a6a5e65b44121275760211a1abd2"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-rehearsal",
+      "revision": 1,
+      "sha256": "f0e06ac70af3a2f4547fd8c06eceefe36e89c9750846373494cd23538436c6e2"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-map",
+      "revision": 1,
+      "sha256": "d1579bd8283d40e202323abe3d9cda28811358204d7fb2910941fa7d52677759"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-seed",
+      "revision": 1,
+      "sha256": "82269125295d0ba8612f205c2fe664558ab800c6520631b87467cd40ddbe76be"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-bell",
+      "revision": 1,
+      "sha256": "696a6e0a662e8199c23089475e166c92307571ac7746181b5eeb4cef791f9b64"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-race",
+      "revision": 1,
+      "sha256": "47f5cd667cfbbd3a494491b6f3853e19db157205a5ce069c14ef32e2e73bb94c"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-snow",
+      "revision": 1,
+      "sha256": "8654f7ca69f73a8509372c5dbc68eca96002c2f17e5601c1f31b69c44f225ce0"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-tool",
+      "revision": 1,
+      "sha256": "66067a73be1433fde7e7616ea57f6ccc769f91f1544edfeec45d2e78d2870a29"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-library",
+      "revision": 1,
+      "sha256": "7545a6cb3ec6f1abeff739222d779fd5557d0bfb310ad361e7ef38e879e281d7"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-bread",
+      "revision": 1,
+      "sha256": "4801d5e6eda3efa4557f654fc3a212a817fb8b4474e09fa928a442fe95b57d1c"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-repair",
+      "revision": 1,
+      "sha256": "844c0ea583c13a480adf0ed2d5671624178d2ff31bad14f1732321ce9b9fccab"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-train",
+      "revision": 1,
+      "sha256": "ab1de7e5eda67ba6836c44522d7323d72931ff82d5dcf2bc3b471edcc214c8fc"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-team",
+      "revision": 1,
+      "sha256": "8ff9a0c6d196e3786f8b857315fa7140ee1514e9a1b8359c52451c7ec502a819"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-photo",
+      "revision": 1,
+      "sha256": "90d102c8e00895a72eb9694fa4ceda7da0de2e79ae2effb44bd166aef2524631"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-garden",
+      "revision": 1,
+      "sha256": "334b698a2147819ee5687a932f449e39e83e58e1d68f30b07cafd9922ebf98cf"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-chess",
+      "revision": 1,
+      "sha256": "d20d7e5047381eb821d7b4ba7e909f6b1caaf85bd3eb224675ccceb92d5859f7"
+    },
+    {
+      "id": "oge-analiz-teksta-reading-song",
+      "revision": 1,
+      "sha256": "49a2578803ab1837746c7167d019690ce9a6426199ca824236691f39f4c53d2b"
+    },
+    {
+      "id": "oge-formy-slov-001",
+      "revision": 2,
+      "sha256": "f202cfd2381065e01bb3f0b66e627d6047c9da3a9448b5d02c3218a11efd6dbe"
+    },
+    {
+      "id": "oge-formy-slov-002",
+      "revision": 2,
+      "sha256": "3f4183f82a31597a47c269733785b8a0bbcef88223f7b77afc5a4199918d5762"
+    },
+    {
+      "id": "oge-formy-slov-003",
+      "revision": 2,
+      "sha256": "137cd53fcf91f57745ae2c27c25ff0d8746e0d6274667a60ee86d03b9a9fb485"
+    },
+    {
+      "id": "oge-formy-slov-004",
+      "revision": 2,
+      "sha256": "ce1301603ee5f34f70f42d5e3c8f8616a0ff534dfad3dac4407947795fba2328"
+    },
+    {
+      "id": "oge-formy-slov-005",
+      "revision": 2,
+      "sha256": "7fd9ba8c392490ddb76a3f6fbe23456d5a486ad1006fe5e1d1056df7ae33cd68"
+    },
+    {
+      "id": "oge-formy-slov-006",
+      "revision": 2,
+      "sha256": "c026e959986752c09d50aff3dd08e8275de3deab93f110acef640de580798353"
+    },
+    {
+      "id": "oge-formy-slov-007",
+      "revision": 2,
+      "sha256": "002b3d8e17a5e774f762d5a78797c28b02a846224316e81141d4caecaf1d7ed0"
+    },
+    {
+      "id": "oge-formy-slov-008",
+      "revision": 2,
+      "sha256": "11290d52ccf2037337b88a4c22e8aa459c59e3bfc534d92849b5fa15b467bb89"
+    },
+    {
+      "id": "oge-formy-slov-009",
+      "revision": 2,
+      "sha256": "41d284006e54fd6f34b3b7ce0f62199301c588e0d1c4f1af1e8121ff295ccf9c"
+    },
+    {
+      "id": "oge-formy-slov-010",
+      "revision": 2,
+      "sha256": "44b68f30cdfd6637a5b9eaf4abece2a29c035577bc02c53233d55868bce0fe2c"
+    },
+    {
+      "id": "oge-formy-slov-011",
+      "revision": 1,
+      "sha256": "b735872d2f1d22465058e1cad28c9cb6fb59ae5d71d8eef6df6034d671a520cb"
+    },
+    {
+      "id": "oge-formy-slov-012",
+      "revision": 1,
+      "sha256": "1fdca7deac9d19fbfacfe91f54076290e232799a50f3f5080c7586bf561cd19a"
+    },
+    {
+      "id": "oge-formy-slov-013",
+      "revision": 1,
+      "sha256": "88c964473bf0f481a5c5f6882c0333581939f01b02e5a880e01a8372b1539225"
+    },
+    {
+      "id": "oge-formy-slov-015",
+      "revision": 1,
+      "sha256": "c3204c872c6f6d91a00e7b1328a8b4069e9e0d63a4318607a1fe4ca9305bbe40"
+    },
+    {
+      "id": "oge-formy-slov-017",
+      "revision": 1,
+      "sha256": "e18bd9d9f8354d731e185109de9fa7dba57432637370eacb28ebfc1c7138e59c"
+    },
+    {
+      "id": "oge-formy-slov-020",
+      "revision": 2,
+      "sha256": "38f742b5ba23eb6f59fedac87836845ad78ef49e1e031e9d1bfe4758bfc9bcbf"
+    },
+    {
+      "id": "oge-formy-slov-028",
+      "revision": 1,
+      "sha256": "94be7941ca8fa936015f387d06574dc973a31d78dd6b5631803a1528dad1177a"
+    },
+    {
+      "id": "oge-formy-slov-036",
+      "revision": 1,
+      "sha256": "1d790a08a3b8d6dcc5acf6fe058ce550fd3b9f77b77b158bf0675f6ab51360d2"
+    },
+    {
+      "id": "oge-formy-slov-039",
+      "revision": 1,
+      "sha256": "e97346766668807f244030b35053f8b3af7236ebdfaa56ad1acc6e220edc9f03"
+    },
+    {
+      "id": "oge-formy-slov-043",
+      "revision": 1,
+      "sha256": "1cb937f33ae4f67c8ff9a7abcc9b3bf32c4c788c80648b28d99de08791e024e6"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-001",
+      "revision": 1,
+      "sha256": "b93607586176691bcaced221ab4e13c808337c81064c32d4e3700031b08f5a94"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-002",
+      "revision": 1,
+      "sha256": "dcc3574384656b1efe21ab6f5e422428e9f3c533303c138ad99bfa6e6a02ff61"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-003",
+      "revision": 1,
+      "sha256": "ab9bc563b1286193da90c170433422e831bb44690fe074fcc6b25e3af98a54c0"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-004",
+      "revision": 1,
+      "sha256": "a54603a65f4e48b817524ef931f23cf76b9426bfc15d28d4e2e1f287f5549e53"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-005",
+      "revision": 1,
+      "sha256": "2afefae11da106201721dd0efcf14813c9f1ecf5e1d1353bc4d45ff00ceb9ee7"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-006",
+      "revision": 1,
+      "sha256": "eb7bcffca1d02de498a16ba7ca0dc90f7ec05d9e53413fe02911a8dc0187f4f8"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-007",
+      "revision": 1,
+      "sha256": "3508d3b2e3cada49023fc59ef6c026393b07a85d3a0d14a670093c668e53594f"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-008",
+      "revision": 1,
+      "sha256": "55c680d9864a18dec64d1210738fcb0f462e25976b365d27def20aa65be89afa"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-009",
+      "revision": 1,
+      "sha256": "e50e863eef3abc19a91b0afc2045913555f2d78f58aa15a8d532d51869376b10"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-010",
+      "revision": 1,
+      "sha256": "7aacfadea7b2325bdc18f3383df6ad15a81a5673bde6de26893d4be967f10b99"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-011",
+      "revision": 1,
+      "sha256": "35743c75d0be8da1130cee8ba7cc978affeb69478863bf96dc4d7c5fd5dc06b3"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-012",
+      "revision": 1,
+      "sha256": "0a744dbbcb384d7032260a0b33bda8e821d35612df9a086a22c37b6a1be11c75"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-013",
+      "revision": 2,
+      "sha256": "60a328c2bf1e6c2dbc1f2f32004e5be161b59dc0782aaec87a341c52e5570d50"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-014",
+      "revision": 1,
+      "sha256": "1ca509f32b93b26f3055889ac7778d4ce6091373d12bf574d4918986d09de987"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-015",
+      "revision": 1,
+      "sha256": "22f55b3c47cafe21de53d05fefa0bda554cb27297cae4d2b5c6740cb87fa3e0a"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-016",
+      "revision": 2,
+      "sha256": "499e97712e6f07146d15fdf1cc7a6af524c5e7ff56fb56de4782168cc3ec7fad"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-017",
+      "revision": 1,
+      "sha256": "e6bf4efebe23bfe783a894abe7d39f7fc224938afb4beb9e3135f9f8d2c0c83e"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-018",
+      "revision": 1,
+      "sha256": "c896b67712d9934894c9071d0141ae0a5c1dabcd485c67e872ead15a6b8fa6e7"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-019",
+      "revision": 1,
+      "sha256": "acec788377bd9e630787518f8912558639cbf7e0473fdb4017359606dfa99e3c"
+    },
+    {
+      "id": "oge-glasnye-v-tekste-020",
+      "revision": 1,
+      "sha256": "b713f1a76776e75fde0ed1b3c60635deef9528e0596a255f6274d96babbecf4e"
+    },
+    {
+      "id": "oge-leksika-reading-bench",
+      "revision": 1,
+      "sha256": "b98962e4a4da3c2740e39f57075548de175db6bb5bfdb621ff00c7b57718b974"
+    },
+    {
+      "id": "oge-leksika-reading-draft",
+      "revision": 1,
+      "sha256": "561809184f152b91db01129b1054ac7deb7fec8e569358be1e7c03c00af7b53e"
+    },
+    {
+      "id": "oge-leksika-reading-boat",
+      "revision": 1,
+      "sha256": "a1c7869eca1f2f65313e3b8274336af2b0ce8ed3242fcc1c97203e064678da81"
+    },
+    {
+      "id": "oge-leksika-reading-letter",
+      "revision": 1,
+      "sha256": "aaf9da4af27a368fd06f0a1af8eb08076555cffacb93b31618d45b916c29603e"
+    },
+    {
+      "id": "oge-leksika-reading-rehearsal",
+      "revision": 1,
+      "sha256": "df5f91aa21579bbb9b88e07c0c02cafa3cc9af1e28eb258fc8e76e68b2f96e0a"
+    },
+    {
+      "id": "oge-leksika-reading-map",
+      "revision": 1,
+      "sha256": "9f9167ef7129dd37099ab04dc1169fa710c307da69325d95f3092467089eb4e0"
+    },
+    {
+      "id": "oge-leksika-reading-seed",
+      "revision": 1,
+      "sha256": "ae37eecce8f0f8032a5416675a1fb894f253330d241e4c8acba6ca5a45f0a6fc"
+    },
+    {
+      "id": "oge-leksika-reading-bell",
+      "revision": 1,
+      "sha256": "4cefc5ceb809259875b44a2cae95e92c044c2ef0368dffe37e587022878ef424"
+    },
+    {
+      "id": "oge-leksika-reading-race",
+      "revision": 1,
+      "sha256": "bec44ec93e5fd9ddd574129e86262f8a6df05c955e9c8e9e1d4cf7ad2a26d4d5"
+    },
+    {
+      "id": "oge-leksika-reading-snow",
+      "revision": 1,
+      "sha256": "8f8982cc7b4cd37d81f02b31633a55dde9a7c13f181d8ee52cf60b9c74acfd89"
+    },
+    {
+      "id": "oge-leksika-reading-tool",
+      "revision": 1,
+      "sha256": "0fba2e83e005eea81904e10cffaa745e8460ac5d6ce3acd5692e0cfa3c8b3022"
+    },
+    {
+      "id": "oge-leksika-reading-library",
+      "revision": 1,
+      "sha256": "246e326650734f688b83f6923ced6702dfe13d6790d2a43f2747c5f99f0df3ad"
+    },
+    {
+      "id": "oge-leksika-reading-bread",
+      "revision": 1,
+      "sha256": "8422c6afe4a0986ceecee302ab1eedb054e9ea97103b6d1f4294739afcd0961e"
+    },
+    {
+      "id": "oge-leksika-reading-repair",
+      "revision": 1,
+      "sha256": "8cea8345f548687e522f3696eeb017452f94a67f28d8db432615709a9bf76f00"
+    },
+    {
+      "id": "oge-leksika-reading-train",
+      "revision": 1,
+      "sha256": "ac6264ae04d63ddecdde149956d92f9c1a96873dfb5e4e7e42c5b038abb545e2"
+    },
+    {
+      "id": "oge-leksika-reading-team",
+      "revision": 1,
+      "sha256": "54cec400a374496186293bc38bf1153f2e26c24aa897d6988cfb156bcd743f8f"
+    },
+    {
+      "id": "oge-leksika-reading-photo",
+      "revision": 1,
+      "sha256": "f46d90e4c2ece452b9338aa7385216327abcc6002fa07b2ee1ef9f666ff5d553"
+    },
+    {
+      "id": "oge-leksika-reading-garden",
+      "revision": 1,
+      "sha256": "02743e72e2d6631f233396a68448755df4aa46a6d2363205d571f57cf39f7d2e"
+    },
+    {
+      "id": "oge-leksika-reading-chess",
+      "revision": 1,
+      "sha256": "76532bd7c9120ff624aad77381fdefa397d5cf74d6c84bf93f236bb27a68f6fe"
+    },
+    {
+      "id": "oge-leksika-reading-song",
+      "revision": 1,
+      "sha256": "83e38e783322a5d95eab945606251731e2c1862276a84e97518bbe8434739026"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-001",
+      "revision": 1,
+      "sha256": "63f7ec34d1175dc7832485ac58c6ac1ed445359e38a0b2c48a450289e17612ee"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-002",
+      "revision": 1,
+      "sha256": "ea92b4c9f17095890f659dd94c7c78e3369aebe75912c02a070c6c9ef546cf8e"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-003",
+      "revision": 1,
+      "sha256": "ad433bc86b5ffdbb930e136d3cd0be163878c446bb1c7f56967d5728bfa8c84d"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-004",
+      "revision": 1,
+      "sha256": "00b19cd5b3ab3fcfff817da8c5930b4e048d0f937932adcff191e8e6399aa689"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-005",
+      "revision": 1,
+      "sha256": "7fae8c9456bdf85092436a15442c055ca646fc3c97a6c57a6874a95020e6fc8a"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-006",
+      "revision": 1,
+      "sha256": "f366903f28139be19abcd56af2a6a91fcb537256b66b6cdacba477db02cf4d1e"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-007",
+      "revision": 1,
+      "sha256": "ba5ea64cff4ba9fc85d7bee6cc68e9e10a2a5dc374940e00ea99b1b3d7c35e4b"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-008",
+      "revision": 1,
+      "sha256": "c1c9c71a520db74e3157630cb892fb0b53b0eaa6f5edb6c990f5c701f7c4b223"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-009",
+      "revision": 1,
+      "sha256": "e24db53bafa72777de81e92f7538c6c35b602739e1fd7e31c5e30ef9b9d5388d"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-010",
+      "revision": 1,
+      "sha256": "89742d4537660bf2c057c1e581e20609a38caac43beba21f6270891404622625"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-011",
+      "revision": 1,
+      "sha256": "e614843415f330bd190cb723b29660b375fa460a37ed7298f41e4326146e4dc4"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-012",
+      "revision": 1,
+      "sha256": "fd3c16a60754eb2a331bbb99d751c5fa37db88e48c7d980ecaab24d929da971c"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-013",
+      "revision": 1,
+      "sha256": "eae28352cf6f50d1f635c2722664887a2307d7a327cffd96599b37cf7fec847e"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-014",
+      "revision": 1,
+      "sha256": "d290e3f273271c0c3c19602cd64abc6958f7d4e91874fc1632dceaf17f2b775b"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-015",
+      "revision": 1,
+      "sha256": "bbbb0c6d9419790dfe39bd357c3dfa80897fb728113bb8b1f7c67b6f3003d0d1"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-016",
+      "revision": 1,
+      "sha256": "284be68d649aa3a0f47d45e76c8a2d6f77d9baf2f086dfbcd08dbf6cf643f884"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-017",
+      "revision": 1,
+      "sha256": "7ef718d967daac40571442a3e18f4e7ac7f4d166df187c121ac1fada621a3468"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-018",
+      "revision": 1,
+      "sha256": "67fbf75b34267fe0f0f2d32ff6af4afe4eb7e323acaa002672ba888ab350fd01"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-019",
+      "revision": 1,
+      "sha256": "38aa562f244d1984fc1dee23de1e64fed3afaeb927bb3559d4aa3a71e6015540"
+    },
+    {
+      "id": "oge-orfograficheskiy-analiz-020",
+      "revision": 1,
+      "sha256": "e704f4a9313c63f12e9b4497c79222deccc51ff09f13c272e07d440195888a98"
+    },
+    {
+      "id": "oge-osnova-syntax-route",
+      "revision": 1,
+      "sha256": "22f4e15be4bf188eb4755888b37f32e7ef97869d9bb834de007ce0213c418d83"
+    },
+    {
+      "id": "oge-osnova-syntax-workshop",
+      "revision": 1,
+      "sha256": "a911e815db8bfd12af4851d50038666148b77f432b5970eff92069b2f284bf74"
+    },
+    {
+      "id": "oge-osnova-syntax-dawn",
+      "revision": 1,
+      "sha256": "b12c1c3830e358abce20d2f63e182d77c7c1d8899afd5076968073670d653761"
+    },
+    {
+      "id": "oge-osnova-syntax-museum",
+      "revision": 1,
+      "sha256": "d2e0a442c30a06e897a4c9cf7481bafa06477554b96557412476fe45e7161e70"
+    },
+    {
+      "id": "oge-osnova-syntax-news",
+      "revision": 1,
+      "sha256": "ce3c6e72b60a07d82d90ecd216c071a0b9e59016a896e94aca0b92d47b0dbfe6"
+    },
+    {
+      "id": "oge-osnova-syntax-snowfall",
+      "revision": 1,
+      "sha256": "66b86c92c9e288ad09d51d57d1ad37651121b4294674d597a049585defd47357"
+    },
+    {
+      "id": "oge-osnova-syntax-meeting",
+      "revision": 1,
+      "sha256": "008f07294fac6e84e581a883f75673204d452b612f682835e14f8deb3bdb3e26"
+    },
+    {
+      "id": "oge-osnova-001",
+      "revision": 2,
+      "sha256": "12b3666c8e1999a07a8d776a92e54cc9f9186e89685eed8dddaf63277921797d"
+    },
+    {
+      "id": "oge-osnova-002",
+      "revision": 2,
+      "sha256": "450562016140c4b742956be228d86480b584c78f471eb337491506813f81e9f7"
+    },
+    {
+      "id": "oge-osnova-003",
+      "revision": 2,
+      "sha256": "c88c0a3816888f947d14da39afbd7b425df1a238abcc9f8ee101206e73c851b7"
+    },
+    {
+      "id": "oge-osnova-004",
+      "revision": 2,
+      "sha256": "477a11e660bb26c0d60d90cdc81d7de0b5d934c5c18b09be9ea0626004bf84b9"
+    },
+    {
+      "id": "oge-osnova-005",
+      "revision": 2,
+      "sha256": "240d5ffaf875f3a96bbcf8ec88b6df7872cb1e899dc6d09495f4ec4865d031c6"
+    },
+    {
+      "id": "oge-osnova-006",
+      "revision": 2,
+      "sha256": "defafa06d152815f927f43c9856b63e79b60e7b15b29b14b4404c2fed2528440"
+    },
+    {
+      "id": "oge-osnova-007",
+      "revision": 2,
+      "sha256": "45d6e6db63ef44585be47e897c1796a33ac7516484395aa946e79b51c3300bca"
+    },
+    {
+      "id": "oge-osnova-008",
+      "revision": 2,
+      "sha256": "c83f086e1e419b7b563246ac8e6c1f05633a44cbea218c8a6f816a1e96d82a9a"
+    },
+    {
+      "id": "oge-osnova-009",
+      "revision": 1,
+      "sha256": "f4f48553cdd1edc91b015d2d4e8a03b25cb3facb04b6e195a58a97f0d9584ec3"
+    },
+    {
+      "id": "oge-osnova-010",
+      "revision": 1,
+      "sha256": "ce1a9941245463897b55fb59b2ce235408c78be0ac130d90ae5ab7a6802cfaa5"
+    },
+    {
+      "id": "oge-osnova-011",
+      "revision": 1,
+      "sha256": "7dbaff8a7662049b45145d38716cb62903c4f6b82f6e9802fdd7810c4ee9ce0b"
+    },
+    {
+      "id": "oge-osnova-014",
+      "revision": 1,
+      "sha256": "54545f7a34fd98e0b15fd1863484e8631d7287227941ef0d4d67c029c24c8d2c"
+    },
+    {
+      "id": "oge-osnova-020",
+      "revision": 1,
+      "sha256": "5c3f7b40124729ed07e9327e6a045ab0711f8599d13fd13092810dbe64fbb099"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-001",
+      "revision": 1,
+      "sha256": "263c2b97cfb06d59b415addea3cc4733ca5f51f588e0a957183676e23e3142e9"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-002",
+      "revision": 1,
+      "sha256": "b7673dce12d0f5340f0341c89197601c290374fd3bf62cc08784b763f5bc6082"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-003",
+      "revision": 1,
+      "sha256": "5443d4d667e16963cc8a0f128f1ed497d5435d7ca6a2790dcda3489fa52b1640"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-004",
+      "revision": 1,
+      "sha256": "20efdc756e4f0cf53390a7a816b664c8aabffd41e0017c8b9123cf5d71645b0e"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-005",
+      "revision": 1,
+      "sha256": "fc073bff6db880146364682a486b728aef53960d7a64ab9e4b8b3613d31ab385"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-006",
+      "revision": 1,
+      "sha256": "21dc982226eba43aa2b61cdea9597df632003bdb5c3ef11aa266c10b43e1db43"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-007",
+      "revision": 1,
+      "sha256": "f5b03cab462511bf3518fdf9e5d9127a62e9b1f95bf7e5f58800d722cf2cd719"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-008",
+      "revision": 1,
+      "sha256": "322621726c1cd09d3275245fa319c6e291164b3186eb0fb080f8ebe1ffb86d93"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-009",
+      "revision": 1,
+      "sha256": "31d1295981aafb2787fbd7e32bd03da5cd57c22dbe7ee8924ad7cb50cf36eec0"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-010",
+      "revision": 1,
+      "sha256": "6be2148a3e4b16640f2544adf11fdb8b03410a08c74cd595c916097261e083a7"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-011",
+      "revision": 1,
+      "sha256": "fcf045bee56e96c805ac7b6fa015c3c53dfe29866d7dc9130777c80f48a9bbbb"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-012",
+      "revision": 1,
+      "sha256": "c72b675434f85dd605e65f5f4e712e7b985284414948402f27b5fac4ec14050e"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-013",
+      "revision": 1,
+      "sha256": "24292d2ff1974c9920ef0262faeafa05e03969c0f9e05f6d031218c8468aba9b"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-014",
+      "revision": 1,
+      "sha256": "99140e62009d1b45ede73c4f514118cf5f3bb7760fd92a808f7dcb623703da47"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-015",
+      "revision": 1,
+      "sha256": "a52f512c319954e33485d1738d49b9a20a36e146dce1d04435fb2051c5f4957e"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-016",
+      "revision": 1,
+      "sha256": "d3eb8463771930cdbfc3f91400fada5c88e7ffdf3ffb18d7063cb8dd73ebc2ae"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-017",
+      "revision": 1,
+      "sha256": "a4fa8aea883d536eeb473bffa2975e95a1e3a327b4f59a401ecfd01d1d631fec"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-018",
+      "revision": 1,
+      "sha256": "395bbb225e01f2fe47cc74889f8ffbfbe3a6b58fbf8c08f39e002356f7635bcb"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-019",
+      "revision": 1,
+      "sha256": "72c31c475020ccdc066e1f171cde51e6b8d6d7bc619a84206d25876513d2989b"
+    },
+    {
+      "id": "oge-punktuacionnye-pravila-020",
+      "revision": 1,
+      "sha256": "1dce60bc44834bb672c381c8b8c77d79fd3626073652e9a40bceee4b1e878db2"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-001",
+      "revision": 2,
+      "sha256": "9982626443967e28c022ebed7dd1ad91fba9597c0b3fff1b9893fa33ed9c1b4e"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-002",
+      "revision": 2,
+      "sha256": "07755edbc1701345191f14b35a031566dd3ae539310b3a27ab705c12192ba34e"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-003",
+      "revision": 2,
+      "sha256": "8eb5a779ad323c74c6c393058cef131aa5675b51b50707ff7957e4d42e6cc7c9"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-004",
+      "revision": 2,
+      "sha256": "e73a447fcad0eefe4000f7e3d20b730bf1012c0f1cce6aa44e17434cd5a62480"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-005",
+      "revision": 2,
+      "sha256": "5b107b6554e695aadd4204f9dbace7f5ae33adffc2dcf51cc553c0bb4ba8b23c"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-006",
+      "revision": 2,
+      "sha256": "696603203725591c7dd9dda89e6a093f3163292d32a2389e9b01f5ac9e7a1445"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-009",
+      "revision": 2,
+      "sha256": "ae877f3dcf3f7f7c8c88a284e1b72bbe145dad303f68322700cc8f60e8c7cee5"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-010",
+      "revision": 2,
+      "sha256": "cb43e0c4ec046f4163af6ea6d1dbe290ed5f224719cf5e87895a95abd89e2497"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-011",
+      "revision": 2,
+      "sha256": "fe8f3cca516032c0a0fe0bf313db6f0dd851766374f511b55eb8bfcea690ee0a"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-014",
+      "revision": 2,
+      "sha256": "e9a06a5408325beee7572dd101da4bd01e3a292059c9a817f90a6d231841e509"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-012",
+      "revision": 1,
+      "sha256": "652509d7b082887134942350e86b8d5fbb1b0b1c2bda3ac11d7abed9e36e4851"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-016",
+      "revision": 1,
+      "sha256": "ada5a3fc9ec7a19f22bcc104ee58cb74845fc29491294ce58b861f03bde4e15e"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-019",
+      "revision": 1,
+      "sha256": "85f10df1dd13ec2728cf951967ba91154f4f79f93ae127459f108d2af3f0547f"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-020",
+      "revision": 1,
+      "sha256": "77b89e16ef402d681d452a5ace33947eacf2678c9601e93d319432597211bda3"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-022",
+      "revision": 1,
+      "sha256": "8cda5bd18ba9c2eb0aa081e676c854c320a55989528952c824892f08c133c82c"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-025",
+      "revision": 1,
+      "sha256": "3aa55747ee2fbe83146707980ea7233dd82f6d98273c867c84faefcfcb7d2268"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-032",
+      "revision": 1,
+      "sha256": "0f32e99ea323bf92433009f719ef0aa33796226040ef3ae442a3b98a634732ed"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-035",
+      "revision": 1,
+      "sha256": "d8c34cbc958d2652631e37e9a44c8a1fe2600776af1d5ed7544530759592255f"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-049",
+      "revision": 1,
+      "sha256": "74cd5a0794f30c5cffd020bb8d6b68351991194e28e267e7f3a23784bc649c77"
+    },
+    {
+      "id": "oge-punktuacionnyy-analiz-057",
+      "revision": 1,
+      "sha256": "edd34067d118b16c696d5988aafb14380ea37e3bca63680e24b282db4a75cbb1"
+    },
+    {
+      "id": "oge-sintaksis-syntax-route",
+      "revision": 1,
+      "sha256": "19eede7592ad0a7858fe1901f0f0966c20cfdd8da1f3fde617940e3a276f7877"
+    },
+    {
+      "id": "oge-sintaksis-syntax-workshop",
+      "revision": 1,
+      "sha256": "1ccfa11dab476706e81040935808819cdafa169dbe4210e7a31b7418174dbccb"
+    },
+    {
+      "id": "oge-sintaksis-syntax-dawn",
+      "revision": 1,
+      "sha256": "1e127e744234c688bfb047568d461d76f0f4b4576e3d59278ae60846807ebbdb"
+    },
+    {
+      "id": "oge-sintaksis-syntax-museum",
+      "revision": 1,
+      "sha256": "514051486b8990aec48f54b2fa11e8666d1a22eaeaae513da9a4091968b80326"
+    },
+    {
+      "id": "oge-sintaksis-syntax-news",
+      "revision": 1,
+      "sha256": "fef9c3f2f955e4a47b5d19a55430a0e811270d20c23ce5a2e0df8d4699b807f2"
+    },
+    {
+      "id": "oge-sintaksis-001",
+      "revision": 2,
+      "sha256": "1f28d5b182653cc1df5c684a959ba3ab58481df45b9662ed08786fc69419abf7"
+    },
+    {
+      "id": "oge-sintaksis-002",
+      "revision": 2,
+      "sha256": "bc9851d6c6bcce62f1995664f1e7561ea558612edae2716550d4323058cebdb5"
+    },
+    {
+      "id": "oge-sintaksis-003",
+      "revision": 2,
+      "sha256": "49a5a01c9619036dace1c6e33b45ad0515eddc9d3c0a3263bb5b8699d851a6b4"
+    },
+    {
+      "id": "oge-sintaksis-004",
+      "revision": 2,
+      "sha256": "5acaae992ddb51c3921b265f4de12791f57c465ad5db187dba37b7e4bc9d75fc"
+    },
+    {
+      "id": "oge-sintaksis-005",
+      "revision": 2,
+      "sha256": "5db3fe9197c3f839e91a32b7e1c626f6ff371c8499b11a8ae8dc784e5e2cebea"
+    },
+    {
+      "id": "oge-sintaksis-006",
+      "revision": 2,
+      "sha256": "a81cd90ab15aab0f89ac48bcd65eab1352faeeafdd2d7c95df8ac7645c1f85c4"
+    },
+    {
+      "id": "oge-sintaksis-007",
+      "revision": 2,
+      "sha256": "f3020d9cc0768fd2e0abdcbf07a97beef1c4a3b19b089f9af1ead0eb368e241b"
+    },
+    {
+      "id": "oge-sintaksis-008",
+      "revision": 2,
+      "sha256": "4993ffb80bbd3238d9010fd7a1eb52f50bac7e6b39268bbc0857acaa4c69ea79"
+    },
+    {
+      "id": "oge-sintaksis-009",
+      "revision": 2,
+      "sha256": "72329656abcff2d789e354f4929674d22b186118c8613c9f8a2fa1b168029f8a"
+    },
+    {
+      "id": "oge-sintaksis-010",
+      "revision": 2,
+      "sha256": "a85e53735e5cf9cd4c283fa8e35826f864960b04b2e211150896abc97574072d"
+    },
+    {
+      "id": "oge-sintaksis-011",
+      "revision": 1,
+      "sha256": "f856ce7e5a5a093f6c0a5cfea47b3179f05a0bc9ccafc842b47308093ba5603f"
+    },
+    {
+      "id": "oge-sintaksis-012",
+      "revision": 1,
+      "sha256": "aab2a3f88bbe78056e4fe394d543d0ff1c864e02909d32e39f3566b6fbb02e3b"
+    },
+    {
+      "id": "oge-sintaksis-016",
+      "revision": 1,
+      "sha256": "91ef8dfeda89d96155acbaa149f92c4b45579da7740e1114a69b4c2eff025de3"
+    },
+    {
+      "id": "oge-sintaksis-018",
+      "revision": 1,
+      "sha256": "e248d8e3c0857e8e4d2f966274577e212219a9e9557c4edb3ed1a29ec8defd2b"
+    },
+    {
+      "id": "oge-sintaksis-020",
+      "revision": 1,
+      "sha256": "19460d669f99ba9dcd47338915a1fc7c597e6e49f4cabe652f61732f1174eaf4"
+    },
+    {
+      "id": "oge-slovosochetaniya-001",
+      "revision": 2,
+      "sha256": "3a3d04abac4edcc4290d66cf410698ac070abaab8eec169c1de74c79ec91dc14"
+    },
+    {
+      "id": "oge-slovosochetaniya-002",
+      "revision": 2,
+      "sha256": "8b48035079ca6e829df1aa5bf8abb26e6c02ccf1af4eead6cb37c97d5267cdd0"
+    },
+    {
+      "id": "oge-slovosochetaniya-003",
+      "revision": 2,
+      "sha256": "04583fdd36a2dc38293cb0b05da3b676d73700d702bab6487f6b2d57436755db"
+    },
+    {
+      "id": "oge-slovosochetaniya-004",
+      "revision": 2,
+      "sha256": "c5e112a102ebad0d61c2604f48d3dce64e70931e4f77c1d5fa72e146fa962131"
+    },
+    {
+      "id": "oge-slovosochetaniya-005",
+      "revision": 2,
+      "sha256": "f3c2399b1740a088d735073ac16945349c8d70ecd39acf38433e424f7ae6864f"
+    },
+    {
+      "id": "oge-slovosochetaniya-006",
+      "revision": 2,
+      "sha256": "b0dd3289782d86214be973c7bb89072c84b7bd09b2198b5d0466272842c0c2aa"
+    },
+    {
+      "id": "oge-slovosochetaniya-007",
+      "revision": 2,
+      "sha256": "1c4d014f6ecaff4016cfc419bdbe0e8556e484e280224fb65c8ca2ee8a8d2cdf"
+    },
+    {
+      "id": "oge-slovosochetaniya-008",
+      "revision": 2,
+      "sha256": "7fa959818082134918f85831771e2017276dc1b1095dea05632c6c50f60599b6"
+    },
+    {
+      "id": "oge-slovosochetaniya-009",
+      "revision": 2,
+      "sha256": "be9fb45bb3a04010f5d166e0dd0a33be610103e7d5fbd843e9f9c24901595a10"
+    },
+    {
+      "id": "oge-slovosochetaniya-010",
+      "revision": 2,
+      "sha256": "45284f9d48b98a65de1210495f52a4f48fd91ca0eeed940866ba0d4fb33e46df"
+    },
+    {
+      "id": "oge-slovosochetaniya-011",
+      "revision": 1,
+      "sha256": "efbd898a82ba025840310a611c71e42cf03d9af59a9481c330d58b7e2d055aab"
+    },
+    {
+      "id": "oge-slovosochetaniya-012",
+      "revision": 1,
+      "sha256": "0787c249b862bf89190456ea583f6ec9e426093ca8df3beb6e8389fed11ea597"
+    },
+    {
+      "id": "oge-slovosochetaniya-014",
+      "revision": 1,
+      "sha256": "4fb36aef54456006b64e4e63ef5469c68a7b7bf4118d46d92b16536daed61437"
+    },
+    {
+      "id": "oge-slovosochetaniya-048",
+      "revision": 1,
+      "sha256": "1453f84ba02def8ff6b69036545624583c4b5627c9e738bd229ebb480f166ea2"
+    },
+    {
+      "id": "oge-slovosochetaniya-052",
+      "revision": 1,
+      "sha256": "d7ab34b32a9babd4bd99f510af37cba2d05e8d436cb7c92b6e137839fd9fdb88"
+    },
+    {
+      "id": "oge-slovosochetaniya-066",
+      "revision": 1,
+      "sha256": "6c034f9ef2c874f88c3d090184ce44a1fb17967c5c98f78f52b0305b33dc0b46"
+    },
+    {
+      "id": "oge-slovosochetaniya-085",
+      "revision": 1,
+      "sha256": "94b9eddb7f1577932d6ae8aa937b2eaf6f1ce698205b7ca405f2342195254c84"
+    },
+    {
+      "id": "oge-slovosochetaniya-087",
+      "revision": 1,
+      "sha256": "48d63dac2c29bd7e06c405a5e486eadabe1f3fa6a1a4f73eab67d7bd97e14fb9"
+    },
+    {
+      "id": "oge-slovosochetaniya-091",
+      "revision": 1,
+      "sha256": "47872475741b1c25fa441a3a5189b1d9b9df75409a0323e2a53f3125d8233562"
+    },
+    {
+      "id": "oge-slovosochetaniya-099",
+      "revision": 1,
+      "sha256": "c6bd19db6013f0cc5e7d1dd1c172f31b35c64c7c822e06dedcf797efd228282e"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-bench",
+      "revision": 1,
+      "sha256": "c3cd0b07e03d918bdd27094cfad60bc0096201cda9e51e24e6e2ec7ad6e93d08"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-draft",
+      "revision": 1,
+      "sha256": "94f0dd1e377d210d6e32b86a1b8034f9930680fb41fb98c098aa6724477e08d3"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-boat",
+      "revision": 1,
+      "sha256": "0268aa2b778fc3c3bab980a49dd418e5a26b67f5a80c199ab7281d49fe99c818"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-letter",
+      "revision": 1,
+      "sha256": "04f3ab556983484be53980db6374a494df8d8b8a99e172f99bbfebb06072987b"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-rehearsal",
+      "revision": 1,
+      "sha256": "ba08bd467c985b4dee9c74c052d50e88876eb21a81799a69fd0516db99c2f7a1"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-map",
+      "revision": 1,
+      "sha256": "1f1d2228623cfdab336f2c05156db30578bb0f7c33ead02385cba09a1fc066da"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-seed",
+      "revision": 1,
+      "sha256": "79ed8e6b6b5fb5d217bd23906fa38a9716d622286c80e3680720a9e31a69b916"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-bell",
+      "revision": 1,
+      "sha256": "52720775dc4b019c2661703d34685f631995becbd0d72095b79f0569054dcb24"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-race",
+      "revision": 1,
+      "sha256": "18dd2dc8f6649a82301aec83e219ef8d8686088087129243e67ce3efc12d65b3"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-snow",
+      "revision": 1,
+      "sha256": "c319c9a97179bfc35343d11193f9b76c267230fc17aad1d1c1ea638433d2ca83"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-tool",
+      "revision": 1,
+      "sha256": "8114d18da953582e3b78c27ad857b89e4e757e187e8c41a58732f76db217806d"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-library",
+      "revision": 1,
+      "sha256": "2b2690b904beb2d9888cb393f27b3f42baef2951921e8cbc1f02b4062e36cc3b"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-bread",
+      "revision": 1,
+      "sha256": "d3c8fb56e37e559bdc4b671f1e92a69b260ef6af016281fae6fd87db84d9b800"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-repair",
+      "revision": 1,
+      "sha256": "a127f5f7dae07b77fca5953452d6fa98a04f3e94f4a0b83b0984b02ea088c698"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-train",
+      "revision": 1,
+      "sha256": "cae82fc82daefdb6944791904050c8a924958846500f9fec79b1f2e98f623734"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-team",
+      "revision": 1,
+      "sha256": "7b07bc5ea422467119d98eb93f4f5a9809b5420ebd9f94ddfe39554bc04be6d6"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-photo",
+      "revision": 1,
+      "sha256": "80eee9d4f047f050c0ecd72bd0eb7c55a96639edd1cb0a4e16f257abe8ea84aa"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-garden",
+      "revision": 1,
+      "sha256": "ffaad96e2059a56fabd9c7b991dbc579316163df63341eab943c4b69a9e1c510"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-chess",
+      "revision": 1,
+      "sha256": "0421939831cefa04d2bd173efc479eeeab8f61d579278eb18a97c6c63a68d1a6"
+    },
+    {
+      "id": "oge-vyrazitelnost-reading-song",
+      "revision": 1,
+      "sha256": "73b8a3e34531082272a770f20527a4b7ad5a29f3e84aa9ecc07ed52e701db73d"
+    }
+  ]
+}

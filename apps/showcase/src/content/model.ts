@@ -21,6 +21,8 @@ export type Provenance = {
   sourceNumber?: number;
   paragraph?: number;
   pages?: number[];
+  sourceSha256?: string;
+  pageReferences?: { pdfPage: number; printedPage?: number; section: string }[];
   importedAt?: string;
   method:
     | "project-original"
@@ -99,6 +101,15 @@ export type Exercise = Snapshot & {
     rulePath: string;
     errorType: string;
   }[];
+  /** Rule index is zero-based (А=0); position is the correct sentence number. */
+  ruleElements?: {
+    ruleIndex: number;
+    position: number;
+    skillIds: string[];
+    rulePath: string;
+    errorType: string;
+  }[];
+  shortAnswerConstraints?: { requiredWords: string[] };
   rulePaths?: string[];
   originCategory?: "official" | "author-model" | "learning";
   publicationReview?: {

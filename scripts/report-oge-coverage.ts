@@ -7,6 +7,8 @@ import materialsData from "../apps/showcase/src/oge/materials.json";
 import activitiesData from "../apps/showcase/src/oge/activities.json";
 import guidesData from "../apps/showcase/src/oge/writing-guides.json";
 import catalogVersion from "../apps/showcase/src/content/catalog-version.json";
+import workshopsData from "../content/oge-writing-workshops.json";
+import { writingWorkshopPacketSchema } from "../apps/showcase/src/oge/writing-workshop-model";
 import {
   eligible,
   generateVariantMetadata,
@@ -23,7 +25,7 @@ import type {
   InteractiveActivity,
 } from "../apps/showcase/src/oge/model";
 
-const date = "2026-10-13";
+const date = "2026-10-15";
 const materials = { ...materialsData, exercises } as unknown as Materials & {
   variants: ExamVariant[];
 };
@@ -187,7 +189,9 @@ const rows = subskillsData.map((skill) => {
     paragraphExamples,
     paragraphCounterexamples,
     gameSituations: games,
-    gap: positiveIds.size === 0,
+    assessmentKind: skill.line === 1 || skill.line === 13 ? "writing-operations" : "short-answer",
+    shortAnswerApplicable: skill.line !== 1 && skill.line !== 13,
+    gap: skill.line !== 1 && skill.line !== 13 && positiveIds.size === 0,
   };
 });
 
@@ -246,6 +250,38 @@ for (const filename of exerciseFiles) {
   ) as Exercise[];
   shardCount += Math.ceil(collection.length / 20);
 }
+const writingPacket = writingWorkshopPacketSchema.parse(workshopsData);
+if (writingPacket.model.specificationId !== specification.id) throw new Error("Writing workshop model mismatch");
+for (const workshop of writingPacket.workshops) {
+  if (!materials.writing.some((writing) => writing.id === workshop.writingId && writing.revision === workshop.writingRevision && writing.sourceTextId === workshop.sourceTextId && writing.prompts.some((prompt) => prompt.id === workshop.promptId)) || !materials.texts.some((text) => text.id === workshop.sourceTextId && text.revision === workshop.sourceTextRevision)) throw new Error("Stale writing workshop: " + workshop.id);
+}
+const routeCovered = (guide: typeof guidesData.guides[number], promptId: string) => writingPacket.workshops.some((workshop) => workshop.writingId === guide.writingId && workshop.writingRevision === guide.writingRevision && workshop.sourceTextId === guide.sourceTextId && workshop.sourceTextRevision === guide.sourceTextRevision && workshop.promptId === promptId);
+const writingCoverage = {
+  assessmentKind: "writing-operations",
+  source: "content/oge-writing-workshops.json",
+  model: writingPacket.model,
+  teacherApproval: "pending",
+  counts: {
+    operations: writingPacket.operations.length,
+    workshops: writingPacket.workshops.length,
+    coveredWritingAssignments: new Set(writingPacket.workshops.map((workshop) => workshop.writingId)).size,
+    coveredTexts: new Set(writingPacket.workshops.map((workshop) => workshop.sourceTextId)).size,
+    reviewedSamples: writingPacket.workshops.reduce((sum, workshop) => sum + workshop.samples.length, 0),
+    freeResponseMicrotasks: writingPacket.workshops.reduce((sum, workshop) => sum + workshop.microtasks.length, 0),
+    guideRoutes: guidesData.guides.reduce((sum, guide) => sum + guide.routes.length, 0),
+    coveredGuideRoutes: guidesData.guides.reduce((sum, guide) => sum + guide.routes.filter((route) => routeCovered(guide, route.promptId)).length, 0),
+    shortAnswerMetricExcludedSkills: rows.filter((row) => !row.shortAnswerApplicable).length,
+  },
+  operations: writingPacket.operations.map((operation) => {
+    const workshops = writingPacket.workshops.filter((workshop) => workshop.operationIds.includes(operation.id));
+    return { ...operation, workshopIds: workshops.map((workshop) => workshop.id), sourceTextIds: [...new Set(workshops.map((workshop) => workshop.sourceTextId))], freeResponseMicrotasks: workshops.flatMap((workshop) => workshop.microtasks).filter((task) => task.operationId === operation.id).length, criterionScoredSamples: workshops.flatMap((workshop) => workshop.samples).filter((sample) => operation.criteriaCodes.some((code) => sample.contentScores.some((score) => score.code === code))).length };
+  }),
+  criteria: ["ИК1", "ИК2", "ИК3", "СК1", "СК2", "СК3", "СК4"].map((code) => ({ code, scoredSamples: writingPacket.workshops.flatMap((workshop) => workshop.samples).filter((sample) => sample.contentScores.some((score) => score.code === code)).length })),
+  literacyCriteria: { codes: ["ГК1", "ГК2", "ГК3", "ГК4", "ФК1"], scoredSamples: 0, note: "Грамотность и фактическая точность проверяются отдельно; эти содержательные образцы не дают общей оценки ГК/ФК." },
+  remainingRoutes: guidesData.guides.flatMap((guide) => guide.routes.filter((route) => !routeCovered(guide, route.promptId)).map((route) => ({ writingId: guide.writingId, writingRevision: guide.writingRevision, sourceTextId: guide.sourceTextId, promptId: route.promptId }))),
+  limits: "4 узких маршрута и 2 исходных текста не подтверждают полноту курса оценивания. Баллы редакторские; методическое утверждение преподавателем и дополнительные исходные тексты остаются необходимыми. Свободные микрозадачи не получают автоматический зачёт содержания.",
+};
+
 const report = {
   schemaVersion: 1,
   checkedAt: date,
@@ -313,6 +349,7 @@ const report = {
     audio: materials.audio.length,
     fixedVariants: materials.variants.length,
     subskills: rows.length,
+    shortAnswerSubskills: rows.filter((row) => row.shortAnswerApplicable).length,
     zeroPositiveSubskills: rows.filter((row) => row.gap).length,
     exerciseShards: shardCount,
     maxExercisesPerShard: 20,
@@ -343,6 +380,7 @@ const report = {
     kind: activity.kind,
     count: activity.situations.length,
   })),
+  writingCoverage,
   coverage: rows,
 };
 await fs.writeFile(
@@ -368,7 +406,7 @@ const c = report.counts;
 const doc = [
   "# Матрица покрытия ОГЭ",
   "",
-  "Срез: 13 октября 2026 года. Воспроизводимая команда: `npx tsx scripts/report-oge-coverage.ts`; машиночитаемый результат — [oge-coverage.json](oge-coverage.json). Источники: текущий registry, library, subskills, materials, activities, writing-guides и фактические функции eligible / validateVariant движка.",
+  "Срез: 15 октября 2026 года. Воспроизводимая команда: `npx tsx scripts/report-oge-coverage.ts`; машиночитаемый результат — [oge-coverage.json](oge-coverage.json). Источники: текущий registry, library, subskills, materials, activities, writing-guides, oge-writing-workshops и фактические функции eligible / validateVariant движка.",
   "",
   "Матрица описывает доступные редакции и разметку проекта. Она не удостоверяет полноту подготовки к ОГЭ, не является независимым утверждением каждого ключа и не превращает проектные ID навыков в официальные коды ФИПИ. Экзаменационная модель: " +
     specification.id +
@@ -494,7 +532,7 @@ const doc = [
     c.classificationDraft +
     " размеченных карточек имеют статус editorial-draft; даже выбранные позиции требуют предметной сверки самих меток.",
   "",
-  "Коды ниже — внутренние ID проекта. «Параграф» проверяет существование указанного якоря; наличие якоря не доказывает достаточности объяснения. Игры учитываются только при явном skillIds ситуации. Письменные задания пока не имеют собственной разметки этими поднавыками и поэтому не прибавляются к числам тестовых карточек.",
+  "Коды ниже — внутренние ID проекта. «Параграф» проверяет существование указанного якоря; наличие якоря не доказывает достаточности объяснения. Игры учитываются только при явном skillIds ситуации. Для №1/13 счётчик коротких карточек неприменим: письмо имеет отдельную модель операций, исходных текстов, образцов и критериев ниже.",
   "",
   table(
     [
@@ -509,27 +547,33 @@ const doc = [
     ],
     rows.map((row) => [
       row.id + " — " + row.title,
-      row.annotatedExercises,
-      row.selectedPositions,
-      row.distractorPositions,
-      row.directShortAnswers,
+      row.shortAnswerApplicable ? row.annotatedExercises : "неприменимо",
+      row.shortAnswerApplicable ? row.selectedPositions : "неприменимо",
+      row.shortAnswerApplicable ? row.distractorPositions : "неприменимо",
+      row.shortAnswerApplicable ? row.directShortAnswers : "неприменимо",
       row.paragraphExists ? "[есть](" + row.rulePath + ")" : "нет якоря",
       row.gameSituations,
-      row.gap
-        ? row.line === 1 || row.line === 13
-          ? "письмо без разметки"
-          : "0 размеченных положительных карточек"
-        : "черновая разметка",
+      !row.shortAnswerApplicable ? "отдельная метрика письма" : row.gap ? "0 размеченных положительных карточек" : "черновая разметка",
     ]),
   ),
   "",
+  "## Письменные операции и критерии",
+  "",
+  "Письмо имеет отдельную метрику: " + writingCoverage.counts.operations + " операций; " + writingCoverage.counts.workshops + " оценённых маршрута на " + writingCoverage.counts.coveredTexts + " исходных текстах; " + writingCoverage.counts.reviewedSamples + " редакторски оценённых образцов и " + writingCoverage.counts.freeResponseMicrotasks + " свободных микрозадач. Подробная схема — [Письменные операции ОГЭ](ПИСЬМЕННЫЕ_ОПЕРАЦИИ_ОГЭ.md).",
+  "",
+  table(["Письменная операция", "Критерии", "Исходных текстов", "Свободных действий", "Образцов по критериям"], writingCoverage.operations.map((operation) => [operation.title, operation.criteriaCodes.join(", "), operation.sourceTextIds.length, operation.freeResponseMicrotasks, operation.criterionScoredSamples])),
+  "",
+  "Содержательные ИК/СК представлены адресными оценками. ГК/ФК здесь не оценивались; общий итог экзамена не выводится. Редакторский статус не является утверждением преподавателя.",
+  "",
+  "Покрыто " + writingCoverage.counts.coveredGuideRoutes + " из " + writingCoverage.counts.guideRoutes + " текущих маршрутов. Для остальных " + writingCoverage.remainingRoutes.length + " маршрутов прежние сильные/слабые версии не получили автоматически приписанных баллов. Полнота курса оценивания не заявляется.",
+  "",
   "## Непокрытые и неподтверждённые области",
   "",
-  "Нулевой счётчик размеченных положительных карточек у " +
+  "Нулевой счётчик размеченных положительных карточек среди применимых к коротким ответам навыков у " +
     c.zeroPositiveSubskills +
     " из " +
-    c.subskills +
-    " поднавыков:",
+    c.shortAnswerSubskills +
+    " поднавыков. Пять письменных навыков исключены из этой метрики; их операции показаны отдельно:",
   "",
   ...rows
     .filter((row) => row.gap)

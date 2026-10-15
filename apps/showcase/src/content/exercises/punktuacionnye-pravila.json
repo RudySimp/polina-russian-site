@@ -115,10 +115,8 @@
     "skillIds": [
       "OGE:punctuation.matching",
       "OGE:4.asyndetic-dash",
-      "OGE:4.subject-dash",
-      "OGE:4.detached",
-      "OGE:4.homogeneous",
-      "OGE:4.comparative"
+      "OGE:4.comparative",
+      "OGE:4.subject-dash"
     ],
     "elements": [
       {
@@ -131,19 +129,17 @@
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.subject-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-        "errorType": "subject-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [
-          "OGE:4.detached"
+          "OGE:4.comparative"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-        "errorType": "detached"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+        "errorType": "comparative"
       },
       {
         "position": 4,
@@ -155,21 +151,48 @@
       },
       {
         "position": 5,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
       "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.comparative"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+        "errorType": "comparative"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-002",
@@ -286,53 +309,85 @@
     "subtopic": "У обращения нет связи со сказуемым; в неполной части восстановите повторяющееся слово.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.homogeneous",
-      "OGE:4.subject-dash"
+      "OGE:4.coordinate",
+      "OGE:4.address",
+      "OGE:4.ellipsis"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
-        "skillIds": [
-          "OGE:4.subject-dash",
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-        "errorType": "subject-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 4,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.ellipsis"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+        "errorType": "ellipsis"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.ellipsis"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+        "errorType": "ellipsis"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-003",
@@ -449,7 +504,7 @@
     "subtopic": "Различайте простое перечисление, причину и результат. Подставьте «потому что» и «поэтому».",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.detached",
+      "OGE:4.asyndetic-comma",
       "OGE:4.asyndetic-colon",
       "OGE:4.asyndetic-dash"
     ],
@@ -457,22 +512,22 @@
       {
         "position": 1,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.detached"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-        "errorType": "detached"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-comma"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "asyndetic-comma"
       },
       {
         "position": 4,
@@ -492,12 +547,41 @@
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
       "/theory/punktuacionnye-pravila/?exam=OGE#complex"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-comma"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "asyndetic-comma"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-004",
@@ -615,7 +699,8 @@
     "skillIds": [
       "OGE:punctuation.matching",
       "OGE:4.detached",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.clarification",
+      "OGE:4.direct-speech"
     ],
     "elements": [
       {
@@ -629,42 +714,69 @@
       {
         "position": 2,
         "skillIds": [
-          "OGE:4.detached"
+          "OGE:4.clarification"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-        "errorType": "detached"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
       },
       {
         "position": 3,
         "skillIds": [
-          "OGE:4.asyndetic-colon"
+          "OGE:4.direct-speech"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
       },
       {
         "position": 4,
-        "skillIds": [
-          "OGE:4.asyndetic-colon"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
+      }
+    ],
+    "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+      "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match"
+    ],
+    "originCategory": "author-model",
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
         "skillIds": [
           "OGE:4.detached"
         ],
         "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
         "errorType": "detached"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.clarification"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
       }
-    ],
-    "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
-    ],
-    "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-005",
@@ -782,12 +894,18 @@
     "skillIds": [
       "OGE:punctuation.matching",
       "OGE:4.detached",
-      "OGE:4.homogeneous",
+      "OGE:4.apposition",
       "OGE:4.asyndetic-colon"
     ],
     "elements": [
       {
         "position": 1,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 2,
         "skillIds": [
           "OGE:4.detached"
         ],
@@ -795,24 +913,18 @@
         "errorType": "detached"
       },
       {
-        "position": 2,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
-      },
-      {
         "position": 3,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 4,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.apposition"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "apposition"
       },
       {
         "position": 5,
@@ -824,13 +936,42 @@
       }
     ],
     "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
       "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
       "/theory/punktuacionnye-pravila/?exam=OGE#complex"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.apposition"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "apposition"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-006",
@@ -947,55 +1088,85 @@
     "subtopic": "Посмотрите, где стоит обобщающее слово. В условной части мысленно добавьте «если».",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-colon",
-      "OGE:4.homogeneous"
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.direct-speech"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [
-          "OGE:4.asyndetic-colon",
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
       },
       {
         "position": 2,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
       },
       {
         "position": 3,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 4,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
       }
     ],
     "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
       "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-007",
@@ -1112,20 +1283,23 @@
     "subtopic": "Не смешивайте обращение с вводным сочетанием. У повторяющегося союза каждый член получает свою часть союза.",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.address",
       "OGE:4.homogeneous",
       "OGE:4.subject-dash"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
       },
       {
         "position": 2,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -1133,7 +1307,7 @@
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
@@ -1147,17 +1321,47 @@
       {
         "position": 5,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
       "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-008",
@@ -1274,24 +1478,22 @@
     "subtopic": "Найдите перечень после общего названия, оценку вероятности и противопоставленные события.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.homogeneous",
       "OGE:4.asyndetic-dash",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.homogeneous",
+      "OGE:4.introductory"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
@@ -1304,26 +1506,57 @@
       {
         "position": 4,
         "skillIds": [
-          "OGE:4.asyndetic-colon",
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.introductory"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "introductory"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.introductory"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "introductory"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-009",
@@ -1440,12 +1673,21 @@
     "subtopic": "После глагола восприятия можно подставить «что»; приложение называет то же лицо; уступка допускает «хотя».",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.apposition",
       "OGE:4.detached",
-      "OGE:4.asyndetic-dash"
+      "OGE:4.asyndetic-colon"
     ],
     "elements": [
       {
         "position": 1,
+        "skillIds": [
+          "OGE:4.apposition"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "apposition"
+      },
+      {
+        "position": 2,
         "skillIds": [
           "OGE:4.detached"
         ],
@@ -1453,39 +1695,63 @@
         "errorType": "detached"
       },
       {
-        "position": 2,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
-      },
-      {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 4,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
       },
       {
         "position": 5,
-        "skillIds": [
-          "OGE:4.asyndetic-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
       "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
       "/theory/punktuacionnye-pravila/?exam=OGE#complex"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.apposition"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "apposition"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-010",
@@ -1602,26 +1868,29 @@
     "subtopic": "Причастный оборот описывает предмет; вставка сообщает попутное замечание; сравнение уподобляет один предмет другому.",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.insertion",
       "OGE:4.comparative",
       "OGE:4.detached"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.insertion"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "insertion"
       },
       {
         "position": 2,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -1629,7 +1898,7 @@
         "skillIds": [
           "OGE:4.comparative"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
         "errorType": "comparative"
       },
       {
@@ -1642,12 +1911,42 @@
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
       "/theory/punktuacionnye-pravila/?exam=OGE#detached"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.insertion"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "insertion"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.comparative"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+        "errorType": "comparative"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-011",
@@ -1765,8 +2064,8 @@
     "skillIds": [
       "OGE:punctuation.matching",
       "OGE:4.detached",
-      "OGE:4.homogeneous",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.asyndetic-colon",
+      "OGE:4.ellipsis"
     ],
     "elements": [
       {
@@ -1779,41 +2078,70 @@
       },
       {
         "position": 2,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
       },
       {
         "position": 3,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
-      },
-      {
-        "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
-        "position": 5,
+        "position": 4,
         "skillIds": [
-          "OGE:4.homogeneous"
+          "OGE:4.ellipsis"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+        "errorType": "ellipsis"
+      },
+      {
+        "position": 5,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
       "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.ellipsis"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#ellipsis-dash",
+        "errorType": "ellipsis"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-012",
@@ -1930,19 +2258,18 @@
     "subtopic": "Причина отвечает на «почему?», уточнение — на «когда именно?», результат допускает «поэтому».",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.detached",
+      "OGE:4.clarification",
       "OGE:4.asyndetic-colon",
-      "OGE:4.subject-dash",
       "OGE:4.asyndetic-dash"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [
-          "OGE:4.detached"
+          "OGE:4.clarification"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-        "errorType": "detached"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
       },
       {
         "position": 2,
@@ -1954,33 +2281,61 @@
       },
       {
         "position": 3,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
       },
       {
         "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [
-          "OGE:4.subject-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-        "errorType": "subject-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
       "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.clarification"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-013",
@@ -2097,23 +2452,21 @@
     "subtopic": "У придаточной части есть своя основа. У деепричастного оборота своего подлежащего нет.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-colon",
       "OGE:4.detached",
+      "OGE:4.subordinate",
       "OGE:4.homogeneous"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [
-          "OGE:4.asyndetic-colon"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 2,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -2127,28 +2480,57 @@
       {
         "position": 4,
         "skillIds": [
-          "OGE:4.asyndetic-colon"
+          "OGE:4.subordinate"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "subordinate"
       },
       {
         "position": 5,
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
       "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.subordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "subordinate"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-014",
@@ -2267,13 +2649,13 @@
       "OGE:punctuation.matching",
       "OGE:4.comparative",
       "OGE:4.detached",
-      "OGE:4.homogeneous"
+      "OGE:4.subject-dash"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -2281,7 +2663,7 @@
         "skillIds": [
           "OGE:4.comparative"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
         "errorType": "comparative"
       },
       {
@@ -2294,26 +2676,56 @@
       },
       {
         "position": 4,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.comparative"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#comparative-turn",
+        "errorType": "comparative"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-015",
@@ -2430,50 +2842,85 @@
     "subtopic": "Союз «если» обозначает зависимую часть; глагол «увидел» предупреждает о содержании сообщения.",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.subordinate",
+      "OGE:4.asyndetic-colon",
       "OGE:4.detached"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [
-          "OGE:4.detached"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-        "errorType": "detached"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 2,
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
+      },
+      {
+        "position": 3,
+        "skillIds": [
+          "OGE:4.subordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "subordinate"
+      },
+      {
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "position": 5,
         "skillIds": [
           "OGE:4.detached"
         ],
         "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
         "errorType": "detached"
-      },
-      {
-        "position": 3,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
-      },
-      {
-        "position": 4,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
-      },
-      {
-        "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.subordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "subordinate"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-016",
@@ -2590,7 +3037,9 @@
     "subtopic": "Сначала отделите вставное замечание. У оставшихся сложных предложений установите причину и следствие.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.asyndetic-colon",
+      "OGE:4.insertion",
+      "OGE:4.asyndetic-dash"
     ],
     "elements": [
       {
@@ -2604,34 +3053,68 @@
       {
         "position": 2,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 3,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.insertion"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "insertion"
       },
       {
         "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
       }
     ],
     "rulePaths": [
       "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.insertion"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "insertion"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-017",
@@ -2748,51 +3231,85 @@
     "subtopic": "Вычисление выражено числовым сочетанием. Затем найдите слова автора перед кавычками и оценку уверенности.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-dash",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.subject-dash",
+      "OGE:4.introductory",
+      "OGE:4.direct-speech"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.asyndetic-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 4,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.introductory"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "introductory"
       },
       {
         "position": 5,
         "skillIds": [
-          "OGE:4.asyndetic-colon"
+          "OGE:4.direct-speech"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.introductory"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "introductory"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-018",
@@ -2909,26 +3426,28 @@
     "subtopic": "Не путайте пояснение одного сообщения с перечнем однородных членов. У двойного союза найдите обе части.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.homogeneous",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.coordinate",
+      "OGE:4.homogeneous"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
       },
       {
         "position": 2,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -2936,26 +3455,54 @@
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
         "position": 5,
         "skillIds": [
-          "OGE:4.asyndetic-colon",
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-019",
@@ -3073,7 +3620,6 @@
     "skillIds": [
       "OGE:punctuation.matching",
       "OGE:4.homogeneous",
-      "OGE:4.subject-dash",
       "OGE:4.detached"
     ],
     "elements": [
@@ -3082,23 +3628,21 @@
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.subject-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-        "errorType": "subject-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
@@ -3112,18 +3656,46 @@
       {
         "position": 5,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
-      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm"
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-020",
@@ -3240,13 +3812,15 @@
     "subtopic": "Обобщение после перечня требует отдельного внимания. В бессоюзном предложении найдите две самостоятельные основы.",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.homogeneous"
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-comma",
+      "OGE:4.detached"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -3254,34 +3828,69 @@
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
         "position": 3,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-comma"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "asyndetic-comma"
       },
       {
         "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.asyndetic-comma"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "asyndetic-comma"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-021",
@@ -3409,52 +4018,85 @@
     "subtopic": "БСП: изъяснение; Обобщающее слово после ряда; ССП без общего члена",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-dash",
-      "OGE:4.homogeneous"
+      "OGE:4.coordinate",
+      "OGE:4.homogeneous",
+      "OGE:4.asyndetic-colon"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.asyndetic-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
         "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.asyndetic-colon"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-colon"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 3,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.coordinate"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex-boundaries",
+        "errorType": "coordinate"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-022",
@@ -3582,26 +4224,29 @@
     "subtopic": "Прямая речь после автора; Уточнение места; Деепричастный оборот",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.clarification",
       "OGE:4.detached",
-      "OGE:4.asyndetic-colon"
+      "OGE:4.direct-speech"
     ],
     "elements": [
       {
         "position": 1,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
         "position": 2,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.clarification"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
       },
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -3615,19 +4260,49 @@
       {
         "position": 5,
         "skillIds": [
-          "OGE:4.asyndetic-colon"
+          "OGE:4.direct-speech"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-colon"
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
       "/theory/punktuacionnye-pravila/?exam=OGE#detached",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.direct-speech"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#direct-speech",
+        "errorType": "direct-speech"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.clarification"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#clarification-insertion",
+        "errorType": "clarification"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-023",
@@ -3755,27 +4430,29 @@
     "subtopic": "Обращение; Тире между инфинитивами; Следствие в БСП",
     "skillIds": [
       "OGE:punctuation.matching",
-      "OGE:4.asyndetic-dash"
+      "OGE:4.address",
+      "OGE:4.asyndetic-dash",
+      "OGE:4.subject-dash"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
       },
       {
         "position": 2,
-        "skillIds": [
-          "OGE:4.asyndetic-dash"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
-        "errorType": "asyndetic-dash"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 3,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -3788,17 +4465,50 @@
       },
       {
         "position": 5,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#complex"
+      "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match",
+      "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+      "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.address"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#introductory-address",
+        "errorType": "address"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.subject-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#dash-conditions",
+        "errorType": "subject-dash"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 4,
+        "skillIds": [
+          "OGE:4.asyndetic-dash"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#complex",
+        "errorType": "asyndetic-dash"
+      }
+    ]
   },
   {
     "id": "oge-punktuacionnye-pravila-024",
@@ -3926,35 +4636,36 @@
     "subtopic": "Бессоюзный однородный ряд; Повторяющийся и; Несмотря на",
     "skillIds": [
       "OGE:punctuation.matching",
+      "OGE:4.detached",
       "OGE:4.homogeneous"
     ],
     "elements": [
       {
         "position": 1,
-        "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-        "errorType": "rule-identification"
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
       },
       {
         "position": 2,
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       },
       {
         "position": 3,
-        "skillIds": [
-          "OGE:4.homogeneous"
-        ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
-        "errorType": "homogeneous"
+        "skillIds": [],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
+        "errorType": "rule-identification"
       },
       {
         "position": 4,
         "skillIds": [],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#match",
         "errorType": "rule-identification"
       },
       {
@@ -3962,15 +4673,45 @@
         "skillIds": [
           "OGE:4.homogeneous"
         ],
-        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#simple",
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
         "errorType": "homogeneous"
       }
     ],
     "rulePaths": [
-      "/theory/punktuacionnye-pravila/?exam=OGE#algorithm",
-      "/theory/punktuacionnye-pravila/?exam=OGE#simple"
+      "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+      "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+      "/theory/punktuacionnye-pravila/?exam=OGE#match"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "ruleElements": [
+      {
+        "ruleIndex": 0,
+        "position": 2,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 1,
+        "position": 5,
+        "skillIds": [
+          "OGE:4.homogeneous"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#homogeneous-signs",
+        "errorType": "homogeneous"
+      },
+      {
+        "ruleIndex": 2,
+        "position": 1,
+        "skillIds": [
+          "OGE:4.detached"
+        ],
+        "rulePath": "/theory/punktuacionnye-pravila/?exam=OGE#detached",
+        "errorType": "detached"
+      }
+    ]
   }
 ]
