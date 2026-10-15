@@ -1,3 +1,7 @@
+import {
+  theoryCatalogReturn,
+  withTheoryOrigin,
+} from "../lib/theory-navigation";
 import { use } from "react";
 import { courseModules, modulePath } from "../content/course";
 import { courseModuleFor } from "../content/course-load";
@@ -18,6 +22,10 @@ export function ModulePage({ id }: { id: string }) {
   if (!entry) return <NotFoundPage />;
   const content = use(courseModuleFor(id));
   const topic = topics.find((t) => t.id === entry.topicId)!;
+  const returnTo = theoryCatalogReturn(
+    new URLSearchParams(window.location.search).get("from"),
+    "/oge/theory/",
+  );
   const candidates = exerciseIndex.filter(
     (e) =>
       e.exam === "OGE" &&
@@ -35,7 +43,7 @@ export function ModulePage({ id }: { id: string }) {
       <Breadcrumbs
         items={[
           { label: "ОГЭ", path: "/oge/" },
-          { label: "Теория", path: "/oge/theory/" },
+          { label: "Теория", path: returnTo },
           { label: topic.title, path: "/oge/theory/?topic=" + topic.id },
           { label: entry.title },
         ]}
@@ -51,14 +59,18 @@ export function ModulePage({ id }: { id: string }) {
       />
       <div className="lesson-meta">
         <Badge>Учебная редакция</Badge>
+        <a href={href(returnTo)}>Вернуться к каталогу</a>
         <a
           href={href(
-            "/theory/" +
-              topic.slug +
-              "/?exam=OGE" +
-              (entry.kind === "chapter-sections"
-                ? "#" + entry.sectionIds[0]
-                : ""),
+            withTheoryOrigin(
+              "/theory/" +
+                topic.slug +
+                "/?exam=OGE" +
+                (entry.kind === "chapter-sections"
+                  ? "#" + entry.sectionIds[0]
+                  : ""),
+              returnTo,
+            ),
           )}
         >
           Полная глава
@@ -74,12 +86,14 @@ export function ModulePage({ id }: { id: string }) {
             <ul>
               {prerequisites.map((m) => (
                 <li key={m.id}>
-                  <a href={href(modulePath(m.id))}>{m.title}</a> — {m.outcome}
+                  <a href={href(modulePath(m.id, returnTo))}>{m.title}</a>
                 </li>
               ))}
               {entry.prerequisitePaths.map((p) => (
                 <li key={p.route}>
-                  <a href={href(p.route)}>{p.title}</a>
+                  <a href={href(withTheoryOrigin(p.route, returnTo))}>
+                    {p.title}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -190,7 +204,7 @@ export function ModulePage({ id }: { id: string }) {
       </article>
       <nav className="course-next" aria-label="Следующий учебный шаг">
         {next.map((m) => (
-          <LinkButton key={m.id} to={modulePath(m.id)} secondary>
+          <LinkButton key={m.id} to={modulePath(m.id, returnTo)} secondary>
             Далее: {m.title}
           </LinkButton>
         ))}

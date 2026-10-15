@@ -14,15 +14,15 @@
     "files": 12,
     "physicalPages": 174,
     "textInspectedPages": 174,
-    "visualInspectedPages": 92,
+    "visualInspectedPages": 97,
     "mappedPages": 173,
     "transferredPages": 0,
     "projectSourceMicrotopics": 92,
     "officialCodifierCoverageConfirmed": false,
-    "originalWebModules": 8,
-    "microtopicsWithScopedTransfers": 19,
-    "sourcePagesWithScopedTransfers": 26,
-    "scopeNote": "8 авторских модулей относятся к 19 микротемам; полнота этих микротем и целых страниц не подтверждена. Ранее проверенные 174 текстовых/92 визуальных страниц повторно не засчитывались."
+    "originalWebModules": 12,
+    "microtopicsWithScopedTransfers": 23,
+    "sourcePagesWithScopedTransfers": 30,
+    "scopeNote": "12 авторских модулей относятся к 23 микротемам; полнота этих микротем и целых страниц не подтверждена. Просмотрены пять новых графических страниц; повторные чтения не прибавляются к охвату."
   },
   "microtopicClassification": "Проектная декомпозиция изученных PDF, не официальный кодификатор и не показатель полной практики.",
   "modelDocuments": "Модель/критерии сверяются отдельно по ФИПИ, не устанавливаются этими теоретическими PDF.",
@@ -33,11 +33,11 @@
       "path": "ЗАДАНИЯ ОГЭ И ЕГЭ/9 Задание. Теория в таблицах.pdf",
       "sha256": "22a3bc45d5c234759ec5ccb55c8dd0ad355d7e78dbb8294d7e2863f3b462c78f",
       "hashVerifiedAt": "2026-10-15",
-      "originalExam": "EGE",
+      "originalExam": "unknown",
       "sourceTaskNumbers": [
         9
       ],
-      "sourceExamEvidence": "Номер/модель рядов ЕГЭ подтверждены пользовательским заданием и содержанием, не названием папки.",
+      "sourceExamEvidence": "В просмотренных таблицах экзамен явно не подписан. Исходный номер сохранён из заголовка; структура соответствует темам орфографии, а назначение ОГЭ 6–7/ГК1 определено отдельно по содержанию.",
       "sourceYear": null,
       "sourceYearNote": "Каталог содержит 2027, год публикации этой теории на изученных страницах не установлен.",
       "type": "reference-tables",
@@ -223,8 +223,8 @@
         },
         {
           "physicalPage": 4,
-          "printedPage": null,
-          "printedPageNote": "Печатный номер не установлен; физический номер не подменяет его.",
+          "printedPage": 3,
+          "printedPageNote": "Печатная цифра 3 непосредственно видна вверху оригинала физической страницы 4; независимо сверена 15.10.2026.",
           "textLayerCharacters": 1851,
           "textLayerSha256": "e8c1a5ef04045287a3f20ca174f394612301e9ceb0206718259f1bb1b5930020",
           "textInspection": {
@@ -274,8 +274,32 @@
           ],
           "sourceProblemIds": [],
           "stage": "mapped",
-          "transferredTo": [],
-          "exclusions": []
+          "transferredTo": [
+            {
+              "moduleId": "ortho-root-im-in",
+              "lessonId": "lesson-module-ortho-root-im-in",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-root-im-in/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Узнавать чередование в проверенных парах инфинитивов и не подменять его проверкой ударением или механическим правилом для каждой личной формы.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "root-im-in"
+              ]
+            }
+          ],
+          "exclusions": [],
+          "scopedTransferStage": "transferred",
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 5,
@@ -560,11 +584,11 @@
       "path": "ЗАДАНИЯ ОГЭ И ЕГЭ/10 задание. Теория в таблицах.pdf",
       "sha256": "5760816d047c4226b7b46a2c36e8fd2744f9f7563870b1b922e30f4cc800a0c5",
       "hashVerifiedAt": "2026-10-15",
-      "originalExam": "EGE",
+      "originalExam": "unknown",
       "sourceTaskNumbers": [
         10
       ],
-      "sourceExamEvidence": "Номер/модель рядов ЕГЭ подтверждены пользовательским заданием и содержанием, не названием папки.",
+      "sourceExamEvidence": "В просмотренных таблицах экзамен явно не подписан. Исходный номер сохранён из заголовка; структура соответствует темам орфографии, а назначение ОГЭ 6–7/ГК1 определено отдельно по содержанию.",
       "sourceYear": null,
       "sourceYearNote": "Каталог содержит 2027, год публикации этой теории на изученных страницах не установлен.",
       "type": "reference-tables",
@@ -770,11 +794,11 @@
       "path": "ЗАДАНИЯ ОГЭ И ЕГЭ/11 задание. Теория в таблицах.pdf",
       "sha256": "131b1895ad518e073a802c621d81829629b20d4ae02b930ce6e26e6ede949914",
       "hashVerifiedAt": "2026-10-15",
-      "originalExam": "EGE",
+      "originalExam": "unknown",
       "sourceTaskNumbers": [
         11
       ],
-      "sourceExamEvidence": "Номер/модель рядов ЕГЭ подтверждены пользовательским заданием и содержанием, не названием папки.",
+      "sourceExamEvidence": "В просмотренных таблицах экзамен явно не подписан. Исходный номер сохранён из заголовка; структура соответствует темам орфографии, а назначение ОГЭ 6–7/ГК1 определено отдельно по содержанию.",
       "sourceYear": null,
       "sourceYearNote": "Каталог содержит 2027, год публикации этой теории на изученных страницах не установлен.",
       "type": "reference-tables",
@@ -1067,11 +1091,32 @@
               "microtopicIds": [
                 "suffix-verb"
               ]
+            },
+            {
+              "moduleId": "ortho-transitivity-e-i",
+              "lessonId": "lesson-module-ortho-transitivity-e-i",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-transitivity-e-i/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Различать Е/И в конкретных словарных парах со значением изменения состояния и воздействия; не применять правило ко всем глаголам.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "suffix-transitivity"
+              ]
             }
           ],
           "exclusions": [],
           "scopedTransferStage": "transferred",
-          "scopeNote": "Перенесён только обозначенный авторский учебный модуль. Стадия страницы остаётся mapped: полнота всех примеров, исключений и подпунктов PDF не утверждена."
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 4,
@@ -1116,11 +1161,11 @@
       "path": "ЗАДАНИЯ ОГЭ И ЕГЭ/12 задание. Теория в таблицах.pdf",
       "sha256": "debdd6457f42451cc8d77b41f7e5fa5c9c1789ecf39db2a0f39a35596e4c442c",
       "hashVerifiedAt": "2026-10-15",
-      "originalExam": "EGE",
+      "originalExam": "unknown",
       "sourceTaskNumbers": [
         12
       ],
-      "sourceExamEvidence": "Номер/модель рядов ЕГЭ подтверждены пользовательским заданием и содержанием, не названием папки.",
+      "sourceExamEvidence": "В просмотренных таблицах экзамен явно не подписан. Исходный номер сохранён из заголовка; структура соответствует темам орфографии, а назначение ОГЭ 6–7/ГК1 определено отдельно по содержанию.",
       "sourceYear": null,
       "sourceYearNote": "Каталог содержит 2027, год публикации этой теории на изученных страницах не установлен.",
       "type": "reference-tables",
@@ -6492,7 +6537,13 @@
             "at": "2026-10-15",
             "note": "Прочитан полный слой, не только preview реестра."
           },
-          "visualInspection": null,
+          "visualInspection": {
+            "stage": "visual-inspected",
+            "by": "Codex root",
+            "at": "2026-10-15",
+            "method": "pdfjs-original-render",
+            "artifact": "artifacts/theory-next-review-2026-10-15/page-27.png"
+          },
           "headings": [
             "Чередование по значению",
             "Чередование а/я — им/ин",
@@ -6517,8 +6568,32 @@
           ],
           "sourceProblemIds": [],
           "stage": "mapped",
-          "transferredTo": [],
-          "exclusions": []
+          "transferredTo": [
+            {
+              "moduleId": "ortho-root-im-in",
+              "lessonId": "lesson-module-ortho-root-im-in",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-root-im-in/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Узнавать чередование в проверенных парах инфинитивов и не подменять его проверкой ударением или механическим правилом для каждой личной формы.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "root-im-in"
+              ]
+            }
+          ],
+          "exclusions": [],
+          "scopedTransferStage": "transferred",
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 28,
@@ -6677,7 +6752,13 @@
             "at": "2026-10-15",
             "note": "Прочитан полный слой, не только preview реестра."
           },
-          "visualInspection": null,
+          "visualInspection": {
+            "stage": "visual-inspected",
+            "by": "Codex root",
+            "at": "2026-10-15",
+            "method": "pdfjs-original-render",
+            "artifact": "artifacts/theory-next-review-2026-10-15/page-30.png"
+          },
           "headings": [
             "Суффиксы е/и и переходность",
             "Конечные гласные наречий"
@@ -6706,7 +6787,9 @@
             "spelling-transitivity",
             "spelling-adverb-suffixes"
           ],
-          "sourceProblemIds": [],
+          "sourceProblemIds": [
+            "transitivity-overgeneralization"
+          ],
           "stage": "mapped",
           "transferredTo": [
             {
@@ -6729,11 +6812,32 @@
               "microtopicIds": [
                 "suffix-adverb"
               ]
+            },
+            {
+              "moduleId": "ortho-transitivity-e-i",
+              "lessonId": "lesson-module-ortho-transitivity-e-i",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-transitivity-e-i/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Различать Е/И в конкретных словарных парах со значением изменения состояния и воздействия; не применять правило ко всем глаголам.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "suffix-transitivity"
+              ]
             }
           ],
           "exclusions": [],
           "scopedTransferStage": "transferred",
-          "scopeNote": "Перенесён только обозначенный авторский учебный модуль. Стадия страницы остаётся mapped: полнота всех примеров, исключений и подпунктов PDF не утверждена."
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 31,
@@ -6904,7 +7008,13 @@
             "at": "2026-10-15",
             "note": "Прочитан полный слой, не только preview реестра."
           },
-          "visualInspection": null,
+          "visualInspection": {
+            "stage": "visual-inspected",
+            "by": "Codex root",
+            "at": "2026-10-15",
+            "method": "pdfjs-original-render",
+            "artifact": "artifacts/theory-next-review-2026-10-15/page-33.png"
+          },
           "headings": [
             "Суффиксы существительных",
             "Предлог и сочетание с существительным"
@@ -6935,8 +7045,32 @@
           ],
           "sourceProblemIds": [],
           "stage": "mapped",
-          "transferredTo": [],
-          "exclusions": []
+          "transferredTo": [
+            {
+              "moduleId": "ortho-derived-prepositions",
+              "lessonId": "lesson-module-ortho-derived-prepositions",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-derived-prepositions/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Выбирать Е/И по смыслу и синтаксической роли сочетания; различать уступительное несмотря на и действие не смотря.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "derived-prepositions"
+              ]
+            }
+          ],
+          "exclusions": [],
+          "scopedTransferStage": "transferred",
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 34,
@@ -6950,7 +7084,13 @@
             "at": "2026-10-15",
             "note": "Прочитан полный слой, не только preview реестра."
           },
-          "visualInspection": null,
+          "visualInspection": {
+            "stage": "visual-inspected",
+            "by": "Codex root",
+            "at": "2026-10-15",
+            "method": "pdfjs-original-render",
+            "artifact": "artifacts/theory-next-review-2026-10-15/page-34.png"
+          },
           "headings": [
             "Предлог и сочетание с существительным"
           ],
@@ -6971,8 +7111,32 @@
           ],
           "sourceProblemIds": [],
           "stage": "mapped",
-          "transferredTo": [],
-          "exclusions": []
+          "transferredTo": [
+            {
+              "moduleId": "ortho-derived-prepositions",
+              "lessonId": "lesson-module-ortho-derived-prepositions",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-derived-prepositions/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Выбирать Е/И по смыслу и синтаксической роли сочетания; различать уступительное несмотря на и действие не смотря.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "derived-prepositions"
+              ]
+            }
+          ],
+          "exclusions": [],
+          "scopedTransferStage": "transferred",
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 35,
@@ -6986,7 +7150,13 @@
             "at": "2026-10-15",
             "note": "Прочитан полный слой, не только preview реестра."
           },
-          "visualInspection": null,
+          "visualInspection": {
+            "stage": "visual-inspected",
+            "by": "Codex root",
+            "at": "2026-10-15",
+            "method": "pdfjs-original-render",
+            "artifact": "artifacts/theory-next-review-2026-10-15/page-35.png"
+          },
           "headings": [
             "Предлог и сочетание с существительным",
             "Дефис наречий и местоимений"
@@ -7030,11 +7200,32 @@
               "microtopicIds": [
                 "hyphen-adverb"
               ]
+            },
+            {
+              "moduleId": "ortho-derived-prepositions",
+              "lessonId": "lesson-module-ortho-derived-prepositions",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-derived-prepositions/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Выбирать Е/И по смыслу и синтаксической роли сочетания; различать уступительное несмотря на и действие не смотря.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "derived-prepositions"
+              ]
             }
           ],
           "exclusions": [],
           "scopedTransferStage": "transferred",
-          "scopeNote": "Перенесён только обозначенный авторский учебный модуль. Стадия страницы остаётся mapped: полнота всех примеров, исключений и подпунктов PDF не утверждена."
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 36,
@@ -7101,11 +7292,32 @@
               "microtopicIds": [
                 "hyphen-adverb"
               ]
+            },
+            {
+              "moduleId": "ortho-half-compounds",
+              "lessonId": "lesson-module-ortho-half-compounds",
+              "revision": 1,
+              "route": "/oge/theory/modules/ortho-half-compounds/",
+              "sections": [
+                "rule",
+                "contrasts",
+                "checkpoint",
+                "transfer"
+              ],
+              "scope": "Различать слитность, дефис и раздельность с пол-, учитывая следующую часть слова и границы словосочетания.",
+              "coverage": "partial",
+              "independentTransferCases": 2,
+              "reviewMode": "checked-demo",
+              "teacherApproval": "pending",
+              "at": "2026-10-15",
+              "microtopicIds": [
+                "half"
+              ]
             }
           ],
           "exclusions": [],
           "scopedTransferStage": "transferred",
-          "scopeNote": "Перенесён только обозначенный авторский учебный модуль. Стадия страницы остаётся mapped: полнота всех примеров, исключений и подпунктов PDF не утверждена."
+          "scopeNote": "Перенесён только указанный авторский учебный шаг. Стадия страницы остаётся mapped; полнота всех примеров и исключений PDF не утверждена."
         },
         {
           "physicalPage": 37,
@@ -10349,10 +10561,29 @@
         }
       ],
       "intendedModuleId": "spelling-roots-im-in",
-      "coverage": "existing-support-only",
-      "gap": "Группа лишь косвенно поддержана общей таблицей; требуется собственный законченный шаг.",
-      "transferStage": "mapped",
-      "transferredTo": [],
+      "coverage": "original-module-partial",
+      "gap": "Есть ограниченный авторский учебный шаг; оставшийся объём описан в remainingScope.",
+      "transferStage": "transferred",
+      "transferredTo": [
+        {
+          "moduleId": "ortho-root-im-in",
+          "lessonId": "lesson-module-ortho-root-im-in",
+          "revision": 1,
+          "route": "/oge/theory/modules/ortho-root-im-in/",
+          "sections": [
+            "rule",
+            "contrasts",
+            "checkpoint",
+            "transfer"
+          ],
+          "scope": "Узнавать чередование в проверенных парах инфинитивов и не подменять его проверкой ударением или механическим правилом для каждой личной формы.",
+          "coverage": "partial",
+          "independentTransferCases": 2,
+          "reviewMode": "checked-demo",
+          "teacherApproval": "pending",
+          "at": "2026-10-15"
+        }
+      ],
       "teacherApproval": "pending",
       "relatedExerciseIds": [
         "oge-orfograficheskiy-analiz-001",
@@ -10374,7 +10605,11 @@
         "oge-orfograficheskiy-analiz-024",
         "oge-orfograficheskiy-analiz-025"
       ],
-      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки."
+      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки.",
+      "implementedModuleIds": [
+        "ortho-root-im-in"
+      ],
+      "remainingScope": "Даны конкретные видовые пары и отдельная личная форма подниму; историческая морфемика и все производные не объявлены покрытыми."
     },
     {
       "id": "shushing-root",
@@ -11711,10 +11946,29 @@
         }
       ],
       "intendedModuleId": "spelling-transitivity",
-      "coverage": "existing-support-only",
-      "gap": "Правило ограничено соответствующей словообразовательной группой, не всеми переходными глаголами.",
-      "transferStage": "mapped",
-      "transferredTo": [],
+      "coverage": "original-module-partial",
+      "gap": "Есть ограниченный авторский учебный шаг; оставшийся объём описан в remainingScope.",
+      "transferStage": "transferred",
+      "transferredTo": [
+        {
+          "moduleId": "ortho-transitivity-e-i",
+          "lessonId": "lesson-module-ortho-transitivity-e-i",
+          "revision": 1,
+          "route": "/oge/theory/modules/ortho-transitivity-e-i/",
+          "sections": [
+            "rule",
+            "contrasts",
+            "checkpoint",
+            "transfer"
+          ],
+          "scope": "Различать Е/И в конкретных словарных парах со значением изменения состояния и воздействия; не применять правило ко всем глаголам.",
+          "coverage": "partial",
+          "independentTransferCases": 2,
+          "reviewMode": "checked-demo",
+          "teacherApproval": "pending",
+          "at": "2026-10-15"
+        }
+      ],
       "teacherApproval": "pending",
       "relatedExerciseIds": [
         "oge-orfograficheskiy-analiz-001",
@@ -11742,7 +11996,11 @@
         "oge-orfograficheskiy-analiz-024",
         "oge-orfograficheskiy-analiz-025"
       ],
-      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки."
+      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки.",
+      "implementedModuleIds": [
+        "ortho-transitivity-e-i"
+      ],
+      "remainingScope": "Правило ограничено названными словарными парами; другие глаголы требуют отдельной словарной проверки."
     },
     {
       "id": "suffix-adverb",
@@ -11813,13 +12071,36 @@
         }
       ],
       "intendedModuleId": "spelling-hyphen-solid",
-      "coverage": "existing-support-only",
-      "gap": "Нужны самостоятельные контексты и границы формы.",
-      "transferStage": "mapped",
-      "transferredTo": [],
+      "coverage": "original-module-partial",
+      "gap": "Есть ограниченный авторский учебный шаг; оставшийся объём описан в remainingScope.",
+      "transferStage": "transferred",
+      "transferredTo": [
+        {
+          "moduleId": "ortho-derived-prepositions",
+          "lessonId": "lesson-module-ortho-derived-prepositions",
+          "revision": 1,
+          "route": "/oge/theory/modules/ortho-derived-prepositions/",
+          "sections": [
+            "rule",
+            "contrasts",
+            "checkpoint",
+            "transfer"
+          ],
+          "scope": "Выбирать Е/И по смыслу и синтаксической роли сочетания; различать уступительное несмотря на и действие не смотря.",
+          "coverage": "partial",
+          "independentTransferCases": 2,
+          "reviewMode": "checked-demo",
+          "teacherApproval": "pending",
+          "at": "2026-10-15"
+        }
+      ],
       "teacherApproval": "pending",
       "relatedExerciseIds": [],
-      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки."
+      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки.",
+      "implementedModuleIds": [
+        "ortho-derived-prepositions"
+      ],
+      "remainingScope": "Словарь остальных производных предлогов и все стилистические случаи не охвачены."
     },
     {
       "id": "hyphen-adverb",
@@ -11889,13 +12170,36 @@
         }
       ],
       "intendedModuleId": "spelling-hyphen-solid",
-      "coverage": "existing-support-only",
-      "gap": "Не называть полу- соединительной гласной; отдельная микротема отсутствует.",
-      "transferStage": "mapped",
-      "transferredTo": [],
+      "coverage": "original-module-partial",
+      "gap": "Есть ограниченный авторский учебный шаг; оставшийся объём описан в remainingScope.",
+      "transferStage": "transferred",
+      "transferredTo": [
+        {
+          "moduleId": "ortho-half-compounds",
+          "lessonId": "lesson-module-ortho-half-compounds",
+          "revision": 1,
+          "route": "/oge/theory/modules/ortho-half-compounds/",
+          "sections": [
+            "rule",
+            "contrasts",
+            "checkpoint",
+            "transfer"
+          ],
+          "scope": "Различать слитность, дефис и раздельность с пол-, учитывая следующую часть слова и границы словосочетания.",
+          "coverage": "partial",
+          "independentTransferCases": 2,
+          "reviewMode": "checked-demo",
+          "teacherApproval": "pending",
+          "at": "2026-10-15"
+        }
+      ],
       "teacherApproval": "pending",
       "relatedExerciseIds": [],
-      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки."
+      "exerciseLinkMeaning": "Карточки адресно связаны с действующим параграфом. Наличие связи не доказывает самостоятельную практику каждого подпункта этой строки.",
+      "implementedModuleIds": [
+        "ortho-half-compounds"
+      ],
+      "remainingScope": "Косвенные падежи и наречия с впол- не выдаются за разобранные этой редакцией."
     },
     {
       "id": "compound-adjective",
@@ -13114,6 +13418,22 @@
       "status": "image-content-visually-read",
       "confidence": "high-for-visible-fragment-only",
       "normativeSources": [],
+      "teacherApproval": "pending"
+    },
+    {
+      "id": "transitivity-overgeneralization",
+      "sourceId": "source-e831eb375ac7",
+      "pdfPages": [
+        30
+      ],
+      "observedFragment": "Если действует сам субъект (действие над самим собой), то пишется суффикс -Е-",
+      "finding": "Формулировка видна на оригинале и может приводить к ложному выбору Е при объекте себя.",
+      "action": "Новый модуль ограничен словарными парами. Отдельно сопоставлены обессилел и обессилил себя; совпадение субъекта и объекта не определяет букву.",
+      "status": "original-visually-confirmed",
+      "confidence": "high-for-visible-fragment-only",
+      "normativeSources": [
+        "https://gramota.ru/spravka/vopros/328370"
+      ],
       "teacherApproval": "pending"
     }
   ],

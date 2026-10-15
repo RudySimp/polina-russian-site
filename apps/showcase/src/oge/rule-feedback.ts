@@ -99,6 +99,24 @@ export function shortAnswerFeedback(
     return;
   const normalize = (value: string) =>
     value.trim().toLocaleLowerCase("ru").replace(/ё/gu, "е");
+  const constraints = exercise.shortAnswerConstraints;
+  if (
+    constraints.unchangedPhrase &&
+    constraints.transformation &&
+    normalize(answer).replace(/\s/gu, "") ===
+      normalize(constraints.unchangedPhrase).replace(/\s/gu, "")
+  )
+    return (
+      "Вы повторили исходное словосочетание «" +
+      constraints.unchangedPhrase +
+      "» без преобразования. По условию замените связь «" +
+      constraints.transformation.from +
+      "» на «" +
+      constraints.transformation.to +
+      "», сохранив главное слово «" +
+      constraints.requiredWords.join("», «") +
+      "». Изменить только порядок слов недостаточно."
+    );
   const words = normalize(answer).split(/\s+/u);
   // Exam answer strings may legitimately omit spaces; do not infer a missing word there.
   if (words.length < 2) return;

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "oge-slovosochetaniya-019",
+  "fromRevision": 1,
+  "toRevision": 2,
+  "reason": "Ненормативный полный разворот слов ранее ошибочно считался допустимым ответом.",
+  "removedAnswer": "снега из крепость",
+  "acceptedAnswers": [
+    "крепость из снега",
+    "из снега крепость"
+  ],
+  "independentReview": {
+    "by": "corpus_resume",
+    "at": "2026-10-15",
+    "conclusion": "Предлог «из» переносится вместе с зависимым существительным «снега»; главное слово «крепость» и значение материала сохраняются."
+  },
+  "teacherApproval": "pending",
+  "oldSnapshots": "Stored revision 1 snapshots remain unchanged; current catalogue uses revision 2."
+}

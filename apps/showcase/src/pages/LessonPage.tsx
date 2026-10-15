@@ -1,3 +1,7 @@
+import {
+  theoryCatalogReturn,
+  withTheoryOrigin,
+} from "../lib/theory-navigation";
 import { courseModulesFor, modulePath } from "../content/course";
 import {
   chooseCoursePractice,
@@ -36,13 +40,12 @@ export function LessonPage({ slug }: { slug: string }) {
     ? requestedExam
     : "";
   const requestedReturn = params.get("from") ?? "";
-  const returnTo =
-    /^\/(?:theory|oge\/theory)\/(?:\?|$)/.test(requestedReturn) &&
-    requestedReturn.length < 1000
-      ? requestedReturn
-      : exam === "OGE"
-        ? "/oge/theory/"
-        : `/theory/${exam ? `?exam=${exam}` : ""}`;
+  const returnTo = theoryCatalogReturn(
+    requestedReturn,
+    exam === "OGE"
+      ? "/oge/theory/"
+      : "/theory/" + (exam ? "?exam=" + exam : ""),
+  );
   const practice = exercisesFor(topic.id, exam);
   const selectedPractice =
     exam === "OGE"
@@ -99,7 +102,8 @@ export function LessonPage({ slug }: { slug: string }) {
           <ul>
             {learningModules.map((m) => (
               <li key={m.id}>
-                <a href={href(modulePath(m.id))}>{m.title}</a> — {m.outcome}
+                <a href={href(modulePath(m.id, returnTo))}>{m.title}</a> —{" "}
+                {m.outcome}
               </li>
             ))}
           </ul>
@@ -253,7 +257,10 @@ export function LessonPage({ slug }: { slug: string }) {
         {index > 0 && (
           <a
             href={href(
-              `/theory/${neighbors[index - 1].slug}/${exam ? `?exam=${exam}` : ""}`,
+              withTheoryOrigin(
+                `/theory/${neighbors[index - 1].slug}/${exam ? `?exam=${exam}` : ""}`,
+                returnTo,
+              ),
             )}
           >
             ← {neighbors[index - 1].title}
@@ -262,7 +269,10 @@ export function LessonPage({ slug }: { slug: string }) {
         {index < neighbors.length - 1 && (
           <a
             href={href(
-              `/theory/${neighbors[index + 1].slug}/${exam ? `?exam=${exam}` : ""}`,
+              withTheoryOrigin(
+                `/theory/${neighbors[index + 1].slug}/${exam ? `?exam=${exam}` : ""}`,
+                returnTo,
+              ),
             )}
           >
             {neighbors[index + 1].title} →
@@ -278,7 +288,12 @@ export function LessonPage({ slug }: { slug: string }) {
               (item) => !exam || item.examTags.some((tag) => tag === exam),
             )
             .map((item) => (
-              <TopicCard key={item.id} topic={item} exam={exam} />
+              <TopicCard
+                key={item.id}
+                topic={item}
+                exam={exam}
+                returnTo={returnTo}
+              />
             ))}
         </div>
       </section>

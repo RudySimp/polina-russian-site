@@ -52,3 +52,12 @@
     scroll-margin-top: 5rem;
   }
 }
+
+.course-module-body table,
+.course-module-body .interactive-card,
+.course-module-body .choice-list label {
+  font-size: var(--text-lesson);
+}
+.course-module-body .example-text {
+  font-size: 1.25rem;
+}

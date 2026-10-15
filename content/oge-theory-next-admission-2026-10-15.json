@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "batchId": "oge-theory-next-2026-10-15",
+  "sha256": "2b2f25687ff0af0dc1cf31e1751edbbd430b385ad74e89b0c4b66f205842c3e8",
+  "hashEncoding": "compact-json-v1",
+  "reviewedBy": "Codex root: independent full reading of four new modules",
+  "reviewedAt": "2026-10-15",
+  "mode": "checked-demo",
+  "teacherApproval": "pending",
+  "moduleIds": [
+    "ortho-derived-prepositions",
+    "ortho-half-compounds",
+    "ortho-transitivity-e-i",
+    "ortho-root-im-in"
+  ],
+  "sourcePageReferences": 8,
+  "notes": [
+    "В продолжении повести уточнено определением изданном через год.",
+    "Физическая страница 4 таблицы о корнях имеет печатный номер 3, подтверждённый изображением.",
+    "Пять ранее не просмотренных графически страниц 27,30,33,34,35 сверены; повторные просмотры не прибавлены к охвату.",
+    "Заголовки и цель сокращены после просмотра 390px; содержание правил и ключи сохранены."
+  ]
+}

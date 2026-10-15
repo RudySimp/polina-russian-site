@@ -108,7 +108,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "шкатулка"
+      ],
+      "unchangedPhrase": "шкатулка из дерева",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-002",
@@ -219,7 +229,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "чашка"
+      ],
+      "unchangedPhrase": "фарфоровая чашка",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-003",
@@ -330,7 +350,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "отвечал"
+      ],
+      "unchangedPhrase": "отвечал с уверенностью",
+      "transformation": {
+        "from": "управление",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-004",
@@ -443,7 +473,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "работал"
+      ],
+      "unchangedPhrase": "работал старательно",
+      "transformation": {
+        "from": "примыкание",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-005",
@@ -554,7 +594,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "встреча"
+      ],
+      "unchangedPhrase": "летняя встреча",
+      "transformation": {
+        "from": "согласование",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-006",
@@ -665,7 +715,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "прогулка"
+      ],
+      "unchangedPhrase": "прогулка пешком",
+      "transformation": {
+        "from": "примыкание",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-007",
@@ -776,7 +836,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "браслет"
+      ],
+      "unchangedPhrase": "браслет из серебра",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-008",
@@ -887,7 +957,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "платок"
+      ],
+      "unchangedPhrase": "шёлковый платок",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-009",
@@ -1002,7 +1082,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "шёл"
+      ],
+      "unchangedPhrase": "шёл без спешки",
+      "transformation": {
+        "from": "управление",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-010",
@@ -1113,7 +1203,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "ответил"
+      ],
+      "unchangedPhrase": "ответил резко",
+      "transformation": {
+        "from": "примыкание",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-011",
@@ -1224,7 +1324,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "чтение"
+      ],
+      "unchangedPhrase": "вечернее чтение",
+      "transformation": {
+        "from": "согласование",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-012",
@@ -1335,7 +1445,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "езда"
+      ],
+      "unchangedPhrase": "езда верхом",
+      "transformation": {
+        "from": "примыкание",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-014",
@@ -1448,7 +1568,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "стена"
+      ],
+      "unchangedPhrase": "кирпичная стена",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-048",
@@ -1563,7 +1693,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "работал"
+      ],
+      "unchangedPhrase": "работал без перерывов",
+      "transformation": {
+        "from": "управление",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-052",
@@ -1676,7 +1816,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "ответил"
+      ],
+      "unchangedPhrase": "ответил без колебаний",
+      "transformation": {
+        "from": "управление",
+        "to": "примыкание"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-066",
@@ -1787,7 +1937,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "след"
+      ],
+      "unchangedPhrase": "след медведя",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-085",
@@ -1898,7 +2058,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "читал"
+      ],
+      "unchangedPhrase": "читал выразительно",
+      "transformation": {
+        "from": "примыкание",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-087",
@@ -2009,7 +2179,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "рог"
+      ],
+      "unchangedPhrase": "олений рог",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-091",
@@ -2120,7 +2300,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "двор"
+      ],
+      "unchangedPhrase": "школьный двор",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-099",
@@ -2231,7 +2421,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "дорога"
+      ],
+      "unchangedPhrase": "дорога в горах",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-013",
@@ -2353,7 +2553,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "кольцо"
+      ],
+      "unchangedPhrase": "кольцо из золота",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-018",
@@ -2475,12 +2685,22 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "статуя"
+      ],
+      "unchangedPhrase": "статуя из мрамора",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-019",
     "slug": "oge-slovosochetaniya-019",
-    "revision": 1,
+    "revision": 2,
     "title": "Материал: согласование в управление",
     "prompt": "Замените словосочетание «снежная крепость», построенное на основе согласования, синонимичным словосочетанием со связью управление. Напишите получившееся словосочетание, соблюдая нормы современного русского литературного языка.",
     "topicId": "slovosochetaniya",
@@ -2490,7 +2710,7 @@
     "responseKind": "short_text",
     "answers": [
       "крепость из снега",
-      "снега из крепость"
+      "из снега крепость"
     ],
     "maxScore": 1,
     "policy": {
@@ -2511,7 +2731,7 @@
       "author": "Автор в предоставленном каталоге не указан",
       "rightsStatus": "owned",
       "licenseNote": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
-      "verifiedAt": "2026-10-12",
+      "verifiedAt": "2026-10-15",
       "examYear": 2027,
       "editorialStatus": "needs_review"
     },
@@ -2527,7 +2747,7 @@
       "Проверьте смысл и сохранение главного слова."
     ],
     "hint": "Преобразование должно обозначать материал, а не место.",
-    "explanation": "«снежная крепость» → «крепость из снега».\n\nСогласованное определение заменено существительным (при необходимости с предлогом), зависимым по падежу от слова «крепость». Результат: «крепость из снега». Главное слово сохранено; тип связи изменён.",
+    "explanation": "«Снежная крепость» → «крепость из снега»: прилагательное, называющее материал, заменено существительным «снега» в родительном падеже с предлогом «из». Главное слово «крепость» сохранено, согласование заменено управлением.\n\nДопустим и порядок «из снега крепость»: предложно-падежная группа «из снега» переносится целиком. Вариант «снега из крепость» нарушает эту группу и не принимается. «Крепость в снегу» обозначает расположение, поэтому меняет смысл.",
     "formatLabel": "ОГЭ · Связь в словосочетаниях",
     "input": "text",
     "level": "basic",
@@ -2546,15 +2766,15 @@
       "importedAt": "2026-10-10T21:19:24.329Z",
       "method": "local-original-import",
       "rightsBasis": "Оригинальные варианты, составленные для предоставленного каталога; происхождение заявлено во вводной части. Использование для сайта поручено владельцем проекта. Тексты сторонних банков из реестра не импортированы; авторство Полине не приписывается.",
-      "reviewNote": "Снежная определяет материал крепости. Из снега — зависимое существительное в родительном падеже с предлогом из, то есть управление. Главное слово крепость сохранено. Крепость в снегу обозначает расположение и изменяет смысл. Второе независимое чтение условия выполнено root Codex. Демонстрационная редакция; утверждение Полиной ожидается.",
-      "reviewedAt": "2026-10-12",
+      "reviewNote": "Редакция 2 исправляет ранее ошибочно принятый полный разворот слов «снега из крепость» на нормативный перенос всей группы «из снега крепость». Условие, оба допустимых порядка, отвергаемые альтернативы, объяснение и заявленное происхождение независимо прочитаны Codex root и corpus_resume 15.10.2026. Это редакторская учебная проверка; утверждение Полиной ожидается.",
+      "reviewedAt": "2026-10-15",
       "teacherApproval": "pending"
     },
     "reviewStatus": "checked-demo",
     "publicationReview": {
-      "revision": 1,
-      "by": "Codex root: независимое чтение финального условия, ключа и альтернатив",
-      "at": "2026-10-12",
+      "revision": 2,
+      "by": "Codex root + corpus_resume: независимое чтение условия, ключей и предложно-падежной группы",
+      "at": "2026-10-15",
       "mode": "checked-demo",
       "condition": true,
       "key": true,
@@ -2565,22 +2785,22 @@
     "reviewStages": [
       {
         "stage": "extracted",
-        "at": "2026-10-12",
+        "at": "2026-10-15",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "answer-checked",
-        "at": "2026-10-12",
+        "at": "2026-10-15",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "explanation-checked",
-        "at": "2026-10-12",
+        "at": "2026-10-15",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       },
       {
         "stage": "publication-approved",
-        "at": "2026-10-12",
+        "at": "2026-10-15",
         "by": "Редакторская проверка демонстрационной редакции; утверждение преподавателя ожидается"
       }
     ],
@@ -2597,7 +2817,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "крепость"
+      ],
+      "unchangedPhrase": "снежная крепость",
+      "transformation": {
+        "from": "согласование",
+        "to": "управление"
+      }
+    }
   },
   {
     "id": "oge-slovosochetaniya-022",
@@ -2719,7 +2949,17 @@
       "/theory/slovosochetaniya/?exam=OGE#meaning-preservation"
     ],
     "originCategory": "author-model",
-    "classificationReview": "editorial-draft"
+    "classificationReview": "editorial-draft",
+    "shortAnswerConstraints": {
+      "requiredWords": [
+        "ваза"
+      ],
+      "unchangedPhrase": "ваза из стекла",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
+    }
   },
   {
     "revision": 1,
@@ -2840,7 +3080,12 @@
     "shortAnswerConstraints": {
       "requiredWords": [
         "прогулки"
-      ]
+      ],
+      "unchangedPhrase": "зимние прогулки",
+      "transformation": {
+        "from": "согласование",
+        "to": "примыкание"
+      }
     }
   },
   {
@@ -2962,7 +3207,12 @@
     "shortAnswerConstraints": {
       "requiredWords": [
         "прошептал"
-      ]
+      ],
+      "unchangedPhrase": "прошептал с тревогой",
+      "transformation": {
+        "from": "управление",
+        "to": "примыкание"
+      }
     }
   },
   {
@@ -3084,7 +3334,12 @@
     "shortAnswerConstraints": {
       "requiredWords": [
         "говорил"
-      ]
+      ],
+      "unchangedPhrase": "говорил ласково",
+      "transformation": {
+        "from": "примыкание",
+        "to": "управление"
+      }
     }
   },
   {
@@ -3206,7 +3461,12 @@
     "shortAnswerConstraints": {
       "requiredWords": [
         "перчатки"
-      ]
+      ],
+      "unchangedPhrase": "перчатки из кожи",
+      "transformation": {
+        "from": "управление",
+        "to": "согласование"
+      }
     }
   }
 ]

@@ -40,5 +40,9 @@ export const courseModuleLoaders: Record<string, () => Promise<CoursePayload>> =
   'ortho-nn-verb-short': () => import('./course-modules/ortho-nn-verb-short.json').then(m => m.default as CoursePayload),
   'ortho-ne-ni': () => import('./course-modules/ortho-ne-ni.json').then(m => m.default as CoursePayload),
   'ortho-hyphen-soft-sign': () => import('./course-modules/ortho-hyphen-soft-sign.json').then(m => m.default as CoursePayload),
-  'ortho-consonants': () => import('./course-modules/ortho-consonants.json').then(m => m.default as CoursePayload)
+  'ortho-consonants': () => import('./course-modules/ortho-consonants.json').then(m => m.default as CoursePayload),
+  'ortho-derived-prepositions': () => import('./course-modules/ortho-derived-prepositions.json').then(m => m.default as CoursePayload),
+  'ortho-half-compounds': () => import('./course-modules/ortho-half-compounds.json').then(m => m.default as CoursePayload),
+  'ortho-transitivity-e-i': () => import('./course-modules/ortho-transitivity-e-i.json').then(m => m.default as CoursePayload),
+  'ortho-root-im-in': () => import('./course-modules/ortho-root-im-in.json').then(m => m.default as CoursePayload)
 };

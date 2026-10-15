@@ -39,7 +39,9 @@ test("короткий модуль находится по номеру и те
     page.locator(".course-module-body .lesson-section").first(),
   ).toBeInViewport();
   await page.getByRole("link", { name: "Полная глава", exact: true }).click();
-  await expect(page).toHaveURL(/theory\/orfograficheskiy-analiz\/\?exam=OGE$/);
+  await expect(page).toHaveURL(
+    /theory\/orfograficheskiy-analiz\/\?exam=OGE(?:&|$)/,
+  );
   await expect(page.locator("#spelling-map")).toHaveCount(1);
   await page.goto("oge/theory/?topic=osnova");
   await expect(
@@ -216,4 +218,32 @@ test("поиск параграфов сохраняет страницы, за�
     "предложение",
   );
   await expect(results.locator("article h3").first()).toHaveText(first);
+});
+
+test("новые модули сохраняют учебный размер в таблицах, заданиях и примерах", async ({
+  page,
+}) => {
+  for (const id of [
+    "ortho-derived-prepositions",
+    "ortho-half-compounds",
+    "ortho-transitivity-e-i",
+    "ortho-root-im-in",
+  ]) {
+    await page.goto("oge/theory/modules/" + id + "/");
+    const text = page.locator(
+      ".course-module-body #rule p, .course-module-body td, .course-module-body .example-text, .course-module-body .interactive-card > p, .course-module-body .choice-list label",
+    );
+    await expect(text.first()).toBeVisible();
+    const sizes = await text.evaluateAll((nodes) =>
+      nodes.map((node) => parseFloat(getComputedStyle(node).fontSize)),
+    );
+    expect(sizes.length).toBeGreaterThan(8);
+    for (const size of sizes) {
+      expect(size).toBeGreaterThanOrEqual(18);
+      expect(size).toBeLessThanOrEqual(20);
+    }
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBeLessThanOrEqual(await page.evaluate(() => innerWidth));
+  }
 });

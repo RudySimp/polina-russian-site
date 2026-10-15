@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15",
+  "reviewedBy": "Codex root: все 28 полных условий, принятые ответы и главное слово прочитаны отдельно",
+  "teacherApproval": "pending",
+  "scope": "Только буквальное сохранение указанного главного слова и повтор исходного сочетания. Не морфологический разбор и не оценка произвольного синонима.",
+  "entries": [
+    {
+      "id": "oge-slovosochetaniya-001",
+      "revision": 2,
+      "promptSha256": "009d2f3d111cc645638511418455ce8229b816779e92cd95152f2dac4282f4ff",
+      "sourcePhrase": "шкатулка из дерева",
+      "headWord": "шкатулка",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-002",
+      "revision": 2,
+      "promptSha256": "ac88605ef778f29138001e4f8fa606a571b1e60a75b4fdb1f065c3e6d2120c72",
+      "sourcePhrase": "фарфоровая чашка",
+      "headWord": "чашка",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-003",
+      "revision": 2,
+      "promptSha256": "24b4572a08d53018f0f5708f3c15742358a9f3a65a26eed00a14cb431ace39ad",
+      "sourcePhrase": "отвечал с уверенностью",
+      "headWord": "отвечал",
+      "fromRelation": "управление",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-004",
+      "revision": 2,
+      "promptSha256": "e56b601887476209a90cfd653b89a6236a74404720d244a1ae7134f37ed60b3d",
+      "sourcePhrase": "работал старательно",
+      "headWord": "работал",
+      "fromRelation": "примыкание",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-005",
+      "revision": 2,
+      "promptSha256": "612bce23b953e7767ea20834516821a5ed43eccdac5ee165e729f47e7ad0ca24",
+      "sourcePhrase": "летняя встреча",
+      "headWord": "встреча",
+      "fromRelation": "согласование",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-006",
+      "revision": 2,
+      "promptSha256": "c099fd816c4ae35022ff380f6174ba8966efdbd758af51e6fc2f275e0d8a8c9c",
+      "sourcePhrase": "прогулка пешком",
+      "headWord": "прогулка",
+      "fromRelation": "примыкание",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-007",
+      "revision": 2,
+      "promptSha256": "b47fc8688d98c2dcb44c2a92ab6a065bbc9365b28a53a5dcfae7772a5fb654b0",
+      "sourcePhrase": "браслет из серебра",
+      "headWord": "браслет",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-008",
+      "revision": 2,
+      "promptSha256": "b637d361dea31722c6c56844226461b961f0ffb95e65ca43ee8d5552bd02bdc8",
+      "sourcePhrase": "шёлковый платок",
+      "headWord": "платок",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-009",
+      "revision": 2,
+      "promptSha256": "c98317783afe1b799000530719c2580c0963815a66b36e6653dca72e724bd912",
+      "sourcePhrase": "шёл без спешки",
+      "headWord": "шёл",
+      "fromRelation": "управление",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-010",
+      "revision": 2,
+      "promptSha256": "031547f57b11a44cc4aac161fddcf36cad7edc3cca324ee00738d320aedf7d20",
+      "sourcePhrase": "ответил резко",
+      "headWord": "ответил",
+      "fromRelation": "примыкание",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-011",
+      "revision": 1,
+      "promptSha256": "3fb9cb5514e6ef5cbe864c079680f6228d628be94120e25c2a4ed46953b28e13",
+      "sourcePhrase": "вечернее чтение",
+      "headWord": "чтение",
+      "fromRelation": "согласование",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-012",
+      "revision": 1,
+      "promptSha256": "d5be8f6c68f3497cb8fd00a54c02cab08828be73b44c55942dede829fd13eb88",
+      "sourcePhrase": "езда верхом",
+      "headWord": "езда",
+      "fromRelation": "примыкание",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-014",
+      "revision": 1,
+      "promptSha256": "8314ec9aa5230ca5e3bf4dabc2790ca348ed07ca94b87fcfcbb23775424184a7",
+      "sourcePhrase": "кирпичная стена",
+      "headWord": "стена",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-048",
+      "revision": 1,
+      "promptSha256": "83f7c71756b9fae1aea022ffd6dac8bf507812498f7f7aadf35686b7d8619e11",
+      "sourcePhrase": "работал без перерывов",
+      "headWord": "работал",
+      "fromRelation": "управление",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-052",
+      "revision": 1,
+      "promptSha256": "a894cc5c08180ffef7d0911d793fccdb616981bd15e59b834a775338ed017ad1",
+      "sourcePhrase": "ответил без колебаний",
+      "headWord": "ответил",
+      "fromRelation": "управление",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-066",
+      "revision": 1,
+      "promptSha256": "ef8b2f1c190a251864165fc857c53e6d6a761d4547d81e93fb095399c47649fe",
+      "sourcePhrase": "след медведя",
+      "headWord": "след",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-085",
+      "revision": 1,
+      "promptSha256": "d5ae49d9cad686423d06f9ced2a5ea48fdaa932c8326957c9188f3b04dd7e46a",
+      "sourcePhrase": "читал выразительно",
+      "headWord": "читал",
+      "fromRelation": "примыкание",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-087",
+      "revision": 1,
+      "promptSha256": "aa656ffc82164a46c60c8cbf3a9837d5b320298e1402ed00d777b7be8aea5c71",
+      "sourcePhrase": "олений рог",
+      "headWord": "рог",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-091",
+      "revision": 1,
+      "promptSha256": "d1afe0d0d23e546e4d081c82434724764938a5d85c25d83a78f67e1006969abd",
+      "sourcePhrase": "школьный двор",
+      "headWord": "двор",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-099",
+      "revision": 1,
+      "promptSha256": "b3141360c174026281743203a83f1d6e12b79cc728440f53523798f4a0be88e5",
+      "sourcePhrase": "дорога в горах",
+      "headWord": "дорога",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-013",
+      "revision": 1,
+      "promptSha256": "55bf02d2cca498fee782a3b9345f4ce0119535d1179626d1b47ea41d9e3fe81c",
+      "sourcePhrase": "кольцо из золота",
+      "headWord": "кольцо",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-018",
+      "revision": 1,
+      "promptSha256": "dc370b114530c768855df8f12241e4397ca122f373c28048d865647cf688bfce",
+      "sourcePhrase": "статуя из мрамора",
+      "headWord": "статуя",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-019",
+      "revision": 2,
+      "promptSha256": "91ee6b8d869fbddf648de03a617c9c6d5c7472cf5d76203788353bf5811c48ff",
+      "sourcePhrase": "снежная крепость",
+      "headWord": "крепость",
+      "fromRelation": "согласование",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-022",
+      "revision": 1,
+      "promptSha256": "a96cad03e08821b80f10da62dd448db5ade0196bac8ce870926e4f6d0d68899b",
+      "sourcePhrase": "ваза из стекла",
+      "headWord": "ваза",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    },
+    {
+      "id": "oge-slovosochetaniya-017",
+      "revision": 1,
+      "promptSha256": "c62cccf9d23882cb8126e0fd0acf6e08381d4543177d88b50b5b27b71f9f9bc0",
+      "sourcePhrase": "зимние прогулки",
+      "headWord": "прогулки",
+      "fromRelation": "согласование",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-020",
+      "revision": 1,
+      "promptSha256": "e2f4a1d98fb709e65fc4154dad157c4be104f43f64bfc45ed1b38c72d9390694",
+      "sourcePhrase": "прошептал с тревогой",
+      "headWord": "прошептал",
+      "fromRelation": "управление",
+      "toRelation": "примыкание"
+    },
+    {
+      "id": "oge-slovosochetaniya-021",
+      "revision": 1,
+      "promptSha256": "968ec74a061a6051f868e3965dfadb0f7681129a064a5d8bda67c50cc321585f",
+      "sourcePhrase": "говорил ласково",
+      "headWord": "говорил",
+      "fromRelation": "примыкание",
+      "toRelation": "управление"
+    },
+    {
+      "id": "oge-slovosochetaniya-026",
+      "revision": 1,
+      "promptSha256": "bd142121a368dea93caea77c12a4ab167000a83bcbfa57041b2fe3d9016aaa53",
+      "sourcePhrase": "перчатки из кожи",
+      "headWord": "перчатки",
+      "fromRelation": "управление",
+      "toRelation": "согласование"
+    }
+  ]
+}

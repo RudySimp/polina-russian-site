@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-14",
+  "checkedAt": "2026-10-15",
+  "baselineCodeCommit": "28c8f1326d7037f1e2855fcd455763175bca9c3d",
+  "publication": {
+    "status": "pending"
+  },
+  "counts": {
+    "courseModules": 44,
+    "chapterSectionModules": 32,
+    "originalModules": 12,
+    "newOriginalModules": 4,
+    "newSections": 16,
+    "newWorkedContrasts": 8,
+    "newCheckpoints": 4,
+    "newTransferCases": 8,
+    "sourceMicrotopics": 92,
+    "microtopicsWithScopedTransfers": 23,
+    "physicalSourcePages": 174,
+    "visualInspectedPages": 97,
+    "sourcePagesWithScopedTransfers": 30,
+    "wholePagesTransferred": 0,
+    "explicitRephraseDiagnostics": 28,
+    "exercises": 307,
+    "currentOge": 275,
+    "localImports": 178,
+    "official": 0,
+    "unadmittedNextLocalCandidates": 13
+  },
+  "verification": {
+    "unit": {
+      "passed": 237,
+      "failed": 0,
+      "files": 29,
+      "artifact": "artifacts/next-batch-unit-all.log"
+    },
+    "guardCorrectionRun": {
+      "passed": 6,
+      "failed": 0,
+      "artifact": "artifacts/next-batch-guard-unit.log"
+    },
+    "types": {
+      "root": "passed",
+      "showcase": "passed"
+    },
+    "lint": "passed",
+    "showcaseBuild": {
+      "status": "passed",
+      "html": 411,
+      "routes": 410
+    },
+    "browser": {
+      "rephrase": {
+        "passed": 4,
+        "failed": 0,
+        "artifact": "artifacts/next-batch-rephrase-browser.json"
+      },
+      "courseAndNavigation": {
+        "passed": 16,
+        "failed": 0,
+        "artifact": "artifacts/navigation-course-browser-typography-verified.json",
+        "notes": "Includes waiting for lazy content before font measurements; an earlier test missed that wait. A separate earlier run lost the local preview server and was rerun unchanged after restoring it."
+      }
+    },
+    "publisher": {
+      "retained": 178,
+      "added": 0,
+      "revised": 0,
+      "notes": "Correction first publication retained177/revised1; repeat retained178/revised0 without loss."
+    }
+  },
+  "limitations": [
+    "Это редакторская учебная версия, teacherApproval pending.",
+    "Восемь предметных замечаний частичны; проверка физических школьных устройств не выполнена.",
+    "Официальность заданий и методическое утверждение не подменяются тестами.",
+    "Следующие 13 локальных кандидатов сохраняются как черновик и не допущены."
+  ]
+}

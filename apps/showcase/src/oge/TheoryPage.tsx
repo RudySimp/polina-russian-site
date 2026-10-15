@@ -1,3 +1,4 @@
+import { withTheoryOrigin } from "../lib/theory-navigation";
 import { use } from "react";
 import { theorySearchFor } from "../content/course-search";
 import { courseReadingCount } from "../content/course-practice";
@@ -16,6 +17,7 @@ export function OgeTheoryPage() {
     section = params.get("section") ?? "",
     q = params.get("q") ?? "",
     topicId = params.get("topic") ?? "";
+  const catalogOrigin = "/oge/theory/" + (params.size ? "?" + params : "");
   const allParagraphs = q ? use(theorySearchFor()) : [];
   const filtered = publishedTopics.filter(
     (t) =>
@@ -161,13 +163,14 @@ export function OgeTheoryPage() {
                   <a
                     onClick={rememberScroll}
                     href={href(
-                      p.route ??
-                        "/theory/" +
-                          topic.slug +
-                          "/?exam=OGE&from=" +
-                          encodeURIComponent("/oge/theory/?" + params) +
-                          "#" +
-                          p.sectionId,
+                      p.route
+                        ? withTheoryOrigin(p.route, catalogOrigin)
+                        : "/theory/" +
+                            topic.slug +
+                            "/?exam=OGE&from=" +
+                            encodeURIComponent("/oge/theory/?" + params) +
+                            "#" +
+                            p.sectionId,
                     )}
                   >
                     {p.title}
@@ -231,7 +234,7 @@ export function OgeTheoryPage() {
                             <h4>
                               <a
                                 onClick={rememberScroll}
-                                href={href(modulePath(m.id))}
+                                href={href(modulePath(m.id, catalogOrigin))}
                               >
                                 {m.title}
                               </a>
@@ -248,7 +251,7 @@ export function OgeTheoryPage() {
                             </p>
                             <a
                               onClick={rememberScroll}
-                              href={href(modulePath(m.id))}
+                              href={href(modulePath(m.id, catalogOrigin))}
                             >
                               Изучить этот шаг →
                             </a>

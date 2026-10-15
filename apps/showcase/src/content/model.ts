@@ -109,7 +109,14 @@ export type Exercise = Snapshot & {
     rulePath: string;
     errorType: string;
   }[];
-  shortAnswerConstraints?: { requiredWords: string[] };
+  shortAnswerConstraints?: {
+    requiredWords: string[];
+    unchangedPhrase?: string;
+    transformation?: {
+      from: "согласование" | "управление" | "примыкание";
+      to: "согласование" | "управление" | "примыкание";
+    };
+  };
   rulePaths?: string[];
   originCategory?: "official" | "author-model" | "learning";
   publicationReview?: {
