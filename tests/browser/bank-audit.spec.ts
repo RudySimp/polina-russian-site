@@ -37,6 +37,10 @@ test("ОГЭ: прямые направления и быстрый запуск
         .first()
         .boundingBox();
       expect(start!.y + start!.height).toBeLessThanOrEqual(844);
+      // CI uses the Arial fallback; verify it on Windows as well.
+      await page.evaluate(() => document.documentElement.style.setProperty("--font-ui", "Arial, sans-serif"));
+      const fallbackStart = await page.locator(".oge-quick-start .button").first().boundingBox();
+      expect(fallbackStart!.y + fallbackStart!.height).toBeLessThanOrEqual(844);
     }
     await page.goto("oge/bank/2/");
     await expect(page.locator("main h1")).toContainText("№ 2");

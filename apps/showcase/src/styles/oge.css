@@ -80,10 +80,14 @@
     margin: 1rem 0;
   }
   .oge-directions a {
-    padding: 0.625rem 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
   .oge-quick-start {
     padding: 1rem;
+  }
+  .oge-overview .oge-quick-start {
+    margin-block: 1rem;
+    gap: 0.75rem;
   }
   .oge-overview .home-section {
     margin: 2rem 0;

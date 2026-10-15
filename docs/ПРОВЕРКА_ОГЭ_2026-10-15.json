@@ -87,7 +87,23 @@
         "failed": 0,
         "artifact": "artifacts/audit-course-typography-final.json"
       },
-      "notes": "Eight failures of four scenarios were corrected and rerun: separate file upload input, expanded corpus counts, current course topic markup, restored prior EGE practice action. Workshop accessibility additionally checked with axe. Separate CI whole-suite run remains pending."
+      "notes": "Eight failures of four scenarios were corrected and rerun: separate file upload input, expanded corpus counts, current course topic markup, restored prior EGE practice action. Workshop accessibility additionally checked with axe. Separate CI whole-suite run remains pending.",
+      "fallbackViewportRun": {
+        "passed": 4,
+        "failed": 0,
+        "artifact": "artifacts/audit-viewport-fallback.json",
+        "fonts": [
+          "Segoe UI",
+          "Arial"
+        ],
+        "widths": [
+          360,
+          390,
+          768,
+          1024,
+          1440
+        ]
+      }
     }
   },
   "images": {
@@ -277,5 +293,17 @@
     "Это проверка редакторской учебной версии; полный предметный перенос174страниц и большой официальный корпус не завершены.",
     "Физические школьные устройства и первый визит ребёнка без помощи не проверялись.",
     "Методическое утверждение преподавателем, оценка качества аудио человеком и официальность авторских заданий не подменяются автоматическими тестами."
+  ],
+  "ciAttempts": [
+    {
+      "runId": 38695219824,
+      "commit": "f7acd38f2a47846b9607ee20b8147e9a92b30339",
+      "status": "failed",
+      "unitPassed": 231,
+      "browserPassed": 145,
+      "browserFailed": 2,
+      "browserSkipped": 1,
+      "cause": "Quick-start button bottom873.6875 at narrow screen with Arial fallback exceeded844. Compact intro/spacing corrected and both fallback/system fonts now verified locally."
+    }
   ]
 }

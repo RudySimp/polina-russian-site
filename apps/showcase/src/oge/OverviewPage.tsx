@@ -94,7 +94,7 @@ export default function OverviewPage({
         illustration="01-book-branch"
         eyebrow="РУССКИЙ ЯЗЫК · ОГЭ"
         title="Подготовка к ОГЭ"
-        text="Правила, задания и варианты с разбором и сохранением."
+        text="Теория и практика."
       />
       <nav className="oge-directions" aria-label="Направления подготовки ОГЭ">
         {directions.map(({ path, title, text, icon: Icon }) => (
