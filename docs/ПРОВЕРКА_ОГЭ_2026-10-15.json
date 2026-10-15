@@ -4,7 +4,20 @@
   "checkedAt": "2026-10-15",
   "baseCommit": "1fc22baaec6e086215cf61670ead8d87d3533ffa",
   "publication": {
-    "status": "pending"
+    "status": "published-and-publicly-verified",
+    "codeCommit": "28c8f1326d7037f1e2855fcd455763175bca9c3d",
+    "codeCommits": [
+      "f7acd38f2a47846b9607ee20b8147e9a92b30339",
+      "28c8f1326d7037f1e2855fcd455763175bca9c3d"
+    ],
+    "url": "https://rudysimp.github.io/polina-russian-site/",
+    "workflowRunId": 38696417202,
+    "workflowUrl": "https://github.com/RudySimp/polina-russian-site/actions/runs/38696417202",
+    "workflowConclusion": "success",
+    "buildJobId": 116293906663,
+    "deployJobId": 116295667586,
+    "publicVerifiedAt": "2026-10-15T07:12:03.306Z",
+    "publicProof": "docs/ПРОВЕРКА_ОГЭ_2026-10-15.json#publicCheck"
   },
   "counts": {
     "totalExercises": 307,
@@ -87,7 +100,7 @@
         "failed": 0,
         "artifact": "artifacts/audit-course-typography-final.json"
       },
-      "notes": "Eight failures of four scenarios were corrected and rerun: separate file upload input, expanded corpus counts, current course topic markup, restored prior EGE practice action. Workshop accessibility additionally checked with axe. Separate CI whole-suite run remains pending.",
+      "notes": "The complete second CI run passed all 147 active browser scenarios with one planned skip. Earlier local correction runs and the failed first CI attempt are retained as history.",
       "fallbackViewportRun": {
         "passed": 4,
         "failed": 0,
@@ -103,6 +116,14 @@
           1024,
           1440
         ]
+      },
+      "ciWholeSuite": {
+        "runId": 38696417202,
+        "commit": "28c8f1326d7037f1e2855fcd455763175bca9c3d",
+        "passed": 147,
+        "failed": 0,
+        "skipped": 1,
+        "workflowUrl": "https://github.com/RudySimp/polina-russian-site/actions/runs/38696417202"
       }
     }
   },
@@ -290,7 +311,7 @@
     ]
   },
   "limitations": [
-    "Это проверка редакторской учебной версии; полный предметный перенос174страниц и большой официальный корпус не завершены.",
+    "Это проверка редакторской учебной версии; полный предметный перенос 174 страниц и большой официальный корпус не завершены.",
     "Физические школьные устройства и первый визит ребёнка без помощи не проверялись.",
     "Методическое утверждение преподавателем, оценка качества аудио человеком и официальность авторских заданий не подменяются автоматическими тестами."
   ],
@@ -304,6 +325,110 @@
       "browserFailed": 2,
       "browserSkipped": 1,
       "cause": "Quick-start button bottom873.6875 at narrow screen with Arial fallback exceeded844. Compact intro/spacing corrected and both fallback/system fonts now verified locally."
+    },
+    {
+      "runId": 38696417202,
+      "commit": "28c8f1326d7037f1e2855fcd455763175bca9c3d",
+      "status": "success",
+      "unitPassed": 231,
+      "unitFiles": 28,
+      "browserPassed": 147,
+      "browserFailed": 0,
+      "browserSkipped": 1,
+      "types": "passed",
+      "lint": "passed",
+      "nextBuild": "passed",
+      "showcaseBuild": "passed",
+      "staticCheck": "passed",
+      "buildJobId": 116293906663,
+      "deployJobId": 116295667586,
+      "workflowUrl": "https://github.com/RudySimp/polina-russian-site/actions/runs/38696417202"
     }
-  ]
+  ],
+  "publicCheck": {
+    "base": "https://rudysimp.github.io/polina-russian-site/",
+    "checkedAt": "2026-10-15T07:12:03.306Z",
+    "routes": 406,
+    "assets": 301,
+    "currentBuildMatches": true,
+    "verifiedAudioFiles": 10,
+    "verifiedImageFiles": 168,
+    "browserAudioPlaybacks": [
+      {
+        "viewport": "desktop",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.537196
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.780278
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.769001
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.768879
+      },
+      {
+        "viewport": "desktop",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.775418
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-reading",
+        "revision": 2,
+        "duration": 189.744375,
+        "elapsed": 0.770482
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-memory",
+        "revision": 2,
+        "duration": 194.115625,
+        "elapsed": 0.772415
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-responsibility",
+        "revision": 2,
+        "duration": 192.815313,
+        "elapsed": 0.779825
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-friendship",
+        "revision": 2,
+        "duration": 187.624063,
+        "elapsed": 0.785307
+      },
+      {
+        "viewport": "mobile",
+        "id": "audio-curiosity",
+        "revision": 2,
+        "duration": 184.530938,
+        "elapsed": 0.773445
+      }
+    ],
+    "retriedRequests": 0,
+    "status": "passed",
+    "codeCommit": "28c8f1326d7037f1e2855fcd455763175bca9c3d",
+    "uniqueAudioFiles": 5,
+    "notes": "verifiedAudioFiles counts 10 desktop/mobile audio fetch verifications, covering 5 unique audio files. Each of the 5 files also played in desktop and mobile browser viewports. These are browser checks, not a human audio-quality judgment."
+  }
 }
